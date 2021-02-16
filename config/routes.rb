@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :results
+
+  get '/results/upload'
+  resources :results do
+  	collection { post :import }
+  end
   resources :frequencies, :has_many => :results
   resources :epoches, :has_many => :results
   resources :sources, :has_many => :results

@@ -64,6 +64,6 @@ class FrequenciesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def frequency_params
-      params.require(:frequency).permit(:freq_ghz)
+      params.require(:frequency).permit(:freq_ghz,:receiver)
     end
 end

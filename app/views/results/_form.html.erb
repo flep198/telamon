@@ -36,6 +36,25 @@
     <%= form.text_field :elevation %>
   </div>
 
+  <div class="control-group">
+    <%= form.label :epoch_id, class: 'control-label' %>
+    <div class="controls">
+      <%= collection_select( :result,:epoch_id,Epoch.order('date ASC'), :id, :date, {},{ :multiple => false}) %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= form.label :frequency_id, class: 'control-label' %>
+    <div class="controls">
+      <%= collection_select( :result,:frequency_id,Frequency.order('freq_ghz ASC'), :id, :freq_ghz, {},{ :multiple => false}) %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= form.label :source_id %>
+    <%= form.text_field :source_id %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

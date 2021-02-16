@@ -1,0 +1,31 @@
+<h1>Upload Data</h1>
+
+<%= form_tag import_results_path, multipart: true do %>
+
+	<div class="control-group">
+   	 <%= label :epoch_id, 'Epoch' %>
+   	 <div class="controls">
+      <%= collection_select( :result,:epoch_id,Epoch.order('date ASC'), :id, :date, {},{ :multiple => false}) %>
+     </div>
+    </div>
+
+    <div class="control-group">
+     <%= label :frequency_id, 'Frequency' %>
+     <div class="controls">
+      <%= collection_select( :result,:frequency_id,Frequency.order('freq_ghz ASC'), :id, :freq_ghz, {},{ :multiple => false}) %>
+     </div>
+    </div>
+
+</br>
+
+    <div class="control-group">
+   	 <%= file_field_tag :data_files, :multiple => true, name: 'data_files[]' %>
+    </div>
+
+ </br>
+
+	<%= submit_tag "Upload Data"%>
+
+<% end %>
+
+<%= link_to 'Back', results_path %>

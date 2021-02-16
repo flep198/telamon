@@ -19,6 +19,9 @@ class ResultsController < ApplicationController
   def edit
   end
 
+  def upload
+  end
+
   # POST /results or /results.json
   def create
     @result = Result.new(result_params)
@@ -56,6 +59,40 @@ class ResultsController < ApplicationController
     end
   end
 
+
+  def import    
+    @epoch_id = params[:result][:epoch_id]
+    @frequency_id = params[:result][:frequency_id]
+    @data_files = params[:data_files]
+
+    @data_files.each do |file|
+
+      #find source id from filename
+      @source_name = file.original_filename.split(".").second
+
+      #make sure source is already in Database, if not create source
+      @source = Source.where(j2000_name: @source_name).first_or_create
+      @source_id = @source.id
+
+      #parse through file to get data and create new result (does not work yet)  
+      @f = File.open(file.path,"r")
+      @f.each_with_index do |line,lineindex|
+        if lineindex > 2  #skip first three lines (header)   
+          @data = line.split
+          @mjd = @data[0]
+          @value_jy = @data[1]
+          @error_jy = @data[2]
+          @scan_nr = @data[5]
+          @elevation = @data[7]   
+
+          Result.create(:scan_nr => @scan_nr, :value_jy => @value_jy, :error_jy => @error_jy, :mjd => @mjd, :elevation => @elevation, :epoch_id => @epoch_id, :frequency_id => @frequency_id, :source_id => @source_id)
+        end
+      end
+    end
+    redirect_to results_path, notice: ("Data Uploaded Successfully")
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_result
@@ -64,6 +101,6 @@ class ResultsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def result_params
-      params.require(:result).permit(:scan_nr, :value_jy, :error_jy, :mjd, :elevation)
+      params.require(:result).permit(:scan_nr, :value_jy, :error_jy, :mjd, :elevation, :epoch_id, :frequency_id, :source_id)
     end
 end
