@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Scan nr:</strong>
+  <%= @result.scan_nr %>
+</p>
+
+<p>
+  <strong>Value jy:</strong>
+  <%= @result.value_jy %>
+</p>
+
+<p>
+  <strong>Error jy:</strong>
+  <%= @result.error_jy %>
+</p>
+
+<p>
+  <strong>Mjd:</strong>
+  <%= @result.mjd %>
+</p>
+
+<p>
+  <strong>Elevation:</strong>
+  <%= @result.elevation %>
+</p>
+
+<%= link_to 'Edit', edit_result_path(@result) %> |
+<%= link_to 'Back', results_path %>

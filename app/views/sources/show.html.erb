@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>J2000 name:</strong>
+  <%= @source.j2000_name %>
+</p>
+
+<p>
+  <strong>Alt name:</strong>
+  <%= @source.alt_name %>
+</p>
+
+<p>
+  <strong>Source class:</strong>
+  <%= @source.source_class %>
+</p>
+
+<p>
+  <strong>S mojave:</strong>
+  <%= @source.s_mojave %>
+</p>
+
+<p>
+  <strong>S alma:</strong>
+  <%= @source.s_alma %>
+</p>
+
+<p>
+  <strong>Redshift:</strong>
+  <%= @source.redshift %>
+</p>
+
+<p>
+  <strong>Ra:</strong>
+  <%= @source.ra %>
+</p>
+
+<p>
+  <strong>Decl:</strong>
+  <%= @source.decl %>
+</p>
+
+<p>
+  <strong>Lst from:</strong>
+  <%= @source.lst_from %>
+</p>
+
+<p>
+  <strong>Lst to:</strong>
+  <%= @source.lst_to %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @source.comment %>
+</p>
+
+<%= link_to 'Edit', edit_source_path(@source) %> |
+<%= link_to 'Back', sources_path %>

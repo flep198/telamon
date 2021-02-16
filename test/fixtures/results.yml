@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scan_nr: 1
+  value_jy: 1.5
+  error_jy: 1.5
+  mjd: 1.5
+  elevation: 1.5
+
+two:
+  scan_nr: 1
+  value_jy: 1.5
+  error_jy: 1.5
+  mjd: 1.5
+  elevation: 1.5

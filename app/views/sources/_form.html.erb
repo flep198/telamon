@@ -1,0 +1,72 @@
+<%= form_with(model: source) do |form| %>
+  <% if source.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(source.errors.count, "error") %> prohibited this source from being saved:</h2>
+
+      <ul>
+        <% source.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :j2000_name %>
+    <%= form.text_field :j2000_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alt_name %>
+    <%= form.text_field :alt_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :source_class %>
+    <%= form.text_field :source_class %>
+  </div>
+
+  <div class="field">
+    <%= form.label :s_mojave %>
+    <%= form.text_field :s_mojave %>
+  </div>
+
+  <div class="field">
+    <%= form.label :s_alma %>
+    <%= form.text_field :s_alma %>
+  </div>
+
+  <div class="field">
+    <%= form.label :redshift %>
+    <%= form.text_field :redshift %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ra %>
+    <%= form.text_field :ra %>
+  </div>
+
+  <div class="field">
+    <%= form.label :decl %>
+    <%= form.text_field :decl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lst_from %>
+    <%= form.text_field :lst_from %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lst_to %>
+    <%= form.text_field :lst_to %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comment %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

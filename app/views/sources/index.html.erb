@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sources</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>J2000 name</th>
+      <th>Alt name</th>
+      <th>Source class</th>
+      <th>S mojave</th>
+      <th>S alma</th>
+      <th>Redshift</th>
+      <th>Ra</th>
+      <th>Decl</th>
+      <th>Lst from</th>
+      <th>Lst to</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sources.each do |source| %>
+      <tr>
+        <td><%= source.j2000_name %></td>
+        <td><%= source.alt_name %></td>
+        <td><%= source.source_class %></td>
+        <td><%= source.s_mojave %></td>
+        <td><%= source.s_alma %></td>
+        <td><%= source.redshift %></td>
+        <td><%= source.ra %></td>
+        <td><%= source.decl %></td>
+        <td><%= source.lst_from %></td>
+        <td><%= source.lst_to %></td>
+        <td><%= source.comment %></td>
+        <td><%= link_to 'Show', source %></td>
+        <td><%= link_to 'Edit', edit_source_path(source) %></td>
+        <td><%= link_to 'Destroy', source, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Source', new_source_path %>

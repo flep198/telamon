@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  j2000_name: MyString
+  alt_name: MyString
+  source_class: MyString
+  s_mojave: MyString
+  s_alma: MyString
+  redshift: 1.5
+  ra: MyString
+  decl: MyString
+  lst_from: 1.5
+  lst_to: 1.5
+  comment: MyText
+
+two:
+  j2000_name: MyString
+  alt_name: MyString
+  source_class: MyString
+  s_mojave: MyString
+  s_alma: MyString
+  redshift: 1.5
+  ra: MyString
+  decl: MyString
+  lst_from: 1.5
+  lst_to: 1.5
+  comment: MyText

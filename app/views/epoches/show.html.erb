@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @epoch.date %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @epoch.comment %>
+</p>
+
+<%= link_to 'Edit', edit_epoch_path(@epoch) %> |
+<%= link_to 'Back', epoches_path %>

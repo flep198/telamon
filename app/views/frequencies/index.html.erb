@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Frequencies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Freq ghz</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @frequencies.each do |frequency| %>
+      <tr>
+        <td><%= frequency.freq_ghz %></td>
+        <td><%= link_to 'Show', frequency %></td>
+        <td><%= link_to 'Edit', edit_frequency_path(frequency) %></td>
+        <td><%= link_to 'Destroy', frequency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Frequency', new_frequency_path %>

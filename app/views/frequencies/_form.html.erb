@@ -1,0 +1,22 @@
+<%= form_with(model: frequency) do |form| %>
+  <% if frequency.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(frequency.errors.count, "error") %> prohibited this frequency from being saved:</h2>
+
+      <ul>
+        <% frequency.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :freq_ghz %>
+    <%= form.text_field :freq_ghz %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
