@@ -74,18 +74,24 @@ class ResultsController < ApplicationController
       @source = Source.where(j2000_name: @source_name).first_or_create
       @source_id = @source.id
 
-      #parse through file to get data and create new result (does not work yet)  
+      #parse through file to get data and create new result  
       @f = File.open(file.path,"r")
       @f.each_with_index do |line,lineindex|
         if lineindex > 2  #skip first three lines (header)   
           @data = line.split
-          @mjd = @data[0]
+          @mjd = @data[0].to_f + 39999.5
           @value_jy = @data[1]
           @error_jy = @data[2]
           @scan_nr = @data[5]
           @elevation = @data[7]   
 
-          Result.create(:scan_nr => @scan_nr, :value_jy => @value_jy, :error_jy => @error_jy, :mjd => @mjd, :elevation => @elevation, :epoch_id => @epoch_id, :frequency_id => @frequency_id, :source_id => @source_id)
+          #creates new database entry only if the scan is not already in the database (to prevent double entries), otherwise old entry is overwritten
+          if not Result.exists?(:scan_nr => @scan_nr, :epoch_id => @epoch_id, :frequency_id => @frequency_id)
+            Result.create(:scan_nr => @scan_nr, :value_jy => @value_jy, :error_jy => @error_jy, :mjd => @mjd, :elevation => @elevation, :epoch_id => @epoch_id, :frequency_id => @frequency_id, :source_id => @source_id)
+          else #overwrite entry
+            entry_id = Result.where(:scan_nr => @scan_nr, :epoch_id => @epoch_id, :frequency_id => @frequency_id).first.id
+            Result.update(entry_id,:value_jy => @value_jy, :error_jy => @error_jy, :mjd => @mjd, :elevation => @elevation)
+          end
         end
       end
     end

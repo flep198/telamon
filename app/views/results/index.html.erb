@@ -5,10 +5,13 @@
 <table>
   <thead>
     <tr>
-      <th>Scan nr</th>
-      <th>Value jy</th>
-      <th>Error jy</th>
-      <th>Mjd</th>
+      <th>Source</th>
+      <th>Frequency [GHz]</th>
+      <th>Epoch Date</th>
+      <th>Flux Density [Jy]</th>
+      <th>Error [Jy]</th>
+      <th>MJD</th>
+      <th>Scan Number</th>
       <th>Elevation</th>
       <th colspan="3"></th>
     </tr>
@@ -17,10 +20,13 @@
   <tbody>
     <% @results.each do |result| %>
       <tr>
-        <td><%= result.scan_nr %></td>
+        <td><%= Source.where(id: result.source_id).first.j2000_name %></td>
+        <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>
+        <td><%= Epoch.where(id: result.epoch_id).first.date %></td>
         <td><%= result.value_jy %></td>
         <td><%= result.error_jy %></td>
         <td><%= result.mjd %></td>
+        <td><%= result.scan_nr %></td>
         <td><%= result.elevation %></td>
         <td><%= link_to 'Show', result %></td>
         <td><%= link_to 'Edit', edit_result_path(result) %></td>

@@ -57,3 +57,38 @@
 
 <%= link_to 'Edit', edit_source_path(@source) %> |
 <%= link_to 'Back', sources_path %>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Epoch Date</th>
+      <th>Frequency [GHz]</th>
+      <th>Flux Density [Jy]</th>
+      <th>Error [Jy]</th>
+      <th>MJD</th>
+      <th>Scan Number</th>
+      <th>Elevation</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @source.results.each do |result| %>
+      <tr>
+        <td><%= Epoch.where(id: result.epoch_id).first.date %></td>
+        <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>
+        <td><%= result.value_jy %></td>
+        <td><%= result.error_jy %></td>
+        <td><%= result.mjd %></td>
+        <td><%= result.scan_nr %></td>
+        <td><%= result.elevation %></td>
+        <td><%= link_to 'Edit', edit_result_path(result) %></td>
+        <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+

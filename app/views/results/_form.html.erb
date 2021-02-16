@@ -50,9 +50,11 @@
     </div>
   </div>
 
-  <div class="field">
-    <%= form.label :source_id %>
-    <%= form.text_field :source_id %>
+  <div class="control-group">
+    <%= form.label :source_id, class: 'control-label' %>
+    <div class="controls">
+      <%= collection_select( :result,:source_id,Source.order('j2000_name ASC'), :id, :j2000_name, {},{ :multiple => false}) %>
+    </div>
   </div>
 
   <div class="actions">
