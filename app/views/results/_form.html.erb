@@ -11,53 +11,53 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :scan_nr %>
-    <%= form.number_field :scan_nr %>
+  <div class="mb-3">
+    <%= form.label :scan_nr, class: "form-label" %>
+    <%= form.number_field :scan_nr, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :value_jy %>
-    <%= form.text_field :value_jy %>
+  <div class="mb-3">
+    <%= form.label :value_jy, class: "form-label" %>
+    <%= form.text_field :value_jy, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :error_jy %>
-    <%= form.text_field :error_jy %>
+  <div class="mb-3">
+    <%= form.label :error_jy, class: "form-label" %>
+    <%= form.text_field :error_jy, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :mjd %>
-    <%= form.text_field :mjd %>
+  <div class="mb-3">
+    <%= form.label :mjd, class: "form-label" %>
+    <%= form.text_field :mjd, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :elevation %>
-    <%= form.text_field :elevation %>
+  <div class="mb-3">
+    <%= form.label :elevation, class: "form-label" %>
+    <%= form.text_field :elevation, class: "form-control" %>
   </div>
 
-  <div class="control-group">
-    <%= form.label :epoch_id, class: 'control-label' %>
+  <div class="mb-3">
+    <%= form.label :epoch_id, class: "form-label" %>
     <div class="controls">
-      <%= collection_select( :result,:epoch_id,Epoch.order('date ASC'), :id, :date, {},{ :multiple => false}) %>
+      <%= collection_select( :result,:epoch_id,Epoch.order('date ASC'), :id, :date, {},{ :multiple => false, class: "form-select"}) %>
     </div>
   </div>
 
-  <div class="control-group">
-    <%= form.label :frequency_id, class: 'control-label' %>
+  <div class="mb-3">
+    <%= form.label :frequency_id, class: "form-label" %>
     <div class="controls">
-      <%= collection_select( :result,:frequency_id,Frequency.order('freq_ghz ASC'), :id, :freq_ghz, {},{ :multiple => false}) %>
+      <%= collection_select( :result,:frequency_id,Frequency.order('freq_ghz ASC'), :id, :freq_ghz, {},{ :multiple => false, class: "form-select"}) %>
     </div>
   </div>
 
-  <div class="control-group">
-    <%= form.label :source_id, class: 'control-label' %>
+  <div class="mb-3">
+    <%= form.label :source_id, class: "form-label" %>
     <div class="controls">
-      <%= collection_select( :result,:source_id,Source.order('j2000_name ASC'), :id, :j2000_name, {},{ :multiple => false}) %>
+      <%= collection_select( :result,:source_id,Source.order('j2000_name ASC'), :id, :j2000_name, {},{ :multiple => false, class: "form-select"}) %>
     </div>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="mb-3">
+    <%= form.submit "Update Result", class: "btn btn-primary" %>
   </div>
 <% end %>

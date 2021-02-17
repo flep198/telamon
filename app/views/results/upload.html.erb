@@ -2,30 +2,32 @@
 
 <%= form_tag import_results_path, multipart: true do %>
 
-	<div class="control-group">
-   	 <%= label :epoch_id, 'Epoch' %>
+	<div class="mb-3">
+   	 <%= label :epoch_id, 'Epoch Date', class: "form-label" %>
    	 <div class="controls">
-      <%= collection_select( :result,:epoch_id,Epoch.order('date ASC'), :id, :date, {},{ :multiple => false}) %>
+      <%= collection_select( :result,:epoch_id,Epoch.order('date ASC'), :id, :date, {},{ :multiple => false, class: "form-select"}) %>
      </div>
     </div>
 
-    <div class="control-group">
-     <%= label :frequency_id, 'Frequency' %>
+    <div class="mb-3">
+     <%= label :frequency_id, 'Frequency [GHz]', class: "form-label" %>
      <div class="controls">
-      <%= collection_select( :result,:frequency_id,Frequency.order('freq_ghz ASC'), :id, :freq_ghz, {},{ :multiple => false}) %>
+      <%= collection_select( :result,:frequency_id,Frequency.order('freq_ghz ASC'), :id, :freq_ghz, {},{ :multiple => false, class: "form-select"}) %>
      </div>
     </div>
 
 </br>
 
-    <div class="control-group">
-   	 <%= file_field_tag :data_files, :multiple => true, name: 'data_files[]' %>
+    <div class="mb-3">
+   	 <%= file_field_tag :data_files, :multiple => true, name: 'data_files[]', class: "form-control" %>
     </div>
 
  </br>
 
-	<%= submit_tag "Upload Data"%>
+	<%= submit_tag "Upload Data", class: "btn btn-success" %>
 
 <% end %>
 
-<%= link_to 'Back', results_path %>
+</br>
+
+<%= link_to 'Back', results_path, class: "btn btn-danger" %>

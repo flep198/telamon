@@ -25,7 +25,7 @@ class EpochesController < ApplicationController
 
     respond_to do |format|
       if @epoch.save
-        format.html { redirect_to @epoch, notice: "Epoch was successfully created." }
+        format.html { redirect_to epoches_path, notice: "Epoch was successfully created." }
         format.json { render :show, status: :created, location: @epoch }
       else
         format.html { render :new, status: :unprocessable_entity }

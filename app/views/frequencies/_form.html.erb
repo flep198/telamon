@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :freq_ghz %>
-    <%= form.text_field :freq_ghz %>
+  <div class="mb-3">
+    <%= form.label :freq_ghz, class: "form-label" %>
+    <%= form.text_field :freq_ghz, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :receiver %>
-    <%= form.text_field :receiver %>
+  <div class="mb-3">
+    <%= form.label :receiver, class: "form-label" %>
+    <%= form.text_field :receiver, class: "form-control" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="mb-3">
+    <%= form.submit "Submit", class: "btn btn-primary" %>
   </div>
 <% end %>

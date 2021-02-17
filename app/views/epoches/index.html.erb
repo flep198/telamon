@@ -1,13 +1,17 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Epoches</h1>
 
-<table>
-  <thead>
+</br>
+<div class="container">
+  <%= link_to 'New Epoch', new_epoch_path, class: "btn btn-success" %>
+</div>
+</br>
+
+<table class="table table-hover table-striped table-bordered">
+  <thead class="table-dark">
     <tr>
       <th>Date</th>
       <th>Comment</th>
-      <th colspan="3"></th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
@@ -16,14 +20,11 @@
       <tr>
         <td><%= epoch.date %></td>
         <td><%= epoch.comment %></td>
-        <td><%= link_to 'Show', epoch %></td>
-        <td><%= link_to 'Edit', edit_epoch_path(epoch) %></td>
-        <td><%= link_to 'Destroy', epoch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_epoch_path(epoch), class: "btn btn-outline-success btn-sm" %></td>
+        <td><%= link_to 'Delete', epoch, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Epoch', new_epoch_path %>

@@ -11,62 +11,76 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :j2000_name %>
-    <%= form.text_field :j2000_name %>
+<form class="row g-3">
+  <div class="col-md-6">
+    <%= form.label :j2000_name, class: "form-label"%>
+    <%= form.text_field :j2000_name, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :alt_name %>
-    <%= form.text_field :alt_name %>
+  <div class="col-md-6">
+    <%= form.label :alt_name, class: "form-label" %>
+    <%= form.text_field :alt_name, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :source_class %>
-    <%= form.text_field :source_class %>
+  <div class="col-md-2">
+    <%= form.label :source_class, class: "form-label" %>
+    <%= form.text_field :source_class, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :s_mojave %>
-    <%= form.text_field :s_mojave %>
+  <div class="col-md-4">
+    <%= form.label :s_mojave, class: "form-label" %>
+    <%= form.text_field :s_mojave, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :s_alma %>
-    <%= form.text_field :s_alma %>
+  <div class="col-md-4">
+    <%= form.label :s_alma, class: "form-label" %>
+    <%= form.text_field :s_alma, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :redshift %>
-    <%= form.text_field :redshift %>
+  <div class="col-md-2">
+    <%= form.label :redshift, class: "form-label" %>
+    <%= form.text_field :redshift, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :ra %>
-    <%= form.text_field :ra %>
+  <div class="col-md-6">
+    <%= form.label :ra, class: "form-label" %>
+    <%= form.text_field :ra, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :decl %>
-    <%= form.text_field :decl %>
+  <div class="col-md-6">
+    <%= form.label :decl, class: "form-label" %>
+    <%= form.text_field :decl, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :lst_from %>
-    <%= form.text_field :lst_from %>
+  <div class="col-md-6">
+    <%= form.label :lst_from, class: "form-label" %>
+    <%= form.text_field :lst_from, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :lst_to %>
-    <%= form.text_field :lst_to %>
+  <div class="col-md-6">
+    <%= form.label :lst_to, class: "form-label" %>
+    <%= form.text_field :lst_to, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :comment %>
-    <%= form.text_area :comment %>
+  <div class="col-12">
+    <%= form.label :comment, class: "form-label" %>
+    <%= form.text_area :comment, class: "form-control" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+</br>
+
+  <div class="col-12">
+    <%= form.submit "Submit", class:"btn btn-primary" %>
   </div>
+</form>
+
 <% end %>
+
+
+
+
+
+
+
+
+

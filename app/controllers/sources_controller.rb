@@ -25,7 +25,7 @@ class SourcesController < ApplicationController
 
     respond_to do |format|
       if @source.save
-        format.html { redirect_to @source, notice: "Source was successfully created." }
+        format.html { redirect_to sources_path, notice: "Source was successfully created." }
         format.json { render :show, status: :created, location: @source }
       else
         format.html { render :new, status: :unprocessable_entity }

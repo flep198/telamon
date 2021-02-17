@@ -28,7 +28,7 @@ class ResultsController < ApplicationController
 
     respond_to do |format|
       if @result.save
-        format.html { redirect_to @result, notice: "Result was successfully created." }
+        format.html { redirect_to results_path, notice: "Result was successfully created." }
         format.json { render :show, status: :created, location: @result }
       else
         format.html { render :new, status: :unprocessable_entity }
