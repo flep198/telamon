@@ -77,6 +77,7 @@
   <!-- query database -->
   <% @epoch_id=epoch.id %>
   <% @data = Result.where(:source_id => @source.id, :epoch_id => @epoch_id).map { |r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.value_jy-r.error_jy,r.value_jy+r.error_jy, true]} %>
+  <% @data = @data.sort_by(&:first) %>
   <!-- create plot -->
   <%= render 'create_spectrum_plot', data: @data, epoch_id: @epoch_id %>
 <%end%>
