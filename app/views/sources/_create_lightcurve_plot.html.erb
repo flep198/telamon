@@ -1,0 +1,39 @@
+<!--creates plot with input data array (columns: MJD, Value, minValue, maxValue, true/false)-->
+<script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+
+
+        // Create the data table.
+        var data<%=freq_id%> = new google.visualization.DataTable();
+        data<%=freq_id%>.addColumn('number', 'MJD');
+        data<%=freq_id%>.addColumn('number', 'Flux Density [Jy]');
+        data<%=freq_id%>.addColumn({type:'number', role:'interval'});
+        data<%=freq_id%>.addColumn({type:'number', role:'interval'});
+        data<%=freq_id%>.addColumn({type:'boolean', role: 'certainty'});
+        data<%=freq_id%>.addRows(<%= data %>);
+
+        // Set chart options
+        var options<%=freq_id%> = {title:'Lightcurve at <%= Frequency.find(freq_id).freq_ghz.to_s %> GHz',
+                       legend: { position: 'none'},
+                       vAxis: { title: 'Flux Density [Jy]' },
+                       hAxis: { title: 'MJD' } };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart<%=freq_id%> = new google.visualization.LineChart(document.getElementById("lightcurve<%=freq_id.to_s%>"));
+        chart<%=freq_id%>.draw(data<%=freq_id%>, options<%=freq_id%>);
+
+}
+</script>
+
+<div id="lightcurve<%=freq_id.to_s%>" style='width: 700px; height: 500px'></div>

@@ -59,6 +59,30 @@
 <%= link_to 'Back', sources_path %>
 
 
+<h2>Lightcurves</h2>
+
+
+<% @source.frequencies.distinct.each do |freq| %>
+  <!-- query database -->
+  <% @freq_id=freq.id %>
+  <% @data = Result.where(:source_id => @source.id, :frequency_id => @freq_id).map { |r| [r.mjd,r.value_jy,r.value_jy-r.error_jy,r.value_jy+r.error_jy, true]} %>
+  <!-- create plot -->
+  <%= render 'create_lightcurve_plot', data: @data, freq_id: @freq_id %>
+<%end%>
+
+
+<h2>Spectra</h2>
+
+<% @source.epoches.distinct.each do |epoch| %>
+  <!-- query database -->
+  <% @epoch_id=epoch.id %>
+  <% @data = Result.where(:source_id => @source.id, :epoch_id => @epoch_id).map { |r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.value_jy-r.error_jy,r.value_jy+r.error_jy, true]} %>
+  <!-- create plot -->
+  <%= render 'create_spectrum_plot', data: @data, epoch_id: @epoch_id %>
+<%end%>
+
+
+<h2>Data Table</h2>
 
 <table>
   <thead>

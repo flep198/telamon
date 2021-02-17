@@ -79,7 +79,7 @@ class ResultsController < ApplicationController
       @f.each_with_index do |line,lineindex|
         if lineindex > 2  #skip first three lines (header)   
           @data = line.split
-          @mjd = @data[0].to_f + 39999.5
+          @mjd = (@data[0].to_f + 39999.5).round(4)
           @value_jy = @data[1]
           @error_jy = @data[2]
           @scan_nr = @data[5]
