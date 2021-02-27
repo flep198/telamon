@@ -12,6 +12,8 @@ import "bootstrap"
 import "../stylesheets/application"
 
 require("chartkick")
+require("jquery")
+require("jquery_ujs")
 
 Rails.start()
 Turbolinks.start()

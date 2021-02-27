@@ -1,114 +1,142 @@
-<p>
-  <strong>J2000 name:</strong>
+<h1>
   <%= @source.j2000_name %>
-</p>
+  (<%= @source.alt_name %>)
+</h1>
 
-<p>
-  <strong>Alt name:</strong>
-  <%= @source.alt_name %>
-</p>
+</br>
 
-<p>
-  <strong>Source class:</strong>
-  <%= @source.source_class %>
-</p>
-
-<p>
-  <strong>S mojave:</strong>
-  <%= @source.s_mojave %>
-</p>
-
-<p>
-  <strong>S alma:</strong>
-  <%= @source.s_alma %>
-</p>
-
-<p>
-  <strong>Redshift:</strong>
-  <%= @source.redshift %>
-</p>
-
-<p>
-  <strong>Ra:</strong>
-  <%= @source.ra %>
-</p>
-
-<p>
-  <strong>Decl:</strong>
-  <%= @source.decl %>
-</p>
-
-<p>
-  <strong>Lst from:</strong>
-  <%= @source.lst_from %>
-</p>
-
-<p>
-  <strong>Lst to:</strong>
-  <%= @source.lst_to %>
-</p>
-
-<p>
-  <strong>Comment:</strong>
-  <%= @source.comment %>
-</p>
-
-<h2>Lightcurves</h2>
-
-<% @source.frequencies.distinct.each do |freq| %>
-  <!-- query database -->
-  <% @freq_id=freq.id %>
-  <% @data = Result.where(:source_id => @source.id, :frequency_id => @freq_id).map { |r| [r.mjd,r.value_jy,r.value_jy-r.error_jy,r.value_jy+r.error_jy, true]} %>
-  <!-- create plot -->
-  <%= render 'create_lightcurve_plot', data: @data, freq_id: @freq_id %>
-<%end%>
-
-
-<h2>Spectra</h2>
-
-<% @source.epoches.distinct.each do |epoch| %>
-  <!-- query database -->
-  <% @epoch_id=epoch.id %>
-  <% @data = Result.where(:source_id => @source.id, :epoch_id => @epoch_id).map { |r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.value_jy-r.error_jy,r.value_jy+r.error_jy, true]} %>
-  <% @data = @data.sort_by(&:first) %>
-  <!-- create plot -->
-  <%= render 'create_spectrum_plot', data: @data, epoch_id: @epoch_id %>
-<%end%>
-
-
-<h2>Data Table</h2>
-
-<table class="table table-hover">
+<table class="table">
   <thead class="table-dark">
     <tr>
-      <th>Epoch Date</th>
-      <th>Frequency [GHz]</th>
-      <th>Flux Density [Jy]</th>
-      <th>Error [Jy]</th>
-      <th>MJD</th>
-      <th>Scan Number</th>
-      <th>Elevation</th>
-      <th colspan="2"></th>
+      <th>Class</th>
+      <th>S Mojave [mJy]</th>
+      <th>S Alma [mJy]</th>
+      <th>Redshift</th>
+      <th>RA (J2000)</th>
+      <th>DEC (J2000)</th>
+      <th>LST from</th>
+      <th>LST to</th>
+      <th>Comment</th>
+      <th></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @source.results.each do |result| %>
       <tr>
-        <td><%= Epoch.where(id: result.epoch_id).first.date %></td>
-        <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>
-        <td><%= result.value_jy %></td>
-        <td><%= result.error_jy %></td>
-        <td><%= result.mjd %></td>
-        <td><%= result.scan_nr %></td>
-        <td><%= result.elevation %></td>
-        <td><%= link_to 'Edit', edit_result_path(result) %></td>
-        <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= @source.source_class %></td>
+        <td><%= @source.s_mojave %></td>
+        <td><%= @source.s_alma %></td>
+        <td><%= @source.redshift %></td>
+        <td><%= @source.ra %></td>
+        <td><%= @source.decl %></td>
+        <td><%= @source.lst_from %></td>
+        <td><%= @source.lst_to %></td>
+        <td><%= @source.comment %></td>
+        <td><%= link_to 'Edit', edit_source_path(@source), class: "btn btn-outline-success" %></td>
       </tr>
-    <% end %>
   </tbody>
 </table>
 
+</br>
 
-<%= link_to 'Edit', edit_source_path(@source) %> |
-<%= link_to 'Back', sources_path %>
+<!-- accordion style element with lightcurves, spectra & data table -->
+
+<div class="accordion" id="accordionExample">
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Lightcurves
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="container">
+          <div class="row row-cols-2">
+
+            <% @source.frequencies.distinct.each do |freq| %>
+              <!-- query database -->
+              <% @freq_id=freq.id %>
+              <% @data = Result.where(:source_id => @source.id, :frequency_id => @freq_id).map { |r| [r.mjd,r.value_jy,r.value_jy-r.error_jy,r.value_jy+r.error_jy, true]} %>
+    
+              <!-- create plot -->
+              <div class="col">
+                <%= render 'create_lightcurve_plot', data: @data, freq_id: @freq_id %>
+              </div>
+            <%end%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Spectra
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="container">
+          <div class="row row-cols-2">
+
+            <% @source.epoches.distinct.each do |epoch| %>
+              <!-- query database -->
+              <% @epoch_id=epoch.id %>
+              <% @data = Result.where(:source_id => @source.id, :epoch_id => @epoch_id).map { |r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.value_jy-r.error_jy,r.value_jy+r.error_jy, true]} %>
+              <% @data = @data.sort_by(&:first) %>
+
+              <!-- create plot -->
+              <div class="col">
+                <%= render 'create_spectrum_plot', data: @data, epoch_id: @epoch_id %>
+              </div>
+            <%end%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Data Table
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <table class="table table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th>Epoch Date</th>
+              <th>Frequency [GHz]</th>
+              <th>Flux Density [Jy]</th>
+              <th>Error [Jy]</th>
+              <th>MJD</th>
+              <th>Scan Number</th>
+              <th>Elevation</th>
+              <th colspan="2"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @source.results.each do |result| %>
+              <tr>
+                <td><%= Epoch.where(id: result.epoch_id).first.date %></td>
+                <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>
+                <td><%= result.value_jy %></td>
+                <td><%= result.error_jy %></td>
+                <td><%= result.mjd %></td>
+                <td><%= result.scan_nr %></td>
+                <td><%= result.elevation %></td>
+                <td><%= link_to 'Edit', edit_result_path(result), class: "btn btn-outline-success" %></td>
+                <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
