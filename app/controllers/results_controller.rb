@@ -1,5 +1,6 @@
 class ResultsController < ApplicationController
   before_action :set_result, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except: [:index, :show]
 
   # GET /results or /results.json
   def index

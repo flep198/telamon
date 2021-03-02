@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   get '/results/upload'
   resources :results do
   	collection { post :import }

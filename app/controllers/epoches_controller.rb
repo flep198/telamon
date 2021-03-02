@@ -1,5 +1,6 @@
 class EpochesController < ApplicationController
   before_action :set_epoch, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except: [:index, :show]
 
   # GET /epoches or /epoches.json
   def index

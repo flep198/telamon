@@ -1,5 +1,6 @@
 class FrequenciesController < ApplicationController
   before_action :set_frequency, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except: [:index, :show]
 
   # GET /frequencies or /frequencies.json
   def index

@@ -18,10 +18,29 @@
           <%= link_to 'Sources', sources_path, class:"nav-link" %>
         </li>
 
-        <li class="nav-item">
+
+        <% if user_signed_in? %>
+
+          <li class="nav-item">
           <%= link_to 'Upload Data', results_upload_path, class:"nav-link" %>
         </li>
-        
+
+          <li class="nav-item">
+            <%= link_to 'Edit Profile', edit_user_registration_path, class:"nav-link" %>
+          </li>
+
+          <li class="nav-item">
+           <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class:"nav-link" %>
+          </li>
+
+        <% else %>
+
+          <li class="nav-item">
+            <%= link_to 'Sign In', new_user_session_path, class:"nav-link" %>
+          </li>
+
+        <% end %>
+
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
