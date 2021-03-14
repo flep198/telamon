@@ -2,9 +2,11 @@
 
 </br>
 
+<% if user_signed_in? %>
 <div class="container">
 <%= link_to 'New Source', new_source_path, class: "btn btn-success" %>
 </div>
+<%end%>
 
 </br>
 
@@ -22,7 +24,9 @@
       <th>Lst from</th>
       <th>Lst to</th>
       <th>Comment</th>
-      <th colspan="2"></th>
+      <% if user_signed_in? %>
+        <th colspan="2"></th>
+      <%end%>
     </tr>
   </thead>
 
@@ -40,8 +44,10 @@
         <td><%= source.lst_from %></td>
         <td><%= source.lst_to %></td>
         <td><%= source.comment %></td>
-        <td><%= link_to 'Edit', edit_source_path(source), class: "btn btn-outline-success btn-sm" %></td>
-        <td><%= link_to 'Delete', source, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
+        <% if user_signed_in? %>
+          <td><%= link_to 'Edit', edit_source_path(source), class: "btn btn-outline-success btn-sm" %></td>
+          <td><%= link_to 'Delete', source, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
+        <%end%>
       </tr>
     <% end %>
   </tbody>
