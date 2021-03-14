@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the website for the TELAMON - Database.
+TELAMON stands for Tev Effelsberg Long-term Agn MONitoring.
+The website is built with Ruby on Rails.
 
-Things you may want to cover:
 
-* Ruby version
+* We use Rails 6.1.2.1
 
-* System dependencies
+* DATABASE:
 
-* Configuration
+The database consists of four main tables (sources, epochs, frequencies, results)
 
-* Database creation
+RESULTS:
+This table stores the flux density values with an assigned source (id), epoch (id) and frequency (id)
 
-* Database initialization
+SOURCES:
+This is the table for the sources with details s.a. name, coordinates, comments
 
-* How to run the test suite
+FREQUENCIES:
+This table stores all frequencies that have been used in the observations
 
-* Services (job queues, cache servers, search engines, etc.)
+EPOCHS:
+This table is a list for every epoch where we use the date of the beginning of each observing epoch.
 
-* Deployment instructions
+Database population:
+The database can be populated by uploading .FLUX files created with the Effelsberg toolbox2.
 
-* ...
+Only signed in users can edit, delete and upload data. Users not logged in can only view the lightcurves and spectra.
