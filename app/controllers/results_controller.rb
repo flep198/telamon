@@ -72,18 +72,19 @@ class ResultsController < ApplicationController
       @source_name = file.original_filename.split(".").second
 
       #rename old names mistakenly used through Feb 2021
-      if @source_name = "0521+2121"
+      if @source_name == "0521+2121"
         @source_name = "0521+2112"
-      elsif @source_name "1104+3811"
+      elsif @source_name == "1104+3811"
         @source_name = "1104+3812"
-      elsif @source_name "1744+1935"
+      elsif @source_name == "1744+1935"
         @source_name = "1743+1935"
-      elsif @source_name "0303-2408"
+      elsif @source_name == "0303-2408"
         @source_name = "0303-2407"
-      elsif @source_name "0417+0105"
+      elsif @source_name == "0417+0105"
         @source_name = "0416+0105"
-      elsif @source_name "1423+3227"
+      elsif @source_name == "1423+3227"
         @source_name = "1423+3223"
+      end
 
 
       #make sure source is already in Database, if not create source
