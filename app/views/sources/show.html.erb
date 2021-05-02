@@ -54,10 +54,12 @@
         <div class="container">
           <div class="row row-cols-2">
 
-            <% @source.frequencies.distinct.each do |freq| %>
+            <% @source.frequencies.distinct.order(:freq_ghz).each do |freq| %>
               <!-- query database -->
               <% @freq_id=freq.id %>
               <% @data = Result.where(:source_id => @source.id, :frequency_id => @freq_id).map { |r| [r.mjd,r.value_jy,r.value_jy-r.error_jy,r.value_jy+r.error_jy, true]} %>
+
+              <% @data=@data.sort_by(&:first) %>
     
               <!-- create plot -->
               <div class="col">
@@ -81,7 +83,7 @@
         <div class="container">
           <div class="row row-cols-2">
 
-            <% @source.epoches.distinct.each do |epoch| %>
+            <% @source.epoches.distinct.order(:date).each do |epoch| %>
               <!-- query database -->
               <% @epoch_id=epoch.id %>
               <% @data = Result.where(:source_id => @source.id, :epoch_id => @epoch_id).map { |r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.value_jy-r.error_jy,r.value_jy+r.error_jy, true]} %>
@@ -121,7 +123,7 @@
           </thead>
 
           <tbody>
-            <% @source.results.each do |result| %>
+            <% @source.results.order(:mjd).each do |result| %>
               <tr>
                 <td><%= Epoch.where(id: result.epoch_id).first.date %></td>
                 <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>

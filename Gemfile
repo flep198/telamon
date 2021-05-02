@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
+ruby '>= 2.7.2'
 
 gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref:'01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
 gem 'rails', '~> 6.1.2', '>= 6.1.2.1'
