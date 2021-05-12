@@ -1,12 +1,60 @@
-<p>
-  <strong>Date:</strong>
-  <%= @epoch.date %>
-</p>
+<h1>
+  Epoch <%= @epoch.date %>
+</h1>
 
 <p>
   <strong>Comment:</strong>
   <%= @epoch.comment %>
 </p>
 
-<%= link_to 'Edit', edit_epoch_path(@epoch) %> |
-<%= link_to 'Back', epoches_path %>
+
+<div class="container">
+    <div class="row row-cols-2">
+
+		<% @epoch.sources.distinct.order(:j2000_name).each do |source| %>
+              
+            <!-- query database -->
+            <% @source_id=source.id %>
+            <% @data = Result.where(:source_id => @source_id, :epoch_id => @epoch.id).map { |r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.value_jy-r.error_jy,r.value_jy+r.error_jy, true]} %>
+            <% @data = @data.sort_by(&:first) %>
+
+            <!-- create plot -->
+            <div class="col">
+				<%= render 'create_epoch_spectrum', data: @data, source_id: @source_id %>
+            </div>
+
+		<%end%>
+	</div>
+</div>
+
+
+<table class="table table-hover">
+    <thead class="table-dark">
+        <tr>
+  	      <th>Source Name</th>
+          <th>Frequency [GHz]</th>
+          <th>Flux Density [Jy]</th>
+          <th>Error [Jy]</th>
+          <th>MJD</th>
+          <th>Scan Number</th>
+          <th>Elevation</th>
+          <th colspan="2"></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @epoch.results.order(:mjd).each do |result| %>
+          <tr>
+            <td><%= Source.where(id: result.source_id).first.j2000_name %></td>
+            <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>
+            <td><%= result.value_jy %></td>
+            <td><%= result.error_jy %></td>
+            <td><%= result.mjd %></td>
+            <td><%= result.scan_nr %></td>
+            <td><%= result.elevation %></td>
+            <td><%= link_to 'Edit', edit_result_path(result), class: "btn btn-outline-success" %></td>
+            <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+          </tr>
+        <% end %>
+    </tbody>
+</table>
