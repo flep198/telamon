@@ -20,7 +20,8 @@
 
             <!-- create plot -->
             <div class="col">
-				<%= render 'create_epoch_spectrum', data: @data, source_id: @source_id %>
+              Spectrum of <%= link_to source.j2000_name, source %>
+				      <%= render 'create_epoch_spectrum', data: @data, source_id: @source_id %>
             </div>
 
 		<%end%>
@@ -28,7 +29,9 @@
 </div>
 
 
-<table class="table table-hover">
+<button class="btn btn-success" onclick="download_table_as_csv('export_<%=@epoch.date.to_s.gsub!('-','_')%>');">Export to CSV File</button>
+<p></p>
+<table class="table table-hover" id="export_<%=@epoch.date.to_s.gsub!('-','_')%>">
     <thead class="table-dark">
         <tr>
   	      <th>Source Name</th>
@@ -38,7 +41,9 @@
           <th>MJD</th>
           <th>Scan Number</th>
           <th>Elevation</th>
-          <th colspan="2"></th>
+          <% if user_signed_in? %>
+            <th colspan="2"></th>
+          <% end %>
         </tr>
     </thead>
 
@@ -52,8 +57,10 @@
             <td><%= result.mjd %></td>
             <td><%= result.scan_nr %></td>
             <td><%= result.elevation %></td>
-            <td><%= link_to 'Edit', edit_result_path(result), class: "btn btn-outline-success" %></td>
-            <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+            <% if user_signed_in? %>
+              <td><%= link_to 'Edit', edit_result_path(result), class: "btn btn-outline-success" %></td>
+              <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+            <% end %>
           </tr>
         <% end %>
     </tbody>

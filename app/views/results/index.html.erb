@@ -11,7 +11,9 @@
       <th>MJD</th>
       <th>Scan Number</th>
       <th>Elevation</th>
-      <th colspan="2"></th>
+      <% if user_signed_in? %>
+        <th colspan="2"></th>
+      <% end %>
     </tr>
   </thead>
 
@@ -25,9 +27,11 @@
         <td><%= result.error_jy %></td>
         <td><%= result.mjd %></td>
         <td><%= result.scan_nr %></td>
-        <td><%= result.elevation %></td>
+        <td><%= result.elevation %></td>        
+        <% if user_signed_in? %>
         <td><%= link_to 'Edit', edit_result_path(result), class: "btn btn-outline-success btn-sm" %></td>
         <td><%= link_to 'Delete', result, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

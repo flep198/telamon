@@ -108,7 +108,11 @@
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <table class="table table-hover">
+
+        <% @output_name=@source.j2000_name.gsub!('+','_')%>
+        <button class="btn btn-success" onclick="download_table_as_csv('export_<%=@output_name%>');">Export to CSV File</button>
+        <p></p>
+        <table id='export_<%=@output_name%>' class="table table-hover">
           <thead class="table-dark">
             <tr>
               <th>Epoch Date</th>
@@ -118,7 +122,9 @@
               <th>MJD</th>
               <th>Scan Number</th>
               <th>Elevation</th>
-              <th colspan="2"></th>
+              <% if user_signed_in? %>
+                <th colspan="2"></th>
+              <% end %>
             </tr>
           </thead>
 
@@ -132,8 +138,10 @@
                 <td><%= result.mjd %></td>
                 <td><%= result.scan_nr %></td>
                 <td><%= result.elevation %></td>
-                <td><%= link_to 'Edit', edit_result_path(result), class: "btn btn-outline-success" %></td>
-                <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+                <% if user_signed_in? %>
+                  <td><%= link_to 'Edit', edit_result_path(result), class: "btn btn-outline-success" %></td>
+                  <td><%= link_to 'Delete', result, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+                <% end %>
               </tr>
             <% end %>
           </tbody>
@@ -142,3 +150,5 @@
     </div>
   </div>
 </div>
+
+

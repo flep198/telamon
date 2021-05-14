@@ -23,7 +23,7 @@
         sdata<%=source_id%>.addRows(<%= data %>);
 
         // Set chart options
-        var soptions<%=source_id%> = {title:'Spectrum of <%= Source.find(source_id).j2000_name.to_s %>' ,
+        var soptions<%=source_id%> = {title:'' ,
                        legend: { position: 'none'},
                        vAxis: { title: 'Flux Density [Jy]' },
                        hAxis: { title: 'Frequency [GHz]' } };
