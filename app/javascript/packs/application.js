@@ -8,13 +8,12 @@
 //= require self
 
 import Rails from "@rails/ujs"
-import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-import "../custom_scripts/csv_table_export.js"
+import "./custom/csv_table_export.js"
 
+require("jquery")
 
 Rails.start()
-Turbolinks.start()
 ActiveStorage.start()
 

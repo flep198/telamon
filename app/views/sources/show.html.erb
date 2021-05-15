@@ -110,7 +110,7 @@
       <div class="accordion-body">
 
         <% @output_name=@source.j2000_name.gsub!('+','_')%>
-        <button class="btn btn-success" onclick="download_table_as_csv('export_<%=@output_name%>');">Export to CSV File</button>
+        <button id="export_button" class="btn btn-success" data-table='export_<%=@output_name%>'>Export to CSV File</button>
         <p></p>
         <table id='export_<%=@output_name%>' class="table table-hover">
           <thead class="table-dark">
@@ -150,5 +150,3 @@
     </div>
   </div>
 </div>
-
-

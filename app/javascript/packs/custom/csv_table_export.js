@@ -1,4 +1,3 @@
-// Quick and simple export target #table_id into a csv
 function download_table_as_csv(table_id, separator = ',') {
     // Select rows from table_id
     var rows = document.querySelectorAll('table#' + table_id + ' tr');
@@ -18,7 +17,7 @@ function download_table_as_csv(table_id, separator = ',') {
     }
     var csv_string = csv.join('\n');
     // Download it
-    var filename = 'export_' + table_id + '_' + new Date().toLocaleDateString() + '.csv';
+    var filename = table_id + '.csv';
     var link = document.createElement('a');
     link.style.display = 'none';
     link.setAttribute('target', '_blank');
@@ -28,3 +27,10 @@ function download_table_as_csv(table_id, separator = ',') {
     link.click();
     document.body.removeChild(link);
 }
+
+window.onload=function(){
+    if(!!document.getElementById("export_button")){
+        var table_name = document.getElementById("export_button").dataset.table;
+        document.getElementById("export_button").addEventListener("click", function(){download_table_as_csv(table_name)});
+    }
+};
