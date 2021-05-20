@@ -1,5 +1,50 @@
+
+<!-- Image section -->
+
+<div class="text-center p-3">
 <h1>Welcome to the TELAMON Database!</h1>
 <h2>Tev Effelsberg Long-term Agn MONitoring</h2>
+</br>
+<%= image_tag("telescope", width: 650) %>
+</br>
+</div>
+
+<div class="text-center p-3">
+<%= link_to "Overview of monitored sources", sources_path %>
+</br>
+<%= link_to "Overview of observing epochs", epoches_path %>
+</br>
+</div>
+
+
+
+<!-- Latest news section -->
+<div class="card">
+  <div class="card-header">
+    Latest news
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Last observation on <%= @epoches.order("date").reverse.first.date %>:</h5>
+
+    <!-- checking for surprising changes -->
+    <% latest_epoch = @epoches.order("date").reverse.first %>
+    <% latest_epoch.sources.distinct.each do |source| %>
+    	<% epoch_before = source.epoches.distinct.order("date").reverse.second %>
+    	<% if(epoch_before != nil) %>
+    		<% source.frequencies.distinct.each do |freq| %>
+    			<% value_now = @results.where(:epoch_id => latest_epoch.id, :frequency_id => freq.id, :source_id => source.id).average(:value_jy)%>
+    			<% value_before = @results.where(:epoch_id => epoch_before.id, :frequency_id => freq.id, :source_id => source.id).average(:value_jy)%>
+    		<%end%>
+    	<% else %>
+    		<%= source.j2000_name %> detected for the first time!</br>
+    	<%end%>
+    <%end%>
+  </div>
+</div>
+
+
+
+
 
 
 
