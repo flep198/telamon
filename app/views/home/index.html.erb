@@ -26,7 +26,7 @@
   <div class="card-body">
     <h5 class="card-title">Last observation on <%= @epoches.order("date").reverse.first.date %>:</h5>
 
-    <!-- checking for surprising changes -->
+    <!-- checking for surprising changes in most recent epoch -->
     <% latest_epoch = @epoches.order("date").reverse.first %>
     <% latest_epoch.sources.distinct.each do |source| %>
     	<% epoch_before = source.epoches.distinct.order("date").reverse.second %>
@@ -34,6 +34,13 @@
     		<% source.frequencies.distinct.each do |freq| %>
     			<% value_now = @results.where(:epoch_id => latest_epoch.id, :frequency_id => freq.id, :source_id => source.id).average(:value_jy)%>
     			<% value_before = @results.where(:epoch_id => epoch_before.id, :frequency_id => freq.id, :source_id => source.id).average(:value_jy)%>
+          <%if value_before != nil and value_now != nil %>
+            <% if value_now>1.1*value_before %>
+            <%= source.j2000_name %> got brighter by <%= 100*(value_now/value_before-1).round(2)%>%</br>
+            <% elsif value_now<0.9*value_before%>
+            <%= source.j2000_name %> got fainter by <%= 100*(1-value_now/value_before).round(2)%>%</br>
+            <%end%>
+          <%end%>
     		<%end%>
     	<% else %>
     		<%= source.j2000_name %> detected for the first time!</br>
