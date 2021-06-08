@@ -23,7 +23,6 @@
       <th>DEC</th>
       <th>LST from</th>
       <th>LST to</th>
-      <th>Duration</th>
       <th>Comment</th>
       <% if user_signed_in? %>
         <th colspan="2"></th>
@@ -44,7 +43,6 @@
         <td><%= source.decl %></td>
         <td><%= source.lst_from %></td>
         <td><%= source.lst_to %></td>
-        <td><%= source.duration %></td>
         <td><%= source.comment %></td>
         <% if user_signed_in? %>
           <td><%= link_to 'Edit', edit_source_path(source), class: "btn btn-outline-success btn-sm" %></td>

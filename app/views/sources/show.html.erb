@@ -16,7 +16,6 @@
       <th>DEC (J2000)</th>
       <th>LST from</th>
       <th>LST to</th>
-      <th>Duration</th>
       <th>Comment</th>
       <th></th>
     </tr>
@@ -32,7 +31,6 @@
         <td><%= @source.decl %></td>
         <td><%= @source.lst_from %></td>
         <td><%= @source.lst_to %></td>
-        <td><%= @source.duration %></td>
         <td><%= @source.comment %></td>
         <td><%= link_to 'Edit', edit_source_path(@source), class: "btn btn-outline-success" %></td>
       </tr>
