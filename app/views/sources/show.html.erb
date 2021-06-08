@@ -9,13 +9,14 @@
   <thead class="table-dark">
     <tr>
       <th>Class</th>
-      <th>S Mojave [mJy]</th>
-      <th>S Alma [mJy]</th>
+      <th>S 14mm [mJy]</th>
+      <th>S 7mm [mJy]</th>
       <th>Redshift</th>
       <th>RA (J2000)</th>
       <th>DEC (J2000)</th>
       <th>LST from</th>
       <th>LST to</th>
+      <th>Duration</th>
       <th>Comment</th>
       <th></th>
     </tr>
@@ -31,6 +32,7 @@
         <td><%= @source.decl %></td>
         <td><%= @source.lst_from %></td>
         <td><%= @source.lst_to %></td>
+        <td><%= @source.duration %></td>
         <td><%= @source.comment %></td>
         <td><%= link_to 'Edit', edit_source_path(@source), class: "btn btn-outline-success" %></td>
       </tr>
@@ -100,6 +102,8 @@
     </div>
   </div>
 
+  <%if user_signed_in?%>
+
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -149,4 +153,5 @@
       </div>
     </div>
   </div>
+  <% end %>
 </div>

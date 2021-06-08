@@ -1,4 +1,4 @@
-<h1>Epoches</h1>
+<h1>Epochs</h1>
 
 </br>
 <% if user_signed_in? %>
@@ -12,6 +12,9 @@
   <thead class="table-dark">
     <tr>
       <th>Date</th>
+      <th>LST from</th>
+      <th>LST to</th>
+      <th>Duration [h]</th>
       <th>Comment</th>
       <% if user_signed_in? %>
         <th colspan="2"></th>
@@ -23,6 +26,9 @@
     <% @epoches.each do |epoch| %>
       <tr>
         <td><%= link_to epoch.date, epoch %></td>
+        <td><%= epoch.lst_from %></td>
+        <td><%= epoch.lst_to %></td>
+        <td><%= epoch.duration %></td>
         <td><%= epoch.comment %></td>
         <% if user_signed_in? %>
           <td><%= link_to 'Edit', edit_epoch_path(epoch), class: "btn btn-outline-success btn-sm" %></td>

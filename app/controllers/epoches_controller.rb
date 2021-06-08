@@ -37,6 +37,10 @@ class EpochesController < ApplicationController
 
   # PATCH/PUT /epoches/1 or /epoches/1.json
   def update
+
+    @epoch.slug = nil if @slug.date != params[:date]
+    @epoch.update(epoch_params(:date, :lst_to, :lst_from, :comment))
+
     respond_to do |format|
       if @epoch.update(epoch_params)
         format.html { redirect_to @epoch, notice: "Epoch was successfully updated." }
@@ -60,11 +64,11 @@ class EpochesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_epoch
-      @epoch = Epoch.find(params[:id])
+      @epoch = Epoch.friendly.find_by_slug(params[:slug])
     end
 
     # Only allow a list of trusted parameters through.
     def epoch_params
-      params.require(:epoch).permit(:date, :comment)
+      params.require(:epoch).permit(:date, :lst_to, :lst_from, :comment)
     end
 end

@@ -36,6 +36,10 @@ class SourcesController < ApplicationController
 
   # PATCH/PUT /sources/1 or /sources/1.json
   def update
+
+    @source.slug = nil if @source.j2000_name != params[:j2000_name]
+    @source.update(source_params(:j2000_name, :alt_name, :source_class, :s_mojave, :s_alma, :redshift, :ra, :decl, :lst_from, :lst_to, :comment))
+
     respond_to do |format|
       if @source.update(source_params)
         format.html { redirect_to @source, notice: "Source was successfully updated." }
@@ -59,11 +63,11 @@ class SourcesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_source
-      @source = Source.find(params[:id])
+      @source = Source.friendly.find_by_slug(params[:slug])
     end
 
     # Only allow a list of trusted parameters through.
     def source_params
-      params.require(:source).permit(:j2000_name, :alt_name, :source_class, :s_mojave, :s_alma, :redshift, :ra, :decl, :lst_from, :lst_to, :comment)
+      params.require(:source).permit(:j2000_name, :alt_name, :source_class, :s_mojave, :s_alma, :redshift, :ra, :decl, :lst_from, :lst_to, :duration, :comment)
     end
 end

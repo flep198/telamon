@@ -16,13 +16,14 @@
       <th>J2000 Name</th>
       <th>Alt Name</th>
       <th>Class</th>
-      <th>S mojave</th>
-      <th>S alma</th>
+      <th>S 7mm</th>
+      <th>S 14mm</th>
       <th>Redshift</th>
-      <th>Ra</th>
-      <th>Decl</th>
-      <th>Lst from</th>
-      <th>Lst to</th>
+      <th>RA</th>
+      <th>DEC</th>
+      <th>LST from</th>
+      <th>LST to</th>
+      <th>Duration</th>
       <th>Comment</th>
       <% if user_signed_in? %>
         <th colspan="2"></th>
@@ -36,13 +37,14 @@
         <td><%= link_to source.j2000_name, source %></td>
         <td><%= source.alt_name %></td>
         <td><%= source.source_class %></td>
-        <td><%= source.s_mojave %></td>
-        <td><%= source.s_alma %></td>
+        <td><%= source.aver7 %></td>
+        <td><%= source.aver14 %></td>
         <td><%= source.redshift %></td>
         <td><%= source.ra %></td>
         <td><%= source.decl %></td>
         <td><%= source.lst_from %></td>
         <td><%= source.lst_to %></td>
+        <td><%= source.duration %></td>
         <td><%= source.comment %></td>
         <% if user_signed_in? %>
           <td><%= link_to 'Edit', edit_source_path(source), class: "btn btn-outline-success btn-sm" %></td>

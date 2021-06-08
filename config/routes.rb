@@ -5,9 +5,10 @@ Rails.application.routes.draw do
   resources :results do
   	collection { post :import }
   end
-  resources :frequencies, :has_many => :results
-  resources :epoches, :has_many => :results
-  resources :sources, :has_many => :results
-  root 'home#index'
+
+resources :epoches, :path => 'epochs', param: :slug
+resources :frequencies
+resources :sources, param: :slug
+root 'home#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
