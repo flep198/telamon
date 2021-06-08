@@ -36,12 +36,10 @@ class SourcesController < ApplicationController
 
   # PATCH/PUT /sources/1 or /sources/1.json
   def update
-
-    @source.slug = nil if @source.j2000_name != params[:j2000_name]
-    @source.update(source_params(:j2000_name, :alt_name, :source_class, :s_mojave, :s_alma, :redshift, :ra, :decl, :lst_from, :lst_to, :comment))
-
     respond_to do |format|
       if @source.update(source_params)
+        @source.slug = nil if @source.j2000_name != params[:j2000_name]
+        @source.update(source_params)
         format.html { redirect_to @source, notice: "Source was successfully updated." }
         format.json { render :show, status: :ok, location: @source }
       else
@@ -49,13 +47,16 @@ class SourcesController < ApplicationController
         format.json { render json: @source.errors, status: :unprocessable_entity }
       end
     end
+
+    
+
   end
 
   # DELETE /sources/1 or /sources/1.json
   def destroy
     @source.destroy
     respond_to do |format|
-      format.html { redirect_to sources_url, notice: "Source was successfully destroyed." }
+      format.html { redirect_to sources_url, notice: "Source was successfully deleted." }
       format.json { head :no_content }
     end
   end

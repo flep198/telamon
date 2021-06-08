@@ -16,8 +16,8 @@
       <th>J2000 Name</th>
       <th>Alt Name</th>
       <th>Class</th>
-      <th>S 7mm</th>
-      <th>S 14mm</th>
+      <th>14mm Average [mJy]</th>
+      <th>7mm Average [mJy]</th>
       <th>Redshift</th>
       <th>RA</th>
       <th>DEC</th>
@@ -37,8 +37,8 @@
         <td><%= link_to source.j2000_name, source %></td>
         <td><%= source.alt_name %></td>
         <td><%= source.source_class %></td>
-        <td><%= source.aver7 %></td>
-        <td><%= source.aver14 %></td>
+        <td><%= source.aver(19,25) %></td>
+        <td><%= source.aver(36,42) %></td>
         <td><%= source.redshift %></td>
         <td><%= source.ra %></td>
         <td><%= source.decl %></td>

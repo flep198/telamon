@@ -9,8 +9,8 @@
   <thead class="table-dark">
     <tr>
       <th>Class</th>
-      <th>S 14mm [mJy]</th>
-      <th>S 7mm [mJy]</th>
+      <th>14mm Average [mJy]</th>
+      <th>7mm Average [mJy]</th>
       <th>Redshift</th>
       <th>RA (J2000)</th>
       <th>DEC (J2000)</th>
@@ -25,8 +25,8 @@
   <tbody>
       <tr>
         <td><%= @source.source_class %></td>
-        <td><%= @source.s_mojave %></td>
-        <td><%= @source.s_alma %></td>
+        <td><%= @source.aver(19,25)%></td>
+        <td><%= @source.aver(36,42) %></td>
         <td><%= @source.redshift %></td>
         <td><%= @source.ra %></td>
         <td><%= @source.decl %></td>

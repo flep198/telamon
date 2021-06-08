@@ -10,7 +10,7 @@ class Epoch < ApplicationRecord
 
 
 	def duration
-		"#{lst_to}".to_f-"#{lst_from}".to_f
+		self.lst_to.to_f-self.lst_from.to_f
 	end
 end
 

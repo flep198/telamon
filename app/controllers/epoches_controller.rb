@@ -37,12 +37,10 @@ class EpochesController < ApplicationController
 
   # PATCH/PUT /epoches/1 or /epoches/1.json
   def update
-
-    @epoch.slug = nil if @slug.date != params[:date]
-    @epoch.update(epoch_params(:date, :lst_to, :lst_from, :comment))
-
     respond_to do |format|
       if @epoch.update(epoch_params)
+        @epoch.slug = nil if @epoch.date != params[:date]
+        @epoch.update(epoch_params)
         format.html { redirect_to @epoch, notice: "Epoch was successfully updated." }
         format.json { render :show, status: :ok, location: @epoch }
       else
@@ -50,13 +48,15 @@ class EpochesController < ApplicationController
         format.json { render json: @epoch.errors, status: :unprocessable_entity }
       end
     end
+
+    
   end
 
   # DELETE /epoches/1 or /epoches/1.json
   def destroy
     @epoch.destroy
     respond_to do |format|
-      format.html { redirect_to epoches_url, notice: "Epoch was successfully destroyed." }
+      format.html { redirect_to epoches_url, notice: "Epoch was successfully deleted." }
       format.json { head :no_content }
     end
   end
