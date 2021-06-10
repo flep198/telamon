@@ -1,0 +1,164 @@
+<!--creates plot with input data array (columns: MJD, Value, minValue, maxValue, true/false)-->
+<script>
+
+
+//make sure export button works
+
+function download_table_as_csv(table_id, separator = ',') {
+    // Select rows from table_id
+    var rows = document.querySelectorAll('table#' + table_id + ' tr');
+    // Construct csv
+    var csv = [];
+    for (var i = 0; i < rows.length; i++) {
+        var row = [], cols = rows[i].querySelectorAll('td, th');
+        for (var j = 0; j < cols.length; j++) {
+            // Clean innertext to remove multiple spaces and jumpline (break csv)
+            var data = cols[j].innerText.replace(/(\r\n|\n|\r)/gm, '').replace(/(\s\s)/gm, ' ')
+            // Escape double-quote with double-double-quote (see https://stackoverflow.com/questions/17808511/properly-escape-a-double-quote-in-csv)
+            data = data.replace(/"/g, '""');
+            // Push escaped string
+            row.push('"' + data + '"');
+        }
+        csv.push(row.join(separator));
+    }
+    var csv_string = csv.join('\n');
+    // Download it
+    var filename = table_id + '.csv';
+    var link = document.createElement('a');
+    link.style.display = 'none';
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv_string));
+    link.setAttribute('download', filename);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+window.onload=function(){
+
+
+  // make sure export button works
+  if(!!document.getElementById("export_button")){
+        var table_name = document.getElementById("export_button").dataset.table;
+        document.getElementById("export_button").addEventListener("click", function(){download_table_as_csv(table_name)});
+  }
+
+  
+
+  //LIGHTCURVE PLOT
+
+  freq_array = []; // this array saves what freqs will be plotted later
+
+  //query database
+  <% @source.frequencies.distinct.order(:freq_ghz).each do |freq| %>
+    <% @freq_id=freq.id %>
+    <% @data = Result.where(:source_id => @source.id, :frequency_id => @freq_id).map { |r| [r.mjd,r.value_jy,r.error_jy]} %>
+    <% @data=@data.sort_by(&:first) %>
+
+      //print out values for freq
+    var lc_data<%=@freq_id%> = {
+      x: <%= @data.map {|r| r[0]}%>,
+      y: <%= @data.map {|r| r[1]}%>,
+      error_y: {
+        type: "data",
+        array: <%= @data.map {|r| r[2]}%>,
+        visible: true
+      },
+      type: "scatter",
+      name: "<%=Frequency.find(@freq_id).freq_ghz.to_s%> GHz"
+    };
+
+    freq_array.push(lc_data<%=@freq_id%>);
+
+  <% end %>
+
+  var layout = {
+    title: "<%=@source.j2000_name%>",
+
+    xaxis: {
+      title: {
+        text: 'Frequency [GHz]',
+        font: {
+          family: 'Courier New, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      },
+    },
+
+    yaxis: {
+      title: {
+        text: 'Flux Density [Jy]',
+        font: {
+          family: 'Courier New, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      },
+    },
+
+  };
+
+  Plotly.newPlot("lightcurve",freq_array,layout);
+
+
+  //SPECTRUM PLOT
+
+  epoch_array = []; // this array saves what epochs will be plotted later
+
+  //query database
+  <% @source.epoches.distinct.order(:date).each do |epoch| %>
+    <% @epoch_id=epoch.id %>
+    <% @data = Result.where(:source_id => @source.id, :epoch_id => @epoch_id).map { |r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.error_jy]} %>
+    <% @data = @data.sort_by(&:first) %>
+
+    //print out values for epoch
+    var spec_data<%=epoch.id%> = {
+      x: <%= @data.map {|r| r[0]}%>,
+      y: <%= @data.map {|r| r[1]}%>,
+      error_y: {
+        type: "data",
+        array: <%= @data.map {|r| r[2]}%>,
+        visible: true
+      },
+      type: "scatter",
+      name: "<%=Epoch.find(@epoch_id).date.to_s%>"
+    };
+
+    epoch_array.push(spec_data<%=@epoch_id%>);
+
+  <% end %>
+
+  var layout = {
+    title: "<%=@source.j2000_name%>",
+
+    xaxis: {
+      title: {
+        text: 'MJD',
+        font: {
+          family: 'Courier New, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      },
+    },
+
+    yaxis: {
+      title: {
+        text: 'Flux Density [Jy]',
+        font: {
+          family: 'Courier New, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      },
+    },
+
+
+  };
+
+
+  Plotly.newPlot("spectrum",epoch_array,layout);
+
+}
+</script>

@@ -9,7 +9,7 @@
 
 
 <div class="container">
-    <div class="row row-cols-2">
+    <div class="row row-cols-2">     
 
 		<% @epoch.sources.distinct.order(:j2000_name).each do |source| %>
               
@@ -20,8 +20,15 @@
 
             <!-- create plot -->
             <div class="col">
-              Spectrum of <%= link_to source.j2000_name, source %>
-				      <%= render 'create_epoch_spectrum', data: @data, source_id: @source_id %>
+              <div class="card">
+                <div class="card-header">
+                  <%= link_to source.j2000_name, source %>
+                </div>
+                <div class="card-body">
+				          <%= render 'create_epoch_spectrum', data: @data, source_id: @source_id %>
+                </div>
+              </div>
+              <br/>
             </div>
 
 		<%end%>

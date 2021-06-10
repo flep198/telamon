@@ -6,6 +6,7 @@
 //= require_tree .
 //= require csv_table_export
 //= require self
+//= require jquery
 
 import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
