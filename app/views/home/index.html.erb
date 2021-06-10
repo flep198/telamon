@@ -51,15 +51,13 @@
           <%end%>
     		<%end%>
 
-      <% if increase_freqs.any? %>
-      <%= link_to source.j2000_name, source %> increased by over 20% at <%= increase_freqs.map(&:freq_ghz).sort %> GHz compared to last detection on <%= epoch_before.date %> <br/>
-      <% end %>
-      <% if decrease_freqs.any? %>
-      <%= link_to source.j2000_name, source %> decreased by over 20% at <%= decrease_freqs.map(&:freq_ghz).sort %> GHz compared to last detection on <%= epoch_before.date %> <br/>
-      <% end %>
-    	<% else %>
-    		<%= link_to source.j2000_name, source %> detected for the first time!</br>
-    	<%end%>
+        <% if increase_freqs.any? %>
+          <%= link_to source.j2000_name, source %> increased by over 20% at <%= increase_freqs.map(&:freq_ghz).sort %> GHz compared to last detection on <%= epoch_before.date %> <br/>
+        <% end %>
+        <% if decrease_freqs.any? %>
+          <%= link_to source.j2000_name, source %> decreased by over 20% at <%= decrease_freqs.map(&:freq_ghz).sort %> GHz compared to last detection on <%= epoch_before.date %> <br/>
+        <% end %>
+      <%end%>
     <%end%>
   </div>
 </div>

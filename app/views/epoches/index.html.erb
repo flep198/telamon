@@ -23,7 +23,7 @@
   </thead>
 
   <tbody>
-    <% @epoches.each do |epoch| %>
+    <% @epoches.order("date").reverse_order.each do |epoch| %>
       <tr>
         <td><%= link_to epoch.date, epoch %></td>
         <td><%= epoch.lst_from %></td>
@@ -38,5 +38,4 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
