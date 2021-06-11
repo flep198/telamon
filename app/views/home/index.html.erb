@@ -42,8 +42,11 @@
 
     	<% if(epoch_before != nil) %>
 
-        <% increase_freqs = Array.new %>
-        <% decrease_freqs = Array.new %>
+        <% values7 = Array.new %>
+        <% values14 = Array.new %>
+
+        <% values7_before = Array.new %>
+        <% values14_before = Array.new %>
 
     		<% source.frequencies.distinct.each do |freq| %>
 
@@ -51,28 +54,47 @@
     			<% value_before = @results.where(:epoch_id => epoch_before.id, :frequency_id => freq.id, :source_id => source.id).average(:value_jy)%>
 
           <%if value_before != nil and value_now != nil %>
-            <% if value_now>1.2*value_before %>
-              <% increase_freqs.push(freq) %>
-            <% elsif value_now<0.9*value_before%>
-              <% decrease_freqs.push(freq) %>
-            <%end%>
-          <%end%>
+            <% if freq.freq_ghz >19 and freq.freq_ghz<25 %>
+              <% values14.push(value_now)%>
+              <% values14_before.push(value_before)%>
+            <% elsif freq.freq_ghz >36 and freq.freq_ghz<44%>
+              <% values7.push(value_now)%>
+              <% values7_before.push(value_before)%>
+            <% end %>
+          <% end %>
     		<%end%>
 
-        <% if increase_freqs.any? %>
-          <%= link_to source.j2000_name, source %> increased by over 20% at <%= increase_freqs.map(&:freq_ghz).sort %> GHz compared to last detection on <%= epoch_before.date %> <br/>
+        <% aver14=values14.inject(0.0) { |sum, el| sum + el } / values14.size %>        
+        <% aver14_before=values14_before.inject(0.0) { |sum, el| sum + el } / values14_before.size %>
+
+
+        <% aver7=values7.inject(0.0) { |sum, el| sum + el } / values7.size %>
+        <% aver7_before=values7_before.inject(0.0) { |sum, el| sum + el } / values7_before.size %>
+        
+
+        <% if aver14>1.1*aver14_before and aver7>1.1*aver7_before%>
+          <%= link_to source.j2000_name, source %> increased by <%= (((aver14+aver7) / (aver14_before+aver7_before) - 1)*100).round.to_s%>%  at 7mm and 14mm compared to last detection on <%= epoch_before.date %> <br/>
+        <% else %>
+          <% if aver14>1.1*aver14_before %>
+            <%= link_to source.j2000_name, source %> increased by <%= ((aver14 / aver14_before - 1)*100).round.to_s%>%  at 14mm compared to last detection on <%= epoch_before.date %> <br/>
+          <% end%>
+          <% if aver7>1.1*aver7_before %>
+            <%= link_to source.j2000_name, source %> increased by <%= ((aver7 / aver7_before - 1)*100).round.to_s%>%  at 7mm compared to last detection on <%= epoch_before.date %> <br/>
+          <% end%>
         <% end %>
-        <% if decrease_freqs.any? %>
-          <%= link_to source.j2000_name, source %> decreased by over 20% at <%= decrease_freqs.map(&:freq_ghz).sort %> GHz compared to last detection on <%= epoch_before.date %> <br/>
+
+        <% if aver14<0.9*aver14_before and aver7<0.9*aver7_before %>
+          <%= link_to source.j2000_name, source %> decreased by <%= (((aver7_before+aver14_before) / (aver14+aver7) - 1)*100).round.to_s%>%  at 7mm and 14mm compared to last detection on <%= epoch_before.date %> <br/>
+        <% else %>
+          <% if aver14<0.9*aver14_before %>
+            <%= link_to source.j2000_name, source %> decreased by <%= ((aver14_before / aver14 - 1)*100).round.to_s%>%  at 14mm compared to last detection on <%= epoch_before.date %> <br/>  
+          <% end %>      
+          <% if aver7<0.9*aver7_before %>
+            <%= link_to source.j2000_name, source %> decreased by <%= ((aver7_before / aver7 - 1)*100).round.to_s%>% at 7mm compared to last detection on <%= epoch_before.date %> <br/>
+          <% end %>
         <% end %>
+
       <%end%>
     <%end%>
   </div>
 </div>
-
-
-
-
-
-
-
