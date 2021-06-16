@@ -65,6 +65,9 @@ window.onload=function(){
         visible: true
       },
       type: "scatter",
+      <% if !user_signed_in?%>
+      hoverinfo: 'none',
+      <%end%>
       name: "<%=Frequency.find(@freq_id).freq_ghz.to_s%> GHz"
     };
 
@@ -122,6 +125,9 @@ window.onload=function(){
         visible: true
       },
       type: "scatter",
+      <% if !user_signed_in?%>
+      hoverinfo: 'none',
+      <%end%>
       name: "<%=Epoch.find(@epoch_id).date.to_s%>"
     };
 
