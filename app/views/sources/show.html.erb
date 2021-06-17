@@ -26,8 +26,8 @@
               <th>Redshift</th>
               <th>RA (J2000)</th>
               <th>DEC (J2000)</th>
-              <th>LST from</th>
-              <th>LST to</th>
+              <th>NED</th>
+              <th>SIMBAD</th>
               <th>Comment</th>
               <% if user_signed_in?%>
               <th></th>
@@ -43,11 +43,21 @@
                 <td><%= @source.redshift %></td>
                 <td><%= @source.ra %></td>
                 <td><%= @source.decl %></td>
-                <td><%= @source.lst_from %></td>
-                <td><%= @source.lst_to %></td>
+                <% if @source.alt_name %>
+                  <td><%= link_to image_tag("ned", width: "30"), "https://ned.ipac.caltech.edu/byname?objname="+@source.alt_name.gsub("+","%2B")+"&hconst=67.8&omegam=0.308&omegav=0.692&wmap=4&corr_z=1"%></td>
+                  <td><%= link_to image_tag("simbad",height: "30"), "http://simbad.harvard.edu/simbad/sim-basic?submit=SIMBAD+search&Ident="+@source.alt_name.gsub("+","%2B")%></td>
+                <% else %>
+                  <td><%= link_to image_tag("ned", width: "30"), "https://ned.ipac.caltech.edu/byname?objname="+@source.j2000_name.gsub("+","%2B")+"&hconst=67.8&omegam=0.308&omegav=0.692&wmap=4&corr_z=1"%></td>
+                  <td><%= link_to image_tag("simbad",height: "30"), "http://simbad.harvard.edu/simbad/sim-basic?submit=SIMBAD+search&Ident="+@source.j2000_name.gsub("+","%2B")%></td>
+                <% end %>
                 <td><%= @source.comment %></td>
+                <% if user_signed_in? %>
+                  <td><%= link_to 'Edit', edit_source_path(source), class: "btn btn-outline-success btn-sm" %></td>
+                  <td><%= link_to 'Delete', source, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
+                <%end%>
+                    <td><%= @source.comment %></td>
                 <% if user_signed_in?%>
-                <td><%= link_to 'Edit', edit_source_path(@source), class: "btn btn-outline-success" %></td>
+                    <td><%= link_to 'Edit', edit_source_path(@source), class: "btn btn-outline-success" %></td>
                 <% end %>
               </tr>
           </tbody>
