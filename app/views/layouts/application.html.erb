@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Effelsberg</title>
+    <title>TELAMON Database</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>    
+    <%= favicon_link_tag asset_path("favicon.ico")%>
 
     <%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %> 
     <%= javascript_include_tag "https://cdn.plot.ly/plotly-2.0.0.min.js" %>
