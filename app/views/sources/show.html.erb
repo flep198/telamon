@@ -29,7 +29,9 @@
               <th>LST from</th>
               <th>LST to</th>
               <th>Comment</th>
+              <% if user_signed_in?%>
               <th></th>
+              <% end %>
             </tr>
           </thead>
 
@@ -44,7 +46,9 @@
                 <td><%= @source.lst_from %></td>
                 <td><%= @source.lst_to %></td>
                 <td><%= @source.comment %></td>
+                <% if user_signed_in?%>
                 <td><%= link_to 'Edit', edit_source_path(@source), class: "btn btn-outline-success" %></td>
+                <% end %>
               </tr>
           </tbody>
         </table>
