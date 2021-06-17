@@ -35,40 +35,43 @@
 	</div>
 </div>
 
+<% if user_signed_in? %>
 
-<button id="export_button" class="btn btn-success" data-table='export_<%=@epoch.date.to_s.gsub!('-','_')%>'>Export to CSV File</button>
-<p></p>
-<table class="table table-hover" id="export_<%=@epoch.date.to_s.gsub!('-','_')%>">
-    <thead class="table-dark">
-        <tr>
-  	      <th>Source Name</th>
-          <th>Frequency [GHz]</th>
-          <th>Flux Density [Jy]</th>
-          <th>Error [Jy]</th>
-          <th>MJD</th>
-          <th>Scan Number</th>
-          <th>Elevation</th>
-          <% if user_signed_in? %>
-            <th colspan="2"></th>
-          <% end %>
-        </tr>
-    </thead>
-
-    <tbody>
-        <% @epoch.results.order(:mjd).each do |result| %>
+  <button id="export_button" class="btn btn-success" data-table='export_<%=@epoch.date.to_s.gsub!('-','_')%>'>Export to CSV File</button>
+  <p></p>
+  <table class="table table-hover" id="export_<%=@epoch.date.to_s.gsub!('-','_')%>">
+      <thead class="table-dark">
           <tr>
-            <td><%= Source.where(id: result.source_id).first.j2000_name %></td>
-            <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>
-            <td><%= result.value_jy %></td>
-            <td><%= result.error_jy %></td>
-            <td><%= result.mjd %></td>
-            <td><%= result.scan_nr %></td>
-            <td><%= result.elevation %></td>
+    	      <th>Source Name</th>
+            <th>Frequency [GHz]</th>
+            <th>Flux Density [Jy]</th>
+            <th>Error [Jy]</th>
+            <th>MJD</th>
+            <th>Scan Number</th>
+            <th>Elevation</th>
             <% if user_signed_in? %>
-              <td><%= link_to 'Edit', edit_result_path(result), class: "btn btn-outline-success" %></td>
-              <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+              <th colspan="2"></th>
             <% end %>
           </tr>
-        <% end %>
-    </tbody>
-</table>
+      </thead>
+
+      <tbody>
+          <% @epoch.results.order(:mjd).each do |result| %>
+            <tr>
+              <td><%= Source.where(id: result.source_id).first.j2000_name %></td>
+              <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>
+              <td><%= result.value_jy %></td>
+              <td><%= result.error_jy %></td>
+              <td><%= result.mjd %></td>
+              <td><%= result.scan_nr %></td>
+              <td><%= result.elevation %></td>
+              <% if user_signed_in? %>
+                <td><%= link_to 'Edit', edit_result_path(result), class: "btn btn-outline-success" %></td>
+                <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+              <% end %>
+            </tr>
+          <% end %>
+      </tbody>
+  </table>
+
+<%end%>

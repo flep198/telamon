@@ -21,8 +21,8 @@
           <thead class="table-dark">
             <tr>
               <th>Class</th>
-              <th>14mm Average [mJy]</th>
-              <th>7mm Average [mJy]</th>
+              <th>Average 14mm  [mJy]</th>
+              <th>Average 7mm [mJy]</th>
               <th>Redshift</th>
               <th>RA (J2000)</th>
               <th>DEC (J2000)</th>
@@ -36,7 +36,7 @@
           <tbody>
               <tr>
                 <td><%= @source.source_class %></td>
-                <td><%= @source.aver(19,25)%></td>
+                <td><%= @source.aver(19,25) %></td>
                 <td><%= @source.aver(36,44) %></td>
                 <td><%= @source.redshift %></td>
                 <td><%= @source.ra %></td>

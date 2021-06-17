@@ -42,35 +42,17 @@
 
     	<% if(epoch_before != nil) %>
 
-        <% values7 = Array.new %>
-        <% values14 = Array.new %>
-
-        <% values7_before = Array.new %>
-        <% values14_before = Array.new %>
-
-    		<% source.frequencies.distinct.each do |freq| %>
-
-    			<% value_now = @results.where(:epoch_id => latest_epoch.id, :frequency_id => freq.id, :source_id => source.id).average(:value_jy)%>
-    			<% value_before = @results.where(:epoch_id => epoch_before.id, :frequency_id => freq.id, :source_id => source.id).average(:value_jy)%>
-
-          <%if value_before != nil and value_now != nil %>
-            <% if freq.freq_ghz >19 and freq.freq_ghz<25 %>
-              <% values14.push(value_now)%>
-              <% values14_before.push(value_before)%>
-            <% elsif freq.freq_ghz >36 and freq.freq_ghz<44%>
-              <% values7.push(value_now)%>
-              <% values7_before.push(value_before)%>
-            <% end %>
-          <% end %>
-    		<%end%>
-
-        <% aver14=values14.inject(0.0) { |sum, el| sum + el } / values14.size %>        
-        <% aver14_before=values14_before.inject(0.0) { |sum, el| sum + el } / values14_before.size %>
+        <% aver14=source.aver(19,25,latest_epoch.date).to_f %>        
+        <% aver14_before=source.aver(19,25,epoch_before.date).to_f %>
 
 
-        <% aver7=values7.inject(0.0) { |sum, el| sum + el } / values7.size %>
-        <% aver7_before=values7_before.inject(0.0) { |sum, el| sum + el } / values7_before.size %>
-        
+        <% aver7=source.aver(36,44,latest_epoch.date).to_f %>        
+        <% aver7_before=source.aver(36,44,epoch_before.date).to_f %>
+
+        <% if (aver7==0 or aver7_before==0) %>
+          <% aver7=1.0 %>
+          <% aver7_before=1.0 %>
+        <% end %>
 
         <% if aver14>1.1*aver14_before and aver7>1.1*aver7_before%>
           <%= link_to source.j2000_name, source %> increased by <%= (((aver14+aver7) / (aver14_before+aver7_before) - 1)*100).round.to_s%>%  at 7mm and 14mm compared to last detection on <%= epoch_before.date %> <br/>
