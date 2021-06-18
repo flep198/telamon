@@ -121,7 +121,7 @@ id=Source.where(j2000_name: "K3-50A").first.id
 Source.update(id,alt_name: "BL Lac", ra: "20:01:45.6",decl: "33:32:42")
 id=Source.where(j2000_name: "NGC7027").first.id
 Source.update(id, ra: "21:07:01.57",decl: "42:14:10.47")
-id=Source.where(j2000_name: "OJ286").first.id
+id=Source.where(j2000_name: "OJ287").first.id
 Source.update(id,redshift: 0.306, ra: "08:54:48.87",decl: "20:06:30.64")
 id=Source.where(j2000_name: "W3OH").first.id
 Source.update(id,alt_name: "W3(OH)",ra: "02:27:04.1",decl: "61:52:22")
