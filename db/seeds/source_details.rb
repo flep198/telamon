@@ -68,3 +68,62 @@ id=Source.where(j2000_name: "2158-3013").first.id
 Source.update(id,alt_name: "PKS 2155-304",source_class: "HBL",redshift: 0.116,ra: "21:58:52.07",decl: "-30:13:32.1")
 id=Source.where(j2000_name: "2347+5142").first.id
 Source.update(id,alt_name: "1ES 2344+514",source_class: "HBL*",redshift: 0.044,ra: "23:47:04.83",decl: "51:42:17.8")
+
+
+
+#bad weather sources
+id=Source.where(j2000_name: "0235+164").first.id
+Source.update(id,alt_name: "PKS 0235+164",redshift: 0.94,ra: "02:38:38.9",decl: "16:37:00")
+id=Source.where(j2000_name: "0336-019").first.id
+Source.update(id,alt_name: "CTA 26",redshift: 0.852,ra: "03:39:30.938",decl: "-01:46:35.804")
+id=Source.where(j2000_name: "0539-2839").first.id
+Source.update(id,alt_name: "PKS 0537-286",ra: "05:39:54.28",decl: "-28:39:55.95")
+id=Source.where(j2000_name: "1159+2914").first.id
+Source.update(id,alt_name: "GB6 J1159+2914",redshift: 0.72475,ra: "11:59:31.83",decl: "29:14:43.83")
+id=Source.where(j2000_name: "1224+2122").first.id
+Source.update(id,alt_name: "PKS 1222+21",redshift: 0.43383,ra: "12:24:54.46",decl: "21:22:46.39")
+id=Source.where(j2000_name: "1259+0136").first.id
+Source.update(id,alt_name: "PKS 1256+018",ra: "12:59:08.4",decl: "01:36:07")
+id=Source.where(j2000_name: "1504+1029").first.id
+Source.update(id,alt_name: "PKS 1502+106",redshift: 1.83795,ra: "15:04:24.98",decl: "10:29:39.20")
+id=Source.where(j2000_name: "1512-0905").first.id
+Source.update(id,alt_name: "5BZQ J1512-0905",redshift: 0.36,ra: "15:12:50.53",decl: "-09:05:59.83")
+id=Source.where(j2000_name: "1749+096").first.id
+Source.update(id,alt_name: "PKS 1749+096",redshift: 0.322,ra: "17:51:32.819",decl: "09:39:00.728")
+id=Source.where(j2000_name: "2128-123").first.id
+Source.update(id,alt_name: "PKS 2128-12",redshift: 0.501,ra: "21:31:35.262",decl: "-12:07:04.796")
+
+
+#miscellaneous + Calibrators
+id=Source.where(j2000_name: "3C123").first.id
+Source.update(id,ra: "04:37:04.38",decl: "29:40:13.82")
+id=Source.where(j2000_name: "3C138").first.id
+Source.update(id,ra: "05:21:09.89",decl: "16:38:22.05")
+id=Source.where(j2000_name: "3C147").first.id
+Source.update(id,ra: "05:42:36.14",decl: "49:51:07.23")
+id=Source.where(j2000_name: "3C161").first.id
+Source.update(id,ra: "06:27:10.1",decl: "-05:53:06")
+id=Source.where(j2000_name: "3C279").first.id
+Source.update(id,ra: "12:56:11.17",decl: "-05:47:21.53")
+id=Source.where(j2000_name: "3C286").first.id
+Source.update(id,ra: "13:31:08.29",decl: "30:30:32.96")
+id=Source.where(j2000_name: "3C295").first.id
+Source.update(id,ra: "14:11:20.467",decl: "52:12:09.52")
+id=Source.where(j2000_name: "3C345").first.id
+Source.update(id,ra: "16:42:58.81",decl: "39:48:37.00")
+id=Source.where(j2000_name: "3C48").first.id
+Source.update(id,ra: "01:37:41.30",decl: "33:09:35")
+id=Source.where(j2000_name: "3C84").first.id
+Source.update(id,ra: "03:19:48.16",decl: "41:30:42.11")
+id=Source.where(j2000_name: "BLLAC").first.id
+Source.update(id,alt_name: "BL Lac",redshift: 0.069, ra: "22:02:43.29",decl: "42:16:39.98")
+id=Source.where(j2000_name: "K3-50A").first.id
+Source.update(id,alt_name: "BL Lac", ra: "20:01:45.6",decl: "33:32:42")
+id=Source.where(j2000_name: "NGC7027").first.id
+Source.update(id, ra: "21:07:01.57",decl: "42:14:10.47")
+id=Source.where(j2000_name: "OJ286").first.id
+Source.update(id,redshift: 0.306, ra: "08:54:48.87",decl: "20:06:30.64")
+id=Source.where(j2000_name: "W3OH").first.id
+Source.update(id,alt_name: "W3(OH)",ra: "02:27:04.1",decl: "61:52:22")
+
+
