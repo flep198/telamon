@@ -69,6 +69,6 @@ class SourcesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def source_params
-      params.require(:source).permit(:j2000_name, :alt_name, :source_class, :s_mojave, :s_alma, :redshift, :ra, :decl, :lst_from, :lst_to, :duration, :comment)
+      params.require(:source).permit(:j2000_name, :alt_name, :source_class, :s_mojave, :s_alma, :redshift, :ra, :decl, :lst_from, :lst_to, :duration, :comment, :tevcat_url)
     end
 end

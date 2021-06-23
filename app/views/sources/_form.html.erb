@@ -43,14 +43,19 @@
     <%= form.text_field :redshift, class: "form-control" %>
   </div>
 
-  <div class="col-md-6">
+  <div class="col-md-4">
     <%= form.label :ra, class: "form-label" %>
     <%= form.text_field :ra, class: "form-control" %>
   </div>
 
-  <div class="col-md-6">
+  <div class="col-md-4">
     <%= form.label :decl, class: "form-label" %>
     <%= form.text_field :decl, class: "form-control" %>
+  </div>
+
+  <div class="col-md-4">
+    <%= form.label "TeVCat Link", class: "form-label" %>
+    <%= form.text_field :tevcat_url, class: "form-control" %>
   </div>
 
   <div class="col-md-4">

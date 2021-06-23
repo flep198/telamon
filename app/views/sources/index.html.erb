@@ -11,7 +11,7 @@
 
 
 <table class="table table-hover table-striped table-bordered">
-  <thead class="table-dark">
+  <thead class="table-dark text-center">
     <tr>
       <th>J2000 Name</th>
       <th>Alt Name</th>
@@ -23,7 +23,7 @@
       <th>DEC (J2000)</th>
       <th>NED</th>
       <th>SIMBAD</th>
-      <th>Comment</th>
+      <th>TeVCat</th>
       <% if user_signed_in? %>
         <th colspan="2"></th>
       <%end%>
@@ -48,7 +48,7 @@
           <td><%= link_to(image_tag("ned", width: "30"), "https://ned.ipac.caltech.edu/byname?objname="+source.j2000_name.gsub("+","%2B")+"&hconst=67.8&omegam=0.308&omegav=0.692&wmap=4&corr_z=1",target: "_blank", rel:"noopener noreferrer")%></td>
           <td><%= link_to(image_tag("simbad",height: "30"), "http://simbad.harvard.edu/simbad/sim-basic?submit=SIMBAD+search&Ident="+source.j2000_name.gsub("+","%2B"),target: "_blank", rel:"noopener noreferrer")%></td>
         <% end %>
-        <td><%= source.comment %></td>
+        <td><%=if source.tevcat_url != "http://tevcat2.uchicago.edu/" then link_to(image_tag("tevcat",height: "25"), source.tevcat_url,target: "_blank", rel:"noopener noreferrer") end%></td>
         <% if user_signed_in? %>
           <td><%= link_to 'Edit', edit_source_path(source), class: "btn btn-outline-success btn-sm" %></td>
           <td><%= link_to 'Delete', source, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
