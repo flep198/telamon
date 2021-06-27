@@ -54,6 +54,11 @@
           <% aver7_before=1.0 %>
         <% end %>
 
+        <% if (aver14==0 or aver14_before==0) %>
+          <% aver14=1.0 %>
+          <% aver14_before=1.0 %>
+        <% end %>
+
         <% if aver14>1.1*aver14_before and aver7>1.1*aver7_before%>
           <%= link_to source.j2000_name, source %> increased by <%= (((aver14+aver7) / (aver14_before+aver7_before) - 1)*100).round.to_s%>%  at 7mm and 14mm compared to last detection on <%= epoch_before.date %> <br/>
         <% else %>
