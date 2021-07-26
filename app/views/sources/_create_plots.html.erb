@@ -142,7 +142,7 @@ window.onload=function(){
         visible: true
       },
       type: "scatter",
-      <% if !user_signed_in?%>
+      <% if !user_signed_in?%> //show hoverinfo only if user is signed in
       hoverinfo: 'none',
       <%end%>
       name: "<%=Epoch.find(@epoch_id).date.to_s%>"
