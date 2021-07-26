@@ -183,5 +183,54 @@ window.onload=function(){
 
   Plotly.newPlot("spectrum",epoch_array,layout);
 
+  //Spectral Index Plot
+
+    var speci_data = {
+      x: <%= getSpectralIndices(@source)[0]%>,
+      y: <%= getSpectralIndices(@source)[1]%>,
+      error_y: {
+        type: "data",
+        array: <%= getSpectralIndices(@source)[2] %>,
+        visible: true
+      },
+      type: "scatter",
+      <% if !user_signed_in?%> //show hoverinfo only if user is signed in
+      hoverinfo: 'none',
+      <%end%>
+      name: "Spectral Index"
+    };
+
+
+  var layout = {
+    title: "<%=@source.j2000_name%>",
+
+    xaxis: {
+      title: {
+        text: 'MJD',
+        font: {
+          family: 'Courier New, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      },
+    },
+
+    yaxis: {
+      title: {
+        text: 'Spectral Index',
+        font: {
+          family: 'Courier New, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      },
+    },
+
+
+  };
+
+
+  Plotly.newPlot("speci",[speci_data],layout);
+
 }
 </script>
