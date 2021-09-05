@@ -76,8 +76,8 @@ id=Source.where(j2000_name: "0235+164").first.id
 Source.update(id,alt_name: "PKS 0235+164",redshift: 0.94,ra: "02:38:38.9",decl: "16:37:00")
 id=Source.where(j2000_name: "0336-019").first.id
 Source.update(id,alt_name: "CTA 26",redshift: 0.852,ra: "03:39:30.938",decl: "-01:46:35.804")
-id=Source.where(j2000_name: "0539-2839").first.id
-Source.update(id,alt_name: "PKS 0537-286",ra: "05:39:54.28",decl: "-28:39:55.95")
+#id=Source.where(j2000_name: "0539-2839").first.id
+#Source.update(id,alt_name: "PKS 0537-286",ra: "05:39:54.28",decl: "-28:39:55.95")
 id=Source.where(j2000_name: "1159+2914").first.id
 Source.update(id,alt_name: "GB6 J1159+2914",redshift: 0.72475,ra: "11:59:31.83",decl: "29:14:43.83")
 id=Source.where(j2000_name: "1224+2122").first.id
