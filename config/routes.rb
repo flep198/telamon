@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+mount Lockup::Engine, at: '/lockup'
+
   devise_for :users
   get '/results/upload'
   resources :results do
