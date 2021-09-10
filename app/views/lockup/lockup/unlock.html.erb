@@ -1,0 +1,41 @@
+ <div class="row">
+  <div class="col-md-4">
+  </div>
+  <div class="col-md-4">
+    <%= image_tag("telamon_logo_white", class: "img-fluid mx-auto", width: "100%") %>    
+  </div>
+  <div class="col-md-4">
+  </div>
+</div>
+
+
+<center>
+</br>
+<h2>Welcome! Please enter password:</h2>
+</br>
+</center>
+
+<% if @wrong %>
+  <div class="hmm">
+    <h3>Hmm&hellip; that doesn&#8217;t seem right. Try again?</h3>
+  </div>
+<% end %>
+<%= form_for :lockup, url: { action: 'unlock' } do |form| %>
+  <% unless @wrong == true %>
+    <p><%= form.password_field "codeword", placeholder: "password", autofocus: true %></p>
+  <% else %>
+    <p><%= form.password_field "codeword", value: @codeword, class: 'nope', autofocus: true %></p>
+  <% end %>
+    
+  <% if lockup_hint %>
+    <p id='hint_icon'>?</p>
+    <p id='hint'><%= lockup_hint %></p>
+  <% end %>
+  <% if params[:return_to].present? %>
+    <%= form.hidden_field "return_to", value: params[:return_to] %>
+  <% elsif @return_to.present? %>
+    <%= form.hidden_field "return_to", value: @return_to %>
+  <% end %>
+    
+  <p><%= button_tag "Go" %></p>
+<% end %>
