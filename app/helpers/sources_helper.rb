@@ -17,7 +17,7 @@ module SourcesHelper
   			mjd = @data.map{|r| r[3]}
   			mjd_aver= mjd.inject{ |sum, el| sum + el }.to_f / mjd.size #calculate Average MJD
 
-  			if(x.size >1)
+  			if(x.size >2)
   				#do linear fit
   				lineFit = LineFit.new
   				lineFit.setData(x,y,yerr)
