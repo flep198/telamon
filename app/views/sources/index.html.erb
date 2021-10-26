@@ -16,6 +16,7 @@
       <th>J2000 Name</th>
       <th>Alt Name</th>
       <th>Class</th>
+      <th>Ø 20mm [mJy]</th>
       <th>Ø 14mm [mJy]</th>
       <th>Ø 7mm [mJy]</th>
       <th>Redshift</th>
@@ -36,6 +37,7 @@
         <td><%= link_to source.j2000_name, source %></td>
         <td><%= source.alt_name %></td>
         <td><%= source.source_class %></td>
+        <td><%= source.aver(14,17) %></td>
         <td><%= source.aver(19,25) %></td>
         <td><%= source.aver(36,44) %></td>
         <td><%= source.redshift %></td>
