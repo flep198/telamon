@@ -9,13 +9,38 @@
 </br>
 <%end%>
 
+<!--Checkboxes for subsample filtering-->
+<div class="form-check form-switch form-check-inline">
+  <input class="form-check-input" type="checkbox" id="SampleI" name="SampleI" value="yes" checked>
+  <label class="form-check-label" for="SampleI"> Sample I
+</div>
+<div class="form-check form-switch form-check-inline">
+  <input class="form-check-input" type="checkbox" id="SampleII" name="SampleII" value="yes" checked>
+  <label class="form-check-label" for="SampleII"> Sample II
+</div>
+<div class="form-check form-switch form-check-inline">
+  <input class="form-check-input" type="checkbox" id="BadWeather" name="BadWeather" value="yes" checked> 
+  <label class="form-check-label" for="BadWeather"> Bad Weather
+</div>
+<div class="form-check form-switch form-check-inline">
+  <input class="form-check-input" type="checkbox" id="Calibrator" name="Calibrator" value="yes" checked> 
+  <label class="form-check-label" for="Calibrator"> Calibrator
+</div>
+<div class="form-check form-switch form-check-inline">
+  <input class="form-check-input" type="checkbox" id="Dropped" name="Dropped" value="yes" checked>
+  <label class="form-check-label" for="Dropped"> Dropped
+</div>
+</br>
+</br>
+
 <div class="table-responsive">
-<table class="table table-hover table-striped table-bordered">
+<table id="sourceTable" class="table table-hover table-striped table-bordered">
   <thead class="table-dark text-center">
     <tr>
       <th>J2000 Name</th>
       <th>Alt Name</th>
       <th>Class</th>
+      <th>Category</th>
       <th>Ø 20mm [mJy]</th>
       <th>Ø 14mm [mJy]</th>
       <th>Ø 7mm [mJy]</th>
@@ -37,6 +62,7 @@
         <td><%= link_to source.j2000_name, source %></td>
         <td><%= source.alt_name %></td>
         <td><%= source.source_class %></td>
+        <td><%= source.category %></td>
         <td><%= source.aver(14,17) %></td>
         <td><%= source.aver(19,25) %></td>
         <td><%= source.aver(36,44) %></td>

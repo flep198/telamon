@@ -51,4 +51,39 @@ window.onload=function(){
             .forEach(tr => tbody.appendChild(tr) );
     })));
 
-};
+
+    //checkbox for source table
+
+    var checkboxSampleI = document.querySelector("input[name=SampleI]");
+    var checkboxSampleII = document.querySelector("input[name=SampleII]");
+    var checkboxBadWeather = document.querySelector("input[name=BadWeather]");
+    var checkboxCalibrator = document.querySelector("input[name=Calibrator]");
+    var checkboxDropped = document.querySelector("input[name=Dropped]");
+
+    function CategoryFilterTable(checkbox,CategoryName){
+        var table, tr, td, i, txtValue;
+        table = document.getElementById("sourceTable");
+        tr = table.getElementsByTagName("tr");
+        
+        for (i=0; i<tr.length; i++){
+            td = tr[i].getElementsByTagName("td")[3];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                    if (!checkbox.checked && txtValue==CategoryName){
+                        tr[i].style.display="none";
+                    } else {
+                        if(txtValue==CategoryName){
+                            tr[i].style.display=""; 
+                        }                        
+                    }            
+            }
+        }
+    };
+    
+    checkboxSampleI.addEventListener('change', function(){CategoryFilterTable(this,"Sample I")});
+    checkboxSampleII.addEventListener('change', function(){CategoryFilterTable(this,"Sample II")});
+    checkboxBadWeather.addEventListener('change', function(){CategoryFilterTable(this,"Bad Weather")});
+    checkboxCalibrator.addEventListener('change', function(){CategoryFilterTable(this,"Calibrator")});
+    checkboxDropped.addEventListener('change', function(){CategoryFilterTable(this,"dropped")});
+
+} 

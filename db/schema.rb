@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_23_095156) do
+ActiveRecord::Schema.define(version: 2021_11_06_170934) do
 
   create_table "epoches", force: :cascade do |t|
     t.date "date"
@@ -74,6 +74,7 @@ ActiveRecord::Schema.define(version: 2021_06_23_095156) do
     t.string "slug"
     t.float "duration"
     t.string "tevcat_url", default: "http://tevcat2.uchicago.edu/"
+    t.string "category", default: "Sample I"
     t.index ["slug"], name: "index_sources_on_slug", unique: true
   end
 

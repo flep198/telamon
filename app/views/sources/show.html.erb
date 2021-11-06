@@ -34,6 +34,7 @@
           <div class="col">
               <p><strong>RA (J2000):</strong> <%= @source.ra %></p>
               <p><strong>DEC (J2000):</strong> <%= @source.decl %></p>
+              <p><strong>Category:</strong><%= @source.category %></p>
               <p><strong>External:</strong> <% if @source.alt_name %>
                   <%= link_to(image_tag("ned", width: "30"), "https://ned.ipac.caltech.edu/byname?objname="+@source.alt_name.gsub("+","%2B")+"&hconst=67.8&omegam=0.308&omegav=0.692&wmap=4&corr_z=1",target: "_blank", rel:"noopener noreferrer")%>
                   <%= link_to(image_tag("simbad",height: "30"), "http://simbad.harvard.edu/simbad/sim-basic?submit=SIMBAD+search&Ident="+@source.alt_name.gsub("+","%2B"),target: "_blank", rel:"noopener noreferrer")%>
