@@ -21,6 +21,7 @@ gem 'friendly_id', '~> 5.4', '>= 5.4.2'
 gem 'plotly-js', '~> 1.20', '>= 1.20.5.4'
 gem 'linefit', '~> 0.3.2'
 gem 'lockup'
+gem "font-awesome-rails"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

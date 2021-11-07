@@ -21,7 +21,7 @@
 <div class="text-center p-3">
 <%= link_to "Overview of monitored sources", sources_path %>
 </br>
-<%= link_to "Overview of observing epochs", epoches_path %>
+<i class="far fa-address-book"></i><%= link_to "Overview of observing epochs", epoches_path %>
 </br>
 </div>
 
@@ -61,24 +61,24 @@
         <% end %>
 
         <% if aver14>1.1*aver14_before and aver7>1.1*aver7_before%>
-          <%= link_to source.j2000_name, source %> increased by <%= (((aver14+aver7) / (aver14_before+aver7_before) - 1)*100).round.to_s%>%  at 7mm and 14mm compared to last detection on <%= epoch_before.date %> <br/>
+          <%= image_tag("arrow_up", class: "img-fluid", width: "1.5%", style: "opacity:"+(((aver7+aver14) / (aver7_before+aver14_before) - 1)*2).to_s+";") %> <%= link_to source.j2000_name, source %> increased by <%= (((aver14+aver7) / (aver14_before+aver7_before) - 1)*100).round.to_s%>%  at 7mm and 14mm compared to last detection on <%= epoch_before.date %> <br/>
         <% else %>
           <% if aver14>1.1*aver14_before %>
-            <%= link_to source.j2000_name, source %> increased by <%= ((aver14 / aver14_before - 1)*100).round.to_s%>%  at 14mm compared to last detection on <%= epoch_before.date %> <br/>
+            <%= image_tag("arrow_up", class: "img-fluid", width: "1.5%", style: "opacity:"+((aver14 / aver14_before - 1)*2).to_s+";") %> <%= link_to source.j2000_name, source %> increased by <%= ((aver14 / aver14_before - 1)*100).round.to_s%>%  at 14mm compared to last detection on <%= epoch_before.date %> <br/>
           <% end%>
           <% if aver7>1.1*aver7_before %>
-            <%= link_to source.j2000_name, source %> increased by <%= ((aver7 / aver7_before - 1)*100).round.to_s%>%  at 7mm compared to last detection on <%= epoch_before.date %> <br/>
+            <%= image_tag("arrow_up", class: "img-fluid", width: "1.5%", style: "opacity:"+((aver7 / aver7_before - 1)*2).to_s+";") %> <%= link_to source.j2000_name, source %> increased by <%= ((aver7 / aver7_before - 1)*100).round.to_s%>%  at 7mm compared to last detection on <%= epoch_before.date %> <br/>
           <% end%>
         <% end %>
 
         <% if aver14<0.9*aver14_before and aver7<0.9*aver7_before %>
-          <%= link_to source.j2000_name, source %> decreased by <%= (((aver7_before+aver14_before) / (aver14+aver7) - 1)*100).round.to_s%>%  at 7mm and 14mm compared to last detection on <%= epoch_before.date %> <br/>
+          <%= image_tag("arrow_down", class: "img-fluid", width: "1.5%", style: "opacity:"+(((aver7_before+aver14_before) / (aver14+aver7) - 1)*2).to_s+";") %> <%= link_to source.j2000_name, source %> decreased by <%= (((aver7_before+aver14_before) / (aver14+aver7) - 1)*100).round.to_s%>%  at 7mm and 14mm compared to last detection on <%= epoch_before.date %> <br/>
         <% else %>
           <% if aver14<0.9*aver14_before %>
-            <%= link_to source.j2000_name, source %> decreased by <%= ((aver14_before / aver14 - 1)*100).round.to_s%>%  at 14mm compared to last detection on <%= epoch_before.date %> <br/>  
+            <%= image_tag("arrow_down", class: "img-fluid", width: "1.5%", style: "opacity:"+((aver14_before / aver14 - 1)*2).to_s+";") %> <%= link_to source.j2000_name, source %> decreased by <%= ((aver14_before / aver14 - 1)*100).round.to_s%>%  at 14mm compared to last detection on <%= epoch_before.date %> <br/>  
           <% end %>      
           <% if aver7<0.9*aver7_before %>
-            <%= link_to source.j2000_name, source %> decreased by <%= ((aver7_before / aver7 - 1)*100).round.to_s%>% at 7mm compared to last detection on <%= epoch_before.date %> <br/>
+            <%= image_tag("arrow_down", class: "img-fluid", width: "1.5%", style: "opacity:"+((aver7_before / aver7 - 1)*2).to_s+";") %> <%= link_to source.j2000_name, source %> decreased by <%= ((aver7_before / aver7 - 1)*100).round.to_s%>% at 7mm compared to last detection on <%= epoch_before.date %> <br/>
           <% end %>
         <% end %>
 
