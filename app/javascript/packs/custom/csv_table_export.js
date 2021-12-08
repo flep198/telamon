@@ -59,6 +59,7 @@ window.onload=function(){
     var checkboxBadWeather = document.querySelector("input[name=BadWeather]");
     var checkboxCalibrator = document.querySelector("input[name=Calibrator]");
     var checkboxDropped = document.querySelector("input[name=Dropped]");
+    var checkboxNeutrino = document.querySelector("input[name=Neutrino]");
 
     function CategoryFilterTable(checkbox,CategoryName){
         var table, tr, td, i, txtValue;
@@ -85,5 +86,6 @@ window.onload=function(){
     checkboxBadWeather.addEventListener('change', function(){CategoryFilterTable(this,"Bad Weather")});
     checkboxCalibrator.addEventListener('change', function(){CategoryFilterTable(this,"Calibrator")});
     checkboxDropped.addEventListener('change', function(){CategoryFilterTable(this,"dropped")});
+    checkboxDropped.addEventListener('change', function(){CategoryFilterTable(this,"Neutrino")});
 
 } 
