@@ -136,4 +136,47 @@ Source.update(id, category:"Bad Weather")
 id=Source.where(j2000_name: "MARS").first.id
 Source.update(id, category: "dropped")
 
+#neutrino candidate sources
+id=Source.where(j2000_name: "0201-1132").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "0206-1150").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "0245+2405").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "0247+2010").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "0250+2121").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "0253+0005").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "0253+1958").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "0254+2343").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "0302+2030").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "0302+2155").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "0304+2401").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "1733+0804").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "1734+0926").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "1735+0808").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "1736+0631").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "1737+0621").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "1748+0440").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "1748+0832").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "1751+0938").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "1752+0611").first.id
+Source.update(id, category: "Neutrino")
+id=Source.where(j2000_name: "1504-0047").first.id
+Source.update(id, category: "Neutrino")
 
