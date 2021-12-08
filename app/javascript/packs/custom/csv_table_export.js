@@ -86,6 +86,6 @@ window.onload=function(){
     checkboxBadWeather.addEventListener('change', function(){CategoryFilterTable(this,"Bad Weather")});
     checkboxCalibrator.addEventListener('change', function(){CategoryFilterTable(this,"Calibrator")});
     checkboxDropped.addEventListener('change', function(){CategoryFilterTable(this,"dropped")});
-    checkboxDropped.addEventListener('change', function(){CategoryFilterTable(this,"Neutrino")});
+    checkboxNeutrino.addEventListener('change', function(){CategoryFilterTable(this,"Neutrino")});
 
 } 
