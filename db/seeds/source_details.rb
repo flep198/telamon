@@ -89,7 +89,7 @@ Source.update(id,alt_name: "GB6 J1159+2914",redshift: 0.72475,ra: "11:59:31.83",
 id=Source.where(j2000_name: "1224+2122").first.id
 Source.update(id,alt_name: "PKS 1222+21",redshift: 0.43383,ra: "12:24:54.46",decl: "21:22:46.39",category:"Bad Weather")
 id=Source.where(j2000_name: "1259+0136").first.id
-Source.update(id,alt_name: "PKS 1256+018",ra: "12:59:08.4",decl: "01:36:07",category:"Bad Weather")
+Source.update(id,alt_name: "PKS 1256+018",ra: "12:59:08.4",decl: "01:36:07",category:"neutrino")
 id=Source.where(j2000_name: "1504+1029").first.id
 Source.update(id,alt_name: "PKS 1502+106",redshift: 1.83795,ra: "15:04:24.98",decl: "10:29:39.20",category:"Bad Weather")
 id=Source.where(j2000_name: "1512-0905").first.id

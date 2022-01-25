@@ -13,5 +13,6 @@ resources :frequencies
 resources :sources, param: :slug
 root 'home#index'
 get "/members" => "home#members", as: :members
+get "/publications" => "home#publications", as: :publications
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
