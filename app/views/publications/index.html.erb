@@ -1,0 +1,129 @@
+<div class="container">
+<h1>Publications</h1>
+</div>
+
+<br/>
+
+<% if user_signed_in? %>
+<div class="container">
+<%= link_to 'Add Publication', new_publication_path, class: "btn btn-success" %>
+</div>
+<br/>
+<%end%>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="row">
+				<div class="col-md-12">
+			   <div class="card text-white bg-secondary">
+			      <div class="card-header">
+			       <h1>
+			          <h4>Main Publications</h4>
+			       </h1>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<br/>
+
+
+				<% @publications.order("ads_link").each do |publication| %>
+					<% if publication.category=="TELAMON Main Paper" %>
+					  <div class="row">
+						  <div class="col-md-12">
+							<div class="card">
+							  <div class="card-header">
+							    <%= publication.full_reference %> 
+							  </div>
+							  <div class="card-body">
+							    <h5 class="card-title"> <%= publication.title %> </h5>
+							    <p class="card-text"> <%= publication.authorlist %> </p>
+							    
+							    <% if (publication.ads_link.length>5) %><a href="<%= publication.ads_link %>" class="btn btn-sm btn-outline-primary">NASA ADS </a> <%end%>
+							    <% if (publication.arxiv_link.length>5) %><a href="<%= publication.arxiv_link %>" class="btn btn-sm btn-outline-primary">arXiv </a> <%end%>
+							    <% if (publication.pdf_link.length>5) %><a href="<%= publication.pdf_link %>" class="btn btn-sm btn-outline-primary">PDF </a> <%end%>
+							    <% if user_signed_in? %>
+							    	<%= link_to 'Edit', edit_publication_path(publication), class: "btn btn-sm btn-outline-success" %>
+							    	<%= link_to 'Delete', publication, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-outline-danger" %>
+							    <% end %>
+							  </div>
+							</div>
+						  </div>
+
+
+						</div>
+						<br/>
+					<%end%>
+				<%end%>
+
+			<div class="row">
+				<div class="col-md-12">
+				   <div class="card text-white bg-secondary">
+				      <div class="card-header">
+				       <h1>
+				          <h4>Contributions</h4>
+				       </h1>
+				      </div>
+				    </div>
+			  </div>
+			</div>
+
+			<br/>
+
+			  <% @publications.order("ads_link").each do |publication| %>
+				  <% if publication.category=="Contribution" %>
+					<div class="row">
+					  <div class="col-md-12">
+						<div class="card">
+						  <div class="card-header">
+						    <%= publication.full_reference %> 
+						  </div>
+						  <div class="card-body">
+						    <h5 class="card-title"> <%= publication.title %> </h5>
+						    <p class="card-text"> <%= publication.authorlist %> </p>
+						    <% if (publication.ads_link.length>5) %><a href="<%= publication.ads_link %>" class="btn btn-sm btn-outline-primary">NASA ADS </a> <%end%>
+						    <% if (publication.arxiv_link.length>5) %><a href="<%= publication.arxiv_link %>" class="btn btn-sm btn-outline-primary">arXiv </a> <%end%>
+						    <% if (publication.pdf_link.length>5) %><a href="<%= publication.pdf_link %>" class="btn btn-sm btn-outline-primary">PDF </a> <%end%>
+						    <% if user_signed_in? %>
+						    	<%= link_to 'Edit', edit_publication_path(publication), class: "btn btn-sm btn-outline-success" %>
+						    	<%= link_to 'Delete', publication, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-outline-danger" %>
+						    <% end %>
+						  </div>
+						</div>
+					  </div>
+					
+					</div>
+					</br>
+					<%end%>
+				<%end%>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card text-white bg-secondary">
+					<div class="card-header ">
+						<h1><h4>ATels</h4></h1>
+					</div>
+				</div>
+
+				<br/>
+
+				<% @publications.order("ads_link").each do |publication| %>
+				  	<% if publication.category=="ATel" %>
+				  	<div class="row">
+						<div class="col-md-12">
+							<div class="card">
+								   <div class="card-header">
+							   	   ATel #11111 
+							  	   </div>
+							  	   <div class="card-body">
+							  	  	   <h5 class="card-title"> Title </h5>
+							   	   <p class="card-text"> Authors </p>
+							   	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<%end%>
+				<%end%>	
+	</div>
+</div>

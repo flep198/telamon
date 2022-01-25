@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_06_170934) do
+ActiveRecord::Schema.define(version: 2022_01_25_214428) do
 
   create_table "epoches", force: :cascade do |t|
     t.date "date"
@@ -39,6 +39,18 @@ ActiveRecord::Schema.define(version: 2021_11_06_170934) do
     t.index ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true
     t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
     t.index ["sluggable_type", "sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_type_and_sluggable_id"
+  end
+
+  create_table "publications", force: :cascade do |t|
+    t.string "title"
+    t.string "full_reference"
+    t.string "ads_link"
+    t.string "arxiv_link"
+    t.string "pdf_link"
+    t.text "authorlist"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "category"
   end
 
   create_table "results", force: :cascade do |t|

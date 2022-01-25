@@ -1,0 +1,59 @@
+<%= form_with(model: publication) do |form| %>
+  <% if publication.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(publication.errors.count, "error") %> prohibited this publication from being saved:</h2>
+
+      <ul>
+        <% publication.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<div class="row g-3">
+
+  <div class="col-md-4">
+    <%= form.label "Category", class: "form-label"%>
+    <%= form.select :category, [["TELAMON Main Paper","TELAMON Main Paper"],["Contribution","Contribution"],["ATel","ATel"]], {:prompt => 'Select One'},{class: "form-select"} %>
+  </div>
+
+  <div class="col-md-12">
+    <%= form.label "Title", class: "form-label"%>
+    <%= form.text_field :title, class: "form-control" %>
+  </div>
+
+  <div class="col-md-12">
+    <%= form.label "Full Reference", class: "form-label" %>
+    <%= form.text_field :full_reference, class: "form-control", placeholder: "e.g., Kadler et al., 2021, ICRC 2021, PoS, 395" %>
+  </div>
+
+  <div class="col-md-4">
+    <%= form.label "ADS Link", class: "form-label" %>
+    <%= form.text_field :ads_link, class: "form-control" %>
+  </div>
+
+  <div class="col-md-4">
+    <%= form.label "arXiv Link", class: "form-label" %>
+    <%= form.text_field :arxiv_link, class: "form-control" %>
+  </div>
+
+  <div class="col-md-4">
+    <%= form.label "PDF Link", class: "form-label" %>
+    <%= form.text_field :pdf_link, class: "form-control" %>
+  </div>
+
+  <div class="col-md-12">
+    <%= form.label "Authors", class: "form-label" %>
+    <%= form.text_area :authorlist, class: "form-control", placeholder: "e.g., Kadler, M.; Eppel, F.; ..." %>
+  </div>    
+
+</br>
+
+  <div class="col-12">
+    <%= form.submit "Submit", class:"btn btn-primary" %>
+  </div>
+</div>
+
+<% end %>
