@@ -66,7 +66,11 @@
         <td><%= link_to source.j2000_name, source %></td>
         <td><%= source.alt_name %></td>
         <td><%= source.source_class %></td>
-        <td><%= source.category %></td>
+        <td>
+          <% source.source_categories.each do |cat| %>
+            <%=cat.name%>
+          <%end%>
+        </td>
         <td><%= source.aver(14,17) %></td>
         <td><%= source.aver(19,25) %></td>
         <td><%= source.aver(36,44) %></td>

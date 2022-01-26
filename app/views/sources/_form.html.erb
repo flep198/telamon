@@ -11,85 +11,72 @@
     </div>
   <% end %>
 
+<div class="row">
+  <div class="col-md-8">
+    <div class="row g-3">
+      <div class="col-md-3">
+        <%= form.label :j2000_name, class: "form-label"%>
+        <%= form.text_field :j2000_name, class: "form-control" %>
+      </div>
 
-<div class="row g-3">
-  <div class="col-md-4">
-    <%= form.label :j2000_name, class: "form-label"%>
-    <%= form.text_field :j2000_name, class: "form-control" %>
+      <div class="col-md-3">
+        <%= form.label :alt_name, class: "form-label" %>
+        <%= form.text_field :alt_name, class: "form-control" %>
+      </div>
+
+      <div class="col-md-6">
+        <%= form.label "TeVCat Link", class: "form-label" %>
+        <%= form.text_field :tevcat_url, class: "form-control" %>
+      </div>
+
+      <div class="col-md-3">
+        <%= form.label :source_class, class: "form-label" %>
+        <%= form.text_field :source_class, class: "form-control" %>
+      </div>
+
+      <div class="col-md-3">
+        <%= form.label :redshift, class: "form-label" %>
+        <%= form.text_field :redshift, class: "form-control" %>
+      </div>
+
+      <div class="col-md-3">
+        <%= form.label :ra, class: "form-label" %>
+        <%= form.text_field :ra, class: "form-control" %>
+      </div>
+
+      <div class="col-md-3">
+        <%= form.label :decl, class: "form-label" %>
+        <%= form.text_field :decl, class: "form-control" %>
+      </div>
+
+    </div>
   </div>
 
   <div class="col-md-4">
-    <%= form.label :alt_name, class: "form-label" %>
-    <%= form.text_field :alt_name, class: "form-control" %>
+    <div class="col-md-12">
+        <%= form.label "Category (multiple selections possible)", class: "form-label" %>
+        <%= select_tag("source_category_ids[]", options_for_select(SourceCategory.all.collect { |cat| [cat.name, cat.id] }, @source.source_categories.collect { |cat| cat.id}), {:multiple=>true, :size=>6, :class=> "form-select"})%>
+      </div>
   </div>
-
-  <div class="col-md-4">
-    <%= form.label :category, class: "form-label" %>
-    <%= form.text_field :category, class: "form-control" %>
-  </div>
-
-  <div class="col-md-2">
-    <%= form.label :source_class, class: "form-label" %>
-    <%= form.text_field :source_class, class: "form-control" %>
-  </div>
-
-  <div class="col-md-4">
-    <%= form.label :s_mojave, class: "form-label" %>
-    <%= form.text_field :s_mojave, class: "form-control" %>
-  </div>
-
-  <div class="col-md-4">
-    <%= form.label :s_alma, class: "form-label" %>
-    <%= form.text_field :s_alma, class: "form-control" %>
-  </div>
-
-  <div class="col-md-2">
-    <%= form.label :redshift, class: "form-label" %>
-    <%= form.text_field :redshift, class: "form-control" %>
-  </div>
-
-  <div class="col-md-4">
-    <%= form.label :ra, class: "form-label" %>
-    <%= form.text_field :ra, class: "form-control" %>
-  </div>
-
-  <div class="col-md-4">
-    <%= form.label :decl, class: "form-label" %>
-    <%= form.text_field :decl, class: "form-control" %>
-  </div>
-
-  <div class="col-md-4">
-    <%= form.label "TeVCat Link", class: "form-label" %>
-    <%= form.text_field :tevcat_url, class: "form-control" %>
-  </div>
-
-  <div class="col-md-4">
-    <%= form.label :lst_from, class: "form-label" %>
-    <%= form.text_field :lst_from, class: "form-control" %>
-  </div>
-
-  <div class="col-md-4">
-    <%= form.label :lst_to, class: "form-label" %>
-    <%= form.text_field :lst_to, class: "form-control" %>
-  </div>
-
-  <div class="col-md-4">
-    <%= form.label :duration, class: "form-label" %>
-    <%= form.text_field :duration, class: "form-control" %>
-  </div>
-
-  <div class="col-12">
-    <%= form.label :comment, class: "form-label" %>
-    <%= form.text_area :comment, class: "form-control" %>
-  </div>
-
-</br>
-
-  <div class="col-12">
-    <%= form.submit "Submit", class:"btn btn-primary" %>
+</div>
+  <div class="row">
+      <div class="col-12">
+        <%= form.label :comment, class: "form-label" %>
+        <%= form.text_area :comment, class: "form-control" %>
+      </div>
   </div>
 </div>
 
+    </br>
+
+<div class="container">
+  <div class="row">
+        <div class="col-12">
+          <%= form.submit "Submit", class:"btn btn-primary" %>
+          <%= link_to 'Back', sources_path, class: "btn btn-danger" %>
+        </div>
+  </div>
+</div>
 <% end %>
 
 

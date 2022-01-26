@@ -70,10 +70,10 @@ window.onload=function(){
             td = tr[i].getElementsByTagName("td")[3];
             if (td) {
                 txtValue = td.textContent || td.innerText;
-                    if (!checkbox.checked && txtValue==CategoryName){
+                    if (!checkbox.checked && txtValue.includes(CategoryName)){
                         tr[i].style.display="none";
                     } else {
-                        if(txtValue==CategoryName){
+                        if(txtValue.includes(CategoryName)){
                             tr[i].style.display=""; 
                         }                        
                     }            

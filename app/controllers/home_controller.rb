@@ -4,5 +4,6 @@ class HomeController < ApplicationController
   	@sources = Source.all
   	@results = Result.all
     @publications = Publication.all
+    @source_categories = SourceCategory.all
   end
 end

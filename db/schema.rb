@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_25_214428) do
+ActiveRecord::Schema.define(version: 2022_01_26_124418) do
 
   create_table "epoches", force: :cascade do |t|
     t.date "date"
@@ -69,6 +69,19 @@ ActiveRecord::Schema.define(version: 2022_01_25_214428) do
     t.index ["source_id"], name: "index_results_on_source_id"
   end
 
+  create_table "source_categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "source_categories_sources", id: false, force: :cascade do |t|
+    t.integer "source_category_id", null: false
+    t.integer "source_id", null: false
+    t.index ["source_category_id"], name: "index_source_categories_sources_on_source_category_id"
+    t.index ["source_id"], name: "index_source_categories_sources_on_source_id"
+  end
+
   create_table "sources", force: :cascade do |t|
     t.string "j2000_name"
     t.string "alt_name"
@@ -86,7 +99,6 @@ ActiveRecord::Schema.define(version: 2022_01_25_214428) do
     t.string "slug"
     t.float "duration"
     t.string "tevcat_url", default: "http://tevcat2.uchicago.edu/"
-    t.string "category", default: "Sample I"
     t.index ["slug"], name: "index_sources_on_slug", unique: true
   end
 
