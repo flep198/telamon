@@ -51,7 +51,7 @@ window.onload=function(){
             .forEach(tr => tbody.appendChild(tr) );
     })));
 
-
+    console.log("Hello World")
     //checkbox for source table
 
     var checkboxSampleI = document.querySelector("input[name=SampleI]");

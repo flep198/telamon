@@ -1,7 +1,6 @@
-SourceCategory.delete_all
-
-SourceCategory.create(name: "Sample I")
-SourceCategory.create(name: "Sample II")
-SourceCategory.create(name: "Calibrator")
-SourceCategory.create(name: "Neutrino")
-SourceCategory.create(name: "Bad Weather")
+@a=SourceCategory.all.where(name: "Sample I").first_or_create
+@b=SourceCategory.all.where(name: "Sample II").first_or_create
+@c=SourceCategory.all.where(name: "Calibrator").first_or_create
+@d=SourceCategory.all.where(name: "Neutrino").first_or_create
+@e=SourceCategory.all.where(name: "Bad Weather").first_or_create
+@f=SourceCategory.all.where(name: "Dropped").first_or_create
