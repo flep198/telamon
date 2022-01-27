@@ -107,17 +107,26 @@
 
 				<br/>
 
-				<% @publications.order("ads_link").each do |publication| %>
+				<% @publications.order("arxiv_link").each do |publication| %>
 				  	<% if publication.category=="ATel" %>
 				  	<div class="row">
 						<div class="col-md-12">
 							<div class="card">
 								   <div class="card-header">
-							   	   ATel #11111 
+								   	<% if (publication.arxiv_link.length>5) %>
+								   		<a href="<%= publication.arxiv_link %>" class="btn btn-sm btn-outline-secondary"><%= publication.full_reference %> </a> 
+								   	<%else%>
+								   		<%= publication.full_reference %>
+								   	<%end%>
+							   	    
 							  	   </div>
 							  	   <div class="card-body">
-							  	  	   <h5 class="card-title"> Title </h5>
-							   	   <p class="card-text"> Authors </p>
+							  	  	   <h5 class="card-title"> <%= publication.title %> </h5>
+							   	   <p class="card-text"> <%= publication.authorlist %> </p>
+							   	   <% if user_signed_in? %>
+						    			<%= link_to 'Edit', edit_publication_path(publication), class: "btn btn-sm btn-outline-success" %>
+						    			<%= link_to 'Delete', publication, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-outline-danger" %>
+						    		<% end %>
 							   	</div>
 								</div>
 							</div>

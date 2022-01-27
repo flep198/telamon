@@ -31,6 +31,7 @@ function download_table_as_csv(table_id, separator = ',') {
 }
 
 window.onload=function(){
+
     if(!!document.getElementById("export_button")){
         var table_name = document.getElementById("export_button").dataset.table;
         document.getElementById("export_button").addEventListener("click", function(){download_table_as_csv(table_name)});
@@ -53,16 +54,17 @@ window.onload=function(){
             .forEach(tr => tbody.appendChild(tr) );
     })));
 
-    console.log("Hello World")
+    
     //checkbox for source table
 
-    var checkboxSampleI = document.querySelector("input[name=SampleI]");
-    var checkboxSampleII = document.querySelector("input[name=SampleII]");
+    var checkboxSample1 = document.querySelector("input[name=Sample1]");
+    var checkboxSample2 = document.querySelector("input[name=Sample2]");
     var checkboxBadWeather = document.querySelector("input[name=BadWeather]");
     var checkboxCalibrator = document.querySelector("input[name=Calibrator]");
-    var checkboxDropped = document.querySelector("input[name=Dropped]");
+    var checkboxDropped = document.querySelector("input[name=excludeDropped]");
     var checkboxNeutrino = document.querySelector("input[name=Neutrino]");
 
+    //old table filter function
     function CategoryFilterTable(checkbox,CategoryName){
         var table, tr, td, i, txtValue;
         table = document.getElementById("sourceTable");
@@ -78,16 +80,71 @@ window.onload=function(){
                         if(txtValue.includes(CategoryName)){
                             tr[i].style.display=""; 
                         }                        
-                    }            
-            }
-        }
+                    };          
+            };
+        };
+    };
+
+    //this function updates the table according to the set filters
+    function updateTable(){
+        var sample1 = checkboxSample1.checked;
+        var sample2 = checkboxSample2.checked;
+        var badweather = checkboxBadWeather.checked;
+        var calibrator = checkboxCalibrator.checked;
+        var dropped = checkboxDropped.checked;
+        var neutrino = checkboxNeutrino.checked;
+
+        var table, tr, td, i, txtValue;
+        table = document.getElementById("sourceTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (i=1;i<tr.length;i++){
+            td = tr[i].getElementsByTagName("td");
+            var j2000_name = td[0];
+            var alt_name = td[1];
+            var source_class = td[2];
+            var category = td[3];
+            var aver_20mm = td[4];
+            var aver_14mm = td[5];
+            var aver_7mm = td[6];
+            var redshift = td[7];
+            var ra = td[8];
+            var dec = td[9];
+
+            var show = false;
+            //put filter options here to determine show boolean
+            if (category){
+                var category_txt = category.textContent || category.innerText;
+                if (sample1 && category_txt.includes("Sample 1")){
+                    var show=true;
+                };
+                if (sample2 && category_txt.includes("Sample 2")){
+                    var show=true;
+                };
+                if (badweather && category_txt.includes("Bad Weather")){
+                    var show=true;
+                };
+                if (calibrator && category_txt.includes("Calibrator")){
+                    var show=true;
+                };
+            };
+
+            
+
+            if (show){
+                tr[i].style.display=""; //show entry
+            } else {
+                tr[i].style.display="none"; //hide entry                
+            };
+        };
+
     };
     
-    checkboxSampleI.addEventListener('change', function(){CategoryFilterTable(this,"Sample I")});
-    checkboxSampleII.addEventListener('change', function(){CategoryFilterTable(this,"Sample II")});
+    checkboxSample1.addEventListener('change', function(){updateTable()});
+    checkboxSample2.addEventListener('change', function(){CategoryFilterTable(this,"Sample 2")});
     checkboxBadWeather.addEventListener('change', function(){CategoryFilterTable(this,"Bad Weather")});
     checkboxCalibrator.addEventListener('change', function(){CategoryFilterTable(this,"Calibrator")});
-    checkboxDropped.addEventListener('change', function(){CategoryFilterTable(this,"dropped")});
+    checkboxDropped.addEventListener('change', function(){CategoryFilterTable(this,"Dropped")});
     checkboxNeutrino.addEventListener('change', function(){CategoryFilterTable(this,"Neutrino")});
 
 } 
