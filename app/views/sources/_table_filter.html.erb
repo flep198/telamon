@@ -55,14 +55,22 @@ window.onload=function(){
     })));
 
     
-    //checkbox for source table
+    //readout all form elements
 
     var checkboxSample1 = document.querySelector("input[name=Sample1]");
     var checkboxSample2 = document.querySelector("input[name=Sample2]");
     var checkboxBadWeather = document.querySelector("input[name=BadWeather]");
     var checkboxCalibrator = document.querySelector("input[name=Calibrator]");
-    var checkboxDropped = document.querySelector("input[name=excludeDropped]");
-    var checkboxNeutrino = document.querySelector("input[name=Neutrino]");
+    var checkboxOther = document.getElementById("Other");
+    var selectNeutrino = document.getElementById("SelectNeutrino");
+    var selectDropped = document.getElementById("SelectDropped");
+    var searchJ2000 = document.getElementById("SearchJ2000");
+    var low_lim_20_form = document.getElementById("20mm_lower_limit");
+    var up_lim_20_form = document.getElementById("20mm_upper_limit");
+    var low_lim_14_form = document.getElementById("14mm_lower_limit");
+    var up_lim_14_form = document.getElementById("14mm_upper_limit");
+    var low_lim_7_form = document.getElementById("7mm_lower_limit");
+    var up_lim_7_form = document.getElementById("7mm_upper_limit");
 
     //old table filter function
     function CategoryFilterTable(checkbox,CategoryName){
@@ -87,13 +95,25 @@ window.onload=function(){
 
     //this function updates the table according to the set filters
     function updateTable(){
+        //read out filter form
         var sample1 = checkboxSample1.checked;
         var sample2 = checkboxSample2.checked;
         var badweather = checkboxBadWeather.checked;
         var calibrator = checkboxCalibrator.checked;
-        var dropped = checkboxDropped.checked;
-        var neutrino = checkboxNeutrino.checked;
+        var other = checkboxOther.checked;
+        var neutrino_value = selectNeutrino.value;
+        var dropped_value = selectDropped.value;
 
+        var low_lim_20 = parseFloat(low_lim_20_form.value);
+        var up_lim_20 = parseFloat(up_lim_20_form.value);
+        var low_lim_14 = parseFloat(low_lim_14_form.value);
+        var up_lim_14 = parseFloat(up_lim_14_form.value);
+        var low_lim_7 = parseFloat(low_lim_7_form.value);
+        var up_lim_7 = parseFloat(up_lim_7_form.value);       
+
+        var search_j2000_name = searchJ2000.value;
+
+        //go through table and decide whether to show row or not
         var table, tr, td, i, txtValue;
         table = document.getElementById("sourceTable");
         tr = table.getElementsByTagName("tr");
@@ -111,27 +131,136 @@ window.onload=function(){
             var ra = td[8];
             var dec = td[9];
 
-            var show = false;
+            var show_category = false;
+            var show_dropped = false;
+            var show_neutrino = false;
             //put filter options here to determine show boolean
+
+            //category filters
             if (category){
                 var category_txt = category.textContent || category.innerText;
                 if (sample1 && category_txt.includes("Sample 1")){
-                    var show=true;
+                    show_category=true;
                 };
                 if (sample2 && category_txt.includes("Sample 2")){
-                    var show=true;
+                    show_category=true;
                 };
                 if (badweather && category_txt.includes("Bad Weather")){
-                    var show=true;
+                    show_category=true;
                 };
                 if (calibrator && category_txt.includes("Calibrator")){
-                    var show=true;
+                    show_category=true;
                 };
+                if (other && !category_txt.includes("Sample") && !category_txt.includes("Sample 2") && !category_txt.includes("Bad Weather") && !category_txt.includes("Calibrator")){
+                    show_category=true;
+                };
+
+
+                //check dropped status
+                if (dropped_value==0) {
+                    show_dropped=true;
+                };
+                if (dropped_value==1) {
+                    if (category_txt.includes("Dropped")){
+                        show_dropped=false;
+                    } else {
+                        show_dropped=true;
+                    };
+                };
+                if (dropped_value==2) {
+                    if (category_txt.includes("Dropped")){
+                        show_dropped=true;
+                    } else {
+                        show_dropped=false;
+                    };
+                };
+
+                //check neutrino status
+                if (neutrino_value==0){
+                    show_neutrino=true;
+                };
+                if (neutrino_value==1){
+                    if (category_txt.includes("Neutrino")){
+                        show_neutrino=false;
+                    } else {
+                        show_neutrino=true;
+                    };
+                };
+                if (neutrino_value==2){
+                    if (category_txt.includes("Neutrino")){
+                        show_neutrino=true;
+                    } else {
+                        show_neutrino=false;
+                    };
+                };
+
             };
 
+            //flux density filters
             
+            //takes care of the lower/upper limit flux density filtering, returns boolean
+            function FluxDensityFilter(average,low_lim,up_lim){
+                var aver = average.textContent || average.innerText;
+                aver = parseFloat(aver);
+                var show_aver=false;
 
-            if (show){
+                //lower lim and upper lim filter set
+                if(!isNaN(up_lim) && !isNaN(low_lim)){
+                    if(!isNaN(aver)){
+                        if(up_lim>aver && low_lim<aver){
+                            show_aver=true;
+                        };
+                    };
+                };
+
+                //only up lim filter set
+                if(!isNaN(up_lim) && isNaN(low_lim)){
+                    if(!isNaN(aver)){
+                        if(up_lim>aver){
+                            show_aver=true;
+                        };
+                    };
+                };
+
+                //only low lim filter set
+                if(!isNaN(low_lim) && isNaN(up_lim)){
+                    if(!isNaN(aver)){
+                        if(low_lim<aver){
+                            show_aver=true;
+                        };
+                    };
+                };
+
+                //no filter set
+                if(isNaN(up_lim) && isNaN(low_lim)){
+                    show_aver=true;
+                };
+                return show_aver;
+            };
+
+            // execute flux density filters
+            var show_aver_20 = FluxDensityFilter(aver_20mm,low_lim_20,up_lim_20);
+            var show_aver_14 = FluxDensityFilter(aver_14mm,low_lim_14,up_lim_14);
+            var show_aver_7 = FluxDensityFilter(aver_7mm,low_lim_7,up_lim_7);     
+
+            //J2000 search string
+
+            var show_j2000_search = false;
+            console.log(search_j2000_name.length)
+            if (search_j2000_name.length>0){
+                var j2000_name_txt = j2000_name.textContent || j2000_name.innerText;
+                if (j2000_name_txt.includes(search_j2000_name)){
+                    show_j2000_search=true;
+                } else {
+                    show_j2000_search=false;
+                };
+            } else {
+                show_j2000_search=true;
+            };
+
+
+
+            if (show_category && show_j2000_search && show_dropped && show_neutrino && show_aver_20 && show_aver_14 && show_aver_7){
                 tr[i].style.display=""; //show entry
             } else {
                 tr[i].style.display="none"; //hide entry                
@@ -139,13 +268,25 @@ window.onload=function(){
         };
 
     };
+
+    //add eventlisteners to all form elements
     
     checkboxSample1.addEventListener('change', function(){updateTable()});
-    checkboxSample2.addEventListener('change', function(){CategoryFilterTable(this,"Sample 2")});
-    checkboxBadWeather.addEventListener('change', function(){CategoryFilterTable(this,"Bad Weather")});
-    checkboxCalibrator.addEventListener('change', function(){CategoryFilterTable(this,"Calibrator")});
-    checkboxDropped.addEventListener('change', function(){CategoryFilterTable(this,"Dropped")});
-    checkboxNeutrino.addEventListener('change', function(){CategoryFilterTable(this,"Neutrino")});
+    checkboxSample2.addEventListener('change', function(){updateTable()});
+    checkboxBadWeather.addEventListener('change', function(){updateTable()});
+    checkboxCalibrator.addEventListener('change', function(){updateTable()});
+    checkboxOther.addEventListener('change',function(){updateTable()});
+    selectNeutrino.addEventListener('change', function(){updateTable()});
+    selectDropped.addEventListener('change',function(){updateTable()});
+    searchJ2000.addEventListener('keyup',function(){updateTable()});
+    low_lim_20_form.addEventListener('keyup', function(){updateTable()});
+    up_lim_20_form.addEventListener('keyup', function(){updateTable()});
+    low_lim_14_form.addEventListener('keyup', function(){updateTable()});
+    up_lim_14_form.addEventListener('keyup', function(){updateTable()});
+    low_lim_7_form.addEventListener('keyup', function(){updateTable()});
+    up_lim_7_form.addEventListener('keyup', function(){updateTable()});
+
+    //updateTable();
 
 } 
 
