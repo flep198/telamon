@@ -47,7 +47,7 @@
                 <% end %>
                 <%= if @source.tevcat_url != "http://tevcat2.uchicago.edu/" then link_to(image_tag("tevcat",height: "25"), @source.tevcat_url,target: "_blank", rel:"noopener noreferrer") end%></p>
               <p><strong>Comment:</strong> <%= @source.comment %></p>
-              <% if user_signed_in?%>
+              <% if user_signed_in? && current_user.admin? %>
               <p><%= link_to 'Edit', edit_source_path(@source), class: "btn btn-outline-success btn-sm" %></p>
               <% end %>            
           </div>
@@ -148,7 +148,7 @@
               <th>MJD</th>
               <th>Scan Number</th>
               <th>Elevation</th>
-              <% if user_signed_in? %>
+              <% if user_signed_in? && current_user.admin? %>
                 <th colspan="2"></th>
               <% end %>
             </tr>
@@ -164,7 +164,7 @@
                 <td><%= result.mjd %></td>
                 <td><%= result.scan_nr %></td>
                 <td><%= result.elevation %></td>
-                <% if user_signed_in? %>
+                <% if user_signed_in? && current_user.admin? %>
                   <td><%= link_to 'Edit', edit_result_path(result), class: "btn btn-outline-success" %></td>
                   <td><%= link_to 'Delete', result, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
                 <% end %>

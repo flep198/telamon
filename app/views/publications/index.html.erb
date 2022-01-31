@@ -4,7 +4,7 @@
 
 <br/>
 
-<% if user_signed_in? %>
+<% if user_signed_in? && current_user.admin? %>
 <div class="container">
 <%= link_to 'Add Publication', new_publication_path, class: "btn btn-success" %>
 </div>
@@ -42,7 +42,7 @@
 							    <% if (publication.ads_link.length>5) %><a href="<%= publication.ads_link %>" class="btn btn-sm btn-outline-primary">NASA ADS </a> <%end%>
 							    <% if (publication.arxiv_link.length>5) %><a href="<%= publication.arxiv_link %>" class="btn btn-sm btn-outline-primary">arXiv </a> <%end%>
 							    <% if (publication.pdf_link.length>5) %><a href="<%= publication.pdf_link %>" class="btn btn-sm btn-outline-primary">PDF </a> <%end%>
-							    <% if user_signed_in? %>
+							    <% if user_signed_in? && current_user.admin? %>
 							    	<%= link_to 'Edit', edit_publication_path(publication), class: "btn btn-sm btn-outline-success" %>
 							    	<%= link_to 'Delete', publication, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-outline-danger" %>
 							    <% end %>
@@ -84,7 +84,7 @@
 						    <% if (publication.ads_link.length>5) %><a href="<%= publication.ads_link %>" class="btn btn-sm btn-outline-primary">NASA ADS </a> <%end%>
 						    <% if (publication.arxiv_link.length>5) %><a href="<%= publication.arxiv_link %>" class="btn btn-sm btn-outline-primary">arXiv </a> <%end%>
 						    <% if (publication.pdf_link.length>5) %><a href="<%= publication.pdf_link %>" class="btn btn-sm btn-outline-primary">PDF </a> <%end%>
-						    <% if user_signed_in? %>
+						    <% if user_signed_in? && current_user.admin? %>
 						    	<%= link_to 'Edit', edit_publication_path(publication), class: "btn btn-sm btn-outline-success" %>
 						    	<%= link_to 'Delete', publication, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-outline-danger" %>
 						    <% end %>
@@ -123,7 +123,7 @@
 							  	   <div class="card-body">
 							  	  	   <h5 class="card-title"> <%= publication.title %> </h5>
 							   	   <p class="card-text"> <%= publication.authorlist %> </p>
-							   	   <% if user_signed_in? %>
+							   	   <% if user_signed_in? && current_user.admin? %>
 						    			<%= link_to 'Edit', edit_publication_path(publication), class: "btn btn-sm btn-outline-success" %>
 						    			<%= link_to 'Delete', publication, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-outline-danger" %>
 						    		<% end %>

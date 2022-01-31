@@ -62,9 +62,19 @@ window.onload=function(){
     var checkboxBadWeather = document.querySelector("input[name=BadWeather]");
     var checkboxCalibrator = document.querySelector("input[name=Calibrator]");
     var checkboxOther = document.getElementById("Other");
+
+    var checkboxLBL = document.getElementById("LBL");
+    var checkboxIBL = document.getElementById("IBL");
+    var checkboxHBL = document.getElementById("HBL");
+    var checkboxXBL = document.getElementById("XBL");
+    var checkboxFSRQ = document.getElementById("FSRQ");
+    var checkboxRG = document.getElementById("RG");
+    var checkboxOtherClass = document.getElementById("other_class");
+
     var selectNeutrino = document.getElementById("SelectNeutrino");
     var selectDropped = document.getElementById("SelectDropped");
     var searchJ2000 = document.getElementById("SearchJ2000");
+    var searchAlt = document.getElementById("SearchAlt");
     var low_lim_20_form = document.getElementById("20mm_lower_limit");
     var up_lim_20_form = document.getElementById("20mm_upper_limit");
     var low_lim_14_form = document.getElementById("14mm_lower_limit");
@@ -104,6 +114,14 @@ window.onload=function(){
         var neutrino_value = selectNeutrino.value;
         var dropped_value = selectDropped.value;
 
+        var lbl = checkboxLBL.checked;
+        var ibl = checkboxIBL.checked;
+        var hbl = checkboxHBL.checked;
+        var xbl = checkboxXBL.checked;
+        var fsrq = checkboxFSRQ.checked;
+        var rg = checkboxRG.checked;
+        var other_class = checkboxOtherClass.checked;
+
         var low_lim_20 = parseFloat(low_lim_20_form.value);
         var up_lim_20 = parseFloat(up_lim_20_form.value);
         var low_lim_14 = parseFloat(low_lim_14_form.value);
@@ -112,6 +130,7 @@ window.onload=function(){
         var up_lim_7 = parseFloat(up_lim_7_form.value);       
 
         var search_j2000_name = searchJ2000.value;
+        var search_alt_name = searchAlt.value;
 
         //go through table and decide whether to show row or not
         var table, tr, td, i, txtValue;
@@ -134,7 +153,36 @@ window.onload=function(){
             var show_category = false;
             var show_dropped = false;
             var show_neutrino = false;
+            var show_class = false;
             //put filter options here to determine show boolean
+
+            //class filters
+            if (source_class){
+                var class_txt = source_class.textContent || source_class.innerText;
+                if (lbl && class_txt.includes("LBL")){
+                    show_class=true;
+                };
+                if (ibl && class_txt.includes("IBL")){
+                    show_class=true;
+                };
+                if (hbl && class_txt.includes("HBL")){
+                    show_class=true;
+                };
+                if (xbl && class_txt.includes("XBL")){
+                    show_class=true;
+                };
+                if (fsrq && class_txt.includes("FSRQ")){
+                    show_class=true;
+                };
+                if (rg && class_txt.includes("RG")){
+                    show_class=true;
+                };
+                if (other_class && !class_txt.includes("LBL") && !class_txt.includes("IBL") && !class_txt.includes("HBL") && !class_txt.includes("XBL") && !class_txt.includes("FSRQ") && !class_txt.includes("RG")){
+                    show_class=true;
+                };
+            };
+
+
 
             //category filters
             if (category){
@@ -196,6 +244,7 @@ window.onload=function(){
 
             };
 
+
             //flux density filters
             
             //takes care of the lower/upper limit flux density filtering, returns boolean
@@ -246,7 +295,6 @@ window.onload=function(){
             //J2000 search string
 
             var show_j2000_search = false;
-            console.log(search_j2000_name.length)
             if (search_j2000_name.length>0){
                 var j2000_name_txt = j2000_name.textContent || j2000_name.innerText;
                 if (j2000_name_txt.includes(search_j2000_name)){
@@ -259,8 +307,22 @@ window.onload=function(){
             };
 
 
+            //Alt Name search string
+            var show_alt_search = false;
+            if (search_alt_name.length>0){
+                var alt_name_txt = alt_name.textContent || alt_name.innerText;
+                if (alt_name_txt.includes(search_alt_name)){
+                    show_alt_search=true;
+                } else {
+                    show_alt_search=false;
+                };
+            } else {
+                show_alt_search=true;
+            };
 
-            if (show_category && show_j2000_search && show_dropped && show_neutrino && show_aver_20 && show_aver_14 && show_aver_7){
+
+
+            if (show_category && show_j2000_search && show_alt_search && show_class && show_dropped && show_neutrino && show_aver_20 && show_aver_14 && show_aver_7){
                 tr[i].style.display=""; //show entry
             } else {
                 tr[i].style.display="none"; //hide entry                
@@ -276,9 +338,17 @@ window.onload=function(){
     checkboxBadWeather.addEventListener('change', function(){updateTable()});
     checkboxCalibrator.addEventListener('change', function(){updateTable()});
     checkboxOther.addEventListener('change',function(){updateTable()});
+    checkboxLBL.addEventListener('change',function(){updateTable()});
+    checkboxIBL.addEventListener('change',function(){updateTable()});
+    checkboxHBL.addEventListener('change',function(){updateTable()});
+    checkboxXBL.addEventListener('change',function(){updateTable()});
+    checkboxFSRQ.addEventListener('change',function(){updateTable()});
+    checkboxRG.addEventListener('change',function(){updateTable()});
+    checkboxOtherClass.addEventListener('change',function(){updateTable()});
     selectNeutrino.addEventListener('change', function(){updateTable()});
     selectDropped.addEventListener('change',function(){updateTable()});
     searchJ2000.addEventListener('keyup',function(){updateTable()});
+    searchAlt.addEventListener('keyup',function(){updateTable()});
     low_lim_20_form.addEventListener('keyup', function(){updateTable()});
     up_lim_20_form.addEventListener('keyup', function(){updateTable()});
     low_lim_14_form.addEventListener('keyup', function(){updateTable()});
@@ -286,7 +356,7 @@ window.onload=function(){
     low_lim_7_form.addEventListener('keyup', function(){updateTable()});
     up_lim_7_form.addEventListener('keyup', function(){updateTable()});
 
-    //updateTable();
+    updateTable();
 
 } 
 

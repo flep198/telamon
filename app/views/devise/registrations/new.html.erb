@@ -1,4 +1,4 @@
-<% if user_signed_in? %>
+<% if user_signed_in? && current_user.admin? %>
 
   <h2>Sign up</h2>
 
@@ -22,6 +22,13 @@
       <%= f.label :password_confirmation %><br />
       <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
     </div>
+
+    <div class="field">
+      <%= f.label :role %> <br />
+      <%= f.select :role, User.roles.keys, {:prompt => 'Select One'},{class: "form-select"} %>
+    </div>
+    
+
 
     <div class="actions">
       <%= f.submit "Sign up" %>
