@@ -1,4 +1,4 @@
-<% if user_signed_in? && current_user.admin? %>
+<% #if user_signed_in? && current_user.admin? %>
 
   <h2>Sign up</h2>
 
@@ -37,9 +37,9 @@
 
   <%= render "devise/shared/links" %>
 
-<% else %>
+<%# else %>
   <%= flash[:notice] = 'Please contact a system administrator to get full access!'%>
   <script type="text/javascript">
-    window.location.href="/"
+    //window.location.href="/"
   </script>
-<% end %>
+<%# end %>
