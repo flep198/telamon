@@ -119,6 +119,31 @@ window.onload=function(){
 
   };
 
+  //averaged lightcurves
+  var aver_lc7 = {
+    x: <%= getAverageLightCurve(@source,36,44)[0] %>,
+    y: <%= getAverageLightCurve(@source,36,44)[1] %>,
+    type: "scatter",
+    name: "Aver 7mm"
+  };
+  freq_array.push(aver_lc7);
+
+  var aver_lc14 = {
+    x: <%= getAverageLightCurve(@source,19,25)[0] %>,
+    y: <%= getAverageLightCurve(@source,19,25)[1] %>,
+    type: "scatter",
+    name: "Aver 14mm"
+  };
+  freq_array.push(aver_lc14);
+
+  var aver_lc20 = {
+    x: <%= getAverageLightCurve(@source,14,17)[0] %>,
+    y: <%= getAverageLightCurve(@source,14,17)[1] %>,
+    type: "scatter",
+    name: "Aver 20mm"
+  };
+  freq_array.push(aver_lc20);
+
   Plotly.newPlot("lightcurve",freq_array,layout);
 
 
@@ -127,7 +152,7 @@ window.onload=function(){
   epoch_array = []; // this array saves what epochs will be plotted later
 
   //query database
-  <% @source.epoches.distinct.order(:date).each do |epoch| %>
+  <% @source.epoches.distinct.order(:date).reverse_order.each do |epoch| %>
     <% @epoch_id=epoch.id %>
     <% @data = Result.where(:source_id => @source.id, :epoch_id => @epoch_id).map { |r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.error_jy]} %>
     <% @data = @data.sort_by(&:first) %>
@@ -183,6 +208,8 @@ window.onload=function(){
 
   Plotly.newPlot("spectrum",epoch_array,layout);
 
+
+  <% if user_signed_in? %>
   //Spectral Index Plot
 
     var speci_data = {
@@ -232,5 +259,6 @@ window.onload=function(){
 
   Plotly.newPlot("speci",[speci_data],layout);
 
+  <% end %>
 }
 </script>
