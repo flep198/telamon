@@ -120,25 +120,43 @@ window.onload=function(){
   };
 
   //averaged lightcurves
+  <% lc7=getAverageLightCurve(@source,36,44) %>
   var aver_lc7 = {
-    x: <%= getAverageLightCurve(@source,36,44)[0] %>,
-    y: <%= getAverageLightCurve(@source,36,44)[1] %>,
+    x: <%= lc7[0] %>,
+    y: <%= lc7[1] %>,
+    error_y: {
+        type: "data",
+        array: <%= lc7[2] %>,
+        visible: true
+      },
     type: "scatter",
     name: "Aver 7mm"
   };
   freq_array.push(aver_lc7);
 
+  <% lc14=getAverageLightCurve(@source,19,25) %>
   var aver_lc14 = {
-    x: <%= getAverageLightCurve(@source,19,25)[0] %>,
-    y: <%= getAverageLightCurve(@source,19,25)[1] %>,
+    x: <%= lc14[0] %>,
+    y: <%= lc14[1] %>,
+    error_y: {
+        type: "data",
+        array: <%= lc14[2] %>,
+        visible: true
+      },
     type: "scatter",
     name: "Aver 14mm"
   };
   freq_array.push(aver_lc14);
 
+  <% lc20=getAverageLightCurve(@source,14,17) %>
   var aver_lc20 = {
-    x: <%= getAverageLightCurve(@source,14,17)[0] %>,
-    y: <%= getAverageLightCurve(@source,14,17)[1] %>,
+    x: <%= lc20[0] %>,
+    y: <%= lc20[1] %>,
+    error_y: {
+        type: "data",
+        array: <%= lc20[2] %>,
+        visible: true
+      },
     type: "scatter",
     name: "Aver 20mm"
   };

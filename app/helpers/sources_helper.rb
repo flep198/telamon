@@ -49,7 +49,7 @@ module SourcesHelper
 
     	ndata=y.size
     	nparams=2
-    	n_iters=100
+    	n_iters=1000
     	lamda=0.01
     	updateJ=1
     	a_est=a_0
@@ -176,24 +176,40 @@ module SourcesHelper
   			yerr = @data.map{|r| r[2]}
   			mjd = @data.map{|r| r[3]}
   			mjd_aver= mjd.inject{ |sum, el| sum + el }.to_f / mjd.size #calculate Average MJD
+  			y_max= @data.map{|r| r[1]+r[2]}
+  			y_min= @data.map{|r| r[1]-r[2]}
 
   			if x.size>1
   				mjds.push(mjd_aver)
 
   				#get fit parameters
+  				#normal fit
   				fit=spectralFit(x,y,yerr)
   				a=fit[0]
   				c=fit[1]
+  				#fit of ymax
+  				fit_max=spectralFit(x,y_max,yerr)
+  				a_max=fit_max[0]
+  				c_max=fit_max[1]
+  				#fit of ymin
+  				fit_min=spectralFit(x,y_min,yerr)
+  				a_min=fit_min[0]
+  				c_min=fit_min[1]
 
-  				#calculate integral from fit
+
+  				#calculate integrals from fit
   				int=c/(a+1)*(high_freq**(a+1)-low_freq**(a+1))
+  				int_max=c_max/(a_max+1)*(high_freq**(a_max+1)-low_freq**(a_max+1))
+  				int_min=c_min/(a_min+1)*(high_freq**(a_min+1)-low_freq**(a_min+1))
+  				aver_flux_error=[(int_max-int).abs,(int-int_min).abs].max/(high_freq-low_freq)
 
   				aver_flux=int/(high_freq-low_freq)
   				fluxes.push(aver_flux)
+  				flux_errors.push(aver_flux_error)
   			end
 
     	end
 
-    	return mjds, fluxes#, flux_errors
+    	return mjds, fluxes, flux_errors
     end 
 end
