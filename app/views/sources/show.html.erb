@@ -84,8 +84,18 @@
 <div class="row align-items-start">
   <div class="col-md-6">
     <div class="card">
-      <div class="card-header">
-        Lightcurves
+      <div class="card-header container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+          Lightcurves 
+          </div>
+          <div class="col-md-4">
+            <div class="form-check form-switch form-check-inline float-right">
+              <input class="form-check-input" type="checkbox" id="averSwitch" name="averSwitch" value="yes" checked>
+              <label class="form-check-label" for="averSwitch"> Average Mode </label>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="card-body">
         <div id="lightcurve"></div>

@@ -37,7 +37,7 @@ module SourcesHelper
 
     require "matrix"
 
-    #performs Levenberg Marquart Fit for f(x)=C*x^alpha
+    #performs Levenberg Marquart Fit for f(x)=C*x^alpha STILL WITHOUT bounds on alpha
     def spectralFit x,y,yerr
 
     	a_0=0
@@ -49,7 +49,7 @@ module SourcesHelper
 
     	ndata=y.size
     	nparams=2
-    	n_iters=1000
+    	n_iters=100
     	lamda=0.01
     	updateJ=1
     	a_est=a_0
@@ -179,7 +179,7 @@ module SourcesHelper
   			y_max= @data.map{|r| r[1]+r[2]}
   			y_min= @data.map{|r| r[1]-r[2]}
 
-  			if x.size>1
+  			if x.uniq.size>1
   				mjds.push(mjd_aver)
 
   				#get fit parameters
@@ -206,6 +206,46 @@ module SourcesHelper
   				aver_flux=int/(high_freq-low_freq)
   				fluxes.push(aver_flux)
   				flux_errors.push(aver_flux_error)
+  			
+  			elsif x.size>0 #in this case only data for one frequency available
+
+  				mjds.push(mjd_aver)
+  				flux=y.sum/y.size
+  				fluxes.push(flux)
+  				
+  				#calculate std 
+  				y_error=0
+  				for i in 0..(y.size-1)
+  					y_error=y_error+(yerr[i])**2
+  				end
+  				y_error=Math.sqrt(y_error)/y.size
+
+
+  				#carry out the six additional fits 
+  				int_min1=flux-y_error
+  				fit_min2=spectralFit([x[0],x[0]+2],[(flux-y_error),(flux-y_error)*((x[0]+2)/x[0])**0.5],[0,0]) #spectrum with a=+0.5
+  				a_min2=fit_min2[0]
+  				c_min2=fit_min2[1]
+  				int_min2=c_min2/(a_min2+1)*(high_freq**(a_min2+1)-low_freq**(a_min2+1))/(high_freq-low_freq)
+  				fit_min3=spectralFit([x[0],x[0]+2],[(flux-y_error),(flux-y_error)*((x[0]+2)/x[0])**(-0.5)],[0,0]) #spectrum with a=-0.5
+  				a_min3=fit_min3[0]
+  				c_min3=fit_min3[1]
+  				int_min3=c_min3/(a_min3+1)*(high_freq**(a_min3+1)-low_freq**(a_min3+1))/(high_freq-low_freq)
+  				
+  				int_max1=flux+y_error
+  				fit_max2=spectralFit([x[0],x[0]+2],[(flux+y_error),(flux+y_error)*((x[0]+2)/x[0])**0.5],[0,0]) #spectrum with a=+0.5
+  				a_max2=fit_max2[0]
+  				c_max2=fit_max2[1]
+  				int_max2=c_max2/(a_max2+1)*(high_freq**(a_max2+1)-low_freq**(a_max2+1))/(high_freq-low_freq)
+  				fit_max3=spectralFit([x[0],x[0]+2],[(flux+y_error),(flux+y_error)*((x[0]+2)/x[0])**(-0.5)],[0,0]) #spectrum with a=-0.5
+  				a_max3=fit_max3[0]
+  				c_max3=fit_max3[1]
+  				int_max3=c_max3/(a_max3+1)*(high_freq**(a_max3+1)-low_freq**(a_max3+1))/(high_freq-low_freq)
+
+  				final_error=flux-int_min1#[(flux-int_min1).abs,(flux-int_min2).abs,(flux-int_min3).abs,(flux-int_max1).abs,(flux-int_max2).abs,(flux-int_max3).abs].max
+  				flux_errors.push(final_error)
+
+
   			end
 
     	end

@@ -65,6 +65,7 @@ window.onload=function(){
   //LIGHTCURVE PLOT
 
   freq_array = []; // this array saves what freqs will be plotted later
+  aver_mode_array = []; //this array saves data to plot in aver mode
 
   //query database
   <% @source.frequencies.distinct.order(:freq_ghz).each do |freq| %>
@@ -92,7 +93,7 @@ window.onload=function(){
 
   <% end %>
 
-  var layout = {
+  var layoutLC = {
     title: "<%=@source.j2000_name%>",
 
     xaxis: {
@@ -132,7 +133,7 @@ window.onload=function(){
     type: "scatter",
     name: "Aver 7mm"
   };
-  freq_array.push(aver_lc7);
+  aver_mode_array.push(aver_lc7);
 
   <% lc14=getAverageLightCurve(@source,19,25) %>
   var aver_lc14 = {
@@ -146,7 +147,7 @@ window.onload=function(){
     type: "scatter",
     name: "Aver 14mm"
   };
-  freq_array.push(aver_lc14);
+  aver_mode_array.push(aver_lc14);
 
   <% lc20=getAverageLightCurve(@source,14,17) %>
   var aver_lc20 = {
@@ -160,9 +161,9 @@ window.onload=function(){
     type: "scatter",
     name: "Aver 20mm"
   };
-  freq_array.push(aver_lc20);
+  aver_mode_array.push(aver_lc20);
 
-  Plotly.newPlot("lightcurve",freq_array,layout);
+  Plotly.newPlot("lightcurve",freq_array,layoutLC);
 
 
   //SPECTRUM PLOT
@@ -278,5 +279,23 @@ window.onload=function(){
   Plotly.newPlot("speci",[speci_data],layout);
 
   <% end %>
+
+  var checkboxAver = document.getElementById("averSwitch");
+
+  function updateLCplot(){
+    var aver = checkboxAver.checked;
+
+    if (aver){
+      Plotly.newPlot("lightcurve",aver_mode_array,layoutLC);
+    } else {
+      Plotly.newPlot("lightcurve",freq_array,layoutLC);
+    };
+  };
+  
+  checkboxAver.addEventListener('change',function(){updateLCplot()});
+
+
+  updateLCplot();
+
 }
 </script>
