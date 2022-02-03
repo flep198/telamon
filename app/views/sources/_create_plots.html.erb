@@ -278,8 +278,6 @@ window.onload=function(){
 
   Plotly.newPlot("speci",[speci_data],layout);
 
-  <% end %>
-
   var checkboxAver = document.getElementById("averSwitch");
 
   function updateLCplot(){
@@ -294,8 +292,9 @@ window.onload=function(){
   
   checkboxAver.addEventListener('change',function(){updateLCplot()});
 
-
   updateLCplot();
+
+  <% end %> 
 
 }
 </script>

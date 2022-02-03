@@ -90,10 +90,12 @@
           Lightcurves 
           </div>
           <div class="col-md-4">
-            <div class="form-check form-switch form-check-inline float-right">
-              <input class="form-check-input" type="checkbox" id="averSwitch" name="averSwitch" value="yes" checked>
-              <label class="form-check-label" for="averSwitch"> Average Mode </label>
-            </div>
+            <% if user_signed_in? %>
+              <div class="form-check form-switch form-check-inline float-right">
+                <input class="form-check-input" type="checkbox" id="averSwitch" name="averSwitch" value="no" checked>
+                <label class="form-check-label" for="averSwitch"> Average Mode </label>
+              </div>
+            <% end %>
           </div>
         </div>
       </div>
