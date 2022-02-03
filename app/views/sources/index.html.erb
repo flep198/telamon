@@ -11,151 +11,198 @@
 </br>
 <%end%>
 
-<!--Checkboxes for Source Class filtering-->
-<div class="row">
-  <div class="col-md-1">
-    <div class="form-check form-switch form-check-inline">
-      <input class="form-check-input" type="checkbox" id="LBL" name="LBL" value="yes" checked>
-      <label class="form-check-label" for="LBL"> LBL </label>
+<div class="accordion" id="accordionFilter">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Class Filters
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <!--Checkboxes for Source Class filtering-->
+        <div class="row">
+          <div class="col-md-1">
+            <div class="form-check form-switch form-check-inline">
+              <input class="form-check-input" type="checkbox" id="LBL" name="LBL" value="yes" checked>
+              <label class="form-check-label" for="LBL"> LBL </label>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="form-check form-switch form-check-inline">
+              <input class="form-check-input" type="checkbox" id="IBL" name="IBL" value="yes" checked>
+              <label class="form-check-label" for="IBL"> IBL </label>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="form-check form-switch form-check-inline">
+              <input class="form-check-input" type="checkbox" id="HBL" name="HBL" value="yes" checked> 
+              <label class="form-check-label" for="HBL"> HBL </label>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="form-check form-switch form-check-inline">
+              <input class="form-check-input" type="checkbox" id="XBL" name="XBL" value="yes" checked> 
+              <label class="form-check-label" for="XBL"> XBL </label>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="form-check form-switch form-check-inline">
+              <input class="form-check-input" type="checkbox" id="FSRQ" name="FSRQ" value="yes" checked> 
+              <label class="form-check-label" for="FSRQ"> FSRQ</label>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="form-check form-switch form-check-inline">
+              <input class="form-check-input" type="checkbox" id="RG" name="RG" value="yes" checked> 
+              <label class="form-check-label" for="RG"> RG</label>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="form-check form-switch form-check-inline">
+              <input class="form-check-input" type="checkbox" id="other_class" name="other_class" value="yes" checked> 
+              <label class="form-check-label" for="other_class"> Other</label>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="col-md-1">
-    <div class="form-check form-switch form-check-inline">
-      <input class="form-check-input" type="checkbox" id="IBL" name="IBL" value="yes" checked>
-      <label class="form-check-label" for="IBL"> IBL </label>
-    </div>
-  </div>
-  <div class="col-md-1">
-    <div class="form-check form-switch form-check-inline">
-      <input class="form-check-input" type="checkbox" id="HBL" name="HBL" value="yes" checked> 
-      <label class="form-check-label" for="HBL"> HBL </label>
-    </div>
-  </div>
-  <div class="col-md-1">
-    <div class="form-check form-switch form-check-inline">
-      <input class="form-check-input" type="checkbox" id="XBL" name="XBL" value="yes" checked> 
-      <label class="form-check-label" for="XBL"> XBL </label>
-    </div>
-  </div>
-  <div class="col-md-1">
-    <div class="form-check form-switch form-check-inline">
-      <input class="form-check-input" type="checkbox" id="FSRQ" name="FSRQ" value="yes" checked> 
-      <label class="form-check-label" for="FSRQ"> FSRQ</label>
-    </div>
-  </div>
-  <div class="col-md-1">
-    <div class="form-check form-switch form-check-inline">
-      <input class="form-check-input" type="checkbox" id="RG" name="RG" value="yes" checked> 
-      <label class="form-check-label" for="RG"> RG</label>
-    </div>
-  </div>
-  <div class="col-md-1">
-    <div class="form-check form-switch form-check-inline">
-      <input class="form-check-input" type="checkbox" id="other_class" name="other_class" value="yes" checked> 
-      <label class="form-check-label" for="other_class"> Other</label>
-    </div>
-  </div>
-</div>
-
-
-<!--Checkboxes for subsample filtering-->
-<div class="row">
-  <div class="col-md-2">
-    <div class="form-check form-switch form-check-inline">
-      <input class="form-check-input" type="checkbox" id="Sample1" name="Sample1" value="yes" checked>
-      <label class="form-check-label" for="SampleI"> Sample 1</label>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-check form-switch form-check-inline">
-      <input class="form-check-input" type="checkbox" id="Sample2" name="Sample2" value="yes" checked>
-      <label class="form-check-label" for="SampleII"> Sample 2</label>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-check form-switch form-check-inline">
-      <input class="form-check-input" type="checkbox" id="BadWeather" name="BadWeather" value="yes" checked> 
-      <label class="form-check-label" for="BadWeather"> Bad Weather</label>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-check form-switch form-check-inline">
-      <input class="form-check-input" type="checkbox" id="Calibrator" name="Calibrator" value="yes" checked> 
-      <label class="form-check-label" for="Calibrator"> Calibrator</label>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-check form-switch form-check-inline">
-      <input class="form-check-input" type="checkbox" id="Other" name="Other" value="yes" checked> 
-      <label class="form-check-label" for="Other"> Other</label>
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-
-  <div class="row">
-    <div class="col-md-2">
-      <label for="20mm_lower_limit">Ø S 20mm from</label>
-      <input type="text" class="form-control" id="20mm_lower_limit" placeholder="lower limit in mJy">
-    </div>
-    <div class="col-md-2">
-      <label for="20mm_upper_limit">to</label>
-      <input type="text" class="form-control" id="20mm_upper_limit" placeholder="upper limit in mJy">
-    </div>
-
-    <div class="col-md-2">
-      <label for="20mm_lower_limit">Ø S 14mm from</label>
-      <input type="text" class="form-control" id="14mm_lower_limit" placeholder="lower limit in mJy">
-    </div>
-    <div class="col-md-2">
-      <label for="20mm_upper_limit">to</label>
-      <input type="text" class="form-control" id="14mm_upper_limit" placeholder="upper limit in mJy">
-    </div>
-
-    <div class="col-md-2">
-      <label for="20mm_lower_limit">Ø S 7mm from</label>
-      <input type="text" class="form-control" id="7mm_lower_limit" placeholder="lower limit in mJy">
-    </div>
-    <div class="col-md-2">
-      <label for="20mm_upper_limit">to</label>
-      <input type="text" class="form-control" id="7mm_upper_limit" placeholder="upper limit in mJy">
-    </div>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="col-md-3">
-    <label for="SearchJ2000">Search J2000 Name</label>
-    <input type="text" class="form-control" id="SearchJ2000" placeholder="enter search">
   </div>
 
-  <div class="col-md-3">
-    <label for="SearchAlt">Search Alt Name</label>
-    <input type="text" class="form-control" id="SearchAlt" placeholder="enter search">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+        Category Filters
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <!--Checkboxes for subsample filtering-->
+        <div class="row">
+          <div class="col-md-2">
+            <div class="form-check form-switch form-check-inline">
+              <input class="form-check-input" type="checkbox" id="Sample1" name="Sample1" value="yes" checked>
+              <label class="form-check-label" for="SampleI"> Sample 1</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-check form-switch form-check-inline">
+              <input class="form-check-input" type="checkbox" id="Sample2" name="Sample2" value="yes" checked>
+              <label class="form-check-label" for="SampleII"> Sample 2</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-check form-switch form-check-inline">
+              <input class="form-check-input" type="checkbox" id="BadWeather" name="BadWeather" value="yes" checked> 
+              <label class="form-check-label" for="BadWeather"> Bad Weather</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-check form-switch form-check-inline">
+              <input class="form-check-input" type="checkbox" id="Calibrator" name="Calibrator" value="yes" checked> 
+              <label class="form-check-label" for="Calibrator"> Calibrator</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-check form-switch form-check-inline">
+              <input class="form-check-input" type="checkbox" id="Other" name="Other" value="yes" checked> 
+              <label class="form-check-label" for="Other"> Other</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="col-md-3">
-    <label for="SelectDropped">Neutrino Association</label>
-    <select class="form-select" id="SelectNeutrino" name="SelectNeutrino">
-      <option selected value="0">All</option>
-      <option value="1">Exclude all Neutrino Sources</option>
-      <option value="2">Only Neutrino Sources</option>
-      
-    </select>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+        Flux Density Filters
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="form-group">
+
+          <div class="row">
+            <div class="col-md-2">
+              <label for="20mm_lower_limit">Ø S 20mm from</label>
+              <input type="text" class="form-control" id="20mm_lower_limit" placeholder="lower limit in mJy">
+            </div>
+            <div class="col-md-2">
+              <label for="20mm_upper_limit">to</label>
+              <input type="text" class="form-control" id="20mm_upper_limit" placeholder="upper limit in mJy">
+            </div>
+
+            <div class="col-md-2">
+              <label for="20mm_lower_limit">Ø S 14mm from</label>
+              <input type="text" class="form-control" id="14mm_lower_limit" placeholder="lower limit in mJy">
+            </div>
+            <div class="col-md-2">
+              <label for="20mm_upper_limit">to</label>
+              <input type="text" class="form-control" id="14mm_upper_limit" placeholder="upper limit in mJy">
+            </div>
+
+            <div class="col-md-2">
+              <label for="20mm_lower_limit">Ø S 7mm from</label>
+              <input type="text" class="form-control" id="7mm_lower_limit" placeholder="lower limit in mJy">
+            </div>
+            <div class="col-md-2">
+              <label for="20mm_upper_limit">to</label>
+              <input type="text" class="form-control" id="7mm_upper_limit" placeholder="upper limit in mJy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="col-md-3">
-    <label for="SelectDropped">Drop Status</label>
-    <select class="form-select" id="SelectDropped" name="SelectDropped">
-      <option selected value="0">All</option>
-      <option value="1">Exclude Dropped Sources</option>
-      <option value="2">Only Dropped Sources</option>
-    </select>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+        Search & Additional Filters
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="row">
+
+          <div class="col-md-3">
+            <label for="SearchJ2000">Search J2000 Name</label>
+            <input type="text" class="form-control" id="SearchJ2000" placeholder="enter search">
+          </div>
+
+          <div class="col-md-3">
+            <label for="SearchAlt">Search Alt Name</label>
+            <input type="text" class="form-control" id="SearchAlt" placeholder="enter search">
+          </div>
+
+          <div class="col-md-3">
+            <label for="SelectDropped">Neutrino Association</label>
+            <select class="form-select" id="SelectNeutrino" name="SelectNeutrino">
+              <option selected value="0">All</option>
+              <option value="1">Exclude all Neutrino Sources</option>
+              <option value="2">Only Neutrino Sources</option>
+              
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="SelectDropped">Drop Status</label>
+            <select class="form-select" id="SelectDropped" name="SelectDropped">
+              <option selected value="0">All</option>
+              <option value="1">Exclude Dropped Sources</option>
+              <option value="2">Only Dropped Sources</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 </br>
+
+
 
 <div class="table-responsive">
 <table id="sourceTable" class="table table-hover table-striped table-bordered">
