@@ -8,7 +8,7 @@ module SourcesHelper
     		
     		#Import Data
     		@epoch_id=epoch.id
-    		@data = Result.where(:source_id => @source.id, :epoch_id => @epoch_id).map { |r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.error_jy,r.mjd]}
+    		@data = Result.where(:source_id => source.id, :epoch_id => @epoch_id).map { |r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.error_jy,r.mjd]}
     		@data = @data.sort_by(&:first)
 
     		x = @data.map{|r| Math.log(r[0])}
@@ -169,7 +169,7 @@ module SourcesHelper
 
     		#find data to calculate average from
     		@epoch_id=epoch.id
-    		@data = Result.where(:source_id => @source.id, :epoch_id => @epoch_id, frequency_id: freq_ids).map {|r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.error_jy,r.mjd]}
+    		@data = Result.where(:source_id => source.id, :epoch_id => @epoch_id, frequency_id: freq_ids).map {|r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.error_jy,r.mjd]}
 
     		x = @data.map{|r| r[0]}
   			y = @data.map{|r| r[1]}

@@ -1,0 +1,27 @@
+<% if user_signed_in? %>
+
+<%= render 'plot_all_lightcurves' %>
+
+<div class="form-check form-switch form-check-inline">
+    <input class="form-check-input" type="checkbox" id="averSwitch" name="averSwitch" value="yes">
+    <label class="form-check-label" for="averSwitch"> Average Mode </label>
+</div>
+
+
+<div class="container">
+	<div class="row">
+
+		<% Source.all.order("j2000_name").each do |plot_source|%>
+		<div class="col-md-6">
+		<div id="lightcurve<%=plot_source.j2000_name.gsub("+","plus").gsub("-","minus")%>"></div>
+		</div>
+		<%end%>
+	</div>
+</div>
+
+<% else %>
+  <%= flash[:notice] = 'Access denied!'%>
+  <script type="text/javascript">
+    window.location.href="/"
+  </script>
+<% end %>

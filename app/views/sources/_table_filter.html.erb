@@ -59,7 +59,6 @@ window.onload=function(){
 
     var checkboxSample1 = document.querySelector("input[name=Sample1]");
     var checkboxSample2 = document.querySelector("input[name=Sample2]");
-    var checkboxBadWeather = document.querySelector("input[name=BadWeather]");
     var checkboxCalibrator = document.querySelector("input[name=Calibrator]");
     var checkboxOther = document.getElementById("Other");
 
@@ -81,6 +80,11 @@ window.onload=function(){
     var up_lim_14_form = document.getElementById("14mm_upper_limit");
     var low_lim_7_form = document.getElementById("7mm_lower_limit");
     var up_lim_7_form = document.getElementById("7mm_upper_limit");
+
+
+    <% if user_signed_in? %>
+    var checkboxBadWeather = document.querySelector("input[name=BadWeather]");
+    <%end%>
 
     //old table filter function
     function CategoryFilterTable(checkbox,CategoryName){
@@ -108,7 +112,9 @@ window.onload=function(){
         //read out filter form
         var sample1 = checkboxSample1.checked;
         var sample2 = checkboxSample2.checked;
+        <% if user_signed_in? %>
         var badweather = checkboxBadWeather.checked;
+        <% end %>
         var calibrator = checkboxCalibrator.checked;
         var other = checkboxOther.checked;
         var neutrino_value = selectNeutrino.value;
@@ -193,9 +199,11 @@ window.onload=function(){
                 if (sample2 && category_txt.includes("Sample 2")){
                     show_category=true;
                 };
-                if (badweather && category_txt.includes("Bad Weather")){
-                    show_category=true;
-                };
+                <% if user_signed_in? %>
+                    if (badweather && category_txt.includes("Bad Weather")){
+                        show_category=true;
+                    };
+                <% end %>
                 if (calibrator && category_txt.includes("Calibrator")){
                     show_category=true;
                 };
@@ -335,7 +343,9 @@ window.onload=function(){
     
     checkboxSample1.addEventListener('change', function(){updateTable()});
     checkboxSample2.addEventListener('change', function(){updateTable()});
+    <% if user_signed_in? %>
     checkboxBadWeather.addEventListener('change', function(){updateTable()});
+    <% end %>
     checkboxCalibrator.addEventListener('change', function(){updateTable()});
     checkboxOther.addEventListener('change',function(){updateTable()});
     checkboxLBL.addEventListener('change',function(){updateTable()});

@@ -1,182 +1,183 @@
-Source.delete_all
-@a01122244=Source.create(j2000_name: '0112+2244')
-@a02213556=Source.create(j2000_name: '0221+3556')
-@a02224302=Source.create(j2000_name: '0222+4302')
-@a02421101=Source.create(j2000_name: '0242+1101')
-@a05090541=Source.create(j2000_name: '0509+0541')
-@a12212813=Source.create(j2000_name: '1221+2813')
-@a3C138=Source.create(j2000_name: '3C138')
-@a3C286=Source.create(j2000_name: '3C286')
-@aNGC7027=Source.create(j2000_name: 'NGC7027')
-@a12302518=Source.create(j2000_name: '1230+2518')
-@a16533945=Source.create(j2000_name: '1653+3945')
-@a00355950=Source.create(j2000_name: '0035+5950')
-@a02145144=Source.create(j2000_name: '0214+5144')
-@a02322017=Source.create(j2000_name: '0232+2017')
-@a03164119=Source.create(j2000_name: '0316+4119')
-@a05212112=Source.create(j2000_name: '0521+2112')
-@a06502502=Source.create(j2000_name: '0650+2502')
-@a10154926=Source.create(j2000_name: '1015+4926')
-@a14432501=Source.create(j2000_name: '1443+2501')
-@a15426129=Source.create(j2000_name: '1542+6129')
-@a15551111=Source.create(j2000_name: '1555+1111')
-@a17281215=Source.create(j2000_name: '1728+1215')
-@a17285013=Source.create(j2000_name: '1728+5013')
-@a17431935=Source.create(j2000_name: '1743+1935')
-@a20183851=Source.create(j2000_name: '2018+3851')
-@a21583013=Source.create(j2000_name: '2158-3013')
-@a22432021=Source.create(j2000_name: '2243+2021')
-@a10582817=Source.create(j2000_name: '1058+2817')
-@a03032407=Source.create(j2000_name: '0303-2407')
-@a11043812=Source.create(j2000_name: '1104+3812')
-@a12173007=Source.create(j2000_name: '1217+3007')
-@a14223223=Source.create(j2000_name: '1422+3223')
-@a14272348=Source.create(j2000_name: '1427+2348')
-@a18133144=Source.create(j2000_name: '1813+3144')
-@a19596508=Source.create(j2000_name: '1959+6508')
-@a23475142=Source.create(j2000_name: '2347+5142')
-@a3C161=Source.create(j2000_name: '3C161')
-@aBLLAC=Source.create(j2000_name: 'BLLAC')
-@a3C48=Source.create(j2000_name: '3C48')
-@aOJ287=Source.create(j2000_name: 'OJ287')
-@a11451936=Source.create(j2000_name: '1145+1936')
-@a12213010=Source.create(j2000_name: '1221+3010')
-@a3C147=Source.create(j2000_name: '3C147')
-@a11367009=Source.create(j2000_name: '1136+7009')
-@a15182731=Source.create(j2000_name: '1518-2731')
-@a19432118=Source.create(j2000_name: '1943+2118')
-@a14182543=Source.create(j2000_name: '1418+2543')
-@aW3OH=Source.create(j2000_name: 'W3OH')
-@a3C295=Source.create(j2000_name: '3C295')
-@a04160105=Source.create(j2000_name: '0416+0105')
-@aMARS=Source.create(j2000_name: 'MARS')
-@a08095219=Source.create(j2000_name: '0809+5219')
-@a2128123=Source.create(j2000_name: '2128-123')
-@a4C39=Source.create(j2000_name: '4C39')
-@a0235164=Source.create(j2000_name: '0235+164')
-@a0336019=Source.create(j2000_name: '0336-019')
-@a09132103=Source.create(j2000_name: '0913-2103')
-@a12590136=Source.create(j2000_name: '1259+0136')
-@a14284240=Source.create(j2000_name: '1428+4240')
-@aK350A=Source.create(j2000_name: 'K3-50A')
-@a06580637=Source.create(j2000_name: '0658+0637')
-@a3C279=Source.create(j2000_name: '3C279')
-@a19583011=Source.create(j2000_name: '1958-3011')
-@a3C123=Source.create(j2000_name: '3C123')
-@a11592914=Source.create(j2000_name: '1159+2914')
-@a12242122=Source.create(j2000_name: '1224+2122')
-@a15041029=Source.create(j2000_name: '1504+1029')
-@a15120905=Source.create(j2000_name: '1512-0905')
-@a1749096=Source.create(j2000_name: '1749+096')
-@a3C84=Source.create(j2000_name: '3C84')
-@a05076737=Source.create(j2000_name: '0507+6737')
-@a3C345=Source.create(j2000_name: '3C345')
-@a01363906=Source.create(j2000_name: '0136+3906')
-@a02452405=Source.create(j2000_name: '0245+2405')
-@a02582030=Source.create(j2000_name: '0258+2030')
-@a06481516=Source.create(j2000_name: '0648+1516')
-@a07381742=Source.create(j2000_name: '0738+1742')
-@a12242436=Source.create(j2000_name: '1224+2436')
-@a20395219=Source.create(j2000_name: '2039+5219')
-@a08120237=Source.create(j2000_name: '0812+0237')
-@a14172543=Source.create(j2000_name: '1417+2543')
-@a17251152=Source.create(j2000_name: '1725+1152')
-@a20014352=Source.create(j2000_name: '2001+4352')
-@a23432614=Source.create(j2000_name: '2343+2614')
-@a23442559=Source.create(j2000_name: '2344+2559')
-@a23482448=Source.create(j2000_name: '2348+2448')
-@a14151320=Source.create(j2000_name: '1415+1320')
-@a07105909=Source.create(j2000_name: '0710+5909')
-@a15040047=Source.create(j2000_name: '1504-0047')
-@a02530005=Source.create(j2000_name: '0253+0005')
-@a18032521=Source.create(j2000_name: '1803+2521')
-@a03022030=Source.create(j2000_name: '0302+2030')
-@a17340926=Source.create(j2000_name: '1734+0926')
-@a17350808=Source.create(j2000_name: '1735+0808')
-@a17360631=Source.create(j2000_name: '1736+0631')
-@a17370621=Source.create(j2000_name: '1737+0621')
-@a17480832=Source.create(j2000_name: '1748+0832')
-@a17510938=Source.create(j2000_name: '1751+0938')
-@a17520611=Source.create(j2000_name: '1752+0611')
-@a02542343=Source.create(j2000_name: '0254+2343')
-@a03042401=Source.create(j2000_name: '0304+2401')
-@a17330804=Source.create(j2000_name: '1733+0804')
-@a17480440=Source.create(j2000_name: '1748+0440')
-@a02472010=Source.create(j2000_name: '0247+2010')
-@a02502121=Source.create(j2000_name: '0250+2121')
-@a03022155=Source.create(j2000_name: '0302+2155')
-@a02531958=Source.create(j2000_name: '0253+1958')
-@a02061150=Source.create(j2000_name: '0206-1150')
-@a02011132=Source.create(j2000_name: '0201-1132')
-@a07381538=Source.create(j2000_name: '0738+1538')
-@a07431714=Source.create(j2000_name: '0743+1714')
-@a07501823=Source.create(j2000_name: '0750+1823')
-@a21081430=Source.create(j2000_name: '2108+1430')
+@a01122244=Source.where(j2000_name: '0112+2244').first_or_create
+@a02213556=Source.where(j2000_name: '0221+3556').first_or_create
+@a02224302=Source.where(j2000_name: '0222+4302').first_or_create
+@a02421101=Source.where(j2000_name: '0242+1101').first_or_create
+@a05090541=Source.where(j2000_name: '0509+0541').first_or_create
+@a12212813=Source.where(j2000_name: '1221+2813').first_or_create
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a12302518=Source.where(j2000_name: '1230+2518').first_or_create
+@a16533945=Source.where(j2000_name: '1653+3945').first_or_create
+@a00355950=Source.where(j2000_name: '0035+5950').first_or_create
+@a02145144=Source.where(j2000_name: '0214+5144').first_or_create
+@a02322017=Source.where(j2000_name: '0232+2017').first_or_create
+@a03164119=Source.where(j2000_name: '0316+4119').first_or_create
+@a05212112=Source.where(j2000_name: '0521+2112').first_or_create
+@a06502502=Source.where(j2000_name: '0650+2502').first_or_create
+@a10154926=Source.where(j2000_name: '1015+4926').first_or_create
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a17285013=Source.where(j2000_name: '1728+5013').first_or_create
+@a17431935=Source.where(j2000_name: '1743+1935').first_or_create
+@a20183851=Source.where(j2000_name: '2018+3851').first_or_create
+@a21583013=Source.where(j2000_name: '2158-3013').first_or_create
+@a22432021=Source.where(j2000_name: '2243+2021').first_or_create
+@a10582817=Source.where(j2000_name: '1058+2817').first_or_create
+@a03032407=Source.where(j2000_name: '0303-2407').first_or_create
+@a11043812=Source.where(j2000_name: '1104+3812').first_or_create
+@a12173007=Source.where(j2000_name: '1217+3007').first_or_create
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a14272348=Source.where(j2000_name: '1427+2348').first_or_create
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@aBLLAC=Source.where(j2000_name: 'BLLAC').first_or_create
+@a3C48=Source.where(j2000_name: '3C48').first_or_create
+@aOJ287=Source.where(j2000_name: 'OJ287').first_or_create
+@a11451936=Source.where(j2000_name: '1145+1936').first_or_create
+@a12213010=Source.where(j2000_name: '1221+3010').first_or_create
+@a3C147=Source.where(j2000_name: '3C147').first_or_create
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a15182731=Source.where(j2000_name: '1518-2731').first_or_create
+@a19432118=Source.where(j2000_name: '1943+2118').first_or_create
+@a14172543=Source.where(j2000_name: '1417+2543').first_or_create
+@aW3OH=Source.where(j2000_name: 'W3OH').first_or_create
+@a3C295=Source.where(j2000_name: '3C295').first_or_create
+@a04160105=Source.where(j2000_name: '0416+0105').first_or_create
+@aMARS=Source.where(j2000_name: 'MARS').first_or_create
+@a08095219=Source.where(j2000_name: '0809+5219').first_or_create
+@a2128123=Source.where(j2000_name: '2128-123').first_or_create
+@a4C39=Source.where(j2000_name: '4C39').first_or_create
+@a0235164=Source.where(j2000_name: '0235+164').first_or_create
+@a0336019=Source.where(j2000_name: '0336-019').first_or_create
+@a09132103=Source.where(j2000_name: '0913-2103').first_or_create
+@a12590136=Source.where(j2000_name: '1259+0136').first_or_create
+@a14284240=Source.where(j2000_name: '1428+4240').first_or_create
+@aK350A=Source.where(j2000_name: 'K3-50A').first_or_create
+@a06580637=Source.where(j2000_name: '0658+0637').first_or_create
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a19583011=Source.where(j2000_name: '1958-3011').first_or_create
+@a3C123=Source.where(j2000_name: '3C123').first_or_create
+@a11592914=Source.where(j2000_name: '1159+2914').first_or_create
+@a12242122=Source.where(j2000_name: '1224+2122').first_or_create
+@a15041029=Source.where(j2000_name: '1504+1029').first_or_create
+@a15120905=Source.where(j2000_name: '1512-0905').first_or_create
+@a1749096=Source.where(j2000_name: '1749+096').first_or_create
+@a3C84=Source.where(j2000_name: '3C84').first_or_create
+@a05076737=Source.where(j2000_name: '0507+6737').first_or_create
+@a3C345=Source.where(j2000_name: '3C345').first_or_create
+@a01363906=Source.where(j2000_name: '0136+3906').first_or_create
+@a02452405=Source.where(j2000_name: '0245+2405').first_or_create
+@a02582030=Source.where(j2000_name: '0258+2030').first_or_create
+@a06481516=Source.where(j2000_name: '0648+1516').first_or_create
+@a07381742=Source.where(j2000_name: '0738+1742').first_or_create
+@a12242436=Source.where(j2000_name: '1224+2436').first_or_create
+@a20395219=Source.where(j2000_name: '2039+5219').first_or_create
+@a08120237=Source.where(j2000_name: '0812+0237').first_or_create
+@a17251152=Source.where(j2000_name: '1725+1152').first_or_create
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a23432614=Source.where(j2000_name: '2343+2614').first_or_create
+@a23442559=Source.where(j2000_name: '2344+2559').first_or_create
+@a23482448=Source.where(j2000_name: '2348+2448').first_or_create
+@a14151320=Source.where(j2000_name: '1415+1320').first_or_create
+@a07105909=Source.where(j2000_name: '0710+5909').first_or_create
+@a14251424=Source.where(j2000_name: '1425+1424').first_or_create
+@a14281628=Source.where(j2000_name: '1428+1628').first_or_create
+@a15105702=Source.where(j2000_name: '1510+5702').first_or_create
+@a17450338=Source.where(j2000_name: '1745-0338').first_or_create
+@a15040047=Source.where(j2000_name: '1504-0047').first_or_create
+@a02530005=Source.where(j2000_name: '0253+0005').first_or_create
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a03022030=Source.where(j2000_name: '0302+2030').first_or_create
+@a17340926=Source.where(j2000_name: '1734+0926').first_or_create
+@a17350808=Source.where(j2000_name: '1735+0808').first_or_create
+@a17360631=Source.where(j2000_name: '1736+0631').first_or_create
+@a17370621=Source.where(j2000_name: '1737+0621').first_or_create
+@a17480832=Source.where(j2000_name: '1748+0832').first_or_create
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17520611=Source.where(j2000_name: '1752+0611').first_or_create
+@a02542343=Source.where(j2000_name: '0254+2343').first_or_create
+@a03042401=Source.where(j2000_name: '0304+2401').first_or_create
+@a17330804=Source.where(j2000_name: '1733+0804').first_or_create
+@a17480440=Source.where(j2000_name: '1748+0440').first_or_create
+@a02472010=Source.where(j2000_name: '0247+2010').first_or_create
+@a02502121=Source.where(j2000_name: '0250+2121').first_or_create
+@a03022155=Source.where(j2000_name: '0302+2155').first_or_create
+@a02531958=Source.where(j2000_name: '0253+1958').first_or_create
+@a02061150=Source.where(j2000_name: '0206-1150').first_or_create
+@a02011132=Source.where(j2000_name: '0201-1132').first_or_create
+@a07381538=Source.where(j2000_name: '0738+1538').first_or_create
+@a07431714=Source.where(j2000_name: '0743+1714').first_or_create
+@a07501823=Source.where(j2000_name: '0750+1823').first_or_create
+@a21081430=Source.where(j2000_name: '2108+1430').first_or_create
 
-Frequency.delete_all
-@a38_75=Frequency.create(freq_ghz: '38.75')
-@a41_25=Frequency.create(freq_ghz: '41.25')
-@a22_85=Frequency.create(freq_ghz: '22.85')
-@a21_15=Frequency.create(freq_ghz: '21.15')
-@a19_25=Frequency.create(freq_ghz: '19.25')
-@a43_75=Frequency.create(freq_ghz: '43.75')
-@a36_25=Frequency.create(freq_ghz: '36.25')
-@a24_75=Frequency.create(freq_ghz: '24.75')
-@a14_25=Frequency.create(freq_ghz: '14.25')
-@a16_75=Frequency.create(freq_ghz: '16.75')
-@a10_45=Frequency.create(freq_ghz: '10.45')
-@a4_85=Frequency.create(freq_ghz: '4.85')
-@a2_595=Frequency.create(freq_ghz: '2.595')
-@a8_35=Frequency.create(freq_ghz: '8.35')
-@a35_75=Frequency.create(freq_ghz: '35.75')
-@a38_25=Frequency.create(freq_ghz: '38.25')
-@a2_45=Frequency.create(freq_ghz: '2.45')
+@a38_75=Frequency.where(freq_ghz: '38.75').first_or_create
+@a41_25=Frequency.where(freq_ghz: '41.25').first_or_create
+@a22_85=Frequency.where(freq_ghz: '22.85').first_or_create
+@a21_15=Frequency.where(freq_ghz: '21.15').first_or_create
+@a19_25=Frequency.where(freq_ghz: '19.25').first_or_create
+@a43_75=Frequency.where(freq_ghz: '43.75').first_or_create
+@a36_25=Frequency.where(freq_ghz: '36.25').first_or_create
+@a24_75=Frequency.where(freq_ghz: '24.75').first_or_create
+@a14_25=Frequency.where(freq_ghz: '14.25').first_or_create
+@a16_75=Frequency.where(freq_ghz: '16.75').first_or_create
+@a10_45=Frequency.where(freq_ghz: '10.45').first_or_create
+@a4_85=Frequency.where(freq_ghz: '4.85').first_or_create
+@a2_595=Frequency.where(freq_ghz: '2.595').first_or_create
+@a8_35=Frequency.where(freq_ghz: '8.35').first_or_create
+@a35_75=Frequency.where(freq_ghz: '35.75').first_or_create
+@a38_25=Frequency.where(freq_ghz: '38.25').first_or_create
+@a2_45=Frequency.where(freq_ghz: '2.45').first_or_create
 
-Epoch.delete_all
-@a2021_10_07=Epoch.create(date: '2021-10-07')
-@a2020_10_18=Epoch.create(date: '2020-10-18')
-@a2021_01_02=Epoch.create(date: '2021-01-02')
-@a2021_08_13=Epoch.create(date: '2021-08-13')
-@a2021_07_06=Epoch.create(date: '2021-07-06')
-@a2021_09_03=Epoch.create(date: '2021-09-03')
-@a2020_12_19=Epoch.create(date: '2020-12-19')
-@a2021_03_06=Epoch.create(date: '2021-03-06')
-@a2021_02_04=Epoch.create(date: '2021-02-04')
-@a2021_10_24=Epoch.create(date: '2021-10-24')
-@a2020_09_22=Epoch.create(date: '2020-09-22')
-@a2021_01_25=Epoch.create(date: '2021-01-25')
-@a2021_06_26=Epoch.create(date: '2021-06-26')
-@a2021_04_08=Epoch.create(date: '2021-04-08')
-@a2021_02_21=Epoch.create(date: '2021-02-21')
-@a2021_03_23=Epoch.create(date: '2021-03-23')
-@a2021_09_19=Epoch.create(date: '2021-09-19')
-@a2020_10_24=Epoch.create(date: '2020-10-24')
-@a2021_05_20=Epoch.create(date: '2021-05-20')
-@a2021_06_24=Epoch.create(date: '2021-06-24')
-@a2021_07_28=Epoch.create(date: '2021-07-28')
-@a2021_04_27=Epoch.create(date: '2021-04-27')
-@a2021_08_20=Epoch.create(date: '2021-08-20')
-@a2021_08_12=Epoch.create(date: '2021-08-12')
-@a2020_08_25=Epoch.create(date: '2020-08-25')
-@a2020_11_12=Epoch.create(date: '2020-11-12')
-@a2021_08_11=Epoch.create(date: '2021-08-11')
-@a2020_11_27=Epoch.create(date: '2020-11-27')
-@a2022_01_06=Epoch.create(date: '2022-01-06')
-@a2022_01_24=Epoch.create(date: '2022-01-24')
-@a2020_11_17=Epoch.create(date: '2020-11-17')
-@a2020_11_19=Epoch.create(date: '2020-11-19')
-@a2020_11_22=Epoch.create(date: '2020-11-22')
-@a2020_11_23=Epoch.create(date: '2020-11-23')
-@a2020_11_26=Epoch.create(date: '2020-11-26')
-@a2021_11_05=Epoch.create(date: '2021-11-05')
-@a2021_11_18=Epoch.create(date: '2021-11-18')
-@a2021_11_22=Epoch.create(date: '2021-11-22')
-@a2021_11_27=Epoch.create(date: '2021-11-27')
-@a2021_11_28=Epoch.create(date: '2021-11-28')
-@a2021_11_29=Epoch.create(date: '2021-11-29')
-@a2021_12_02=Epoch.create(date: '2021-12-02')
-@a2021_12_08=Epoch.create(date: '2021-12-08')
-@a2021_12_21=Epoch.create(date: '2021-12-21')
+@a2021_10_07=Epoch.where(date: '2021-10-07').first_or_create
+@a2020_10_18=Epoch.where(date: '2020-10-18').first_or_create
+@a2021_01_02=Epoch.where(date: '2021-01-02').first_or_create
+@a2021_08_13=Epoch.where(date: '2021-08-13').first_or_create
+@a2021_07_06=Epoch.where(date: '2021-07-06').first_or_create
+@a2021_09_03=Epoch.where(date: '2021-09-03').first_or_create
+@a2020_12_19=Epoch.where(date: '2020-12-19').first_or_create
+@a2021_03_06=Epoch.where(date: '2021-03-06').first_or_create
+@a2021_02_04=Epoch.where(date: '2021-02-04').first_or_create
+@a2021_10_24=Epoch.where(date: '2021-10-24').first_or_create
+@a2020_09_22=Epoch.where(date: '2020-09-22').first_or_create
+@a2021_01_25=Epoch.where(date: '2021-01-25').first_or_create
+@a2021_06_26=Epoch.where(date: '2021-06-26').first_or_create
+@a2021_04_08=Epoch.where(date: '2021-04-08').first_or_create
+@a2021_02_21=Epoch.where(date: '2021-02-21').first_or_create
+@a2021_03_23=Epoch.where(date: '2021-03-23').first_or_create
+@a2021_09_19=Epoch.where(date: '2021-09-19').first_or_create
+@a2020_10_24=Epoch.where(date: '2020-10-24').first_or_create
+@a2021_05_20=Epoch.where(date: '2021-05-20').first_or_create
+@a2021_06_24=Epoch.where(date: '2021-06-24').first_or_create
+@a2021_07_28=Epoch.where(date: '2021-07-28').first_or_create
+@a2021_04_27=Epoch.where(date: '2021-04-27').first_or_create
+@a2021_08_20=Epoch.where(date: '2021-08-20').first_or_create
+@a2021_08_12=Epoch.where(date: '2021-08-12').first_or_create
+@a2020_08_25=Epoch.where(date: '2020-08-25').first_or_create
+@a2020_11_12=Epoch.where(date: '2020-11-12').first_or_create
+@a2021_08_11=Epoch.where(date: '2021-08-11').first_or_create
+@a2020_11_27=Epoch.where(date: '2020-11-27').first_or_create
+@a2022_01_06=Epoch.where(date: '2022-01-06').first_or_create
+@a2022_01_24=Epoch.where(date: '2022-01-24').first_or_create
+@a2022_02_07=Epoch.where(date: '2022-02-07').first_or_create
+@a2020_11_17=Epoch.where(date: '2020-11-17').first_or_create
+@a2020_11_19=Epoch.where(date: '2020-11-19').first_or_create
+@a2020_11_22=Epoch.where(date: '2020-11-22').first_or_create
+@a2020_11_23=Epoch.where(date: '2020-11-23').first_or_create
+@a2020_11_26=Epoch.where(date: '2020-11-26').first_or_create
+@a2021_11_05=Epoch.where(date: '2021-11-05').first_or_create
+@a2021_11_18=Epoch.where(date: '2021-11-18').first_or_create
+@a2021_11_22=Epoch.where(date: '2021-11-22').first_or_create
+@a2021_11_27=Epoch.where(date: '2021-11-27').first_or_create
+@a2021_11_28=Epoch.where(date: '2021-11-28').first_or_create
+@a2021_11_29=Epoch.where(date: '2021-11-29').first_or_create
+@a2021_12_02=Epoch.where(date: '2021-12-02').first_or_create
+@a2021_12_08=Epoch.where(date: '2021-12-08').first_or_create
+@a2021_12_21=Epoch.where(date: '2021-12-21').first_or_create
 
 Result.delete_all
 Result.create(epoch_id: @a2021_10_07.id, frequency_id: @a38_75.id, source_id: @a01122244.id, scan_nr: 2489, value_jy: 1.2999, error_jy: 0.0489, elevation: 62.1, mjd: 59494.9735)
@@ -1171,7 +1172,7 @@ Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a14_25.id, source_id: @a
 Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a14_25.id, source_id: @a11367009.id, scan_nr: 8628, value_jy: 0.1592, error_jy: 0.0032, elevation: 30.6, mjd: 59461.0106)
 Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a14_25.id, source_id: @a11451936.id, scan_nr: 8516, value_jy: 0.5693, error_jy: 0.0108, elevation: 55.3, mjd: 59460.5735)
 Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a14_25.id, source_id: @a11451936.id, scan_nr: 8517, value_jy: 0.5573, error_jy: 0.0105, elevation: 54.8, mjd: 59460.5769)
-Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a14_25.id, source_id: @a14182543.id, scan_nr: 8526, value_jy: 0.0264, error_jy: 0.0016, elevation: 65.0, mjd: 59460.6171)
+Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a14_25.id, source_id: @a14172543.id, scan_nr: 8526, value_jy: 0.0264, error_jy: 0.0016, elevation: 65.0, mjd: 59460.6171)
 Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a14_25.id, source_id: @a14432501.id, scan_nr: 8592, value_jy: 0.2526, error_jy: 0.0050, elevation: 25.6, mjd: 59460.8625)
 Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a14_25.id, source_id: @a14432501.id, scan_nr: 8593, value_jy: 0.2473, error_jy: 0.0049, elevation: 24.9, mjd: 59460.8658)
 Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a14_25.id, source_id: @a15551111.id, scan_nr: 8596, value_jy: 0.3231, error_jy: 0.0063, elevation: 23.2, mjd: 59460.8778)
@@ -1365,7 +1366,7 @@ Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a21_15.id, source_id: @a
 Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a21_15.id, source_id: @a12302518.id, scan_nr: 8521, value_jy: 0.3407, error_jy: 0.0116, elevation: 62.0, mjd: 59460.5931)
 Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a21_15.id, source_id: @a12302518.id, scan_nr: 8546, value_jy: 0.3860, error_jy: 0.0134, elevation: 40.8, mjd: 59460.704)
 Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a21_15.id, source_id: @a12302518.id, scan_nr: 8547, value_jy: 0.3797, error_jy: 0.0131, elevation: 40.0, mjd: 59460.7076)
-Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a21_15.id, source_id: @a14182543.id, scan_nr: 8527, value_jy: 0.0489, error_jy: 0.0032, elevation: 65.1, mjd: 59460.6211)
+Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a21_15.id, source_id: @a14172543.id, scan_nr: 8527, value_jy: 0.0489, error_jy: 0.0032, elevation: 65.1, mjd: 59460.6211)
 Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a21_15.id, source_id: @a14223223.id, scan_nr: 8556, value_jy: 1.1072, error_jy: 0.0375, elevation: 52.8, mjd: 59460.7508)
 Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a21_15.id, source_id: @a14223223.id, scan_nr: 8557, value_jy: 1.0629, error_jy: 0.0359, elevation: 51.9, mjd: 59460.7548)
 Result.create(epoch_id: @a2021_09_03.id, frequency_id: @a21_15.id, source_id: @a14272348.id, scan_nr: 8578, value_jy: 0.3646, error_jy: 0.0127, elevation: 31.1, mjd: 59460.8226)
@@ -7030,8 +7031,6 @@ Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @a
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @a16533945.id, scan_nr: 3092, value_jy: 1.1288, error_jy: 0.0133, elevation: 54.5, mjd: 59604.2038)
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @a16533945.id, scan_nr: 3093, value_jy: 1.0631, error_jy: 0.0120, elevation: 55.3, mjd: 59604.2072)
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @a19596508.id, scan_nr: 2959, value_jy: 0.1482, error_jy: 0.0049, elevation: 47.5, mjd: 59603.6984)
-Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @a20014352.id, scan_nr: 2950, value_jy: 0.2784, error_jy: 0.0087, elevation: 44.5, mjd: 59603.6626)
-Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @a20014352.id, scan_nr: 2951, value_jy: 0.3068, error_jy: 0.0065, elevation: 43.7, mjd: 59603.6662)
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @a20183851.id, scan_nr: 2954, value_jy: 0.5275, error_jy: 0.0076, elevation: 40.7, mjd: 59603.6785)
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @a3C286.id, scan_nr: 3069, value_jy: 2.8243, error_jy: 0.0306, elevation: 61.5, mjd: 59604.1241)
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @a3C286.id, scan_nr: 3071, value_jy: 2.8802, error_jy: 0.0310, elevation: 62.0, mjd: 59604.127)
@@ -7045,6 +7044,8 @@ Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @a
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @aW3OH.id, scan_nr: 3020, value_jy: 2.9556, error_jy: 0.0322, elevation: 50.8, mjd: 59603.9386)
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @aW3OH.id, scan_nr: 3022, value_jy: 3.0050, error_jy: 0.0325, elevation: 50.3, mjd: 59603.9416)
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @aW3OH.id, scan_nr: 3023, value_jy: 2.8903, error_jy: 0.0312, elevation: 50.0, mjd: 59603.9432)
+Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @a20014352.id, scan_nr: 2950, value_jy: 0.2784, error_jy: 0.0087, elevation: 44.5, mjd: 59603.6626)
+Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a19_25.id, source_id: @a20014352.id, scan_nr: 2951, value_jy: 0.3068, error_jy: 0.0065, elevation: 43.7, mjd: 59603.6662)
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a21_15.id, source_id: @a01122244.id, scan_nr: 2985, value_jy: 1.4793, error_jy: 0.0244, elevation: 50.8, mjd: 59603.7867)
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a21_15.id, source_id: @a01122244.id, scan_nr: 2986, value_jy: 1.4722, error_jy: 0.0243, elevation: 50.1, mjd: 59603.7903)
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a21_15.id, source_id: @a02213556.id, scan_nr: 2990, value_jy: 0.5993, error_jy: 0.0100, elevation: 65.9, mjd: 59603.8094)
@@ -7271,6 +7272,99 @@ Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a43_75.id, source_id: @a
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a43_75.id, source_id: @aNGC7027.id, scan_nr: 2981, value_jy: 5.4291, error_jy: 0.5721, elevation: 30.9, mjd: 59603.769)
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a43_75.id, source_id: @aW3OH.id, scan_nr: 3026, value_jy: 3.0533, error_jy: 0.3051, elevation: 48.8, mjd: 59603.951)
 Result.create(epoch_id: @a2022_01_24.id, frequency_id: @a43_75.id, source_id: @aW3OH.id, scan_nr: 3027, value_jy: 3.0648, error_jy: 0.3059, elevation: 48.3, mjd: 59603.9541)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a14151320.id, scan_nr: 4715, value_jy: 0.6454, error_jy: 0.0016, elevation: 51.7, mjd: 59618.1617)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a14151320.id, scan_nr: 4716, value_jy: 0.6577, error_jy: 0.0016, elevation: 51.9, mjd: 59618.1651)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a14251424.id, scan_nr: 4695, value_jy: 0.4491, error_jy: 0.0012, elevation: 44.4, mjd: 59618.1037)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a14251424.id, scan_nr: 4696, value_jy: 0.4441, error_jy: 0.0013, elevation: 45.0, mjd: 59618.107)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a14281628.id, scan_nr: 4690, value_jy: 0.0464, error_jy: 0.0012, elevation: 42.2, mjd: 59618.0846)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a14281628.id, scan_nr: 4693, value_jy: 0.0425, error_jy: 0.0011, elevation: 44.5, mjd: 59618.096)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a14281628.id, scan_nr: 4694, value_jy: 0.0420, error_jy: 0.0013, elevation: 45.1, mjd: 59618.0994)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a15105702.id, scan_nr: 4686, value_jy: 0.2482, error_jy: 0.0010, elevation: 56.1, mjd: 59618.0677)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a15105702.id, scan_nr: 4687, value_jy: 0.2507, error_jy: 0.0010, elevation: 56.7, mjd: 59618.0714)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a17450338.id, scan_nr: 4722, value_jy: 0.0622, error_jy: 0.0013, elevation: 19.2, mjd: 59618.1891)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 4661, value_jy: 3.4907, error_jy: 0.0067, elevation: 44.8, mjd: 59618.0084)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 4663, value_jy: 3.5231, error_jy: 0.0077, elevation: 45.4, mjd: 59618.011)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 4664, value_jy: 3.4835, error_jy: 0.0068, elevation: 45.8, mjd: 59618.0128)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 4699, value_jy: 3.5080, error_jy: 0.0074, elevation: 67.1, mjd: 59618.12)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 4701, value_jy: 3.4774, error_jy: 0.0069, elevation: 67.4, mjd: 59618.1229)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a16_75.id, source_id: @a14151320.id, scan_nr: 4715, value_jy: 0.6992, error_jy: 0.0043, elevation: 51.7, mjd: 59618.1617)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a16_75.id, source_id: @a14151320.id, scan_nr: 4716, value_jy: 0.6866, error_jy: 0.0042, elevation: 51.9, mjd: 59618.1651)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a16_75.id, source_id: @a14251424.id, scan_nr: 4695, value_jy: 0.5066, error_jy: 0.0043, elevation: 44.4, mjd: 59618.1037)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a16_75.id, source_id: @a15105702.id, scan_nr: 4686, value_jy: 0.2550, error_jy: 0.0035, elevation: 56.1, mjd: 59618.0677)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a16_75.id, source_id: @a3C286.id, scan_nr: 4661, value_jy: 3.1326, error_jy: 0.0152, elevation: 44.8, mjd: 59618.0084)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a16_75.id, source_id: @a3C286.id, scan_nr: 4663, value_jy: 3.0680, error_jy: 0.0152, elevation: 45.4, mjd: 59618.011)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a16_75.id, source_id: @a3C286.id, scan_nr: 4664, value_jy: 3.1649, error_jy: 0.0154, elevation: 45.8, mjd: 59618.0128)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a16_75.id, source_id: @a3C286.id, scan_nr: 4699, value_jy: 3.0922, error_jy: 0.0153, elevation: 67.1, mjd: 59618.12)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a16_75.id, source_id: @a3C286.id, scan_nr: 4701, value_jy: 3.0987, error_jy: 0.0155, elevation: 67.4, mjd: 59618.1229)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a19_25.id, source_id: @a14151320.id, scan_nr: 4717, value_jy: 0.6616, error_jy: 0.0089, elevation: 52.1, mjd: 59618.1694)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a19_25.id, source_id: @a14151320.id, scan_nr: 4718, value_jy: 0.6674, error_jy: 0.0093, elevation: 52.3, mjd: 59618.1727)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a19_25.id, source_id: @a14251424.id, scan_nr: 4697, value_jy: 0.5055, error_jy: 0.0086, elevation: 45.7, mjd: 59618.1111)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a19_25.id, source_id: @a14251424.id, scan_nr: 4713, value_jy: 0.4069, error_jy: 0.0072, elevation: 51.4, mjd: 59618.1535)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a19_25.id, source_id: @a14251424.id, scan_nr: 4714, value_jy: 0.5065, error_jy: 0.0083, elevation: 51.8, mjd: 59618.1573)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a19_25.id, source_id: @a3C286.id, scan_nr: 4665, value_jy: 2.8252, error_jy: 0.0321, elevation: 46.3, mjd: 59618.015)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a19_25.id, source_id: @a3C286.id, scan_nr: 4667, value_jy: 2.8381, error_jy: 0.0321, elevation: 47.0, mjd: 59618.0179)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a19_25.id, source_id: @a3C286.id, scan_nr: 4669, value_jy: 2.8496, error_jy: 0.0318, elevation: 47.7, mjd: 59618.0213)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a19_25.id, source_id: @a3C286.id, scan_nr: 4702, value_jy: 2.7581, error_jy: 0.0309, elevation: 67.7, mjd: 59618.1252)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a19_25.id, source_id: @a3C286.id, scan_nr: 4704, value_jy: 2.7959, error_jy: 0.0314, elevation: 68.0, mjd: 59618.1283)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a21_15.id, source_id: @a14151320.id, scan_nr: 4717, value_jy: 0.6154, error_jy: 0.0126, elevation: 52.1, mjd: 59618.1692)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a21_15.id, source_id: @a14151320.id, scan_nr: 4718, value_jy: 0.6278, error_jy: 0.0128, elevation: 52.3, mjd: 59618.1727)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a21_15.id, source_id: @a14251424.id, scan_nr: 4697, value_jy: 0.4322, error_jy: 0.0091, elevation: 45.6, mjd: 59618.1109)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a21_15.id, source_id: @a14251424.id, scan_nr: 4713, value_jy: 0.5280, error_jy: 0.0109, elevation: 51.4, mjd: 59618.1535)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a21_15.id, source_id: @a14251424.id, scan_nr: 4714, value_jy: 0.5078, error_jy: 0.0104, elevation: 51.8, mjd: 59618.1573)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a21_15.id, source_id: @a15105702.id, scan_nr: 4688, value_jy: 0.2177, error_jy: 0.0048, elevation: 57.5, mjd: 59618.0751)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a21_15.id, source_id: @a15105702.id, scan_nr: 4689, value_jy: 0.1808, error_jy: 0.0042, elevation: 58.2, mjd: 59618.0788)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a21_15.id, source_id: @a3C286.id, scan_nr: 4665, value_jy: 2.6081, error_jy: 0.0525, elevation: 46.3, mjd: 59618.015)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a21_15.id, source_id: @a3C286.id, scan_nr: 4667, value_jy: 2.6940, error_jy: 0.0542, elevation: 47.0, mjd: 59618.0179)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a21_15.id, source_id: @a3C286.id, scan_nr: 4669, value_jy: 2.7166, error_jy: 0.0546, elevation: 47.7, mjd: 59618.0213)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a21_15.id, source_id: @a3C286.id, scan_nr: 4702, value_jy: 2.4960, error_jy: 0.0503, elevation: 67.7, mjd: 59618.1252)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a21_15.id, source_id: @a3C286.id, scan_nr: 4704, value_jy: 2.6428, error_jy: 0.0531, elevation: 68.0, mjd: 59618.1283)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a22_85.id, source_id: @a14151320.id, scan_nr: 4717, value_jy: 0.6151, error_jy: 0.0113, elevation: 52.1, mjd: 59618.1692)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a22_85.id, source_id: @a14151320.id, scan_nr: 4718, value_jy: 0.6112, error_jy: 0.0111, elevation: 52.3, mjd: 59618.1727)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a22_85.id, source_id: @a14251424.id, scan_nr: 4697, value_jy: 0.4196, error_jy: 0.0080, elevation: 45.6, mjd: 59618.1109)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a22_85.id, source_id: @a14251424.id, scan_nr: 4698, value_jy: 0.4645, error_jy: 0.0092, elevation: 46.2, mjd: 59618.1145)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a22_85.id, source_id: @a14251424.id, scan_nr: 4713, value_jy: 0.5136, error_jy: 0.0095, elevation: 51.4, mjd: 59618.1535)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a22_85.id, source_id: @a14251424.id, scan_nr: 4714, value_jy: 0.5128, error_jy: 0.0095, elevation: 51.8, mjd: 59618.1573)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a22_85.id, source_id: @a15105702.id, scan_nr: 4688, value_jy: 0.1976, error_jy: 0.0042, elevation: 57.5, mjd: 59618.0753)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a22_85.id, source_id: @a15105702.id, scan_nr: 4689, value_jy: 0.1692, error_jy: 0.0040, elevation: 58.2, mjd: 59618.0788)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a22_85.id, source_id: @a3C286.id, scan_nr: 4665, value_jy: 2.4787, error_jy: 0.0438, elevation: 46.3, mjd: 59618.015)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a22_85.id, source_id: @a3C286.id, scan_nr: 4667, value_jy: 2.5353, error_jy: 0.0448, elevation: 47.0, mjd: 59618.0179)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a22_85.id, source_id: @a3C286.id, scan_nr: 4669, value_jy: 2.5377, error_jy: 0.0447, elevation: 47.7, mjd: 59618.0213)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a22_85.id, source_id: @a3C286.id, scan_nr: 4702, value_jy: 2.3572, error_jy: 0.0416, elevation: 67.7, mjd: 59618.1252)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a22_85.id, source_id: @a3C286.id, scan_nr: 4704, value_jy: 2.5084, error_jy: 0.0442, elevation: 68.0, mjd: 59618.1283)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a24_75.id, source_id: @a14151320.id, scan_nr: 4717, value_jy: 0.6112, error_jy: 0.0202, elevation: 52.1, mjd: 59618.1692)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a24_75.id, source_id: @a14151320.id, scan_nr: 4718, value_jy: 0.6456, error_jy: 0.0211, elevation: 52.3, mjd: 59618.1727)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a24_75.id, source_id: @a14251424.id, scan_nr: 4697, value_jy: 0.4959, error_jy: 0.0166, elevation: 45.7, mjd: 59618.1111)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a24_75.id, source_id: @a14251424.id, scan_nr: 4698, value_jy: 0.4806, error_jy: 0.0186, elevation: 46.2, mjd: 59618.1145)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a24_75.id, source_id: @a14251424.id, scan_nr: 4714, value_jy: 0.5360, error_jy: 0.0177, elevation: 51.8, mjd: 59618.1573)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a24_75.id, source_id: @a15105702.id, scan_nr: 4688, value_jy: 0.2058, error_jy: 0.0079, elevation: 57.5, mjd: 59618.0751)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a24_75.id, source_id: @a15105702.id, scan_nr: 4689, value_jy: 0.1622, error_jy: 0.0063, elevation: 58.2, mjd: 59618.0788)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a24_75.id, source_id: @a3C286.id, scan_nr: 4665, value_jy: 2.4565, error_jy: 0.0791, elevation: 46.3, mjd: 59618.015)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a24_75.id, source_id: @a3C286.id, scan_nr: 4667, value_jy: 2.4204, error_jy: 0.0779, elevation: 47.0, mjd: 59618.0179)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a24_75.id, source_id: @a3C286.id, scan_nr: 4669, value_jy: 2.3487, error_jy: 0.0755, elevation: 47.7, mjd: 59618.0213)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a24_75.id, source_id: @a3C286.id, scan_nr: 4702, value_jy: 2.1610, error_jy: 0.0696, elevation: 67.7, mjd: 59618.1252)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a24_75.id, source_id: @a3C286.id, scan_nr: 4704, value_jy: 2.3644, error_jy: 0.0760, elevation: 68.0, mjd: 59618.1283)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a36_25.id, source_id: @a3C286.id, scan_nr: 4670, value_jy: 1.7674, error_jy: 0.0154, elevation: 48.6, mjd: 59618.0249)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a36_25.id, source_id: @a3C286.id, scan_nr: 4672, value_jy: 1.7750, error_jy: 0.0138, elevation: 49.5, mjd: 59618.0291)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a36_25.id, source_id: @a3C286.id, scan_nr: 4674, value_jy: 1.7177, error_jy: 0.0128, elevation: 50.7, mjd: 59618.0342)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a36_25.id, source_id: @a3C286.id, scan_nr: 4712, value_jy: 1.7507, error_jy: 0.0174, elevation: 69.6, mjd: 59618.1482)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a38_75.id, source_id: @a3C286.id, scan_nr: 4670, value_jy: 1.6147, error_jy: 0.0717, elevation: 48.6, mjd: 59618.0249)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a38_75.id, source_id: @a3C286.id, scan_nr: 4672, value_jy: 1.6207, error_jy: 0.0715, elevation: 49.5, mjd: 59618.0291)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a38_75.id, source_id: @a3C286.id, scan_nr: 4674, value_jy: 1.7727, error_jy: 0.0801, elevation: 50.7, mjd: 59618.0342)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a41_25.id, source_id: @a3C286.id, scan_nr: 4675, value_jy: 1.6484, error_jy: 0.1342, elevation: 51.4, mjd: 59618.0375)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a41_25.id, source_id: @a3C286.id, scan_nr: 4677, value_jy: 1.0478, error_jy: 0.0863, elevation: 52.3, mjd: 59618.0418)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a41_25.id, source_id: @a3C286.id, scan_nr: 4679, value_jy: 1.6550, error_jy: 0.1350, elevation: 53.3, mjd: 59618.0462)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a41_25.id, source_id: @a3C286.id, scan_nr: 4680, value_jy: 1.8034, error_jy: 0.1466, elevation: 54.0, mjd: 59618.0494)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a41_25.id, source_id: @a3C286.id, scan_nr: 4705, value_jy: 1.7296, error_jy: 0.1409, elevation: 68.3, mjd: 59618.1307)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a43_75.id, source_id: @a3C286.id, scan_nr: 4705, value_jy: 1.5982, error_jy: 0.0823, elevation: 68.3, mjd: 59618.1307)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a43_75.id, source_id: @a3C286.id, scan_nr: 4708, value_jy: 1.4508, error_jy: 0.0774, elevation: 68.9, mjd: 59618.1381)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a4_85.id, source_id: @a14281628.id, scan_nr: 4691, value_jy: 0.0423, error_jy: 0.0003, elevation: 43.0, mjd: 59618.0882)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a4_85.id, source_id: @a14281628.id, scan_nr: 4692, value_jy: 0.0462, error_jy: 0.0003, elevation: 43.7, mjd: 59618.092)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a4_85.id, source_id: @a15105702.id, scan_nr: 4684, value_jy: 0.4218, error_jy: 0.0007, elevation: 54.6, mjd: 59618.0602)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a4_85.id, source_id: @a15105702.id, scan_nr: 4685, value_jy: 0.4142, error_jy: 0.0007, elevation: 55.3, mjd: 59618.0637)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a4_85.id, source_id: @a17450338.id, scan_nr: 4719, value_jy: 0.0963, error_jy: 0.0005, elevation: 17.0, mjd: 59618.1781)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a4_85.id, source_id: @a17450338.id, scan_nr: 4720, value_jy: 0.0933, error_jy: 0.0004, elevation: 17.8, mjd: 59618.1822)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a4_85.id, source_id: @a3C286.id, scan_nr: 4681, value_jy: 7.3499, error_jy: 0.0109, elevation: 54.8, mjd: 59618.053)
+Result.create(epoch_id: @a2022_02_07.id, frequency_id: @a4_85.id, source_id: @a3C286.id, scan_nr: 4683, value_jy: 7.3402, error_jy: 0.0105, elevation: 55.5, mjd: 59618.0561)
 Result.create(epoch_id: @a2020_11_17.id, frequency_id: @a24_75.id, source_id: @a11043812.id, scan_nr: 2502, value_jy: 0.3434, error_jy: 0.0059, elevation: 70.8, mjd: 59170.2284)
 Result.create(epoch_id: @a2020_11_17.id, frequency_id: @a24_75.id, source_id: @a11043812.id, scan_nr: 2503, value_jy: 0.3632, error_jy: 0.0061, elevation: 71.6, mjd: 59170.232)
 Result.create(epoch_id: @a2020_11_17.id, frequency_id: @a24_75.id, source_id: @a3C286.id, scan_nr: 2491, value_jy: 2.2951, error_jy: 0.0213, elevation: 36.3, mjd: 59170.1974)
