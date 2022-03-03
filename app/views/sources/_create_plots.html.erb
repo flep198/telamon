@@ -229,6 +229,60 @@ window.onload=function(){
 
 
   <% if user_signed_in? %>
+
+  //3D Surface Plot  
+
+  <% @data3d = Result.where(:source_id => @source.id).map { |r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.mjd]} %>
+
+  var data_3d_plot_scatter = {
+    x: <%= @data3d.map {|r| r[0]}%>, 
+    y: <%= @data3d.map {|r| r[2]}%>, 
+    z: <%= @data3d.map {|r| r[1]}%>,
+    mode: 'markers',
+    marker: {
+      color: 'rgb(127, 127, 127)',
+      size: 2,
+      symbol: 'circle',
+      line: {
+      color: 'rgb(204, 204, 204)',
+      width: 1},
+      opacity: 0.8},
+
+    type: 'scatter3d'};
+
+
+    <% @surface_data=getSurfacePlotData(@source) %>
+
+    var data_3d_plot_surface = {
+      x: <%= @surface_data[0]%>, 
+      y: <%= @surface_data[1]%>, 
+      z: <%= @surface_data[2]%>,
+      type: 'surface',
+    };
+
+
+    var layout_3d_plot_surface = {
+      scene: {
+        xaxis:{title: 'Frequency [GHz]'},
+        yaxis:{title: 'MJD [days]'},
+        zaxis:{title: 'Flux Density [Jy]'},
+      },
+
+      margin: {
+        l: 20,
+        r: 20,
+        b: 20,
+        t: 20,
+      },
+
+    }; 
+
+    Plotly.newPlot('3dplot', [data_3d_plot_surface,data_3d_plot_scatter], layout_3d_plot_surface);
+
+  <%end%>
+  
+
+  <% if user_signed_in? %>
   //Spectral Index Plot
 
     var speci_data = {

@@ -252,4 +252,116 @@ module SourcesHelper
 
     	return mjds, fluxes, flux_errors
     end 
+
+
+    def getFluxValue c,a,f
+        return c*f**a
+    end
+
+    def getSurfacePlotData source
+        number_of_fit_points=20
+        low_freq_lim=19
+        high_freq_lim=25
+        low_freq_lim2=36
+        high_freq_lim2=44
+        #create arrays that will be exported later
+        plot_freqs=Array.new()
+        plot_mjds=Array.new()
+        plot_flux=Array.new()
+
+        #fill array with frequencies
+        i=0
+        rate=0.1/0.1*(high_freq_lim-low_freq_lim)/(number_of_fit_points-1) #weird 0.1/0.1 needed for float
+
+        while i<number_of_fit_points do
+            current_freq=low_freq_lim+i*rate
+            plot_freqs.push(current_freq)
+            i=i+1
+        end
+
+        i=0
+        rate=0.1/0.1*(high_freq_lim2-low_freq_lim2)/(number_of_fit_points-1) #weird 0.1/0.1 needed for float
+        while i<number_of_fit_points do
+            current_freq=low_freq_lim2+i*rate
+            plot_freqs.push(current_freq)
+            i=i+1
+        end
+
+        #get Data from every epoch and perform spectral fit
+        source.epoches.distinct.order(:date).each do |epoch|
+            epoch_fluxes=Array.new()
+
+            data = Result.where(:source_id => source.id, :epoch_id => epoch.id).map { |r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.error_jy,r.mjd]}
+            data = data.sort_by(&:first)
+
+            data_freq = data.map {|r| r[0]}
+            data_flux = data.map {|r| r[1]}
+            data_error = data.map {|r| r[2]}
+            data_mjd = data.map {|r| r[3]}
+
+            data_freq.push(100) #this is needed as an upper limit in the data freq field for the while loops
+
+            #fit for first frequency band
+            fit_freq=Array.new()
+            fit_flux=Array.new()
+            fit_error=Array.new()
+            j=0
+            if data_freq.size>0
+                while data_freq[j]<high_freq_lim do
+                    fit_freq.push(data_freq[j])
+                    fit_flux.push(data_flux[j])
+                    fit_error.push(data_error[j])
+                    j=j+1
+                end
+
+                #do spectral fit
+                fit=spectralFit(fit_freq,fit_flux,fit_error)
+                a=fit[0]
+                c=fit[1]
+
+                i=0
+                while i<number_of_fit_points do
+                    current_freq=plot_freqs[i]
+                    current_flux=getFluxValue(c,a,current_freq) 
+                    epoch_fluxes.push(current_flux)
+                    i=i+1
+                end
+            end
+
+            #fit for second frequency band
+            if (data_freq.size>j+1)
+                fit_freq=Array.new()
+                fit_flux=Array.new()
+                fit_error=Array.new()
+                while data_freq[j]<high_freq_lim2 do
+                    fit_freq.push(data_freq[j])
+                    fit_flux.push(data_flux[j])
+                    fit_error.push(data_error[j])
+                    j=j+1
+                end
+
+                #do spectral fit
+                fit=spectralFit(fit_freq,fit_flux,fit_error)
+                a=fit[0]
+                c=fit[1]
+
+            end
+
+            while i<number_of_fit_points*2 do
+                current_freq=plot_freqs[i]
+                current_flux=getFluxValue(c,a,current_freq) 
+                epoch_fluxes.push(current_flux)
+                i=i+1
+            end
+        
+            #append epocch fluxes to total flux density matrix
+            plot_flux.push(epoch_fluxes)
+            #append average MJD
+            plot_mjds.push(data_mjd.sum(0.0)/data_mjd.size)
+
+        end
+
+
+        return plot_freqs,plot_mjds,plot_flux
+    end
 end

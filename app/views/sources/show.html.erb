@@ -118,13 +118,14 @@
   </div>  
 </div>
 
+
 </br>
 
 <%if user_signed_in?%>
 
 <!--Spectral Index-->
 <div class="row align-items-start">
-  <div class="col-md-12">
+  <div class="col-md-6">
     <div class="card">
       <div class=card-header>
         Spectral Index Evolution
@@ -134,6 +135,17 @@
       </div>
     </div>
   </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class=card-header>
+        3D Parameter Space Surface Plot (beta)
+      </div>
+      <div class="card-body">
+        <div id="3dplot"></div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- data table if user is signed in -->
