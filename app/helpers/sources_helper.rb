@@ -275,7 +275,7 @@ module SourcesHelper
 
     def getSurfacePlotData source
         number_of_fit_points=20
-        low_freq_lim=19
+        low_freq_lim=14
         high_freq_lim=25
         low_freq_lim2=36
         high_freq_lim2=44
