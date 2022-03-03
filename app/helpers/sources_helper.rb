@@ -40,8 +40,23 @@ module SourcesHelper
     #performs Levenberg Marquart Fit for f(x)=C*x^alpha STILL WITHOUT bounds on alpha
     def spectralFit x,y,yerr
 
-    	a_0=0
-    	c_0=y.sum/y.size
+        #find start values with simple line fit
+        if(x.size >2) #CHECK PROBLEM FOR TWO VALUES WITH SAME X!
+            #do linear fit
+            x_fit=x.map{|r| Math.log(r)}
+            y_fit=y.map{|r| Math.log(r)}
+            yerr_fit=y.map{|r| 0}
+            lineFit = LineFit.new
+            lineFit.setData(x_fit,y_fit)
+                
+            a_0 = lineFit.coefficients[1]
+            c_0 = Math.exp(lineFit.coefficients[0])
+    	else #use these values if no line fit is possible
+            a_0=0
+    	    c_0=y.sum(0.0)/y.size
+        end
+
+
     	y_init=Array.new(y.size){0}
     	for i in 0..(y.size-1) do
     		y_init[i]= c_0*x[i]**a_0
@@ -49,7 +64,7 @@ module SourcesHelper
 
     	ndata=y.size
     	nparams=2
-    	n_iters=100
+    	n_iters=1000
     	lamda=0.01
     	updateJ=1
     	a_est=a_0
