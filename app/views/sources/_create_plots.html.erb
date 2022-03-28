@@ -196,7 +196,8 @@ window.onload=function(){
 
   <% end %>
 
-  var layout = {
+  //lin-lin layout
+  var spec_layout = {
     title: "<%=@source.j2000_name%>",
 
     xaxis: {
@@ -220,12 +221,39 @@ window.onload=function(){
         }
       },
     },
+  };
 
+  var spec_layout_log = {
+    title: "<%=@source.j2000_name%>",
 
+    xaxis: {
+      type: 'log',
+      title: {
+        text: 'Log(Frequency [GHz])',
+        font: {
+          family: 'Courier New, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      },
+    },
+
+    yaxis: {
+      type: 'log',
+      title: {
+        text: 'Log(Flux Density [Jy])',
+        font: {
+          family: 'Courier New, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      },
+    },
   };
 
 
-  Plotly.newPlot("spectrum",epoch_array,layout);
+
+  Plotly.newPlot("spectrum",epoch_array,spec_layout);
 
 
   <% if user_signed_in? %>
@@ -325,14 +353,14 @@ window.onload=function(){
         }
       },
     },
-
-
   };
+
 
 
   Plotly.newPlot("speci",[speci_data],layout);
 
   var checkboxAver = document.getElementById("averSwitch");
+  var checkboxLog = document.getElementById("logSwitch");
 
   function updateLCplot(){
     var aver = checkboxAver.checked;
@@ -343,10 +371,22 @@ window.onload=function(){
       Plotly.newPlot("lightcurve",freq_array,layoutLC);
     };
   };
+
+  function updateSpecplot(){
+    var log = checkboxLog.checked;
+
+    if (log){
+      Plotly.newPlot("spectrum",epoch_array,spec_layout_log);
+    } else {
+      Plotly.newPlot("spectrum",epoch_array,spec_layout);
+    };
+  };
   
+  checkboxLog.addEventListener('change',function(){updateSpecplot()});
   checkboxAver.addEventListener('change',function(){updateLCplot()});
 
   updateLCplot();
+  updateSpecplot();
 
   <% end %> 
 
