@@ -173,7 +173,7 @@
         Data Table
       </div>
       <div class="card-body">
-        <% @output_name=@source.j2000_name.gsub!('+','_').gsub!('-','_')%>
+        <% @output_name=@source.j2000_name.gsub('+','_').gsub('-','_')%>
         <button id="export_button" class="btn btn-success" data-table='export_<%=@output_name%>'>Export to CSV File</button>
         <p></p>
         <table id='export_<%=@output_name%>' class="table table-hover">
