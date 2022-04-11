@@ -46,7 +46,9 @@
                   <%= link_to(image_tag("simbad",height: "30"), "http://simbad.harvard.edu/simbad/sim-basic?submit=SIMBAD+search&Ident="+@source.j2000_name.gsub("+","%2B"),target: "_blank", rel:"noopener noreferrer")%>
                 <% end %>
                 <%= if @source.tevcat_url != "http://tevcat2.uchicago.edu/" then link_to(image_tag("tevcat",height: "25"), @source.tevcat_url,target: "_blank", rel:"noopener noreferrer") end%></p>
-              <p><strong>Comment:</strong> <%= @source.comment %></p>
+              <%if user_signed_in? %>
+                <p><strong>Comment:</strong> <%= @source.comment %></p>
+              <% end %>
               <% if user_signed_in? && current_user.admin? %>
               <p><%= link_to 'Edit', edit_source_path(@source), class: "btn btn-outline-success btn-sm" %></p>
               <% end %>            
@@ -171,7 +173,7 @@
         Data Table
       </div>
       <div class="card-body">
-        <% @output_name=@source.j2000_name.gsub!('+','_')%>
+        <% @output_name=@source.j2000_name.gsub!('+','_').gsub!('-','_')%>
         <button id="export_button" class="btn btn-success" data-table='export_<%=@output_name%>'>Export to CSV File</button>
         <p></p>
         <table id='export_<%=@output_name%>' class="table table-hover">
