@@ -163,7 +163,7 @@ window.onload=function(){
   };
   aver_mode_array.push(aver_lc20);
 
-  Plotly.newPlot("lightcurve",freq_array,layoutLC);
+  Plotly.newPlot("lightcurve",aver_mode_array,layoutLC);
 
 
   //SPECTRUM PLOT
@@ -360,7 +360,6 @@ window.onload=function(){
   Plotly.newPlot("speci",[speci_data],layout);
 
   var checkboxAver = document.getElementById("averSwitch");
-  var checkboxLog = document.getElementById("logSwitch");
 
   function updateLCplot(){
     var aver = checkboxAver.checked;
@@ -371,6 +370,13 @@ window.onload=function(){
       Plotly.newPlot("lightcurve",freq_array,layoutLC);
     };
   };
+
+  checkboxAver.addEventListener('change',function(){updateLCplot()});
+  updateLCplot();
+
+  <% end %>
+
+  var checkboxLog = document.getElementById("logSwitch");
 
   function updateSpecplot(){
     var log = checkboxLog.checked;
@@ -383,12 +389,9 @@ window.onload=function(){
   };
   
   checkboxLog.addEventListener('change',function(){updateSpecplot()});
-  checkboxAver.addEventListener('change',function(){updateLCplot()});
-
-  updateLCplot();
+  
   updateSpecplot();
-
-  <% end %> 
+ 
 
 }
 </script>
