@@ -131,7 +131,11 @@ window.onload=function(){
         visible: true
       },
     type: "scatter",
+    <% if !user_signed_in?%>
+      hoverinfo: 'none',
+    <%end%>
     name: "Aver 7mm"
+
   };
   aver_mode_array.push(aver_lc7);
 
@@ -145,7 +149,11 @@ window.onload=function(){
         visible: true
       },
     type: "scatter",
-    name: "Aver 14mm"
+    <% if !user_signed_in?%>
+      hoverinfo: 'none',
+    <%end%>
+    name: "Aver 14mm",
+
   };
   aver_mode_array.push(aver_lc14);
 
@@ -159,6 +167,9 @@ window.onload=function(){
         visible: true
       },
     type: "scatter",
+    <% if !user_signed_in?%>
+      hoverinfo: 'none',
+    <%end%>
     name: "Aver 20mm"
   };
   aver_mode_array.push(aver_lc20);
