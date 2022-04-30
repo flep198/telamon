@@ -89,7 +89,7 @@ window.onload=function(){
     //old table filter function
     function CategoryFilterTable(checkbox,CategoryName){
         var table, tr, td, i, txtValue;
-        table = document.getElementById("sourceTable");
+        table = document.getElementById("telamon_targetlist");
         tr = table.getElementsByTagName("tr");
         
         for (i=0; i<tr.length; i++){
@@ -140,7 +140,7 @@ window.onload=function(){
 
         //go through table and decide whether to show row or not
         var table, tr, td, i, txtValue;
-        table = document.getElementById("sourceTable");
+        table = document.getElementById("telamon_targetlist");
         tr = table.getElementsByTagName("tr");
 
         for (i=1;i<tr.length;i++){
