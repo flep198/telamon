@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_31_140235) do
+ActiveRecord::Schema.define(version: 2022_05_25_162843) do
 
   create_table "epoches", force: :cascade do |t|
     t.date "date"
@@ -99,6 +99,7 @@ ActiveRecord::Schema.define(version: 2022_01_31_140235) do
     t.string "slug"
     t.float "duration"
     t.string "tevcat_url", default: "http://tevcat2.uchicago.edu/"
+    t.string "atca_url", default: "https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database.html"
     t.index ["slug"], name: "index_sources_on_slug", unique: true
   end
 
