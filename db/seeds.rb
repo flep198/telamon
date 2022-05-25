@@ -212,6 +212,7 @@
 @a2022_04_24=Epoch.where(date: '2022-04-24').first_or_create
 @a2022_04_30=Epoch.where(date: '2022-04-30').first_or_create
 @a2022_05_17=Epoch.where(date: '2022-05-17').first_or_create
+@a2022_05_01=Epoch.where(date: '2022-05-01').first_or_create
 @a2020_11_17=Epoch.where(date: '2020-11-17').first_or_create
 @a2020_11_22=Epoch.where(date: '2020-11-22').first_or_create
 @a2020_11_23=Epoch.where(date: '2020-11-23').first_or_create
@@ -229,6 +230,7 @@
 @a2022_04_09=Epoch.where(date: '2022-04-09').first_or_create
 @a2022_04_26=Epoch.where(date: '2022-04-26').first_or_create
 @a2022_05_02=Epoch.where(date: '2022-05-02').first_or_create
+@a2022_05_19=Epoch.where(date: '2022-05-19').first_or_create
 
 Result.delete_all
 Result.create(epoch_id: @a2021_10_07.id, frequency_id: @a38_75.id, source_id: @a01122244.id, scan_nr: 2489, value_jy: 1.2999, error_jy: 0.0489, elevation: 62.1, mjd: 59494.9735)
@@ -9329,6 +9331,25 @@ Result.create(epoch_id: @a2022_05_17.id, frequency_id: @a43_75.id, source_id: @a
 Result.create(epoch_id: @a2022_05_17.id, frequency_id: @a43_75.id, source_id: @aNGC7027.id, scan_nr: 4591, value_jy: 5.2413, error_jy: 0.1520, elevation: 59.8, mjd: 59717.0875)
 Result.create(epoch_id: @a2022_05_17.id, frequency_id: @a43_75.id, source_id: @aW3OH.id, scan_nr: 4470, value_jy: 3.4291, error_jy: 0.0986, elevation: 49.8, mjd: 59716.6361)
 Result.create(epoch_id: @a2022_05_17.id, frequency_id: @a43_75.id, source_id: @aW3OH.id, scan_nr: 4471, value_jy: 3.1952, error_jy: 0.0914, elevation: 49.3, mjd: 59716.6392)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a4_85.id, source_id: @a3C286.id, scan_nr: 2800, value_jy: 7.3391, error_jy: 0.0101, elevation: 59.2, mjd: 59700.8475)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a4_85.id, source_id: @a3C286.id, scan_nr: 2802, value_jy: 7.3484, error_jy: 0.0097, elevation: 59.9, mjd: 59700.8509)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a4_85.id, source_id: @a3C286.id, scan_nr: 2803, value_jy: 7.3477, error_jy: 0.0096, elevation: 60.3, mjd: 59700.8529)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a4_85.id, source_id: @a11043812.id, scan_nr: 2812, value_jy: 0.6168, error_jy: 0.0008, elevation: 72.8, mjd: 59700.8795)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a4_85.id, source_id: @a11043812.id, scan_nr: 2813, value_jy: 0.6156, error_jy: 0.0008, elevation: 72.4, mjd: 59700.8816)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a10_45.id, source_id: @a3C286.id, scan_nr: 2804, value_jy: 4.3714, error_jy: 0.0216, elevation: 61.1, mjd: 59700.857)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a10_45.id, source_id: @a3C286.id, scan_nr: 2806, value_jy: 4.3831, error_jy: 0.0215, elevation: 61.6, mjd: 59700.86)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a10_45.id, source_id: @a3C286.id, scan_nr: 2807, value_jy: 4.3362, error_jy: 0.0211, elevation: 62.0, mjd: 59700.862)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a10_45.id, source_id: @a11043812.id, scan_nr: 2816, value_jy: 0.5090, error_jy: 0.0025, elevation: 70.8, mjd: 59700.89)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 2808, value_jy: 3.4832, error_jy: 0.0117, elevation: 62.8, mjd: 59700.8662)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 2810, value_jy: 3.5089, error_jy: 0.0116, elevation: 63.4, mjd: 59700.8699)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 2811, value_jy: 3.4955, error_jy: 0.0116, elevation: 63.9, mjd: 59700.8727)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a14_25.id, source_id: @a11043812.id, scan_nr: 2817, value_jy: 0.4896, error_jy: 0.0022, elevation: 70.0, mjd: 59700.8943)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a14_25.id, source_id: @a11043812.id, scan_nr: 2818, value_jy: 0.4920, error_jy: 0.0019, elevation: 69.4, mjd: 59700.8971)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a16_75.id, source_id: @a3C286.id, scan_nr: 2808, value_jy: 3.0803, error_jy: 0.0218, elevation: 62.8, mjd: 59700.8662)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a16_75.id, source_id: @a3C286.id, scan_nr: 2810, value_jy: 3.1313, error_jy: 0.0222, elevation: 63.4, mjd: 59700.8699)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a16_75.id, source_id: @a3C286.id, scan_nr: 2811, value_jy: 3.1138, error_jy: 0.0221, elevation: 63.9, mjd: 59700.8727)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a16_75.id, source_id: @a11043812.id, scan_nr: 2817, value_jy: 0.4800, error_jy: 0.0041, elevation: 70.0, mjd: 59700.8943)
+Result.create(epoch_id: @a2022_05_01.id, frequency_id: @a16_75.id, source_id: @a11043812.id, scan_nr: 2818, value_jy: 0.4895, error_jy: 0.0040, elevation: 69.4, mjd: 59700.8971)
 Result.create(epoch_id: @a2020_11_17.id, frequency_id: @a24_75.id, source_id: @a11043812.id, scan_nr: 2502, value_jy: 0.3434, error_jy: 0.0059, elevation: 70.8, mjd: 59170.2284)
 Result.create(epoch_id: @a2020_11_17.id, frequency_id: @a24_75.id, source_id: @a11043812.id, scan_nr: 2503, value_jy: 0.3632, error_jy: 0.0061, elevation: 71.6, mjd: 59170.232)
 Result.create(epoch_id: @a2020_11_17.id, frequency_id: @a24_75.id, source_id: @a3C286.id, scan_nr: 2491, value_jy: 2.2951, error_jy: 0.0213, elevation: 36.3, mjd: 59170.1974)
@@ -12704,3 +12725,29 @@ Result.create(epoch_id: @a2022_05_02.id, frequency_id: @a43_75.id, source_id: @a
 Result.create(epoch_id: @a2022_05_02.id, frequency_id: @a43_75.id, source_id: @a3C286.id, scan_nr: 2951, value_jy: 1.5861, error_jy: 0.0203, elevation: 61.8, mjd: 59701.858)
 Result.create(epoch_id: @a2022_05_02.id, frequency_id: @a43_75.id, source_id: @aW3OH.id, scan_nr: 2899, value_jy: 3.2827, error_jy: 0.0373, elevation: 54.3, mjd: 59701.6493)
 Result.create(epoch_id: @a2022_05_02.id, frequency_id: @a43_75.id, source_id: @aW3OH.id, scan_nr: 2900, value_jy: 3.6520, error_jy: 0.0399, elevation: 53.8, mjd: 59701.6525)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 4767, value_jy: 3.4741, error_jy: 0.0223, elevation: 35.6, mjd: 59718.0807)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 4768, value_jy: 3.5178, error_jy: 0.0225, elevation: 35.0, mjd: 59718.0834)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a14_25.id, source_id: @a11043812.id, scan_nr: 4762, value_jy: 0.4755, error_jy: 0.0032, elevation: 24.0, mjd: 59718.0578)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a16_75.id, source_id: @a3C286.id, scan_nr: 4767, value_jy: 3.0807, error_jy: 0.0282, elevation: 35.6, mjd: 59718.0807)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a16_75.id, source_id: @a3C286.id, scan_nr: 4768, value_jy: 3.1364, error_jy: 0.0286, elevation: 35.0, mjd: 59718.0834)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a16_75.id, source_id: @a11043812.id, scan_nr: 4762, value_jy: 0.4808, error_jy: 0.0049, elevation: 24.0, mjd: 59718.0578)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a19_25.id, source_id: @a3C286.id, scan_nr: 4769, value_jy: 2.8185, error_jy: 0.0130, elevation: 34.0, mjd: 59718.0878)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a19_25.id, source_id: @a3C286.id, scan_nr: 4770, value_jy: 2.7954, error_jy: 0.0125, elevation: 33.3, mjd: 59718.0905)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a19_25.id, source_id: @a11043812.id, scan_nr: 4763, value_jy: 0.4058, error_jy: 0.0070, elevation: 23.2, mjd: 59718.0621)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a19_25.id, source_id: @a11043812.id, scan_nr: 4764, value_jy: 0.4704, error_jy: 0.0045, elevation: 22.7, mjd: 59718.0647)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a21_15.id, source_id: @a3C286.id, scan_nr: 4769, value_jy: 2.6147, error_jy: 0.0067, elevation: 34.0, mjd: 59718.0878)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a21_15.id, source_id: @a3C286.id, scan_nr: 4770, value_jy: 2.6225, error_jy: 0.0060, elevation: 33.3, mjd: 59718.0905)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a21_15.id, source_id: @a11043812.id, scan_nr: 4763, value_jy: 0.4625, error_jy: 0.0047, elevation: 23.2, mjd: 59718.0621)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a21_15.id, source_id: @a11043812.id, scan_nr: 4764, value_jy: 0.4926, error_jy: 0.0035, elevation: 22.7, mjd: 59718.0647)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a22_85.id, source_id: @a3C286.id, scan_nr: 4769, value_jy: 2.5033, error_jy: 0.0317, elevation: 34.0, mjd: 59718.0878)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a22_85.id, source_id: @a3C286.id, scan_nr: 4770, value_jy: 2.4433, error_jy: 0.0306, elevation: 33.3, mjd: 59718.0905)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a22_85.id, source_id: @a11043812.id, scan_nr: 4763, value_jy: 0.4568, error_jy: 0.0120, elevation: 23.2, mjd: 59718.0621)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a22_85.id, source_id: @a11043812.id, scan_nr: 4764, value_jy: 0.4654, error_jy: 0.0106, elevation: 22.7, mjd: 59718.0647)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a24_75.id, source_id: @a3C286.id, scan_nr: 4769, value_jy: 2.3398, error_jy: 0.0106, elevation: 34.0, mjd: 59718.0878)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a24_75.id, source_id: @a3C286.id, scan_nr: 4770, value_jy: 2.3213, error_jy: 0.0102, elevation: 33.3, mjd: 59718.0905)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a24_75.id, source_id: @a11043812.id, scan_nr: 4763, value_jy: 0.4339, error_jy: 0.0040, elevation: 23.2, mjd: 59718.0621)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a24_75.id, source_id: @a11043812.id, scan_nr: 4764, value_jy: 0.4533, error_jy: 0.0036, elevation: 22.7, mjd: 59718.0647)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a36_25.id, source_id: @a3C286.id, scan_nr: 4771, value_jy: 1.7907, error_jy: 0.0438, elevation: 32.2, mjd: 59718.0957)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a36_25.id, source_id: @a3C286.id, scan_nr: 4772, value_jy: 1.7147, error_jy: 0.0390, elevation: 31.6, mjd: 59718.0983)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a38_75.id, source_id: @a3C286.id, scan_nr: 4771, value_jy: 1.7436, error_jy: 0.0824, elevation: 32.2, mjd: 59718.0957)
+Result.create(epoch_id: @a2022_05_19.id, frequency_id: @a38_75.id, source_id: @a3C286.id, scan_nr: 4772, value_jy: 1.5954, error_jy: 0.0723, elevation: 31.6, mjd: 59718.0983)
