@@ -174,8 +174,24 @@ window.onload=function(){
   };
   aver_mode_array.push(aver_lc20);
 
-  Plotly.newPlot("lightcurve",aver_mode_array,layoutLC);
+  <% lc45=getAverageLightCurve(@source,5,10) %>
+  var aver_lc45 = {
+    x: <%= lc45[0] %>,
+    y: <%= lc45[1] %>,
+    error_y: {
+        type: "data",
+        array: <%= lc45[2] %>,
+        visible: true
+      },
+    type: "scatter",
+    <% if !user_signed_in?%>
+      hoverinfo: 'none',
+    <%end%>
+    name: "Aver 45mm"
+  };
+  aver_mode_array.push(aver_lc45);
 
+  Plotly.newPlot("lightcurve",aver_mode_array,layoutLC);
 
   //SPECTRUM PLOT
 
