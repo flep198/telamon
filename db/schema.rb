@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_05_25_162843) do
+ActiveRecord::Schema.define(version: 2022_06_14_132808) do
 
   create_table "epoches", force: :cascade do |t|
     t.date "date"
@@ -64,6 +64,12 @@ ActiveRecord::Schema.define(version: 2022_05_25_162843) do
     t.integer "frequency_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.float "pol_flux"
+    t.float "pol_flux_err"
+    t.float "pol_frac"
+    t.float "pol_frac_err"
+    t.float "evpa"
+    t.float "evpa_err"
     t.index ["epoch_id"], name: "index_results_on_epoch_id"
     t.index ["frequency_id"], name: "index_results_on_frequency_id"
     t.index ["source_id"], name: "index_results_on_source_id"

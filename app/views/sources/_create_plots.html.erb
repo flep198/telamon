@@ -386,6 +386,100 @@ window.onload=function(){
 
   Plotly.newPlot("speci",[speci_data],layout);
 
+//Fractional Polarization Plot
+var pol_frac_data = {
+      x: <%= getPolFracData(@source)[0]%>,
+      y: <%= getPolFracData(@source)[1]%>,
+      error_y: {
+        type: "data",
+        array: <%= getPolFracData(@source)[2] %>,
+        visible: true
+      },
+      type: "scatter",
+      <% if !user_signed_in?%> //show hoverinfo only if user is signed in
+      hoverinfo: 'none',
+      <%end%>
+      name: "Fractional Polarization [%]"
+    };
+
+
+  var layout_pol_frac = {
+    title: "<%=@source.j2000_name%>",
+
+    xaxis: {
+      title: {
+        text: 'MJD',
+        font: {
+          family: 'Courier New, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      },
+    },
+
+    yaxis: {
+      title: {
+        text: 'Polarization Fraction',
+        font: {
+          family: 'Courier New, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      },
+    },
+  };
+
+
+
+  Plotly.newPlot("pol_frac_plot",[pol_frac_data],layout_pol_frac);
+
+//Fractional Polarization Plot
+var evpa_data = {
+      x: <%= getEVPAData(@source)[0]%>,
+      y: <%= getEVPAData(@source)[1]%>,
+      error_y: {
+        type: "data",
+        array: <%= getEVPAData(@source)[2] %>,
+        visible: true
+      },
+      type: "scatter",
+      <% if !user_signed_in?%> //show hoverinfo only if user is signed in
+      hoverinfo: 'none',
+      <%end%>
+      name: "Fractional Polarization"
+    };
+
+
+  var layout_evpa = {
+    title: "<%=@source.j2000_name%>",
+
+    xaxis: {
+      title: {
+        text: 'MJD',
+        font: {
+          family: 'Courier New, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      },
+    },
+
+    yaxis: {
+      title: {
+        text: 'Angle [deg]',
+        font: {
+          family: 'Courier New, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      },
+    },
+  };
+
+  Plotly.newPlot("evpa_plot",[evpa_data],layout_evpa);
+
+
+//this is needed to update the lightcurve and spectrums plot using a switch
   var checkboxAver = document.getElementById("averSwitch");
 
   function updateLCplot(){

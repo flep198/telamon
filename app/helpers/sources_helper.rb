@@ -1,5 +1,40 @@
 module SourcesHelper
-	def getSpectralIndices source
+	
+    def getPolFracData source
+        mjd=Array.new
+        pol_frac=Array.new
+        pol_frac_err=Array.new
+
+        source.results.distinct.order(:mjd).each do |result|
+            if result.pol_frac
+                mjd.push(result.mjd)
+                pol_frac.push(result.pol_frac)
+                pol_frac_err.push(result.pol_frac_err)
+            end
+        end
+
+        return mjd,pol_frac,pol_frac_err
+
+
+    end
+
+    def getEVPAData source
+        mjd=Array.new
+        evpa=Array.new
+        evpa_err=Array.new
+
+        source.results.distinct.order(:mjd).each do |result|
+            if result.evpa
+                mjd.push(result.mjd)
+                evpa.push(result.evpa)
+                evpa_err.push(result.evpa_err)
+            end
+        end
+
+        return mjd,evpa,evpa_err
+    end
+
+    def getSpectralIndices source
 		slopes = Array.new
 		slope_errs = Array.new
 		mjds = Array.new
