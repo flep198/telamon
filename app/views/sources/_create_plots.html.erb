@@ -387,21 +387,33 @@ window.onload=function(){
   Plotly.newPlot("speci",[speci_data],layout);
 
 //Fractional Polarization Plot
-var pol_frac_data = {
-      x: <%= getPolFracData(@source)[0]%>,
-      y: <%= getPolFracData(@source)[1]%>,
+
+freq_array_pol_frac=[]
+
+<% @source.frequencies.distinct.order(:freq_ghz).each do |freq| %>
+    <% @freq_id=freq.id %>
+    <% @data = Result.where(:source_id => @source.id, :frequency_id => @freq_id).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.pol_frac,r.pol_frac_err]} %>
+    <% @data=@data.sort_by(&:first) %>
+
+      //print out values for freq
+    var pol_frac_data<%=@freq_id%> = {
+      x: <%= @data.map {|r| r[0]}%>,
+      y: <%= @data.map {|r| r[1]}%>,
       error_y: {
         type: "data",
-        array: <%= getPolFracData(@source)[2] %>,
+        array: <%= @data.map {|r| r[2]}%>,
         visible: true
       },
       type: "scatter",
-      <% if !user_signed_in?%> //show hoverinfo only if user is signed in
+      <% if !user_signed_in?%>
       hoverinfo: 'none',
       <%end%>
-      name: "Fractional Polarization [%]"
+      name: "<%=Frequency.find(@freq_id).freq_ghz.to_s%> GHz"
     };
 
+    freq_array_pol_frac.push(pol_frac_data<%=@freq_id%>);
+
+  <% end %>
 
   var layout_pol_frac = {
     title: "<%=@source.j2000_name%>",
@@ -431,24 +443,35 @@ var pol_frac_data = {
 
 
 
-  Plotly.newPlot("pol_frac_plot",[pol_frac_data],layout_pol_frac);
+  Plotly.newPlot("pol_frac_plot",freq_array_pol_frac,layout_pol_frac);
 
 //Fractional Polarization Plot
-var evpa_data = {
-      x: <%= getEVPAData(@source)[0]%>,
-      y: <%= getEVPAData(@source)[1]%>,
+freq_array_evpa=[]
+
+<% @source.frequencies.distinct.order(:freq_ghz).each do |freq| %>
+    <% @freq_id=freq.id %>
+    <% @data = Result.where(:source_id => @source.id, :frequency_id => @freq_id).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.evpa,r.evpa_err]} %>
+    <% @data=@data.sort_by(&:first) %>
+
+      //print out values for freq
+    var evpa_data<%=@freq_id%> = {
+      x: <%= @data.map {|r| r[0]}%>,
+      y: <%= @data.map {|r| r[1]}%>,
       error_y: {
         type: "data",
-        array: <%= getEVPAData(@source)[2] %>,
+        array: <%= @data.map {|r| r[2]}%>,
         visible: true
       },
       type: "scatter",
-      <% if !user_signed_in?%> //show hoverinfo only if user is signed in
+      <% if !user_signed_in?%>
       hoverinfo: 'none',
       <%end%>
-      name: "Fractional Polarization"
+      name: "<%=Frequency.find(@freq_id).freq_ghz.to_s%> GHz"
     };
 
+    freq_array_evpa.push(evpa_data<%=@freq_id%>);
+
+  <% end %>
 
   var layout_evpa = {
     title: "<%=@source.j2000_name%>",
@@ -476,7 +499,7 @@ var evpa_data = {
     },
   };
 
-  Plotly.newPlot("evpa_plot",[evpa_data],layout_evpa);
+  Plotly.newPlot("evpa_plot",freq_array_evpa,layout_evpa);
 
 
 //this is needed to update the lightcurve and spectrums plot using a switch
