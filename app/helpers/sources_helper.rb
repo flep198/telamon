@@ -83,9 +83,14 @@ module SourcesHelper
             yerr_fit=y.map{|r| 0}
             lineFit = LineFit.new
             lineFit.setData(x_fit,y_fit)
-                
-            a_0 = lineFit.coefficients[1]
-            c_0 = Math.exp(lineFit.coefficients[0])
+            
+            if !lineFit.coefficients[1].nil? and !lineFit.coefficients[0].nil?
+                a_0 = lineFit.coefficients[1]
+                c_0 = Math.exp(lineFit.coefficients[0])
+            else
+                a_0=0
+                c_0=y.sum(0.0)/y.size
+            end
     	else #use these values if no line fit is possible
             a_0=0
     	    c_0=y.sum(0.0)/y.size
