@@ -84,6 +84,7 @@ module SourcesHelper
             lineFit = LineFit.new
             lineFit.setData(x_fit,y_fit)
             
+            #check if fit worked, otherwise use the backup values (flat line)
             if !lineFit.coefficients[1].nil? and !lineFit.coefficients[0].nil?
                 a_0 = lineFit.coefficients[1]
                 c_0 = Math.exp(lineFit.coefficients[0])
