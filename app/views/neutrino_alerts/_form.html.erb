@@ -69,6 +69,9 @@
     <%= form.text_field :url %>
   </div>
 
+  <%= form.label "Assoc. Sources (multiple selections possible)", class: "form-label" %>
+  <%= select_tag("source_ids[]", options_for_select(Source.all.order("j2000_name").collect { |cat| [cat.j2000_name, cat.id] }, @neutrino_alert.sources.collect { |cat| cat.id}), {:multiple=>true, :size=>4, :class=> "form-select"})%>
+
   <div class="actions">
     <%= form.submit %>
   </div>

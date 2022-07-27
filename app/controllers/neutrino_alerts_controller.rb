@@ -22,7 +22,9 @@ class NeutrinoAlertsController < ApplicationController
   # POST /neutrino_alerts or /neutrino_alerts.json
   def create
     @neutrino_alert = NeutrinoAlert.new(neutrino_alert_params)
-
+    if params[:source_ids]
+      @neutrino_alert.sources = Source.find(params[:source_ids])
+    end
     respond_to do |format|
       if @neutrino_alert.save
         format.html { redirect_to @neutrino_alert, notice: "Neutrino alert was successfully created." }
@@ -37,6 +39,9 @@ class NeutrinoAlertsController < ApplicationController
 
   # PATCH/PUT /neutrino_alerts/1 or /neutrino_alerts/1.json
   def update
+    if params[:source_ids]
+      @neutrino_alert.sources = Source.find(params[:source_ids])
+    end
     respond_to do |format|
       if @neutrino_alert.update(neutrino_alert_params)
         @neutrino_alert.slug = nil if @neutrino_alert != params[:name]
@@ -67,6 +72,6 @@ class NeutrinoAlertsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def neutrino_alert_params
-      params.require(:neutrino_alert).permit(:name, :date, :ra, :dec, :signalness, :energy,:noticetype, :radius90, :radius50, :url, :type, :time)
+      params.require(:neutrino_alert).permit(:name, :date, :ra, :dec, :signalness, :energy,:noticetype, :radius90, :radius50, :url, :type, :time, :source_ids)
     end
 end
