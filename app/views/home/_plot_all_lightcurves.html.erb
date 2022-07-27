@@ -63,7 +63,7 @@ window.onload=function(){
 
 
   
-  <% Source.all.each do |source| %>
+  <% sources_to_plot.each do |source| %>
   //LIGHTCURVE PLOT
 
     freq_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%> = []; // this array saves what freqs will be plotted later
@@ -174,7 +174,7 @@ window.onload=function(){
   function updateLCplot(){
     var aver = checkboxAver.checked;
 
-    <% Source.all.each do |renew_source| %>
+    <% sources_to_plot.each do |renew_source| %>
 
       if (aver){
         Plotly.newPlot("lightcurve<%=renew_source.j2000_name.gsub("+","plus").gsub("-","minus")%>",aver_mode_array<%=renew_source.j2000_name.gsub("+","plus").gsub("-","minus")%>,layoutLC<%=renew_source.j2000_name.gsub("+","plus").gsub("-","minus")%>);

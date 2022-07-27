@@ -58,10 +58,16 @@
   </div>
 
   <div class="col-md-4">
-    <div class="col-md-12">
-        <%= form.label "Category (multiple selections possible)", class: "form-label" %>
-        <%= select_tag("source_category_ids[]", options_for_select(SourceCategory.all.collect { |cat| [cat.name, cat.id] }, @source.source_categories.collect { |cat| cat.id}), {:multiple=>true, :size=>6, :class=> "form-select"})%>
+    <div class="row">
+      <div class="col-md-6">
+          <%= form.label "Category (multiple selections possible)", class: "form-label" %>
+          <%= select_tag("source_category_ids[]", options_for_select(SourceCategory.all.collect { |cat| [cat.name, cat.id] }, @source.source_categories.collect { |cat| cat.id}), {:multiple=>true, :size=>4, :class=> "form-select"})%>
       </div>
+      <div class="col-md-6">
+          <%= form.label "Neutrino Event (multiple selections possible)", class: "form-label" %>
+          <%= select_tag("neutrino_alert_ids[]", options_for_select(NeutrinoAlert.all.collect { |cat| [cat.name, cat.id] }, @source.neutrino_alerts.collect { |cat| cat.id}), {:multiple=>true, :size=>4, :class=> "form-select"})%>
+      </div>
+    </div>
   </div>
 </div>
   <div class="row">

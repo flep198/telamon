@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_14_132808) do
+ActiveRecord::Schema.define(version: 2022_07_27_173857) do
 
   create_table "epoches", force: :cascade do |t|
     t.date "date"
@@ -39,6 +39,32 @@ ActiveRecord::Schema.define(version: 2022_06_14_132808) do
     t.index ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true
     t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
     t.index ["sluggable_type", "sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_type_and_sluggable_id"
+  end
+
+  create_table "neutrino_alerts", force: :cascade do |t|
+    t.string "name"
+    t.string "date"
+    t.string "ra"
+    t.string "dec"
+    t.float "signalness"
+    t.float "energy"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.float "radius90"
+    t.float "radius50"
+    t.string "time"
+    t.string "type"
+    t.string "url"
+    t.string "slug"
+    t.string "noticetype"
+    t.index ["slug"], name: "index_neutrino_alerts_on_slug", unique: true
+  end
+
+  create_table "neutrino_alerts_sources", id: false, force: :cascade do |t|
+    t.integer "source_id", null: false
+    t.integer "neutrino_alert_id", null: false
+    t.index ["neutrino_alert_id"], name: "index_neutrino_alerts_sources_on_neutrino_alert_id"
+    t.index ["source_id"], name: "index_neutrino_alerts_sources_on_source_id"
   end
 
   create_table "publications", force: :cascade do |t|

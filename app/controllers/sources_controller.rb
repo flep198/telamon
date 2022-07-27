@@ -25,6 +25,9 @@ class SourcesController < ApplicationController
     if params[:source_category_ids]
       @source.source_categories = SourceCategory.find(params[:source_category_ids])
     end
+    if params[:neutrino_alert_ids]
+      @source.neutrino_alerts = NeutrinoAlert.find(params[:neutrino_alert_ids])
+    end
     respond_to do |format|
       if @source.save
         format.html { redirect_to sources_path, notice: "Source was successfully created." }
@@ -40,6 +43,9 @@ class SourcesController < ApplicationController
   def update
     if params[:source_category_ids]
       @source.source_categories = SourceCategory.find(params[:source_category_ids])
+    end
+    if params[:neutrino_alert_ids]
+      @source.neutrino_alerts = NeutrinoAlert.find(params[:neutrino_alert_ids])
     end
     respond_to do |format|
       if @source.update(source_params)
@@ -74,6 +80,6 @@ class SourcesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def source_params
-      params.require(:source).permit(:j2000_name, :alt_name, :source_class, :s_mojave, :s_alma, :redshift, :ra, :decl, :lst_from, :lst_to, :duration, :comment, :tevcat_url, :source_category_ids, :atca_url)
+      params.require(:source).permit(:j2000_name, :alt_name, :source_class, :s_mojave, :s_alma, :redshift, :ra, :decl, :lst_from, :lst_to, :duration, :comment, :tevcat_url, :source_category_ids,:neutrino_alert_ids, :atca_url)
     end
 end

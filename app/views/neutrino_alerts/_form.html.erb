@@ -1,0 +1,76 @@
+<% if user_signed_in? %>
+
+
+<%= form_with(model: neutrino_alert) do |form| %>
+  <% if neutrino_alert.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(neutrino_alert.errors.count, "error") %> prohibited this neutrino_alert from being saved:</h2>
+
+      <ul>
+        <% neutrino_alert.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.text_field :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ra %>
+    <%= form.text_field :ra %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dec %>
+    <%= form.text_field :dec %>
+  </div>
+
+  <div class="field">
+    <%= form.label :signalness %>
+    <%= form.text_field :signalness %>
+  </div>
+
+  <div class="field">
+    <%= form.label :energy %>
+    <%= form.text_field :energy %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time %>
+    <%= form.text_field :time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :radius90 %>
+    <%= form.text_field :radius90 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :radius50 %>
+    <%= form.text_field :radius50 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :noticetype %>
+    <%= form.text_field :noticetype %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url %>
+    <%= form.text_field :url %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+<% end %>

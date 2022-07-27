@@ -1,0 +1,110 @@
+<% if user_signed_in? %>
+
+<%= render '/home/plot_all_lightcurves', sources_to_plot: @neutrino_alert.sources %>
+
+<div class="row">
+  <div class="col-md-12">
+   <div class="card text-white bg-secondary">
+      <div class="card-header">
+       <h1>
+          <%= @neutrino_alert.name %>
+       </h1>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+
+<div class="row">
+  <div class="col-md-8">
+    <div class="card h-100">
+      <div class="card-header">
+        Information
+      </div>
+      <div class="card-body "> 
+        <div class="row">
+          <div class="col"> 
+              <p><strong>Name:</strong> <%= @neutrino_alert.name%></p>    
+              <p><strong>Date:</strong> <%= @neutrino_alert.date %></p>
+              <p><strong>Time:</strong> <%= @neutrino_alert.time %></p>
+              <p><strong>RA [deg]:</strong> <%= @neutrino_alert.ra %></p>
+              <p><strong>DEC [deg]:</strong> <%= @neutrino_alert.dec %></p>
+              <p><strong>Error90 [arcmin]:</strong> <%= @neutrino_alert.radius90 %></p>
+              <p><strong>Error50 [arcmin]:</strong> <%= @neutrino_alert.radius50 %></p>
+          </div>
+          <div class="col">
+              <p><strong>Signalness:</strong> <%= @neutrino_alert.signalness %></p>
+              <p><strong>Energy:</strong> <%= @neutrino_alert.energy %></p>
+              <p><strong>Type:</strong> <%= @neutrino_alert.type %></p>
+              <p><strong>Assoc. Sources:</strong> 
+                <% @neutrino_alert.sources.each do |source| %>
+                  <%=source.j2000_name%>, 
+                <%end%>
+              </p>
+              <p><strong>External:</strong> <%= @neutrino_alert.url %> </p>
+             
+             
+              <p><%= link_to 'Edit', edit_neutrino_alert_path(@neutrino_alert), class: "btn btn-outline-success btn-sm" %></p>
+              <% if user_signed_in? %>
+                <div class="form-check form-switch form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="averSwitch" name="averSwitch" value="yes">
+                    <label class="form-check-label" for="averSwitch"> Average Mode </label>
+                </div>
+              <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-header">
+        Aladin Lite View
+      </div>
+      <div class="card-body d-flex align-items-center justify-content-center">
+        <!-- Aladin Lite View -->
+        <div id="aladin-lite-div" style="width:300px;height:300px;"></div>
+        <script type="text/javascript" src="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.js" charset="utf-8"></script>
+        <script type="text/javascript">
+          <% if @neutrino_alert.ra != nil and @neutrino_alert.dec != nil %>
+            var aladin = A.aladin('#aladin-lite-div', {survey: "P/DSS2/color", fov:1/30, target: "<%=@neutrino_alert.ra + " " + @neutrino_alert.dec%>"});
+          <% else %>
+            var aladin = A.aladin('#aladin-lite-div', {survey: "P/DSS2/color", fov:1/30, target: "<%=@neutrino_alert.name%>"});
+          <% end %>
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+</br>
+
+<!-- div style element with lightcurves & spectra -->
+
+<!--Lightcurves-->
+<div class="row align-items-start">
+  
+<% @neutrino_alert.sources.order("j2000_name").each do |source| %>
+  
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+          Lightcurve
+          </div>
+          <div class="col-md-4">          
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div id="lightcurve<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>"></div>
+      </div>
+    </div>
+  </div>
+
+<% end %>
+
+</div>
+
+<% end %>

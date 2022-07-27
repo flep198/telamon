@@ -2,6 +2,7 @@ class Source < ApplicationRecord
 	validates_presence_of :j2000_name
 
 	has_and_belongs_to_many :source_categories
+	has_and_belongs_to_many :neutrino_alerts
 	has_many :results
 	has_many :frequencies, :through => :results
 	has_many :epoches, :through => :results

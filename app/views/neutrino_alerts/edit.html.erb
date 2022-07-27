@@ -1,0 +1,8 @@
+<% if user_signed_in? %>
+<h1>Editing Neutrino Alert</h1>
+
+<%= render 'form', neutrino_alert: @neutrino_alert %>
+
+<%= link_to 'Show', @neutrino_alert %> |
+<%= link_to 'Back', neutrino_alerts_path %>
+<% end %>

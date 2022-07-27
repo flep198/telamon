@@ -1,0 +1,56 @@
+<% if user_signed_in? %>
+<p id="notice"><%= notice %></p>
+
+<h1>Neutrino Alerts</h1>
+
+<div class="table-responsive">
+<table id="telamon_targetlist" class="table table-hover table-striped table-bordered">
+  <thead class="table-dark text-center">
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Type</th>
+      <th>RA [deg]</th>
+      <th>Dec [deg]</th>
+      <th>Error90 [arcmin]</th>
+      <th>Error50 [arcmin]</th>
+      <th>Energy</th>
+      <th>Signalness</th>
+      <% if user_signed_in? && current_user.admin? %>
+        <th colspan="2"></th>
+      <%end%>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <% @neutrino_alerts.order("name").reverse_order.each do |alert| %>
+        <tr>
+          <td><%= link_to alert.name, alert %></td>
+          <td><%= alert.date %></td>
+          <td><%= alert.time %></td>
+          <td><%= alert.noticetype %></td>
+          <td><%= alert.ra %></td>
+          <td><%= alert.dec %></td>
+          <td><%= alert.radius90 %></td>
+          <td><%= alert.radius50 %></td>
+          <td><%= alert.energy %></td>
+          <td><%= alert.signalness %></td>
+          <% if user_signed_in? && current_user.admin? %>
+            <td><%= link_to 'Edit', edit_neutrino_alert_path(alert), class: "btn btn-outline-success btn-sm" %></td>
+            <td><%= link_to 'Delete', alert, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
+          <%end%>
+        </tr>
+    <% end%>
+  </tbody>
+</table>
+</div>
+
+
+
+
+<br>
+
+<%= link_to 'New Neutrino Alert', new_neutrino_alert_path %>
+<% end %>

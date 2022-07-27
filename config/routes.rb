@@ -10,6 +10,7 @@ resources :epoches, :path => 'epochs', param: :slug
 resources :frequencies
 resources :sources, param: :slug
 resources :publications
+resources :neutrino_alerts, param: :slug
 root 'home#index'
 get "/members" => "home#members", as: :members
 get "/lightcurves" => "home#lightcurves", as: :lightcurves
