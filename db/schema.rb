@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_27_173857) do
+ActiveRecord::Schema.define(version: 2022_07_27_190951) do
 
   create_table "epoches", force: :cascade do |t|
     t.date "date"
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 2022_07_27_173857) do
     t.string "url"
     t.string "slug"
     t.string "noticetype"
+    t.integer "numrfc"
     t.index ["slug"], name: "index_neutrino_alerts_on_slug", unique: true
   end
 

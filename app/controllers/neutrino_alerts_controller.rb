@@ -72,6 +72,6 @@ class NeutrinoAlertsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def neutrino_alert_params
-      params.require(:neutrino_alert).permit(:name, :date, :ra, :dec, :signalness, :energy,:noticetype, :radius90, :radius50, :url, :type, :time, :source_ids)
+      params.require(:neutrino_alert).permit(:name, :date, :ra, :dec, :signalness, :energy,:noticetype, :radius90, :radius50, :url, :type, :time, :source_ids,:numrfc)
     end
 end

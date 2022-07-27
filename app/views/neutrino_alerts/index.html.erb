@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
 <p id="notice"><%= notice %></p>
 
-<h1>Neutrino Alerts</h1>
+<h1>Neutrino Alerts (taken from <a href="https://gcn.gsfc.nasa.gov/amon_icecube_gold_bronze_events.html">AMON</a>)</h1>
 
 <div class="table-responsive">
 <table id="telamon_targetlist" class="table table-hover table-striped table-bordered">
@@ -11,6 +11,8 @@
       <th>Date</th>
       <th>Time</th>
       <th>Type</th>
+      <th>NumTELAMON</th>
+      <th>NumRFC</th>
       <th>RA [deg]</th>
       <th>Dec [deg]</th>
       <th>Error90 [arcmin]</th>
@@ -31,6 +33,8 @@
           <td><%= alert.date %></td>
           <td><%= alert.time %></td>
           <td><%= alert.noticetype %></td>
+          <td><%= alert.sources.count %></td>
+          <td><%= alert.numrfc %> </td>
           <td><%= alert.ra %></td>
           <td><%= alert.dec %></td>
           <td><%= alert.radius90 %></td>
