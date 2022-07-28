@@ -49,6 +49,15 @@
                 <%= if (user_signed_in? and @source.atca_url != "https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database.html") then link_to("ATCA",@source.atca_url,target: "_blank", rel:"noopener noreferrer") end%></p>
               <%if user_signed_in? %>
                 <p><strong>Comment:</strong> <%= @source.comment %></p>
+                
+                <% if @source.neutrino_alerts != nil %>
+                  <p><strong>Associated Neutrino Events:</strong>
+                <% end %>
+                <% @source.neutrino_alerts.each do |alert| %>
+                  <%= link_to alert.name, alert %>,
+                <% end %>
+                </p>
+                
               <% end %>
               <% if !user_signed_in? %>
               <p><a href="mailto:matthias.kadler@astro.uni-wuerzburg.de,%20florian.eppel@uni-wuerzburg.de?subject=TELAMON Data Access <%=@source.j2000_name%>&body=Dear TELAMON Team,%0AI would like to ask for access to the TELAMON data of <%=@source.j2000_name%>.%0AThanks,%0A" class="btn btn-outline-success btn-sm">Request Data Access</a></p>

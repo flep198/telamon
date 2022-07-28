@@ -24,7 +24,7 @@
       <div class="card-body "> 
         <div class="row">
           <div class="col"> 
-              <p><strong>Name:</strong> <%= @neutrino_alert.name%></p>    
+              <p><strong>Name:</strong> <%= link_to @neutrino_alert.name, @neutrino_alert.url%></p>    
               <p><strong>Date:</strong> <%= @neutrino_alert.date %></p>
               <p><strong>Time:</strong> <%= @neutrino_alert.time %></p>
               <p><strong>RA [deg]:</strong> <%= @neutrino_alert.ra %></p>
@@ -35,16 +35,13 @@
           <div class="col">
               <p><strong>Signalness:</strong> <%= @neutrino_alert.signalness %></p>
               <p><strong>Energy:</strong> <%= @neutrino_alert.energy %></p>
-              <p><strong>Type:</strong> <%= @neutrino_alert.type %></p>
+              <p><strong>Type:</strong> <%= @neutrino_alert.noticetype %></p>
               <p><strong>Assoc. Sources:</strong> 
                 <% @neutrino_alert.sources.each do |source| %>
-                  <%=source.j2000_name%>, 
+                  <%= link_to source.j2000_name, source%>, 
                 <%end%>
               </p>
-              <p><strong>Number of RFC sources:</strong><%= @neutrino_alert.numrfc %></p>
-              <p><strong>External:</strong> <%= @neutrino_alert.url %> </p>
-             
-             
+              <p><strong>Number of RFC sources:</strong> <%= link_to @neutrino_alert.numrfc, "http://astrogeo.org/cgi-bin/calib_search_form.csh?ra="+@neutrino_alert.ra.to_s()+"d&dec="+@neutrino_alert.dec.to_s()+"d&num_sou="+@neutrino_alert.numrfc.to_s()+"&format=html" %></p>
               <p><%= link_to 'Edit', edit_neutrino_alert_path(@neutrino_alert), class: "btn btn-outline-success btn-sm" %></p>
               <% if user_signed_in? %>
                 <div class="form-check form-switch form-check-inline">
