@@ -15,6 +15,24 @@ import multiprocessing
 from joblib import Parallel, delayed
 from tqdm import tqdm
 import sys
+import requests
+
+#get neutrino alerts from AMON
+url = 'https://gcn.gsfc.nasa.gov/amon_icecube_gold_bronze_events.html'
+html = requests.get(url).content
+df_list = pd.read_html(html,header =1)
+df = pd.DataFrame(df_list[-1])
+
+#only use latest rev
+run_num=""
+rev=0
+for index, row in df.iterrows():
+    if run_num==row["RunNum_EventNum"] and rev>int(row["Rev"]):
+        df=df.drop(index)
+    run_num=row["RunNum_EventNum"]
+    rev=int(row["Rev"])
+    
+df.to_csv('AMON_Neutrino_Alerts.csv')
 
 #import VLBI data and reformat RA/Dec
 df_VLBI = pd.DataFrame(data=pd.read_table('VLBI_RFC_2022a.txt', delim_whitespace=True,dtype = {'DecD': 'str'}))

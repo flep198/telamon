@@ -85,6 +85,7 @@
 @a23060939=Source.where(j2000_name: '2306+0939').first_or_create
 @a02452405=Source.where(j2000_name: '0245+2405').first_or_create
 @a21081430=Source.where(j2000_name: '2108+1430').first_or_create
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
 @a12070106=Source.where(j2000_name: '1207-0106').first_or_create
 @a15064239=Source.where(j2000_name: '1506+4239').first_or_create
 @a22024216=Source.where(j2000_name: '2202+4216').first_or_create
@@ -94,6 +95,10 @@
 @a09586533=Source.where(j2000_name: '0958+6533').first_or_create
 @a11592914=Source.where(j2000_name: '1159+2914').first_or_create
 @a14431200=Source.where(j2000_name: '1443+1200').first_or_create
+@a10500432=Source.where(j2000_name: '1050+0432').first_or_create
+@a12242122=Source.where(j2000_name: '1224+2122').first_or_create
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a17450338=Source.where(j2000_name: '1745-0338').first_or_create
 
 @a14_25=Frequency.where(freq_ghz: '14.25').first_or_create
 @a16_75=Frequency.where(freq_ghz: '16.75').first_or_create
@@ -114,6 +119,7 @@
 @a2022_05_17=Epoch.where(date: '2022-05-17').first_or_create
 @a2021_12_21=Epoch.where(date: '2021-12-21').first_or_create
 @a2022_07_09=Epoch.where(date: '2022-07-09').first_or_create
+@a2022_08_07=Epoch.where(date: '2022-08-07').first_or_create
 
 result_to_update = Result.where(source_id: @a03032407.id ,scan_nr: 221, epoch_id: @a2021_09_19.id ,frequency_id: @a14_25.id).first
 if result_to_update==nil
@@ -6847,11 +6853,23 @@ Result.create(elevation: 67.8,source_id: @aW3OH.id ,scan_nr: 9375, epoch_id: @a2
 else
 result_to_update.update(mjd: 59568.9326,pol_flux: 0.0019,pol_flux_err: 0.0018, pol_frac: 0.067, pol_frac_err: 0.066,evpa: 8.43, evpa_err: 25.85)
 end
+result_to_update = Result.where(source_id: @a01122244.id ,scan_nr: 8681, epoch_id: @a2022_07_09.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 46.2,source_id: @a01122244.id ,scan_nr: 8681, epoch_id: @a2022_07_09.id ,frequency_id: @a36_25.id,value_jy: 1.4130,error_jy: 0.4040,mjd: 59769.3557,pol_flux: 0.1840,pol_flux_err: 0.0119, pol_frac: 13.024, pol_frac_err: 3.818,evpa: 112.22, evpa_err: 1.86)
+else
+result_to_update.update(mjd: 59769.3557,pol_flux: 0.1840,pol_flux_err: 0.0119, pol_frac: 13.024, pol_frac_err: 3.818,evpa: 112.22, evpa_err: 1.86)
+end
 result_to_update = Result.where(source_id: @a02170144.id ,scan_nr: 8677, epoch_id: @a2022_07_09.id ,frequency_id: @a36_25.id).first
 if result_to_update==nil
 Result.create(elevation: 38.1,source_id: @a02170144.id ,scan_nr: 8677, epoch_id: @a2022_07_09.id ,frequency_id: @a36_25.id,value_jy: 1.5344,error_jy: 0.4380,mjd: 59769.339,pol_flux: 0.0658,pol_flux_err: 0.0127, pol_frac: 4.290, pol_frac_err: 1.477,evpa: -14.50, evpa_err: 5.46)
 else
 result_to_update.update(mjd: 59769.339,pol_flux: 0.0658,pol_flux_err: 0.0127, pol_frac: 4.290, pol_frac_err: 1.477,evpa: -14.50, evpa_err: 5.46)
+end
+result_to_update = Result.where(source_id: @a08542006.id ,scan_nr: 8737, epoch_id: @a2022_07_09.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 59.3,source_id: @a08542006.id ,scan_nr: 8737, epoch_id: @a2022_07_09.id ,frequency_id: @a36_25.id,value_jy: 5.9315,error_jy: 1.7322,mjd: 59769.5665,pol_flux: 0.4876,pol_flux_err: 0.0128, pol_frac: 8.221, pol_frac_err: 2.410,evpa: -13.17, evpa_err: 0.76)
+else
+result_to_update.update(mjd: 59769.5665,pol_flux: 0.4876,pol_flux_err: 0.0128, pol_frac: 8.221, pol_frac_err: 2.410,evpa: -13.17, evpa_err: 0.76)
 end
 result_to_update = Result.where(source_id: @a12070106.id ,scan_nr: 8803, epoch_id: @a2022_07_09.id ,frequency_id: @a36_25.id).first
 if result_to_update==nil
@@ -7189,11 +7207,23 @@ Result.create(elevation: 61.0,source_id: @aW3OH.id ,scan_nr: 8958, epoch_id: @a2
 else
 result_to_update.update(mjd: 59770.4213,pol_flux: 0.0057,pol_flux_err: 0.0027, pol_frac: 0.214, pol_frac_err: 0.101,evpa: -38.80, evpa_err: 12.95)
 end
+result_to_update = Result.where(source_id: @a01122244.id ,scan_nr: 8681, epoch_id: @a2022_07_09.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 46.2,source_id: @a01122244.id ,scan_nr: 8681, epoch_id: @a2022_07_09.id ,frequency_id: @a38_75.id,value_jy: 1.4187,error_jy: 0.4003,mjd: 59769.3557,pol_flux: 0.3705,pol_flux_err: 0.0244, pol_frac: 26.115, pol_frac_err: 7.566,evpa: 115.22, evpa_err: 2.01)
+else
+result_to_update.update(mjd: 59769.3557,pol_flux: 0.3705,pol_flux_err: 0.0244, pol_frac: 26.115, pol_frac_err: 7.566,evpa: 115.22, evpa_err: 2.01)
+end
 result_to_update = Result.where(source_id: @a02170144.id ,scan_nr: 8677, epoch_id: @a2022_07_09.id ,frequency_id: @a38_75.id).first
 if result_to_update==nil
 Result.create(elevation: 38.1,source_id: @a02170144.id ,scan_nr: 8677, epoch_id: @a2022_07_09.id ,frequency_id: @a38_75.id,value_jy: 1.5223,error_jy: 0.4290,mjd: 59769.339,pol_flux: 0.0782,pol_flux_err: 0.0298, pol_frac: 5.134, pol_frac_err: 2.432,evpa: -6.15, evpa_err: 7.80)
 else
 result_to_update.update(mjd: 59769.339,pol_flux: 0.0782,pol_flux_err: 0.0298, pol_frac: 5.134, pol_frac_err: 2.432,evpa: -6.15, evpa_err: 7.80)
+end
+result_to_update = Result.where(source_id: @a08542006.id ,scan_nr: 8737, epoch_id: @a2022_07_09.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 59.3,source_id: @a08542006.id ,scan_nr: 8737, epoch_id: @a2022_07_09.id ,frequency_id: @a38_75.id,value_jy: 5.8822,error_jy: 1.6828,mjd: 59769.5665,pol_flux: 0.9046,pol_flux_err: 0.0298, pol_frac: 15.378, pol_frac_err: 4.429,evpa: -8.77, evpa_err: 0.70)
+else
+result_to_update.update(mjd: 59769.5665,pol_flux: 0.9046,pol_flux_err: 0.0298, pol_frac: 15.378, pol_frac_err: 4.429,evpa: -8.77, evpa_err: 0.70)
 end
 result_to_update = Result.where(source_id: @a12070106.id ,scan_nr: 8803, epoch_id: @a2022_07_09.id ,frequency_id: @a38_75.id).first
 if result_to_update==nil
@@ -7548,4 +7578,1048 @@ if result_to_update==nil
 Result.create(elevation: 61.0,source_id: @aW3OH.id ,scan_nr: 8958, epoch_id: @a2022_07_09.id ,frequency_id: @a14_25.id,value_jy: 2.3367,error_jy: 0.0660,mjd: 59770.4213,pol_flux: 0.0028,pol_flux_err: 0.0020, pol_frac: 0.119, pol_frac_err: 0.084,evpa: -51.15, evpa_err: 19.04)
 else
 result_to_update.update(mjd: 59770.4213,pol_flux: 0.0028,pol_flux_err: 0.0020, pol_frac: 0.119, pol_frac_err: 0.084,evpa: -51.15, evpa_err: 19.04)
+end
+result_to_update = Result.where(source_id: @a02170144.id ,scan_nr: 1065, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 32.4,source_id: @a02170144.id ,scan_nr: 1065, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 1.5156,error_jy: 0.0130,mjd: 59798.3018,pol_flux: 0.0396,pol_flux_err: 0.0015, pol_frac: 2.614, pol_frac_err: 0.103,evpa: -38.88, evpa_err: 0.87)
+else
+result_to_update.update(mjd: 59798.3018,pol_flux: 0.0396,pol_flux_err: 0.0015, pol_frac: 2.614, pol_frac_err: 0.103,evpa: -38.88, evpa_err: 0.87)
+end
+result_to_update = Result.where(source_id: @a02170144.id ,scan_nr: 1067, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 31.6,source_id: @a02170144.id ,scan_nr: 1067, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 1.4739,error_jy: 0.0126,mjd: 59798.3065,pol_flux: 0.0365,pol_flux_err: 0.0015, pol_frac: 2.478, pol_frac_err: 0.106,evpa: -41.59, evpa_err: 0.93)
+else
+result_to_update.update(mjd: 59798.3065,pol_flux: 0.0365,pol_flux_err: 0.0015, pol_frac: 2.478, pol_frac_err: 0.106,evpa: -41.59, evpa_err: 0.93)
+end
+result_to_update = Result.where(source_id: @a03130228.id ,scan_nr: 1073, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 34.6,source_id: @a03130228.id ,scan_nr: 1073, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.2696,error_jy: 0.0023,mjd: 59798.3297,pol_flux: 0.0090,pol_flux_err: 0.0014, pol_frac: 3.324, pol_frac_err: 0.506,evpa: 125.82, evpa_err: 3.47)
+else
+result_to_update.update(mjd: 59798.3297,pol_flux: 0.0090,pol_flux_err: 0.0014, pol_frac: 3.324, pol_frac_err: 0.506,evpa: 125.82, evpa_err: 3.47)
+end
+result_to_update = Result.where(source_id: @a03130228.id ,scan_nr: 1074, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 34.1,source_id: @a03130228.id ,scan_nr: 1074, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.2678,error_jy: 0.0037,mjd: 59798.3332,pol_flux: 0.0120,pol_flux_err: 0.0108, pol_frac: 4.467, pol_frac_err: 4.035,evpa: 125.72, evpa_err: 20.62)
+else
+result_to_update.update(mjd: 59798.3332,pol_flux: 0.0120,pol_flux_err: 0.0108, pol_frac: 4.467, pol_frac_err: 4.035,evpa: 125.72, evpa_err: 20.62)
+end
+result_to_update = Result.where(source_id: @a04160105.id ,scan_nr: 1080, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 35.6,source_id: @a04160105.id ,scan_nr: 1080, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.0420,error_jy: 0.0006,mjd: 59798.3573,pol_flux: 0.0006,pol_flux_err: 0.0011, pol_frac: 1.329, pol_frac_err: 2.728,evpa: 74.72, evpa_err: 67.38)
+else
+result_to_update.update(mjd: 59798.3573,pol_flux: 0.0006,pol_flux_err: 0.0011, pol_frac: 1.329, pol_frac_err: 2.728,evpa: 74.72, evpa_err: 67.38)
+end
+result_to_update = Result.where(source_id: @a06502502.id ,scan_nr: 1307, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 37.2,source_id: @a06502502.id ,scan_nr: 1307, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.0747,error_jy: 0.0008,mjd: 59799.2176,pol_flux: 0.0008,pol_flux_err: 0.0012, pol_frac: 1.054, pol_frac_err: 1.551,evpa: 96.84, evpa_err: 52.10)
+else
+result_to_update.update(mjd: 59799.2176,pol_flux: 0.0008,pol_flux_err: 0.0012, pol_frac: 1.054, pol_frac_err: 1.551,evpa: 96.84, evpa_err: 52.10)
+end
+result_to_update = Result.where(source_id: @a06502502.id ,scan_nr: 1308, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 38.0,source_id: @a06502502.id ,scan_nr: 1308, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.0776,error_jy: 0.0008,mjd: 59799.2209,pol_flux: 0.0006,pol_flux_err: 0.0013, pol_frac: 0.773, pol_frac_err: 1.701,evpa: -34.05, evpa_err: 54.14)
+else
+result_to_update.update(mjd: 59799.2209,pol_flux: 0.0006,pol_flux_err: 0.0013, pol_frac: 0.773, pol_frac_err: 1.701,evpa: -34.05, evpa_err: 54.14)
+end
+result_to_update = Result.where(source_id: @a07381742.id ,scan_nr: 1083, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 53.6,source_id: @a07381742.id ,scan_nr: 1083, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 1.2130,error_jy: 0.0104,mjd: 59798.3679,pol_flux: 0.0195,pol_flux_err: 0.0014, pol_frac: 1.604, pol_frac_err: 0.116,evpa: 42.17, evpa_err: 1.59)
+else
+result_to_update.update(mjd: 59798.3679,pol_flux: 0.0195,pol_flux_err: 0.0014, pol_frac: 1.604, pol_frac_err: 0.116,evpa: 42.17, evpa_err: 1.59)
+end
+result_to_update = Result.where(source_id: @a07381742.id ,scan_nr: 1084, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 54.0,source_id: @a07381742.id ,scan_nr: 1084, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 1.2292,error_jy: 0.0105,mjd: 59798.3713,pol_flux: 0.0143,pol_flux_err: 0.0018, pol_frac: 1.162, pol_frac_err: 0.148,evpa: 39.73, evpa_err: 2.80)
+else
+result_to_update.update(mjd: 59798.3713,pol_flux: 0.0143,pol_flux_err: 0.0018, pol_frac: 1.162, pol_frac_err: 0.148,evpa: 39.73, evpa_err: 2.80)
+end
+result_to_update = Result.where(source_id: @a08120237.id ,scan_nr: 1126, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 32.8,source_id: @a08120237.id ,scan_nr: 1126, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.0386,error_jy: 0.0006,mjd: 59798.5481,pol_flux: 0.0011,pol_flux_err: 0.0012, pol_frac: 2.900, pol_frac_err: 3.213,evpa: -14.77, evpa_err: 36.24)
+else
+result_to_update.update(mjd: 59798.5481,pol_flux: 0.0011,pol_flux_err: 0.0012, pol_frac: 2.900, pol_frac_err: 3.213,evpa: -14.77, evpa_err: 36.24)
+end
+result_to_update = Result.where(source_id: @a08120237.id ,scan_nr: 1127, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 32.3,source_id: @a08120237.id ,scan_nr: 1127, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.0369,error_jy: 0.0006,mjd: 59798.5514,pol_flux: 0.0008,pol_flux_err: 0.0012, pol_frac: 2.281, pol_frac_err: 3.369,evpa: -8.28, evpa_err: 51.70)
+else
+result_to_update.update(mjd: 59798.5514,pol_flux: 0.0008,pol_flux_err: 0.0012, pol_frac: 2.281, pol_frac_err: 3.369,evpa: -8.28, evpa_err: 51.70)
+end
+result_to_update = Result.where(source_id: @a10500432.id ,scan_nr: 1120, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 42.8,source_id: @a10500432.id ,scan_nr: 1120, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.3168,error_jy: 0.0028,mjd: 59798.5218,pol_flux: 0.0029,pol_flux_err: 0.0012, pol_frac: 0.922, pol_frac_err: 0.370,evpa: -22.53, evpa_err: 11.50)
+else
+result_to_update.update(mjd: 59798.5218,pol_flux: 0.0029,pol_flux_err: 0.0012, pol_frac: 0.922, pol_frac_err: 0.370,evpa: -22.53, evpa_err: 11.50)
+end
+result_to_update = Result.where(source_id: @a10500432.id ,scan_nr: 1121, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 43.0,source_id: @a10500432.id ,scan_nr: 1121, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.3013,error_jy: 0.0026,mjd: 59798.5252,pol_flux: 0.0027,pol_flux_err: 0.0012, pol_frac: 0.881, pol_frac_err: 0.383,evpa: -16.26, evpa_err: 13.75)
+else
+result_to_update.update(mjd: 59798.5252,pol_flux: 0.0027,pol_flux_err: 0.0012, pol_frac: 0.881, pol_frac_err: 0.383,evpa: -16.26, evpa_err: 13.75)
+end
+result_to_update = Result.where(source_id: @a11366737.id ,scan_nr: 1256, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 29.3,source_id: @a11366737.id ,scan_nr: 1256, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.0302,error_jy: 0.0006,mjd: 59799.0229,pol_flux: 0.0005,pol_flux_err: 0.0012, pol_frac: 1.602, pol_frac_err: 4.127,evpa: -18.90, evpa_err: 78.68)
+else
+result_to_update.update(mjd: 59799.0229,pol_flux: 0.0005,pol_flux_err: 0.0012, pol_frac: 1.602, pol_frac_err: 4.127,evpa: -18.90, evpa_err: 78.68)
+end
+result_to_update = Result.where(source_id: @a11366737.id ,scan_nr: 1257, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 29.1,source_id: @a11366737.id ,scan_nr: 1257, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.0299,error_jy: 0.0005,mjd: 59799.0263,pol_flux: 0.0009,pol_flux_err: 0.0014, pol_frac: 2.971, pol_frac_err: 4.519,evpa: -22.76, evpa_err: 43.34)
+else
+result_to_update.update(mjd: 59799.0263,pol_flux: 0.0009,pol_flux_err: 0.0014, pol_frac: 2.971, pol_frac_err: 4.519,evpa: -22.76, evpa_err: 43.34)
+end
+result_to_update = Result.where(source_id: @a11367009.id ,scan_nr: 1258, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 31.4,source_id: @a11367009.id ,scan_nr: 1258, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.1594,error_jy: 0.0015,mjd: 59799.0308,pol_flux: 0.0101,pol_flux_err: 0.0012, pol_frac: 6.334, pol_frac_err: 0.778,evpa: -16.20, evpa_err: 3.95)
+else
+result_to_update.update(mjd: 59799.0308,pol_flux: 0.0101,pol_flux_err: 0.0012, pol_frac: 6.334, pol_frac_err: 0.778,evpa: -16.20, evpa_err: 3.95)
+end
+result_to_update = Result.where(source_id: @a11367009.id ,scan_nr: 1259, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 31.3,source_id: @a11367009.id ,scan_nr: 1259, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.1559,error_jy: 0.0015,mjd: 59799.0342,pol_flux: 0.0095,pol_flux_err: 0.0013, pol_frac: 6.064, pol_frac_err: 0.831,evpa: -15.92, evpa_err: 4.31)
+else
+result_to_update.update(mjd: 59799.0342,pol_flux: 0.0095,pol_flux_err: 0.0013, pol_frac: 6.064, pol_frac_err: 0.831,evpa: -15.92, evpa_err: 4.31)
+end
+result_to_update = Result.where(source_id: @a11451936.id ,scan_nr: 1175, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 43.4,source_id: @a11451936.id ,scan_nr: 1175, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.5374,error_jy: 0.0046,mjd: 59798.7155,pol_flux: 0.0206,pol_flux_err: 0.0013, pol_frac: 3.825, pol_frac_err: 0.250,evpa: 127.68, evpa_err: 1.48)
+else
+result_to_update.update(mjd: 59798.7155,pol_flux: 0.0206,pol_flux_err: 0.0013, pol_frac: 3.825, pol_frac_err: 0.250,evpa: 127.68, evpa_err: 1.48)
+end
+result_to_update = Result.where(source_id: @a12070106.id ,scan_nr: 1169, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 32.4,source_id: @a12070106.id ,scan_nr: 1169, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.6190,error_jy: 0.0053,mjd: 59798.6907,pol_flux: 0.0430,pol_flux_err: 0.0021, pol_frac: 6.945, pol_frac_err: 0.342,evpa: -25.36, evpa_err: 1.29)
+else
+result_to_update.update(mjd: 59798.6907,pol_flux: 0.0430,pol_flux_err: 0.0021, pol_frac: 6.945, pol_frac_err: 0.342,evpa: -25.36, evpa_err: 1.29)
+end
+result_to_update = Result.where(source_id: @a14431200.id ,scan_nr: 1224, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 25.5,source_id: @a14431200.id ,scan_nr: 1224, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.0403,error_jy: 0.0006,mjd: 59798.8942,pol_flux: 0.0010,pol_flux_err: 0.0013, pol_frac: 2.404, pol_frac_err: 3.147,evpa: 83.70, evpa_err: 46.61)
+else
+result_to_update.update(mjd: 59798.8942,pol_flux: 0.0010,pol_flux_err: 0.0013, pol_frac: 2.404, pol_frac_err: 3.147,evpa: 83.70, evpa_err: 46.61)
+end
+result_to_update = Result.where(source_id: @a14431200.id ,scan_nr: 1225, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 24.7,source_id: @a14431200.id ,scan_nr: 1225, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.0389,error_jy: 0.0006,mjd: 59798.8976,pol_flux: 0.0011,pol_flux_err: 0.0016, pol_frac: 2.707, pol_frac_err: 3.991,evpa: 119.37, evpa_err: 37.83)
+else
+result_to_update.update(mjd: 59798.8976,pol_flux: 0.0011,pol_flux_err: 0.0016, pol_frac: 2.707, pol_frac_err: 3.991,evpa: 119.37, evpa_err: 37.83)
+end
+result_to_update = Result.where(source_id: @a14432501.id ,scan_nr: 1226, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 33.4,source_id: @a14432501.id ,scan_nr: 1226, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.3506,error_jy: 0.0031,mjd: 59798.9025,pol_flux: 0.0076,pol_flux_err: 0.0011, pol_frac: 2.167, pol_frac_err: 0.317,evpa: -7.54, evpa_err: 5.36)
+else
+result_to_update.update(mjd: 59798.9025,pol_flux: 0.0076,pol_flux_err: 0.0011, pol_frac: 2.167, pol_frac_err: 0.317,evpa: -7.54, evpa_err: 5.36)
+end
+result_to_update = Result.where(source_id: @a14432501.id ,scan_nr: 1227, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 32.7,source_id: @a14432501.id ,scan_nr: 1227, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.3568,error_jy: 0.0031,mjd: 59798.9059,pol_flux: 0.0075,pol_flux_err: 0.0012, pol_frac: 2.111, pol_frac_err: 0.326,evpa: -9.15, evpa_err: 5.54)
+else
+result_to_update.update(mjd: 59798.9059,pol_flux: 0.0075,pol_flux_err: 0.0012, pol_frac: 2.111, pol_frac_err: 0.326,evpa: -9.15, evpa_err: 5.54)
+end
+result_to_update = Result.where(source_id: @a14510127.id ,scan_nr: 1220, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 18.6,source_id: @a14510127.id ,scan_nr: 1220, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.1737,error_jy: 0.0023,mjd: 59798.8823,pol_flux: 0.0073,pol_flux_err: 0.0016, pol_frac: 4.182, pol_frac_err: 0.920,evpa: -11.41, evpa_err: 7.54)
+else
+result_to_update.update(mjd: 59798.8823,pol_flux: 0.0073,pol_flux_err: 0.0016, pol_frac: 4.182, pol_frac_err: 0.920,evpa: -11.41, evpa_err: 7.54)
+end
+result_to_update = Result.where(source_id: @a14580037.id ,scan_nr: 1223, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 18.9,source_id: @a14580037.id ,scan_nr: 1223, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.0841,error_jy: 0.0011,mjd: 59798.8893,pol_flux: 0.0026,pol_flux_err: 0.0017, pol_frac: 3.070, pol_frac_err: 1.969,evpa: 110.22, evpa_err: 19.09)
+else
+result_to_update.update(mjd: 59798.8893,pol_flux: 0.0026,pol_flux_err: 0.0017, pol_frac: 3.070, pol_frac_err: 1.969,evpa: 110.22, evpa_err: 19.09)
+end
+result_to_update = Result.where(source_id: @a17251152.id ,scan_nr: 1244, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 32.6,source_id: @a17251152.id ,scan_nr: 1244, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.1245,error_jy: 0.0012,mjd: 59798.9736,pol_flux: 0.0031,pol_flux_err: 0.0014, pol_frac: 2.503, pol_frac_err: 1.125,evpa: 25.56, evpa_err: 12.14)
+else
+result_to_update.update(mjd: 59798.9736,pol_flux: 0.0031,pol_flux_err: 0.0014, pol_frac: 2.503, pol_frac_err: 1.125,evpa: 25.56, evpa_err: 12.14)
+end
+result_to_update = Result.where(source_id: @a17251152.id ,scan_nr: 1245, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 31.9,source_id: @a17251152.id ,scan_nr: 1245, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.1209,error_jy: 0.0012,mjd: 59798.977,pol_flux: 0.0040,pol_flux_err: 0.0013, pol_frac: 3.326, pol_frac_err: 1.110,evpa: 23.35, evpa_err: 9.41)
+else
+result_to_update.update(mjd: 59798.977,pol_flux: 0.0040,pol_flux_err: 0.0013, pol_frac: 3.326, pol_frac_err: 1.110,evpa: 23.35, evpa_err: 9.41)
+end
+result_to_update = Result.where(source_id: @a17285013.id ,scan_nr: 1263, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 41.7,source_id: @a17285013.id ,scan_nr: 1263, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.1316,error_jy: 0.0012,mjd: 59799.0517,pol_flux: 0.0025,pol_flux_err: 0.0013, pol_frac: 1.891, pol_frac_err: 1.016,evpa: 49.16, evpa_err: 11.39)
+else
+result_to_update.update(mjd: 59799.0517,pol_flux: 0.0025,pol_flux_err: 0.0013, pol_frac: 1.891, pol_frac_err: 1.016,evpa: 49.16, evpa_err: 11.39)
+end
+result_to_update = Result.where(source_id: @a17430350.id ,scan_nr: 1230, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 30.5,source_id: @a17430350.id ,scan_nr: 1230, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 3.8770,error_jy: 0.0337,mjd: 59798.9198,pol_flux: 0.0153,pol_flux_err: 0.0057, pol_frac: 0.394, pol_frac_err: 0.148,evpa: 136.06, evpa_err: 9.06)
+else
+result_to_update.update(mjd: 59798.9198,pol_flux: 0.0153,pol_flux_err: 0.0057, pol_frac: 0.394, pol_frac_err: 0.148,evpa: 136.06, evpa_err: 9.06)
+end
+result_to_update = Result.where(source_id: @a17430350.id ,scan_nr: 1231, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 30.1,source_id: @a17430350.id ,scan_nr: 1231, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 4.0065,error_jy: 0.0348,mjd: 59798.9232,pol_flux: 0.0166,pol_flux_err: 0.0015, pol_frac: 0.415, pol_frac_err: 0.039,evpa: 132.44, evpa_err: 2.05)
+else
+result_to_update.update(mjd: 59798.9232,pol_flux: 0.0166,pol_flux_err: 0.0015, pol_frac: 0.415, pol_frac_err: 0.039,evpa: 132.44, evpa_err: 2.05)
+end
+result_to_update = Result.where(source_id: @a17431935.id ,scan_nr: 1248, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 38.1,source_id: @a17431935.id ,scan_nr: 1248, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.2042,error_jy: 0.0018,mjd: 59798.9894,pol_flux: 0.0020,pol_flux_err: 0.0011, pol_frac: 0.999, pol_frac_err: 0.525,evpa: 94.39, evpa_err: 18.88)
+else
+result_to_update.update(mjd: 59798.9894,pol_flux: 0.0020,pol_flux_err: 0.0011, pol_frac: 0.999, pol_frac_err: 0.525,evpa: 94.39, evpa_err: 18.88)
+end
+result_to_update = Result.where(source_id: @a17431935.id ,scan_nr: 1249, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 37.3,source_id: @a17431935.id ,scan_nr: 1249, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.2012,error_jy: 0.0018,mjd: 59798.9927,pol_flux: 0.0016,pol_flux_err: 0.0010, pol_frac: 0.786, pol_frac_err: 0.502,evpa: 88.53, evpa_err: 24.37)
+else
+result_to_update.update(mjd: 59798.9927,pol_flux: 0.0016,pol_flux_err: 0.0010, pol_frac: 0.786, pol_frac_err: 0.502,evpa: 88.53, evpa_err: 24.37)
+end
+result_to_update = Result.where(source_id: @a17450338.id ,scan_nr: 1242, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 24.0,source_id: @a17450338.id ,scan_nr: 1242, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.0452,error_jy: 0.0006,mjd: 59798.9652,pol_flux: 0.0001,pol_flux_err: 0.0014, pol_frac: 0.183, pol_frac_err: 3.196,evpa: 20.42, evpa_err: 99.99)
+else
+result_to_update.update(mjd: 59798.9652,pol_flux: 0.0001,pol_flux_err: 0.0014, pol_frac: 0.183, pol_frac_err: 3.196,evpa: 20.42, evpa_err: 99.99)
+end
+result_to_update = Result.where(source_id: @a17450338.id ,scan_nr: 1243, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 23.4,source_id: @a17450338.id ,scan_nr: 1243, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.0439,error_jy: 0.0007,mjd: 59798.9686,pol_flux: 0.0003,pol_flux_err: 0.0014, pol_frac: 0.602, pol_frac_err: 3.281,evpa: 111.01, evpa_err: 99.99)
+else
+result_to_update.update(mjd: 59798.9686,pol_flux: 0.0003,pol_flux_err: 0.0014, pol_frac: 0.602, pol_frac_err: 3.281,evpa: 111.01, evpa_err: 99.99)
+end
+result_to_update = Result.where(source_id: @a17521011.id ,scan_nr: 1236, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 22.4,source_id: @a17521011.id ,scan_nr: 1236, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.2163,error_jy: 0.0020,mjd: 59798.9424,pol_flux: 0.0028,pol_flux_err: 0.0016, pol_frac: 1.316, pol_frac_err: 0.750,evpa: -33.66, evpa_err: 13.23)
+else
+result_to_update.update(mjd: 59798.9424,pol_flux: 0.0028,pol_flux_err: 0.0016, pol_frac: 1.316, pol_frac_err: 0.750,evpa: -33.66, evpa_err: 13.23)
+end
+result_to_update = Result.where(source_id: @a17521011.id ,scan_nr: 1237, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 21.9,source_id: @a17521011.id ,scan_nr: 1237, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.2175,error_jy: 0.0020,mjd: 59798.9458,pol_flux: 0.0032,pol_flux_err: 0.0016, pol_frac: 1.454, pol_frac_err: 0.750,evpa: 139.91, evpa_err: 11.76)
+else
+result_to_update.update(mjd: 59798.9458,pol_flux: 0.0032,pol_flux_err: 0.0016, pol_frac: 1.454, pol_frac_err: 0.750,evpa: 139.91, evpa_err: 11.76)
+end
+result_to_update = Result.where(source_id: @a18032521.id ,scan_nr: 1252, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 41.8,source_id: @a18032521.id ,scan_nr: 1252, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.2679,error_jy: 0.0024,mjd: 59799.0051,pol_flux: 0.0203,pol_flux_err: 0.0013, pol_frac: 7.589, pol_frac_err: 0.478,evpa: 33.91, evpa_err: 1.51)
+else
+result_to_update.update(mjd: 59799.0051,pol_flux: 0.0203,pol_flux_err: 0.0013, pol_frac: 7.589, pol_frac_err: 0.478,evpa: 33.91, evpa_err: 1.51)
+end
+result_to_update = Result.where(source_id: @a18032521.id ,scan_nr: 1253, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 41.1,source_id: @a18032521.id ,scan_nr: 1253, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.2643,error_jy: 0.0023,mjd: 59799.0084,pol_flux: 0.0202,pol_flux_err: 0.0013, pol_frac: 7.644, pol_frac_err: 0.484,evpa: 34.14, evpa_err: 1.52)
+else
+result_to_update.update(mjd: 59799.0084,pol_flux: 0.0202,pol_flux_err: 0.0013, pol_frac: 7.644, pol_frac_err: 0.484,evpa: 34.14, evpa_err: 1.52)
+end
+result_to_update = Result.where(source_id: @a20014352.id ,scan_nr: 1268, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 56.3,source_id: @a20014352.id ,scan_nr: 1268, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.1707,error_jy: 0.0016,mjd: 59799.0744,pol_flux: 0.0117,pol_flux_err: 0.0017, pol_frac: 6.863, pol_frac_err: 1.027,evpa: 101.99, evpa_err: 4.50)
+else
+result_to_update.update(mjd: 59799.0744,pol_flux: 0.0117,pol_flux_err: 0.0017, pol_frac: 6.863, pol_frac_err: 1.027,evpa: 101.99, evpa_err: 4.50)
+end
+result_to_update = Result.where(source_id: @a20014352.id ,scan_nr: 1269, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 55.5,source_id: @a20014352.id ,scan_nr: 1269, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.1706,error_jy: 0.0015,mjd: 59799.0778,pol_flux: 0.0113,pol_flux_err: 0.0010, pol_frac: 6.610, pol_frac_err: 0.593,evpa: 102.94, evpa_err: 2.95)
+else
+result_to_update.update(mjd: 59799.0778,pol_flux: 0.0113,pol_flux_err: 0.0010, pol_frac: 6.610, pol_frac_err: 0.593,evpa: 102.94, evpa_err: 2.95)
+end
+result_to_update = Result.where(source_id: @a22432021.id ,scan_nr: 1301, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 41.9,source_id: @a22432021.id ,scan_nr: 1301, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.0982,error_jy: 0.0009,mjd: 59799.1829,pol_flux: 0.0022,pol_flux_err: 0.0013, pol_frac: 2.241, pol_frac_err: 1.277,evpa: 25.30, evpa_err: 15.40)
+else
+result_to_update.update(mjd: 59799.1829,pol_flux: 0.0022,pol_flux_err: 0.0013, pol_frac: 2.241, pol_frac_err: 1.277,evpa: 25.30, evpa_err: 15.40)
+end
+result_to_update = Result.where(source_id: @a22432021.id ,scan_nr: 1302, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 41.1,source_id: @a22432021.id ,scan_nr: 1302, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.0977,error_jy: 0.0009,mjd: 59799.1862,pol_flux: 0.0020,pol_flux_err: 0.0012, pol_frac: 2.071, pol_frac_err: 1.248,evpa: 22.76, evpa_err: 17.18)
+else
+result_to_update.update(mjd: 59799.1862,pol_flux: 0.0020,pol_flux_err: 0.0012, pol_frac: 2.071, pol_frac_err: 1.248,evpa: 22.76, evpa_err: 17.18)
+end
+result_to_update = Result.where(source_id: @a23475142.id ,scan_nr: 1297, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 73.6,source_id: @a23475142.id ,scan_nr: 1297, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.1689,error_jy: 0.0015,mjd: 59799.1659,pol_flux: 0.0026,pol_flux_err: 0.0011, pol_frac: 1.533, pol_frac_err: 0.669,evpa: -27.53, evpa_err: 11.55)
+else
+result_to_update.update(mjd: 59799.1659,pol_flux: 0.0026,pol_flux_err: 0.0011, pol_frac: 1.533, pol_frac_err: 0.669,evpa: -27.53, evpa_err: 11.55)
+end
+result_to_update = Result.where(source_id: @a23475142.id ,scan_nr: 1298, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 72.8,source_id: @a23475142.id ,scan_nr: 1298, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 0.1719,error_jy: 0.0016,mjd: 59799.1694,pol_flux: 0.0043,pol_flux_err: 0.0025, pol_frac: 2.529, pol_frac_err: 1.449,evpa: -30.61, evpa_err: 13.91)
+else
+result_to_update.update(mjd: 59799.1694,pol_flux: 0.0043,pol_flux_err: 0.0025, pol_frac: 2.529, pol_frac_err: 1.449,evpa: -30.61, evpa_err: 13.91)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1134, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 58.3,source_id: @a3C286.id ,scan_nr: 1134, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 3.5693,error_jy: 0.0306,mjd: 59798.5752,pol_flux: 0.4385,pol_flux_err: 0.0065, pol_frac: 12.286, pol_frac_err: 0.210,evpa: 33.92, evpa_err: 0.35)
+else
+result_to_update.update(mjd: 59798.5752,pol_flux: 0.4385,pol_flux_err: 0.0065, pol_frac: 12.286, pol_frac_err: 0.210,evpa: 33.92, evpa_err: 0.35)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1136, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 58.9,source_id: @a3C286.id ,scan_nr: 1136, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 3.5235,error_jy: 0.0302,mjd: 59798.5781,pol_flux: 0.4197,pol_flux_err: 0.0031, pol_frac: 11.910, pol_frac_err: 0.135,evpa: 33.88, evpa_err: 0.19)
+else
+result_to_update.update(mjd: 59798.5781,pol_flux: 0.4197,pol_flux_err: 0.0031, pol_frac: 11.910, pol_frac_err: 0.135,evpa: 33.88, evpa_err: 0.19)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1137, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 59.2,source_id: @a3C286.id ,scan_nr: 1137, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 3.4934,error_jy: 0.0300,mjd: 59798.5799,pol_flux: 0.4244,pol_flux_err: 0.0031, pol_frac: 12.149, pol_frac_err: 0.136,evpa: 34.08, evpa_err: 0.18)
+else
+result_to_update.update(mjd: 59798.5799,pol_flux: 0.4244,pol_flux_err: 0.0031, pol_frac: 12.149, pol_frac_err: 0.136,evpa: 34.08, evpa_err: 0.18)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1201, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 44.1,source_id: @a3C286.id ,scan_nr: 1201, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 3.4506,error_jy: 0.0298,mjd: 59798.8224,pol_flux: 0.4122,pol_flux_err: 0.0030, pol_frac: 11.947, pol_frac_err: 0.135,evpa: 34.02, evpa_err: 0.19)
+else
+result_to_update.update(mjd: 59798.8224,pol_flux: 0.4122,pol_flux_err: 0.0030, pol_frac: 11.947, pol_frac_err: 0.135,evpa: 34.02, evpa_err: 0.19)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1203, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 43.4,source_id: @a3C286.id ,scan_nr: 1203, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 3.6029,error_jy: 0.0312,mjd: 59798.8252,pol_flux: 0.4333,pol_flux_err: 0.0034, pol_frac: 12.026, pol_frac_err: 0.140,evpa: 34.02, evpa_err: 0.21)
+else
+result_to_update.update(mjd: 59798.8252,pol_flux: 0.4333,pol_flux_err: 0.0034, pol_frac: 12.026, pol_frac_err: 0.140,evpa: 34.02, evpa_err: 0.21)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1204, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 43.0,source_id: @a3C286.id ,scan_nr: 1204, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 3.5853,error_jy: 0.0311,mjd: 59798.8271,pol_flux: 0.4277,pol_flux_err: 0.0030, pol_frac: 11.929, pol_frac_err: 0.134,evpa: 33.98, evpa_err: 0.19)
+else
+result_to_update.update(mjd: 59798.8271,pol_flux: 0.4277,pol_flux_err: 0.0030, pol_frac: 11.929, pol_frac_err: 0.134,evpa: 33.98, evpa_err: 0.19)
+end
+result_to_update = Result.where(source_id: @aNGC7027.id ,scan_nr: 1276, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 60.5,source_id: @aNGC7027.id ,scan_nr: 1276, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 5.6500,error_jy: 0.0494,mjd: 59799.0979,pol_flux: 0.0018,pol_flux_err: 0.0017, pol_frac: 0.031, pol_frac_err: 0.031,evpa: 129.89, evpa_err: 22.76)
+else
+result_to_update.update(mjd: 59799.0979,pol_flux: 0.0018,pol_flux_err: 0.0017, pol_frac: 0.031, pol_frac_err: 0.031,evpa: 129.89, evpa_err: 22.76)
+end
+result_to_update = Result.where(source_id: @aNGC7027.id ,scan_nr: 1278, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 59.8,source_id: @aNGC7027.id ,scan_nr: 1278, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 5.6467,error_jy: 0.0492,mjd: 59799.1009,pol_flux: 0.0012,pol_flux_err: 0.0017, pol_frac: 0.021, pol_frac_err: 0.030,evpa: -34.85, evpa_err: 35.12)
+else
+result_to_update.update(mjd: 59799.1009,pol_flux: 0.0012,pol_flux_err: 0.0017, pol_frac: 0.021, pol_frac_err: 0.030,evpa: -34.85, evpa_err: 35.12)
+end
+result_to_update = Result.where(source_id: @aNGC7027.id ,scan_nr: 1279, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 59.4,source_id: @aNGC7027.id ,scan_nr: 1279, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 5.6351,error_jy: 0.0491,mjd: 59799.1027,pol_flux: 0.0010,pol_flux_err: 0.0019, pol_frac: 0.017, pol_frac_err: 0.033,evpa: 42.04, evpa_err: 41.70)
+else
+result_to_update.update(mjd: 59799.1027,pol_flux: 0.0010,pol_flux_err: 0.0019, pol_frac: 0.017, pol_frac_err: 0.033,evpa: 42.04, evpa_err: 41.70)
+end
+result_to_update = Result.where(source_id: @aW3OH.id ,scan_nr: 1046, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 76.6,source_id: @aW3OH.id ,scan_nr: 1046, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 2.4149,error_jy: 0.0208,mjd: 59798.2422,pol_flux: 0.0032,pol_flux_err: 0.0017, pol_frac: 0.135, pol_frac_err: 0.071,evpa: 128.59, evpa_err: 12.42)
+else
+result_to_update.update(mjd: 59798.2422,pol_flux: 0.0032,pol_flux_err: 0.0017, pol_frac: 0.135, pol_frac_err: 0.071,evpa: 128.59, evpa_err: 12.42)
+end
+result_to_update = Result.where(source_id: @aW3OH.id ,scan_nr: 1048, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 76.3,source_id: @aW3OH.id ,scan_nr: 1048, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 2.4268,error_jy: 0.0209,mjd: 59798.245,pol_flux: 0.0024,pol_flux_err: 0.0025, pol_frac: 0.098, pol_frac_err: 0.102,evpa: 120.07, evpa_err: 25.55)
+else
+result_to_update.update(mjd: 59798.245,pol_flux: 0.0024,pol_flux_err: 0.0025, pol_frac: 0.098, pol_frac_err: 0.102,evpa: 120.07, evpa_err: 25.55)
+end
+result_to_update = Result.where(source_id: @aW3OH.id ,scan_nr: 1049, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id).first
+if result_to_update==nil
+Result.create(elevation: 76.1,source_id: @aW3OH.id ,scan_nr: 1049, epoch_id: @a2022_08_07.id ,frequency_id: @a14_25.id,value_jy: 2.4487,error_jy: 0.0380,mjd: 59798.247,pol_flux: 0.0043,pol_flux_err: 0.0038, pol_frac: 0.177, pol_frac_err: 0.155,evpa: 113.21, evpa_err: 24.39)
+else
+result_to_update.update(mjd: 59798.247,pol_flux: 0.0043,pol_flux_err: 0.0038, pol_frac: 0.177, pol_frac_err: 0.155,evpa: 113.21, evpa_err: 24.39)
+end
+result_to_update = Result.where(source_id: @a01122244.id ,scan_nr: 1063, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 43.3,source_id: @a01122244.id ,scan_nr: 1063, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 0.9336,error_jy: 0.0409,mjd: 59798.29,pol_flux: 0.1023,pol_flux_err: 0.0084, pol_frac: 10.952, pol_frac_err: 1.016,evpa: 110.88, evpa_err: 2.39)
+else
+result_to_update.update(mjd: 59798.29,pol_flux: 0.1023,pol_flux_err: 0.0084, pol_frac: 10.952, pol_frac_err: 1.016,evpa: 110.88, evpa_err: 2.39)
+end
+result_to_update = Result.where(source_id: @a02170144.id ,scan_nr: 1070, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 29.1,source_id: @a02170144.id ,scan_nr: 1070, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 0.5549,error_jy: 0.0254,mjd: 59798.3206,pol_flux: 0.0093,pol_flux_err: 0.0100, pol_frac: 1.676, pol_frac_err: 1.808,evpa: 110.26, evpa_err: 31.94)
+else
+result_to_update.update(mjd: 59798.3206,pol_flux: 0.0093,pol_flux_err: 0.0100, pol_frac: 1.676, pol_frac_err: 1.808,evpa: 110.26, evpa_err: 31.94)
+end
+result_to_update = Result.where(source_id: @a02224302.id ,scan_nr: 1102, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 34.6,source_id: @a02224302.id ,scan_nr: 1102, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 0.6187,error_jy: 0.0280,mjd: 59798.4395,pol_flux: 0.0266,pol_flux_err: 0.0092, pol_frac: 4.292, pol_frac_err: 1.497,evpa: -2.51, evpa_err: 11.19)
+else
+result_to_update.update(mjd: 59798.4395,pol_flux: 0.0266,pol_flux_err: 0.0092, pol_frac: 4.292, pol_frac_err: 1.497,evpa: -2.51, evpa_err: 11.19)
+end
+result_to_update = Result.where(source_id: @a02224302.id ,scan_nr: 1103, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 33.9,source_id: @a02224302.id ,scan_nr: 1103, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 0.6181,error_jy: 0.0276,mjd: 59798.443,pol_flux: 0.0354,pol_flux_err: 0.0085, pol_frac: 5.734, pol_frac_err: 1.405,evpa: 2.10, evpa_err: 8.22)
+else
+result_to_update.update(mjd: 59798.443,pol_flux: 0.0354,pol_flux_err: 0.0085, pol_frac: 5.734, pol_frac_err: 1.405,evpa: 2.10, evpa_err: 8.22)
+end
+result_to_update = Result.where(source_id: @a03130228.id ,scan_nr: 1077, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 32.0,source_id: @a03130228.id ,scan_nr: 1077, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 0.1994,error_jy: 0.0142,mjd: 59798.3458,pol_flux: 0.0115,pol_flux_err: 0.0095, pol_frac: 5.780, pol_frac_err: 4.767,evpa: 100.26, evpa_err: 25.51)
+else
+result_to_update.update(mjd: 59798.3458,pol_flux: 0.0115,pol_flux_err: 0.0095, pol_frac: 5.780, pol_frac_err: 4.767,evpa: 100.26, evpa_err: 25.51)
+end
+result_to_update = Result.where(source_id: @a05090541.id ,scan_nr: 1097, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 36.6,source_id: @a05090541.id ,scan_nr: 1097, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 0.9823,error_jy: 0.0429,mjd: 59798.4159,pol_flux: 0.0099,pol_flux_err: 0.0096, pol_frac: 1.008, pol_frac_err: 0.978,evpa: -32.96, evpa_err: 24.95)
+else
+result_to_update.update(mjd: 59798.4159,pol_flux: 0.0099,pol_flux_err: 0.0096, pol_frac: 1.008, pol_frac_err: 0.978,evpa: -32.96, evpa_err: 24.95)
+end
+result_to_update = Result.where(source_id: @a05090541.id ,scan_nr: 1098, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 36.0,source_id: @a05090541.id ,scan_nr: 1098, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 0.9844,error_jy: 0.0431,mjd: 59798.4192,pol_flux: 0.0093,pol_flux_err: 0.0100, pol_frac: 0.947, pol_frac_err: 1.016,evpa: -36.33, evpa_err: 25.38)
+else
+result_to_update.update(mjd: 59798.4192,pol_flux: 0.0093,pol_flux_err: 0.0100, pol_frac: 0.947, pol_frac_err: 1.016,evpa: -36.33, evpa_err: 25.38)
+end
+result_to_update = Result.where(source_id: @a05212112.id ,scan_nr: 1107, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 42.1,source_id: @a05212112.id ,scan_nr: 1107, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 0.3666,error_jy: 0.0172,mjd: 59798.4631,pol_flux: 0.0123,pol_flux_err: 0.0079, pol_frac: 3.353, pol_frac_err: 2.161,evpa: 3.28, evpa_err: 21.18)
+else
+result_to_update.update(mjd: 59798.4631,pol_flux: 0.0123,pol_flux_err: 0.0079, pol_frac: 3.353, pol_frac_err: 2.161,evpa: 3.28, evpa_err: 21.18)
+end
+result_to_update = Result.where(source_id: @a05212112.id ,scan_nr: 1108, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 41.3,source_id: @a05212112.id ,scan_nr: 1108, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 0.3452,error_jy: 0.0164,mjd: 59798.4667,pol_flux: 0.0068,pol_flux_err: 0.0079, pol_frac: 1.981, pol_frac_err: 2.289,evpa: -1.75, evpa_err: 41.80)
+else
+result_to_update.update(mjd: 59798.4667,pol_flux: 0.0068,pol_flux_err: 0.0079, pol_frac: 1.981, pol_frac_err: 2.289,evpa: -1.75, evpa_err: 41.80)
+end
+result_to_update = Result.where(source_id: @a07381742.id ,scan_nr: 1089, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 55.7,source_id: @a07381742.id ,scan_nr: 1089, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 1.1163,error_jy: 0.0488,mjd: 59798.3879,pol_flux: 0.0105,pol_flux_err: 0.0075, pol_frac: 0.942, pol_frac_err: 0.678,evpa: 98.70, evpa_err: 23.92)
+else
+result_to_update.update(mjd: 59798.3879,pol_flux: 0.0105,pol_flux_err: 0.0075, pol_frac: 0.942, pol_frac_err: 0.678,evpa: 98.70, evpa_err: 23.92)
+end
+result_to_update = Result.where(source_id: @a07381742.id ,scan_nr: 1091, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 56.0,source_id: @a07381742.id ,scan_nr: 1091, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 1.1129,error_jy: 0.0486,mjd: 59798.3923,pol_flux: 0.0083,pol_flux_err: 0.0076, pol_frac: 0.746, pol_frac_err: 0.681,evpa: 88.70, evpa_err: 31.36)
+else
+result_to_update.update(mjd: 59798.3923,pol_flux: 0.0083,pol_flux_err: 0.0076, pol_frac: 0.746, pol_frac_err: 0.681,evpa: 88.70, evpa_err: 31.36)
+end
+result_to_update = Result.where(source_id: @a07381742.id ,scan_nr: 1092, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 56.2,source_id: @a07381742.id ,scan_nr: 1092, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 1.0891,error_jy: 0.0474,mjd: 59798.3954,pol_flux: 0.0106,pol_flux_err: 0.0075, pol_frac: 0.975, pol_frac_err: 0.691,evpa: 96.24, evpa_err: 25.24)
+else
+result_to_update.update(mjd: 59798.3954,pol_flux: 0.0106,pol_flux_err: 0.0075, pol_frac: 0.975, pol_frac_err: 0.691,evpa: 96.24, evpa_err: 25.24)
+end
+result_to_update = Result.where(source_id: @a07390136.id ,scan_nr: 1113, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 36.9,source_id: @a07390136.id ,scan_nr: 1113, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 1.8830,error_jy: 0.0811,mjd: 59798.49,pol_flux: 0.0608,pol_flux_err: 0.0105, pol_frac: 3.227, pol_frac_err: 0.574,evpa: 49.58, evpa_err: 4.05)
+else
+result_to_update.update(mjd: 59798.49,pol_flux: 0.0608,pol_flux_err: 0.0105, pol_frac: 3.227, pol_frac_err: 0.574,evpa: 49.58, evpa_err: 4.05)
+end
+result_to_update = Result.where(source_id: @a11592914.id ,scan_nr: 1180, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 48.4,source_id: @a11592914.id ,scan_nr: 1180, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 2.5755,error_jy: 0.1086,mjd: 59798.736,pol_flux: 0.0807,pol_flux_err: 0.0081, pol_frac: 3.134, pol_frac_err: 0.342,evpa: -16.92, evpa_err: 3.11)
+else
+result_to_update.update(mjd: 59798.736,pol_flux: 0.0807,pol_flux_err: 0.0081, pol_frac: 3.134, pol_frac_err: 0.342,evpa: -16.92, evpa_err: 3.11)
+end
+result_to_update = Result.where(source_id: @a11592914.id ,scan_nr: 1181, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 47.7,source_id: @a11592914.id ,scan_nr: 1181, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 2.4390,error_jy: 0.1029,mjd: 59798.7394,pol_flux: 0.0796,pol_flux_err: 0.0080, pol_frac: 3.263, pol_frac_err: 0.357,evpa: -17.23, evpa_err: 3.14)
+else
+result_to_update.update(mjd: 59798.7394,pol_flux: 0.0796,pol_flux_err: 0.0080, pol_frac: 3.263, pol_frac_err: 0.357,evpa: -17.23, evpa_err: 3.14)
+end
+result_to_update = Result.where(source_id: @a12173007.id ,scan_nr: 1190, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 41.4,source_id: @a12173007.id ,scan_nr: 1190, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 0.3411,error_jy: 0.0161,mjd: 59798.7823,pol_flux: 0.0069,pol_flux_err: 0.0085, pol_frac: 2.019, pol_frac_err: 2.508,evpa: 2.38, evpa_err: 45.97)
+else
+result_to_update.update(mjd: 59798.7823,pol_flux: 0.0069,pol_flux_err: 0.0085, pol_frac: 2.019, pol_frac_err: 2.508,evpa: 2.38, evpa_err: 45.97)
+end
+result_to_update = Result.where(source_id: @a12173007.id ,scan_nr: 1191, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 40.6,source_id: @a12173007.id ,scan_nr: 1191, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 0.4267,error_jy: 0.0194,mjd: 59798.7857,pol_flux: 0.0055,pol_flux_err: 0.0082, pol_frac: 1.284, pol_frac_err: 1.929,evpa: -19.78, evpa_err: 44.21)
+else
+result_to_update.update(mjd: 59798.7857,pol_flux: 0.0055,pol_flux_err: 0.0082, pol_frac: 1.284, pol_frac_err: 1.929,evpa: -19.78, evpa_err: 44.21)
+end
+result_to_update = Result.where(source_id: @a12242122.id ,scan_nr: 1185, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 41.4,source_id: @a12242122.id ,scan_nr: 1185, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 0.6993,error_jy: 0.0303,mjd: 59798.7591,pol_flux: 0.0122,pol_flux_err: 0.0104, pol_frac: 1.740, pol_frac_err: 1.486,evpa: -37.26, evpa_err: 19.77)
+else
+result_to_update.update(mjd: 59798.7591,pol_flux: 0.0122,pol_flux_err: 0.0104, pol_frac: 1.740, pol_frac_err: 1.486,evpa: -37.26, evpa_err: 19.77)
+end
+result_to_update = Result.where(source_id: @a12242122.id ,scan_nr: 1186, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 40.7,source_id: @a12242122.id ,scan_nr: 1186, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 0.7038,error_jy: 0.0304,mjd: 59798.7626,pol_flux: 0.0128,pol_flux_err: 0.0096, pol_frac: 1.821, pol_frac_err: 1.364,evpa: -40.34, evpa_err: 17.39)
+else
+result_to_update.update(mjd: 59798.7626,pol_flux: 0.0128,pol_flux_err: 0.0096, pol_frac: 1.821, pol_frac_err: 1.364,evpa: -40.34, evpa_err: 17.39)
+end
+result_to_update = Result.where(source_id: @a14223223.id ,scan_nr: 1218, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 42.7,source_id: @a14223223.id ,scan_nr: 1218, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 0.4762,error_jy: 0.0215,mjd: 59798.8696,pol_flux: 0.0083,pol_flux_err: 0.0092, pol_frac: 1.733, pol_frac_err: 1.925,evpa: 125.42, evpa_err: 28.42)
+else
+result_to_update.update(mjd: 59798.8696,pol_flux: 0.0083,pol_flux_err: 0.0092, pol_frac: 1.733, pol_frac_err: 1.925,evpa: 125.42, evpa_err: 28.42)
+end
+result_to_update = Result.where(source_id: @a17430350.id ,scan_nr: 1234, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 28.5,source_id: @a17430350.id ,scan_nr: 1234, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 3.1459,error_jy: 0.1379,mjd: 59798.9347,pol_flux: 0.0136,pol_flux_err: 0.0089, pol_frac: 0.433, pol_frac_err: 0.282,evpa: 90.79, evpa_err: 21.79)
+else
+result_to_update.update(mjd: 59798.9347,pol_flux: 0.0136,pol_flux_err: 0.0089, pol_frac: 0.433, pol_frac_err: 0.282,evpa: 90.79, evpa_err: 21.79)
+end
+result_to_update = Result.where(source_id: @a17430350.id ,scan_nr: 1235, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 28.0,source_id: @a17430350.id ,scan_nr: 1235, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 3.1175,error_jy: 0.1365,mjd: 59798.9381,pol_flux: 0.0279,pol_flux_err: 0.0092, pol_frac: 0.894, pol_frac_err: 0.297,evpa: 87.79, evpa_err: 10.85)
+else
+result_to_update.update(mjd: 59798.9381,pol_flux: 0.0279,pol_flux_err: 0.0092, pol_frac: 0.894, pol_frac_err: 0.297,evpa: 87.79, evpa_err: 10.85)
+end
+result_to_update = Result.where(source_id: @a22024216.id ,scan_nr: 1294, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 57.6,source_id: @a22024216.id ,scan_nr: 1294, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 11.2525,error_jy: 0.4950,mjd: 59799.1492,pol_flux: 0.9238,pol_flux_err: 0.0101, pol_frac: 8.210, pol_frac_err: 0.372,evpa: 24.37, evpa_err: 0.30)
+else
+result_to_update.update(mjd: 59799.1492,pol_flux: 0.9238,pol_flux_err: 0.0101, pol_frac: 8.210, pol_frac_err: 0.372,evpa: 24.37, evpa_err: 0.30)
+end
+result_to_update = Result.where(source_id: @a22024216.id ,scan_nr: 1295, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 56.5,source_id: @a22024216.id ,scan_nr: 1295, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 11.3329,error_jy: 0.4985,mjd: 59799.1541,pol_flux: 0.9104,pol_flux_err: 0.0107, pol_frac: 8.034, pol_frac_err: 0.365,evpa: 24.28, evpa_err: 0.32)
+else
+result_to_update.update(mjd: 59799.1541,pol_flux: 0.9104,pol_flux_err: 0.0107, pol_frac: 8.034, pol_frac_err: 0.365,evpa: 24.28, evpa_err: 0.32)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1142, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 61.5,source_id: @a3C286.id ,scan_nr: 1142, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 1.5938,error_jy: 0.0683,mjd: 59798.5915,pol_flux: 0.2126,pol_flux_err: 0.0094, pol_frac: 13.339, pol_frac_err: 0.823,evpa: 36.06, evpa_err: 1.05)
+else
+result_to_update.update(mjd: 59798.5915,pol_flux: 0.2126,pol_flux_err: 0.0094, pol_frac: 13.339, pol_frac_err: 0.823,evpa: 36.06, evpa_err: 1.05)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1144, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 62.3,source_id: @a3C286.id ,scan_nr: 1144, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 1.7104,error_jy: 0.0729,mjd: 59798.5957,pol_flux: 0.2357,pol_flux_err: 0.0099, pol_frac: 13.781, pol_frac_err: 0.824,evpa: 35.97, evpa_err: 1.06)
+else
+result_to_update.update(mjd: 59798.5957,pol_flux: 0.2357,pol_flux_err: 0.0099, pol_frac: 13.781, pol_frac_err: 0.824,evpa: 35.97, evpa_err: 1.06)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1145, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 62.8,source_id: @a3C286.id ,scan_nr: 1145, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 1.8091,error_jy: 0.0771,mjd: 59798.5989,pol_flux: 0.2391,pol_flux_err: 0.0094, pol_frac: 13.215, pol_frac_err: 0.768,evpa: 36.12, evpa_err: 0.93)
+else
+result_to_update.update(mjd: 59798.5989,pol_flux: 0.2391,pol_flux_err: 0.0094, pol_frac: 13.215, pol_frac_err: 0.768,evpa: 36.12, evpa_err: 0.93)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1209, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 40.4,source_id: @a3C286.id ,scan_nr: 1209, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 1.6269,error_jy: 0.0701,mjd: 59798.8385,pol_flux: 0.2173,pol_flux_err: 0.0097, pol_frac: 13.359, pol_frac_err: 0.828,evpa: 35.75, evpa_err: 1.12)
+else
+result_to_update.update(mjd: 59798.8385,pol_flux: 0.2173,pol_flux_err: 0.0097, pol_frac: 13.359, pol_frac_err: 0.828,evpa: 35.75, evpa_err: 1.12)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1212, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 38.7,source_id: @a3C286.id ,scan_nr: 1212, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 1.9216,error_jy: 0.0827,mjd: 59798.846,pol_flux: 0.2500,pol_flux_err: 0.0094, pol_frac: 13.009, pol_frac_err: 0.744,evpa: 36.18, evpa_err: 1.00)
+else
+result_to_update.update(mjd: 59798.846,pol_flux: 0.2500,pol_flux_err: 0.0094, pol_frac: 13.009, pol_frac_err: 0.744,evpa: 36.18, evpa_err: 1.00)
+end
+result_to_update = Result.where(source_id: @aNGC7027.id ,scan_nr: 1284, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 56.8,source_id: @aNGC7027.id ,scan_nr: 1284, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 5.2479,error_jy: 0.2310,mjd: 59799.1143,pol_flux: 0.0142,pol_flux_err: 0.0085, pol_frac: 0.270, pol_frac_err: 0.162,evpa: 115.15, evpa_err: 16.62)
+else
+result_to_update.update(mjd: 59799.1143,pol_flux: 0.0142,pol_flux_err: 0.0085, pol_frac: 0.270, pol_frac_err: 0.162,evpa: 115.15, evpa_err: 16.62)
+end
+result_to_update = Result.where(source_id: @aNGC7027.id ,scan_nr: 1286, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 55.8,source_id: @aNGC7027.id ,scan_nr: 1286, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 5.4045,error_jy: 0.2378,mjd: 59799.1187,pol_flux: 0.0142,pol_flux_err: 0.0082, pol_frac: 0.262, pol_frac_err: 0.152,evpa: 112.05, evpa_err: 16.59)
+else
+result_to_update.update(mjd: 59799.1187,pol_flux: 0.0142,pol_flux_err: 0.0082, pol_frac: 0.262, pol_frac_err: 0.152,evpa: 112.05, evpa_err: 16.59)
+end
+result_to_update = Result.where(source_id: @aNGC7027.id ,scan_nr: 1287, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 55.0,source_id: @aNGC7027.id ,scan_nr: 1287, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 5.3596,error_jy: 0.2359,mjd: 59799.1219,pol_flux: 0.0185,pol_flux_err: 0.0086, pol_frac: 0.345, pol_frac_err: 0.161,evpa: 116.99, evpa_err: 12.40)
+else
+result_to_update.update(mjd: 59799.1219,pol_flux: 0.0185,pol_flux_err: 0.0086, pol_frac: 0.345, pol_frac_err: 0.161,evpa: 116.99, evpa_err: 12.40)
+end
+result_to_update = Result.where(source_id: @aW3OH.id ,scan_nr: 1054, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 74.8,source_id: @aW3OH.id ,scan_nr: 1054, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 3.6687,error_jy: 0.1589,mjd: 59798.2583,pol_flux: 0.0169,pol_flux_err: 0.0073, pol_frac: 0.462, pol_frac_err: 0.201,evpa: 100.60, evpa_err: 13.14)
+else
+result_to_update.update(mjd: 59798.2583,pol_flux: 0.0169,pol_flux_err: 0.0073, pol_frac: 0.462, pol_frac_err: 0.201,evpa: 100.60, evpa_err: 13.14)
+end
+result_to_update = Result.where(source_id: @aW3OH.id ,scan_nr: 1056, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 74.2,source_id: @aW3OH.id ,scan_nr: 1056, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 3.6021,error_jy: 0.1557,mjd: 59798.2623,pol_flux: 0.0168,pol_flux_err: 0.0074, pol_frac: 0.467, pol_frac_err: 0.207,evpa: 86.37, evpa_err: 13.96)
+else
+result_to_update.update(mjd: 59798.2623,pol_flux: 0.0168,pol_flux_err: 0.0074, pol_frac: 0.467, pol_frac_err: 0.207,evpa: 86.37, evpa_err: 13.96)
+end
+result_to_update = Result.where(source_id: @aW3OH.id ,scan_nr: 1057, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id).first
+if result_to_update==nil
+Result.create(elevation: 73.8,source_id: @aW3OH.id ,scan_nr: 1057, epoch_id: @a2022_08_07.id ,frequency_id: @a36_25.id,value_jy: 3.5240,error_jy: 0.1523,mjd: 59798.2655,pol_flux: 0.0246,pol_flux_err: 0.0069, pol_frac: 0.699, pol_frac_err: 0.199,evpa: 92.37, evpa_err: 10.33)
+else
+result_to_update.update(mjd: 59798.2655,pol_flux: 0.0246,pol_flux_err: 0.0069, pol_frac: 0.699, pol_frac_err: 0.199,evpa: 92.37, evpa_err: 10.33)
+end
+result_to_update = Result.where(source_id: @a02170144.id ,scan_nr: 1065, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 32.4,source_id: @a02170144.id ,scan_nr: 1065, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 1.4571,error_jy: 0.0143,mjd: 59798.3018,pol_flux: 0.0326,pol_flux_err: 0.0016, pol_frac: 2.236, pol_frac_err: 0.114,evpa: 135.16, evpa_err: 1.33)
+else
+result_to_update.update(mjd: 59798.3018,pol_flux: 0.0326,pol_flux_err: 0.0016, pol_frac: 2.236, pol_frac_err: 0.114,evpa: 135.16, evpa_err: 1.33)
+end
+result_to_update = Result.where(source_id: @a02170144.id ,scan_nr: 1067, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 31.6,source_id: @a02170144.id ,scan_nr: 1067, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 1.4028,error_jy: 0.0138,mjd: 59798.3065,pol_flux: 0.0302,pol_flux_err: 0.0017, pol_frac: 2.155, pol_frac_err: 0.121,evpa: 128.79, evpa_err: 1.45)
+else
+result_to_update.update(mjd: 59798.3065,pol_flux: 0.0302,pol_flux_err: 0.0017, pol_frac: 2.155, pol_frac_err: 0.121,evpa: 128.79, evpa_err: 1.45)
+end
+result_to_update = Result.where(source_id: @a03130228.id ,scan_nr: 1073, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 34.6,source_id: @a03130228.id ,scan_nr: 1073, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.2687,error_jy: 0.0027,mjd: 59798.3297,pol_flux: 0.0100,pol_flux_err: 0.0016, pol_frac: 3.737, pol_frac_err: 0.588,evpa: 113.60, evpa_err: 4.47)
+else
+result_to_update.update(mjd: 59798.3297,pol_flux: 0.0100,pol_flux_err: 0.0016, pol_frac: 3.737, pol_frac_err: 0.588,evpa: 113.60, evpa_err: 4.47)
+end
+result_to_update = Result.where(source_id: @a03130228.id ,scan_nr: 1074, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 34.1,source_id: @a03130228.id ,scan_nr: 1074, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.2813,error_jy: 0.0029,mjd: 59798.3332,pol_flux: 0.0108,pol_flux_err: 0.0015, pol_frac: 3.825, pol_frac_err: 0.532,evpa: 113.81, evpa_err: 3.96)
+else
+result_to_update.update(mjd: 59798.3332,pol_flux: 0.0108,pol_flux_err: 0.0015, pol_frac: 3.825, pol_frac_err: 0.532,evpa: 113.81, evpa_err: 3.96)
+end
+result_to_update = Result.where(source_id: @a04160105.id ,scan_nr: 1079, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 36.0,source_id: @a04160105.id ,scan_nr: 1079, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.0383,error_jy: 0.0010,mjd: 59798.354,pol_flux: 0.0013,pol_flux_err: 0.0014, pol_frac: 3.318, pol_frac_err: 3.769,evpa: 81.97, evpa_err: 37.39)
+else
+result_to_update.update(mjd: 59798.354,pol_flux: 0.0013,pol_flux_err: 0.0014, pol_frac: 3.318, pol_frac_err: 3.769,evpa: 81.97, evpa_err: 37.39)
+end
+result_to_update = Result.where(source_id: @a04160105.id ,scan_nr: 1080, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 35.6,source_id: @a04160105.id ,scan_nr: 1080, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.0374,error_jy: 0.0009,mjd: 59798.3573,pol_flux: 0.0014,pol_flux_err: 0.0015, pol_frac: 3.737, pol_frac_err: 4.079,evpa: 73.16, evpa_err: 32.46)
+else
+result_to_update.update(mjd: 59798.3573,pol_flux: 0.0014,pol_flux_err: 0.0015, pol_frac: 3.737, pol_frac_err: 4.079,evpa: 73.16, evpa_err: 32.46)
+end
+result_to_update = Result.where(source_id: @a06502502.id ,scan_nr: 1307, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 37.2,source_id: @a06502502.id ,scan_nr: 1307, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.0752,error_jy: 0.0013,mjd: 59799.2176,pol_flux: 0.0008,pol_flux_err: 0.0016, pol_frac: 1.049, pol_frac_err: 2.111,evpa: 135.49, evpa_err: 62.33)
+else
+result_to_update.update(mjd: 59799.2176,pol_flux: 0.0008,pol_flux_err: 0.0016, pol_frac: 1.049, pol_frac_err: 2.111,evpa: 135.49, evpa_err: 62.33)
+end
+result_to_update = Result.where(source_id: @a06502502.id ,scan_nr: 1308, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 38.0,source_id: @a06502502.id ,scan_nr: 1308, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.0752,error_jy: 0.0010,mjd: 59799.2209,pol_flux: 0.0007,pol_flux_err: 0.0017, pol_frac: 0.927, pol_frac_err: 2.244,evpa: -15.19, evpa_err: 76.20)
+else
+result_to_update.update(mjd: 59799.2209,pol_flux: 0.0007,pol_flux_err: 0.0017, pol_frac: 0.927, pol_frac_err: 2.244,evpa: -15.19, evpa_err: 76.20)
+end
+result_to_update = Result.where(source_id: @a07381742.id ,scan_nr: 1083, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 53.6,source_id: @a07381742.id ,scan_nr: 1083, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 1.1984,error_jy: 0.0118,mjd: 59798.3679,pol_flux: 0.0176,pol_flux_err: 0.0014, pol_frac: 1.469, pol_frac_err: 0.119,evpa: 39.01, evpa_err: 2.16)
+else
+result_to_update.update(mjd: 59798.3679,pol_flux: 0.0176,pol_flux_err: 0.0014, pol_frac: 1.469, pol_frac_err: 0.119,evpa: 39.01, evpa_err: 2.16)
+end
+result_to_update = Result.where(source_id: @a07381742.id ,scan_nr: 1084, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 54.0,source_id: @a07381742.id ,scan_nr: 1084, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 1.2092,error_jy: 0.0119,mjd: 59798.3713,pol_flux: 0.0145,pol_flux_err: 0.0015, pol_frac: 1.202, pol_frac_err: 0.122,evpa: 40.94, evpa_err: 2.57)
+else
+result_to_update.update(mjd: 59798.3713,pol_flux: 0.0145,pol_flux_err: 0.0015, pol_frac: 1.202, pol_frac_err: 0.122,evpa: 40.94, evpa_err: 2.57)
+end
+result_to_update = Result.where(source_id: @a10500432.id ,scan_nr: 1120, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 42.8,source_id: @a10500432.id ,scan_nr: 1120, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.3185,error_jy: 0.0033,mjd: 59798.5218,pol_flux: 0.0031,pol_flux_err: 0.0015, pol_frac: 0.984, pol_frac_err: 0.456,evpa: 1.35, evpa_err: 13.95)
+else
+result_to_update.update(mjd: 59798.5218,pol_flux: 0.0031,pol_flux_err: 0.0015, pol_frac: 0.984, pol_frac_err: 0.456,evpa: 1.35, evpa_err: 13.95)
+end
+result_to_update = Result.where(source_id: @a10500432.id ,scan_nr: 1121, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 43.0,source_id: @a10500432.id ,scan_nr: 1121, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.3008,error_jy: 0.0030,mjd: 59798.5252,pol_flux: 0.0036,pol_flux_err: 0.0015, pol_frac: 1.187, pol_frac_err: 0.484,evpa: 17.57, evpa_err: 12.18)
+else
+result_to_update.update(mjd: 59798.5252,pol_flux: 0.0036,pol_flux_err: 0.0015, pol_frac: 1.187, pol_frac_err: 0.484,evpa: 17.57, evpa_err: 12.18)
+end
+result_to_update = Result.where(source_id: @a11366737.id ,scan_nr: 1257, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 29.1,source_id: @a11366737.id ,scan_nr: 1257, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.0349,error_jy: 0.0009,mjd: 59799.0263,pol_flux: 0.0004,pol_flux_err: 0.0018, pol_frac: 1.226, pol_frac_err: 5.273,evpa: 137.21, evpa_err: 99.99)
+else
+result_to_update.update(mjd: 59799.0263,pol_flux: 0.0004,pol_flux_err: 0.0018, pol_frac: 1.226, pol_frac_err: 5.273,evpa: 137.21, evpa_err: 99.99)
+end
+result_to_update = Result.where(source_id: @a11367009.id ,scan_nr: 1258, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 31.4,source_id: @a11367009.id ,scan_nr: 1258, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.1460,error_jy: 0.0016,mjd: 59799.0308,pol_flux: 0.0080,pol_flux_err: 0.0016, pol_frac: 5.458, pol_frac_err: 1.081,evpa: -17.00, evpa_err: 5.87)
+else
+result_to_update.update(mjd: 59799.0308,pol_flux: 0.0080,pol_flux_err: 0.0016, pol_frac: 5.458, pol_frac_err: 1.081,evpa: -17.00, evpa_err: 5.87)
+end
+result_to_update = Result.where(source_id: @a11367009.id ,scan_nr: 1259, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 31.3,source_id: @a11367009.id ,scan_nr: 1259, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.1473,error_jy: 0.0017,mjd: 59799.0342,pol_flux: 0.0071,pol_flux_err: 0.0016, pol_frac: 4.814, pol_frac_err: 1.072,evpa: -17.21, evpa_err: 6.60)
+else
+result_to_update.update(mjd: 59799.0342,pol_flux: 0.0071,pol_flux_err: 0.0016, pol_frac: 4.814, pol_frac_err: 1.072,evpa: -17.21, evpa_err: 6.60)
+end
+result_to_update = Result.where(source_id: @a11451936.id ,scan_nr: 1175, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 43.4,source_id: @a11451936.id ,scan_nr: 1175, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.4342,error_jy: 0.0043,mjd: 59798.7155,pol_flux: 0.0154,pol_flux_err: 0.0016, pol_frac: 3.554, pol_frac_err: 0.372,evpa: 124.86, evpa_err: 2.72)
+else
+result_to_update.update(mjd: 59798.7155,pol_flux: 0.0154,pol_flux_err: 0.0016, pol_frac: 3.554, pol_frac_err: 0.372,evpa: 124.86, evpa_err: 2.72)
+end
+result_to_update = Result.where(source_id: @a12070106.id ,scan_nr: 1169, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 32.4,source_id: @a12070106.id ,scan_nr: 1169, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.5889,error_jy: 0.0059,mjd: 59798.6907,pol_flux: 0.0280,pol_flux_err: 0.0017, pol_frac: 4.749, pol_frac_err: 0.287,evpa: 63.42, evpa_err: 1.65)
+else
+result_to_update.update(mjd: 59798.6907,pol_flux: 0.0280,pol_flux_err: 0.0017, pol_frac: 4.749, pol_frac_err: 0.287,evpa: 63.42, evpa_err: 1.65)
+end
+result_to_update = Result.where(source_id: @a14431200.id ,scan_nr: 1224, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 25.5,source_id: @a14431200.id ,scan_nr: 1224, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.0443,error_jy: 0.0010,mjd: 59798.8942,pol_flux: 0.0008,pol_flux_err: 0.0017, pol_frac: 1.697, pol_frac_err: 3.857,evpa: 102.64, evpa_err: 67.49)
+else
+result_to_update.update(mjd: 59798.8942,pol_flux: 0.0008,pol_flux_err: 0.0017, pol_frac: 1.697, pol_frac_err: 3.857,evpa: 102.64, evpa_err: 67.49)
+end
+result_to_update = Result.where(source_id: @a14432501.id ,scan_nr: 1226, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 33.4,source_id: @a14432501.id ,scan_nr: 1226, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.3378,error_jy: 0.0035,mjd: 59798.9025,pol_flux: 0.0066,pol_flux_err: 0.0016, pol_frac: 1.945, pol_frac_err: 0.469,evpa: -4.77, evpa_err: 7.11)
+else
+result_to_update.update(mjd: 59798.9025,pol_flux: 0.0066,pol_flux_err: 0.0016, pol_frac: 1.945, pol_frac_err: 0.469,evpa: -4.77, evpa_err: 7.11)
+end
+result_to_update = Result.where(source_id: @a14432501.id ,scan_nr: 1227, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 32.7,source_id: @a14432501.id ,scan_nr: 1227, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.3425,error_jy: 0.0035,mjd: 59798.9059,pol_flux: 0.0066,pol_flux_err: 0.0016, pol_frac: 1.914, pol_frac_err: 0.456,evpa: -2.24, evpa_err: 7.35)
+else
+result_to_update.update(mjd: 59798.9059,pol_flux: 0.0066,pol_flux_err: 0.0016, pol_frac: 1.914, pol_frac_err: 0.456,evpa: -2.24, evpa_err: 7.35)
+end
+result_to_update = Result.where(source_id: @a14510127.id ,scan_nr: 1220, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 18.6,source_id: @a14510127.id ,scan_nr: 1220, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.1531,error_jy: 0.0020,mjd: 59798.8823,pol_flux: 0.0065,pol_flux_err: 0.0020, pol_frac: 4.258, pol_frac_err: 1.310,evpa: -11.36, evpa_err: 9.54)
+else
+result_to_update.update(mjd: 59798.8823,pol_flux: 0.0065,pol_flux_err: 0.0020, pol_frac: 4.258, pol_frac_err: 1.310,evpa: -11.36, evpa_err: 9.54)
+end
+result_to_update = Result.where(source_id: @a14580037.id ,scan_nr: 1223, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 18.9,source_id: @a14580037.id ,scan_nr: 1223, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.0798,error_jy: 0.0015,mjd: 59798.8893,pol_flux: 0.0017,pol_flux_err: 0.0023, pol_frac: 2.071, pol_frac_err: 2.836,evpa: 120.60, evpa_err: 37.25)
+else
+result_to_update.update(mjd: 59798.8893,pol_flux: 0.0017,pol_flux_err: 0.0023, pol_frac: 2.071, pol_frac_err: 2.836,evpa: 120.60, evpa_err: 37.25)
+end
+result_to_update = Result.where(source_id: @a17251152.id ,scan_nr: 1244, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 32.6,source_id: @a17251152.id ,scan_nr: 1244, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.1191,error_jy: 0.0024,mjd: 59798.9736,pol_flux: 0.0029,pol_flux_err: 0.0018, pol_frac: 2.408, pol_frac_err: 1.483,evpa: 24.12, evpa_err: 17.44)
+else
+result_to_update.update(mjd: 59798.9736,pol_flux: 0.0029,pol_flux_err: 0.0018, pol_frac: 2.408, pol_frac_err: 1.483,evpa: 24.12, evpa_err: 17.44)
+end
+result_to_update = Result.where(source_id: @a17285013.id ,scan_nr: 1263, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 41.7,source_id: @a17285013.id ,scan_nr: 1263, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.1260,error_jy: 0.0014,mjd: 59799.0517,pol_flux: 0.0029,pol_flux_err: 0.0015, pol_frac: 2.290, pol_frac_err: 1.165,evpa: 53.34, evpa_err: 14.00)
+else
+result_to_update.update(mjd: 59799.0517,pol_flux: 0.0029,pol_flux_err: 0.0015, pol_frac: 2.290, pol_frac_err: 1.165,evpa: 53.34, evpa_err: 14.00)
+end
+result_to_update = Result.where(source_id: @a17430350.id ,scan_nr: 1230, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 30.5,source_id: @a17430350.id ,scan_nr: 1230, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 3.7475,error_jy: 0.0375,mjd: 59798.9198,pol_flux: 0.0113,pol_flux_err: 0.0018, pol_frac: 0.301, pol_frac_err: 0.048,evpa: 129.23, evpa_err: 4.48)
+else
+result_to_update.update(mjd: 59798.9198,pol_flux: 0.0113,pol_flux_err: 0.0018, pol_frac: 0.301, pol_frac_err: 0.048,evpa: 129.23, evpa_err: 4.48)
+end
+result_to_update = Result.where(source_id: @a17430350.id ,scan_nr: 1231, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 30.1,source_id: @a17430350.id ,scan_nr: 1231, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 3.8822,error_jy: 0.0389,mjd: 59798.9232,pol_flux: 0.0115,pol_flux_err: 0.0017, pol_frac: 0.297, pol_frac_err: 0.045,evpa: 131.47, evpa_err: 4.00)
+else
+result_to_update.update(mjd: 59798.9232,pol_flux: 0.0115,pol_flux_err: 0.0017, pol_frac: 0.297, pol_frac_err: 0.045,evpa: 131.47, evpa_err: 4.00)
+end
+result_to_update = Result.where(source_id: @a17431935.id ,scan_nr: 1248, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 38.1,source_id: @a17431935.id ,scan_nr: 1248, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.1904,error_jy: 0.0021,mjd: 59798.9894,pol_flux: 0.0012,pol_flux_err: 0.0015, pol_frac: 0.626, pol_frac_err: 0.788,evpa: 106.85, evpa_err: 37.09)
+else
+result_to_update.update(mjd: 59798.9894,pol_flux: 0.0012,pol_flux_err: 0.0015, pol_frac: 0.626, pol_frac_err: 0.788,evpa: 106.85, evpa_err: 37.09)
+end
+result_to_update = Result.where(source_id: @a17431935.id ,scan_nr: 1249, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 37.3,source_id: @a17431935.id ,scan_nr: 1249, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.1896,error_jy: 0.0020,mjd: 59798.9927,pol_flux: 0.0011,pol_flux_err: 0.0014, pol_frac: 0.578, pol_frac_err: 0.742,evpa: 102.31, evpa_err: 39.22)
+else
+result_to_update.update(mjd: 59798.9927,pol_flux: 0.0011,pol_flux_err: 0.0014, pol_frac: 0.578, pol_frac_err: 0.742,evpa: 102.31, evpa_err: 39.22)
+end
+result_to_update = Result.where(source_id: @a17450338.id ,scan_nr: 1242, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 24.0,source_id: @a17450338.id ,scan_nr: 1242, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.0438,error_jy: 0.0012,mjd: 59798.9652,pol_flux: 0.0013,pol_flux_err: 0.0019, pol_frac: 2.925, pol_frac_err: 4.279,evpa: 87.10, evpa_err: 46.90)
+else
+result_to_update.update(mjd: 59798.9652,pol_flux: 0.0013,pol_flux_err: 0.0019, pol_frac: 2.925, pol_frac_err: 4.279,evpa: 87.10, evpa_err: 46.90)
+end
+result_to_update = Result.where(source_id: @a17450338.id ,scan_nr: 1243, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 23.4,source_id: @a17450338.id ,scan_nr: 1243, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.0380,error_jy: 0.0011,mjd: 59798.9686,pol_flux: 0.0004,pol_flux_err: 0.0019, pol_frac: 1.136, pol_frac_err: 4.898,evpa: 3.31, evpa_err: 99.99)
+else
+result_to_update.update(mjd: 59798.9686,pol_flux: 0.0004,pol_flux_err: 0.0019, pol_frac: 1.136, pol_frac_err: 4.898,evpa: 3.31, evpa_err: 99.99)
+end
+result_to_update = Result.where(source_id: @a17521011.id ,scan_nr: 1236, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 22.4,source_id: @a17521011.id ,scan_nr: 1236, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.2082,error_jy: 0.0023,mjd: 59798.9424,pol_flux: 0.0022,pol_flux_err: 0.0019, pol_frac: 1.036, pol_frac_err: 0.920,evpa: -34.56, evpa_err: 23.34)
+else
+result_to_update.update(mjd: 59798.9424,pol_flux: 0.0022,pol_flux_err: 0.0019, pol_frac: 1.036, pol_frac_err: 0.920,evpa: -34.56, evpa_err: 23.34)
+end
+result_to_update = Result.where(source_id: @a17521011.id ,scan_nr: 1237, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 21.9,source_id: @a17521011.id ,scan_nr: 1237, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.2065,error_jy: 0.0022,mjd: 59798.9458,pol_flux: 0.0017,pol_flux_err: 0.0019, pol_frac: 0.804, pol_frac_err: 0.913,evpa: -24.80, evpa_err: 32.12)
+else
+result_to_update.update(mjd: 59798.9458,pol_flux: 0.0017,pol_flux_err: 0.0019, pol_frac: 0.804, pol_frac_err: 0.913,evpa: -24.80, evpa_err: 32.12)
+end
+result_to_update = Result.where(source_id: @a18032521.id ,scan_nr: 1252, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 41.8,source_id: @a18032521.id ,scan_nr: 1252, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.2734,error_jy: 0.0028,mjd: 59799.0051,pol_flux: 0.0207,pol_flux_err: 0.0014, pol_frac: 7.573, pol_frac_err: 0.535,evpa: 29.98, evpa_err: 1.93)
+else
+result_to_update.update(mjd: 59799.0051,pol_flux: 0.0207,pol_flux_err: 0.0014, pol_frac: 7.573, pol_frac_err: 0.535,evpa: 29.98, evpa_err: 1.93)
+end
+result_to_update = Result.where(source_id: @a18032521.id ,scan_nr: 1253, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 41.1,source_id: @a18032521.id ,scan_nr: 1253, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.2679,error_jy: 0.0027,mjd: 59799.0084,pol_flux: 0.0206,pol_flux_err: 0.0015, pol_frac: 7.683, pol_frac_err: 0.564,evpa: 31.69, evpa_err: 1.96)
+else
+result_to_update.update(mjd: 59799.0084,pol_flux: 0.0206,pol_flux_err: 0.0015, pol_frac: 7.683, pol_frac_err: 0.564,evpa: 31.69, evpa_err: 1.96)
+end
+result_to_update = Result.where(source_id: @a20014352.id ,scan_nr: 1268, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 56.3,source_id: @a20014352.id ,scan_nr: 1268, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.1713,error_jy: 0.0018,mjd: 59799.0744,pol_flux: 0.0091,pol_flux_err: 0.0014, pol_frac: 5.288, pol_frac_err: 0.791,evpa: 100.12, evpa_err: 4.60)
+else
+result_to_update.update(mjd: 59799.0744,pol_flux: 0.0091,pol_flux_err: 0.0014, pol_frac: 5.288, pol_frac_err: 0.791,evpa: 100.12, evpa_err: 4.60)
+end
+result_to_update = Result.where(source_id: @a20014352.id ,scan_nr: 1269, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 55.5,source_id: @a20014352.id ,scan_nr: 1269, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.1708,error_jy: 0.0018,mjd: 59799.0778,pol_flux: 0.0093,pol_flux_err: 0.0013, pol_frac: 5.470, pol_frac_err: 0.768,evpa: 101.46, evpa_err: 4.29)
+else
+result_to_update.update(mjd: 59799.0778,pol_flux: 0.0093,pol_flux_err: 0.0013, pol_frac: 5.470, pol_frac_err: 0.768,evpa: 101.46, evpa_err: 4.29)
+end
+result_to_update = Result.where(source_id: @a22432021.id ,scan_nr: 1301, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 41.9,source_id: @a22432021.id ,scan_nr: 1301, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.0981,error_jy: 0.0012,mjd: 59799.1829,pol_flux: 0.0018,pol_flux_err: 0.0014, pol_frac: 1.822, pol_frac_err: 1.447,evpa: 21.95, evpa_err: 22.81)
+else
+result_to_update.update(mjd: 59799.1829,pol_flux: 0.0018,pol_flux_err: 0.0014, pol_frac: 1.822, pol_frac_err: 1.447,evpa: 21.95, evpa_err: 22.81)
+end
+result_to_update = Result.where(source_id: @a22432021.id ,scan_nr: 1302, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 41.1,source_id: @a22432021.id ,scan_nr: 1302, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.1008,error_jy: 0.0012,mjd: 59799.1862,pol_flux: 0.0027,pol_flux_err: 0.0014, pol_frac: 2.717, pol_frac_err: 1.417,evpa: 24.27, evpa_err: 14.80)
+else
+result_to_update.update(mjd: 59799.1862,pol_flux: 0.0027,pol_flux_err: 0.0014, pol_frac: 2.717, pol_frac_err: 1.417,evpa: 24.27, evpa_err: 14.80)
+end
+result_to_update = Result.where(source_id: @a23475142.id ,scan_nr: 1298, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 72.8,source_id: @a23475142.id ,scan_nr: 1298, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 0.1622,error_jy: 0.0017,mjd: 59799.1694,pol_flux: 0.0036,pol_flux_err: 0.0013, pol_frac: 2.218, pol_frac_err: 0.779,evpa: -34.21, evpa_err: 9.97)
+else
+result_to_update.update(mjd: 59799.1694,pol_flux: 0.0036,pol_flux_err: 0.0013, pol_frac: 2.218, pol_frac_err: 0.779,evpa: -34.21, evpa_err: 9.97)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1134, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 58.3,source_id: @a3C286.id ,scan_nr: 1134, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 3.1253,error_jy: 0.0310,mjd: 59798.5752,pol_flux: 0.3838,pol_flux_err: 0.0026, pol_frac: 12.281, pol_frac_err: 0.148,evpa: 33.51, evpa_err: 0.19)
+else
+result_to_update.update(mjd: 59798.5752,pol_flux: 0.3838,pol_flux_err: 0.0026, pol_frac: 12.281, pol_frac_err: 0.148,evpa: 33.51, evpa_err: 0.19)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1136, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 58.9,source_id: @a3C286.id ,scan_nr: 1136, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 3.0619,error_jy: 0.0304,mjd: 59798.5781,pol_flux: 0.3746,pol_flux_err: 0.0027, pol_frac: 12.233, pol_frac_err: 0.150,evpa: 34.21, evpa_err: 0.20)
+else
+result_to_update.update(mjd: 59798.5781,pol_flux: 0.3746,pol_flux_err: 0.0027, pol_frac: 12.233, pol_frac_err: 0.150,evpa: 34.21, evpa_err: 0.20)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1137, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 59.2,source_id: @a3C286.id ,scan_nr: 1137, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 3.0244,error_jy: 0.0299,mjd: 59798.5799,pol_flux: 0.3827,pol_flux_err: 0.0027, pol_frac: 12.653, pol_frac_err: 0.153,evpa: 34.15, evpa_err: 0.19)
+else
+result_to_update.update(mjd: 59798.5799,pol_flux: 0.3827,pol_flux_err: 0.0027, pol_frac: 12.653, pol_frac_err: 0.153,evpa: 34.15, evpa_err: 0.19)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1201, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 44.1,source_id: @a3C286.id ,scan_nr: 1201, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 2.9451,error_jy: 0.0294,mjd: 59798.8224,pol_flux: 0.3642,pol_flux_err: 0.0029, pol_frac: 12.366, pol_frac_err: 0.157,evpa: 34.16, evpa_err: 0.23)
+else
+result_to_update.update(mjd: 59798.8224,pol_flux: 0.3642,pol_flux_err: 0.0029, pol_frac: 12.366, pol_frac_err: 0.157,evpa: 34.16, evpa_err: 0.23)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1203, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 43.4,source_id: @a3C286.id ,scan_nr: 1203, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 3.1943,error_jy: 0.0319,mjd: 59798.8252,pol_flux: 0.3943,pol_flux_err: 0.0032, pol_frac: 12.343, pol_frac_err: 0.160,evpa: 34.01, evpa_err: 0.24)
+else
+result_to_update.update(mjd: 59798.8252,pol_flux: 0.3943,pol_flux_err: 0.0032, pol_frac: 12.343, pol_frac_err: 0.160,evpa: 34.01, evpa_err: 0.24)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1204, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 43.0,source_id: @a3C286.id ,scan_nr: 1204, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 3.1513,error_jy: 0.0315,mjd: 59798.8271,pol_flux: 0.3871,pol_flux_err: 0.0028, pol_frac: 12.285, pol_frac_err: 0.152,evpa: 34.10, evpa_err: 0.22)
+else
+result_to_update.update(mjd: 59798.8271,pol_flux: 0.3871,pol_flux_err: 0.0028, pol_frac: 12.285, pol_frac_err: 0.152,evpa: 34.10, evpa_err: 0.22)
+end
+result_to_update = Result.where(source_id: @aNGC7027.id ,scan_nr: 1276, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 60.5,source_id: @aNGC7027.id ,scan_nr: 1276, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 5.5242,error_jy: 0.0555,mjd: 59799.0979,pol_flux: 0.0038,pol_flux_err: 0.0020, pol_frac: 0.068, pol_frac_err: 0.037,evpa: 120.46, evpa_err: 14.25)
+else
+result_to_update.update(mjd: 59799.0979,pol_flux: 0.0038,pol_flux_err: 0.0020, pol_frac: 0.068, pol_frac_err: 0.037,evpa: 120.46, evpa_err: 14.25)
+end
+result_to_update = Result.where(source_id: @aNGC7027.id ,scan_nr: 1278, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 59.8,source_id: @aNGC7027.id ,scan_nr: 1278, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 5.5169,error_jy: 0.0552,mjd: 59799.1009,pol_flux: 0.0021,pol_flux_err: 0.0019, pol_frac: 0.038, pol_frac_err: 0.035,evpa: -20.55, evpa_err: 26.35)
+else
+result_to_update.update(mjd: 59799.1009,pol_flux: 0.0021,pol_flux_err: 0.0019, pol_frac: 0.038, pol_frac_err: 0.035,evpa: -20.55, evpa_err: 26.35)
+end
+result_to_update = Result.where(source_id: @aNGC7027.id ,scan_nr: 1279, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 59.4,source_id: @aNGC7027.id ,scan_nr: 1279, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 5.5086,error_jy: 0.0551,mjd: 59799.1027,pol_flux: 0.0006,pol_flux_err: 0.0019, pol_frac: 0.011, pol_frac_err: 0.035,evpa: -30.65, evpa_err: 90.58)
+else
+result_to_update.update(mjd: 59799.1027,pol_flux: 0.0006,pol_flux_err: 0.0019, pol_frac: 0.011, pol_frac_err: 0.035,evpa: -30.65, evpa_err: 90.58)
+end
+result_to_update = Result.where(source_id: @aW3OH.id ,scan_nr: 1046, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 76.6,source_id: @aW3OH.id ,scan_nr: 1046, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 2.7823,error_jy: 0.0275,mjd: 59798.2422,pol_flux: 0.0040,pol_flux_err: 0.0025, pol_frac: 0.144, pol_frac_err: 0.088,evpa: 118.27, evpa_err: 17.79)
+else
+result_to_update.update(mjd: 59798.2422,pol_flux: 0.0040,pol_flux_err: 0.0025, pol_frac: 0.144, pol_frac_err: 0.088,evpa: 118.27, evpa_err: 17.79)
+end
+result_to_update = Result.where(source_id: @aW3OH.id ,scan_nr: 1048, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 76.3,source_id: @aW3OH.id ,scan_nr: 1048, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 2.7986,error_jy: 0.0277,mjd: 59798.245,pol_flux: 0.0066,pol_flux_err: 0.0019, pol_frac: 0.235, pol_frac_err: 0.069,evpa: 119.44, evpa_err: 7.99)
+else
+result_to_update.update(mjd: 59798.245,pol_flux: 0.0066,pol_flux_err: 0.0019, pol_frac: 0.235, pol_frac_err: 0.069,evpa: 119.44, evpa_err: 7.99)
+end
+result_to_update = Result.where(source_id: @aW3OH.id ,scan_nr: 1049, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id).first
+if result_to_update==nil
+Result.create(elevation: 76.1,source_id: @aW3OH.id ,scan_nr: 1049, epoch_id: @a2022_08_07.id ,frequency_id: @a16_75.id,value_jy: 2.7457,error_jy: 0.0336,mjd: 59798.247,pol_flux: 0.0082,pol_flux_err: 0.0104, pol_frac: 0.300, pol_frac_err: 0.377,evpa: 132.21, evpa_err: 48.80)
+else
+result_to_update.update(mjd: 59798.247,pol_flux: 0.0082,pol_flux_err: 0.0104, pol_frac: 0.300, pol_frac_err: 0.377,evpa: 132.21, evpa_err: 48.80)
+end
+result_to_update = Result.where(source_id: @a01122244.id ,scan_nr: 1063, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 43.3,source_id: @a01122244.id ,scan_nr: 1063, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 0.8859,error_jy: 0.0360,mjd: 59798.29,pol_flux: 0.0960,pol_flux_err: 0.0106, pol_frac: 10.838, pol_frac_err: 1.279,evpa: 108.32, evpa_err: 3.27)
+else
+result_to_update.update(mjd: 59798.29,pol_flux: 0.0960,pol_flux_err: 0.0106, pol_frac: 10.838, pol_frac_err: 1.279,evpa: 108.32, evpa_err: 3.27)
+end
+result_to_update = Result.where(source_id: @a02224302.id ,scan_nr: 1102, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 34.6,source_id: @a02224302.id ,scan_nr: 1102, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 0.5542,error_jy: 0.0241,mjd: 59798.4395,pol_flux: 0.0317,pol_flux_err: 0.0121, pol_frac: 5.714, pol_frac_err: 2.205,evpa: -0.79, evpa_err: 12.58)
+else
+result_to_update.update(mjd: 59798.4395,pol_flux: 0.0317,pol_flux_err: 0.0121, pol_frac: 5.714, pol_frac_err: 2.205,evpa: -0.79, evpa_err: 12.58)
+end
+result_to_update = Result.where(source_id: @a03130228.id ,scan_nr: 1077, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 32.0,source_id: @a03130228.id ,scan_nr: 1077, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 0.2040,error_jy: 0.0134,mjd: 59798.3458,pol_flux: 0.0095,pol_flux_err: 0.0123, pol_frac: 4.677, pol_frac_err: 6.023,evpa: 86.45, evpa_err: 40.92)
+else
+result_to_update.update(mjd: 59798.3458,pol_flux: 0.0095,pol_flux_err: 0.0123, pol_frac: 4.677, pol_frac_err: 6.023,evpa: 86.45, evpa_err: 40.92)
+end
+result_to_update = Result.where(source_id: @a05090541.id ,scan_nr: 1097, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 36.6,source_id: @a05090541.id ,scan_nr: 1097, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 1.0048,error_jy: 0.0406,mjd: 59798.4159,pol_flux: 0.0080,pol_flux_err: 0.0119, pol_frac: 0.795, pol_frac_err: 1.188,evpa: -33.24, evpa_err: 39.24)
+else
+result_to_update.update(mjd: 59798.4159,pol_flux: 0.0080,pol_flux_err: 0.0119, pol_frac: 0.795, pol_frac_err: 1.188,evpa: -33.24, evpa_err: 39.24)
+end
+result_to_update = Result.where(source_id: @a05090541.id ,scan_nr: 1098, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 36.0,source_id: @a05090541.id ,scan_nr: 1098, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 1.0251,error_jy: 0.0415,mjd: 59798.4192,pol_flux: 0.0144,pol_flux_err: 0.0110, pol_frac: 1.403, pol_frac_err: 1.079,evpa: -24.65, evpa_err: 21.69)
+else
+result_to_update.update(mjd: 59798.4192,pol_flux: 0.0144,pol_flux_err: 0.0110, pol_frac: 1.403, pol_frac_err: 1.079,evpa: -24.65, evpa_err: 21.69)
+end
+result_to_update = Result.where(source_id: @a05212112.id ,scan_nr: 1108, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 41.3,source_id: @a05212112.id ,scan_nr: 1108, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 0.3437,error_jy: 0.0153,mjd: 59798.4667,pol_flux: 0.0071,pol_flux_err: 0.0108, pol_frac: 2.077, pol_frac_err: 3.137,evpa: -4.17, evpa_err: 48.18)
+else
+result_to_update.update(mjd: 59798.4667,pol_flux: 0.0071,pol_flux_err: 0.0108, pol_frac: 2.077, pol_frac_err: 3.137,evpa: -4.17, evpa_err: 48.18)
+end
+result_to_update = Result.where(source_id: @a07381742.id ,scan_nr: 1089, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 55.7,source_id: @a07381742.id ,scan_nr: 1089, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 1.1226,error_jy: 0.0455,mjd: 59798.3879,pol_flux: 0.0080,pol_flux_err: 0.0101, pol_frac: 0.710, pol_frac_err: 0.902,evpa: 99.49, evpa_err: 40.07)
+else
+result_to_update.update(mjd: 59798.3879,pol_flux: 0.0080,pol_flux_err: 0.0101, pol_frac: 0.710, pol_frac_err: 0.902,evpa: 99.49, evpa_err: 40.07)
+end
+result_to_update = Result.where(source_id: @a07381742.id ,scan_nr: 1091, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 56.0,source_id: @a07381742.id ,scan_nr: 1091, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 1.1164,error_jy: 0.0449,mjd: 59798.3923,pol_flux: 0.0091,pol_flux_err: 0.0101, pol_frac: 0.816, pol_frac_err: 0.907,evpa: 78.84, evpa_err: 34.10)
+else
+result_to_update.update(mjd: 59798.3923,pol_flux: 0.0091,pol_flux_err: 0.0101, pol_frac: 0.816, pol_frac_err: 0.907,evpa: 78.84, evpa_err: 34.10)
+end
+result_to_update = Result.where(source_id: @a07381742.id ,scan_nr: 1092, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 56.2,source_id: @a07381742.id ,scan_nr: 1092, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 1.0906,error_jy: 0.0439,mjd: 59798.3954,pol_flux: 0.0081,pol_flux_err: 0.0103, pol_frac: 0.738, pol_frac_err: 0.948,evpa: 87.79, evpa_err: 40.62)
+else
+result_to_update.update(mjd: 59798.3954,pol_flux: 0.0081,pol_flux_err: 0.0103, pol_frac: 0.738, pol_frac_err: 0.948,evpa: 87.79, evpa_err: 40.62)
+end
+result_to_update = Result.where(source_id: @a11592914.id ,scan_nr: 1180, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 48.4,source_id: @a11592914.id ,scan_nr: 1180, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 2.6154,error_jy: 0.1031,mjd: 59798.736,pol_flux: 0.0882,pol_flux_err: 0.0106, pol_frac: 3.374, pol_frac_err: 0.426,evpa: -18.56, evpa_err: 3.56)
+else
+result_to_update.update(mjd: 59798.736,pol_flux: 0.0882,pol_flux_err: 0.0106, pol_frac: 3.374, pol_frac_err: 0.426,evpa: -18.56, evpa_err: 3.56)
+end
+result_to_update = Result.where(source_id: @a11592914.id ,scan_nr: 1181, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 47.7,source_id: @a11592914.id ,scan_nr: 1181, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 2.4585,error_jy: 0.0967,mjd: 59798.7394,pol_flux: 0.0939,pol_flux_err: 0.0110, pol_frac: 3.820, pol_frac_err: 0.473,evpa: -19.25, evpa_err: 3.48)
+else
+result_to_update.update(mjd: 59798.7394,pol_flux: 0.0939,pol_flux_err: 0.0110, pol_frac: 3.820, pol_frac_err: 0.473,evpa: -19.25, evpa_err: 3.48)
+end
+result_to_update = Result.where(source_id: @a12070106.id ,scan_nr: 1173, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 30.1,source_id: @a12070106.id ,scan_nr: 1173, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 0.6363,error_jy: 0.0266,mjd: 59798.7071,pol_flux: 0.0319,pol_flux_err: 0.0148, pol_frac: 5.011, pol_frac_err: 2.340,evpa: 53.68, evpa_err: 11.88)
+else
+result_to_update.update(mjd: 59798.7071,pol_flux: 0.0319,pol_flux_err: 0.0148, pol_frac: 5.011, pol_frac_err: 2.340,evpa: 53.68, evpa_err: 11.88)
+end
+result_to_update = Result.where(source_id: @a12173007.id ,scan_nr: 1190, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 41.4,source_id: @a12173007.id ,scan_nr: 1190, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 0.4197,error_jy: 0.0183,mjd: 59798.7823,pol_flux: 0.0124,pol_flux_err: 0.0110, pol_frac: 2.954, pol_frac_err: 2.619,evpa: -5.35, evpa_err: 28.20)
+else
+result_to_update.update(mjd: 59798.7823,pol_flux: 0.0124,pol_flux_err: 0.0110, pol_frac: 2.954, pol_frac_err: 2.619,evpa: -5.35, evpa_err: 28.20)
+end
+result_to_update = Result.where(source_id: @a12173007.id ,scan_nr: 1191, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 40.6,source_id: @a12173007.id ,scan_nr: 1191, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 0.4436,error_jy: 0.0189,mjd: 59798.7857,pol_flux: 0.0069,pol_flux_err: 0.0117, pol_frac: 1.563, pol_frac_err: 2.635,evpa: -30.64, evpa_err: 45.28)
+else
+result_to_update.update(mjd: 59798.7857,pol_flux: 0.0069,pol_flux_err: 0.0117, pol_frac: 1.563, pol_frac_err: 2.635,evpa: -30.64, evpa_err: 45.28)
+end
+result_to_update = Result.where(source_id: @a12242122.id ,scan_nr: 1186, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 40.7,source_id: @a12242122.id ,scan_nr: 1186, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 0.6745,error_jy: 0.0274,mjd: 59798.7626,pol_flux: 0.0145,pol_flux_err: 0.0123, pol_frac: 2.154, pol_frac_err: 1.832,evpa: 139.40, evpa_err: 21.51)
+else
+result_to_update.update(mjd: 59798.7626,pol_flux: 0.0145,pol_flux_err: 0.0123, pol_frac: 2.154, pol_frac_err: 1.832,evpa: 139.40, evpa_err: 21.51)
+end
+result_to_update = Result.where(source_id: @a14223223.id ,scan_nr: 1217, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 43.4,source_id: @a14223223.id ,scan_nr: 1217, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 0.5133,error_jy: 0.0216,mjd: 59798.8662,pol_flux: 0.0080,pol_flux_err: 0.0125, pol_frac: 1.560, pol_frac_err: 2.445,evpa: 135.04, evpa_err: 39.13)
+else
+result_to_update.update(mjd: 59798.8662,pol_flux: 0.0080,pol_flux_err: 0.0125, pol_frac: 1.560, pol_frac_err: 2.445,evpa: 135.04, evpa_err: 39.13)
+end
+result_to_update = Result.where(source_id: @a14223223.id ,scan_nr: 1218, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 42.7,source_id: @a14223223.id ,scan_nr: 1218, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 0.4653,error_jy: 0.0197,mjd: 59798.8696,pol_flux: 0.0080,pol_flux_err: 0.0121, pol_frac: 1.726, pol_frac_err: 2.603,evpa: 135.34, evpa_err: 37.73)
+else
+result_to_update.update(mjd: 59798.8696,pol_flux: 0.0080,pol_flux_err: 0.0121, pol_frac: 1.726, pol_frac_err: 2.603,evpa: 135.34, evpa_err: 37.73)
+end
+result_to_update = Result.where(source_id: @a17430350.id ,scan_nr: 1234, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 28.5,source_id: @a17430350.id ,scan_nr: 1234, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 3.0328,error_jy: 0.1241,mjd: 59798.9347,pol_flux: 0.0104,pol_flux_err: 0.0127, pol_frac: 0.342, pol_frac_err: 0.419,evpa: 92.01, evpa_err: 40.14)
+else
+result_to_update.update(mjd: 59798.9347,pol_flux: 0.0104,pol_flux_err: 0.0127, pol_frac: 0.342, pol_frac_err: 0.419,evpa: 92.01, evpa_err: 40.14)
+end
+result_to_update = Result.where(source_id: @a17430350.id ,scan_nr: 1235, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 28.0,source_id: @a17430350.id ,scan_nr: 1235, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 3.1097,error_jy: 0.1267,mjd: 59798.9381,pol_flux: 0.0193,pol_flux_err: 0.0119, pol_frac: 0.621, pol_frac_err: 0.384,evpa: 88.88, evpa_err: 20.48)
+else
+result_to_update.update(mjd: 59798.9381,pol_flux: 0.0193,pol_flux_err: 0.0119, pol_frac: 0.621, pol_frac_err: 0.384,evpa: 88.88, evpa_err: 20.48)
+end
+result_to_update = Result.where(source_id: @a22024216.id ,scan_nr: 1294, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 57.6,source_id: @a22024216.id ,scan_nr: 1294, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 11.4784,error_jy: 0.4701,mjd: 59799.1492,pol_flux: 0.9786,pol_flux_err: 0.0121, pol_frac: 8.526, pol_frac_err: 0.365,evpa: 21.84, evpa_err: 0.36)
+else
+result_to_update.update(mjd: 59799.1492,pol_flux: 0.9786,pol_flux_err: 0.0121, pol_frac: 8.526, pol_frac_err: 0.365,evpa: 21.84, evpa_err: 0.36)
+end
+result_to_update = Result.where(source_id: @a22024216.id ,scan_nr: 1295, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 56.5,source_id: @a22024216.id ,scan_nr: 1295, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 11.6240,error_jy: 0.4760,mjd: 59799.1541,pol_flux: 0.9623,pol_flux_err: 0.0128, pol_frac: 8.278, pol_frac_err: 0.356,evpa: 21.84, evpa_err: 0.39)
+else
+result_to_update.update(mjd: 59799.1541,pol_flux: 0.9623,pol_flux_err: 0.0128, pol_frac: 8.278, pol_frac_err: 0.356,evpa: 21.84, evpa_err: 0.39)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1142, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 61.5,source_id: @a3C286.id ,scan_nr: 1142, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 1.5399,error_jy: 0.0613,mjd: 59798.5915,pol_flux: 0.2150,pol_flux_err: 0.0109, pol_frac: 13.964, pol_frac_err: 0.900,evpa: 36.20, evpa_err: 1.31)
+else
+result_to_update.update(mjd: 59798.5915,pol_flux: 0.2150,pol_flux_err: 0.0109, pol_frac: 13.964, pol_frac_err: 0.900,evpa: 36.20, evpa_err: 1.31)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1144, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 62.3,source_id: @a3C286.id ,scan_nr: 1144, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 1.5619,error_jy: 0.0618,mjd: 59798.5957,pol_flux: 0.2051,pol_flux_err: 0.0124, pol_frac: 13.134, pol_frac_err: 0.946,evpa: 36.31, evpa_err: 1.61)
+else
+result_to_update.update(mjd: 59798.5957,pol_flux: 0.2051,pol_flux_err: 0.0124, pol_frac: 13.134, pol_frac_err: 0.946,evpa: 36.31, evpa_err: 1.61)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1145, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 62.8,source_id: @a3C286.id ,scan_nr: 1145, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 1.6935,error_jy: 0.0672,mjd: 59798.5989,pol_flux: 0.2293,pol_flux_err: 0.0115, pol_frac: 13.537, pol_frac_err: 0.866,evpa: 35.79, evpa_err: 1.38)
+else
+result_to_update.update(mjd: 59798.5989,pol_flux: 0.2293,pol_flux_err: 0.0115, pol_frac: 13.537, pol_frac_err: 0.866,evpa: 35.79, evpa_err: 1.38)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1209, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 40.4,source_id: @a3C286.id ,scan_nr: 1209, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 1.5548,error_jy: 0.0625,mjd: 59798.8385,pol_flux: 0.2032,pol_flux_err: 0.0123, pol_frac: 13.072, pol_frac_err: 0.951,evpa: 35.44, evpa_err: 1.55)
+else
+result_to_update.update(mjd: 59798.8385,pol_flux: 0.2032,pol_flux_err: 0.0123, pol_frac: 13.072, pol_frac_err: 0.951,evpa: 35.44, evpa_err: 1.55)
+end
+result_to_update = Result.where(source_id: @a3C286.id ,scan_nr: 1212, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 38.7,source_id: @a3C286.id ,scan_nr: 1212, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 1.8139,error_jy: 0.0729,mjd: 59798.846,pol_flux: 0.2361,pol_flux_err: 0.0127, pol_frac: 13.017, pol_frac_err: 0.875,evpa: 36.40, evpa_err: 1.39)
+else
+result_to_update.update(mjd: 59798.846,pol_flux: 0.2361,pol_flux_err: 0.0127, pol_frac: 13.017, pol_frac_err: 0.875,evpa: 36.40, evpa_err: 1.39)
+end
+result_to_update = Result.where(source_id: @aNGC7027.id ,scan_nr: 1284, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 56.8,source_id: @aNGC7027.id ,scan_nr: 1284, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 5.1761,error_jy: 0.2121,mjd: 59799.1143,pol_flux: 0.0224,pol_flux_err: 0.0107, pol_frac: 0.434, pol_frac_err: 0.207,evpa: 116.71, evpa_err: 13.21)
+else
+result_to_update.update(mjd: 59799.1143,pol_flux: 0.0224,pol_flux_err: 0.0107, pol_frac: 0.434, pol_frac_err: 0.207,evpa: 116.71, evpa_err: 13.21)
+end
+result_to_update = Result.where(source_id: @aNGC7027.id ,scan_nr: 1286, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 55.8,source_id: @aNGC7027.id ,scan_nr: 1286, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 5.3075,error_jy: 0.2174,mjd: 59799.1187,pol_flux: 0.0188,pol_flux_err: 0.0104, pol_frac: 0.354, pol_frac_err: 0.197,evpa: 112.60, evpa_err: 15.86)
+else
+result_to_update.update(mjd: 59799.1187,pol_flux: 0.0188,pol_flux_err: 0.0104, pol_frac: 0.354, pol_frac_err: 0.197,evpa: 112.60, evpa_err: 15.86)
+end
+result_to_update = Result.where(source_id: @aNGC7027.id ,scan_nr: 1287, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 55.0,source_id: @aNGC7027.id ,scan_nr: 1287, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 5.2432,error_jy: 0.2148,mjd: 59799.1219,pol_flux: 0.0231,pol_flux_err: 0.0112, pol_frac: 0.440, pol_frac_err: 0.215,evpa: 118.19, evpa_err: 13.38)
+else
+result_to_update.update(mjd: 59799.1219,pol_flux: 0.0231,pol_flux_err: 0.0112, pol_frac: 0.440, pol_frac_err: 0.215,evpa: 118.19, evpa_err: 13.38)
+end
+result_to_update = Result.where(source_id: @aW3OH.id ,scan_nr: 1054, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 74.8,source_id: @aW3OH.id ,scan_nr: 1054, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 3.7193,error_jy: 0.1483,mjd: 59798.2583,pol_flux: 0.0225,pol_flux_err: 0.0092, pol_frac: 0.606, pol_frac_err: 0.247,evpa: 97.73, evpa_err: 13.37)
+else
+result_to_update.update(mjd: 59798.2583,pol_flux: 0.0225,pol_flux_err: 0.0092, pol_frac: 0.606, pol_frac_err: 0.247,evpa: 97.73, evpa_err: 13.37)
+end
+result_to_update = Result.where(source_id: @aW3OH.id ,scan_nr: 1056, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 74.2,source_id: @aW3OH.id ,scan_nr: 1056, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 3.6026,error_jy: 0.1435,mjd: 59798.2623,pol_flux: 0.0236,pol_flux_err: 0.0095, pol_frac: 0.656, pol_frac_err: 0.265,evpa: 88.86, evpa_err: 12.37)
+else
+result_to_update.update(mjd: 59798.2623,pol_flux: 0.0236,pol_flux_err: 0.0095, pol_frac: 0.656, pol_frac_err: 0.265,evpa: 88.86, evpa_err: 12.37)
+end
+result_to_update = Result.where(source_id: @aW3OH.id ,scan_nr: 1057, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id).first
+if result_to_update==nil
+Result.create(elevation: 73.8,source_id: @aW3OH.id ,scan_nr: 1057, epoch_id: @a2022_08_07.id ,frequency_id: @a38_75.id,value_jy: 3.4733,error_jy: 0.1384,mjd: 59798.2655,pol_flux: 0.0395,pol_flux_err: 0.0093, pol_frac: 1.138, pol_frac_err: 0.272,evpa: 95.12, evpa_err: 7.73)
+else
+result_to_update.update(mjd: 59798.2655,pol_flux: 0.0395,pol_flux_err: 0.0093, pol_frac: 1.138, pol_frac_err: 0.272,evpa: 95.12, evpa_err: 7.73)
 end
