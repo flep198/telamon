@@ -59,6 +59,8 @@ window.onload=function(){
 
     var checkboxSample1 = document.querySelector("input[name=Sample1]");
     var checkboxSample2 = document.querySelector("input[name=Sample2]");
+    var checkboxSample3 = document.querySelector("input[name=Sample3]");
+    var checkboxSample4 = document.querySelector("input[name=Sample4]");
     var checkboxCalibrator = document.querySelector("input[name=Calibrator]");
     var checkboxOther = document.getElementById("Other");
 
@@ -112,6 +114,8 @@ window.onload=function(){
         //read out filter form
         var sample1 = checkboxSample1.checked;
         var sample2 = checkboxSample2.checked;
+        var sample3 = checkboxSample3.checked;
+        var sample4 = checkboxSample4.checked;
         <% if user_signed_in? %>
         var badweather = checkboxBadWeather.checked;
         <% end %>
@@ -197,6 +201,12 @@ window.onload=function(){
                     show_category=true;
                 };
                 if (sample2 && category_txt.includes("Sample 2")){
+                    show_category=true;
+                };
+                if (sample3 && category_txt.includes("Sample 3")){
+                    show_category=true;
+                };
+                if (sample4 && category_txt.includes("Sample 4")){
                     show_category=true;
                 };
                 <% if user_signed_in? %>
@@ -343,6 +353,8 @@ window.onload=function(){
     
     checkboxSample1.addEventListener('change', function(){updateTable()});
     checkboxSample2.addEventListener('change', function(){updateTable()});
+    checkboxSample3.addEventListener('change', function(){updateTable()});
+    checkboxSample4.addEventListener('change', function(){updateTable()});
     <% if user_signed_in? %>
     checkboxBadWeather.addEventListener('change', function(){updateTable()});
     <% end %>
