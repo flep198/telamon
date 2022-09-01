@@ -6,6 +6,7 @@ class Source < ApplicationRecord
 	has_many :results
 	has_many :frequencies, :through => :results
 	has_many :epoches, :through => :results
+	has_many :observations
 
 	#Friendly URL
 	extend FriendlyId

@@ -3,4 +3,5 @@ class Result < ApplicationRecord
 	belongs_to :source
 	belongs_to :frequency
 	belongs_to :epoch
+	belongs_to :observation
 end

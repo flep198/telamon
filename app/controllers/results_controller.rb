@@ -124,6 +124,6 @@ class ResultsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def result_params
-      params.require(:result).permit(:scan_nr, :value_jy, :error_jy, :mjd, :elevation, :epoch_id, :frequency_id, :source_id, :pol_frac,:pol_frac_err,:evpa,:evpa_err,:pol_flux,:pol_flux_err)
+      params.require(:result).permit(:scan_nr, :value_jy, :error_jy, :mjd, :elevation, :epoch_id, :frequency_id, :source_id, :pol_frac,:pol_frac_err,:evpa,:evpa_err,:pol_flux,:pol_flux_err, :observation_id)
     end
 end

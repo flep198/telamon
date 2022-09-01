@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_27_190951) do
+ActiveRecord::Schema.define(version: 2022_09_01_124714) do
 
   create_table "epoches", force: :cascade do |t|
     t.date "date"
@@ -68,6 +68,30 @@ ActiveRecord::Schema.define(version: 2022_07_27_190951) do
     t.index ["source_id"], name: "index_neutrino_alerts_sources_on_source_id"
   end
 
+  create_table "observations", force: :cascade do |t|
+    t.integer "scan_nr"
+    t.float "mjd"
+    t.float "elevation"
+    t.integer "n_scans"
+    t.string "febe"
+    t.float "cols"
+    t.float "nule"
+    t.float "zlin"
+    t.float "temp"
+    t.float "humidity"
+    t.float "pressure"
+    t.string "longitude"
+    t.string "latitude"
+    t.integer "source_id"
+    t.integer "epoch_id"
+    t.integer "frequency_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["epoch_id"], name: "index_observations_on_epoch_id"
+    t.index ["frequency_id"], name: "index_observations_on_frequency_id"
+    t.index ["source_id"], name: "index_observations_on_source_id"
+  end
+
   create_table "publications", force: :cascade do |t|
     t.string "title"
     t.string "full_reference"
@@ -97,8 +121,10 @@ ActiveRecord::Schema.define(version: 2022_07_27_190951) do
     t.float "pol_frac_err"
     t.float "evpa"
     t.float "evpa_err"
+    t.integer "observation_id"
     t.index ["epoch_id"], name: "index_results_on_epoch_id"
     t.index ["frequency_id"], name: "index_results_on_frequency_id"
+    t.index ["observation_id"], name: "index_results_on_observation_id"
     t.index ["source_id"], name: "index_results_on_source_id"
   end
 
@@ -149,4 +175,5 @@ ActiveRecord::Schema.define(version: 2022_07_27_190951) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "results", "observations"
 end
