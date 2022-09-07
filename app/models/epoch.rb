@@ -13,5 +13,10 @@ class Epoch < ApplicationRecord
 	def duration
 		self.lst_to.to_f-self.lst_from.to_f
 	end
+
+	def ReturnDate
+		self.date.to_s
+	end
+
 end
 

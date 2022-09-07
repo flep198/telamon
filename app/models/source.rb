@@ -8,11 +8,88 @@ class Source < ApplicationRecord
 	has_many :epoches, :through => :results
 	has_many :observations
 
+
 	#Friendly URL
 	extend FriendlyId
 	friendly_id :j2000_name, use: [:slugged, :finders]
 
- 
+
+	def observing_status
+		dates=Array.new
+		mjds=Array.new
+  	Observation.where(source_id: self.id).each do |ob|
+  		dates.push(ob.epoch.date)
+  		mjds.push(ob.mjd)
+  	end
+  	num_obs = dates.uniq.length
+  	last_obs = dates.max
+  	last_mjd = mjds.max
+  	show_source = 0
+	  overdue_factor = 0
+	  if last_mjd !=nil
+  	days_since = Date.today.mjd - last_mjd
+
+
+	  self.source_categories.each do |scat| 
+	    if ['Sample 1','Sample 2','Sample 3','Sample 4'].include? scat.name 
+	      show_source = 1 
+	      overdue_factor = days_since/21 
+	    elsif ['Neutrino Follow-Up'].include? scat.name 
+	      show_source = 2 
+	      overdue_factor = days_since/50 
+	    elsif ['Neutrino Look-Up'].include? scat.name 
+	      if num_obs<2
+	        show_source = 3 
+	        overdue_factor = days_since/180
+	      end
+	    end
+	  end
+	end
+    return [num_obs,last_obs,days_since,show_source,overdue_factor]
+
+	end
+
+  def num_obs
+  	dates=Array.new
+  	Observation.where(source_id: self.id).each do |ob|
+  		dates.push(ob.epoch.date)
+  	end
+  	return dates.uniq.length
+  end
+
+  def last_obs
+  	dates=Array.new
+  	Observation.where(source_id: self.id).each do |ob|
+  		dates.push(ob.epoch.date)
+  	end
+  	return dates.max
+  end
+
+  def days_since_last_obs
+  	return Date.today.mjd - self.last_obs.mjd
+  end
+  
+
+  def overdue_factor
+  	show_source = 0
+  	days_since=self.days_since_last_obs
+  	overdue_factor=0
+  	self.source_categories.each do |scat| 
+      if ['Sample 1','Sample 2','Sample 3','Sample 4'].include? scat.name 
+        show_source = 1 
+        overdue_factor = days_since/21 
+      elsif ['Neutrino Follow-Up'].include? scat.name 
+        show_source = 2 
+        overdue_factor = days_since/50 
+      elsif ['Neutrino Look-Up'].include? scat.name 
+      	if num_obs<2
+        	show_source = 3 
+        	overdue_factor = days_since/180
+        end
+      end
+    end
+    return [show_source,overdue_factor]
+  end 
 
   #method to calculate average flux density between frequencies low_lim and up_lim
   def aver(low_lim,up_lim,epoch_date=nil)
