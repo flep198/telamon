@@ -20,13 +20,15 @@
 <% Source.all.order("j2000_name").each do |source| %>
 
   <tbody>
+      <% output = source.observing_status %>
+      <% if output[3]==1 %>
       <tr>
         <td><%= link_to source.j2000_name , source%></td>
-        <% output = source.observing_status %>
         <td><%= output[0]%></td>
         <td><%= output[1]%></td>
         <td><%= output[4]%></td>
       </tr>
+      <% end %>
   </tbody>
 
 <% end %>
@@ -42,20 +44,28 @@
 <table class="table table-hover table-striped table-bordered">
   <thead class="table-dark">
     <tr>
-      <th>Name</th>
+      <th>J2000 Name</th>
       <th>Num Epochs Observed </th>
-      <th>Affiliation</th>
-      <th>Country</th>
+      <th>Last Observation</th>
+      <th>Overdue Factor</th>
     </tr>
   </thead>
 
+<% Source.all.order("j2000_name").each do |source| %>
+
   <tbody>
+      <% output = source.observing_status %>
+      <% if output[3]==2 %>
       <tr>
-        <td>Matthias Kadler</td>
-        <td>Institut für Theoretische Physik und Astrophysik, Universität Würzburg</td>
-        <td>🇩🇪 Germany</td>
+        <td><%= link_to source.j2000_name , source%></td>
+        <td><%= output[0]%></td>
+        <td><%= output[1]%></td>
+        <td><%= output[4]%></td>
       </tr>
+      <% end %>
   </tbody>
+
+<% end %>
 </table>
 </div>
 
@@ -68,20 +78,28 @@
 <table class="table table-hover table-striped table-bordered">
   <thead class="table-dark">
     <tr>
-      <th>Name</th>
+      <th>J2000 Name</th>
       <th>Num Epochs Observed </th>
-      <th>Affiliation</th>
-      <th>Country</th>
+      <th>Last Observation</th>
+      <th>Overdue Factor</th>
     </tr>
   </thead>
 
+<% Source.all.order("j2000_name").each do |source| %>
+
   <tbody>
+      <% output = source.observing_status %>
+      <% if output[3]==3 %>
       <tr>
-        <td>Matthias Kadler</td>
-        <td>Institut für Theoretische Physik und Astrophysik, Universität Würzburg</td>
-        <td>🇩🇪 Germany</td>
+        <td><%= link_to source.j2000_name , source%></td>
+        <td><%= output[0]%></td>
+        <td><%= output[1]%></td>
+        <td><%= output[4]%></td>
       </tr>
+      <% end %>
   </tbody>
+
+<% end %>
 </table>
 </div>
 
