@@ -69,6 +69,6 @@ class EpochesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def epoch_params
-      params.require(:epoch).permit(:date, :lst_to, :lst_from, :comment)
+      params.require(:epoch).permit(:date, :lst_to, :lst_from, :comment, :showpol)
     end
 end

@@ -392,7 +392,7 @@ freq_array_pol_frac=[]
 
 <% @source.frequencies.distinct.order(:freq_ghz).each do |freq| %>
     <% @freq_id=freq.id %>
-    <% @data = Result.where(:source_id => @source.id, :frequency_id => @freq_id).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.pol_frac,r.pol_frac_err]} %>
+    <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.pol_frac,r.pol_frac_err]} %>
     <% @data=@data.sort_by(&:first) %>
 
       //print out values for freq
@@ -450,7 +450,7 @@ freq_array_evpa=[]
 
 <% @source.frequencies.distinct.order(:freq_ghz).each do |freq| %>
     <% @freq_id=freq.id %>
-    <% @data = Result.where(:source_id => @source.id, :frequency_id => @freq_id).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.evpa,r.evpa_err]} %>
+    <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.evpa,r.evpa_err]} %>
     <% @data=@data.sort_by(&:first) %>
 
       //print out values for freq

@@ -17,6 +17,7 @@
       <th>LST to</th>
       <th>Duration [h]</th>
       <th>Comment</th>
+      <th>Pol Data</th>
       <% if user_signed_in? && current_user.admin? %>
         <th colspan="2"></th>
       <% end %>
@@ -31,6 +32,7 @@
         <td><%= epoch.lst_to %></td>
         <td><%= epoch.duration %></td>
         <td><%= epoch.comment %></td>
+        <td><% if epoch.showpol? %>yes<%end%></td>
         <% if user_signed_in? && current_user.admin? %>
           <td><%= link_to 'Edit', edit_epoch_path(epoch), class: "btn btn-outline-success btn-sm" %></td>
           <td><%= link_to 'Delete', epoch, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>

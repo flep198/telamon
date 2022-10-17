@@ -34,6 +34,38 @@
 
 </br>
 
+<h2> Extra-Neutrino Sources </h2>
+<p>(should be observed every 30 days) </p>
+
+<div class="table responsive">
+<table class="table table-hover table-striped table-bordered">
+  <thead class="table-dark">
+    <tr>
+      <th>J2000 Name</th>
+      <th>Num Epochs Observed </th>
+      <th>Last Observation</th>
+      <th>Overdue Factor</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <% Source.all.order("j2000_name").each do |source| %>
+        <% output = source.observing_status %>
+        <% if output[3]==4 %>
+        <tr>
+          <td><%= link_to source.j2000_name , source%></td>
+          <td><%= output[0]%></td>
+          <td><%= output[1]%></td>
+          <td><%= output[4].round(2)%></td>
+        </tr>
+        <% end %>
+  <% end %>
+  </tbody>
+</table>
+</div>
+
+</br>
+
 <h2> Neutrino Follow-Ups </h2>
 <p>(should be observed every 50 days) </p>
 

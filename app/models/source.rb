@@ -42,6 +42,9 @@ class Source < ApplicationRecord
 	        show_source = 3 
 	        overdue_factor = days_since/180
 	      end
+	    elsif ['Extra Neutrino-Source'].include? scat.name
+	    	show_source = 4
+	    	overdue_factor = days_since/30
 	    end
 	  end
 	end

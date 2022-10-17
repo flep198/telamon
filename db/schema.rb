@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_01_124714) do
+ActiveRecord::Schema.define(version: 2022_10_17_102604) do
 
   create_table "epoches", force: :cascade do |t|
     t.date "date"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2022_09_01_124714) do
     t.float "lst_from"
     t.float "lst_to"
     t.string "slug"
+    t.boolean "showpol", default: false
     t.index ["slug"], name: "index_epoches_on_slug", unique: true
   end
 
