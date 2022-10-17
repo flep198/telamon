@@ -201,56 +201,116 @@
 
 </div>
 
+
+<% end %>
+
 <!-- data table if user is signed in -->
 
 
 
   <br/>
-  <div class="col-md-12">
-    <div class="card">
-      <div class="card-header">
-        Data Table
-      </div>
-      <div class="card-body">
-        <% @output_name=@source.j2000_name.gsub('+','_').gsub('-','_')%>
-        <button id="export_button" class="btn btn-success" data-table='export_<%=@output_name%>'>Export to CSV File</button>
-        <p></p>
-        <table id='export_<%=@output_name%>' class="table table-hover">
-          <thead class="table-dark">
-            <tr>
-              <th>Epoch Date</th>
-              <th>Frequency [GHz]</th>
-              <th>Flux Density [Jy]</th>
-              <th>Error [Jy]</th>
-              <th>MJD</th>
-              <th>Scan Number</th>
-              <th>Elevation</th>
-              <% if user_signed_in? && current_user.admin? %>
-                <th colspan="2"></th>
-              <% end %>
-            </tr>
-          </thead>
+  <div class="col-md-12"> 
 
-          <tbody>
-            <% @source.results.order(:mjd).each do |result| %>
+
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+
+<%if user_signed_in?%>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+          Data Table
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">          
+          <% @output_name=@source.j2000_name.gsub('+','_').gsub('-','_')%>
+          <button id="export_button" class="btn btn-success" data-table='export_<%=@output_name%>'>Export to CSV File</button>
+          <p></p>
+          <table id='export_<%=@output_name%>' class="table table-hover">
+            <thead class="table-dark">
               <tr>
-                <td><%= Epoch.where(id: result.epoch_id).first.date %></td>
-                <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>
-                <td><%= result.value_jy %></td>
-                <td><%= result.error_jy %></td>
-                <td><%= result.mjd %></td>
-                <td><%= result.scan_nr %></td>
-                <td><%= result.elevation %></td>
+                <th>Epoch Date</th>
+                <th>Frequency [GHz]</th>
+                <th>Flux Density [Jy]</th>
+                <th>Error [Jy]</th>
+                <th>MJD</th>
+                <th>Scan Number</th>
+                <th>Elevation</th>
                 <% if user_signed_in? && current_user.admin? %>
-                  <td><%= link_to 'Edit', edit_result_path(result), class: "btn btn-outline-success" %></td>
-                  <td><%= link_to 'Delete', result, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+                  <th colspan="2"></th>
                 <% end %>
               </tr>
-            <% end %>
-          </tbody>
-        </table>
+            </thead>
+
+            <tbody>
+              <% @source.results.order(:mjd).reverse_order.each do |result| %>
+                <tr>
+                  <td><%= Epoch.where(id: result.epoch_id).first.date %></td>
+                  <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>
+                  <td><%= result.value_jy %></td>
+                  <td><%= result.error_jy %></td>
+                  <td><%= result.mjd %></td>
+                  <td><%= result.scan_nr %></td>
+                  <td><%= result.elevation %></td>
+                  <% if user_signed_in? && current_user.admin? %>
+                    <td><%= link_to 'Edit', edit_result_path(result), class: "btn btn-outline-success" %></td>
+                    <td><%= link_to 'Delete', result, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+                  <% end %>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+<% end %>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          Observation Log
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+        <div class="accordion-body">
+          <% @output_name=@source.j2000_name.gsub('+','_').gsub('-','_')+"_obslog"%>
+          <button id="export_button" class="btn btn-success" data-table='export_<%=@output_name%>_obslog'>Export to CSV File</button>
+          <p></p>
+          <table id='export_<%=@output_name%>_obslog' class="table table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>Epoch Date</th>
+                <th>Frequency [GHz]</th>
+                <th>MJD</th>
+                <th>Scan Number</th>
+                <th>Number of Subscans</th>
+                <th>RA</th>
+                <th>DEC</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <% @source.observations.order(:mjd).reverse_order.each do |obs| %>
+                <tr>
+                  <td><%= Epoch.where(id: obs.epoch_id).first.date %></td>
+                  <td><%= Frequency.where(id: obs.frequency_id).first.freq_ghz %></td>
+                  <td><%= obs.mjd %></td>
+                  <td><%= obs.scan_nr %></td>
+                  <td><%= obs.n_scans %></td>
+                  <td><%= obs.longitude %></td>
+                  <td><%= obs.latitude %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
 
-<% end %>
+
+
+  </div>
+
