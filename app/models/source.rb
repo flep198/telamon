@@ -46,6 +46,10 @@ class Source < ApplicationRecord
 	    	show_source = 4
 	    	overdue_factor = days_since/30
 	    end
+	    if ['Dropped'].include? scat.name
+	  		show_source=0
+	  		overdue_factor=0
+	  	end
 	  end
 	end
     return [num_obs,last_obs,days_since,show_source,overdue_factor]
