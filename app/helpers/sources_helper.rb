@@ -279,26 +279,22 @@ module SourcesHelper
 
   				#carry out the six additional fits 
   				int_min1=flux-y_error
-  				fit_min2=spectralFit([x[0],x[0]+2],[(flux-y_error),(flux-y_error)*((x[0]+2)/x[0])**0.5],[0,0]) #spectrum with a=+0.5
-  				a_min2=fit_min2[0]
-  				c_min2=fit_min2[1]
+  				a_min2=+0.5
+  				c_min2=(flux-y_error)/x[0]**a_min2
   				int_min2=c_min2/(a_min2+1)*(high_freq**(a_min2+1)-low_freq**(a_min2+1))/(high_freq-low_freq)
-  				fit_min3=spectralFit([x[0],x[0]+2],[(flux-y_error),(flux-y_error)*((x[0]+2)/x[0])**(-0.5)],[0,0]) #spectrum with a=-0.5
-  				a_min3=fit_min3[0]
-  				c_min3=fit_min3[1]
+  				a_min3=-0.5
+  				c_min3=(flux-y_error)/x[0]**a_min3
   				int_min3=c_min3/(a_min3+1)*(high_freq**(a_min3+1)-low_freq**(a_min3+1))/(high_freq-low_freq)
   				
   				int_max1=flux+y_error
-  				fit_max2=spectralFit([x[0],x[0]+2],[(flux+y_error),(flux+y_error)*((x[0]+2)/x[0])**0.5],[0,0]) #spectrum with a=+0.5
-  				a_max2=fit_max2[0]
-  				c_max2=fit_max2[1]
+  				a_max2=0.5
+  				c_max2=(flux+y_error)/x[0]**a_max2
   				int_max2=c_max2/(a_max2+1)*(high_freq**(a_max2+1)-low_freq**(a_max2+1))/(high_freq-low_freq)
-  				fit_max3=spectralFit([x[0],x[0]+2],[(flux+y_error),(flux+y_error)*((x[0]+2)/x[0])**(-0.5)],[0,0]) #spectrum with a=-0.5
-  				a_max3=fit_max3[0]
-  				c_max3=fit_max3[1]
+  				a_max3=-0.5
+  				c_max3=(flux+y_error)/x[0]**a_max3
   				int_max3=c_max3/(a_max3+1)*(high_freq**(a_max3+1)-low_freq**(a_max3+1))/(high_freq-low_freq)
 
-  				final_error=flux-int_min1#[(flux-int_min1).abs,(flux-int_min2).abs,(flux-int_min3).abs,(flux-int_max1).abs,(flux-int_max2).abs,(flux-int_max3).abs].max
+  				final_error=flux-[(flux-int_min1).abs,(flux-int_min2).abs,(flux-int_min3).abs,(flux-int_max1).abs,(flux-int_max2).abs,(flux-int_max3).abs].max
   				flux_errors.push(final_error)
 
 
