@@ -1,0 +1,8 @@
+<% if user_signed_in? %>
+<h1>Editing Circular Neutrino</h1>
+
+<%= render 'form', circular_neutrino: @circular_neutrino %>
+
+<%= link_to 'Show', @circular_neutrino %> |
+<%= link_to 'Back', circular_neutrinos_path %>
+<% end %>

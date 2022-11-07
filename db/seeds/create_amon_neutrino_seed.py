@@ -77,7 +77,7 @@ output_RFC=searchRegion(obj_IC,df_IC.index,df_IC["Error90 [arcmin]"],df_VLBI["J2
 
 original_stdout=sys.stdout
 
-with open('neutrino_seeds.rb',"w") as f:
+with open('neutrino_seeds_amon.rb',"w") as f:
     sys.stdout=f
     
 

@@ -7,6 +7,7 @@ class Source < ApplicationRecord
 	has_many :frequencies, :through => :results
 	has_many :epoches, :through => :results
 	has_many :observations
+	has_and_belongs_to_many :circular_neutrinos
 
 
 	#Friendly URL

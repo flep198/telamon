@@ -14,7 +14,11 @@
           </li>
 
           <li class="nav-item">
-            <%= link_to 'Neutrino Alerts', neutrino_alerts_path, class:"nav-link" %>
+            <%= link_to 'AMON Alerts', neutrino_alerts_path, class:"nav-link" %>
+          </li>
+
+          <li class="nav-item">
+            <%= link_to 'GCN Circulars', circular_neutrinos_path, class:"nav-link" %>
           </li>
 
         <% end %>
@@ -32,11 +36,6 @@
         </li>
 
         <% if user_signed_in? %>
-          <% if current_user.admin? %>
-          <li class="nav-item">
-            <%= link_to 'Upload Data', results_upload_path, class:"nav-link" %>
-          </li>
-          <% end %>
 
           <li class="nav-item">
             <%= link_to 'Edit Profile', edit_user_registration_path, class:"nav-link" %>

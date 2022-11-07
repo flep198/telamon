@@ -1,0 +1,75 @@
+<% if user_signed_in? %>
+
+
+<%= form_with(model: circular_neutrino) do |form| %>
+  <% if circular_neutrino.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(circular_neutrino.errors.count, "error") %> prohibited this circular_neutrino from being saved:</h2>
+
+      <ul>
+        <% circular_neutrino.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.text_field :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time %>
+    <%= form.text_field :time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ra %>
+    <%= form.text_field :ra %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dec %>
+    <%= form.text_field :dec %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ra_err_plus %>
+    <%= form.text_field :ra_err_plus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ra_err_minus %>
+    <%= form.text_field :ra_err_minus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dec_err_plus %>
+    <%= form.text_field :dec_err_plus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dec_err_minus %>
+    <%= form.text_field :dec_err_minus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url %>
+    <%= form.text_field :url %>
+  </div>
+
+
+  <%= form.label "Assoc. Sources (multiple selections possible)", class: "form-label" %>
+  <%= select_tag("source_ids[]", options_for_select(Source.all.order("j2000_name").collect { |cat| [cat.j2000_name, cat.id] }, @circular_neutrino.sources.collect { |cat| cat.id}), {:multiple=>true, :size=>4, :class=> "form-select"})%>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+<% end %>

@@ -11,6 +11,7 @@ resources :frequencies
 resources :sources, param: :slug
 resources :publications
 resources :neutrino_alerts, param: :slug
+resources :circular_neutrinos, param: :slug
 root 'home#index'
 get "/members" => "home#members", as: :members
 get "/lightcurves" => "home#lightcurves", as: :lightcurves

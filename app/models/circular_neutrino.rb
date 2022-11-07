@@ -1,8 +1,8 @@
-class NeutrinoAlert < ApplicationRecord
+class CircularNeutrino < ApplicationRecord
 	validates_presence_of :name
 
 	has_and_belongs_to_many :sources
-	has_and_belongs_to_many :circular_neutrinos
+	has_and_belongs_to_many :neutrino_alerts
 
 	#Friendly URL
 	extend FriendlyId

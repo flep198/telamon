@@ -1,22 +1,22 @@
 <% if user_signed_in? %>
 
-<% @circular_neutrino=@neutrino_alert.circular_neutrinos.first %>
-<% @amon_alert=@neutrino_alert %>
+<% @amon_alert=@circular_neutrino.neutrino_alerts.first %>
 
 <% amon_sources=[] %>
 <% gcn_sources=[] %>
 <% all_sources=[] %>
 <% all_sources_sources=[]%>
 
-<%@amon_alert.sources.each do |s| %>
-  <% amon_sources.push(s.j2000_name) %>
+
+<%@circular_neutrino.sources.each do |s| %>
+  <% gcn_sources.push(s.j2000_name) %>
   <% all_sources.push(s.j2000_name) %>
   <% all_sources_sources.push(s)%>
 <% end %>
 
-<% if @circular_neutrino != nil %>
-  <%@circular_neutrino.sources.each do |s|%>
-    <% gcn_sources.push(s.j2000_name) %>
+<% if @amon_alert != nil %>
+  <%@amon_alert.sources.each do |s|%>
+    <% amon_sources.push(s.j2000_name) %>
     <% if not all_sources.include?(s.j2000_name)%>
       <% all_sources.push(s.j2000_name) %>
       <% all_sources_sources.push(s)%>
@@ -24,16 +24,17 @@
   <% end %>
 <% end %>
 
-<%= render '/home/plot_all_lightcurves', sources_to_plot: all_sources_sources %>
+<%= render '/home/plot_all_lightcurves', sources_to_plot: @circular_neutrino.sources %>
 
 <div class="row">
   <div class="col-md-12">
    <div class="card text-white bg-secondary">
       <div class="card-header">
        <h1>
-          <%= @neutrino_alert.name %>
+          <%= @circular_neutrino.name %>
        </h1>
       </div>
+      <% if @amon_alert != nil %>
       <div class="card-body">
         <div class="row">
             <div class="col-md-2"><p><strong>Date:</strong> <%= @amon_alert.date %></p></div>
@@ -43,10 +44,12 @@
             <div class="col-md-2"><p><strong>Type:</strong> <%= @circular_neutrino.neutrino_alerts.first.noticetype %></p></div>
         </div>
       </div>
+      <% end %>
     </div>
   </div>
 </div>
 <br/>
+
 
 <div class="row">
   <div class="col-md-8">
@@ -57,6 +60,7 @@
       <div class="card-body "> 
         <div class="row">
           <div class="col"> 
+            <% if @amon_alert != nil %>
               <p><strong><%= link_to "AMON Alert", @amon_alert.url%></strong> </p>   
               <p><strong>Number of RFC sources (AMON):</strong> <%= link_to @amon_alert.numrfc, "http://astrogeo.org/cgi-bin/calib_search_form.csh?ra="+@amon_alert.ra.to_s()+"d&dec="+@amon_alert.dec.to_s()+"d&num_sou="+@amon_alert.numrfc.to_s()+"&format=html" %></p> 
               <p><strong>RA [deg]:</strong> <%= @amon_alert.ra %></p>
@@ -66,9 +70,11 @@
                   <%= link_to source.j2000_name, source%>, 
                 <%end%>
               </p>
+            <% else %>
+            <p>No AMON match found!</p>
+            <% end %>
           </div>
           <div class="col">
-            <% if @circular_neutrino != nil %>
               <p><strong><%= link_to "GCN Circular", @circular_neutrino.url%></strong> </p>
               <p><strong>Number of RFC sources (GCN):</strong> <%= link_to @circular_neutrino.num_rfc, "http://astrogeo.org/cgi-bin/calib_search_form.csh?ra="+@circular_neutrino.ra.to_s()+"d&dec="+@circular_neutrino.dec.to_s()+"d&num_sou="+@circular_neutrino.num_rfc.to_s()+"&format=html" %></p>
               <p><strong>RA [deg]:</strong> <%= @circular_neutrino.ra %> (+<%= @circular_neutrino.ra_err_plus %>/<%= @circular_neutrino.ra_err_minus%>)</p>
@@ -79,11 +85,7 @@
                   <%= link_to source.j2000_name, source%>, 
                 <%end%>
               </p>
-
-            <% else %>
-              <p> No GCN match found! </p>
-            <% end %>
-              <p><%= link_to 'Edit', edit_neutrino_alert_path(@neutrino_alert), class: "btn btn-outline-success btn-sm" %></p>
+              <p><%= link_to 'Edit', edit_circular_neutrino_path(@circular_neutrino), class: "btn btn-outline-success btn-sm" %></p>
               <% if user_signed_in? %>
                 <div class="form-check form-switch form-check-inline">
                     <input class="form-check-input" type="checkbox" id="averSwitch" name="averSwitch" value="yes">
@@ -106,10 +108,10 @@
         <div id="aladin-lite-div" style="width:300px;height:300px;"></div>
         <script type="text/javascript" src="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.js" charset="utf-8"></script>
         <script type="text/javascript">
-          <% if @neutrino_alert.ra != nil and @neutrino_alert.dec != nil %>
-            var aladin = A.aladin('#aladin-lite-div', {survey: "P/DSS2/color", fov:1/30, target: "<%=@neutrino_alert.ra + " " + @neutrino_alert.dec%>"});
+          <% if @circular_neutrino.ra != nil and @circular_neutrino.dec != nil %>
+            var aladin = A.aladin('#aladin-lite-div', {survey: "P/DSS2/color", fov:1/30, target: "<%=@circular_neutrino.ra + " " + @circular_neutrino.dec%>"});
           <% else %>
-            var aladin = A.aladin('#aladin-lite-div', {survey: "P/DSS2/color", fov:1/30, target: "<%=@neutrino_alert.name%>"});
+            var aladin = A.aladin('#aladin-lite-div', {survey: "P/DSS2/color", fov:1/30, target: "<%=@circular_neutrino.name%>"});
           <% end %>
         </script>
       </div>
@@ -119,9 +121,6 @@
 </br>
 
 <!-- div style element with lightcurves & spectra -->
-
-
-
 
 <!--Lightcurves-->
 <div class="row align-items-start">

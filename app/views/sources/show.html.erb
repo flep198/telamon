@@ -51,9 +51,15 @@
                 <p><strong>Comment:</strong> <%= @source.comment %></p>
                 
                 <% if @source.neutrino_alerts != nil %>
-                  <p><strong>Associated Neutrino Events:</strong>
+                  <p><strong>Associated AMON Neutrino Events:</strong>
                 <% end %>
                 <% @source.neutrino_alerts.each do |alert| %>
+                  <%= link_to alert.name, alert %>,
+                <% end %>
+                <% if @source.circular_neutrinos != nil %>
+                  <p><strong>Associated GCN Circular Neutrino Events:</strong>
+                <% end %>
+                <% @source.circular_neutrinos.each do |alert| %>
                   <%= link_to alert.name, alert %>,
                 <% end %>
                 </p>

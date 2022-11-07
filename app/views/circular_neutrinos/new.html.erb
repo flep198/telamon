@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+<h1>New Neutrino Alert</h1>
+
+<%= render 'form', circular_neutrino: @circular_neutrino %>
+
+<%= link_to 'Back', circular_neutrinos_path %>
+<% end %>

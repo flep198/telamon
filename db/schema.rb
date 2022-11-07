@@ -10,7 +10,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_17_102604) do
+ActiveRecord::Schema.define(version: 2022_11_07_132446) do
+
+  create_table "circular_neutrinos", force: :cascade do |t|
+    t.string "name"
+    t.string "date"
+    t.string "time"
+    t.string "ra"
+    t.string "dec"
+    t.float "ra_err_plus"
+    t.float "ra_err_minus"
+    t.float "dec_err_plus"
+    t.float "dec_err_minus"
+    t.float "signalness"
+    t.float "energy"
+    t.string "url"
+    t.integer "num_rfc"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "slug"
+    t.index ["slug"], name: "index_circular_neutrinos_on_slug", unique: true
+  end
+
+  create_table "circular_neutrinos_neutrino_alerts", id: false, force: :cascade do |t|
+    t.integer "neutrino_alert_id", null: false
+    t.integer "circular_neutrino_id", null: false
+    t.index ["circular_neutrino_id"], name: "index_circular_neutrinos_neutrino_alerts_on_circular_neutrino_id"
+    t.index ["neutrino_alert_id"], name: "index_circular_neutrinos_neutrino_alerts_on_neutrino_alert_id"
+  end
+
+  create_table "circular_neutrinos_sources", id: false, force: :cascade do |t|
+    t.integer "source_id", null: false
+    t.integer "circular_neutrino_id", null: false
+    t.index ["circular_neutrino_id"], name: "index_circular_neutrinos_sources_on_circular_neutrino_id"
+    t.index ["source_id"], name: "index_circular_neutrinos_sources_on_source_id"
+  end
 
   create_table "epoches", force: :cascade do |t|
     t.date "date"
