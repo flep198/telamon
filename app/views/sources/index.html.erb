@@ -238,6 +238,7 @@
       <th>NED</th>
       <!--<th>SIMBAD</th>-->
       <th>TeVCat</th>
+      <th>ATCA</th>
       <% if user_signed_in? && current_user.admin? %>
         <th colspan="2"></th>
       <%end%>
@@ -281,6 +282,7 @@
             <!--<td><%= link_to(image_tag("simbad",height: "30"), "http://simbad.harvard.edu/simbad/sim-basic?submit=SIMBAD+search&Ident="+source.j2000_name.gsub("+","%2B"),target: "_blank", rel:"noopener noreferrer")%></td>-->
           <% end %>
           <td><%=if source.tevcat_url != "http://tevcat2.uchicago.edu/" then link_to(image_tag("tevcat",height: "25"), source.tevcat_url,target: "_blank", rel:"noopener noreferrer") end%></td>
+          <td><%=if source.atca_url != "https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database.html" then link_to("ATCA", source.atca_url,target: "_blank", rel:"noopener noreferrer") end%></td>
           <% if user_signed_in? && current_user.admin? %>
             <td><%= link_to 'Edit', edit_source_path(source), class: "btn btn-outline-success btn-sm" %></td>
             <td><%= link_to 'Delete', source, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
