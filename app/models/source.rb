@@ -23,6 +23,8 @@ class Source < ApplicationRecord
   		mjds.push(ob.mjd)
   	end
   	num_obs = dates.uniq.length
+  	first_obs = dates.min
+  	first_mjd = mjds.min
   	last_obs = dates.max
   	last_mjd = mjds.max
   	show_source = 0
@@ -39,7 +41,7 @@ class Source < ApplicationRecord
 	      show_source = 2 
 	      overdue_factor = days_since/50 
 	    elsif ['Neutrino Look-Up'].include? scat.name 
-	      if num_obs<2
+	      if num_obs<2 || (last_mjd-first_mjd)<180
 	        show_source = 3 
 	        overdue_factor = days_since/180
 	      end

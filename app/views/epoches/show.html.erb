@@ -1,3 +1,5 @@
+<% if user_signed_in? %>
+
 <h1>
   Epoch <%= @epoch.date %>
 </h1>
@@ -5,7 +7,6 @@
 <p>
   <strong>Comment:</strong>
   <%= @epoch.comment %>
-  <%= @epoch.showpol %>
 </p>
 
 
@@ -35,44 +36,108 @@
 		<%end%>
 	</div>
 </div>
+  
 
-<% if user_signed_in? %>
+  <div class="col-md-12"> 
 
-  <button id="export_button" class="btn btn-success" data-table='export_<%=@epoch.date.to_s.gsub!('-','_')%>'>Export to CSV File</button>
-  <p></p>
-  <table class="table table-hover" id="export_<%=@epoch.date.to_s.gsub!('-','_')%>">
-      <thead class="table-dark">
-          <tr>
-    	      <th>Source Name</th>
-            <th>Frequency [GHz]</th>
-            <th>Flux Density [Jy]</th>
-            <th>Error [Jy]</th>
-            <th>MJD</th>
-            <th>Scan Number</th>
-            <th>Elevation</th>
-            <% if user_signed_in? %>
-              <th colspan="2"></th>
-            <% end %>
-          </tr>
-      </thead>
 
-      <tbody>
-          <% @epoch.results.order(:mjd).each do |result| %>
-            <tr>
-              <td><%= Source.where(id: result.source_id).first.j2000_name %></td>
-              <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>
-              <td><%= result.value_jy %></td>
-              <td><%= result.error_jy %></td>
-              <td><%= result.mjd %></td>
-              <td><%= result.scan_nr %></td>
-              <td><%= result.elevation %></td>
-              <% if user_signed_in? %>
-                <td><%= link_to 'Edit', edit_result_path(result), class: "btn btn-outline-success" %></td>
-                <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+          Data Table
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">          
+          <% @output_name=@epoch.date.to_s%>
+          <button id="export_button" class="btn btn-success" data-table='export_<%=@output_name%>'>Export to CSV File</button>
+          <p></p>
+          <table id='export_<%=@output_name%>' class="table table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>Epoch Date</th>
+                <th>Frequency [GHz]</th>
+                <th>Flux Density [Jy]</th>
+                <th>Error [Jy]</th>
+                <th>MJD</th>
+                <th>Scan Number</th>
+                <th>Elevation</th>
+                <% if user_signed_in? && current_user.admin? %>
+                  <th colspan="2"></th>
+                <% end %>
+              </tr>
+            </thead>
+
+            <tbody>
+              <% @epoch.results.order(:mjd).reverse_order.each do |result| %>
+                <tr>
+                  <td><%= Epoch.where(id: result.epoch_id).first.date %></td>
+                  <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>
+                  <td><%= result.value_jy %></td>
+                  <td><%= result.error_jy %></td>
+                  <td><%= result.mjd %></td>
+                  <td><%= result.scan_nr %></td>
+                  <td><%= result.elevation %></td>
+                  <% if user_signed_in? && current_user.admin? %>
+                    <td><%= link_to 'Edit', edit_result_path(result), class: "btn btn-outline-success" %></td>
+                    <td><%= link_to 'Delete', result, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+                  <% end %>
+                </tr>
               <% end %>
-            </tr>
-          <% end %>
-      </tbody>
-  </table>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
 
-<%end%>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          Observation Log
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+        <div class="accordion-body">
+          <% @output_name=@epoch.date.to_s+"_obslog"%>
+          <button id="export_button2" class="btn btn-success" data-table='export_<%=@output_name%>_obslog'>Export to CSV File</button>
+          <p></p>
+          <table id='export_<%=@output_name%>_obslog' class="table table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>Epoch Date</th>
+                <th>Frequency [GHz]</th>
+                <th>MJD</th>
+                <th>Scan Number</th>
+                <th>Number of Subscans</th>
+                <th>RA</th>
+                <th>DEC</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <% @epoch.observations.order(:mjd).reverse_order.each do |obs| %>
+                <tr>
+                  <td><%= Epoch.where(id: obs.epoch_id).first.date %></td>
+                  <td><%= Frequency.where(id: obs.frequency_id).first.freq_ghz %></td>
+                  <td><%= obs.mjd %></td>
+                  <td><%= obs.scan_nr %></td>
+                  <td><%= obs.n_scans %></td>
+                  <td><%= obs.longitude %></td>
+                  <td><%= obs.latitude %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+  <% end %>

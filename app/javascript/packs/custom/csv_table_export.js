@@ -34,6 +34,11 @@ window.onload=function(){
         document.getElementById("export_button").addEventListener("click", function(){download_table_as_csv(table_name)});
     }
 
+    if(!!document.getElementById("export_button2")){
+        var table_name = document.getElementById("export_button2").dataset.table;
+        document.getElementById("export_button2").addEventListener("click", function(){download_table_as_csv(table_name)});
+    }
+
 
 
     //make tables sortable
