@@ -1,4 +1,6 @@
 IC Name,GCN_nr,Date,Time (UTC),RA,Ra_err_plus,Ra_err_minus,Dec,Dec_err_plus,Dec_err_minus,GCN_link
+221216A,33065,22-12-16,06:00:14.01,6.86,1.08,-2.06,10.43,1.54,-1.07,"=HYPERLINK(""https://gcn.gsfc.nasa.gov/gcn3/33065.gcn3"",""GCN link"")"
+221210A,33040,22-12-10,08:35:11.23,332.58,9.84,-11.77,22.75,8.15,-4.13,"=HYPERLINK(""https://gcn.gsfc.nasa.gov/gcn3/33040.gcn3"",""GCN link"")"
 221124A,32980,22-11-24,15:46:02.26,298.92,2.65,-2.92,3.73,1.04,-1.23,"=HYPERLINK(""https://gcn.gsfc.nasa.gov/gcn3/32980.gcn3"",""GCN link"")"
 221104A,32909,2022-11-04,06:10:08.18,209.62,0.74,-0.92,15.09,0.79,-0.8,GCN link
 220928A,32599,2022-09-28,12:32:38.30,207.42,1.41,-2.52,10.43,0.98,-0.98,GCN link
