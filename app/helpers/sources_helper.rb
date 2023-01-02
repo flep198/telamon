@@ -76,7 +76,7 @@ module SourcesHelper
     def spectralFit x,y,yerr
 
         #find start values with simple line fit
-        if(x.size >2) #CHECK PROBLEM FOR TWO VALUES WITH SAME X!
+        if(x.size >2)
             #do linear fit
             x_fit=x.map{|r| Math.log(r)}
             y_fit=y.map{|r| Math.log(r)}
@@ -86,8 +86,13 @@ module SourcesHelper
             
             #check if fit worked, otherwise use the backup values (flat line)
             if !lineFit.coefficients[1].nil? and !lineFit.coefficients[0].nil?
-                a_0 = lineFit.coefficients[1]
-                c_0 = Math.exp(lineFit.coefficients[0])
+                if lineFit.coefficients[1].abs<=0.5
+                    a_0 = lineFit.coefficients[1]
+                    c_0 = Math.exp(lineFit.coefficients[0])
+                else 
+                    a_0 = 0
+                    c_0 = y.sum(0.0)/y.size
+                end
             else
                 a_0=0
                 c_0=y.sum(0.0)/y.size
@@ -200,7 +205,7 @@ module SourcesHelper
 
 
     		#check if lm step was succesful
-    		if e_lm<e
+    		if e_lm<e and a_est.abs>0.5
     			lamda=lamda/10
     			a_est=a_lm
     			c_est=c_lm
