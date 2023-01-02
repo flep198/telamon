@@ -1,3 +1,9 @@
+@IC221229A=CircularNeutrino.where(name: 'IC221229A').first_or_create
+@IC221229A.update(date: '2022-12-29', time: '07:25:27.88', ra: '31.9', dec: '4.18', ra_err_plus: '1.68', ra_err_minus: '-1.55', dec_err_plus: '1.39', dec_err_minus: '-0.84', url: 'https://gcn.gsfc.nasa.gov/gcn3/33122.gcn3', num_rfc: 3, sources: Source.where(j2000_name: ['0201+0343','0210+0419','0213+0354']), neutrino_alerts: NeutrinoAlert.where(name: 'IC221229A'))
+@IC221224A=CircularNeutrino.where(name: 'IC221224A').first_or_create
+@IC221224A.update(date: '2022-12-24', time: '00:55:09.3', ra: '335.74', dec: '1.42', ra_err_plus: '1.01', ra_err_minus: '-0.72', dec_err_plus: '0.41', dec_err_minus: '-0.3', url: 'https://gcn.gsfc.nasa.gov/gcn3/33097.gcn3', num_rfc: 0, sources: Source.where(j2000_name: []), neutrino_alerts: NeutrinoAlert.where(name: 'IC221224A'))
+@IC221223A=CircularNeutrino.where(name: 'IC221223A').first_or_create
+@IC221223A.update(date: '2022-12-23', time: '07:43:00.52', ra: '350.54', dec: '34.71', ra_err_plus: '0.67', ra_err_minus: '-0.67', dec_err_plus: '0.67', dec_err_minus: '-0.67', url: 'https://gcn.gsfc.nasa.gov/gcn3/33094.gcn3', num_rfc: 1, sources: Source.where(j2000_name: ['2322+3436']), neutrino_alerts: NeutrinoAlert.where(name: 'IC221223A'))
 @IC221216A=CircularNeutrino.where(name: 'IC221216A').first_or_create
 @IC221216A.update(date: '22-12-16', time: '06:00:14.01', ra: '6.86', dec: '10.43', ra_err_plus: '1.08', ra_err_minus: '-2.06', dec_err_plus: '1.54', dec_err_minus: '-1.07', url: 'https://gcn.gsfc.nasa.gov/gcn3/33065.gcn3', num_rfc: 4, sources: Source.where(j2000_name: ['0019+1155','0020+1026','0023+1136','0027+0929']), neutrino_alerts: NeutrinoAlert.where(name: 'IC221216A'))
 @IC221210A=CircularNeutrino.where(name: 'IC221210A').first_or_create

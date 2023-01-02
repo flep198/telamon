@@ -1,3 +1,9 @@
+@IC221229A=NeutrinoAlert.where(name: 'IC221229A').first_or_create
+@IC221229A.update(date: '22/12/29', time: '07:25:27.88', ra: '31.8999', dec: '4.1799', radius90: 82.2, radius50: 46.2, energy: 205.31, signalness: 0.54438, noticetype: 'GOLD', url: 'https://gcn.gsfc.nasa.gov/notices_amon_g_b/137487_35344578.amon', numrfc: 6, sources: Source.where(j2000_name: ['0201+0343','0203+0235','0207+0552','0210+0241','0210+0419','0213+0354']))
+@IC221224A=NeutrinoAlert.where(name: 'IC221224A').first_or_create
+@IC221224A.update(date: '22/12/24', time: '00:55:09.29', ra: '335.74', dec: '1.4199', radius90: 32.81, radius50: 17.6, energy: 110.61, signalness: 0.27823, noticetype: 'BRONZE', url: 'https://gcn.gsfc.nasa.gov/notices_amon_g_b/137469_77414913.amon', numrfc: 3, sources: Source.where(j2000_name: ['2220+0204','2223+0102','2223+0217']))
+@IC221223A=NeutrinoAlert.where(name: 'IC221223A').first_or_create
+@IC221223A.update(date: '22/12/23', time: '07:43:00.52', ra: '350.5486', dec: '34.711', radius90: 39.58, radius50: 15.41, energy: 352.7, signalness: 0.79488, noticetype: 'GOLD', url: 'https://gcn.gsfc.nasa.gov/notices_amon_g_b/137467_64735045.amon', numrfc: 3, sources: Source.where(j2000_name: ['2317+3423','2322+3436','2324+3444']))
 @IC221216A=NeutrinoAlert.where(name: 'IC221216A').first_or_create
 @IC221216A.update(date: '22/12/16', time: '06:00:14.01', ra: '6.86', dec: '10.4299', radius90: 86.39, radius50: 52.19, energy: 155.63, signalness: 0.41457, noticetype: 'BRONZE', url: 'https://gcn.gsfc.nasa.gov/notices_amon_g_b/137390_43495485.amon', numrfc: 5, sources: Source.where(j2000_name: ['0020+1026','0023+1136','0025+0837','0027+0929','0034+1027']))
 @IC221210A=NeutrinoAlert.where(name: 'IC221210A').first_or_create
