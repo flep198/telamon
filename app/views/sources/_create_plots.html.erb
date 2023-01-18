@@ -473,14 +473,16 @@ freq_array_evpa=[]
     polar: {
 
     radialaxis: {
-
       visible: true,
+      autorange: true,
+      title.text: "MJD"
+    },
 
-      <% mjds = Result.joins(:epoch).where(:source_id => @source.id,:epoch => {:showpol => true}).where.not(pol_frac: [nil]).map{|r| r.mjd}%>
+    angularaxis: {
+      visible: true,
+      title.text: "EVPAx2"
 
-      range: [<%=mjds.min%>,<%=mjds.max%>]
-
-    }
+    },
 
   },
 
