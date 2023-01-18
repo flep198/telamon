@@ -478,7 +478,7 @@ freq_array_evpa=[]
 
       <% mjds = Result.joins(:epoch).where(:source_id => @source.id,:epoch => {:showpol => true}).where.not(pol_frac: [nil]).map{r.mjd}%>
 
-      range: [mjds.min,mjds.max]
+      range: [<%=mjds.min%>,<%=mjds.max%>]
 
     }
 
