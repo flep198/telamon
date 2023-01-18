@@ -472,18 +472,25 @@ freq_array_evpa=[]
     title: "<%=@source.j2000_name%>",
     polar: {
 
-      radialaxis: {
-        visible: true,
-        autorange: true,
-        title: {text: "MJD"}
-      },
+    radialaxis: {
 
-      angularaxis: {
+      visible: true,
+
+      <% mjds = Result.joins(:epoch).where(:source_id => @source.id,:epoch => {:showpol => true}).where.not(pol_frac: [nil]).map{|r| r.mjd}%>
+
+      range: [<%=mjds.min%>,<%=mjds.max%>],
+
+      title: {text: "MJD"}
+
+    }
+
+    angularaxis: {
         visible: true,
         title: {text:"EVPAx2"}
       },
-
     },
+
+  },
 
   };
 
