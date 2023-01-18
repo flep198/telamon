@@ -455,14 +455,9 @@ freq_array_evpa=[]
 
       //print out values for freq
     var evpa_data<%=@freq_id%> = {
-      x: <%= @data.map {|r| r[0]}%>,
-      y: <%= @data.map {|r| r[1]}%>,
-      error_y: {
-        type: "data",
-        array: <%= @data.map {|r| r[2]}%>,
-        visible: true
-      },
-      type: "scatter",
+      r: <%= @data.map {|r| r[0]}%>,
+      t: <%= @data.map {|r| r[1]}%>,
+      type: "scatterpolar",
       <% if !user_signed_in?%>
       hoverinfo: 'none',
       <%end%>
@@ -474,29 +469,9 @@ freq_array_evpa=[]
   <% end %>
 
   var layout_evpa = {
-    title: "<%=@source.j2000_name%>",
+    showlegend: true,
+    title: "<%=@source.j2000_name%>"
 
-    xaxis: {
-      title: {
-        text: 'MJD',
-        font: {
-          family: 'Courier New, monospace',
-          size: 18,
-          color: '#7f7f7f'
-        }
-      },
-    },
-
-    yaxis: {
-      title: {
-        text: 'Angle [deg]',
-        font: {
-          family: 'Courier New, monospace',
-          size: 18,
-          color: '#7f7f7f'
-        }
-      },
-    },
   };
 
   Plotly.newPlot("evpa_plot",freq_array_evpa,layout_evpa);
