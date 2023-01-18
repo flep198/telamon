@@ -478,17 +478,9 @@ freq_array_evpa=[]
 
       <% mjds = Result.joins(:epoch).where(:source_id => @source.id,:epoch => {:showpol => true}).where.not(pol_frac: [nil]).map{|r| r.mjd}%>
 
-      range: [<%=mjds.min%>,<%=mjds.max%>],
-
-      title: {text: "MJD"}
+      range: [<%=mjds.min%>,<%=mjds.max%>]
 
     }
-
-    angularaxis: {
-        visible: true,
-        title: {text:"EVPAx2"}
-      },
-    },
 
   },
 
