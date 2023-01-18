@@ -452,11 +452,11 @@ freq_array_evpa=[]
     <% @freq_id=freq.id %>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.evpa,r.evpa_err]} %>
     <% @data=@data.sort_by(&:first) %>
-
+    <%= @data %>
       //print out values for freq
     var evpa_data<%=@freq_id%> = {
       r: <%= @data.map {|r| r[0]}%>,
-      t: <%= @data.map {|r| r[1]/180*3.1415}%>,
+      t: <%= @data.map {|r| r[1]/180*3.1415*2}%>,
       type: "scatterpolar",
       <% if !user_signed_in?%>
       hoverinfo: 'none',
