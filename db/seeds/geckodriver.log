@@ -1,0 +1,98 @@
+1673960131642	geckodriver	INFO	Listening on 127.0.0.1:38099
+1673960131645	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "56037" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilerNwhGC"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1673960131902	Marionette	INFO	Marionette enabled
+1673960131906	Marionette	INFO	Listening on port 46817
+Read port: 46817
+WebDriver BiDi listening on ws://127.0.0.1:56037
+1673960132030	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilerNwhGC/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56037/devtools/browser/1a68cd40-098c-4ac1-b70e-d513279b3cd4
+1673960242907	geckodriver	INFO	Listening on 127.0.0.1:51415
+1673960242910	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "56083" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilexedIdT"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1673960243164	Marionette	INFO	Marionette enabled
+1673960243168	Marionette	INFO	Listening on port 36005
+WebDriver BiDi listening on ws://127.0.0.1:56083
+Read port: 36005
+1673960243265	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexedIdT/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56083/devtools/browser/fbb57816-028f-48f2-bf81-ccefee38cdea
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1673960400531	Marionette	INFO	Stopped listening on port 46817
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "Sqlite.sys.mjs: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+1673961194157	geckodriver	INFO	Listening on 127.0.0.1:34247
+1673961194675	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "50007" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilePh54kg"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1673961194914	Marionette	INFO	Marionette enabled
+1673961194918	Marionette	INFO	Listening on port 42461
+WebDriver BiDi listening on ws://127.0.0.1:50007
+Read port: 42461
+1673961195095	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilePh54kg/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50007/devtools/browser/0f39f617-aca1-413a-a63a-37b954ba6ae0
+1673962092445	geckodriver	INFO	Listening on 127.0.0.1:57805
+1673962092448	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "40719" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileOpCdrd"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1673962092704	Marionette	INFO	Marionette enabled
+1673962092709	Marionette	INFO	Listening on port 35773
+Read port: 35773
+WebDriver BiDi listening on ws://127.0.0.1:40719
+1673962092787	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOpCdrd/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:40719/devtools/browser/875a1c07-0160-4149-93c9-97df896adbe9
+1673962210425	geckodriver	INFO	Listening on 127.0.0.1:48667
+1673962210427	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "45787" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile9OHs6o"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1673962210665	Marionette	INFO	Marionette enabled
+1673962210669	Marionette	INFO	Listening on port 39269
+WebDriver BiDi listening on ws://127.0.0.1:45787
+Read port: 39269
+1673962210851	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9OHs6o/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:45787/devtools/browser/7e2a56f3-91ec-42f2-97c2-357d3a980488
+1673965420401	geckodriver	INFO	Listening on 127.0.0.1:57345
+1673965420403	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "45131" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileYRQBaH"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1673965420636	Marionette	INFO	Marionette enabled
+1673965420639	Marionette	INFO	Listening on port 34085
+WebDriver BiDi listening on ws://127.0.0.1:45131
+Read port: 34085
+1673965420819	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileYRQBaH/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:45131/devtools/browser/06cf270e-4982-4510-96e1-7554de81a255
+1673968515623	Marionette	INFO	Stopped listening on port 34085
+1673968515623	Marionette	INFO	Stopped listening on port 35773
+1673968515627	Marionette	INFO	Stopped listening on port 39269
+1673968515632	Marionette	INFO	Stopped listening on port 42461
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "Sqlite.sys.mjs: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1674139921977	geckodriver	INFO	Listening on 127.0.0.1:53427
+1674139922494	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "43961" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDVj7He"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1674139922738	Marionette	INFO	Marionette enabled
+1674139922742	Marionette	INFO	Listening on port 45621
+WebDriver BiDi listening on ws://127.0.0.1:43961
+Read port: 45621
+1674139922933	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDVj7He/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:43961/devtools/browser/fb42f0d1-54f8-432f-8157-89cca1a1b4ee
+1674140749809	Marionette	INFO	Stopped listening on port 45621
+Exiting due to channel error.
+Exiting due to channel error.

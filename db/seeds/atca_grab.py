@@ -6,7 +6,7 @@ from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 
-source_list=["0215+015","1830-210"]
+source_list=["0215+015","0215+014"]
 
 #create empty dataframe to store data
 df=pd.DataFrame(columns = ['Source','Date','MJD','Fit Coeff.','Log Fit','Defect',
