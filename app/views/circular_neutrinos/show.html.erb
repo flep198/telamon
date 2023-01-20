@@ -37,11 +37,13 @@
       <% if @amon_alert != nil %>
       <div class="card-body">
         <div class="row">
+          <% if @circular_neutrino != nil %>
             <div class="col-md-2"><p><strong>Date:</strong> <%= @amon_alert.date %></p></div>
             <div class="col-md-2"><p><strong>Time:</strong> <%= @amon_alert.time %></p></div>        
             <div class="col-md-2"><p><strong>Signalness:</strong> <%= @circular_neutrino.neutrino_alerts.first.signalness %></p></div>
             <div class="col-md-2"><p><strong>Energy:</strong> <%= @circular_neutrino.neutrino_alerts.first.energy %></p></div>
             <div class="col-md-2"><p><strong>Type:</strong> <%= @circular_neutrino.neutrino_alerts.first.noticetype %></p></div>
+          <% end %>
         </div>
       </div>
       <% end %>
