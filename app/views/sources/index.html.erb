@@ -229,6 +229,9 @@
       <th>Alt Name</th>
       <th>Class</th>
       <th>Category</th>
+      <% if user_signed_in? %>
+      <th>Neutrino Events</th>
+      <%end%>
       <th>Ø 20mm [mJy]</th>
       <th>Ø 14mm [mJy]</th>
       <th>Ø 7mm [mJy]</th>
@@ -268,6 +271,13 @@
               <%=cat.name%>
             <%end%>
           </td>
+          <%if user_signed_in?%>
+          <td>
+            <% source.circular_neutrinos.each do |alert| %>
+              <p><%= link_to alert.name, alert %></p>
+            <% end %>
+          </td>
+          <%end%>
           <td><%= source.aver(14,17) %></td>
           <td><%= source.aver(19,25) %></td>
           <td><%= source.aver(36,44) %></td>
