@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_07_132446) do
+ActiveRecord::Schema.define(version: 2023_01_25_133147) do
 
   create_table "circular_neutrinos", force: :cascade do |t|
     t.string "name"
@@ -55,6 +55,14 @@ ActiveRecord::Schema.define(version: 2022_11_07_132446) do
     t.float "lst_to"
     t.string "slug"
     t.boolean "showpol", default: false
+    t.boolean "showpol_6_3ghz", default: true
+    t.boolean "showpol_8_3ghz", default: true
+    t.boolean "showpol_14_0ghz", default: true
+    t.boolean "showpol_17_0ghz", default: true
+    t.boolean "showpol_19_0ghz", default: false
+    t.boolean "showpol_21_4ghz", default: false
+    t.boolean "showpol_36_0ghz", default: true
+    t.boolean "showpol_39_0ghz", default: true
     t.index ["slug"], name: "index_epoches_on_slug", unique: true
   end
 
