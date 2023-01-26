@@ -394,26 +394,19 @@ freq_array_pol_frac=[]
     <% @freq_id=freq.id %>
     <% if freq.freq_ghz == 6.3 %>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_6_3ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.pol_frac,r.pol_frac_err]} %>
-    <% end %>
-    <% if freq.freq_ghz == 8.3 %>
+    <% elsif freq.freq_ghz == 8.3 %>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_8_3ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.pol_frac,r.pol_frac_err]} %>
-    <% end %>
-    <% if freq.freq_ghz == 14.0 %>
+    <% elsif freq.freq_ghz == 14.0 %>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_14_0ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.pol_frac,r.pol_frac_err]} %>
-    <% end %>
-    <% if freq.freq_ghz == 17.0 %>
+    <% elsif freq.freq_ghz == 17.0 %>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_17_0ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.pol_frac,r.pol_frac_err]} %>
-    <% end %>
-    <% if freq.freq_ghz == 19.0 %>
+    <% elsif freq.freq_ghz == 19.0 %>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_19_0ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.pol_frac,r.pol_frac_err]} %>
-    <% end %>
-    <% if freq.freq_ghz == 21.4 %>
+    <% elsif freq.freq_ghz == 21.4 %>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_21_4ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.pol_frac,r.pol_frac_err]} %>
-    <% end %>
-    <% if freq.freq_ghz == 36.0 %>
+    <% elsif freq.freq_ghz == 36.0 %>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_36_0ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.pol_frac,r.pol_frac_err]} %>
-    <% end %>
-    <% if freq.freq_ghz == 39.0 %>
+    <% elsif freq.freq_ghz == 39.0 %>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_39_0ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.pol_frac,r.pol_frac_err]} %>
     <% else %>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.pol_frac,r.pol_frac_err]} %>
@@ -477,26 +470,19 @@ freq_array_evpa=[]
     <% @freq_id=freq.id %>
     <% if freq.freq_ghz== 6.3%>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_6_3ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.evpa,r.evpa_err]} %>
-    <% end %>
-    <% if freq.freq_ghz== 8.3%>
+    <% elsif freq.freq_ghz== 8.3%>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_8_3ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.evpa,r.evpa_err]} %>
-    <% end %>
-    <% if freq.freq_ghz== 14.0%>
+    <% elsif freq.freq_ghz== 14.0%>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_14_0ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.evpa,r.evpa_err]} %>
-    <% end %>
-    <% if freq.freq_ghz== 17.0%>
+    <% elsif freq.freq_ghz== 17.0%>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_17_0ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.evpa,r.evpa_err]} %>
-    <% end %>
-    <% if freq.freq_ghz== 19.0%>
+    <% elsif freq.freq_ghz== 19.0%>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_19_0ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.evpa,r.evpa_err]} %>
-    <% end %>
-    <% if freq.freq_ghz== 21.4%>
+    <% elsif freq.freq_ghz== 21.4%>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_21_4ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.evpa,r.evpa_err]} %>
-    <% end %>
-    <% if freq.freq_ghz== 36.0%>
+    <% elsif freq.freq_ghz== 36.0%>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_36_0ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.evpa,r.evpa_err]} %>
-    <% end %>
-    <% if freq.freq_ghz== 39.0%>
+    <% elsif freq.freq_ghz== 39.0%>
     <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id, :epoch => {:showpol_39_0ghz => true}).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.evpa,r.evpa_err]} %>
     <% else %>
       <% @data = Result.joins(:epoch).where(:source_id => @source.id, :frequency_id => @freq_id).where.not(pol_frac: [nil]).map { |r| [r.mjd,r.evpa,r.evpa_err]} %>
