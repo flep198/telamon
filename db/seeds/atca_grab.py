@@ -6,7 +6,7 @@ from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 
-source_list=["0215+015","0215+014"]
+source_list=["1424-418","1749-101"]
 
 #create empty dataframe to store data
 df=pd.DataFrame(columns = ['Source','Date','MJD','Fit Coeff.','Log Fit','Defect',
@@ -35,38 +35,39 @@ for source in tqdm(source_list):
     for table_id in table_ids:
     
         table=soup.find("tbody", {"id": table_id})
-
-        trs=table.find_all("tr")
-
-        for tr in trs:
-
-            tds=tr.find_all("td")
         
-            goodRow=False
-            if len(tds)==8:
-                date=tds[0].text
-                fit_coeff=tds[1].text
-                log_fit=tds[2].text
-                defect=tds[3].text
-                freq=tds[4].text
-                flux_density=tds[5].text
-                spec_ind=tds[6].text
-                closure_phase=tds[7].text
-                goodRow=True
-            elif len(tds)==4:
-                freq=tds[0].text
-                flux_density=tds[1].text
-                spec_ind=tds[2].text
-                closure_phase=tds[3].text
-                goodRow=True
+        if table:
+            trs=table.find_all("tr")
+
+            for tr in trs:
+
+                tds=tr.find_all("td")
         
-            if goodRow:
-                mjd=Time(datetime.strptime(date,"%Y-%b-%d"),format="datetime").mjd
+                goodRow=False
+                if len(tds)==8:
+                    date=tds[0].text
+                    fit_coeff=tds[1].text
+                    log_fit=tds[2].text
+                    defect=tds[3].text
+                    freq=tds[4].text
+                    flux_density=tds[5].text
+                    spec_ind=tds[6].text
+                    closure_phase=tds[7].text
+                    goodRow=True
+                elif len(tds)==4:
+                    freq=tds[0].text
+                    flux_density=tds[1].text
+                    spec_ind=tds[2].text
+                    closure_phase=tds[3].text
+                    goodRow=True
             
-                new_row=pd.DataFrame({'Source': source,'Date': date, 'MJD': mjd, 'Fit Coeff.': fit_coeff, 'Log Fit': log_fit, 'Defect': defect,
-                    'Frequency [GHz]': float(freq)/1000, 'Flux Density [Jy]': float(flux_density.split("±")[0]),
-                    'Flux Density Error [Jy]': float(flux_density.split("±")[1]), 'Spectral Index': spec_ind, 'Closure Phase': closure_phase}, index=[0])
-                df=pd.concat([new_row,df.loc[:]]).reset_index(drop=True)
+                if goodRow:
+                    mjd=Time(datetime.strptime(date,"%Y-%b-%d"),format="datetime").mjd
+                    
+                    new_row=pd.DataFrame({'Source': source,'Date': date, 'MJD': mjd, 'Fit Coeff.': fit_coeff, 'Log Fit': log_fit, 'Defect': defect,
+                        'Frequency [GHz]': float(freq)/1000, 'Flux Density [Jy]': float(flux_density.split("±")[0]),
+                        'Flux Density Error [Jy]': float(flux_density.split("±")[1]), 'Spectral Index': spec_ind, 'Closure Phase': closure_phase}, index=[0])
+                    df=pd.concat([new_row,df.loc[:]]).reset_index(drop=True)
             
-df.to_csv("Test.csv",index=False)
+df.to_csv("ATCA_neutrino_Sources.csv",index=False)
 
