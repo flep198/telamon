@@ -72,8 +72,13 @@ module SourcesHelper
 
     require "matrix"
 
-    #performs Levenberg Marquart Fit for f(x)=C*x^alpha STILL WITHOUT bounds on alpha
+    #performs Levenberg Marquart Fit for f(x)=C*x^alpha
     def spectralFit x,y,yerr
+
+        #reject negative flux values        
+        reject_index = y.each_index.select{|i| y[i] <=0} 
+        y=y.reject.each_with_index{|i, ix| reject_index.include? ix }
+        x=x.reject.each_with_index{|i, ix| reject_index.include? ix }
 
         #find start values with simple line fit
         if(x.size >2)

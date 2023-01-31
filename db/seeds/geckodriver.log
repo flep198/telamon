@@ -150,3 +150,6 @@ Read port: 42385
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZOer1B/search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:51105/devtools/browser/e9a9cf54-11df-42ce-b163-047a7402c7ba
+1675126517724	Marionette	INFO	Stopped listening on port 38517
+1675126517724	Marionette	INFO	Stopped listening on port 42385
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
