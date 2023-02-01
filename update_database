@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Updating Database"
+rails db:seed
+rails db:seed:seeds1510
+rails db:seed:neutrino_seeds_amon
+rails db:seed:neutrino_seeds_gcn
