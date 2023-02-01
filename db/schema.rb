@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_25_133147) do
+ActiveRecord::Schema.define(version: 2023_02_01_170913) do
+
+  create_table "atca_results", force: :cascade do |t|
+    t.float "value_jy"
+    t.float "error_jy"
+    t.float "frequency_ghz"
+    t.float "mjd"
+    t.float "elevation"
+    t.float "spectral_index"
+    t.string "epoch_date"
+    t.integer "source_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["source_id"], name: "index_atca_results_on_source_id"
+  end
 
   create_table "circular_neutrinos", force: :cascade do |t|
     t.string "name"

@@ -30,29 +30,29 @@ class Source < ApplicationRecord
   	show_source = 0
 	  overdue_factor = 0
 	  if last_mjd !=nil
-  	days_since = Date.today.mjd - last_mjd
+	  	days_since = Date.today.mjd - last_mjd
+	  	
 
-
-	  self.source_categories.each do |scat| 
-	    if ['Sample 1','Sample 2','Sample 3','Sample 4'].include? scat.name 
-	      show_source = 1 
-	      overdue_factor = days_since/21 
-	    elsif ['Neutrino Follow-Up'].include? scat.name 
-	      show_source = 2 
-	      overdue_factor = days_since/50 
-	    elsif ['Neutrino Look-Up'].include? scat.name 
-	      if num_obs<2 || (last_mjd-first_mjd)<180
-	        show_source = 3 
-	        overdue_factor = days_since/180
-	      end
-	    elsif ['Extra Neutrino-Source'].include? scat.name
-	    	show_source = 4
-	    	overdue_factor = days_since/30
-	    end
-	    if ['Dropped'].include? scat.name
-	  		show_source=0
-	  		overdue_factor=0
-	  	end
+		  self.source_categories.each do |scat| 
+		    if ['Sample 1','Sample 2','Sample 3','Sample 4'].include? scat.name 
+		      show_source = 1 
+		      overdue_factor = days_since/21 
+		    elsif ['Neutrino Follow-Up'].include? scat.name 
+		      show_source = 2 
+		      overdue_factor = days_since/50 
+		    elsif ['Neutrino Look-Up'].include? scat.name 
+		      if num_obs<2 || (last_mjd-first_mjd)<180
+		        show_source = 3 
+		        overdue_factor = days_since/180
+		      end
+		    elsif ['Extra Neutrino-Source'].include? scat.name
+		    	show_source = 4
+		    	overdue_factor = days_since/30
+		    end
+		    if ['Dropped'].include? scat.name
+		  		show_source=0
+		  		overdue_factor=0
+		  	end
 	  end
 	end
     return [num_obs,last_obs,days_since,show_source,overdue_factor]
