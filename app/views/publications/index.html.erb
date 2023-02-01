@@ -27,7 +27,7 @@
 			<br/>
 
 
-				<% @publications.order("ads_link").each do |publication| %>
+				<% @publications.order("ads_link").reverse.each do |publication| %>
 					<% if publication.category=="TELAMON Main Paper" %>
 					  <div class="row">
 						  <div class="col-md-12">
@@ -70,7 +70,7 @@
 
 			<br/>
 
-			  <% @publications.order("ads_link").each do |publication| %>
+			  <% @publications.order("ads_link").reverse.each do |publication| %>
 				  <% if publication.category=="Contribution" %>
 					<div class="row">
 					  <div class="col-md-12">
@@ -107,7 +107,7 @@
 
 				<br/>
 
-				<% @publications.order("arxiv_link").each do |publication| %>
+				<% @publications.order("arxiv_link").reverse.each do |publication| %>
 				  	<% if publication.category=="ATel" %>
 				  	<div class="row">
 						<div class="col-md-12">
