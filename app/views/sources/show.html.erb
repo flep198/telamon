@@ -114,8 +114,10 @@
           <div class="col-md-4">
             <% if user_signed_in? %>
               <div class="form-check form-switch form-check-inline float-right">
-                <input class="form-check-input" type="checkbox" id="atcaSwitch" name="averSwitch" value="yes">
-                <label class="form-check-label" for="averSwitch"> Show ATCA?</label>
+                <% if @source.atca_results.length() >0 %>
+                  <input class="form-check-input" type="checkbox" id="atcaSwitch" name="averSwitch" value="yes">
+                  <label class="form-check-label" for="averSwitch"> Show ATCA?</label>
+                <% end %>
               </div>              
             <% end %>
           </div>

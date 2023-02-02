@@ -104,7 +104,11 @@ module SourcesHelper
             end
     	else #use these values if no line fit is possible
             a_0=0
+            if (y.size>0)
     	    c_0=y.sum(0.0)/y.size
+            else
+                c_0=-1
+            end
         end
 
 
@@ -267,11 +271,12 @@ module SourcesHelper
   				int=c/(a+1)*(high_freq**(a+1)-low_freq**(a+1))
   				int_max=c_max/(a_max+1)*(high_freq**(a_max+1)-low_freq**(a_max+1))
   				int_min=c_min/(a_min+1)*(high_freq**(a_min+1)-low_freq**(a_min+1))
-  				aver_flux_error=[(int_max-int).abs,(int-int_min).abs].max/(high_freq-low_freq)
-
-  				aver_flux=int/(high_freq-low_freq)
-  				fluxes.push(aver_flux)
-  				flux_errors.push(aver_flux_error)
+  				unless int_max<0 or int_min<0 or int <0
+                    aver_flux_error=[(int_max-int).abs,(int-int_min).abs].max/(high_freq-low_freq)
+      				aver_flux=int/(high_freq-low_freq)
+      				fluxes.push(aver_flux)
+      				flux_errors.push(aver_flux_error)
+                end
   			
   			elsif x.size>0 #in this case only data for one frequency available
 
@@ -321,11 +326,8 @@ module SourcesHelper
         flux_errors = Array.new
 
         epoches=AtcaResult.where(:source_id => source.id).map {|r| r.epoch_date}
-        mjds_test=AtcaResult.where(:source_id => source.id).map {|r| r.epoch_date}
 
-        epoches.sort_by &mjds_test.method(:index)
-        epoches=epoches.uniq
-        epoches.each do |epoch|
+        epoches.uniq.each do |epoch|
 
             #find data to calculate average from
             @data = AtcaResult.where(:source_id => source.id, :epoch_date => epoch, frequency_ghz: low_freq..high_freq).map {|r| [r.frequency_ghz,r.value_jy,r.error_jy,r.mjd]}
@@ -360,11 +362,12 @@ module SourcesHelper
                 int=c/(a+1)*(high_freq**(a+1)-low_freq**(a+1))
                 int_max=c_max/(a_max+1)*(high_freq**(a_max+1)-low_freq**(a_max+1))
                 int_min=c_min/(a_min+1)*(high_freq**(a_min+1)-low_freq**(a_min+1))
-                aver_flux_error=[(int_max-int).abs,(int-int_min).abs].max/(high_freq-low_freq)
-
-                aver_flux=int/(high_freq-low_freq)
-                fluxes.push(aver_flux)
-                flux_errors.push(aver_flux_error)
+                unless int_max<0 or int_min<0 or int <0    
+                    aver_flux_error=[(int_max-int).abs,(int-int_min).abs].max/(high_freq-low_freq)
+                    aver_flux=int/(high_freq-low_freq)
+                    fluxes.push(aver_flux)
+                    flux_errors.push(aver_flux_error)
+                end
             
             elsif x.size>0 #in this case only data for one frequency available
 
@@ -400,10 +403,13 @@ module SourcesHelper
                 final_error=[(flux-int_min1).abs,(flux-int_min2).abs,(flux-int_min3).abs,(flux-int_max1).abs,(flux-int_max2).abs,(flux-int_max3).abs].max
                 flux_errors.push(final_error)
 
-
             end
 
         end
+
+        #fluxes=fluxes.sort_by {|mjd| mjds}
+        #flux_errors=flux_errors.sort_by {|mjd| mjds}
+        #mjds=mjds.sort
 
         return mjds, fluxes, flux_errors
     end 

@@ -239,6 +239,7 @@ window.onload=function(){
         visible: true
       },
     type: "scatter",
+    mode: 'markers',
     <% if !user_signed_in?%>
       hoverinfo: 'none',
     <%end%>
@@ -257,6 +258,7 @@ window.onload=function(){
         visible: true
       },
     type: "scatter",
+    mode: 'markers',
     <% if !user_signed_in?%>
       hoverinfo: 'none',
     <%end%>
@@ -275,6 +277,7 @@ window.onload=function(){
         visible: true
       },
     type: "scatter",
+    mode: 'markers',
     <% if !user_signed_in?%>
       hoverinfo: 'none',
     <%end%>
@@ -293,6 +296,7 @@ window.onload=function(){
         visible: true
       },
     type: "scatter",
+    mode: 'markers',
     <% if !user_signed_in?%>
       hoverinfo: 'none',
     <%end%>
@@ -310,6 +314,7 @@ window.onload=function(){
         visible: true
       },
     type: "scatter",
+    mode: 'markers',
     <% if !user_signed_in?%>
       hoverinfo: 'none',
     <%end%>
@@ -468,11 +473,12 @@ window.onload=function(){
   //Spectral Index Plot
 
     var speci_data = {
-      x: <%= getSpectralIndices(@source)[0]%>,
-      y: <%= getSpectralIndices(@source)[1]%>,
+      <% specind_info=getSpectralIndices(@source)%>
+      x: <%= specind_info[0] %>,
+      y: <%= specind_info[1] %>,
       error_y: {
         type: "data",
-        array: <%= getSpectralIndices(@source)[2] %>,
+        array: <%= specind_info[2] %>,
         visible: true
       },
       type: "scatter",
