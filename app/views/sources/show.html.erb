@@ -117,6 +117,9 @@
                 <% if @source.atca_results.length() >0 %>
                   <input class="form-check-input" type="checkbox" id="atcaSwitch" name="averSwitch" value="yes">
                   <label class="form-check-label" for="averSwitch"> Show ATCA?</label>
+                <% else %>
+                  <input class="form-check-input" type="checkbox" id="atcaSwitch" name="averSwitch" value="yes" hidden>
+                  <label class="form-check-label" for="averSwitch" hidden> Show ATCA?</label>
                 <% end %>
               </div>              
             <% end %>
