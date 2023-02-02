@@ -320,9 +320,12 @@ module SourcesHelper
         fluxes = Array.new
         flux_errors = Array.new
 
-        epoches=AtcaResult.where(:source_id => source.id).map {|r| r.epoch_date}.uniq
+        epoches=AtcaResult.where(:source_id => source.id).map {|r| r.epoch_date}
+        mjds_test=AtcaResult.where(:source_id => source.id).map {|r| r.epoch_date}
 
-        epoches.sort.each do |epoch|
+        epoches.sort_by &mjds_test.method(:index)
+        epoches=epoches.uniq
+        epoches.each do |epoch|
 
             #find data to calculate average from
             @data = AtcaResult.where(:source_id => source.id, :epoch_date => epoch, frequency_ghz: low_freq..high_freq).map {|r| [r.frequency_ghz,r.value_jy,r.error_jy,r.mjd]}
