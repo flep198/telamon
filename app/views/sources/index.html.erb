@@ -221,90 +221,93 @@
   <p></p>
 <%end%>
 
-<div class="table-responsive">
-<table id="telamon_targetlist" class="table table-hover table-striped table-bordered">
-  <thead class="table-dark text-center">
-    <tr>
-      <th>J2000 Name</th>
-      <th>Alt Name</th>
-      <th>Class</th>
-      <th>Category</th>
-      <% if user_signed_in? %>
-      <th>Neutrino Events</th>
-      <%end%>
-      <th>Ø 20mm [mJy]</th>
-      <th>Ø 14mm [mJy]</th>
-      <th>Ø 7mm [mJy]</th>
-      <th>Redshift</th>
-      <th>RA (J2000)</th>
-      <th>DEC (J2000)</th>
-      <th>NED</th>
-      <!--<th>SIMBAD</th>-->
-      <th>TeVCat</th>
-      <th>ATCA</th>
-      <% if user_signed_in? && current_user.admin? %>
-        <th colspan="2"></th>
-      <%end%>
-    </tr>
-  </thead>
+<div class="container">
+  <div class="table-responsive">
+  <table id="telamon_targetlist" class="table table-hover table-striped table-bordered">
+    <thead class="table-dark text-center">
+      <tr>
+        <th>J2000 Name</th>
+        <th>Alt Name</th>
+        <th>Class</th>
+        <th>Category</th>
+        <% if user_signed_in? %>
+        <th>Neutrino Events</th>
+        <%end%>
+        <th>Ø 45mm [mJy]</th>
+        <th>Ø 20mm [mJy]</th>
+        <th>Ø 14mm [mJy]</th>
+        <th>Ø 7mm [mJy]</th>
+        <th>Redshift</th>
+        <th>RA (J2000)</th>
+        <th>DEC (J2000)</th>
+        <th>NED</th>
+        <!--<th>SIMBAD</th>-->
+        <th>TeVCat</th>
+        <th>ATCA</th>
+        <% if user_signed_in? && current_user.admin? %>
+          <th colspan="2"></th>
+        <%end%>
+      </tr>
+    </thead>
 
-  <tbody>
+    <tbody>
 
-    <% @sources.order("j2000_name").each do |source| %>
+      <% @sources.order("j2000_name").each do |source| %>
 
-      <%print_check=true%>
-      <% if !user_signed_in? %>
-        <%source.source_categories.each do |cat| %>
-          <% if cat.name == "Bad Weather" %>
+        <%print_check=true%>
+        <% if !user_signed_in? %>
+          <%source.source_categories.each do |cat| %>
+            <% if cat.name == "Bad Weather" %>
+              <%print_check=false%>
+            <% end %>
+          <%end%>
+          <% if source.results.all.length == 0 %>
             <%print_check=false%>
           <% end %>
-        <%end%>
-        <% if source.results.all.length == 0 %>
-          <%print_check=false%>
+        <% end %>
+
+        <% if print_check %>
+          <tr>
+            <td><%= link_to source.j2000_name, source %></td>
+            <td><%= source.alt_name %></td>
+            <td><%= source.source_class %></td>
+            <td>
+              <% source.source_categories.each do |cat| %>
+                <%=cat.name%>
+              <%end%>
+            </td>
+            <%if user_signed_in?%>
+            <td>
+              <% source.circular_neutrinos.each do |alert| %>
+                <p><%= link_to alert.name, alert %></p>
+              <% end %>
+            </td>
+            <%end%>
+            <td><%= source.aver(5,10) %></td>
+            <td><%= source.aver(14,17) %></td>
+            <td><%= source.aver(19,25) %></td>
+            <td><%= source.aver(36,44) %></td>
+            <td><%= source.redshift %></td>
+            <td><%= source.ra %></td>
+            <td><%= source.decl %></td>
+            <% if source.alt_name %>
+              <td><%= link_to(image_tag("ned", width: "30"), "https://ned.ipac.caltech.edu/byname?objname="+source.alt_name.gsub("+","%2B")+"&hconst=67.8&omegam=0.308&omegav=0.692&wmap=4&corr_z=1",target: "_blank", rel:"noopener noreferrer")%></td>
+              <!--<td><%= link_to(image_tag("simbad",height: "30"), "http://simbad.harvard.edu/simbad/sim-basic?submit=SIMBAD+search&Ident="+source.alt_name.gsub("+","%2B"),target: "_blank", rel:"noopener noreferrer")%></td>-->
+            <% else %>
+              <td><%= link_to(image_tag("ned", width: "30"), "https://ned.ipac.caltech.edu/byname?objname="+source.j2000_name.gsub("+","%2B")+"&hconst=67.8&omegam=0.308&omegav=0.692&wmap=4&corr_z=1",target: "_blank", rel:"noopener noreferrer")%></td>
+              <!--<td><%= link_to(image_tag("simbad",height: "30"), "http://simbad.harvard.edu/simbad/sim-basic?submit=SIMBAD+search&Ident="+source.j2000_name.gsub("+","%2B"),target: "_blank", rel:"noopener noreferrer")%></td>-->
+            <% end %>
+            <td><%=if source.tevcat_url != "http://tevcat2.uchicago.edu/" then link_to(image_tag("tevcat",height: "25"), source.tevcat_url,target: "_blank", rel:"noopener noreferrer") end%></td>
+            <td><%=if source.atca_url != "https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database.html" then link_to("ATCA", source.atca_url,target: "_blank", rel:"noopener noreferrer") end%></td>
+            <% if user_signed_in? && current_user.admin? %>
+              <td><%= link_to 'Edit', edit_source_path(source), class: "btn btn-outline-success btn-sm" %></td>
+              <td><%= link_to 'Delete', source, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
+            <%end%>
+          </tr>
         <% end %>
       <% end %>
-
-      <% if print_check %>
-        <tr>
-          <td><%= link_to source.j2000_name, source %></td>
-          <td><%= source.alt_name %></td>
-          <td><%= source.source_class %></td>
-          <td>
-            <% source.source_categories.each do |cat| %>
-              <%=cat.name%>
-            <%end%>
-          </td>
-          <%if user_signed_in?%>
-          <td>
-            <% source.circular_neutrinos.each do |alert| %>
-              <p><%= link_to alert.name, alert %></p>
-            <% end %>
-          </td>
-          <%end%>
-          <td><%= source.aver(14,17) %></td>
-          <td><%= source.aver(19,25) %></td>
-          <td><%= source.aver(36,44) %></td>
-          <td><%= source.redshift %></td>
-          <td><%= source.ra %></td>
-          <td><%= source.decl %></td>
-          <% if source.alt_name %>
-            <td><%= link_to(image_tag("ned", width: "30"), "https://ned.ipac.caltech.edu/byname?objname="+source.alt_name.gsub("+","%2B")+"&hconst=67.8&omegam=0.308&omegav=0.692&wmap=4&corr_z=1",target: "_blank", rel:"noopener noreferrer")%></td>
-            <!--<td><%= link_to(image_tag("simbad",height: "30"), "http://simbad.harvard.edu/simbad/sim-basic?submit=SIMBAD+search&Ident="+source.alt_name.gsub("+","%2B"),target: "_blank", rel:"noopener noreferrer")%></td>-->
-          <% else %>
-            <td><%= link_to(image_tag("ned", width: "30"), "https://ned.ipac.caltech.edu/byname?objname="+source.j2000_name.gsub("+","%2B")+"&hconst=67.8&omegam=0.308&omegav=0.692&wmap=4&corr_z=1",target: "_blank", rel:"noopener noreferrer")%></td>
-            <!--<td><%= link_to(image_tag("simbad",height: "30"), "http://simbad.harvard.edu/simbad/sim-basic?submit=SIMBAD+search&Ident="+source.j2000_name.gsub("+","%2B"),target: "_blank", rel:"noopener noreferrer")%></td>-->
-          <% end %>
-          <td><%=if source.tevcat_url != "http://tevcat2.uchicago.edu/" then link_to(image_tag("tevcat",height: "25"), source.tevcat_url,target: "_blank", rel:"noopener noreferrer") end%></td>
-          <td><%=if source.atca_url != "https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database.html" then link_to("ATCA", source.atca_url,target: "_blank", rel:"noopener noreferrer") end%></td>
-          <% if user_signed_in? && current_user.admin? %>
-            <td><%= link_to 'Edit', edit_source_path(source), class: "btn btn-outline-success btn-sm" %></td>
-            <td><%= link_to 'Delete', source, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
-          <%end%>
-        </tr>
-      <% end %>
-    <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
+  </div>
 </div>
-
 <br>
