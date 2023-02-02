@@ -15,12 +15,13 @@ original_stdout=sys.stdout
 with open('atca_seeds.rb','w') as f:
     sys.stdout=f
     for index, row in df.iterrows():
-        print("@a"+row['Source'].replace("+","").replace("-","")+"=Source.where(j2000_name: '"+row['Source']+"').first_or_create")
+        print("@a"+row['J2000 Name'].replace("+","").replace("-","")+"=Source.where(j2000_name: '"+row['J2000 Name']+"').first_or_create")
+        print("@a"+row['J2000 Name'].replace("+","").replace("-","")+".update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source="+row['Source'] + "&detailed=true')")
         print("AtcaResult.create(value_jy: "+str(row['Flux Density [Jy]'])+
-                ", error_jy: "+str(row['Error [Jy]'])+
+                ", error_jy: "+str(row['Flux Density Error [Jy]'])+
                 ", frequency_ghz: "+ str(row['Frequency [GHz]'])+
                 ", mjd: "+ str(row['MJD']) +
                 ", spectral_index: "+str(row['Spectral Index'])+
-                ", epoch_date: '"+str(row['Epoch Date'])+
-                "', source_id: @a"+row['Source'].replace("+","").replace("-","")+".id)")
+                ", epoch_date: '"+str(row['Date'])+
+                "', source_id: @a"+row['J2000 Name'].replace("+","").replace("-","")+".id)")
 sys.stdout=original_stdout
