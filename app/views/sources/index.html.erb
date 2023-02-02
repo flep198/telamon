@@ -259,6 +259,9 @@
             <%print_check=false%>
           <% end %>
         <%end%>
+        <% if source.results.all.length == 0 %>
+          <%print_check=false%>
+        <% end %>
       <% end %>
 
       <% if print_check %>

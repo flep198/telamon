@@ -66,8 +66,10 @@ window.onload=function(){
 
   freq_array = []; // this array saves what freqs will be plotted later
   aver_mode_array = []; //this array saves data to plot in aver mode
+  atca_freq_array = []; //this array saves freqs of telamon + atca
+  atca_aver_mode_array = [];
 
-  //query database
+  //query TELAMON database
   <% @source.frequencies.distinct.order(:freq_ghz).each do |freq| %>
     <% @freq_id=freq.id %>
     <% @data = Result.where(:source_id => @source.id, :frequency_id => @freq_id).map { |r| [r.mjd,r.value_jy,r.error_jy]} %>
@@ -90,6 +92,7 @@ window.onload=function(){
     };
 
     freq_array.push(lc_data<%=@freq_id%>);
+    atca_freq_array.push(lc_data<%=@freq_id%>)
 
   <% end %>
 
@@ -138,6 +141,7 @@ window.onload=function(){
 
   };
   aver_mode_array.push(aver_lc7);
+  atca_aver_mode_array.push(aver_lc7);
 
   <% lc14=getAverageLightCurve(@source,19,25) %>
   var aver_lc14 = {
@@ -156,6 +160,7 @@ window.onload=function(){
 
   };
   aver_mode_array.push(aver_lc14);
+  atca_aver_mode_array.push(aver_lc14);
 
   <% lc20=getAverageLightCurve(@source,14,17) %>
   var aver_lc20 = {
@@ -173,6 +178,7 @@ window.onload=function(){
     name: "Aver 20mm"
   };
   aver_mode_array.push(aver_lc20);
+  atca_aver_mode_array.push(aver_lc20);
 
   <% lc45=getAverageLightCurve(@source,5,10) %>
   var aver_lc45 = {
@@ -190,6 +196,127 @@ window.onload=function(){
     name: "Aver 45mm"
   };
   aver_mode_array.push(aver_lc45);
+  atca_aver_mode_array.push(aver_lc45);
+
+
+  //ATCA lightcurves
+
+  <% @source_frequencies=@source.atca_results.map {|r| r.frequency_ghz}.uniq %>
+  <% @source_frequencies.sort.each do |freq_ghz| %>
+    <% @data = AtcaResult.where(:source_id => @source.id, :frequency_ghz => freq_ghz).map { |r| [r.mjd,r.value_jy,r.error_jy]} %>
+    <% @data=@data.sort_by(&:first) %>
+
+      //print out values for freq
+    var lc_data_atca<%=freq_ghz.to_s.gsub(".","")%> = {
+      x: <%= @data.map {|r| r[0]}%>,
+      y: <%= @data.map {|r| r[1]}%>,
+      error_y: {
+        type: "data",
+        array: <%= @data.map {|r| r[2]}%>,
+        visible: true
+      },
+      type: "scatter",
+      <% if !user_signed_in?%>
+      hoverinfo: 'none',
+      <%end%>
+      name: "<%=freq_ghz.to_s%> GHz"
+    };
+
+    atca_freq_array.push(lc_data_atca<%=freq_ghz.to_s.gsub(".","")%>);
+
+  <% end %>
+
+  //average atca lightcurves
+
+    //averaged lightcurves
+  <% lc3atca=getAverageATCALightCurve(@source,84,96) %>
+  var aver_lc3atca = {
+    x: <%= lc3atca[0] %>,
+    y: <%= lc3atca[1] %>,
+    error_y: {
+        type: "data",
+        array: <%= lc3atca[2] %>,
+        visible: true
+      },
+    type: "scatter",
+    <% if !user_signed_in?%>
+      hoverinfo: 'none',
+    <%end%>
+    name: "Aver 3mm ATCA"
+
+  };
+  atca_aver_mode_array.push(aver_lc3atca);
+
+  <% lc7atca=getAverageATCALightCurve(@source,32,45.5) %>
+  var aver_lc7atca = {
+    x: <%= lc7atca[0] %>,
+    y: <%= lc7atca[1] %>,
+    error_y: {
+        type: "data",
+        array: <%= lc7atca[2] %>,
+        visible: true
+      },
+    type: "scatter",
+    <% if !user_signed_in?%>
+      hoverinfo: 'none',
+    <%end%>
+    name: "Aver 7mm ATCA"
+
+  };
+  atca_aver_mode_array.push(aver_lc7atca);
+
+  <% lc15atca=getAverageLightCurve(@source,16.5,21.5) %>
+  var aver_lc15atca = {
+    x: <%= lc15atca[0] %>,
+    y: <%= lc15atca[1] %>,
+    error_y: {
+        type: "data",
+        array: <%= lc15atca[2] %>,
+        visible: true
+      },
+    type: "scatter",
+    <% if !user_signed_in?%>
+      hoverinfo: 'none',
+    <%end%>
+    name: "Aver 15mm ATCA",
+
+  };
+  atca_aver_mode_array.push(aver_lc15atca);
+
+  <% lc40atca=getAverageLightCurve(@source,4.8,9.2) %>
+  var aver_lc40atca = {
+    x: <%= lc40atca[0] %>,
+    y: <%= lc40atca[1] %>,
+    error_y: {
+        type: "data",
+        array: <%= lc40atca[2] %>,
+        visible: true
+      },
+    type: "scatter",
+    <% if !user_signed_in?%>
+      hoverinfo: 'none',
+    <%end%>
+    name: "Aver 4cm ATCA"
+  };
+  atca_aver_mode_array.push(aver_lc40atca);
+
+  <% lc160atca=getAverageLightCurve(@source,1.3,2.4) %>
+  var aver_lc160atca = {
+    x: <%= lc160atca[0] %>,
+    y: <%= lc160atca[1] %>,
+    error_y: {
+        type: "data",
+        array: <%= lc160atca[2] %>,
+        visible: true
+      },
+    type: "scatter",
+    <% if !user_signed_in?%>
+      hoverinfo: 'none',
+    <%end%>
+    name: "Aver 16cm ATCA"
+  };
+  atca_aver_mode_array.push(aver_lc160atca);
+  
 
   Plotly.newPlot("lightcurve",aver_mode_array,layoutLC);
 
@@ -532,13 +659,25 @@ freq_array_evpa=[]
     var aver = checkboxAver.checked;
 
     if (aver){
-      Plotly.newPlot("lightcurve",aver_mode_array,layoutLC);
+      if (checkboxAtca.checked){
+        Plotly.newPlot("lightcurve",atca_aver_mode_array,layoutLC);
+      } else {
+        Plotly.newPlot("lightcurve",aver_mode_array,layoutLC);
+      }
     } else {
-      Plotly.newPlot("lightcurve",freq_array,layoutLC);
+      if (checkboxAtca.checked) {
+        Plotly.newPlot("lightcurve",atca_freq_array,layoutLC);
+      } else {
+        Plotly.newPlot("lightcurve",freq_array,layoutLC);
+      }
     };
   };
 
   checkboxAver.addEventListener('change',function(){updateLCplot()});
+
+  var checkboxAtca=document.getElementById("atcaSwitch");
+  checkboxAtca.addEventListener('change',function(){updateLCplot()});
+
   updateLCplot();
 
   <% end %>
@@ -556,6 +695,7 @@ freq_array_evpa=[]
   };
   
   checkboxLog.addEventListener('change',function(){updateSpecplot()});
+
   
   updateSpecplot();
  

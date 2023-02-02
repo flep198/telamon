@@ -315,6 +315,96 @@ module SourcesHelper
     	return mjds, fluxes, flux_errors
     end 
 
+    def getAverageATCALightCurve source, low_freq, high_freq
+        mjds = Array.new
+        fluxes = Array.new
+        flux_errors = Array.new
+
+        epoches=AtcaResult.where(:source_id => source.id).map {|r| r.epoch_date}.uniq
+
+        epoches.sort.each do |epoch|
+
+            #find data to calculate average from
+            @data = AtcaResult.where(:source_id => source.id, :epoch_date => epoch, frequency_ghz: low_freq..high_freq).map {|r| [r.frequency_ghz,r.value_jy,r.error_jy,r.mjd]}
+
+            x = @data.map{|r| r[0]}
+            y = @data.map{|r| r[1]}
+            yerr = @data.map{|r| r[2]}
+            mjd = @data.map{|r| r[3]}
+            mjd_aver= mjd.inject{ |sum, el| sum + el }.to_f / mjd.size #calculate Average MJD
+            y_max= @data.map{|r| r[1]+r[2]}
+            y_min= @data.map{|r| r[1]-r[2]}
+
+            if x.uniq.size>1
+                mjds.push(mjd_aver)
+
+                #get fit parameters
+                #normal fit
+                fit=spectralFit(x,y,yerr)
+                a=fit[0]
+                c=fit[1]
+                #fit of ymax
+                fit_max=spectralFit(x,y_max,yerr)
+                a_max=fit_max[0]
+                c_max=fit_max[1]
+                #fit of ymin
+                fit_min=spectralFit(x,y_min,yerr)
+                a_min=fit_min[0]
+                c_min=fit_min[1]
+
+
+                #calculate integrals from fit
+                int=c/(a+1)*(high_freq**(a+1)-low_freq**(a+1))
+                int_max=c_max/(a_max+1)*(high_freq**(a_max+1)-low_freq**(a_max+1))
+                int_min=c_min/(a_min+1)*(high_freq**(a_min+1)-low_freq**(a_min+1))
+                aver_flux_error=[(int_max-int).abs,(int-int_min).abs].max/(high_freq-low_freq)
+
+                aver_flux=int/(high_freq-low_freq)
+                fluxes.push(aver_flux)
+                flux_errors.push(aver_flux_error)
+            
+            elsif x.size>0 #in this case only data for one frequency available
+
+                mjds.push(mjd_aver)
+                flux=y.sum/y.size
+                fluxes.push(flux)
+                
+                #calculate std 
+                y_error=0
+                for i in 0..(y.size-1)
+                    y_error=y_error+(yerr[i])**2
+                end
+                y_error=Math.sqrt(y_error)/y.size
+
+
+                #carry out the six additional fits 
+                int_min1=flux-y_error
+                a_min2=+0.5
+                c_min2=int_min1/(x[0]**a_min2)
+                int_min2=c_min2/(a_min2+1)*(high_freq**(a_min2+1)-low_freq**(a_min2+1))/(high_freq-low_freq)
+                a_min3=-0.5
+                c_min3=int_min1/(x[0]**a_min3)
+                int_min3=c_min3/(a_min3+1)*(high_freq**(a_min3+1)-low_freq**(a_min3+1))/(high_freq-low_freq)
+                
+                int_max1=flux+y_error
+                a_max2=0.5
+                c_max2=int_max1/(x[0]**a_max2)
+                int_max2=c_max2/(a_max2+1)*(high_freq**(a_max2+1)-low_freq**(a_max2+1))/(high_freq-low_freq)
+                a_max3=-0.5
+                c_max3=int_max1/(x[0]**a_max3)
+                int_max3=c_max3/(a_max3+1)*(high_freq**(a_max3+1)-low_freq**(a_max3+1))/(high_freq-low_freq)
+
+                final_error=[(flux-int_min1).abs,(flux-int_min2).abs,(flux-int_min3).abs,(flux-int_max1).abs,(flux-int_max2).abs,(flux-int_max3).abs].max
+                flux_errors.push(final_error)
+
+
+            end
+
+        end
+
+        return mjds, fluxes, flux_errors
+    end 
+
 
     def getFluxValue c,a,f
         return c*f**a
