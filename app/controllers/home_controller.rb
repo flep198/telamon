@@ -6,5 +6,6 @@ class HomeController < ApplicationController
     @frequencies = Frequency.all
     @publications = Publication.all
     @source_categories = SourceCategory.all
+    @observations=Observation.all
   end
 end

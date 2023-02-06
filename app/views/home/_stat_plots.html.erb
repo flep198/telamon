@@ -1,0 +1,25 @@
+<script type="text/javascript">
+	
+var data = [{
+
+  values: <%=n_counts%>,
+
+  labels: <%=raw febes%>,
+
+  type: 'pie'
+
+}];
+
+
+var layout = {
+
+  height: 400,
+
+  width: 500
+
+};
+
+
+Plotly.newPlot('pieChart', data, layout);
+
+</script>
