@@ -4504,288 +4504,288 @@ AtcaResult.create(value_jy: 2.577, error_jy: 0.004, frequency_ghz: 8.64, mjd: 53
 @a19252106=Source.where(j2000_name: '1925+2106').first_or_create
 @a19252106.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1923+210&detailed=true')
 AtcaResult.create(value_jy: 2.388, error_jy: 0.004, frequency_ghz: 4.8, mjd: 53598.0, spectral_index: 0.468, epoch_date: '2005-Aug-16', source_id: @a19252106.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.002, error_jy: 0.12, frequency_ghz: 93.0, mjd: 56127.0, spectral_index: -0.525, epoch_date: '2012-Jul-19', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.968, error_jy: 0.12, frequency_ghz: 95.0, mjd: 56127.0, spectral_index: -0.525, epoch_date: '2012-Jul-19', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.332, error_jy: 0.251, frequency_ghz: 93.0, mjd: 55768.0, spectral_index: -2.276, epoch_date: '2011-Jul-26', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.175, error_jy: 0.251, frequency_ghz: 95.0, mjd: 55768.0, spectral_index: -2.276, epoch_date: '2011-Jul-26', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 6.039, error_jy: 0.061, frequency_ghz: 93.504, mjd: 54230.0, spectral_index: -0.663, epoch_date: '2007-May-10', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 5.953, error_jy: 0.061, frequency_ghz: 95.552, mjd: 54230.0, spectral_index: -0.663, epoch_date: '2007-May-10', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 4.322, error_jy: 0.041, frequency_ghz: 93.504, mjd: 53849.0, spectral_index: 0.39, epoch_date: '2006-Apr-24', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 4.359, error_jy: 0.041, frequency_ghz: 95.552, mjd: 53849.0, spectral_index: 0.39, epoch_date: '2006-Apr-24', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.71, error_jy: 0.041, frequency_ghz: 33.0, mjd: 59893.0, spectral_index: -0.137, epoch_date: '2022-Nov-10', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.688, error_jy: 0.041, frequency_ghz: 35.0, mjd: 59893.0, spectral_index: -0.137, epoch_date: '2022-Nov-10', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.021, error_jy: 0.018, frequency_ghz: 33.0, mjd: 59698.0, spectral_index: 0.283, epoch_date: '2022-Apr-29', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.055, error_jy: 0.018, frequency_ghz: 35.0, mjd: 59698.0, spectral_index: 0.283, epoch_date: '2022-Apr-29', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 1.741, error_jy: 0.016, frequency_ghz: 33.0, mjd: 59356.0, spectral_index: -0.094, epoch_date: '2021-May-22', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 1.731, error_jy: 0.016, frequency_ghz: 35.0, mjd: 59356.0, spectral_index: -0.094, epoch_date: '2021-May-22', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.775, error_jy: 0.054, frequency_ghz: 33.0, mjd: 59223.0, spectral_index: -0.189, epoch_date: '2021-Jan-09', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.733, error_jy: 0.054, frequency_ghz: 35.0, mjd: 59223.0, spectral_index: -0.189, epoch_date: '2021-Jan-09', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.848, error_jy: 0.05, frequency_ghz: 38.0, mjd: 57617.0, spectral_index: -0.411, epoch_date: '2016-Aug-17', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.767, error_jy: 0.05, frequency_ghz: 40.0, mjd: 57617.0, spectral_index: -0.411, epoch_date: '2016-Aug-17', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 6.274, error_jy: 0.024, frequency_ghz: 33.0, mjd: 57304.0, spectral_index: -0.04, epoch_date: '2015-Oct-09', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 6.259, error_jy: 0.024, frequency_ghz: 35.0, mjd: 57304.0, spectral_index: -0.04, epoch_date: '2015-Oct-09', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.49, error_jy: 0.023, frequency_ghz: 38.0, mjd: 57061.0, spectral_index: -0.137, epoch_date: '2015-Feb-08', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.466, error_jy: 0.023, frequency_ghz: 40.0, mjd: 57061.0, spectral_index: -0.137, epoch_date: '2015-Feb-08', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 4.269, error_jy: 0.055, frequency_ghz: 38.0, mjd: 56913.0, spectral_index: -0.259, epoch_date: '2014-Sep-13', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 4.213, error_jy: 0.055, frequency_ghz: 40.0, mjd: 56913.0, spectral_index: -0.259, epoch_date: '2014-Sep-13', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.808, error_jy: 0.019, frequency_ghz: 35.0, mjd: 55821.0, spectral_index: -0.463, epoch_date: '2011-Sep-17', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.913, error_jy: 0.019, frequency_ghz: 33.0, mjd: 55821.0, spectral_index: -0.463, epoch_date: '2011-Sep-17', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 6.527, error_jy: 0.019, frequency_ghz: 33.0, mjd: 55663.0, spectral_index: -0.032, epoch_date: '2011-Apr-12', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 6.514, error_jy: 0.019, frequency_ghz: 35.0, mjd: 55663.0, spectral_index: -0.032, epoch_date: '2011-Apr-12', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 6.099, error_jy: 0.009, frequency_ghz: 42.944, mjd: 54234.0, spectral_index: -0.53, epoch_date: '2007-May-14', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 5.95, error_jy: 0.009, frequency_ghz: 44.992, mjd: 54234.0, spectral_index: -0.53, epoch_date: '2007-May-14', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.531, error_jy: 0.025, frequency_ghz: 17.0, mjd: 59582.0, spectral_index: -0.395, epoch_date: '2022-Jan-03', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.422, error_jy: 0.025, frequency_ghz: 19.0, mjd: 59582.0, spectral_index: -0.395, epoch_date: '2022-Jan-03', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.318, error_jy: 0.044, frequency_ghz: 16.8, mjd: 59238.0, spectral_index: -0.251, epoch_date: '2021-Jan-24', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.13, error_jy: 0.044, frequency_ghz: 21.2, mjd: 59238.0, spectral_index: -0.251, epoch_date: '2021-Jan-24', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.059, error_jy: 0.023, frequency_ghz: 16.8, mjd: 58984.0, spectral_index: -0.166, epoch_date: '2020-May-15', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.944, error_jy: 0.023, frequency_ghz: 21.2, mjd: 58984.0, spectral_index: -0.166, epoch_date: '2020-May-15', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.654, error_jy: 0.016, frequency_ghz: 16.8, mjd: 58184.0, spectral_index: 0.035, epoch_date: '2018-Mar-07', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.675, error_jy: 0.016, frequency_ghz: 21.2, mjd: 58184.0, spectral_index: 0.035, epoch_date: '2018-Mar-07', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.139, error_jy: 0.015, frequency_ghz: 17.0, mjd: 56568.0, spectral_index: -0.296, epoch_date: '2013-Oct-03', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.038, error_jy: 0.015, frequency_ghz: 19.0, mjd: 56568.0, spectral_index: -0.296, epoch_date: '2013-Oct-03', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.547, error_jy: 0.013, frequency_ghz: 19.0, mjd: 56173.0, spectral_index: -0.034, epoch_date: '2012-Sep-03', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.561, error_jy: 0.013, frequency_ghz: 17.0, mjd: 56173.0, spectral_index: -0.034, epoch_date: '2012-Sep-03', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.789, error_jy: 0.01, frequency_ghz: 18.496, mjd: 53598.0, spectral_index: 0.237, epoch_date: '2005-Aug-16', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.825, error_jy: 0.01, frequency_ghz: 19.52, mjd: 53598.0, spectral_index: 0.237, epoch_date: '2005-Aug-16', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.823, error_jy: 0.007, frequency_ghz: 19.52, mjd: 53494.0, spectral_index: -0.106, epoch_date: '2005-May-04', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.839, error_jy: 0.007, frequency_ghz: 18.496, mjd: 53494.0, spectral_index: -0.106, epoch_date: '2005-May-04', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.948, error_jy: 0.006, frequency_ghz: 18.496, mjd: 53454.0, spectral_index: -0.021, epoch_date: '2005-Mar-25', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.946, error_jy: 0.006, frequency_ghz: 19.008, mjd: 53454.0, spectral_index: -0.021, epoch_date: '2005-Mar-25', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.39, error_jy: 0.013, frequency_ghz: 5.5, mjd: 59961.0, spectral_index: 0.325, epoch_date: '2023-Jan-17', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.813, error_jy: 0.013, frequency_ghz: 9.0, mjd: 59961.0, spectral_index: 0.337, epoch_date: '2023-Jan-17', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 1.976, error_jy: 0.011, frequency_ghz: 5.5, mjd: 59877.0, spectral_index: 0.257, epoch_date: '2022-Oct-25', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.248, error_jy: 0.011, frequency_ghz: 9.0, mjd: 59877.0, spectral_index: 0.266, epoch_date: '2022-Oct-25', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.219, error_jy: 0.009, frequency_ghz: 5.5, mjd: 59536.0, spectral_index: 0.393, epoch_date: '2021-Nov-18', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.577, error_jy: 0.009, frequency_ghz: 8.5, mjd: 59536.0, spectral_index: 0.295, epoch_date: '2021-Nov-18', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.092, error_jy: 0.009, frequency_ghz: 5.5, mjd: 59419.0, spectral_index: 0.74, epoch_date: '2021-Jul-24', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.781, error_jy: 0.009, frequency_ghz: 9.0, mjd: 59419.0, spectral_index: 0.416, epoch_date: '2021-Jul-24', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 1.316, error_jy: 0.014, frequency_ghz: 5.5, mjd: 59366.0, spectral_index: 0.343, epoch_date: '2021-Jun-01', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 1.56, error_jy: 0.014, frequency_ghz: 9.0, mjd: 59366.0, spectral_index: 0.348, epoch_date: '2021-Jun-01', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 1.967, error_jy: 0.038, frequency_ghz: 5.5, mjd: 59253.0, spectral_index: 0.502, epoch_date: '2021-Feb-08', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.261, error_jy: 0.038, frequency_ghz: 9.0, mjd: 59253.0, spectral_index: 0.065, epoch_date: '2021-Feb-08', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.004, error_jy: 0.011, frequency_ghz: 5.5, mjd: 59111.0, spectral_index: 0.33, epoch_date: '2020-Sep-19', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.325, error_jy: 0.011, frequency_ghz: 9.0, mjd: 59111.0, spectral_index: 0.272, epoch_date: '2020-Sep-19', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.815, error_jy: 0.013, frequency_ghz: 5.5, mjd: 58942.0, spectral_index: 0.326, epoch_date: '2020-Apr-03', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.262, error_jy: 0.013, frequency_ghz: 9.0, mjd: 58942.0, spectral_index: 0.272, epoch_date: '2020-Apr-03', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.071, error_jy: 0.016, frequency_ghz: 5.5, mjd: 58406.0, spectral_index: 0.416, epoch_date: '2018-Oct-15', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.558, error_jy: 0.016, frequency_ghz: 9.0, mjd: 58406.0, spectral_index: 0.443, epoch_date: '2018-Oct-15', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 1.846, error_jy: 0.007, frequency_ghz: 5.5, mjd: 58229.0, spectral_index: 0.72, epoch_date: '2018-Apr-21', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.391, error_jy: 0.007, frequency_ghz: 9.0, mjd: 58229.0, spectral_index: 0.332, epoch_date: '2018-Apr-21', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 1.855, error_jy: 0.007, frequency_ghz: 5.5, mjd: 58077.0, spectral_index: 0.284, epoch_date: '2017-Nov-20', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.11, error_jy: 0.007, frequency_ghz: 9.0, mjd: 58077.0, spectral_index: 0.24, epoch_date: '2017-Nov-20', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.369, error_jy: 0.008, frequency_ghz: 5.5, mjd: 57916.0, spectral_index: 0.596, epoch_date: '2017-Jun-12', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.035, error_jy: 0.008, frequency_ghz: 9.0, mjd: 57916.0, spectral_index: 0.411, epoch_date: '2017-Jun-12', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.674, error_jy: 0.014, frequency_ghz: 5.5, mjd: 56741.0, spectral_index: 0.194, epoch_date: '2014-Mar-25', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.868, error_jy: 0.014, frequency_ghz: 9.0, mjd: 56741.0, spectral_index: 0.09, epoch_date: '2014-Mar-25', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.714, error_jy: 0.012, frequency_ghz: 5.5, mjd: 56173.0, spectral_index: 0.392, epoch_date: '2012-Sep-03', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.184, error_jy: 0.012, frequency_ghz: 9.0, mjd: 56173.0, spectral_index: 0.257, epoch_date: '2012-Sep-03', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.181, error_jy: 0.01, frequency_ghz: 5.5, mjd: 56039.0, spectral_index: 0.236, epoch_date: '2012-Apr-22', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.401, error_jy: 0.01, frequency_ghz: 9.0, mjd: 56039.0, spectral_index: 0.154, epoch_date: '2012-Apr-22', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.526, error_jy: 0.052, frequency_ghz: 5.5, mjd: 55702.0, spectral_index: 0.2, epoch_date: '2011-May-21', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.59, error_jy: 0.052, frequency_ghz: 9.0, mjd: 55702.0, spectral_index: -0.127, epoch_date: '2011-May-21', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 3.904, error_jy: 0.015, frequency_ghz: 5.5, mjd: 55686.0, spectral_index: 0.551, epoch_date: '2011-May-05', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 5.082, error_jy: 0.015, frequency_ghz: 9.0, mjd: 55686.0, spectral_index: 0.519, epoch_date: '2011-May-05', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 1.624, error_jy: 0.002, frequency_ghz: 4.8, mjd: 53598.0, spectral_index: 0.589, epoch_date: '2005-Aug-16', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.146, error_jy: 0.002, frequency_ghz: 8.64, mjd: 53598.0, spectral_index: 0.359, epoch_date: '2005-Aug-16', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.243, error_jy: 0.005, frequency_ghz: 4.8, mjd: 53494.0, spectral_index: 0.315, epoch_date: '2005-May-04', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.7, error_jy: 0.005, frequency_ghz: 8.64, mjd: 53494.0, spectral_index: 0.315, epoch_date: '2005-May-04', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 1.425, error_jy: 0.027, frequency_ghz: 2.1, mjd: 59914.0, spectral_index: 0.145, epoch_date: '2022-Dec-01', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 1.073, error_jy: 0.041, frequency_ghz: 2.1, mjd: 59428.0, spectral_index: 0.373, epoch_date: '2021-Aug-02', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 0.938, error_jy: 0.066, frequency_ghz: 2.1, mjd: 59371.0, spectral_index: 0.184, epoch_date: '2021-Jun-06', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 1.972, error_jy: 0.022, frequency_ghz: 2.1, mjd: 58952.0, spectral_index: 0.209, epoch_date: '2020-Apr-13', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 1.049, error_jy: 0.023, frequency_ghz: 2.1, mjd: 58140.0, spectral_index: 0.266, epoch_date: '2018-Jan-22', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.415, error_jy: 0.023, frequency_ghz: 2.1, mjd: 57545.0, spectral_index: 0.071, epoch_date: '2016-Jun-06', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.272, error_jy: 0.018, frequency_ghz: 2.1, mjd: 56690.0, spectral_index: 0.545, epoch_date: '2014-Feb-02', source_id: @a17510939.id)
-@a17510939=Source.where(j2000_name: '1751+0939').first_or_create
-@a17510939.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
-AtcaResult.create(value_jy: 2.065, error_jy: 0.025, frequency_ghz: 2.1, mjd: 56225.0, spectral_index: 0.378, epoch_date: '2012-Oct-25', source_id: @a17510939.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.002, error_jy: 0.12, frequency_ghz: 93.0, mjd: 56127.0, spectral_index: -0.525, epoch_date: '2012-Jul-19', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.968, error_jy: 0.12, frequency_ghz: 95.0, mjd: 56127.0, spectral_index: -0.525, epoch_date: '2012-Jul-19', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.332, error_jy: 0.251, frequency_ghz: 93.0, mjd: 55768.0, spectral_index: -2.276, epoch_date: '2011-Jul-26', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.175, error_jy: 0.251, frequency_ghz: 95.0, mjd: 55768.0, spectral_index: -2.276, epoch_date: '2011-Jul-26', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 6.039, error_jy: 0.061, frequency_ghz: 93.504, mjd: 54230.0, spectral_index: -0.663, epoch_date: '2007-May-10', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 5.953, error_jy: 0.061, frequency_ghz: 95.552, mjd: 54230.0, spectral_index: -0.663, epoch_date: '2007-May-10', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 4.322, error_jy: 0.041, frequency_ghz: 93.504, mjd: 53849.0, spectral_index: 0.39, epoch_date: '2006-Apr-24', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 4.359, error_jy: 0.041, frequency_ghz: 95.552, mjd: 53849.0, spectral_index: 0.39, epoch_date: '2006-Apr-24', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.71, error_jy: 0.041, frequency_ghz: 33.0, mjd: 59893.0, spectral_index: -0.137, epoch_date: '2022-Nov-10', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.688, error_jy: 0.041, frequency_ghz: 35.0, mjd: 59893.0, spectral_index: -0.137, epoch_date: '2022-Nov-10', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.021, error_jy: 0.018, frequency_ghz: 33.0, mjd: 59698.0, spectral_index: 0.283, epoch_date: '2022-Apr-29', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.055, error_jy: 0.018, frequency_ghz: 35.0, mjd: 59698.0, spectral_index: 0.283, epoch_date: '2022-Apr-29', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 1.741, error_jy: 0.016, frequency_ghz: 33.0, mjd: 59356.0, spectral_index: -0.094, epoch_date: '2021-May-22', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 1.731, error_jy: 0.016, frequency_ghz: 35.0, mjd: 59356.0, spectral_index: -0.094, epoch_date: '2021-May-22', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.775, error_jy: 0.054, frequency_ghz: 33.0, mjd: 59223.0, spectral_index: -0.189, epoch_date: '2021-Jan-09', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.733, error_jy: 0.054, frequency_ghz: 35.0, mjd: 59223.0, spectral_index: -0.189, epoch_date: '2021-Jan-09', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.848, error_jy: 0.05, frequency_ghz: 38.0, mjd: 57617.0, spectral_index: -0.411, epoch_date: '2016-Aug-17', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.767, error_jy: 0.05, frequency_ghz: 40.0, mjd: 57617.0, spectral_index: -0.411, epoch_date: '2016-Aug-17', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 6.274, error_jy: 0.024, frequency_ghz: 33.0, mjd: 57304.0, spectral_index: -0.04, epoch_date: '2015-Oct-09', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 6.259, error_jy: 0.024, frequency_ghz: 35.0, mjd: 57304.0, spectral_index: -0.04, epoch_date: '2015-Oct-09', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.49, error_jy: 0.023, frequency_ghz: 38.0, mjd: 57061.0, spectral_index: -0.137, epoch_date: '2015-Feb-08', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.466, error_jy: 0.023, frequency_ghz: 40.0, mjd: 57061.0, spectral_index: -0.137, epoch_date: '2015-Feb-08', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 4.269, error_jy: 0.055, frequency_ghz: 38.0, mjd: 56913.0, spectral_index: -0.259, epoch_date: '2014-Sep-13', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 4.213, error_jy: 0.055, frequency_ghz: 40.0, mjd: 56913.0, spectral_index: -0.259, epoch_date: '2014-Sep-13', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.808, error_jy: 0.019, frequency_ghz: 35.0, mjd: 55821.0, spectral_index: -0.463, epoch_date: '2011-Sep-17', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.913, error_jy: 0.019, frequency_ghz: 33.0, mjd: 55821.0, spectral_index: -0.463, epoch_date: '2011-Sep-17', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 6.527, error_jy: 0.019, frequency_ghz: 33.0, mjd: 55663.0, spectral_index: -0.032, epoch_date: '2011-Apr-12', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 6.514, error_jy: 0.019, frequency_ghz: 35.0, mjd: 55663.0, spectral_index: -0.032, epoch_date: '2011-Apr-12', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 6.099, error_jy: 0.009, frequency_ghz: 42.944, mjd: 54234.0, spectral_index: -0.53, epoch_date: '2007-May-14', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 5.95, error_jy: 0.009, frequency_ghz: 44.992, mjd: 54234.0, spectral_index: -0.53, epoch_date: '2007-May-14', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.531, error_jy: 0.025, frequency_ghz: 17.0, mjd: 59582.0, spectral_index: -0.395, epoch_date: '2022-Jan-03', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.422, error_jy: 0.025, frequency_ghz: 19.0, mjd: 59582.0, spectral_index: -0.395, epoch_date: '2022-Jan-03', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.318, error_jy: 0.044, frequency_ghz: 16.8, mjd: 59238.0, spectral_index: -0.251, epoch_date: '2021-Jan-24', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.13, error_jy: 0.044, frequency_ghz: 21.2, mjd: 59238.0, spectral_index: -0.251, epoch_date: '2021-Jan-24', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.059, error_jy: 0.023, frequency_ghz: 16.8, mjd: 58984.0, spectral_index: -0.166, epoch_date: '2020-May-15', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.944, error_jy: 0.023, frequency_ghz: 21.2, mjd: 58984.0, spectral_index: -0.166, epoch_date: '2020-May-15', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.654, error_jy: 0.016, frequency_ghz: 16.8, mjd: 58184.0, spectral_index: 0.035, epoch_date: '2018-Mar-07', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.675, error_jy: 0.016, frequency_ghz: 21.2, mjd: 58184.0, spectral_index: 0.035, epoch_date: '2018-Mar-07', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.139, error_jy: 0.015, frequency_ghz: 17.0, mjd: 56568.0, spectral_index: -0.296, epoch_date: '2013-Oct-03', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.038, error_jy: 0.015, frequency_ghz: 19.0, mjd: 56568.0, spectral_index: -0.296, epoch_date: '2013-Oct-03', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.547, error_jy: 0.013, frequency_ghz: 19.0, mjd: 56173.0, spectral_index: -0.034, epoch_date: '2012-Sep-03', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.561, error_jy: 0.013, frequency_ghz: 17.0, mjd: 56173.0, spectral_index: -0.034, epoch_date: '2012-Sep-03', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.789, error_jy: 0.01, frequency_ghz: 18.496, mjd: 53598.0, spectral_index: 0.237, epoch_date: '2005-Aug-16', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.825, error_jy: 0.01, frequency_ghz: 19.52, mjd: 53598.0, spectral_index: 0.237, epoch_date: '2005-Aug-16', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.823, error_jy: 0.007, frequency_ghz: 19.52, mjd: 53494.0, spectral_index: -0.106, epoch_date: '2005-May-04', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.839, error_jy: 0.007, frequency_ghz: 18.496, mjd: 53494.0, spectral_index: -0.106, epoch_date: '2005-May-04', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.948, error_jy: 0.006, frequency_ghz: 18.496, mjd: 53454.0, spectral_index: -0.021, epoch_date: '2005-Mar-25', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.946, error_jy: 0.006, frequency_ghz: 19.008, mjd: 53454.0, spectral_index: -0.021, epoch_date: '2005-Mar-25', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.39, error_jy: 0.013, frequency_ghz: 5.5, mjd: 59961.0, spectral_index: 0.325, epoch_date: '2023-Jan-17', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.813, error_jy: 0.013, frequency_ghz: 9.0, mjd: 59961.0, spectral_index: 0.337, epoch_date: '2023-Jan-17', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 1.976, error_jy: 0.011, frequency_ghz: 5.5, mjd: 59877.0, spectral_index: 0.257, epoch_date: '2022-Oct-25', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.248, error_jy: 0.011, frequency_ghz: 9.0, mjd: 59877.0, spectral_index: 0.266, epoch_date: '2022-Oct-25', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.219, error_jy: 0.009, frequency_ghz: 5.5, mjd: 59536.0, spectral_index: 0.393, epoch_date: '2021-Nov-18', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.577, error_jy: 0.009, frequency_ghz: 8.5, mjd: 59536.0, spectral_index: 0.295, epoch_date: '2021-Nov-18', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.092, error_jy: 0.009, frequency_ghz: 5.5, mjd: 59419.0, spectral_index: 0.74, epoch_date: '2021-Jul-24', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.781, error_jy: 0.009, frequency_ghz: 9.0, mjd: 59419.0, spectral_index: 0.416, epoch_date: '2021-Jul-24', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 1.316, error_jy: 0.014, frequency_ghz: 5.5, mjd: 59366.0, spectral_index: 0.343, epoch_date: '2021-Jun-01', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 1.56, error_jy: 0.014, frequency_ghz: 9.0, mjd: 59366.0, spectral_index: 0.348, epoch_date: '2021-Jun-01', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 1.967, error_jy: 0.038, frequency_ghz: 5.5, mjd: 59253.0, spectral_index: 0.502, epoch_date: '2021-Feb-08', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.261, error_jy: 0.038, frequency_ghz: 9.0, mjd: 59253.0, spectral_index: 0.065, epoch_date: '2021-Feb-08', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.004, error_jy: 0.011, frequency_ghz: 5.5, mjd: 59111.0, spectral_index: 0.33, epoch_date: '2020-Sep-19', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.325, error_jy: 0.011, frequency_ghz: 9.0, mjd: 59111.0, spectral_index: 0.272, epoch_date: '2020-Sep-19', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.815, error_jy: 0.013, frequency_ghz: 5.5, mjd: 58942.0, spectral_index: 0.326, epoch_date: '2020-Apr-03', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.262, error_jy: 0.013, frequency_ghz: 9.0, mjd: 58942.0, spectral_index: 0.272, epoch_date: '2020-Apr-03', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.071, error_jy: 0.016, frequency_ghz: 5.5, mjd: 58406.0, spectral_index: 0.416, epoch_date: '2018-Oct-15', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.558, error_jy: 0.016, frequency_ghz: 9.0, mjd: 58406.0, spectral_index: 0.443, epoch_date: '2018-Oct-15', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 1.846, error_jy: 0.007, frequency_ghz: 5.5, mjd: 58229.0, spectral_index: 0.72, epoch_date: '2018-Apr-21', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.391, error_jy: 0.007, frequency_ghz: 9.0, mjd: 58229.0, spectral_index: 0.332, epoch_date: '2018-Apr-21', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 1.855, error_jy: 0.007, frequency_ghz: 5.5, mjd: 58077.0, spectral_index: 0.284, epoch_date: '2017-Nov-20', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.11, error_jy: 0.007, frequency_ghz: 9.0, mjd: 58077.0, spectral_index: 0.24, epoch_date: '2017-Nov-20', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.369, error_jy: 0.008, frequency_ghz: 5.5, mjd: 57916.0, spectral_index: 0.596, epoch_date: '2017-Jun-12', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.035, error_jy: 0.008, frequency_ghz: 9.0, mjd: 57916.0, spectral_index: 0.411, epoch_date: '2017-Jun-12', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.674, error_jy: 0.014, frequency_ghz: 5.5, mjd: 56741.0, spectral_index: 0.194, epoch_date: '2014-Mar-25', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.868, error_jy: 0.014, frequency_ghz: 9.0, mjd: 56741.0, spectral_index: 0.09, epoch_date: '2014-Mar-25', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.714, error_jy: 0.012, frequency_ghz: 5.5, mjd: 56173.0, spectral_index: 0.392, epoch_date: '2012-Sep-03', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.184, error_jy: 0.012, frequency_ghz: 9.0, mjd: 56173.0, spectral_index: 0.257, epoch_date: '2012-Sep-03', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.181, error_jy: 0.01, frequency_ghz: 5.5, mjd: 56039.0, spectral_index: 0.236, epoch_date: '2012-Apr-22', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.401, error_jy: 0.01, frequency_ghz: 9.0, mjd: 56039.0, spectral_index: 0.154, epoch_date: '2012-Apr-22', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.526, error_jy: 0.052, frequency_ghz: 5.5, mjd: 55702.0, spectral_index: 0.2, epoch_date: '2011-May-21', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.59, error_jy: 0.052, frequency_ghz: 9.0, mjd: 55702.0, spectral_index: -0.127, epoch_date: '2011-May-21', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 3.904, error_jy: 0.015, frequency_ghz: 5.5, mjd: 55686.0, spectral_index: 0.551, epoch_date: '2011-May-05', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 5.082, error_jy: 0.015, frequency_ghz: 9.0, mjd: 55686.0, spectral_index: 0.519, epoch_date: '2011-May-05', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 1.624, error_jy: 0.002, frequency_ghz: 4.8, mjd: 53598.0, spectral_index: 0.589, epoch_date: '2005-Aug-16', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.146, error_jy: 0.002, frequency_ghz: 8.64, mjd: 53598.0, spectral_index: 0.359, epoch_date: '2005-Aug-16', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.243, error_jy: 0.005, frequency_ghz: 4.8, mjd: 53494.0, spectral_index: 0.315, epoch_date: '2005-May-04', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.7, error_jy: 0.005, frequency_ghz: 8.64, mjd: 53494.0, spectral_index: 0.315, epoch_date: '2005-May-04', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 1.425, error_jy: 0.027, frequency_ghz: 2.1, mjd: 59914.0, spectral_index: 0.145, epoch_date: '2022-Dec-01', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 1.073, error_jy: 0.041, frequency_ghz: 2.1, mjd: 59428.0, spectral_index: 0.373, epoch_date: '2021-Aug-02', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 0.938, error_jy: 0.066, frequency_ghz: 2.1, mjd: 59371.0, spectral_index: 0.184, epoch_date: '2021-Jun-06', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 1.972, error_jy: 0.022, frequency_ghz: 2.1, mjd: 58952.0, spectral_index: 0.209, epoch_date: '2020-Apr-13', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 1.049, error_jy: 0.023, frequency_ghz: 2.1, mjd: 58140.0, spectral_index: 0.266, epoch_date: '2018-Jan-22', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.415, error_jy: 0.023, frequency_ghz: 2.1, mjd: 57545.0, spectral_index: 0.071, epoch_date: '2016-Jun-06', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.272, error_jy: 0.018, frequency_ghz: 2.1, mjd: 56690.0, spectral_index: 0.545, epoch_date: '2014-Feb-02', source_id: @a17510938.id)
+@a17510938=Source.where(j2000_name: '1751+0938').first_or_create
+@a17510938.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1749+096&detailed=true')
+AtcaResult.create(value_jy: 2.065, error_jy: 0.025, frequency_ghz: 2.1, mjd: 56225.0, spectral_index: 0.378, epoch_date: '2012-Oct-25', source_id: @a17510938.id)
 @a17480832=Source.where(j2000_name: '1748+0832').first_or_create
 @a17480832.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1745+085&detailed=true')
 AtcaResult.create(value_jy: 0.01, error_jy: 0.241, frequency_ghz: 93.0, mjd: 56127.0, spectral_index: -26.819, epoch_date: '2012-Jul-19', source_id: @a17480832.id)
@@ -7318,48 +7318,48 @@ AtcaResult.create(value_jy: 0.792, error_jy: 0.003, frequency_ghz: 9.0, mjd: 555
 @a14151320=Source.where(j2000_name: '1415+1320').first_or_create
 @a14151320.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1413+135&detailed=true')
 AtcaResult.create(value_jy: 0.83, error_jy: 0.003, frequency_ghz: 5.5, mjd: 55532.0, spectral_index: -0.069, epoch_date: '2010-Dec-02', source_id: @a14151320.id)
-@a13313030=Source.where(j2000_name: '1331+3030').first_or_create
-@a13313030.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
-AtcaResult.create(value_jy: 1.38, error_jy: 0.761, frequency_ghz: 16.8, mjd: 58184.0, spectral_index: -0.12, epoch_date: '2018-Mar-07', source_id: @a13313030.id)
-@a13313030=Source.where(j2000_name: '1331+3030').first_or_create
-@a13313030.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
-AtcaResult.create(value_jy: 1.342, error_jy: 0.761, frequency_ghz: 21.2, mjd: 58184.0, spectral_index: -0.12, epoch_date: '2018-Mar-07', source_id: @a13313030.id)
-@a13313030=Source.where(j2000_name: '1331+3030').first_or_create
-@a13313030.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
-AtcaResult.create(value_jy: 7.077, error_jy: 0.035, frequency_ghz: 5.5, mjd: 57855.0, spectral_index: -0.654, epoch_date: '2017-Apr-12', source_id: @a13313030.id)
-@a13313030=Source.where(j2000_name: '1331+3030').first_or_create
-@a13313030.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
-AtcaResult.create(value_jy: 5.094, error_jy: 0.035, frequency_ghz: 9.0, mjd: 57855.0, spectral_index: -0.681, epoch_date: '2017-Apr-12', source_id: @a13313030.id)
-@a13313030=Source.where(j2000_name: '1331+3030').first_or_create
-@a13313030.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
-AtcaResult.create(value_jy: 7.434, error_jy: 0.005, frequency_ghz: 4.8, mjd: 50258.0, spectral_index: -0.508, epoch_date: '1996-Jun-24', source_id: @a13313030.id)
-@a13313030=Source.where(j2000_name: '1331+3030').first_or_create
-@a13313030.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
-AtcaResult.create(value_jy: 5.032, error_jy: 0.005, frequency_ghz: 8.64, mjd: 50258.0, spectral_index: -0.82, epoch_date: '1996-Jun-24', source_id: @a13313030.id)
-@a13313030=Source.where(j2000_name: '1331+3030').first_or_create
-@a13313030.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
-AtcaResult.create(value_jy: 5.097, error_jy: 0.09, frequency_ghz: 8.64, mjd: 49753.0, spectral_index: -0.655, epoch_date: '1995-Feb-05', source_id: @a13313030.id)
-@a13313030=Source.where(j2000_name: '1331+3030').first_or_create
-@a13313030.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
-AtcaResult.create(value_jy: 7.369, error_jy: 0.09, frequency_ghz: 4.8, mjd: 49753.0, spectral_index: -0.599, epoch_date: '1995-Feb-05', source_id: @a13313030.id)
-@a13313030=Source.where(j2000_name: '1331+3030').first_or_create
-@a13313030.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
-AtcaResult.create(value_jy: 5.001, error_jy: 0.09, frequency_ghz: 8.896, mjd: 49753.0, spectral_index: -0.658, epoch_date: '1995-Feb-05', source_id: @a13313030.id)
-@a13313030=Source.where(j2000_name: '1331+3030').first_or_create
-@a13313030.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
-AtcaResult.create(value_jy: 6.379, error_jy: 0.09, frequency_ghz: 6.08, mjd: 49753.0, spectral_index: -0.621, epoch_date: '1995-Feb-05', source_id: @a13313030.id)
-@a13313030=Source.where(j2000_name: '1331+3030').first_or_create
-@a13313030.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
-AtcaResult.create(value_jy: 7.124, error_jy: 0.007, frequency_ghz: 4.8, mjd: 49521.0, spectral_index: -0.68, epoch_date: '1994-Jun-18', source_id: @a13313030.id)
-@a13313030=Source.where(j2000_name: '1331+3030').first_or_create
-@a13313030.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
-AtcaResult.create(value_jy: 4.783, error_jy: 0.007, frequency_ghz: 8.64, mjd: 49521.0, spectral_index: -0.676, epoch_date: '1994-Jun-18', source_id: @a13313030.id)
-@a13313030=Source.where(j2000_name: '1331+3030').first_or_create
-@a13313030.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
-AtcaResult.create(value_jy: 13.484, error_jy: 0.022, frequency_ghz: 1.38, mjd: 49521.0, spectral_index: -0.581, epoch_date: '1994-Jun-18', source_id: @a13313030.id)
-@a13313030=Source.where(j2000_name: '1331+3030').first_or_create
-@a13313030.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
-AtcaResult.create(value_jy: 10.08, error_jy: 0.022, frequency_ghz: 2.378, mjd: 49521.0, spectral_index: -0.488, epoch_date: '1994-Jun-18', source_id: @a13313030.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a3C286.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
+AtcaResult.create(value_jy: 1.38, error_jy: 0.761, frequency_ghz: 16.8, mjd: 58184.0, spectral_index: -0.12, epoch_date: '2018-Mar-07', source_id: @a3C286.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a3C286.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
+AtcaResult.create(value_jy: 1.342, error_jy: 0.761, frequency_ghz: 21.2, mjd: 58184.0, spectral_index: -0.12, epoch_date: '2018-Mar-07', source_id: @a3C286.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a3C286.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
+AtcaResult.create(value_jy: 7.077, error_jy: 0.035, frequency_ghz: 5.5, mjd: 57855.0, spectral_index: -0.654, epoch_date: '2017-Apr-12', source_id: @a3C286.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a3C286.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
+AtcaResult.create(value_jy: 5.094, error_jy: 0.035, frequency_ghz: 9.0, mjd: 57855.0, spectral_index: -0.681, epoch_date: '2017-Apr-12', source_id: @a3C286.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a3C286.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
+AtcaResult.create(value_jy: 7.434, error_jy: 0.005, frequency_ghz: 4.8, mjd: 50258.0, spectral_index: -0.508, epoch_date: '1996-Jun-24', source_id: @a3C286.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a3C286.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
+AtcaResult.create(value_jy: 5.032, error_jy: 0.005, frequency_ghz: 8.64, mjd: 50258.0, spectral_index: -0.82, epoch_date: '1996-Jun-24', source_id: @a3C286.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a3C286.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
+AtcaResult.create(value_jy: 5.097, error_jy: 0.09, frequency_ghz: 8.64, mjd: 49753.0, spectral_index: -0.655, epoch_date: '1995-Feb-05', source_id: @a3C286.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a3C286.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
+AtcaResult.create(value_jy: 7.369, error_jy: 0.09, frequency_ghz: 4.8, mjd: 49753.0, spectral_index: -0.599, epoch_date: '1995-Feb-05', source_id: @a3C286.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a3C286.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
+AtcaResult.create(value_jy: 5.001, error_jy: 0.09, frequency_ghz: 8.896, mjd: 49753.0, spectral_index: -0.658, epoch_date: '1995-Feb-05', source_id: @a3C286.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a3C286.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
+AtcaResult.create(value_jy: 6.379, error_jy: 0.09, frequency_ghz: 6.08, mjd: 49753.0, spectral_index: -0.621, epoch_date: '1995-Feb-05', source_id: @a3C286.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a3C286.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
+AtcaResult.create(value_jy: 7.124, error_jy: 0.007, frequency_ghz: 4.8, mjd: 49521.0, spectral_index: -0.68, epoch_date: '1994-Jun-18', source_id: @a3C286.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a3C286.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
+AtcaResult.create(value_jy: 4.783, error_jy: 0.007, frequency_ghz: 8.64, mjd: 49521.0, spectral_index: -0.676, epoch_date: '1994-Jun-18', source_id: @a3C286.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a3C286.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
+AtcaResult.create(value_jy: 13.484, error_jy: 0.022, frequency_ghz: 1.38, mjd: 49521.0, spectral_index: -0.581, epoch_date: '1994-Jun-18', source_id: @a3C286.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a3C286.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1328+307&detailed=true')
+AtcaResult.create(value_jy: 10.08, error_jy: 0.022, frequency_ghz: 2.378, mjd: 49521.0, spectral_index: -0.488, epoch_date: '1994-Jun-18', source_id: @a3C286.id)
 @a13254301=Source.where(j2000_name: '1325-4301').first_or_create
 @a13254301.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1322-427&detailed=true')
 AtcaResult.create(value_jy: 17.844, error_jy: 0.279, frequency_ghz: 93.0, mjd: 56755.0, spectral_index: 1.666, epoch_date: '2014-Apr-08', source_id: @a13254301.id)
@@ -8779,870 +8779,870 @@ AtcaResult.create(value_jy: 0.003, error_jy: 0.002, frequency_ghz: 8.64, mjd: 49
 @a13154236=Source.where(j2000_name: '1315-4236').first_or_create
 @a13154236.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1312-423&detailed=true')
 AtcaResult.create(value_jy: 0.005, error_jy: 0.002, frequency_ghz: 4.8, mjd: 49753.0, spectral_index: 11.542, epoch_date: '1995-Feb-05', source_id: @a13154236.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 18.35, error_jy: 0.275, frequency_ghz: 95.0, mjd: 56831.0, spectral_index: 0.014, epoch_date: '2014-Jun-23', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 18.344, error_jy: 0.275, frequency_ghz: 93.0, mjd: 56831.0, spectral_index: 0.014, epoch_date: '2014-Jun-23', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 29.571, error_jy: 0.052, frequency_ghz: 93.0, mjd: 56755.0, spectral_index: 0.515, epoch_date: '2014-Apr-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 29.897, error_jy: 0.052, frequency_ghz: 95.0, mjd: 56755.0, spectral_index: 0.515, epoch_date: '2014-Apr-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.912, error_jy: 0.959, frequency_ghz: 93.0, mjd: 56526.0, spectral_index: -1.147, epoch_date: '2013-Aug-22', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.48, error_jy: 0.959, frequency_ghz: 95.0, mjd: 56526.0, spectral_index: -1.147, epoch_date: '2013-Aug-22', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 22.065, error_jy: 0.465, frequency_ghz: 93.0, mjd: 55768.0, spectral_index: -0.955, epoch_date: '2011-Jul-26', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 21.621, error_jy: 0.465, frequency_ghz: 95.0, mjd: 55768.0, spectral_index: -0.955, epoch_date: '2011-Jul-26', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.563, error_jy: 0.089, frequency_ghz: 93.504, mjd: 54230.0, spectral_index: -1.281, epoch_date: '2007-May-10', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.192, error_jy: 0.089, frequency_ghz: 95.552, mjd: 54230.0, spectral_index: -1.281, epoch_date: '2007-May-10', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.808, error_jy: 0.072, frequency_ghz: 93.504, mjd: 53849.0, spectral_index: 0.07, epoch_date: '2006-Apr-24', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.83, error_jy: 0.072, frequency_ghz: 95.552, mjd: 53849.0, spectral_index: 0.07, epoch_date: '2006-Apr-24', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 20.015, error_jy: 0.044, frequency_ghz: 93.504, mjd: 53516.0, spectral_index: -0.362, epoch_date: '2005-May-26', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.859, error_jy: 0.044, frequency_ghz: 95.552, mjd: 53516.0, spectral_index: -0.362, epoch_date: '2005-May-26', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.611, error_jy: 0.142, frequency_ghz: 89.0005, mjd: 53127.0, spectral_index: 0.948, epoch_date: '2004-May-02', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.756, error_jy: 0.142, frequency_ghz: 90.0005, mjd: 53127.0, spectral_index: 0.948, epoch_date: '2004-May-02', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.283, error_jy: 0.417, frequency_ghz: 35.0, mjd: 59893.0, spectral_index: -0.942, epoch_date: '2022-Nov-10', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 20.382, error_jy: 0.417, frequency_ghz: 33.0, mjd: 59893.0, spectral_index: -0.942, epoch_date: '2022-Nov-10', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 22.377, error_jy: 0.375, frequency_ghz: 33.0, mjd: 59877.0, spectral_index: -0.302, epoch_date: '2022-Oct-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 21.982, error_jy: 0.375, frequency_ghz: 35.0, mjd: 59877.0, spectral_index: -0.302, epoch_date: '2022-Oct-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 21.223, error_jy: 0.325, frequency_ghz: 38.0, mjd: 59866.0, spectral_index: -0.422, epoch_date: '2022-Oct-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 20.769, error_jy: 0.325, frequency_ghz: 40.0, mjd: 59866.0, spectral_index: -0.422, epoch_date: '2022-Oct-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.918, error_jy: 0.002, frequency_ghz: 33.0, mjd: 59698.0, spectral_index: 0.114, epoch_date: '2022-Apr-29', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 24.079, error_jy: 0.002, frequency_ghz: 35.0, mjd: 59698.0, spectral_index: 0.114, epoch_date: '2022-Apr-29', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 22.664, error_jy: 0.002, frequency_ghz: 33.0, mjd: 59356.0, spectral_index: -0.041, epoch_date: '2021-May-22', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 22.61, error_jy: 0.002, frequency_ghz: 35.0, mjd: 59356.0, spectral_index: -0.041, epoch_date: '2021-May-22', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 22.197, error_jy: 0.303, frequency_ghz: 33.0, mjd: 59223.0, spectral_index: 0.094, epoch_date: '2021-Jan-09', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 22.319, error_jy: 0.303, frequency_ghz: 35.0, mjd: 59223.0, spectral_index: 0.094, epoch_date: '2021-Jan-09', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.381, error_jy: 1.477, frequency_ghz: 40.0, mjd: 58941.0, spectral_index: 0.11, epoch_date: '2020-Apr-02', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.272, error_jy: 1.477, frequency_ghz: 38.0, mjd: 58941.0, spectral_index: 0.11, epoch_date: '2020-Apr-02', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.267, error_jy: 0.0, frequency_ghz: 38.0, mjd: 58760.0, spectral_index: -0.287, epoch_date: '2019-Oct-04', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.044, error_jy: 0.0, frequency_ghz: 40.0, mjd: 58760.0, spectral_index: -0.287, epoch_date: '2019-Oct-04', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.62, error_jy: 0.001, frequency_ghz: 38.0, mjd: 57676.0, spectral_index: -0.247, epoch_date: '2016-Oct-15', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.448, error_jy: 0.001, frequency_ghz: 40.0, mjd: 57676.0, spectral_index: -0.247, epoch_date: '2016-Oct-15', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.734, error_jy: 0.187, frequency_ghz: 38.0, mjd: 57617.0, spectral_index: -0.38, epoch_date: '2016-Aug-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.45, error_jy: 0.187, frequency_ghz: 40.0, mjd: 57617.0, spectral_index: -0.38, epoch_date: '2016-Aug-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 18.503, error_jy: 0.005, frequency_ghz: 33.0, mjd: 57304.0, spectral_index: -0.07, epoch_date: '2015-Oct-09', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 18.426, error_jy: 0.005, frequency_ghz: 35.0, mjd: 57304.0, spectral_index: -0.07, epoch_date: '2015-Oct-09', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.805, error_jy: 0.001, frequency_ghz: 38.0, mjd: 57246.0, spectral_index: -0.121, epoch_date: '2015-Aug-12', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.694, error_jy: 0.001, frequency_ghz: 40.0, mjd: 57246.0, spectral_index: -0.121, epoch_date: '2015-Aug-12', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.425, error_jy: 0.001, frequency_ghz: 38.0, mjd: 57202.0, spectral_index: -0.232, epoch_date: '2015-Jun-29', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.219, error_jy: 0.001, frequency_ghz: 40.0, mjd: 57202.0, spectral_index: -0.232, epoch_date: '2015-Jun-29', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.693, error_jy: 0.001, frequency_ghz: 38.0, mjd: 57061.0, spectral_index: -0.136, epoch_date: '2015-Feb-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.556, error_jy: 0.001, frequency_ghz: 40.0, mjd: 57061.0, spectral_index: -0.136, epoch_date: '2015-Feb-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 21.169, error_jy: 0.001, frequency_ghz: 38.0, mjd: 57007.0, spectral_index: 0.065, epoch_date: '2014-Dec-16', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 21.24, error_jy: 0.001, frequency_ghz: 40.0, mjd: 57007.0, spectral_index: 0.065, epoch_date: '2014-Dec-16', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.956, error_jy: 0.278, frequency_ghz: 38.0, mjd: 56913.0, spectral_index: -0.354, epoch_date: '2014-Sep-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.597, error_jy: 0.278, frequency_ghz: 40.0, mjd: 56913.0, spectral_index: -0.354, epoch_date: '2014-Sep-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.004, error_jy: 0.001, frequency_ghz: 33.0, mjd: 56846.0, spectral_index: -0.422, epoch_date: '2014-Jul-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 22.44, error_jy: 0.001, frequency_ghz: 35.0, mjd: 56846.0, spectral_index: -0.422, epoch_date: '2014-Jul-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 69.92, error_jy: 1.101, frequency_ghz: 33.0, mjd: 56118.0, spectral_index: 0.837, epoch_date: '2012-Jul-10', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 73.45, error_jy: 1.101, frequency_ghz: 35.0, mjd: 56118.0, spectral_index: 0.837, epoch_date: '2012-Jul-10', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.944, error_jy: 0.042, frequency_ghz: 35.0, mjd: 55821.0, spectral_index: -0.172, epoch_date: '2011-Sep-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 24.187, error_jy: 0.042, frequency_ghz: 33.0, mjd: 55821.0, spectral_index: -0.172, epoch_date: '2011-Sep-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 28.427, error_jy: 0.052, frequency_ghz: 33.0, mjd: 55663.0, spectral_index: -0.073, epoch_date: '2011-Apr-12', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 28.305, error_jy: 0.052, frequency_ghz: 35.0, mjd: 55663.0, spectral_index: -0.073, epoch_date: '2011-Apr-12', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 20.851, error_jy: 0.062, frequency_ghz: 43.0, mjd: 55453.0, spectral_index: -0.097, epoch_date: '2010-Sep-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 20.76, error_jy: 0.062, frequency_ghz: 45.0, mjd: 55453.0, spectral_index: -0.097, epoch_date: '2010-Sep-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 21.772, error_jy: 0.004, frequency_ghz: 32.064, mjd: 54657.0, spectral_index: -0.064, epoch_date: '2008-Jul-10', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 21.685, error_jy: 0.004, frequency_ghz: 34.112, mjd: 54657.0, spectral_index: -0.064, epoch_date: '2008-Jul-10', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 21.365, error_jy: 0.004, frequency_ghz: 42.944, mjd: 54657.0, spectral_index: -0.064, epoch_date: '2008-Jul-10', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 21.301, error_jy: 0.004, frequency_ghz: 44.992, mjd: 54657.0, spectral_index: -0.064, epoch_date: '2008-Jul-10', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.294, error_jy: 0.168, frequency_ghz: 32.064, mjd: 54634.0, spectral_index: -0.074, epoch_date: '2008-Jun-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.214, error_jy: 0.168, frequency_ghz: 34.112, mjd: 54634.0, spectral_index: -0.074, epoch_date: '2008-Jun-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.877, error_jy: 0.001, frequency_ghz: 42.944, mjd: 54583.0, spectral_index: -0.631, epoch_date: '2008-Apr-27', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.359, error_jy: 0.001, frequency_ghz: 44.992, mjd: 54583.0, spectral_index: -0.631, epoch_date: '2008-Apr-27', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.385, error_jy: 0.037, frequency_ghz: 44.992, mjd: 54234.0, spectral_index: -0.906, epoch_date: '2007-May-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.005, error_jy: 0.037, frequency_ghz: 42.944, mjd: 54234.0, spectral_index: -0.906, epoch_date: '2007-May-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 27.415, error_jy: 0.302, frequency_ghz: 16.7, mjd: 59947.0, spectral_index: 0.0, epoch_date: '2023-Jan-03', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 27.415, error_jy: 0.302, frequency_ghz: 21.2, mjd: 59947.0, spectral_index: 0.0, epoch_date: '2023-Jan-03', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 26.982, error_jy: 0.137, frequency_ghz: 16.7, mjd: 59866.0, spectral_index: -0.078, epoch_date: '2022-Oct-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 26.487, error_jy: 0.137, frequency_ghz: 21.2, mjd: 59866.0, spectral_index: -0.078, epoch_date: '2022-Oct-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 26.227, error_jy: 0.136, frequency_ghz: 17.0, mjd: 59812.0, spectral_index: -0.076, epoch_date: '2022-Aug-21', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 26.007, error_jy: 0.136, frequency_ghz: 19.0, mjd: 59812.0, spectral_index: -0.076, epoch_date: '2022-Aug-21', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 26.69, error_jy: 0.162, frequency_ghz: 17.0, mjd: 59582.0, spectral_index: 0.029, epoch_date: '2022-Jan-03', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 26.776, error_jy: 0.162, frequency_ghz: 19.0, mjd: 59582.0, spectral_index: 0.029, epoch_date: '2022-Jan-03', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 24.482, error_jy: 0.199, frequency_ghz: 16.8, mjd: 59518.0, spectral_index: 0.133, epoch_date: '2021-Oct-31', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 25.251, error_jy: 0.199, frequency_ghz: 21.2, mjd: 59518.0, spectral_index: 0.133, epoch_date: '2021-Oct-31', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 24.394, error_jy: 0.168, frequency_ghz: 16.7, mjd: 59510.0, spectral_index: 0.029, epoch_date: '2021-Oct-23', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 24.562, error_jy: 0.168, frequency_ghz: 21.2, mjd: 59510.0, spectral_index: 0.029, epoch_date: '2021-Oct-23', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 20.951, error_jy: 0.236, frequency_ghz: 16.8, mjd: 59238.0, spectral_index: -0.086, epoch_date: '2021-Jan-24', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 20.539, error_jy: 0.236, frequency_ghz: 21.2, mjd: 59238.0, spectral_index: -0.086, epoch_date: '2021-Jan-24', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.723, error_jy: 0.082, frequency_ghz: 16.8, mjd: 58984.0, spectral_index: 0.159, epoch_date: '2020-May-15', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.355, error_jy: 0.082, frequency_ghz: 21.2, mjd: 58984.0, spectral_index: 0.159, epoch_date: '2020-May-15', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.859, error_jy: 0.142, frequency_ghz: 17.0, mjd: 58941.0, spectral_index: -0.011, epoch_date: '2020-Apr-02', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.839, error_jy: 0.142, frequency_ghz: 19.0, mjd: 58941.0, spectral_index: -0.011, epoch_date: '2020-Apr-02', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.816, error_jy: 0.052, frequency_ghz: 17.0, mjd: 58760.0, spectral_index: 0.116, epoch_date: '2019-Oct-04', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.008, error_jy: 0.052, frequency_ghz: 19.0, mjd: 58760.0, spectral_index: 0.116, epoch_date: '2019-Oct-04', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.751, error_jy: 0.068, frequency_ghz: 16.8, mjd: 58727.0, spectral_index: 0.097, epoch_date: '2019-Sep-01', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.066, error_jy: 0.068, frequency_ghz: 21.2, mjd: 58727.0, spectral_index: 0.097, epoch_date: '2019-Sep-01', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.359, error_jy: 0.085, frequency_ghz: 17.0, mjd: 58424.0, spectral_index: 0.322, epoch_date: '2018-Nov-02', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.92, error_jy: 0.085, frequency_ghz: 19.0, mjd: 58424.0, spectral_index: 0.322, epoch_date: '2018-Nov-02', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.539, error_jy: 0.096, frequency_ghz: 17.0, mjd: 58409.0, spectral_index: 0.235, epoch_date: '2018-Oct-18', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.925, error_jy: 0.096, frequency_ghz: 19.0, mjd: 58409.0, spectral_index: 0.235, epoch_date: '2018-Oct-18', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.334, error_jy: 0.001, frequency_ghz: 16.8, mjd: 58184.0, spectral_index: 0.115, epoch_date: '2018-Mar-07', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.749, error_jy: 0.001, frequency_ghz: 21.2, mjd: 58184.0, spectral_index: 0.115, epoch_date: '2018-Mar-07', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.163, error_jy: 0.041, frequency_ghz: 17.0, mjd: 57880.0, spectral_index: 0.02, epoch_date: '2017-May-07', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.199, error_jy: 0.041, frequency_ghz: 19.0, mjd: 57880.0, spectral_index: 0.02, epoch_date: '2017-May-07', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.009, error_jy: 0.057, frequency_ghz: 17.0, mjd: 57617.0, spectral_index: -0.196, epoch_date: '2016-Aug-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 18.599, error_jy: 0.057, frequency_ghz: 19.0, mjd: 57617.0, spectral_index: -0.196, epoch_date: '2016-Aug-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 20.231, error_jy: 0.145, frequency_ghz: 17.0, mjd: 57594.0, spectral_index: -0.231, epoch_date: '2016-Jul-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.718, error_jy: 0.145, frequency_ghz: 19.0, mjd: 57594.0, spectral_index: -0.231, epoch_date: '2016-Jul-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.901, error_jy: 0.067, frequency_ghz: 17.0, mjd: 57535.0, spectral_index: -0.224, epoch_date: '2016-May-27', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.412, error_jy: 0.067, frequency_ghz: 19.0, mjd: 57535.0, spectral_index: -0.224, epoch_date: '2016-May-27', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.896, error_jy: 0.09, frequency_ghz: 17.0, mjd: 57510.0, spectral_index: -0.211, epoch_date: '2016-May-02', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.433, error_jy: 0.09, frequency_ghz: 19.0, mjd: 57510.0, spectral_index: -0.211, epoch_date: '2016-May-02', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.406, error_jy: 0.099, frequency_ghz: 17.0, mjd: 57007.0, spectral_index: -0.063, epoch_date: '2014-Dec-16', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.243, error_jy: 0.099, frequency_ghz: 19.0, mjd: 57007.0, spectral_index: -0.063, epoch_date: '2014-Dec-16', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 26.289, error_jy: 0.096, frequency_ghz: 17.0, mjd: 56913.0, spectral_index: -0.168, epoch_date: '2014-Sep-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 25.804, error_jy: 0.096, frequency_ghz: 19.0, mjd: 56913.0, spectral_index: -0.168, epoch_date: '2014-Sep-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 27.984, error_jy: 0.093, frequency_ghz: 17.0, mjd: 56889.0, spectral_index: -0.225, epoch_date: '2014-Aug-20', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 27.291, error_jy: 0.093, frequency_ghz: 19.0, mjd: 56889.0, spectral_index: -0.225, epoch_date: '2014-Aug-20', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 30.651, error_jy: 0.112, frequency_ghz: 17.0, mjd: 56568.0, spectral_index: -0.075, epoch_date: '2013-Oct-03', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 30.396, error_jy: 0.112, frequency_ghz: 19.0, mjd: 56568.0, spectral_index: -0.075, epoch_date: '2013-Oct-03', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 1.075, error_jy: 0.002, frequency_ghz: 17.0, mjd: 55403.0, spectral_index: -0.92, epoch_date: '2010-Jul-26', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 0.971, error_jy: 0.002, frequency_ghz: 19.0, mjd: 55403.0, spectral_index: -0.92, epoch_date: '2010-Jul-26', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.133, error_jy: 0.003, frequency_ghz: 17.0, mjd: 55376.0, spectral_index: 0.296, epoch_date: '2010-Jun-29', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.606, error_jy: 0.003, frequency_ghz: 19.0, mjd: 55376.0, spectral_index: 0.296, epoch_date: '2010-Jun-29', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 12.361, error_jy: 0.053, frequency_ghz: 17.0, mjd: 55007.0, spectral_index: -0.106, epoch_date: '2009-Jun-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 12.217, error_jy: 0.053, frequency_ghz: 19.0, mjd: 55007.0, spectral_index: -0.106, epoch_date: '2009-Jun-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 18.518, error_jy: 0.142, frequency_ghz: 18.496, mjd: 54727.0, spectral_index: 0.249, epoch_date: '2008-Sep-18', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 18.768, error_jy: 0.142, frequency_ghz: 19.52, mjd: 54727.0, spectral_index: 0.249, epoch_date: '2008-Sep-18', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.744, error_jy: 0.024, frequency_ghz: 18.496, mjd: 54657.0, spectral_index: 0.186, epoch_date: '2008-Jul-10', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.923, error_jy: 0.024, frequency_ghz: 19.52, mjd: 54657.0, spectral_index: 0.186, epoch_date: '2008-Jul-10', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.551, error_jy: 0.074, frequency_ghz: 18.496, mjd: 54320.0, spectral_index: -0.116, epoch_date: '2007-Aug-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.46, error_jy: 0.074, frequency_ghz: 19.52, mjd: 54320.0, spectral_index: -0.116, epoch_date: '2007-Aug-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.545, error_jy: 0.036, frequency_ghz: 18.496, mjd: 53569.0, spectral_index: 0.134, epoch_date: '2005-Jul-18', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.665, error_jy: 0.036, frequency_ghz: 19.52, mjd: 53569.0, spectral_index: 0.134, epoch_date: '2005-Jul-18', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.554, error_jy: 0.116, frequency_ghz: 5.5, mjd: 59961.0, spectral_index: 0.79, epoch_date: '2023-Jan-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.158, error_jy: 0.116, frequency_ghz: 9.0, mjd: 59961.0, spectral_index: 0.574, epoch_date: '2023-Jan-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.741, error_jy: 0.13, frequency_ghz: 9.0, mjd: 59947.0, spectral_index: 0.665, epoch_date: '2023-Jan-03', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.578, error_jy: 0.13, frequency_ghz: 5.5, mjd: 59947.0, spectral_index: 0.794, epoch_date: '2023-Jan-03', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.563, error_jy: 0.049, frequency_ghz: 5.5, mjd: 59922.0, spectral_index: 0.72, epoch_date: '2022-Dec-09', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.056, error_jy: 0.049, frequency_ghz: 9.0, mjd: 59922.0, spectral_index: 0.623, epoch_date: '2022-Dec-09', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.533, error_jy: 0.107, frequency_ghz: 5.5, mjd: 59877.0, spectral_index: 0.747, epoch_date: '2022-Oct-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 22.533, error_jy: 0.107, frequency_ghz: 9.0, mjd: 59877.0, spectral_index: 0.51, epoch_date: '2022-Oct-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.923, error_jy: 0.064, frequency_ghz: 5.5, mjd: 59866.0, spectral_index: 0.789, epoch_date: '2022-Oct-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.692, error_jy: 0.064, frequency_ghz: 9.0, mjd: 59866.0, spectral_index: 0.578, epoch_date: '2022-Oct-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.218, error_jy: 0.051, frequency_ghz: 5.5, mjd: 59777.0, spectral_index: 0.773, epoch_date: '2022-Jul-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.444, error_jy: 0.051, frequency_ghz: 9.0, mjd: 59777.0, spectral_index: 0.481, epoch_date: '2022-Jul-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 24.635, error_jy: 0.149, frequency_ghz: 9.0, mjd: 59727.0, spectral_index: 0.573, epoch_date: '2022-May-28', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.59, error_jy: 0.149, frequency_ghz: 5.5, mjd: 59727.0, spectral_index: 0.795, epoch_date: '2022-May-28', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.646, error_jy: 0.031, frequency_ghz: 5.5, mjd: 59713.0, spectral_index: 0.773, epoch_date: '2022-May-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.144, error_jy: 0.031, frequency_ghz: 9.0, mjd: 59713.0, spectral_index: 0.566, epoch_date: '2022-May-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.511, error_jy: 0.044, frequency_ghz: 5.5, mjd: 59712.0, spectral_index: 0.75, epoch_date: '2022-May-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 22.719, error_jy: 0.044, frequency_ghz: 9.0, mjd: 59712.0, spectral_index: 0.546, epoch_date: '2022-May-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.249, error_jy: 0.091, frequency_ghz: 5.5, mjd: 59691.0, spectral_index: 0.805, epoch_date: '2022-Apr-22', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 22.929, error_jy: 0.091, frequency_ghz: 9.0, mjd: 59691.0, spectral_index: 0.593, epoch_date: '2022-Apr-22', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.474, error_jy: 0.214, frequency_ghz: 5.5, mjd: 59639.0, spectral_index: 0.637, epoch_date: '2022-Mar-01', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 18.617, error_jy: 0.214, frequency_ghz: 9.0, mjd: 59639.0, spectral_index: 0.385, epoch_date: '2022-Mar-01', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 21.288, error_jy: 0.062, frequency_ghz: 8.5, mjd: 59618.0, spectral_index: 0.632, epoch_date: '2022-Feb-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.789, error_jy: 0.062, frequency_ghz: 5.5, mjd: 59618.0, spectral_index: 0.741, epoch_date: '2022-Feb-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.553, error_jy: 0.057, frequency_ghz: 8.5, mjd: 59536.0, spectral_index: 0.632, epoch_date: '2021-Nov-18', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.725, error_jy: 0.057, frequency_ghz: 5.5, mjd: 59536.0, spectral_index: 0.671, epoch_date: '2021-Nov-18', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.481, error_jy: 0.063, frequency_ghz: 5.5, mjd: 59510.0, spectral_index: 0.677, epoch_date: '2021-Oct-23', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.849, error_jy: 0.063, frequency_ghz: 9.0, mjd: 59510.0, spectral_index: 0.604, epoch_date: '2021-Oct-23', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.721, error_jy: 0.097, frequency_ghz: 5.5, mjd: 59419.0, spectral_index: 0.592, epoch_date: '2021-Jul-24', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.037, error_jy: 0.097, frequency_ghz: 9.0, mjd: 59419.0, spectral_index: 0.452, epoch_date: '2021-Jul-24', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.019, error_jy: 0.033, frequency_ghz: 5.5, mjd: 59366.0, spectral_index: 0.471, epoch_date: '2021-Jun-01', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 18.868, error_jy: 0.033, frequency_ghz: 9.0, mjd: 59366.0, spectral_index: 0.455, epoch_date: '2021-Jun-01', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.869, error_jy: 0.038, frequency_ghz: 5.5, mjd: 59335.0, spectral_index: 0.458, epoch_date: '2021-May-01', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 18.453, error_jy: 0.038, frequency_ghz: 9.0, mjd: 59335.0, spectral_index: 0.419, epoch_date: '2021-May-01', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.566, error_jy: 0.254, frequency_ghz: 5.5, mjd: 59253.0, spectral_index: 0.235, epoch_date: '2021-Feb-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.269, error_jy: 0.254, frequency_ghz: 9.0, mjd: 59253.0, spectral_index: 0.214, epoch_date: '2021-Feb-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.649, error_jy: 0.095, frequency_ghz: 5.5, mjd: 59252.0, spectral_index: 0.396, epoch_date: '2021-Feb-07', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.862, error_jy: 0.095, frequency_ghz: 9.0, mjd: 59252.0, spectral_index: 0.41, epoch_date: '2021-Feb-07', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.523, error_jy: 0.089, frequency_ghz: 5.5, mjd: 59244.0, spectral_index: 0.389, epoch_date: '2021-Jan-30', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.408, error_jy: 0.089, frequency_ghz: 9.0, mjd: 59244.0, spectral_index: 0.347, epoch_date: '2021-Jan-30', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.298, error_jy: 0.079, frequency_ghz: 5.5, mjd: 59202.0, spectral_index: 0.343, epoch_date: '2020-Dec-19', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.85, error_jy: 0.079, frequency_ghz: 9.0, mjd: 59202.0, spectral_index: 0.324, epoch_date: '2020-Dec-19', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.035, error_jy: 0.047, frequency_ghz: 5.5, mjd: 59186.0, spectral_index: 0.382, epoch_date: '2020-Dec-03', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.796, error_jy: 0.047, frequency_ghz: 9.0, mjd: 59186.0, spectral_index: 0.348, epoch_date: '2020-Dec-03', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.692, error_jy: 0.048, frequency_ghz: 5.5, mjd: 59164.0, spectral_index: 0.307, epoch_date: '2020-Nov-11', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.777, error_jy: 0.048, frequency_ghz: 9.0, mjd: 59164.0, spectral_index: 0.269, epoch_date: '2020-Nov-11', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.392, error_jy: 0.04, frequency_ghz: 5.5, mjd: 59111.0, spectral_index: 0.26, epoch_date: '2020-Sep-19', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.309, error_jy: 0.04, frequency_ghz: 9.0, mjd: 59111.0, spectral_index: 0.283, epoch_date: '2020-Sep-19', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.152, error_jy: 0.085, frequency_ghz: 5.5, mjd: 59002.0, spectral_index: 0.203, epoch_date: '2020-Jun-02', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.605, error_jy: 0.085, frequency_ghz: 9.0, mjd: 59002.0, spectral_index: 0.223, epoch_date: '2020-Jun-02', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 12.982, error_jy: 0.028, frequency_ghz: 5.5, mjd: 58983.0, spectral_index: 0.272, epoch_date: '2020-May-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.72, error_jy: 0.028, frequency_ghz: 9.0, mjd: 58983.0, spectral_index: 0.239, epoch_date: '2020-May-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 11.295, error_jy: 0.087, frequency_ghz: 5.5, mjd: 58942.0, spectral_index: 0.004, epoch_date: '2020-Apr-03', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 9.574, error_jy: 0.087, frequency_ghz: 9.0, mjd: 58942.0, spectral_index: -0.675, epoch_date: '2020-Apr-03', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 12.793, error_jy: 0.022, frequency_ghz: 5.5, mjd: 58931.0, spectral_index: 0.258, epoch_date: '2020-Mar-23', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.603, error_jy: 0.022, frequency_ghz: 9.0, mjd: 58931.0, spectral_index: 0.28, epoch_date: '2020-Mar-23', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 12.359, error_jy: 0.045, frequency_ghz: 5.5, mjd: 58923.0, spectral_index: 0.272, epoch_date: '2020-Mar-15', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.986, error_jy: 0.045, frequency_ghz: 9.0, mjd: 58923.0, spectral_index: 0.23, epoch_date: '2020-Mar-15', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 12.301, error_jy: 0.048, frequency_ghz: 5.5, mjd: 58879.0, spectral_index: 0.306, epoch_date: '2020-Jan-31', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.282, error_jy: 0.048, frequency_ghz: 9.0, mjd: 58879.0, spectral_index: 0.301, epoch_date: '2020-Jan-31', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 12.37, error_jy: 0.045, frequency_ghz: 5.5, mjd: 58829.0, spectral_index: 0.192, epoch_date: '2019-Dec-12', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.684, error_jy: 0.045, frequency_ghz: 9.0, mjd: 58829.0, spectral_index: 0.218, epoch_date: '2019-Dec-12', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.975, error_jy: 0.047, frequency_ghz: 9.0, mjd: 58627.0, spectral_index: 0.021, epoch_date: '2019-May-24', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.55, error_jy: 0.047, frequency_ghz: 5.5, mjd: 58627.0, spectral_index: 0.104, epoch_date: '2019-May-24', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.432, error_jy: 0.067, frequency_ghz: 5.5, mjd: 58490.0, spectral_index: 0.166, epoch_date: '2019-Jan-07', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.491, error_jy: 0.067, frequency_ghz: 9.0, mjd: 58490.0, spectral_index: 0.121, epoch_date: '2019-Jan-07', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.776, error_jy: 0.051, frequency_ghz: 5.5, mjd: 58427.0, spectral_index: 0.085, epoch_date: '2018-Nov-05', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.562, error_jy: 0.051, frequency_ghz: 9.0, mjd: 58427.0, spectral_index: 0.14, epoch_date: '2018-Nov-05', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.524, error_jy: 0.047, frequency_ghz: 5.5, mjd: 58413.0, spectral_index: 0.086, epoch_date: '2018-Oct-22', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.029, error_jy: 0.047, frequency_ghz: 9.0, mjd: 58413.0, spectral_index: 0.063, epoch_date: '2018-Oct-22', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.859, error_jy: 0.038, frequency_ghz: 5.5, mjd: 58406.0, spectral_index: 0.048, epoch_date: '2018-Oct-15', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.25, error_jy: 0.038, frequency_ghz: 9.0, mjd: 58406.0, spectral_index: 0.065, epoch_date: '2018-Oct-15', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.264, error_jy: 0.047, frequency_ghz: 5.5, mjd: 58258.0, spectral_index: 0.071, epoch_date: '2018-May-20', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.797, error_jy: 0.047, frequency_ghz: 9.0, mjd: 58258.0, spectral_index: 0.089, epoch_date: '2018-May-20', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.776, error_jy: 0.071, frequency_ghz: 5.5, mjd: 58080.0, spectral_index: 0.065, epoch_date: '2017-Nov-23', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.34, error_jy: 0.071, frequency_ghz: 9.0, mjd: 58080.0, spectral_index: 0.087, epoch_date: '2017-Nov-23', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.55, error_jy: 0.059, frequency_ghz: 5.5, mjd: 58073.0, spectral_index: 0.112, epoch_date: '2017-Nov-16', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.458, error_jy: 0.059, frequency_ghz: 9.0, mjd: 58073.0, spectral_index: 0.134, epoch_date: '2017-Nov-16', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.523, error_jy: 0.03, frequency_ghz: 5.5, mjd: 57916.0, spectral_index: 0.057, epoch_date: '2017-Jun-12', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.802, error_jy: 0.03, frequency_ghz: 9.0, mjd: 57916.0, spectral_index: 0.015, epoch_date: '2017-Jun-12', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.324, error_jy: 0.052, frequency_ghz: 5.5, mjd: 57880.0, spectral_index: 0.076, epoch_date: '2017-May-07', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.673, error_jy: 0.052, frequency_ghz: 9.0, mjd: 57880.0, spectral_index: 0.016, epoch_date: '2017-May-07', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.593, error_jy: 0.048, frequency_ghz: 5.5, mjd: 57855.0, spectral_index: 0.043, epoch_date: '2017-Apr-12', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.854, error_jy: 0.048, frequency_ghz: 9.0, mjd: 57855.0, spectral_index: 0.024, epoch_date: '2017-Apr-12', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.201, error_jy: 0.037, frequency_ghz: 5.5, mjd: 57803.0, spectral_index: 0.06, epoch_date: '2017-Feb-19', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.16, error_jy: 0.037, frequency_ghz: 9.0, mjd: 57803.0, spectral_index: -0.069, epoch_date: '2017-Feb-19', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 18.566, error_jy: 0.093, frequency_ghz: 5.5, mjd: 57728.0, spectral_index: 0.148, epoch_date: '2016-Dec-06', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.128, error_jy: 0.093, frequency_ghz: 9.0, mjd: 57728.0, spectral_index: -0.027, epoch_date: '2016-Dec-06', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.465, error_jy: 0.021, frequency_ghz: 5.5, mjd: 57676.0, spectral_index: 0.171, epoch_date: '2016-Oct-15', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.857, error_jy: 0.021, frequency_ghz: 9.0, mjd: 57676.0, spectral_index: -0.034, epoch_date: '2016-Oct-15', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 19.794, error_jy: 0.087, frequency_ghz: 5.5, mjd: 57672.0, spectral_index: 0.17, epoch_date: '2016-Oct-11', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 20.191, error_jy: 0.087, frequency_ghz: 9.0, mjd: 57672.0, spectral_index: -0.089, epoch_date: '2016-Oct-11', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 21.03, error_jy: 0.042, frequency_ghz: 9.0, mjd: 57617.0, spectral_index: 0.017, epoch_date: '2016-Aug-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 20.01, error_jy: 0.042, frequency_ghz: 5.5, mjd: 57617.0, spectral_index: 0.225, epoch_date: '2016-Aug-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 20.182, error_jy: 0.081, frequency_ghz: 5.5, mjd: 57594.0, spectral_index: 0.246, epoch_date: '2016-Jul-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 21.456, error_jy: 0.081, frequency_ghz: 9.0, mjd: 57594.0, spectral_index: 0.003, epoch_date: '2016-Jul-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 21.229, error_jy: 0.097, frequency_ghz: 5.5, mjd: 57418.0, spectral_index: 0.294, epoch_date: '2016-Jan-31', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.304, error_jy: 0.097, frequency_ghz: 9.0, mjd: 57418.0, spectral_index: 0.085, epoch_date: '2016-Jan-31', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 21.634, error_jy: 0.13, frequency_ghz: 5.5, mjd: 57414.0, spectral_index: 0.392, epoch_date: '2016-Jan-27', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 25.408, error_jy: 0.13, frequency_ghz: 9.0, mjd: 57414.0, spectral_index: 0.261, epoch_date: '2016-Jan-27', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 22.12, error_jy: 0.117, frequency_ghz: 5.5, mjd: 57061.0, spectral_index: 0.259, epoch_date: '2015-Feb-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.891, error_jy: 0.117, frequency_ghz: 9.0, mjd: 57061.0, spectral_index: 0.054, epoch_date: '2015-Feb-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 22.244, error_jy: 0.114, frequency_ghz: 5.5, mjd: 57036.0, spectral_index: 0.312, epoch_date: '2015-Jan-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 24.535, error_jy: 0.114, frequency_ghz: 9.0, mjd: 57036.0, spectral_index: 0.086, epoch_date: '2015-Jan-14', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 24.903, error_jy: 0.097, frequency_ghz: 9.0, mjd: 57007.0, spectral_index: 0.059, epoch_date: '2014-Dec-16', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 22.711, error_jy: 0.097, frequency_ghz: 5.5, mjd: 57007.0, spectral_index: 0.315, epoch_date: '2014-Dec-16', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.404, error_jy: 0.078, frequency_ghz: 5.5, mjd: 56943.0, spectral_index: 0.684, epoch_date: '2014-Oct-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 32.779, error_jy: 0.078, frequency_ghz: 9.0, mjd: 56943.0, spectral_index: 0.684, epoch_date: '2014-Oct-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 24.798, error_jy: 0.126, frequency_ghz: 5.5, mjd: 56913.0, spectral_index: 0.546, epoch_date: '2014-Sep-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 29.188, error_jy: 0.126, frequency_ghz: 9.0, mjd: 56913.0, spectral_index: 0.116, epoch_date: '2014-Sep-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 25.828, error_jy: 0.102, frequency_ghz: 5.5, mjd: 56741.0, spectral_index: 0.768, epoch_date: '2014-Mar-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 34.204, error_jy: 0.102, frequency_ghz: 9.0, mjd: 56741.0, spectral_index: 0.373, epoch_date: '2014-Mar-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 20.086, error_jy: 0.111, frequency_ghz: 5.5, mjd: 56546.0, spectral_index: 0.893, epoch_date: '2013-Sep-11', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 28.657, error_jy: 0.111, frequency_ghz: 9.0, mjd: 56546.0, spectral_index: 0.55, epoch_date: '2013-Sep-11', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 18.526, error_jy: 0.152, frequency_ghz: 5.5, mjd: 56442.0, spectral_index: 0.886, epoch_date: '2013-May-30', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 27.265, error_jy: 0.152, frequency_ghz: 9.0, mjd: 56442.0, spectral_index: 0.684, epoch_date: '2013-May-30', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 16.329, error_jy: 0.114, frequency_ghz: 5.5, mjd: 56331.0, spectral_index: 0.946, epoch_date: '2013-Feb-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 25.089, error_jy: 0.114, frequency_ghz: 9.0, mjd: 56331.0, spectral_index: 0.799, epoch_date: '2013-Feb-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.339, error_jy: 0.055, frequency_ghz: 5.5, mjd: 56225.0, spectral_index: 0.889, epoch_date: '2012-Oct-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 24.226, error_jy: 0.055, frequency_ghz: 9.0, mjd: 56225.0, spectral_index: 0.967, epoch_date: '2012-Oct-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.579, error_jy: 0.086, frequency_ghz: 5.5, mjd: 56039.0, spectral_index: 0.902, epoch_date: '2012-Apr-22', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 23.383, error_jy: 0.086, frequency_ghz: 9.0, mjd: 56039.0, spectral_index: 1.017, epoch_date: '2012-Apr-22', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.605, error_jy: 0.051, frequency_ghz: 5.5, mjd: 56003.0, spectral_index: 0.764, epoch_date: '2012-Mar-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 20.371, error_jy: 0.051, frequency_ghz: 9.0, mjd: 56003.0, spectral_index: 0.875, epoch_date: '2012-Mar-17', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 12.982, error_jy: 0.145, frequency_ghz: 5.5, mjd: 55702.0, spectral_index: 0.679, epoch_date: '2011-May-21', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 18.774, error_jy: 0.145, frequency_ghz: 9.0, mjd: 55702.0, spectral_index: 0.819, epoch_date: '2011-May-21', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 9.365, error_jy: 0.039, frequency_ghz: 5.5, mjd: 55240.0, spectral_index: 0.121, epoch_date: '2010-Feb-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 10.065, error_jy: 0.039, frequency_ghz: 9.0, mjd: 55240.0, spectral_index: 0.172, epoch_date: '2010-Feb-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 11.58, error_jy: 0.013, frequency_ghz: 4.8, mjd: 54877.0, spectral_index: 0.294, epoch_date: '2009-Feb-15', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 14.43, error_jy: 0.013, frequency_ghz: 8.64, mjd: 54877.0, spectral_index: 0.455, epoch_date: '2009-Feb-15', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 10.747, error_jy: 0.032, frequency_ghz: 4.8, mjd: 54852.0, spectral_index: 0.676, epoch_date: '2009-Jan-21', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 11.953, error_jy: 0.032, frequency_ghz: 8.64, mjd: 54852.0, spectral_index: -0.315, epoch_date: '2009-Jan-21', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 12.522, error_jy: 0.021, frequency_ghz: 4.8, mjd: 54614.0, spectral_index: 0.122, epoch_date: '2008-May-28', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.719, error_jy: 0.021, frequency_ghz: 8.64, mjd: 54614.0, spectral_index: 0.652, epoch_date: '2008-May-28', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.752, error_jy: 0.02, frequency_ghz: 4.8, mjd: 54150.0, spectral_index: 0.219, epoch_date: '2007-Feb-19', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 18.001, error_jy: 0.02, frequency_ghz: 8.64, mjd: 54150.0, spectral_index: 0.697, epoch_date: '2007-Feb-19', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.55, error_jy: 0.031, frequency_ghz: 4.8, mjd: 54136.0, spectral_index: 0.477, epoch_date: '2007-Feb-05', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 17.932, error_jy: 0.031, frequency_ghz: 8.64, mjd: 54136.0, spectral_index: 0.477, epoch_date: '2007-Feb-05', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 12.554, error_jy: 0.026, frequency_ghz: 4.8, mjd: 53534.0, spectral_index: 0.314, epoch_date: '2005-Jun-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 15.097, error_jy: 0.026, frequency_ghz: 8.64, mjd: 53534.0, spectral_index: 0.314, epoch_date: '2005-Jun-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 20.561, error_jy: 0.007, frequency_ghz: 4.8, mjd: 51717.0, spectral_index: 0.264, epoch_date: '2000-Jun-22', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 24.017, error_jy: 0.007, frequency_ghz: 8.64, mjd: 51717.0, spectral_index: 0.264, epoch_date: '2000-Jun-22', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 9.549, error_jy: 0.259, frequency_ghz: 2.1, mjd: 59371.0, spectral_index: 0.134, epoch_date: '2021-Jun-06', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 9.748, error_jy: 0.06, frequency_ghz: 2.1, mjd: 58952.0, spectral_index: 0.1, epoch_date: '2020-Apr-13', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 9.75, error_jy: 0.071, frequency_ghz: 2.1, mjd: 58912.0, spectral_index: 0.077, epoch_date: '2020-Mar-04', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 10.657, error_jy: 0.136, frequency_ghz: 2.1, mjd: 58819.0, spectral_index: 0.019, epoch_date: '2019-Dec-02', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 11.481, error_jy: 0.06, frequency_ghz: 2.1, mjd: 58492.0, spectral_index: 0.204, epoch_date: '2019-Jan-09', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 11.382, error_jy: 0.117, frequency_ghz: 2.1, mjd: 58264.0, spectral_index: 0.172, epoch_date: '2018-May-26', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 12.367, error_jy: 0.142, frequency_ghz: 2.1, mjd: 58140.0, spectral_index: 0.247, epoch_date: '2018-Jan-22', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 11.529, error_jy: 0.197, frequency_ghz: 2.1, mjd: 58106.0, spectral_index: 0.332, epoch_date: '2017-Dec-19', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.083, error_jy: 0.131, frequency_ghz: 2.1, mjd: 57730.0, spectral_index: 0.46, epoch_date: '2016-Dec-08', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.498, error_jy: 0.069, frequency_ghz: 2.1, mjd: 57545.0, spectral_index: 0.433, epoch_date: '2016-Jun-06', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 12.089, error_jy: 0.084, frequency_ghz: 2.1, mjd: 56894.0, spectral_index: 0.845, epoch_date: '2014-Aug-25', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 11.143, error_jy: 0.043, frequency_ghz: 2.1, mjd: 56690.0, spectral_index: 0.537, epoch_date: '2014-Feb-02', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 9.21, error_jy: 0.074, frequency_ghz: 2.368, mjd: 54868.0, spectral_index: 0.062, epoch_date: '2009-Feb-06', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 8.91, error_jy: 0.074, frequency_ghz: 1.384, mjd: 54868.0, spectral_index: 0.062, epoch_date: '2009-Feb-06', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 9.966, error_jy: 0.039, frequency_ghz: 1.384, mjd: 54433.0, spectral_index: 0.078, epoch_date: '2007-Nov-29', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 10.393, error_jy: 0.039, frequency_ghz: 2.368, mjd: 54433.0, spectral_index: 0.078, epoch_date: '2007-Nov-29', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 9.561, error_jy: 0.008, frequency_ghz: 1.384, mjd: 51717.0, spectral_index: 0.303, epoch_date: '2000-Jun-22', source_id: @a12560547.id)
-@a12560547=Source.where(j2000_name: '1256-0547').first_or_create
-@a12560547.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
-AtcaResult.create(value_jy: 13.458, error_jy: 0.008, frequency_ghz: 2.496, mjd: 51717.0, spectral_index: 0.77, epoch_date: '2000-Jun-22', source_id: @a12560547.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 18.35, error_jy: 0.275, frequency_ghz: 95.0, mjd: 56831.0, spectral_index: 0.014, epoch_date: '2014-Jun-23', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 18.344, error_jy: 0.275, frequency_ghz: 93.0, mjd: 56831.0, spectral_index: 0.014, epoch_date: '2014-Jun-23', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 29.571, error_jy: 0.052, frequency_ghz: 93.0, mjd: 56755.0, spectral_index: 0.515, epoch_date: '2014-Apr-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 29.897, error_jy: 0.052, frequency_ghz: 95.0, mjd: 56755.0, spectral_index: 0.515, epoch_date: '2014-Apr-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.912, error_jy: 0.959, frequency_ghz: 93.0, mjd: 56526.0, spectral_index: -1.147, epoch_date: '2013-Aug-22', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.48, error_jy: 0.959, frequency_ghz: 95.0, mjd: 56526.0, spectral_index: -1.147, epoch_date: '2013-Aug-22', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 22.065, error_jy: 0.465, frequency_ghz: 93.0, mjd: 55768.0, spectral_index: -0.955, epoch_date: '2011-Jul-26', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 21.621, error_jy: 0.465, frequency_ghz: 95.0, mjd: 55768.0, spectral_index: -0.955, epoch_date: '2011-Jul-26', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.563, error_jy: 0.089, frequency_ghz: 93.504, mjd: 54230.0, spectral_index: -1.281, epoch_date: '2007-May-10', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.192, error_jy: 0.089, frequency_ghz: 95.552, mjd: 54230.0, spectral_index: -1.281, epoch_date: '2007-May-10', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.808, error_jy: 0.072, frequency_ghz: 93.504, mjd: 53849.0, spectral_index: 0.07, epoch_date: '2006-Apr-24', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.83, error_jy: 0.072, frequency_ghz: 95.552, mjd: 53849.0, spectral_index: 0.07, epoch_date: '2006-Apr-24', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 20.015, error_jy: 0.044, frequency_ghz: 93.504, mjd: 53516.0, spectral_index: -0.362, epoch_date: '2005-May-26', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.859, error_jy: 0.044, frequency_ghz: 95.552, mjd: 53516.0, spectral_index: -0.362, epoch_date: '2005-May-26', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.611, error_jy: 0.142, frequency_ghz: 89.0005, mjd: 53127.0, spectral_index: 0.948, epoch_date: '2004-May-02', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.756, error_jy: 0.142, frequency_ghz: 90.0005, mjd: 53127.0, spectral_index: 0.948, epoch_date: '2004-May-02', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.283, error_jy: 0.417, frequency_ghz: 35.0, mjd: 59893.0, spectral_index: -0.942, epoch_date: '2022-Nov-10', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 20.382, error_jy: 0.417, frequency_ghz: 33.0, mjd: 59893.0, spectral_index: -0.942, epoch_date: '2022-Nov-10', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 22.377, error_jy: 0.375, frequency_ghz: 33.0, mjd: 59877.0, spectral_index: -0.302, epoch_date: '2022-Oct-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 21.982, error_jy: 0.375, frequency_ghz: 35.0, mjd: 59877.0, spectral_index: -0.302, epoch_date: '2022-Oct-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 21.223, error_jy: 0.325, frequency_ghz: 38.0, mjd: 59866.0, spectral_index: -0.422, epoch_date: '2022-Oct-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 20.769, error_jy: 0.325, frequency_ghz: 40.0, mjd: 59866.0, spectral_index: -0.422, epoch_date: '2022-Oct-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.918, error_jy: 0.002, frequency_ghz: 33.0, mjd: 59698.0, spectral_index: 0.114, epoch_date: '2022-Apr-29', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 24.079, error_jy: 0.002, frequency_ghz: 35.0, mjd: 59698.0, spectral_index: 0.114, epoch_date: '2022-Apr-29', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 22.664, error_jy: 0.002, frequency_ghz: 33.0, mjd: 59356.0, spectral_index: -0.041, epoch_date: '2021-May-22', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 22.61, error_jy: 0.002, frequency_ghz: 35.0, mjd: 59356.0, spectral_index: -0.041, epoch_date: '2021-May-22', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 22.197, error_jy: 0.303, frequency_ghz: 33.0, mjd: 59223.0, spectral_index: 0.094, epoch_date: '2021-Jan-09', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 22.319, error_jy: 0.303, frequency_ghz: 35.0, mjd: 59223.0, spectral_index: 0.094, epoch_date: '2021-Jan-09', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.381, error_jy: 1.477, frequency_ghz: 40.0, mjd: 58941.0, spectral_index: 0.11, epoch_date: '2020-Apr-02', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.272, error_jy: 1.477, frequency_ghz: 38.0, mjd: 58941.0, spectral_index: 0.11, epoch_date: '2020-Apr-02', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.267, error_jy: 0.0, frequency_ghz: 38.0, mjd: 58760.0, spectral_index: -0.287, epoch_date: '2019-Oct-04', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.044, error_jy: 0.0, frequency_ghz: 40.0, mjd: 58760.0, spectral_index: -0.287, epoch_date: '2019-Oct-04', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.62, error_jy: 0.001, frequency_ghz: 38.0, mjd: 57676.0, spectral_index: -0.247, epoch_date: '2016-Oct-15', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.448, error_jy: 0.001, frequency_ghz: 40.0, mjd: 57676.0, spectral_index: -0.247, epoch_date: '2016-Oct-15', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.734, error_jy: 0.187, frequency_ghz: 38.0, mjd: 57617.0, spectral_index: -0.38, epoch_date: '2016-Aug-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.45, error_jy: 0.187, frequency_ghz: 40.0, mjd: 57617.0, spectral_index: -0.38, epoch_date: '2016-Aug-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 18.503, error_jy: 0.005, frequency_ghz: 33.0, mjd: 57304.0, spectral_index: -0.07, epoch_date: '2015-Oct-09', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 18.426, error_jy: 0.005, frequency_ghz: 35.0, mjd: 57304.0, spectral_index: -0.07, epoch_date: '2015-Oct-09', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.805, error_jy: 0.001, frequency_ghz: 38.0, mjd: 57246.0, spectral_index: -0.121, epoch_date: '2015-Aug-12', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.694, error_jy: 0.001, frequency_ghz: 40.0, mjd: 57246.0, spectral_index: -0.121, epoch_date: '2015-Aug-12', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.425, error_jy: 0.001, frequency_ghz: 38.0, mjd: 57202.0, spectral_index: -0.232, epoch_date: '2015-Jun-29', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.219, error_jy: 0.001, frequency_ghz: 40.0, mjd: 57202.0, spectral_index: -0.232, epoch_date: '2015-Jun-29', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.693, error_jy: 0.001, frequency_ghz: 38.0, mjd: 57061.0, spectral_index: -0.136, epoch_date: '2015-Feb-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.556, error_jy: 0.001, frequency_ghz: 40.0, mjd: 57061.0, spectral_index: -0.136, epoch_date: '2015-Feb-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 21.169, error_jy: 0.001, frequency_ghz: 38.0, mjd: 57007.0, spectral_index: 0.065, epoch_date: '2014-Dec-16', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 21.24, error_jy: 0.001, frequency_ghz: 40.0, mjd: 57007.0, spectral_index: 0.065, epoch_date: '2014-Dec-16', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.956, error_jy: 0.278, frequency_ghz: 38.0, mjd: 56913.0, spectral_index: -0.354, epoch_date: '2014-Sep-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.597, error_jy: 0.278, frequency_ghz: 40.0, mjd: 56913.0, spectral_index: -0.354, epoch_date: '2014-Sep-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.004, error_jy: 0.001, frequency_ghz: 33.0, mjd: 56846.0, spectral_index: -0.422, epoch_date: '2014-Jul-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 22.44, error_jy: 0.001, frequency_ghz: 35.0, mjd: 56846.0, spectral_index: -0.422, epoch_date: '2014-Jul-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 69.92, error_jy: 1.101, frequency_ghz: 33.0, mjd: 56118.0, spectral_index: 0.837, epoch_date: '2012-Jul-10', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 73.45, error_jy: 1.101, frequency_ghz: 35.0, mjd: 56118.0, spectral_index: 0.837, epoch_date: '2012-Jul-10', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.944, error_jy: 0.042, frequency_ghz: 35.0, mjd: 55821.0, spectral_index: -0.172, epoch_date: '2011-Sep-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 24.187, error_jy: 0.042, frequency_ghz: 33.0, mjd: 55821.0, spectral_index: -0.172, epoch_date: '2011-Sep-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 28.427, error_jy: 0.052, frequency_ghz: 33.0, mjd: 55663.0, spectral_index: -0.073, epoch_date: '2011-Apr-12', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 28.305, error_jy: 0.052, frequency_ghz: 35.0, mjd: 55663.0, spectral_index: -0.073, epoch_date: '2011-Apr-12', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 20.851, error_jy: 0.062, frequency_ghz: 43.0, mjd: 55453.0, spectral_index: -0.097, epoch_date: '2010-Sep-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 20.76, error_jy: 0.062, frequency_ghz: 45.0, mjd: 55453.0, spectral_index: -0.097, epoch_date: '2010-Sep-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 21.772, error_jy: 0.004, frequency_ghz: 32.064, mjd: 54657.0, spectral_index: -0.064, epoch_date: '2008-Jul-10', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 21.685, error_jy: 0.004, frequency_ghz: 34.112, mjd: 54657.0, spectral_index: -0.064, epoch_date: '2008-Jul-10', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 21.365, error_jy: 0.004, frequency_ghz: 42.944, mjd: 54657.0, spectral_index: -0.064, epoch_date: '2008-Jul-10', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 21.301, error_jy: 0.004, frequency_ghz: 44.992, mjd: 54657.0, spectral_index: -0.064, epoch_date: '2008-Jul-10', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.294, error_jy: 0.168, frequency_ghz: 32.064, mjd: 54634.0, spectral_index: -0.074, epoch_date: '2008-Jun-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.214, error_jy: 0.168, frequency_ghz: 34.112, mjd: 54634.0, spectral_index: -0.074, epoch_date: '2008-Jun-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.877, error_jy: 0.001, frequency_ghz: 42.944, mjd: 54583.0, spectral_index: -0.631, epoch_date: '2008-Apr-27', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.359, error_jy: 0.001, frequency_ghz: 44.992, mjd: 54583.0, spectral_index: -0.631, epoch_date: '2008-Apr-27', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.385, error_jy: 0.037, frequency_ghz: 44.992, mjd: 54234.0, spectral_index: -0.906, epoch_date: '2007-May-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.005, error_jy: 0.037, frequency_ghz: 42.944, mjd: 54234.0, spectral_index: -0.906, epoch_date: '2007-May-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 27.415, error_jy: 0.302, frequency_ghz: 16.7, mjd: 59947.0, spectral_index: 0.0, epoch_date: '2023-Jan-03', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 27.415, error_jy: 0.302, frequency_ghz: 21.2, mjd: 59947.0, spectral_index: 0.0, epoch_date: '2023-Jan-03', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 26.982, error_jy: 0.137, frequency_ghz: 16.7, mjd: 59866.0, spectral_index: -0.078, epoch_date: '2022-Oct-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 26.487, error_jy: 0.137, frequency_ghz: 21.2, mjd: 59866.0, spectral_index: -0.078, epoch_date: '2022-Oct-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 26.227, error_jy: 0.136, frequency_ghz: 17.0, mjd: 59812.0, spectral_index: -0.076, epoch_date: '2022-Aug-21', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 26.007, error_jy: 0.136, frequency_ghz: 19.0, mjd: 59812.0, spectral_index: -0.076, epoch_date: '2022-Aug-21', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 26.69, error_jy: 0.162, frequency_ghz: 17.0, mjd: 59582.0, spectral_index: 0.029, epoch_date: '2022-Jan-03', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 26.776, error_jy: 0.162, frequency_ghz: 19.0, mjd: 59582.0, spectral_index: 0.029, epoch_date: '2022-Jan-03', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 24.482, error_jy: 0.199, frequency_ghz: 16.8, mjd: 59518.0, spectral_index: 0.133, epoch_date: '2021-Oct-31', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 25.251, error_jy: 0.199, frequency_ghz: 21.2, mjd: 59518.0, spectral_index: 0.133, epoch_date: '2021-Oct-31', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 24.394, error_jy: 0.168, frequency_ghz: 16.7, mjd: 59510.0, spectral_index: 0.029, epoch_date: '2021-Oct-23', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 24.562, error_jy: 0.168, frequency_ghz: 21.2, mjd: 59510.0, spectral_index: 0.029, epoch_date: '2021-Oct-23', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 20.951, error_jy: 0.236, frequency_ghz: 16.8, mjd: 59238.0, spectral_index: -0.086, epoch_date: '2021-Jan-24', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 20.539, error_jy: 0.236, frequency_ghz: 21.2, mjd: 59238.0, spectral_index: -0.086, epoch_date: '2021-Jan-24', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.723, error_jy: 0.082, frequency_ghz: 16.8, mjd: 58984.0, spectral_index: 0.159, epoch_date: '2020-May-15', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.355, error_jy: 0.082, frequency_ghz: 21.2, mjd: 58984.0, spectral_index: 0.159, epoch_date: '2020-May-15', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.859, error_jy: 0.142, frequency_ghz: 17.0, mjd: 58941.0, spectral_index: -0.011, epoch_date: '2020-Apr-02', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.839, error_jy: 0.142, frequency_ghz: 19.0, mjd: 58941.0, spectral_index: -0.011, epoch_date: '2020-Apr-02', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.816, error_jy: 0.052, frequency_ghz: 17.0, mjd: 58760.0, spectral_index: 0.116, epoch_date: '2019-Oct-04', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.008, error_jy: 0.052, frequency_ghz: 19.0, mjd: 58760.0, spectral_index: 0.116, epoch_date: '2019-Oct-04', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.751, error_jy: 0.068, frequency_ghz: 16.8, mjd: 58727.0, spectral_index: 0.097, epoch_date: '2019-Sep-01', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.066, error_jy: 0.068, frequency_ghz: 21.2, mjd: 58727.0, spectral_index: 0.097, epoch_date: '2019-Sep-01', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.359, error_jy: 0.085, frequency_ghz: 17.0, mjd: 58424.0, spectral_index: 0.322, epoch_date: '2018-Nov-02', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.92, error_jy: 0.085, frequency_ghz: 19.0, mjd: 58424.0, spectral_index: 0.322, epoch_date: '2018-Nov-02', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.539, error_jy: 0.096, frequency_ghz: 17.0, mjd: 58409.0, spectral_index: 0.235, epoch_date: '2018-Oct-18', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.925, error_jy: 0.096, frequency_ghz: 19.0, mjd: 58409.0, spectral_index: 0.235, epoch_date: '2018-Oct-18', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.334, error_jy: 0.001, frequency_ghz: 16.8, mjd: 58184.0, spectral_index: 0.115, epoch_date: '2018-Mar-07', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.749, error_jy: 0.001, frequency_ghz: 21.2, mjd: 58184.0, spectral_index: 0.115, epoch_date: '2018-Mar-07', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.163, error_jy: 0.041, frequency_ghz: 17.0, mjd: 57880.0, spectral_index: 0.02, epoch_date: '2017-May-07', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.199, error_jy: 0.041, frequency_ghz: 19.0, mjd: 57880.0, spectral_index: 0.02, epoch_date: '2017-May-07', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.009, error_jy: 0.057, frequency_ghz: 17.0, mjd: 57617.0, spectral_index: -0.196, epoch_date: '2016-Aug-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 18.599, error_jy: 0.057, frequency_ghz: 19.0, mjd: 57617.0, spectral_index: -0.196, epoch_date: '2016-Aug-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 20.231, error_jy: 0.145, frequency_ghz: 17.0, mjd: 57594.0, spectral_index: -0.231, epoch_date: '2016-Jul-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.718, error_jy: 0.145, frequency_ghz: 19.0, mjd: 57594.0, spectral_index: -0.231, epoch_date: '2016-Jul-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.901, error_jy: 0.067, frequency_ghz: 17.0, mjd: 57535.0, spectral_index: -0.224, epoch_date: '2016-May-27', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.412, error_jy: 0.067, frequency_ghz: 19.0, mjd: 57535.0, spectral_index: -0.224, epoch_date: '2016-May-27', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.896, error_jy: 0.09, frequency_ghz: 17.0, mjd: 57510.0, spectral_index: -0.211, epoch_date: '2016-May-02', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.433, error_jy: 0.09, frequency_ghz: 19.0, mjd: 57510.0, spectral_index: -0.211, epoch_date: '2016-May-02', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.406, error_jy: 0.099, frequency_ghz: 17.0, mjd: 57007.0, spectral_index: -0.063, epoch_date: '2014-Dec-16', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.243, error_jy: 0.099, frequency_ghz: 19.0, mjd: 57007.0, spectral_index: -0.063, epoch_date: '2014-Dec-16', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 26.289, error_jy: 0.096, frequency_ghz: 17.0, mjd: 56913.0, spectral_index: -0.168, epoch_date: '2014-Sep-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 25.804, error_jy: 0.096, frequency_ghz: 19.0, mjd: 56913.0, spectral_index: -0.168, epoch_date: '2014-Sep-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 27.984, error_jy: 0.093, frequency_ghz: 17.0, mjd: 56889.0, spectral_index: -0.225, epoch_date: '2014-Aug-20', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 27.291, error_jy: 0.093, frequency_ghz: 19.0, mjd: 56889.0, spectral_index: -0.225, epoch_date: '2014-Aug-20', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 30.651, error_jy: 0.112, frequency_ghz: 17.0, mjd: 56568.0, spectral_index: -0.075, epoch_date: '2013-Oct-03', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 30.396, error_jy: 0.112, frequency_ghz: 19.0, mjd: 56568.0, spectral_index: -0.075, epoch_date: '2013-Oct-03', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 1.075, error_jy: 0.002, frequency_ghz: 17.0, mjd: 55403.0, spectral_index: -0.92, epoch_date: '2010-Jul-26', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 0.971, error_jy: 0.002, frequency_ghz: 19.0, mjd: 55403.0, spectral_index: -0.92, epoch_date: '2010-Jul-26', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.133, error_jy: 0.003, frequency_ghz: 17.0, mjd: 55376.0, spectral_index: 0.296, epoch_date: '2010-Jun-29', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.606, error_jy: 0.003, frequency_ghz: 19.0, mjd: 55376.0, spectral_index: 0.296, epoch_date: '2010-Jun-29', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 12.361, error_jy: 0.053, frequency_ghz: 17.0, mjd: 55007.0, spectral_index: -0.106, epoch_date: '2009-Jun-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 12.217, error_jy: 0.053, frequency_ghz: 19.0, mjd: 55007.0, spectral_index: -0.106, epoch_date: '2009-Jun-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 18.518, error_jy: 0.142, frequency_ghz: 18.496, mjd: 54727.0, spectral_index: 0.249, epoch_date: '2008-Sep-18', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 18.768, error_jy: 0.142, frequency_ghz: 19.52, mjd: 54727.0, spectral_index: 0.249, epoch_date: '2008-Sep-18', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.744, error_jy: 0.024, frequency_ghz: 18.496, mjd: 54657.0, spectral_index: 0.186, epoch_date: '2008-Jul-10', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.923, error_jy: 0.024, frequency_ghz: 19.52, mjd: 54657.0, spectral_index: 0.186, epoch_date: '2008-Jul-10', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.551, error_jy: 0.074, frequency_ghz: 18.496, mjd: 54320.0, spectral_index: -0.116, epoch_date: '2007-Aug-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.46, error_jy: 0.074, frequency_ghz: 19.52, mjd: 54320.0, spectral_index: -0.116, epoch_date: '2007-Aug-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.545, error_jy: 0.036, frequency_ghz: 18.496, mjd: 53569.0, spectral_index: 0.134, epoch_date: '2005-Jul-18', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.665, error_jy: 0.036, frequency_ghz: 19.52, mjd: 53569.0, spectral_index: 0.134, epoch_date: '2005-Jul-18', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.554, error_jy: 0.116, frequency_ghz: 5.5, mjd: 59961.0, spectral_index: 0.79, epoch_date: '2023-Jan-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.158, error_jy: 0.116, frequency_ghz: 9.0, mjd: 59961.0, spectral_index: 0.574, epoch_date: '2023-Jan-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.741, error_jy: 0.13, frequency_ghz: 9.0, mjd: 59947.0, spectral_index: 0.665, epoch_date: '2023-Jan-03', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.578, error_jy: 0.13, frequency_ghz: 5.5, mjd: 59947.0, spectral_index: 0.794, epoch_date: '2023-Jan-03', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.563, error_jy: 0.049, frequency_ghz: 5.5, mjd: 59922.0, spectral_index: 0.72, epoch_date: '2022-Dec-09', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.056, error_jy: 0.049, frequency_ghz: 9.0, mjd: 59922.0, spectral_index: 0.623, epoch_date: '2022-Dec-09', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.533, error_jy: 0.107, frequency_ghz: 5.5, mjd: 59877.0, spectral_index: 0.747, epoch_date: '2022-Oct-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 22.533, error_jy: 0.107, frequency_ghz: 9.0, mjd: 59877.0, spectral_index: 0.51, epoch_date: '2022-Oct-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.923, error_jy: 0.064, frequency_ghz: 5.5, mjd: 59866.0, spectral_index: 0.789, epoch_date: '2022-Oct-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.692, error_jy: 0.064, frequency_ghz: 9.0, mjd: 59866.0, spectral_index: 0.578, epoch_date: '2022-Oct-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.218, error_jy: 0.051, frequency_ghz: 5.5, mjd: 59777.0, spectral_index: 0.773, epoch_date: '2022-Jul-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.444, error_jy: 0.051, frequency_ghz: 9.0, mjd: 59777.0, spectral_index: 0.481, epoch_date: '2022-Jul-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 24.635, error_jy: 0.149, frequency_ghz: 9.0, mjd: 59727.0, spectral_index: 0.573, epoch_date: '2022-May-28', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.59, error_jy: 0.149, frequency_ghz: 5.5, mjd: 59727.0, spectral_index: 0.795, epoch_date: '2022-May-28', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.646, error_jy: 0.031, frequency_ghz: 5.5, mjd: 59713.0, spectral_index: 0.773, epoch_date: '2022-May-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.144, error_jy: 0.031, frequency_ghz: 9.0, mjd: 59713.0, spectral_index: 0.566, epoch_date: '2022-May-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.511, error_jy: 0.044, frequency_ghz: 5.5, mjd: 59712.0, spectral_index: 0.75, epoch_date: '2022-May-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 22.719, error_jy: 0.044, frequency_ghz: 9.0, mjd: 59712.0, spectral_index: 0.546, epoch_date: '2022-May-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.249, error_jy: 0.091, frequency_ghz: 5.5, mjd: 59691.0, spectral_index: 0.805, epoch_date: '2022-Apr-22', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 22.929, error_jy: 0.091, frequency_ghz: 9.0, mjd: 59691.0, spectral_index: 0.593, epoch_date: '2022-Apr-22', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.474, error_jy: 0.214, frequency_ghz: 5.5, mjd: 59639.0, spectral_index: 0.637, epoch_date: '2022-Mar-01', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 18.617, error_jy: 0.214, frequency_ghz: 9.0, mjd: 59639.0, spectral_index: 0.385, epoch_date: '2022-Mar-01', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 21.288, error_jy: 0.062, frequency_ghz: 8.5, mjd: 59618.0, spectral_index: 0.632, epoch_date: '2022-Feb-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.789, error_jy: 0.062, frequency_ghz: 5.5, mjd: 59618.0, spectral_index: 0.741, epoch_date: '2022-Feb-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.553, error_jy: 0.057, frequency_ghz: 8.5, mjd: 59536.0, spectral_index: 0.632, epoch_date: '2021-Nov-18', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.725, error_jy: 0.057, frequency_ghz: 5.5, mjd: 59536.0, spectral_index: 0.671, epoch_date: '2021-Nov-18', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.481, error_jy: 0.063, frequency_ghz: 5.5, mjd: 59510.0, spectral_index: 0.677, epoch_date: '2021-Oct-23', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.849, error_jy: 0.063, frequency_ghz: 9.0, mjd: 59510.0, spectral_index: 0.604, epoch_date: '2021-Oct-23', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.721, error_jy: 0.097, frequency_ghz: 5.5, mjd: 59419.0, spectral_index: 0.592, epoch_date: '2021-Jul-24', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.037, error_jy: 0.097, frequency_ghz: 9.0, mjd: 59419.0, spectral_index: 0.452, epoch_date: '2021-Jul-24', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.019, error_jy: 0.033, frequency_ghz: 5.5, mjd: 59366.0, spectral_index: 0.471, epoch_date: '2021-Jun-01', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 18.868, error_jy: 0.033, frequency_ghz: 9.0, mjd: 59366.0, spectral_index: 0.455, epoch_date: '2021-Jun-01', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.869, error_jy: 0.038, frequency_ghz: 5.5, mjd: 59335.0, spectral_index: 0.458, epoch_date: '2021-May-01', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 18.453, error_jy: 0.038, frequency_ghz: 9.0, mjd: 59335.0, spectral_index: 0.419, epoch_date: '2021-May-01', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.566, error_jy: 0.254, frequency_ghz: 5.5, mjd: 59253.0, spectral_index: 0.235, epoch_date: '2021-Feb-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.269, error_jy: 0.254, frequency_ghz: 9.0, mjd: 59253.0, spectral_index: 0.214, epoch_date: '2021-Feb-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.649, error_jy: 0.095, frequency_ghz: 5.5, mjd: 59252.0, spectral_index: 0.396, epoch_date: '2021-Feb-07', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.862, error_jy: 0.095, frequency_ghz: 9.0, mjd: 59252.0, spectral_index: 0.41, epoch_date: '2021-Feb-07', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.523, error_jy: 0.089, frequency_ghz: 5.5, mjd: 59244.0, spectral_index: 0.389, epoch_date: '2021-Jan-30', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.408, error_jy: 0.089, frequency_ghz: 9.0, mjd: 59244.0, spectral_index: 0.347, epoch_date: '2021-Jan-30', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.298, error_jy: 0.079, frequency_ghz: 5.5, mjd: 59202.0, spectral_index: 0.343, epoch_date: '2020-Dec-19', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.85, error_jy: 0.079, frequency_ghz: 9.0, mjd: 59202.0, spectral_index: 0.324, epoch_date: '2020-Dec-19', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.035, error_jy: 0.047, frequency_ghz: 5.5, mjd: 59186.0, spectral_index: 0.382, epoch_date: '2020-Dec-03', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.796, error_jy: 0.047, frequency_ghz: 9.0, mjd: 59186.0, spectral_index: 0.348, epoch_date: '2020-Dec-03', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.692, error_jy: 0.048, frequency_ghz: 5.5, mjd: 59164.0, spectral_index: 0.307, epoch_date: '2020-Nov-11', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.777, error_jy: 0.048, frequency_ghz: 9.0, mjd: 59164.0, spectral_index: 0.269, epoch_date: '2020-Nov-11', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.392, error_jy: 0.04, frequency_ghz: 5.5, mjd: 59111.0, spectral_index: 0.26, epoch_date: '2020-Sep-19', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.309, error_jy: 0.04, frequency_ghz: 9.0, mjd: 59111.0, spectral_index: 0.283, epoch_date: '2020-Sep-19', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.152, error_jy: 0.085, frequency_ghz: 5.5, mjd: 59002.0, spectral_index: 0.203, epoch_date: '2020-Jun-02', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.605, error_jy: 0.085, frequency_ghz: 9.0, mjd: 59002.0, spectral_index: 0.223, epoch_date: '2020-Jun-02', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 12.982, error_jy: 0.028, frequency_ghz: 5.5, mjd: 58983.0, spectral_index: 0.272, epoch_date: '2020-May-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.72, error_jy: 0.028, frequency_ghz: 9.0, mjd: 58983.0, spectral_index: 0.239, epoch_date: '2020-May-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 11.295, error_jy: 0.087, frequency_ghz: 5.5, mjd: 58942.0, spectral_index: 0.004, epoch_date: '2020-Apr-03', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 9.574, error_jy: 0.087, frequency_ghz: 9.0, mjd: 58942.0, spectral_index: -0.675, epoch_date: '2020-Apr-03', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 12.793, error_jy: 0.022, frequency_ghz: 5.5, mjd: 58931.0, spectral_index: 0.258, epoch_date: '2020-Mar-23', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.603, error_jy: 0.022, frequency_ghz: 9.0, mjd: 58931.0, spectral_index: 0.28, epoch_date: '2020-Mar-23', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 12.359, error_jy: 0.045, frequency_ghz: 5.5, mjd: 58923.0, spectral_index: 0.272, epoch_date: '2020-Mar-15', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.986, error_jy: 0.045, frequency_ghz: 9.0, mjd: 58923.0, spectral_index: 0.23, epoch_date: '2020-Mar-15', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 12.301, error_jy: 0.048, frequency_ghz: 5.5, mjd: 58879.0, spectral_index: 0.306, epoch_date: '2020-Jan-31', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.282, error_jy: 0.048, frequency_ghz: 9.0, mjd: 58879.0, spectral_index: 0.301, epoch_date: '2020-Jan-31', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 12.37, error_jy: 0.045, frequency_ghz: 5.5, mjd: 58829.0, spectral_index: 0.192, epoch_date: '2019-Dec-12', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.684, error_jy: 0.045, frequency_ghz: 9.0, mjd: 58829.0, spectral_index: 0.218, epoch_date: '2019-Dec-12', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.975, error_jy: 0.047, frequency_ghz: 9.0, mjd: 58627.0, spectral_index: 0.021, epoch_date: '2019-May-24', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.55, error_jy: 0.047, frequency_ghz: 5.5, mjd: 58627.0, spectral_index: 0.104, epoch_date: '2019-May-24', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.432, error_jy: 0.067, frequency_ghz: 5.5, mjd: 58490.0, spectral_index: 0.166, epoch_date: '2019-Jan-07', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.491, error_jy: 0.067, frequency_ghz: 9.0, mjd: 58490.0, spectral_index: 0.121, epoch_date: '2019-Jan-07', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.776, error_jy: 0.051, frequency_ghz: 5.5, mjd: 58427.0, spectral_index: 0.085, epoch_date: '2018-Nov-05', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.562, error_jy: 0.051, frequency_ghz: 9.0, mjd: 58427.0, spectral_index: 0.14, epoch_date: '2018-Nov-05', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.524, error_jy: 0.047, frequency_ghz: 5.5, mjd: 58413.0, spectral_index: 0.086, epoch_date: '2018-Oct-22', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.029, error_jy: 0.047, frequency_ghz: 9.0, mjd: 58413.0, spectral_index: 0.063, epoch_date: '2018-Oct-22', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.859, error_jy: 0.038, frequency_ghz: 5.5, mjd: 58406.0, spectral_index: 0.048, epoch_date: '2018-Oct-15', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.25, error_jy: 0.038, frequency_ghz: 9.0, mjd: 58406.0, spectral_index: 0.065, epoch_date: '2018-Oct-15', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.264, error_jy: 0.047, frequency_ghz: 5.5, mjd: 58258.0, spectral_index: 0.071, epoch_date: '2018-May-20', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.797, error_jy: 0.047, frequency_ghz: 9.0, mjd: 58258.0, spectral_index: 0.089, epoch_date: '2018-May-20', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.776, error_jy: 0.071, frequency_ghz: 5.5, mjd: 58080.0, spectral_index: 0.065, epoch_date: '2017-Nov-23', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.34, error_jy: 0.071, frequency_ghz: 9.0, mjd: 58080.0, spectral_index: 0.087, epoch_date: '2017-Nov-23', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.55, error_jy: 0.059, frequency_ghz: 5.5, mjd: 58073.0, spectral_index: 0.112, epoch_date: '2017-Nov-16', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.458, error_jy: 0.059, frequency_ghz: 9.0, mjd: 58073.0, spectral_index: 0.134, epoch_date: '2017-Nov-16', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.523, error_jy: 0.03, frequency_ghz: 5.5, mjd: 57916.0, spectral_index: 0.057, epoch_date: '2017-Jun-12', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.802, error_jy: 0.03, frequency_ghz: 9.0, mjd: 57916.0, spectral_index: 0.015, epoch_date: '2017-Jun-12', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.324, error_jy: 0.052, frequency_ghz: 5.5, mjd: 57880.0, spectral_index: 0.076, epoch_date: '2017-May-07', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.673, error_jy: 0.052, frequency_ghz: 9.0, mjd: 57880.0, spectral_index: 0.016, epoch_date: '2017-May-07', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.593, error_jy: 0.048, frequency_ghz: 5.5, mjd: 57855.0, spectral_index: 0.043, epoch_date: '2017-Apr-12', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.854, error_jy: 0.048, frequency_ghz: 9.0, mjd: 57855.0, spectral_index: 0.024, epoch_date: '2017-Apr-12', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.201, error_jy: 0.037, frequency_ghz: 5.5, mjd: 57803.0, spectral_index: 0.06, epoch_date: '2017-Feb-19', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.16, error_jy: 0.037, frequency_ghz: 9.0, mjd: 57803.0, spectral_index: -0.069, epoch_date: '2017-Feb-19', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 18.566, error_jy: 0.093, frequency_ghz: 5.5, mjd: 57728.0, spectral_index: 0.148, epoch_date: '2016-Dec-06', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.128, error_jy: 0.093, frequency_ghz: 9.0, mjd: 57728.0, spectral_index: -0.027, epoch_date: '2016-Dec-06', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.465, error_jy: 0.021, frequency_ghz: 5.5, mjd: 57676.0, spectral_index: 0.171, epoch_date: '2016-Oct-15', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.857, error_jy: 0.021, frequency_ghz: 9.0, mjd: 57676.0, spectral_index: -0.034, epoch_date: '2016-Oct-15', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 19.794, error_jy: 0.087, frequency_ghz: 5.5, mjd: 57672.0, spectral_index: 0.17, epoch_date: '2016-Oct-11', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 20.191, error_jy: 0.087, frequency_ghz: 9.0, mjd: 57672.0, spectral_index: -0.089, epoch_date: '2016-Oct-11', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 21.03, error_jy: 0.042, frequency_ghz: 9.0, mjd: 57617.0, spectral_index: 0.017, epoch_date: '2016-Aug-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 20.01, error_jy: 0.042, frequency_ghz: 5.5, mjd: 57617.0, spectral_index: 0.225, epoch_date: '2016-Aug-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 20.182, error_jy: 0.081, frequency_ghz: 5.5, mjd: 57594.0, spectral_index: 0.246, epoch_date: '2016-Jul-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 21.456, error_jy: 0.081, frequency_ghz: 9.0, mjd: 57594.0, spectral_index: 0.003, epoch_date: '2016-Jul-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 21.229, error_jy: 0.097, frequency_ghz: 5.5, mjd: 57418.0, spectral_index: 0.294, epoch_date: '2016-Jan-31', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.304, error_jy: 0.097, frequency_ghz: 9.0, mjd: 57418.0, spectral_index: 0.085, epoch_date: '2016-Jan-31', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 21.634, error_jy: 0.13, frequency_ghz: 5.5, mjd: 57414.0, spectral_index: 0.392, epoch_date: '2016-Jan-27', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 25.408, error_jy: 0.13, frequency_ghz: 9.0, mjd: 57414.0, spectral_index: 0.261, epoch_date: '2016-Jan-27', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 22.12, error_jy: 0.117, frequency_ghz: 5.5, mjd: 57061.0, spectral_index: 0.259, epoch_date: '2015-Feb-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.891, error_jy: 0.117, frequency_ghz: 9.0, mjd: 57061.0, spectral_index: 0.054, epoch_date: '2015-Feb-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 22.244, error_jy: 0.114, frequency_ghz: 5.5, mjd: 57036.0, spectral_index: 0.312, epoch_date: '2015-Jan-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 24.535, error_jy: 0.114, frequency_ghz: 9.0, mjd: 57036.0, spectral_index: 0.086, epoch_date: '2015-Jan-14', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 24.903, error_jy: 0.097, frequency_ghz: 9.0, mjd: 57007.0, spectral_index: 0.059, epoch_date: '2014-Dec-16', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 22.711, error_jy: 0.097, frequency_ghz: 5.5, mjd: 57007.0, spectral_index: 0.315, epoch_date: '2014-Dec-16', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.404, error_jy: 0.078, frequency_ghz: 5.5, mjd: 56943.0, spectral_index: 0.684, epoch_date: '2014-Oct-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 32.779, error_jy: 0.078, frequency_ghz: 9.0, mjd: 56943.0, spectral_index: 0.684, epoch_date: '2014-Oct-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 24.798, error_jy: 0.126, frequency_ghz: 5.5, mjd: 56913.0, spectral_index: 0.546, epoch_date: '2014-Sep-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 29.188, error_jy: 0.126, frequency_ghz: 9.0, mjd: 56913.0, spectral_index: 0.116, epoch_date: '2014-Sep-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 25.828, error_jy: 0.102, frequency_ghz: 5.5, mjd: 56741.0, spectral_index: 0.768, epoch_date: '2014-Mar-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 34.204, error_jy: 0.102, frequency_ghz: 9.0, mjd: 56741.0, spectral_index: 0.373, epoch_date: '2014-Mar-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 20.086, error_jy: 0.111, frequency_ghz: 5.5, mjd: 56546.0, spectral_index: 0.893, epoch_date: '2013-Sep-11', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 28.657, error_jy: 0.111, frequency_ghz: 9.0, mjd: 56546.0, spectral_index: 0.55, epoch_date: '2013-Sep-11', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 18.526, error_jy: 0.152, frequency_ghz: 5.5, mjd: 56442.0, spectral_index: 0.886, epoch_date: '2013-May-30', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 27.265, error_jy: 0.152, frequency_ghz: 9.0, mjd: 56442.0, spectral_index: 0.684, epoch_date: '2013-May-30', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 16.329, error_jy: 0.114, frequency_ghz: 5.5, mjd: 56331.0, spectral_index: 0.946, epoch_date: '2013-Feb-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 25.089, error_jy: 0.114, frequency_ghz: 9.0, mjd: 56331.0, spectral_index: 0.799, epoch_date: '2013-Feb-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.339, error_jy: 0.055, frequency_ghz: 5.5, mjd: 56225.0, spectral_index: 0.889, epoch_date: '2012-Oct-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 24.226, error_jy: 0.055, frequency_ghz: 9.0, mjd: 56225.0, spectral_index: 0.967, epoch_date: '2012-Oct-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.579, error_jy: 0.086, frequency_ghz: 5.5, mjd: 56039.0, spectral_index: 0.902, epoch_date: '2012-Apr-22', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 23.383, error_jy: 0.086, frequency_ghz: 9.0, mjd: 56039.0, spectral_index: 1.017, epoch_date: '2012-Apr-22', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.605, error_jy: 0.051, frequency_ghz: 5.5, mjd: 56003.0, spectral_index: 0.764, epoch_date: '2012-Mar-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 20.371, error_jy: 0.051, frequency_ghz: 9.0, mjd: 56003.0, spectral_index: 0.875, epoch_date: '2012-Mar-17', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 12.982, error_jy: 0.145, frequency_ghz: 5.5, mjd: 55702.0, spectral_index: 0.679, epoch_date: '2011-May-21', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 18.774, error_jy: 0.145, frequency_ghz: 9.0, mjd: 55702.0, spectral_index: 0.819, epoch_date: '2011-May-21', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 9.365, error_jy: 0.039, frequency_ghz: 5.5, mjd: 55240.0, spectral_index: 0.121, epoch_date: '2010-Feb-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 10.065, error_jy: 0.039, frequency_ghz: 9.0, mjd: 55240.0, spectral_index: 0.172, epoch_date: '2010-Feb-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 11.58, error_jy: 0.013, frequency_ghz: 4.8, mjd: 54877.0, spectral_index: 0.294, epoch_date: '2009-Feb-15', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 14.43, error_jy: 0.013, frequency_ghz: 8.64, mjd: 54877.0, spectral_index: 0.455, epoch_date: '2009-Feb-15', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 10.747, error_jy: 0.032, frequency_ghz: 4.8, mjd: 54852.0, spectral_index: 0.676, epoch_date: '2009-Jan-21', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 11.953, error_jy: 0.032, frequency_ghz: 8.64, mjd: 54852.0, spectral_index: -0.315, epoch_date: '2009-Jan-21', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 12.522, error_jy: 0.021, frequency_ghz: 4.8, mjd: 54614.0, spectral_index: 0.122, epoch_date: '2008-May-28', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.719, error_jy: 0.021, frequency_ghz: 8.64, mjd: 54614.0, spectral_index: 0.652, epoch_date: '2008-May-28', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.752, error_jy: 0.02, frequency_ghz: 4.8, mjd: 54150.0, spectral_index: 0.219, epoch_date: '2007-Feb-19', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 18.001, error_jy: 0.02, frequency_ghz: 8.64, mjd: 54150.0, spectral_index: 0.697, epoch_date: '2007-Feb-19', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.55, error_jy: 0.031, frequency_ghz: 4.8, mjd: 54136.0, spectral_index: 0.477, epoch_date: '2007-Feb-05', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 17.932, error_jy: 0.031, frequency_ghz: 8.64, mjd: 54136.0, spectral_index: 0.477, epoch_date: '2007-Feb-05', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 12.554, error_jy: 0.026, frequency_ghz: 4.8, mjd: 53534.0, spectral_index: 0.314, epoch_date: '2005-Jun-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 15.097, error_jy: 0.026, frequency_ghz: 8.64, mjd: 53534.0, spectral_index: 0.314, epoch_date: '2005-Jun-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 20.561, error_jy: 0.007, frequency_ghz: 4.8, mjd: 51717.0, spectral_index: 0.264, epoch_date: '2000-Jun-22', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 24.017, error_jy: 0.007, frequency_ghz: 8.64, mjd: 51717.0, spectral_index: 0.264, epoch_date: '2000-Jun-22', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 9.549, error_jy: 0.259, frequency_ghz: 2.1, mjd: 59371.0, spectral_index: 0.134, epoch_date: '2021-Jun-06', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 9.748, error_jy: 0.06, frequency_ghz: 2.1, mjd: 58952.0, spectral_index: 0.1, epoch_date: '2020-Apr-13', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 9.75, error_jy: 0.071, frequency_ghz: 2.1, mjd: 58912.0, spectral_index: 0.077, epoch_date: '2020-Mar-04', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 10.657, error_jy: 0.136, frequency_ghz: 2.1, mjd: 58819.0, spectral_index: 0.019, epoch_date: '2019-Dec-02', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 11.481, error_jy: 0.06, frequency_ghz: 2.1, mjd: 58492.0, spectral_index: 0.204, epoch_date: '2019-Jan-09', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 11.382, error_jy: 0.117, frequency_ghz: 2.1, mjd: 58264.0, spectral_index: 0.172, epoch_date: '2018-May-26', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 12.367, error_jy: 0.142, frequency_ghz: 2.1, mjd: 58140.0, spectral_index: 0.247, epoch_date: '2018-Jan-22', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 11.529, error_jy: 0.197, frequency_ghz: 2.1, mjd: 58106.0, spectral_index: 0.332, epoch_date: '2017-Dec-19', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.083, error_jy: 0.131, frequency_ghz: 2.1, mjd: 57730.0, spectral_index: 0.46, epoch_date: '2016-Dec-08', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.498, error_jy: 0.069, frequency_ghz: 2.1, mjd: 57545.0, spectral_index: 0.433, epoch_date: '2016-Jun-06', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 12.089, error_jy: 0.084, frequency_ghz: 2.1, mjd: 56894.0, spectral_index: 0.845, epoch_date: '2014-Aug-25', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 11.143, error_jy: 0.043, frequency_ghz: 2.1, mjd: 56690.0, spectral_index: 0.537, epoch_date: '2014-Feb-02', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 9.21, error_jy: 0.074, frequency_ghz: 2.368, mjd: 54868.0, spectral_index: 0.062, epoch_date: '2009-Feb-06', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 8.91, error_jy: 0.074, frequency_ghz: 1.384, mjd: 54868.0, spectral_index: 0.062, epoch_date: '2009-Feb-06', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 9.966, error_jy: 0.039, frequency_ghz: 1.384, mjd: 54433.0, spectral_index: 0.078, epoch_date: '2007-Nov-29', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 10.393, error_jy: 0.039, frequency_ghz: 2.368, mjd: 54433.0, spectral_index: 0.078, epoch_date: '2007-Nov-29', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 9.561, error_jy: 0.008, frequency_ghz: 1.384, mjd: 51717.0, spectral_index: 0.303, epoch_date: '2000-Jun-22', source_id: @a3C279.id)
+@a3C279=Source.where(j2000_name: '3C279').first_or_create
+@a3C279.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1253-055&detailed=true')
+AtcaResult.create(value_jy: 13.458, error_jy: 0.008, frequency_ghz: 2.496, mjd: 51717.0, spectral_index: 0.77, epoch_date: '2000-Jun-22', source_id: @a3C279.id)
 @a12242122=Source.where(j2000_name: '1224+2122').first_or_create
 @a12242122.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=1222+216&detailed=true')
 AtcaResult.create(value_jy: 1.703, error_jy: 0.026, frequency_ghz: 38.0, mjd: 57246.0, spectral_index: -0.767, epoch_date: '2015-Aug-12', source_id: @a12242122.id)
@@ -11458,420 +11458,420 @@ AtcaResult.create(value_jy: 4.662, error_jy: 0.017, frequency_ghz: 5.5, mjd: 564
 @a08542006=Source.where(j2000_name: '0854+2006').first_or_create
 @a08542006.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0851+202&detailed=true')
 AtcaResult.create(value_jy: 5.256, error_jy: 0.017, frequency_ghz: 9.0, mjd: 56401.0, spectral_index: 0.093, epoch_date: '2013-Apr-19', source_id: @a08542006.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.529, error_jy: 0.053, frequency_ghz: 95.0, mjd: 56831.0, spectral_index: 0.381, epoch_date: '2014-Jun-23', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.516, error_jy: 0.053, frequency_ghz: 93.0, mjd: 56831.0, spectral_index: 0.381, epoch_date: '2014-Jun-23', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.273, error_jy: 0.251, frequency_ghz: 93.0, mjd: 56755.0, spectral_index: 1.093, epoch_date: '2014-Apr-08', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.326, error_jy: 0.251, frequency_ghz: 95.0, mjd: 56755.0, spectral_index: 1.093, epoch_date: '2014-Apr-08', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 0.821, error_jy: 0.177, frequency_ghz: 93.0, mjd: 56526.0, spectral_index: -1.442, epoch_date: '2013-Aug-22', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 0.796, error_jy: 0.177, frequency_ghz: 95.0, mjd: 56526.0, spectral_index: -1.442, epoch_date: '2013-Aug-22', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.43, error_jy: 0.384, frequency_ghz: 93.0, mjd: 55768.0, spectral_index: -2.815, epoch_date: '2011-Jul-26', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.343, error_jy: 0.384, frequency_ghz: 95.0, mjd: 55768.0, spectral_index: -3.061, epoch_date: '2011-Jul-26', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 3.912, error_jy: 0.066, frequency_ghz: 93.504, mjd: 53949.0, spectral_index: -3.614, epoch_date: '2006-Aug-02', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 3.618, error_jy: 0.066, frequency_ghz: 95.552, mjd: 53949.0, spectral_index: -3.614, epoch_date: '2006-Aug-02', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.026, error_jy: 0.021, frequency_ghz: 33.0, mjd: 59698.0, spectral_index: -0.335, epoch_date: '2022-Apr-29', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.006, error_jy: 0.021, frequency_ghz: 35.0, mjd: 59698.0, spectral_index: -0.335, epoch_date: '2022-Apr-29', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.942, error_jy: 0.021, frequency_ghz: 33.0, mjd: 59356.0, spectral_index: -0.287, epoch_date: '2021-May-22', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.909, error_jy: 0.021, frequency_ghz: 35.0, mjd: 59356.0, spectral_index: -0.287, epoch_date: '2021-May-22', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.944, error_jy: 0.032, frequency_ghz: 33.0, mjd: 59223.0, spectral_index: -0.332, epoch_date: '2021-Jan-09', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.907, error_jy: 0.032, frequency_ghz: 35.0, mjd: 59223.0, spectral_index: -0.332, epoch_date: '2021-Jan-09', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.12, error_jy: 0.019, frequency_ghz: 33.0, mjd: 57421.0, spectral_index: 0.27, epoch_date: '2016-Feb-03', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.138, error_jy: 0.019, frequency_ghz: 35.0, mjd: 57421.0, spectral_index: 0.27, epoch_date: '2016-Feb-03', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.494, error_jy: 0.011, frequency_ghz: 33.0, mjd: 56846.0, spectral_index: -0.125, epoch_date: '2014-Jul-08', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.484, error_jy: 0.011, frequency_ghz: 35.0, mjd: 56846.0, spectral_index: -0.125, epoch_date: '2014-Jul-08', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.88, error_jy: 0.041, frequency_ghz: 33.0, mjd: 56118.0, spectral_index: 0.98, epoch_date: '2012-Jul-10', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.992, error_jy: 0.041, frequency_ghz: 35.0, mjd: 56118.0, spectral_index: 0.98, epoch_date: '2012-Jul-10', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.08, error_jy: 0.012, frequency_ghz: 35.0, mjd: 55821.0, spectral_index: -0.23, epoch_date: '2011-Sep-17', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.108, error_jy: 0.012, frequency_ghz: 33.0, mjd: 55821.0, spectral_index: -0.23, epoch_date: '2011-Sep-17', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.97, error_jy: 0.013, frequency_ghz: 33.0, mjd: 55663.0, spectral_index: 0.408, epoch_date: '2011-Apr-12', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.018, error_jy: 0.013, frequency_ghz: 35.0, mjd: 55663.0, spectral_index: 0.408, epoch_date: '2011-Apr-12', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.123, error_jy: 0.022, frequency_ghz: 43.0, mjd: 55453.0, spectral_index: -0.171, epoch_date: '2010-Sep-14', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.115, error_jy: 0.022, frequency_ghz: 45.0, mjd: 55453.0, spectral_index: -0.171, epoch_date: '2010-Sep-14', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.514, error_jy: 0.034, frequency_ghz: 21.2, mjd: 59518.0, spectral_index: -0.018, epoch_date: '2021-Oct-31', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.525, error_jy: 0.034, frequency_ghz: 16.8, mjd: 59518.0, spectral_index: -0.018, epoch_date: '2021-Oct-31', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.903, error_jy: 0.046, frequency_ghz: 16.8, mjd: 59238.0, spectral_index: -0.161, epoch_date: '2021-Jan-24', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.833, error_jy: 0.046, frequency_ghz: 21.2, mjd: 59238.0, spectral_index: -0.161, epoch_date: '2021-Jan-24', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.736, error_jy: 0.017, frequency_ghz: 17.0, mjd: 57594.0, spectral_index: 0.239, epoch_date: '2016-Jul-25', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.782, error_jy: 0.017, frequency_ghz: 19.0, mjd: 57594.0, spectral_index: 0.239, epoch_date: '2016-Jul-25', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.492, error_jy: 0.014, frequency_ghz: 17.0, mjd: 56930.0, spectral_index: -0.228, epoch_date: '2014-Sep-30', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.455, error_jy: 0.014, frequency_ghz: 19.0, mjd: 56930.0, spectral_index: -0.228, epoch_date: '2014-Sep-30', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.22, error_jy: 0.01, frequency_ghz: 17.0, mjd: 56177.0, spectral_index: 0.12, epoch_date: '2012-Sep-07', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.237, error_jy: 0.01, frequency_ghz: 19.0, mjd: 56177.0, spectral_index: 0.12, epoch_date: '2012-Sep-07', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.446, error_jy: 0.01, frequency_ghz: 17.0, mjd: 55683.0, spectral_index: 0.02, epoch_date: '2011-May-02', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.449, error_jy: 0.01, frequency_ghz: 19.0, mjd: 55683.0, spectral_index: 0.02, epoch_date: '2011-May-02', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.222, error_jy: 0.007, frequency_ghz: 17.0, mjd: 55375.0, spectral_index: -0.084, epoch_date: '2010-Jun-28', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.211, error_jy: 0.007, frequency_ghz: 19.0, mjd: 55375.0, spectral_index: -0.084, epoch_date: '2010-Jun-28', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.632, error_jy: 0.008, frequency_ghz: 5.5, mjd: 59961.0, spectral_index: 0.292, epoch_date: '2023-Jan-17', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.79, error_jy: 0.008, frequency_ghz: 9.0, mjd: 59961.0, spectral_index: 0.084, epoch_date: '2023-Jan-17', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.38, error_jy: 0.009, frequency_ghz: 5.5, mjd: 59877.0, spectral_index: 0.737, epoch_date: '2022-Oct-25', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.865, error_jy: 0.009, frequency_ghz: 9.0, mjd: 59877.0, spectral_index: 0.487, epoch_date: '2022-Oct-25', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.494, error_jy: 0.008, frequency_ghz: 5.5, mjd: 59713.0, spectral_index: -0.135, epoch_date: '2022-May-14', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.373, error_jy: 0.008, frequency_ghz: 9.0, mjd: 59713.0, spectral_index: -0.209, epoch_date: '2022-May-14', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.524, error_jy: 0.012, frequency_ghz: 8.5, mjd: 59618.0, spectral_index: 0.299, epoch_date: '2022-Feb-08', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.083, error_jy: 0.012, frequency_ghz: 5.5, mjd: 59618.0, spectral_index: 0.585, epoch_date: '2022-Feb-08', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.391, error_jy: 0.013, frequency_ghz: 5.5, mjd: 59536.0, spectral_index: 0.879, epoch_date: '2021-Nov-18', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.012, error_jy: 0.013, frequency_ghz: 8.5, mjd: 59536.0, spectral_index: 0.816, epoch_date: '2021-Nov-18', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.649, error_jy: 0.01, frequency_ghz: 5.5, mjd: 59419.0, spectral_index: 0.053, epoch_date: '2021-Jul-24', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.729, error_jy: 0.01, frequency_ghz: 9.0, mjd: 59419.0, spectral_index: 0.141, epoch_date: '2021-Jul-24', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.865, error_jy: 0.008, frequency_ghz: 5.5, mjd: 59366.0, spectral_index: 0.446, epoch_date: '2021-Jun-01', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.162, error_jy: 0.008, frequency_ghz: 9.0, mjd: 59366.0, spectral_index: 0.154, epoch_date: '2021-Jun-01', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.583, error_jy: 0.016, frequency_ghz: 5.5, mjd: 59335.0, spectral_index: 0.665, epoch_date: '2021-May-01', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.223, error_jy: 0.016, frequency_ghz: 9.0, mjd: 59335.0, spectral_index: 0.713, epoch_date: '2021-May-01', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.504, error_jy: 0.023, frequency_ghz: 5.5, mjd: 59253.0, spectral_index: 0.029, epoch_date: '2021-Feb-08', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.528, error_jy: 0.023, frequency_ghz: 9.0, mjd: 59253.0, spectral_index: 0.036, epoch_date: '2021-Feb-08', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.135, error_jy: 0.008, frequency_ghz: 9.0, mjd: 59148.0, spectral_index: 0.339, epoch_date: '2020-Oct-26', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.816, error_jy: 0.008, frequency_ghz: 5.5, mjd: 59148.0, spectral_index: 0.319, epoch_date: '2020-Oct-26', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.564, error_jy: 0.01, frequency_ghz: 5.5, mjd: 59111.0, spectral_index: 0.286, epoch_date: '2020-Sep-19', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.939, error_jy: 0.01, frequency_ghz: 9.0, mjd: 59111.0, spectral_index: 0.588, epoch_date: '2020-Sep-19', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.108, error_jy: 0.01, frequency_ghz: 5.5, mjd: 58942.0, spectral_index: 0.425, epoch_date: '2020-Apr-03', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.523, error_jy: 0.01, frequency_ghz: 9.0, mjd: 58942.0, spectral_index: 0.304, epoch_date: '2020-Apr-03', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.449, error_jy: 0.01, frequency_ghz: 9.0, mjd: 58931.0, spectral_index: 0.269, epoch_date: '2020-Mar-23', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.018, error_jy: 0.01, frequency_ghz: 5.5, mjd: 58931.0, spectral_index: 0.517, epoch_date: '2020-Mar-23', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.081, error_jy: 0.012, frequency_ghz: 5.5, mjd: 58901.0, spectral_index: 0.783, epoch_date: '2020-Feb-22', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.795, error_jy: 0.012, frequency_ghz: 9.0, mjd: 58901.0, spectral_index: 0.414, epoch_date: '2020-Feb-22', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 0.782, error_jy: 0.008, frequency_ghz: 5.5, mjd: 58601.0, spectral_index: -0.181, epoch_date: '2019-Apr-28', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 0.804, error_jy: 0.008, frequency_ghz: 9.0, mjd: 58601.0, spectral_index: 0.295, epoch_date: '2019-Apr-28', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.723, error_jy: 0.009, frequency_ghz: 5.5, mjd: 58438.0, spectral_index: 0.485, epoch_date: '2018-Nov-16', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.088, error_jy: 0.009, frequency_ghz: 9.0, mjd: 58438.0, spectral_index: 0.294, epoch_date: '2018-Nov-16', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.496, error_jy: 0.012, frequency_ghz: 5.5, mjd: 58406.0, spectral_index: 0.573, epoch_date: '2018-Oct-15', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.99, error_jy: 0.012, frequency_ghz: 9.0, mjd: 58406.0, spectral_index: 0.585, epoch_date: '2018-Oct-15', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.462, error_jy: 0.007, frequency_ghz: 5.5, mjd: 57916.0, spectral_index: 0.502, epoch_date: '2017-Jun-12', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.816, error_jy: 0.007, frequency_ghz: 9.0, mjd: 57916.0, spectral_index: 0.377, epoch_date: '2017-Jun-12', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.454, error_jy: 0.006, frequency_ghz: 5.5, mjd: 57855.0, spectral_index: 0.311, epoch_date: '2017-Apr-12', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.654, error_jy: 0.006, frequency_ghz: 9.0, mjd: 57855.0, spectral_index: 0.213, epoch_date: '2017-Apr-12', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.175, error_jy: 0.007, frequency_ghz: 5.5, mjd: 57793.0, spectral_index: 0.242, epoch_date: '2017-Feb-09', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.357, error_jy: 0.007, frequency_ghz: 9.0, mjd: 57793.0, spectral_index: 0.34, epoch_date: '2017-Feb-09', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.258, error_jy: 0.008, frequency_ghz: 5.5, mjd: 57672.0, spectral_index: 0.306, epoch_date: '2016-Oct-11', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.406, error_jy: 0.008, frequency_ghz: 9.0, mjd: 57672.0, spectral_index: 0.145, epoch_date: '2016-Oct-11', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.123, error_jy: 0.03, frequency_ghz: 5.5, mjd: 57580.0, spectral_index: 0.358, epoch_date: '2016-Jul-11', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.335, error_jy: 0.03, frequency_ghz: 9.0, mjd: 57580.0, spectral_index: 0.343, epoch_date: '2016-Jul-11', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.063, error_jy: 0.016, frequency_ghz: 9.0, mjd: 57414.0, spectral_index: 0.084, epoch_date: '2016-Jan-27', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.04, error_jy: 0.016, frequency_ghz: 5.5, mjd: 57414.0, spectral_index: 0.004, epoch_date: '2016-Jan-27', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.097, error_jy: 0.005, frequency_ghz: 5.5, mjd: 57349.0, spectral_index: 0.165, epoch_date: '2015-Nov-23', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.161, error_jy: 0.005, frequency_ghz: 9.0, mjd: 57349.0, spectral_index: 0.067, epoch_date: '2015-Nov-23', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.11, error_jy: 0.005, frequency_ghz: 5.5, mjd: 57327.0, spectral_index: 0.234, epoch_date: '2015-Nov-01', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.2, error_jy: 0.005, frequency_ghz: 9.0, mjd: 57327.0, spectral_index: 0.084, epoch_date: '2015-Nov-01', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.02, error_jy: 0.01, frequency_ghz: 5.5, mjd: 57247.0, spectral_index: -0.18, epoch_date: '2015-Aug-13', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.076, error_jy: 0.01, frequency_ghz: 9.0, mjd: 57247.0, spectral_index: 0.397, epoch_date: '2015-Aug-13', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.345, error_jy: 0.007, frequency_ghz: 5.5, mjd: 57145.0, spectral_index: -0.009, epoch_date: '2015-May-03', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.345, error_jy: 0.007, frequency_ghz: 9.0, mjd: 57145.0, spectral_index: 0.009, epoch_date: '2015-May-03', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 0.924, error_jy: 0.02, frequency_ghz: 5.5, mjd: 56741.0, spectral_index: 0.184, epoch_date: '2014-Mar-25', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 0.992, error_jy: 0.02, frequency_ghz: 9.0, mjd: 56741.0, spectral_index: 0.103, epoch_date: '2014-Mar-25', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.407, error_jy: 0.014, frequency_ghz: 5.5, mjd: 56329.0, spectral_index: -0.048, epoch_date: '2013-Feb-06', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.329, error_jy: 0.014, frequency_ghz: 9.0, mjd: 56329.0, spectral_index: -0.184, epoch_date: '2013-Feb-06', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.067, error_jy: 0.013, frequency_ghz: 5.5, mjd: 56225.0, spectral_index: 0.23, epoch_date: '2012-Oct-25', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.176, error_jy: 0.013, frequency_ghz: 9.0, mjd: 56225.0, spectral_index: 0.165, epoch_date: '2012-Oct-25', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.215, error_jy: 0.012, frequency_ghz: 5.5, mjd: 56039.0, spectral_index: 0.132, epoch_date: '2012-Apr-22', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.27, error_jy: 0.012, frequency_ghz: 9.0, mjd: 56039.0, spectral_index: 0.049, epoch_date: '2012-Apr-22', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.189, error_jy: 0.01, frequency_ghz: 5.5, mjd: 56003.0, spectral_index: 0.04, epoch_date: '2012-Mar-17', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.262, error_jy: 0.01, frequency_ghz: 9.0, mjd: 56003.0, spectral_index: 0.201, epoch_date: '2012-Mar-17', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.449, error_jy: 0.015, frequency_ghz: 5.5, mjd: 55802.0, spectral_index: 0.18, epoch_date: '2011-Aug-29', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.584, error_jy: 0.015, frequency_ghz: 9.0, mjd: 55802.0, spectral_index: 0.18, epoch_date: '2011-Aug-29', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.412, error_jy: 0.017, frequency_ghz: 5.5, mjd: 55702.0, spectral_index: 0.2, epoch_date: '2011-May-21', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.582, error_jy: 0.017, frequency_ghz: 9.0, mjd: 55702.0, spectral_index: 0.262, epoch_date: '2011-May-21', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.898, error_jy: 0.004, frequency_ghz: 4.8, mjd: 54877.0, spectral_index: 0.23, epoch_date: '2009-Feb-15', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 2.172, error_jy: 0.004, frequency_ghz: 8.64, mjd: 54877.0, spectral_index: 0.23, epoch_date: '2009-Feb-15', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.308, error_jy: 0.002, frequency_ghz: 4.8, mjd: 51717.0, spectral_index: -0.145, epoch_date: '2000-Jun-22', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.201, error_jy: 0.002, frequency_ghz: 8.64, mjd: 51717.0, spectral_index: -0.145, epoch_date: '2000-Jun-22', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 0.976, error_jy: 0.015, frequency_ghz: 2.1, mjd: 59914.0, spectral_index: 0.241, epoch_date: '2022-Dec-01', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.042, error_jy: 0.047, frequency_ghz: 2.1, mjd: 59802.0, spectral_index: -0.059, epoch_date: '2022-Aug-11', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.135, error_jy: 0.096, frequency_ghz: 2.1, mjd: 59428.0, spectral_index: 0.379, epoch_date: '2021-Aug-02', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.07, error_jy: 0.052, frequency_ghz: 2.1, mjd: 59371.0, spectral_index: 0.279, epoch_date: '2021-Jun-06', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.08, error_jy: 0.021, frequency_ghz: 2.1, mjd: 59266.0, spectral_index: 0.242, epoch_date: '2021-Feb-21', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 0.858, error_jy: 0.017, frequency_ghz: 2.1, mjd: 58952.0, spectral_index: 0.59, epoch_date: '2020-Apr-13', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 0.855, error_jy: 0.014, frequency_ghz: 2.1, mjd: 58912.0, spectral_index: 0.538, epoch_date: '2020-Mar-04', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 0.673, error_jy: 0.017, frequency_ghz: 2.1, mjd: 58819.0, spectral_index: 0.123, epoch_date: '2019-Dec-02', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 0.71, error_jy: 0.009, frequency_ghz: 2.1, mjd: 58787.0, spectral_index: -0.088, epoch_date: '2019-Oct-31', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.081, error_jy: 0.014, frequency_ghz: 2.1, mjd: 58492.0, spectral_index: 0.383, epoch_date: '2019-Jan-09', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 0.945, error_jy: 0.015, frequency_ghz: 2.1, mjd: 58264.0, spectral_index: -0.22, epoch_date: '2018-May-26', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.104, error_jy: 0.014, frequency_ghz: 2.1, mjd: 58140.0, spectral_index: 0.224, epoch_date: '2018-Jan-22', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.225, error_jy: 0.012, frequency_ghz: 2.1, mjd: 58106.0, spectral_index: 0.216, epoch_date: '2017-Dec-19', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.129, error_jy: 0.011, frequency_ghz: 2.1, mjd: 57730.0, spectral_index: 0.151, epoch_date: '2016-Dec-08', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.199, error_jy: 0.011, frequency_ghz: 2.1, mjd: 57079.0, spectral_index: 0.095, epoch_date: '2015-Feb-26', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.109, error_jy: 0.025, frequency_ghz: 2.1, mjd: 56225.0, spectral_index: -0.433, epoch_date: '2012-Oct-25', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.313, error_jy: 0.013, frequency_ghz: 1.384, mjd: 54868.0, spectral_index: 0.152, epoch_date: '2009-Feb-06', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.425, error_jy: 0.013, frequency_ghz: 2.368, mjd: 54868.0, spectral_index: 0.152, epoch_date: '2009-Feb-06', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.314, error_jy: 0.007, frequency_ghz: 1.384, mjd: 54852.0, spectral_index: -0.319, epoch_date: '2009-Jan-21', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.358, error_jy: 0.007, frequency_ghz: 2.368, mjd: 54852.0, spectral_index: 0.282, epoch_date: '2009-Jan-21', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.204, error_jy: 0.009, frequency_ghz: 1.384, mjd: 54134.0, spectral_index: -0.344, epoch_date: '2007-Feb-03', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.235, error_jy: 0.009, frequency_ghz: 2.368, mjd: 54134.0, spectral_index: 0.439, epoch_date: '2007-Feb-03', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.137, error_jy: 0.007, frequency_ghz: 1.384, mjd: 54032.0, spectral_index: -0.323, epoch_date: '2006-Oct-24', source_id: @a07390137.id)
-@a07390137=Source.where(j2000_name: '0739+0137').first_or_create
-@a07390137.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
-AtcaResult.create(value_jy: 1.016, error_jy: 0.007, frequency_ghz: 2.368, mjd: 54032.0, spectral_index: -0.097, epoch_date: '2006-Oct-24', source_id: @a07390137.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.529, error_jy: 0.053, frequency_ghz: 95.0, mjd: 56831.0, spectral_index: 0.381, epoch_date: '2014-Jun-23', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.516, error_jy: 0.053, frequency_ghz: 93.0, mjd: 56831.0, spectral_index: 0.381, epoch_date: '2014-Jun-23', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.273, error_jy: 0.251, frequency_ghz: 93.0, mjd: 56755.0, spectral_index: 1.093, epoch_date: '2014-Apr-08', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.326, error_jy: 0.251, frequency_ghz: 95.0, mjd: 56755.0, spectral_index: 1.093, epoch_date: '2014-Apr-08', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 0.821, error_jy: 0.177, frequency_ghz: 93.0, mjd: 56526.0, spectral_index: -1.442, epoch_date: '2013-Aug-22', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 0.796, error_jy: 0.177, frequency_ghz: 95.0, mjd: 56526.0, spectral_index: -1.442, epoch_date: '2013-Aug-22', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.43, error_jy: 0.384, frequency_ghz: 93.0, mjd: 55768.0, spectral_index: -2.815, epoch_date: '2011-Jul-26', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.343, error_jy: 0.384, frequency_ghz: 95.0, mjd: 55768.0, spectral_index: -3.061, epoch_date: '2011-Jul-26', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 3.912, error_jy: 0.066, frequency_ghz: 93.504, mjd: 53949.0, spectral_index: -3.614, epoch_date: '2006-Aug-02', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 3.618, error_jy: 0.066, frequency_ghz: 95.552, mjd: 53949.0, spectral_index: -3.614, epoch_date: '2006-Aug-02', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.026, error_jy: 0.021, frequency_ghz: 33.0, mjd: 59698.0, spectral_index: -0.335, epoch_date: '2022-Apr-29', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.006, error_jy: 0.021, frequency_ghz: 35.0, mjd: 59698.0, spectral_index: -0.335, epoch_date: '2022-Apr-29', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.942, error_jy: 0.021, frequency_ghz: 33.0, mjd: 59356.0, spectral_index: -0.287, epoch_date: '2021-May-22', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.909, error_jy: 0.021, frequency_ghz: 35.0, mjd: 59356.0, spectral_index: -0.287, epoch_date: '2021-May-22', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.944, error_jy: 0.032, frequency_ghz: 33.0, mjd: 59223.0, spectral_index: -0.332, epoch_date: '2021-Jan-09', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.907, error_jy: 0.032, frequency_ghz: 35.0, mjd: 59223.0, spectral_index: -0.332, epoch_date: '2021-Jan-09', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.12, error_jy: 0.019, frequency_ghz: 33.0, mjd: 57421.0, spectral_index: 0.27, epoch_date: '2016-Feb-03', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.138, error_jy: 0.019, frequency_ghz: 35.0, mjd: 57421.0, spectral_index: 0.27, epoch_date: '2016-Feb-03', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.494, error_jy: 0.011, frequency_ghz: 33.0, mjd: 56846.0, spectral_index: -0.125, epoch_date: '2014-Jul-08', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.484, error_jy: 0.011, frequency_ghz: 35.0, mjd: 56846.0, spectral_index: -0.125, epoch_date: '2014-Jul-08', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.88, error_jy: 0.041, frequency_ghz: 33.0, mjd: 56118.0, spectral_index: 0.98, epoch_date: '2012-Jul-10', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.992, error_jy: 0.041, frequency_ghz: 35.0, mjd: 56118.0, spectral_index: 0.98, epoch_date: '2012-Jul-10', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.08, error_jy: 0.012, frequency_ghz: 35.0, mjd: 55821.0, spectral_index: -0.23, epoch_date: '2011-Sep-17', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.108, error_jy: 0.012, frequency_ghz: 33.0, mjd: 55821.0, spectral_index: -0.23, epoch_date: '2011-Sep-17', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.97, error_jy: 0.013, frequency_ghz: 33.0, mjd: 55663.0, spectral_index: 0.408, epoch_date: '2011-Apr-12', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.018, error_jy: 0.013, frequency_ghz: 35.0, mjd: 55663.0, spectral_index: 0.408, epoch_date: '2011-Apr-12', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.123, error_jy: 0.022, frequency_ghz: 43.0, mjd: 55453.0, spectral_index: -0.171, epoch_date: '2010-Sep-14', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.115, error_jy: 0.022, frequency_ghz: 45.0, mjd: 55453.0, spectral_index: -0.171, epoch_date: '2010-Sep-14', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.514, error_jy: 0.034, frequency_ghz: 21.2, mjd: 59518.0, spectral_index: -0.018, epoch_date: '2021-Oct-31', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.525, error_jy: 0.034, frequency_ghz: 16.8, mjd: 59518.0, spectral_index: -0.018, epoch_date: '2021-Oct-31', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.903, error_jy: 0.046, frequency_ghz: 16.8, mjd: 59238.0, spectral_index: -0.161, epoch_date: '2021-Jan-24', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.833, error_jy: 0.046, frequency_ghz: 21.2, mjd: 59238.0, spectral_index: -0.161, epoch_date: '2021-Jan-24', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.736, error_jy: 0.017, frequency_ghz: 17.0, mjd: 57594.0, spectral_index: 0.239, epoch_date: '2016-Jul-25', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.782, error_jy: 0.017, frequency_ghz: 19.0, mjd: 57594.0, spectral_index: 0.239, epoch_date: '2016-Jul-25', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.492, error_jy: 0.014, frequency_ghz: 17.0, mjd: 56930.0, spectral_index: -0.228, epoch_date: '2014-Sep-30', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.455, error_jy: 0.014, frequency_ghz: 19.0, mjd: 56930.0, spectral_index: -0.228, epoch_date: '2014-Sep-30', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.22, error_jy: 0.01, frequency_ghz: 17.0, mjd: 56177.0, spectral_index: 0.12, epoch_date: '2012-Sep-07', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.237, error_jy: 0.01, frequency_ghz: 19.0, mjd: 56177.0, spectral_index: 0.12, epoch_date: '2012-Sep-07', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.446, error_jy: 0.01, frequency_ghz: 17.0, mjd: 55683.0, spectral_index: 0.02, epoch_date: '2011-May-02', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.449, error_jy: 0.01, frequency_ghz: 19.0, mjd: 55683.0, spectral_index: 0.02, epoch_date: '2011-May-02', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.222, error_jy: 0.007, frequency_ghz: 17.0, mjd: 55375.0, spectral_index: -0.084, epoch_date: '2010-Jun-28', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.211, error_jy: 0.007, frequency_ghz: 19.0, mjd: 55375.0, spectral_index: -0.084, epoch_date: '2010-Jun-28', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.632, error_jy: 0.008, frequency_ghz: 5.5, mjd: 59961.0, spectral_index: 0.292, epoch_date: '2023-Jan-17', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.79, error_jy: 0.008, frequency_ghz: 9.0, mjd: 59961.0, spectral_index: 0.084, epoch_date: '2023-Jan-17', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.38, error_jy: 0.009, frequency_ghz: 5.5, mjd: 59877.0, spectral_index: 0.737, epoch_date: '2022-Oct-25', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.865, error_jy: 0.009, frequency_ghz: 9.0, mjd: 59877.0, spectral_index: 0.487, epoch_date: '2022-Oct-25', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.494, error_jy: 0.008, frequency_ghz: 5.5, mjd: 59713.0, spectral_index: -0.135, epoch_date: '2022-May-14', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.373, error_jy: 0.008, frequency_ghz: 9.0, mjd: 59713.0, spectral_index: -0.209, epoch_date: '2022-May-14', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.524, error_jy: 0.012, frequency_ghz: 8.5, mjd: 59618.0, spectral_index: 0.299, epoch_date: '2022-Feb-08', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.083, error_jy: 0.012, frequency_ghz: 5.5, mjd: 59618.0, spectral_index: 0.585, epoch_date: '2022-Feb-08', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.391, error_jy: 0.013, frequency_ghz: 5.5, mjd: 59536.0, spectral_index: 0.879, epoch_date: '2021-Nov-18', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.012, error_jy: 0.013, frequency_ghz: 8.5, mjd: 59536.0, spectral_index: 0.816, epoch_date: '2021-Nov-18', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.649, error_jy: 0.01, frequency_ghz: 5.5, mjd: 59419.0, spectral_index: 0.053, epoch_date: '2021-Jul-24', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.729, error_jy: 0.01, frequency_ghz: 9.0, mjd: 59419.0, spectral_index: 0.141, epoch_date: '2021-Jul-24', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.865, error_jy: 0.008, frequency_ghz: 5.5, mjd: 59366.0, spectral_index: 0.446, epoch_date: '2021-Jun-01', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.162, error_jy: 0.008, frequency_ghz: 9.0, mjd: 59366.0, spectral_index: 0.154, epoch_date: '2021-Jun-01', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.583, error_jy: 0.016, frequency_ghz: 5.5, mjd: 59335.0, spectral_index: 0.665, epoch_date: '2021-May-01', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.223, error_jy: 0.016, frequency_ghz: 9.0, mjd: 59335.0, spectral_index: 0.713, epoch_date: '2021-May-01', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.504, error_jy: 0.023, frequency_ghz: 5.5, mjd: 59253.0, spectral_index: 0.029, epoch_date: '2021-Feb-08', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.528, error_jy: 0.023, frequency_ghz: 9.0, mjd: 59253.0, spectral_index: 0.036, epoch_date: '2021-Feb-08', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.135, error_jy: 0.008, frequency_ghz: 9.0, mjd: 59148.0, spectral_index: 0.339, epoch_date: '2020-Oct-26', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.816, error_jy: 0.008, frequency_ghz: 5.5, mjd: 59148.0, spectral_index: 0.319, epoch_date: '2020-Oct-26', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.564, error_jy: 0.01, frequency_ghz: 5.5, mjd: 59111.0, spectral_index: 0.286, epoch_date: '2020-Sep-19', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.939, error_jy: 0.01, frequency_ghz: 9.0, mjd: 59111.0, spectral_index: 0.588, epoch_date: '2020-Sep-19', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.108, error_jy: 0.01, frequency_ghz: 5.5, mjd: 58942.0, spectral_index: 0.425, epoch_date: '2020-Apr-03', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.523, error_jy: 0.01, frequency_ghz: 9.0, mjd: 58942.0, spectral_index: 0.304, epoch_date: '2020-Apr-03', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.449, error_jy: 0.01, frequency_ghz: 9.0, mjd: 58931.0, spectral_index: 0.269, epoch_date: '2020-Mar-23', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.018, error_jy: 0.01, frequency_ghz: 5.5, mjd: 58931.0, spectral_index: 0.517, epoch_date: '2020-Mar-23', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.081, error_jy: 0.012, frequency_ghz: 5.5, mjd: 58901.0, spectral_index: 0.783, epoch_date: '2020-Feb-22', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.795, error_jy: 0.012, frequency_ghz: 9.0, mjd: 58901.0, spectral_index: 0.414, epoch_date: '2020-Feb-22', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 0.782, error_jy: 0.008, frequency_ghz: 5.5, mjd: 58601.0, spectral_index: -0.181, epoch_date: '2019-Apr-28', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 0.804, error_jy: 0.008, frequency_ghz: 9.0, mjd: 58601.0, spectral_index: 0.295, epoch_date: '2019-Apr-28', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.723, error_jy: 0.009, frequency_ghz: 5.5, mjd: 58438.0, spectral_index: 0.485, epoch_date: '2018-Nov-16', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.088, error_jy: 0.009, frequency_ghz: 9.0, mjd: 58438.0, spectral_index: 0.294, epoch_date: '2018-Nov-16', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.496, error_jy: 0.012, frequency_ghz: 5.5, mjd: 58406.0, spectral_index: 0.573, epoch_date: '2018-Oct-15', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.99, error_jy: 0.012, frequency_ghz: 9.0, mjd: 58406.0, spectral_index: 0.585, epoch_date: '2018-Oct-15', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.462, error_jy: 0.007, frequency_ghz: 5.5, mjd: 57916.0, spectral_index: 0.502, epoch_date: '2017-Jun-12', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.816, error_jy: 0.007, frequency_ghz: 9.0, mjd: 57916.0, spectral_index: 0.377, epoch_date: '2017-Jun-12', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.454, error_jy: 0.006, frequency_ghz: 5.5, mjd: 57855.0, spectral_index: 0.311, epoch_date: '2017-Apr-12', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.654, error_jy: 0.006, frequency_ghz: 9.0, mjd: 57855.0, spectral_index: 0.213, epoch_date: '2017-Apr-12', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.175, error_jy: 0.007, frequency_ghz: 5.5, mjd: 57793.0, spectral_index: 0.242, epoch_date: '2017-Feb-09', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.357, error_jy: 0.007, frequency_ghz: 9.0, mjd: 57793.0, spectral_index: 0.34, epoch_date: '2017-Feb-09', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.258, error_jy: 0.008, frequency_ghz: 5.5, mjd: 57672.0, spectral_index: 0.306, epoch_date: '2016-Oct-11', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.406, error_jy: 0.008, frequency_ghz: 9.0, mjd: 57672.0, spectral_index: 0.145, epoch_date: '2016-Oct-11', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.123, error_jy: 0.03, frequency_ghz: 5.5, mjd: 57580.0, spectral_index: 0.358, epoch_date: '2016-Jul-11', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.335, error_jy: 0.03, frequency_ghz: 9.0, mjd: 57580.0, spectral_index: 0.343, epoch_date: '2016-Jul-11', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.063, error_jy: 0.016, frequency_ghz: 9.0, mjd: 57414.0, spectral_index: 0.084, epoch_date: '2016-Jan-27', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.04, error_jy: 0.016, frequency_ghz: 5.5, mjd: 57414.0, spectral_index: 0.004, epoch_date: '2016-Jan-27', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.097, error_jy: 0.005, frequency_ghz: 5.5, mjd: 57349.0, spectral_index: 0.165, epoch_date: '2015-Nov-23', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.161, error_jy: 0.005, frequency_ghz: 9.0, mjd: 57349.0, spectral_index: 0.067, epoch_date: '2015-Nov-23', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.11, error_jy: 0.005, frequency_ghz: 5.5, mjd: 57327.0, spectral_index: 0.234, epoch_date: '2015-Nov-01', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.2, error_jy: 0.005, frequency_ghz: 9.0, mjd: 57327.0, spectral_index: 0.084, epoch_date: '2015-Nov-01', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.02, error_jy: 0.01, frequency_ghz: 5.5, mjd: 57247.0, spectral_index: -0.18, epoch_date: '2015-Aug-13', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.076, error_jy: 0.01, frequency_ghz: 9.0, mjd: 57247.0, spectral_index: 0.397, epoch_date: '2015-Aug-13', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.345, error_jy: 0.007, frequency_ghz: 5.5, mjd: 57145.0, spectral_index: -0.009, epoch_date: '2015-May-03', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.345, error_jy: 0.007, frequency_ghz: 9.0, mjd: 57145.0, spectral_index: 0.009, epoch_date: '2015-May-03', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 0.924, error_jy: 0.02, frequency_ghz: 5.5, mjd: 56741.0, spectral_index: 0.184, epoch_date: '2014-Mar-25', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 0.992, error_jy: 0.02, frequency_ghz: 9.0, mjd: 56741.0, spectral_index: 0.103, epoch_date: '2014-Mar-25', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.407, error_jy: 0.014, frequency_ghz: 5.5, mjd: 56329.0, spectral_index: -0.048, epoch_date: '2013-Feb-06', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.329, error_jy: 0.014, frequency_ghz: 9.0, mjd: 56329.0, spectral_index: -0.184, epoch_date: '2013-Feb-06', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.067, error_jy: 0.013, frequency_ghz: 5.5, mjd: 56225.0, spectral_index: 0.23, epoch_date: '2012-Oct-25', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.176, error_jy: 0.013, frequency_ghz: 9.0, mjd: 56225.0, spectral_index: 0.165, epoch_date: '2012-Oct-25', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.215, error_jy: 0.012, frequency_ghz: 5.5, mjd: 56039.0, spectral_index: 0.132, epoch_date: '2012-Apr-22', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.27, error_jy: 0.012, frequency_ghz: 9.0, mjd: 56039.0, spectral_index: 0.049, epoch_date: '2012-Apr-22', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.189, error_jy: 0.01, frequency_ghz: 5.5, mjd: 56003.0, spectral_index: 0.04, epoch_date: '2012-Mar-17', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.262, error_jy: 0.01, frequency_ghz: 9.0, mjd: 56003.0, spectral_index: 0.201, epoch_date: '2012-Mar-17', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.449, error_jy: 0.015, frequency_ghz: 5.5, mjd: 55802.0, spectral_index: 0.18, epoch_date: '2011-Aug-29', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.584, error_jy: 0.015, frequency_ghz: 9.0, mjd: 55802.0, spectral_index: 0.18, epoch_date: '2011-Aug-29', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.412, error_jy: 0.017, frequency_ghz: 5.5, mjd: 55702.0, spectral_index: 0.2, epoch_date: '2011-May-21', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.582, error_jy: 0.017, frequency_ghz: 9.0, mjd: 55702.0, spectral_index: 0.262, epoch_date: '2011-May-21', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.898, error_jy: 0.004, frequency_ghz: 4.8, mjd: 54877.0, spectral_index: 0.23, epoch_date: '2009-Feb-15', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 2.172, error_jy: 0.004, frequency_ghz: 8.64, mjd: 54877.0, spectral_index: 0.23, epoch_date: '2009-Feb-15', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.308, error_jy: 0.002, frequency_ghz: 4.8, mjd: 51717.0, spectral_index: -0.145, epoch_date: '2000-Jun-22', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.201, error_jy: 0.002, frequency_ghz: 8.64, mjd: 51717.0, spectral_index: -0.145, epoch_date: '2000-Jun-22', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 0.976, error_jy: 0.015, frequency_ghz: 2.1, mjd: 59914.0, spectral_index: 0.241, epoch_date: '2022-Dec-01', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.042, error_jy: 0.047, frequency_ghz: 2.1, mjd: 59802.0, spectral_index: -0.059, epoch_date: '2022-Aug-11', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.135, error_jy: 0.096, frequency_ghz: 2.1, mjd: 59428.0, spectral_index: 0.379, epoch_date: '2021-Aug-02', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.07, error_jy: 0.052, frequency_ghz: 2.1, mjd: 59371.0, spectral_index: 0.279, epoch_date: '2021-Jun-06', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.08, error_jy: 0.021, frequency_ghz: 2.1, mjd: 59266.0, spectral_index: 0.242, epoch_date: '2021-Feb-21', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 0.858, error_jy: 0.017, frequency_ghz: 2.1, mjd: 58952.0, spectral_index: 0.59, epoch_date: '2020-Apr-13', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 0.855, error_jy: 0.014, frequency_ghz: 2.1, mjd: 58912.0, spectral_index: 0.538, epoch_date: '2020-Mar-04', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 0.673, error_jy: 0.017, frequency_ghz: 2.1, mjd: 58819.0, spectral_index: 0.123, epoch_date: '2019-Dec-02', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 0.71, error_jy: 0.009, frequency_ghz: 2.1, mjd: 58787.0, spectral_index: -0.088, epoch_date: '2019-Oct-31', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.081, error_jy: 0.014, frequency_ghz: 2.1, mjd: 58492.0, spectral_index: 0.383, epoch_date: '2019-Jan-09', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 0.945, error_jy: 0.015, frequency_ghz: 2.1, mjd: 58264.0, spectral_index: -0.22, epoch_date: '2018-May-26', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.104, error_jy: 0.014, frequency_ghz: 2.1, mjd: 58140.0, spectral_index: 0.224, epoch_date: '2018-Jan-22', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.225, error_jy: 0.012, frequency_ghz: 2.1, mjd: 58106.0, spectral_index: 0.216, epoch_date: '2017-Dec-19', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.129, error_jy: 0.011, frequency_ghz: 2.1, mjd: 57730.0, spectral_index: 0.151, epoch_date: '2016-Dec-08', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.199, error_jy: 0.011, frequency_ghz: 2.1, mjd: 57079.0, spectral_index: 0.095, epoch_date: '2015-Feb-26', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.109, error_jy: 0.025, frequency_ghz: 2.1, mjd: 56225.0, spectral_index: -0.433, epoch_date: '2012-Oct-25', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.313, error_jy: 0.013, frequency_ghz: 1.384, mjd: 54868.0, spectral_index: 0.152, epoch_date: '2009-Feb-06', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.425, error_jy: 0.013, frequency_ghz: 2.368, mjd: 54868.0, spectral_index: 0.152, epoch_date: '2009-Feb-06', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.314, error_jy: 0.007, frequency_ghz: 1.384, mjd: 54852.0, spectral_index: -0.319, epoch_date: '2009-Jan-21', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.358, error_jy: 0.007, frequency_ghz: 2.368, mjd: 54852.0, spectral_index: 0.282, epoch_date: '2009-Jan-21', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.204, error_jy: 0.009, frequency_ghz: 1.384, mjd: 54134.0, spectral_index: -0.344, epoch_date: '2007-Feb-03', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.235, error_jy: 0.009, frequency_ghz: 2.368, mjd: 54134.0, spectral_index: 0.439, epoch_date: '2007-Feb-03', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.137, error_jy: 0.007, frequency_ghz: 1.384, mjd: 54032.0, spectral_index: -0.323, epoch_date: '2006-Oct-24', source_id: @a07390136.id)
+@a07390136=Source.where(j2000_name: '0739+0136').first_or_create
+@a07390136.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0736+017&detailed=true')
+AtcaResult.create(value_jy: 1.016, error_jy: 0.007, frequency_ghz: 2.368, mjd: 54032.0, spectral_index: -0.097, epoch_date: '2006-Oct-24', source_id: @a07390136.id)
 @a07330456=Source.where(j2000_name: '0733+0456').first_or_create
 @a07330456.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0731+050&detailed=true')
 AtcaResult.create(value_jy: 0.577, error_jy: 0.261, frequency_ghz: 93.0, mjd: 56755.0, spectral_index: 0.555, epoch_date: '2014-Apr-08', source_id: @a07330456.id)
@@ -12703,183 +12703,183 @@ AtcaResult.create(value_jy: 0.857, error_jy: 0.008, frequency_ghz: 5.5, mjd: 561
 @a06273529=Source.where(j2000_name: '0627-3529').first_or_create
 @a06273529.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0625-354&detailed=true')
 AtcaResult.create(value_jy: 0.728, error_jy: 0.008, frequency_ghz: 9.0, mjd: 56165.0, spectral_index: -0.338, epoch_date: '2012-Aug-26', source_id: @a06273529.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.432, error_jy: 0.234, frequency_ghz: 93.0, mjd: 56755.0, spectral_index: -0.087, epoch_date: '2014-Apr-08', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.431, error_jy: 0.234, frequency_ghz: 95.0, mjd: 56755.0, spectral_index: -0.089, epoch_date: '2014-Apr-08', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.196, error_jy: 0.133, frequency_ghz: 93.0, mjd: 56526.0, spectral_index: -1.323, epoch_date: '2013-Aug-22', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.19, error_jy: 0.133, frequency_ghz: 95.0, mjd: 56526.0, spectral_index: -1.323, epoch_date: '2013-Aug-22', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.068, error_jy: 0.459, frequency_ghz: 93.0, mjd: 56127.0, spectral_index: -27.053, epoch_date: '2012-Jul-19', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.028, error_jy: 0.459, frequency_ghz: 95.0, mjd: 56127.0, spectral_index: -66.08, epoch_date: '2012-Jul-19', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.131, error_jy: 1.132, frequency_ghz: 93.0, mjd: 55768.0, spectral_index: -27.733, epoch_date: '2011-Jul-26', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.053, error_jy: 1.132, frequency_ghz: 95.0, mjd: 55768.0, spectral_index: -70.195, epoch_date: '2011-Jul-26', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.491, error_jy: 0.022, frequency_ghz: 33.0, mjd: 59893.0, spectral_index: -2.044, epoch_date: '2022-Nov-10', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.435, error_jy: 0.022, frequency_ghz: 35.0, mjd: 59893.0, spectral_index: -2.044, epoch_date: '2022-Nov-10', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.631, error_jy: 0.022, frequency_ghz: 33.0, mjd: 59698.0, spectral_index: -1.253, epoch_date: '2022-Apr-29', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.587, error_jy: 0.022, frequency_ghz: 35.0, mjd: 59698.0, spectral_index: -1.253, epoch_date: '2022-Apr-29', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.632, error_jy: 0.022, frequency_ghz: 33.0, mjd: 59356.0, spectral_index: -1.541, epoch_date: '2021-May-22', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.578, error_jy: 0.022, frequency_ghz: 35.0, mjd: 59356.0, spectral_index: -1.541, epoch_date: '2021-May-22', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.628, error_jy: 0.02, frequency_ghz: 33.0, mjd: 59223.0, spectral_index: -1.471, epoch_date: '2021-Jan-09', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.576, error_jy: 0.02, frequency_ghz: 35.0, mjd: 59223.0, spectral_index: -1.471, epoch_date: '2021-Jan-09', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.525, error_jy: 0.017, frequency_ghz: 33.0, mjd: 57421.0, spectral_index: -0.731, epoch_date: '2016-Feb-03', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.503, error_jy: 0.017, frequency_ghz: 35.0, mjd: 57421.0, spectral_index: -0.731, epoch_date: '2016-Feb-03', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.482, error_jy: 0.013, frequency_ghz: 33.0, mjd: 56846.0, spectral_index: -1.42, epoch_date: '2014-Jul-08', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.443, error_jy: 0.013, frequency_ghz: 35.0, mjd: 56846.0, spectral_index: -1.42, epoch_date: '2014-Jul-08', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.932, error_jy: 0.032, frequency_ghz: 33.0, mjd: 56118.0, spectral_index: -0.721, epoch_date: '2012-Jul-10', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.894, error_jy: 0.032, frequency_ghz: 35.0, mjd: 56118.0, spectral_index: -0.721, epoch_date: '2012-Jul-10', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.488, error_jy: 0.014, frequency_ghz: 35.0, mjd: 55821.0, spectral_index: -1.372, epoch_date: '2011-Sep-17', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.529, error_jy: 0.014, frequency_ghz: 33.0, mjd: 55821.0, spectral_index: -1.372, epoch_date: '2011-Sep-17', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.457, error_jy: 0.014, frequency_ghz: 33.0, mjd: 55663.0, spectral_index: -1.416, epoch_date: '2011-Apr-12', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.42, error_jy: 0.014, frequency_ghz: 35.0, mjd: 55663.0, spectral_index: -1.416, epoch_date: '2011-Apr-12', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.277, error_jy: 0.029, frequency_ghz: 43.0, mjd: 55453.0, spectral_index: 0.491, epoch_date: '2010-Sep-14', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.283, error_jy: 0.029, frequency_ghz: 45.0, mjd: 55453.0, spectral_index: 0.491, epoch_date: '2010-Sep-14', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.335, error_jy: 0.026, frequency_ghz: 43.0, mjd: 55325.0, spectral_index: -0.411, epoch_date: '2010-May-09', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.328, error_jy: 0.026, frequency_ghz: 45.0, mjd: 55325.0, spectral_index: -0.411, epoch_date: '2010-May-09', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 1.606, error_jy: 0.024, frequency_ghz: 16.8, mjd: 59518.0, spectral_index: -1.466, epoch_date: '2021-Oct-31', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 1.142, error_jy: 0.024, frequency_ghz: 21.2, mjd: 59518.0, spectral_index: -1.466, epoch_date: '2021-Oct-31', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 1.68, error_jy: 0.071, frequency_ghz: 16.8, mjd: 59238.0, spectral_index: -1.534, epoch_date: '2021-Jan-24', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 1.176, error_jy: 0.071, frequency_ghz: 21.2, mjd: 59238.0, spectral_index: -1.534, epoch_date: '2021-Jan-24', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 1.337, error_jy: 0.016, frequency_ghz: 17.0, mjd: 56930.0, spectral_index: -1.635, epoch_date: '2014-Sep-30', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 1.115, error_jy: 0.016, frequency_ghz: 19.0, mjd: 56930.0, spectral_index: -1.635, epoch_date: '2014-Sep-30', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 1.642, error_jy: 0.01, frequency_ghz: 17.0, mjd: 56177.0, spectral_index: -1.266, epoch_date: '2012-Sep-07', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 1.426, error_jy: 0.01, frequency_ghz: 19.0, mjd: 56177.0, spectral_index: -1.266, epoch_date: '2012-Sep-07', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 1.49, error_jy: 0.011, frequency_ghz: 17.0, mjd: 55683.0, spectral_index: -1.396, epoch_date: '2011-May-02', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 1.276, error_jy: 0.011, frequency_ghz: 19.0, mjd: 55683.0, spectral_index: -1.396, epoch_date: '2011-May-02', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 1.437, error_jy: 0.007, frequency_ghz: 17.0, mjd: 55375.0, spectral_index: -1.417, epoch_date: '2010-Jun-28', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 1.227, error_jy: 0.007, frequency_ghz: 19.0, mjd: 55375.0, spectral_index: -1.417, epoch_date: '2010-Jun-28', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 3.538, error_jy: 0.051, frequency_ghz: 9.0, mjd: 55702.0, spectral_index: -0.971, epoch_date: '2011-May-21', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 5.706, error_jy: 0.051, frequency_ghz: 5.5, mjd: 55702.0, spectral_index: -0.971, epoch_date: '2011-May-21', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 6.239, error_jy: 0.008, frequency_ghz: 4.8, mjd: 54877.0, spectral_index: -1.042, epoch_date: '2009-Feb-15', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 3.382, error_jy: 0.008, frequency_ghz: 8.64, mjd: 54877.0, spectral_index: -1.042, epoch_date: '2009-Feb-15', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.312, error_jy: 0.075, frequency_ghz: 4.8, mjd: 54150.0, spectral_index: 9.641, epoch_date: '2007-Feb-19', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 0.074, error_jy: 0.075, frequency_ghz: 8.64, mjd: 54150.0, spectral_index: -14.513, epoch_date: '2007-Feb-19', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 2.81, error_jy: 0.023, frequency_ghz: 8.64, mjd: 49753.0, spectral_index: -2.958, epoch_date: '1995-Feb-05', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 5.439, error_jy: 0.023, frequency_ghz: 4.8, mjd: 49753.0, spectral_index: 0.711, epoch_date: '1995-Feb-05', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 12.015, error_jy: 0.088, frequency_ghz: 2.1, mjd: 55613.0, spectral_index: -0.741, epoch_date: '2011-Feb-21', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 16.525, error_jy: 0.205, frequency_ghz: 1.384, mjd: 54868.0, spectral_index: -0.729, epoch_date: '2009-Feb-06', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 11.173, error_jy: 0.205, frequency_ghz: 2.368, mjd: 54868.0, spectral_index: -0.729, epoch_date: '2009-Feb-06', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 15.514, error_jy: 0.04, frequency_ghz: 1.384, mjd: 54852.0, spectral_index: -0.949, epoch_date: '2009-Jan-21', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 10.309, error_jy: 0.04, frequency_ghz: 2.368, mjd: 54852.0, spectral_index: -0.983, epoch_date: '2009-Jan-21', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 15.633, error_jy: 0.028, frequency_ghz: 1.384, mjd: 54134.0, spectral_index: -0.901, epoch_date: '2007-Feb-03', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 10.315, error_jy: 0.028, frequency_ghz: 2.368, mjd: 54134.0, spectral_index: -0.648, epoch_date: '2007-Feb-03', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 15.835, error_jy: 0.064, frequency_ghz: 1.384, mjd: 54032.0, spectral_index: -0.917, epoch_date: '2006-Oct-24', source_id: @a06270553.id)
-@a06270553=Source.where(j2000_name: '0627-0553').first_or_create
-@a06270553.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
-AtcaResult.create(value_jy: 9.678, error_jy: 0.064, frequency_ghz: 2.368, mjd: 54032.0, spectral_index: -0.917, epoch_date: '2006-Oct-24', source_id: @a06270553.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.432, error_jy: 0.234, frequency_ghz: 93.0, mjd: 56755.0, spectral_index: -0.087, epoch_date: '2014-Apr-08', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.431, error_jy: 0.234, frequency_ghz: 95.0, mjd: 56755.0, spectral_index: -0.089, epoch_date: '2014-Apr-08', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.196, error_jy: 0.133, frequency_ghz: 93.0, mjd: 56526.0, spectral_index: -1.323, epoch_date: '2013-Aug-22', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.19, error_jy: 0.133, frequency_ghz: 95.0, mjd: 56526.0, spectral_index: -1.323, epoch_date: '2013-Aug-22', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.068, error_jy: 0.459, frequency_ghz: 93.0, mjd: 56127.0, spectral_index: -27.053, epoch_date: '2012-Jul-19', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.028, error_jy: 0.459, frequency_ghz: 95.0, mjd: 56127.0, spectral_index: -66.08, epoch_date: '2012-Jul-19', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.131, error_jy: 1.132, frequency_ghz: 93.0, mjd: 55768.0, spectral_index: -27.733, epoch_date: '2011-Jul-26', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.053, error_jy: 1.132, frequency_ghz: 95.0, mjd: 55768.0, spectral_index: -70.195, epoch_date: '2011-Jul-26', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.491, error_jy: 0.022, frequency_ghz: 33.0, mjd: 59893.0, spectral_index: -2.044, epoch_date: '2022-Nov-10', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.435, error_jy: 0.022, frequency_ghz: 35.0, mjd: 59893.0, spectral_index: -2.044, epoch_date: '2022-Nov-10', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.631, error_jy: 0.022, frequency_ghz: 33.0, mjd: 59698.0, spectral_index: -1.253, epoch_date: '2022-Apr-29', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.587, error_jy: 0.022, frequency_ghz: 35.0, mjd: 59698.0, spectral_index: -1.253, epoch_date: '2022-Apr-29', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.632, error_jy: 0.022, frequency_ghz: 33.0, mjd: 59356.0, spectral_index: -1.541, epoch_date: '2021-May-22', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.578, error_jy: 0.022, frequency_ghz: 35.0, mjd: 59356.0, spectral_index: -1.541, epoch_date: '2021-May-22', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.628, error_jy: 0.02, frequency_ghz: 33.0, mjd: 59223.0, spectral_index: -1.471, epoch_date: '2021-Jan-09', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.576, error_jy: 0.02, frequency_ghz: 35.0, mjd: 59223.0, spectral_index: -1.471, epoch_date: '2021-Jan-09', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.525, error_jy: 0.017, frequency_ghz: 33.0, mjd: 57421.0, spectral_index: -0.731, epoch_date: '2016-Feb-03', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.503, error_jy: 0.017, frequency_ghz: 35.0, mjd: 57421.0, spectral_index: -0.731, epoch_date: '2016-Feb-03', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.482, error_jy: 0.013, frequency_ghz: 33.0, mjd: 56846.0, spectral_index: -1.42, epoch_date: '2014-Jul-08', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.443, error_jy: 0.013, frequency_ghz: 35.0, mjd: 56846.0, spectral_index: -1.42, epoch_date: '2014-Jul-08', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.932, error_jy: 0.032, frequency_ghz: 33.0, mjd: 56118.0, spectral_index: -0.721, epoch_date: '2012-Jul-10', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.894, error_jy: 0.032, frequency_ghz: 35.0, mjd: 56118.0, spectral_index: -0.721, epoch_date: '2012-Jul-10', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.488, error_jy: 0.014, frequency_ghz: 35.0, mjd: 55821.0, spectral_index: -1.372, epoch_date: '2011-Sep-17', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.529, error_jy: 0.014, frequency_ghz: 33.0, mjd: 55821.0, spectral_index: -1.372, epoch_date: '2011-Sep-17', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.457, error_jy: 0.014, frequency_ghz: 33.0, mjd: 55663.0, spectral_index: -1.416, epoch_date: '2011-Apr-12', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.42, error_jy: 0.014, frequency_ghz: 35.0, mjd: 55663.0, spectral_index: -1.416, epoch_date: '2011-Apr-12', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.277, error_jy: 0.029, frequency_ghz: 43.0, mjd: 55453.0, spectral_index: 0.491, epoch_date: '2010-Sep-14', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.283, error_jy: 0.029, frequency_ghz: 45.0, mjd: 55453.0, spectral_index: 0.491, epoch_date: '2010-Sep-14', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.335, error_jy: 0.026, frequency_ghz: 43.0, mjd: 55325.0, spectral_index: -0.411, epoch_date: '2010-May-09', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.328, error_jy: 0.026, frequency_ghz: 45.0, mjd: 55325.0, spectral_index: -0.411, epoch_date: '2010-May-09', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 1.606, error_jy: 0.024, frequency_ghz: 16.8, mjd: 59518.0, spectral_index: -1.466, epoch_date: '2021-Oct-31', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 1.142, error_jy: 0.024, frequency_ghz: 21.2, mjd: 59518.0, spectral_index: -1.466, epoch_date: '2021-Oct-31', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 1.68, error_jy: 0.071, frequency_ghz: 16.8, mjd: 59238.0, spectral_index: -1.534, epoch_date: '2021-Jan-24', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 1.176, error_jy: 0.071, frequency_ghz: 21.2, mjd: 59238.0, spectral_index: -1.534, epoch_date: '2021-Jan-24', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 1.337, error_jy: 0.016, frequency_ghz: 17.0, mjd: 56930.0, spectral_index: -1.635, epoch_date: '2014-Sep-30', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 1.115, error_jy: 0.016, frequency_ghz: 19.0, mjd: 56930.0, spectral_index: -1.635, epoch_date: '2014-Sep-30', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 1.642, error_jy: 0.01, frequency_ghz: 17.0, mjd: 56177.0, spectral_index: -1.266, epoch_date: '2012-Sep-07', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 1.426, error_jy: 0.01, frequency_ghz: 19.0, mjd: 56177.0, spectral_index: -1.266, epoch_date: '2012-Sep-07', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 1.49, error_jy: 0.011, frequency_ghz: 17.0, mjd: 55683.0, spectral_index: -1.396, epoch_date: '2011-May-02', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 1.276, error_jy: 0.011, frequency_ghz: 19.0, mjd: 55683.0, spectral_index: -1.396, epoch_date: '2011-May-02', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 1.437, error_jy: 0.007, frequency_ghz: 17.0, mjd: 55375.0, spectral_index: -1.417, epoch_date: '2010-Jun-28', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 1.227, error_jy: 0.007, frequency_ghz: 19.0, mjd: 55375.0, spectral_index: -1.417, epoch_date: '2010-Jun-28', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 3.538, error_jy: 0.051, frequency_ghz: 9.0, mjd: 55702.0, spectral_index: -0.971, epoch_date: '2011-May-21', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 5.706, error_jy: 0.051, frequency_ghz: 5.5, mjd: 55702.0, spectral_index: -0.971, epoch_date: '2011-May-21', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 6.239, error_jy: 0.008, frequency_ghz: 4.8, mjd: 54877.0, spectral_index: -1.042, epoch_date: '2009-Feb-15', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 3.382, error_jy: 0.008, frequency_ghz: 8.64, mjd: 54877.0, spectral_index: -1.042, epoch_date: '2009-Feb-15', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.312, error_jy: 0.075, frequency_ghz: 4.8, mjd: 54150.0, spectral_index: 9.641, epoch_date: '2007-Feb-19', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 0.074, error_jy: 0.075, frequency_ghz: 8.64, mjd: 54150.0, spectral_index: -14.513, epoch_date: '2007-Feb-19', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 2.81, error_jy: 0.023, frequency_ghz: 8.64, mjd: 49753.0, spectral_index: -2.958, epoch_date: '1995-Feb-05', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 5.439, error_jy: 0.023, frequency_ghz: 4.8, mjd: 49753.0, spectral_index: 0.711, epoch_date: '1995-Feb-05', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 12.015, error_jy: 0.088, frequency_ghz: 2.1, mjd: 55613.0, spectral_index: -0.741, epoch_date: '2011-Feb-21', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 16.525, error_jy: 0.205, frequency_ghz: 1.384, mjd: 54868.0, spectral_index: -0.729, epoch_date: '2009-Feb-06', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 11.173, error_jy: 0.205, frequency_ghz: 2.368, mjd: 54868.0, spectral_index: -0.729, epoch_date: '2009-Feb-06', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 15.514, error_jy: 0.04, frequency_ghz: 1.384, mjd: 54852.0, spectral_index: -0.949, epoch_date: '2009-Jan-21', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 10.309, error_jy: 0.04, frequency_ghz: 2.368, mjd: 54852.0, spectral_index: -0.983, epoch_date: '2009-Jan-21', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 15.633, error_jy: 0.028, frequency_ghz: 1.384, mjd: 54134.0, spectral_index: -0.901, epoch_date: '2007-Feb-03', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 10.315, error_jy: 0.028, frequency_ghz: 2.368, mjd: 54134.0, spectral_index: -0.648, epoch_date: '2007-Feb-03', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 15.835, error_jy: 0.064, frequency_ghz: 1.384, mjd: 54032.0, spectral_index: -0.917, epoch_date: '2006-Oct-24', source_id: @a3C161.id)
+@a3C161=Source.where(j2000_name: '3C161').first_or_create
+@a3C161.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0624-058&detailed=true')
+AtcaResult.create(value_jy: 9.678, error_jy: 0.064, frequency_ghz: 2.368, mjd: 54032.0, spectral_index: -0.917, epoch_date: '2006-Oct-24', source_id: @a3C161.id)
 @a05503216=Source.where(j2000_name: '0550-3216').first_or_create
 @a05503216.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0548-322&detailed=true')
 AtcaResult.create(value_jy: 0.029, error_jy: 0.015, frequency_ghz: 38.0, mjd: 59866.0, spectral_index: -1.804, epoch_date: '2022-Oct-14', source_id: @a05503216.id)
@@ -13540,54 +13540,54 @@ AtcaResult.create(value_jy: 0.166, error_jy: 0.012, frequency_ghz: 1.384, mjd: 5
 @a05503216=Source.where(j2000_name: '0550-3216').first_or_create
 @a05503216.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0548-322&detailed=true')
 AtcaResult.create(value_jy: 0.075, error_jy: 0.012, frequency_ghz: 2.496, mjd: 51717.0, spectral_index: -13.702, epoch_date: '2000-Jun-22', source_id: @a05503216.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 0.026, error_jy: 0.025, frequency_ghz: 95.0, mjd: 56831.0, spectral_index: 7.731, epoch_date: '2014-Jun-23', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 0.022, error_jy: 0.025, frequency_ghz: 93.0, mjd: 56831.0, spectral_index: 7.731, epoch_date: '2014-Jun-23', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 3.58, error_jy: 0.19, frequency_ghz: 44.0, mjd: 56364.0, spectral_index: -20.99, epoch_date: '2013-Mar-13', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 0.464, error_jy: 0.19, frequency_ghz: 48.5, mjd: 56364.0, spectral_index: -20.99, epoch_date: '2013-Mar-13', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 1.194, error_jy: 0.039, frequency_ghz: 16.8, mjd: 58184.0, spectral_index: -3.147, epoch_date: '2018-Mar-07', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 0.574, error_jy: 0.039, frequency_ghz: 21.2, mjd: 58184.0, spectral_index: -3.147, epoch_date: '2018-Mar-07', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 1.228, error_jy: 0.142, frequency_ghz: 18.5, mjd: 56364.0, spectral_index: -7.751, epoch_date: '2013-Mar-13', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 0.227, error_jy: 0.142, frequency_ghz: 23.0, mjd: 56364.0, spectral_index: -7.751, epoch_date: '2013-Mar-13', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 3.88, error_jy: 0.016, frequency_ghz: 5.5, mjd: 57855.0, spectral_index: -0.716, epoch_date: '2017-Apr-12', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 2.601, error_jy: 0.016, frequency_ghz: 9.0, mjd: 57855.0, spectral_index: -0.908, epoch_date: '2017-Apr-12', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 3.83, error_jy: 0.037, frequency_ghz: 5.5, mjd: 56364.0, spectral_index: -0.798, epoch_date: '2013-Mar-13', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 2.506, error_jy: 0.037, frequency_ghz: 9.0, mjd: 56364.0, spectral_index: -0.924, epoch_date: '2013-Mar-13', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 2.396, error_jy: 0.003, frequency_ghz: 8.64, mjd: 49521.0, spectral_index: -0.914, epoch_date: '1994-Jun-18', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 3.797, error_jy: 0.003, frequency_ghz: 4.8, mjd: 49521.0, spectral_index: -0.653, epoch_date: '1994-Jun-18', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 8.212, error_jy: 0.01, frequency_ghz: 1.38, mjd: 49521.0, spectral_index: -0.68, epoch_date: '1994-Jun-18', source_id: @a05211638.id)
-@a05211638=Source.where(j2000_name: '0521+1638').first_or_create
-@a05211638.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
-AtcaResult.create(value_jy: 5.882, error_jy: 0.01, frequency_ghz: 2.378, mjd: 49521.0, spectral_index: -0.547, epoch_date: '1994-Jun-18', source_id: @a05211638.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 0.026, error_jy: 0.025, frequency_ghz: 95.0, mjd: 56831.0, spectral_index: 7.731, epoch_date: '2014-Jun-23', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 0.022, error_jy: 0.025, frequency_ghz: 93.0, mjd: 56831.0, spectral_index: 7.731, epoch_date: '2014-Jun-23', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 3.58, error_jy: 0.19, frequency_ghz: 44.0, mjd: 56364.0, spectral_index: -20.99, epoch_date: '2013-Mar-13', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 0.464, error_jy: 0.19, frequency_ghz: 48.5, mjd: 56364.0, spectral_index: -20.99, epoch_date: '2013-Mar-13', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 1.194, error_jy: 0.039, frequency_ghz: 16.8, mjd: 58184.0, spectral_index: -3.147, epoch_date: '2018-Mar-07', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 0.574, error_jy: 0.039, frequency_ghz: 21.2, mjd: 58184.0, spectral_index: -3.147, epoch_date: '2018-Mar-07', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 1.228, error_jy: 0.142, frequency_ghz: 18.5, mjd: 56364.0, spectral_index: -7.751, epoch_date: '2013-Mar-13', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 0.227, error_jy: 0.142, frequency_ghz: 23.0, mjd: 56364.0, spectral_index: -7.751, epoch_date: '2013-Mar-13', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 3.88, error_jy: 0.016, frequency_ghz: 5.5, mjd: 57855.0, spectral_index: -0.716, epoch_date: '2017-Apr-12', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 2.601, error_jy: 0.016, frequency_ghz: 9.0, mjd: 57855.0, spectral_index: -0.908, epoch_date: '2017-Apr-12', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 3.83, error_jy: 0.037, frequency_ghz: 5.5, mjd: 56364.0, spectral_index: -0.798, epoch_date: '2013-Mar-13', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 2.506, error_jy: 0.037, frequency_ghz: 9.0, mjd: 56364.0, spectral_index: -0.924, epoch_date: '2013-Mar-13', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 2.396, error_jy: 0.003, frequency_ghz: 8.64, mjd: 49521.0, spectral_index: -0.914, epoch_date: '1994-Jun-18', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 3.797, error_jy: 0.003, frequency_ghz: 4.8, mjd: 49521.0, spectral_index: -0.653, epoch_date: '1994-Jun-18', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 8.212, error_jy: 0.01, frequency_ghz: 1.38, mjd: 49521.0, spectral_index: -0.68, epoch_date: '1994-Jun-18', source_id: @a3C138.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a3C138.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0518+165&detailed=true')
+AtcaResult.create(value_jy: 5.882, error_jy: 0.01, frequency_ghz: 2.378, mjd: 49521.0, spectral_index: -0.547, epoch_date: '1994-Jun-18', source_id: @a3C138.id)
 @a05090541=Source.where(j2000_name: '0509+0541').first_or_create
 @a05090541.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0506+056&detailed=true')
 AtcaResult.create(value_jy: 0.396, error_jy: 0.255, frequency_ghz: 93.0, mjd: 56755.0, spectral_index: 1.715, epoch_date: '2014-Apr-08', source_id: @a05090541.id)
@@ -18490,195 +18490,195 @@ AtcaResult.create(value_jy: 0.35, error_jy: 0.005, frequency_ghz: 5.5, mjd: 5639
 @a03032407=Source.where(j2000_name: '0303-2407').first_or_create
 @a03032407.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0301-243&detailed=true')
 AtcaResult.create(value_jy: 0.346, error_jy: 0.005, frequency_ghz: 9.0, mjd: 56398.0, spectral_index: -0.089, epoch_date: '2013-Apr-16', source_id: @a03032407.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.041, error_jy: 0.304, frequency_ghz: 93.0, mjd: 56755.0, spectral_index: -42.86, epoch_date: '2014-Apr-08', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.003, error_jy: 0.304, frequency_ghz: 95.0, mjd: 56755.0, spectral_index: -559.312, epoch_date: '2014-Apr-08', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.039, error_jy: 0.204, frequency_ghz: 93.0, mjd: 56127.0, spectral_index: -7.388, epoch_date: '2012-Jul-19', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.033, error_jy: 0.204, frequency_ghz: 95.0, mjd: 56127.0, spectral_index: -8.973, epoch_date: '2012-Jul-19', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.055, error_jy: 0.019, frequency_ghz: 33.0, mjd: 59893.0, spectral_index: -6.743, epoch_date: '2022-Nov-10', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.037, error_jy: 0.019, frequency_ghz: 35.0, mjd: 59893.0, spectral_index: -6.743, epoch_date: '2022-Nov-10', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.05, error_jy: 0.021, frequency_ghz: 33.0, mjd: 59698.0, spectral_index: -1.768, epoch_date: '2022-Apr-29', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.045, error_jy: 0.021, frequency_ghz: 35.0, mjd: 59698.0, spectral_index: -1.768, epoch_date: '2022-Apr-29', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.063, error_jy: 0.021, frequency_ghz: 33.0, mjd: 59356.0, spectral_index: -3.916, epoch_date: '2021-May-22', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.05, error_jy: 0.021, frequency_ghz: 35.0, mjd: 59356.0, spectral_index: -3.916, epoch_date: '2021-May-22', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.056, error_jy: 0.019, frequency_ghz: 33.0, mjd: 59223.0, spectral_index: -1.175, epoch_date: '2021-Jan-09', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.052, error_jy: 0.019, frequency_ghz: 35.0, mjd: 59223.0, spectral_index: -1.175, epoch_date: '2021-Jan-09', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.05, error_jy: 0.015, frequency_ghz: 33.0, mjd: 58301.0, spectral_index: -0.306, epoch_date: '2018-Jul-02', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.049, error_jy: 0.015, frequency_ghz: 35.0, mjd: 58301.0, spectral_index: -0.306, epoch_date: '2018-Jul-02', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.065, error_jy: 0.018, frequency_ghz: 33.0, mjd: 57421.0, spectral_index: -2.827, epoch_date: '2016-Feb-03', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.055, error_jy: 0.018, frequency_ghz: 35.0, mjd: 57421.0, spectral_index: -2.827, epoch_date: '2016-Feb-03', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.05, error_jy: 0.013, frequency_ghz: 33.0, mjd: 56846.0, spectral_index: 1.014, epoch_date: '2014-Jul-08', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.054, error_jy: 0.013, frequency_ghz: 35.0, mjd: 56846.0, spectral_index: 1.014, epoch_date: '2014-Jul-08', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.071, error_jy: 0.051, frequency_ghz: 33.0, mjd: 56118.0, spectral_index: -2.738, epoch_date: '2012-Jul-10', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.059, error_jy: 0.051, frequency_ghz: 35.0, mjd: 56118.0, spectral_index: -3.482, epoch_date: '2012-Jul-10', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.049, error_jy: 0.028, frequency_ghz: 43.0, mjd: 55453.0, spectral_index: 1.005, epoch_date: '2010-Sep-14', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.051, error_jy: 0.028, frequency_ghz: 45.0, mjd: 55453.0, spectral_index: 1.005, epoch_date: '2010-Sep-14', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.011, error_jy: 0.04, frequency_ghz: 43.0, mjd: 55325.0, spectral_index: -2.441, epoch_date: '2010-May-09', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.01, error_jy: 0.04, frequency_ghz: 45.0, mjd: 55325.0, spectral_index: -2.881, epoch_date: '2010-May-09', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.047, error_jy: 0.007, frequency_ghz: 32.064, mjd: 54634.0, spectral_index: -2.91, epoch_date: '2008-Jun-17', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.039, error_jy: 0.007, frequency_ghz: 34.112, mjd: 54634.0, spectral_index: -2.91, epoch_date: '2008-Jun-17', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.26, error_jy: 0.021, frequency_ghz: 16.8, mjd: 59518.0, spectral_index: -2.459, epoch_date: '2021-Oct-31', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.147, error_jy: 0.021, frequency_ghz: 21.2, mjd: 59518.0, spectral_index: -2.459, epoch_date: '2021-Oct-31', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.165, error_jy: 0.012, frequency_ghz: 16.8, mjd: 58184.0, spectral_index: -2.871, epoch_date: '2018-Mar-07', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.085, error_jy: 0.012, frequency_ghz: 21.2, mjd: 58184.0, spectral_index: -2.871, epoch_date: '2018-Mar-07', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.158, error_jy: 0.014, frequency_ghz: 17.0, mjd: 56930.0, spectral_index: -2.385, epoch_date: '2014-Sep-30', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.121, error_jy: 0.014, frequency_ghz: 19.0, mjd: 56930.0, spectral_index: -2.385, epoch_date: '2014-Sep-30', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.122, error_jy: 0.009, frequency_ghz: 17.0, mjd: 56889.0, spectral_index: -1.121, epoch_date: '2014-Aug-20', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.108, error_jy: 0.009, frequency_ghz: 19.0, mjd: 56889.0, spectral_index: -1.121, epoch_date: '2014-Aug-20', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.258, error_jy: 0.014, frequency_ghz: 17.0, mjd: 56177.0, spectral_index: -2.187, epoch_date: '2012-Sep-07', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.202, error_jy: 0.014, frequency_ghz: 19.0, mjd: 56177.0, spectral_index: -2.187, epoch_date: '2012-Sep-07', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.148, error_jy: 0.011, frequency_ghz: 17.0, mjd: 55683.0, spectral_index: -0.26, epoch_date: '2011-May-02', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.144, error_jy: 0.011, frequency_ghz: 19.0, mjd: 55683.0, spectral_index: -0.26, epoch_date: '2011-May-02', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.216, error_jy: 0.003, frequency_ghz: 18.496, mjd: 53519.0, spectral_index: -3.629, epoch_date: '2005-May-29', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.211, error_jy: 0.003, frequency_ghz: 18.624, mjd: 53519.0, spectral_index: -3.629, epoch_date: '2005-May-29', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.549, error_jy: 0.006, frequency_ghz: 5.5, mjd: 57855.0, spectral_index: -1.268, epoch_date: '2017-Apr-12', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.285, error_jy: 0.006, frequency_ghz: 9.0, mjd: 57855.0, spectral_index: -1.39, epoch_date: '2017-Apr-12', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.879, error_jy: 0.045, frequency_ghz: 5.5, mjd: 56746.0, spectral_index: -0.878, epoch_date: '2014-Mar-30', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.528, error_jy: 0.045, frequency_ghz: 9.0, mjd: 56746.0, spectral_index: -1.193, epoch_date: '2014-Mar-30', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.29, error_jy: 0.019, frequency_ghz: 9.0, mjd: 55802.0, spectral_index: -0.715, epoch_date: '2011-Aug-29', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.443, error_jy: 0.019, frequency_ghz: 5.5, mjd: 55802.0, spectral_index: -1.006, epoch_date: '2011-Aug-29', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.481, error_jy: 0.005, frequency_ghz: 9.0, mjd: 55730.0, spectral_index: -0.735, epoch_date: '2011-Jun-18', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.646, error_jy: 0.005, frequency_ghz: 5.5, mjd: 55730.0, spectral_index: -0.465, epoch_date: '2011-Jun-18', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.766, error_jy: 0.023, frequency_ghz: 5.5, mjd: 55702.0, spectral_index: 0.53, epoch_date: '2011-May-21', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.575, error_jy: 0.023, frequency_ghz: 9.0, mjd: 55702.0, spectral_index: -1.696, epoch_date: '2011-May-21', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.819, error_jy: 0.035, frequency_ghz: 5.5, mjd: 55614.0, spectral_index: -0.798, epoch_date: '2011-Feb-22', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.549, error_jy: 0.035, frequency_ghz: 9.0, mjd: 55614.0, spectral_index: -0.827, epoch_date: '2011-Feb-22', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.569, error_jy: 0.005, frequency_ghz: 4.8, mjd: 54877.0, spectral_index: -0.702, epoch_date: '2009-Feb-15', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.585, error_jy: 0.005, frequency_ghz: 8.64, mjd: 54877.0, spectral_index: 0.8, epoch_date: '2009-Feb-15', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.702, error_jy: 0.003, frequency_ghz: 4.8, mjd: 54862.0, spectral_index: -0.997, epoch_date: '2009-Jan-31', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.391, error_jy: 0.003, frequency_ghz: 8.64, mjd: 54862.0, spectral_index: -0.997, epoch_date: '2009-Jan-31', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.781, error_jy: 0.003, frequency_ghz: 4.8, mjd: 53318.0, spectral_index: -0.609, epoch_date: '2004-Nov-09', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 0.374, error_jy: 0.003, frequency_ghz: 8.64, mjd: 53318.0, spectral_index: -1.894, epoch_date: '2004-Nov-09', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 2.131, error_jy: 0.033, frequency_ghz: 2.1, mjd: 55613.0, spectral_index: -1.148, epoch_date: '2011-Feb-21', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 3.488, error_jy: 0.196, frequency_ghz: 1.384, mjd: 54868.0, spectral_index: -1.124, epoch_date: '2009-Feb-06', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 1.907, error_jy: 0.196, frequency_ghz: 2.368, mjd: 54868.0, spectral_index: -1.124, epoch_date: '2009-Feb-06', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 3.521, error_jy: 0.01, frequency_ghz: 1.384, mjd: 54852.0, spectral_index: -1.085, epoch_date: '2009-Jan-21', source_id: @a02420000.id)
-@a02420000=Source.where(j2000_name: '0242-0000').first_or_create
-@a02420000.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
-AtcaResult.create(value_jy: 1.895, error_jy: 0.01, frequency_ghz: 2.368, mjd: 54852.0, spectral_index: -1.222, epoch_date: '2009-Jan-21', source_id: @a02420000.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.041, error_jy: 0.304, frequency_ghz: 93.0, mjd: 56755.0, spectral_index: -42.86, epoch_date: '2014-Apr-08', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.003, error_jy: 0.304, frequency_ghz: 95.0, mjd: 56755.0, spectral_index: -559.312, epoch_date: '2014-Apr-08', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.039, error_jy: 0.204, frequency_ghz: 93.0, mjd: 56127.0, spectral_index: -7.388, epoch_date: '2012-Jul-19', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.033, error_jy: 0.204, frequency_ghz: 95.0, mjd: 56127.0, spectral_index: -8.973, epoch_date: '2012-Jul-19', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.055, error_jy: 0.019, frequency_ghz: 33.0, mjd: 59893.0, spectral_index: -6.743, epoch_date: '2022-Nov-10', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.037, error_jy: 0.019, frequency_ghz: 35.0, mjd: 59893.0, spectral_index: -6.743, epoch_date: '2022-Nov-10', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.05, error_jy: 0.021, frequency_ghz: 33.0, mjd: 59698.0, spectral_index: -1.768, epoch_date: '2022-Apr-29', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.045, error_jy: 0.021, frequency_ghz: 35.0, mjd: 59698.0, spectral_index: -1.768, epoch_date: '2022-Apr-29', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.063, error_jy: 0.021, frequency_ghz: 33.0, mjd: 59356.0, spectral_index: -3.916, epoch_date: '2021-May-22', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.05, error_jy: 0.021, frequency_ghz: 35.0, mjd: 59356.0, spectral_index: -3.916, epoch_date: '2021-May-22', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.056, error_jy: 0.019, frequency_ghz: 33.0, mjd: 59223.0, spectral_index: -1.175, epoch_date: '2021-Jan-09', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.052, error_jy: 0.019, frequency_ghz: 35.0, mjd: 59223.0, spectral_index: -1.175, epoch_date: '2021-Jan-09', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.05, error_jy: 0.015, frequency_ghz: 33.0, mjd: 58301.0, spectral_index: -0.306, epoch_date: '2018-Jul-02', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.049, error_jy: 0.015, frequency_ghz: 35.0, mjd: 58301.0, spectral_index: -0.306, epoch_date: '2018-Jul-02', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.065, error_jy: 0.018, frequency_ghz: 33.0, mjd: 57421.0, spectral_index: -2.827, epoch_date: '2016-Feb-03', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.055, error_jy: 0.018, frequency_ghz: 35.0, mjd: 57421.0, spectral_index: -2.827, epoch_date: '2016-Feb-03', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.05, error_jy: 0.013, frequency_ghz: 33.0, mjd: 56846.0, spectral_index: 1.014, epoch_date: '2014-Jul-08', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.054, error_jy: 0.013, frequency_ghz: 35.0, mjd: 56846.0, spectral_index: 1.014, epoch_date: '2014-Jul-08', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.071, error_jy: 0.051, frequency_ghz: 33.0, mjd: 56118.0, spectral_index: -2.738, epoch_date: '2012-Jul-10', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.059, error_jy: 0.051, frequency_ghz: 35.0, mjd: 56118.0, spectral_index: -3.482, epoch_date: '2012-Jul-10', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.049, error_jy: 0.028, frequency_ghz: 43.0, mjd: 55453.0, spectral_index: 1.005, epoch_date: '2010-Sep-14', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.051, error_jy: 0.028, frequency_ghz: 45.0, mjd: 55453.0, spectral_index: 1.005, epoch_date: '2010-Sep-14', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.011, error_jy: 0.04, frequency_ghz: 43.0, mjd: 55325.0, spectral_index: -2.441, epoch_date: '2010-May-09', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.01, error_jy: 0.04, frequency_ghz: 45.0, mjd: 55325.0, spectral_index: -2.881, epoch_date: '2010-May-09', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.047, error_jy: 0.007, frequency_ghz: 32.064, mjd: 54634.0, spectral_index: -2.91, epoch_date: '2008-Jun-17', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.039, error_jy: 0.007, frequency_ghz: 34.112, mjd: 54634.0, spectral_index: -2.91, epoch_date: '2008-Jun-17', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.26, error_jy: 0.021, frequency_ghz: 16.8, mjd: 59518.0, spectral_index: -2.459, epoch_date: '2021-Oct-31', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.147, error_jy: 0.021, frequency_ghz: 21.2, mjd: 59518.0, spectral_index: -2.459, epoch_date: '2021-Oct-31', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.165, error_jy: 0.012, frequency_ghz: 16.8, mjd: 58184.0, spectral_index: -2.871, epoch_date: '2018-Mar-07', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.085, error_jy: 0.012, frequency_ghz: 21.2, mjd: 58184.0, spectral_index: -2.871, epoch_date: '2018-Mar-07', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.158, error_jy: 0.014, frequency_ghz: 17.0, mjd: 56930.0, spectral_index: -2.385, epoch_date: '2014-Sep-30', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.121, error_jy: 0.014, frequency_ghz: 19.0, mjd: 56930.0, spectral_index: -2.385, epoch_date: '2014-Sep-30', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.122, error_jy: 0.009, frequency_ghz: 17.0, mjd: 56889.0, spectral_index: -1.121, epoch_date: '2014-Aug-20', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.108, error_jy: 0.009, frequency_ghz: 19.0, mjd: 56889.0, spectral_index: -1.121, epoch_date: '2014-Aug-20', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.258, error_jy: 0.014, frequency_ghz: 17.0, mjd: 56177.0, spectral_index: -2.187, epoch_date: '2012-Sep-07', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.202, error_jy: 0.014, frequency_ghz: 19.0, mjd: 56177.0, spectral_index: -2.187, epoch_date: '2012-Sep-07', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.148, error_jy: 0.011, frequency_ghz: 17.0, mjd: 55683.0, spectral_index: -0.26, epoch_date: '2011-May-02', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.144, error_jy: 0.011, frequency_ghz: 19.0, mjd: 55683.0, spectral_index: -0.26, epoch_date: '2011-May-02', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.216, error_jy: 0.003, frequency_ghz: 18.496, mjd: 53519.0, spectral_index: -3.629, epoch_date: '2005-May-29', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.211, error_jy: 0.003, frequency_ghz: 18.624, mjd: 53519.0, spectral_index: -3.629, epoch_date: '2005-May-29', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.549, error_jy: 0.006, frequency_ghz: 5.5, mjd: 57855.0, spectral_index: -1.268, epoch_date: '2017-Apr-12', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.285, error_jy: 0.006, frequency_ghz: 9.0, mjd: 57855.0, spectral_index: -1.39, epoch_date: '2017-Apr-12', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.879, error_jy: 0.045, frequency_ghz: 5.5, mjd: 56746.0, spectral_index: -0.878, epoch_date: '2014-Mar-30', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.528, error_jy: 0.045, frequency_ghz: 9.0, mjd: 56746.0, spectral_index: -1.193, epoch_date: '2014-Mar-30', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.29, error_jy: 0.019, frequency_ghz: 9.0, mjd: 55802.0, spectral_index: -0.715, epoch_date: '2011-Aug-29', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.443, error_jy: 0.019, frequency_ghz: 5.5, mjd: 55802.0, spectral_index: -1.006, epoch_date: '2011-Aug-29', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.481, error_jy: 0.005, frequency_ghz: 9.0, mjd: 55730.0, spectral_index: -0.735, epoch_date: '2011-Jun-18', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.646, error_jy: 0.005, frequency_ghz: 5.5, mjd: 55730.0, spectral_index: -0.465, epoch_date: '2011-Jun-18', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.766, error_jy: 0.023, frequency_ghz: 5.5, mjd: 55702.0, spectral_index: 0.53, epoch_date: '2011-May-21', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.575, error_jy: 0.023, frequency_ghz: 9.0, mjd: 55702.0, spectral_index: -1.696, epoch_date: '2011-May-21', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.819, error_jy: 0.035, frequency_ghz: 5.5, mjd: 55614.0, spectral_index: -0.798, epoch_date: '2011-Feb-22', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.549, error_jy: 0.035, frequency_ghz: 9.0, mjd: 55614.0, spectral_index: -0.827, epoch_date: '2011-Feb-22', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.569, error_jy: 0.005, frequency_ghz: 4.8, mjd: 54877.0, spectral_index: -0.702, epoch_date: '2009-Feb-15', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.585, error_jy: 0.005, frequency_ghz: 8.64, mjd: 54877.0, spectral_index: 0.8, epoch_date: '2009-Feb-15', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.702, error_jy: 0.003, frequency_ghz: 4.8, mjd: 54862.0, spectral_index: -0.997, epoch_date: '2009-Jan-31', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.391, error_jy: 0.003, frequency_ghz: 8.64, mjd: 54862.0, spectral_index: -0.997, epoch_date: '2009-Jan-31', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.781, error_jy: 0.003, frequency_ghz: 4.8, mjd: 53318.0, spectral_index: -0.609, epoch_date: '2004-Nov-09', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 0.374, error_jy: 0.003, frequency_ghz: 8.64, mjd: 53318.0, spectral_index: -1.894, epoch_date: '2004-Nov-09', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 2.131, error_jy: 0.033, frequency_ghz: 2.1, mjd: 55613.0, spectral_index: -1.148, epoch_date: '2011-Feb-21', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 3.488, error_jy: 0.196, frequency_ghz: 1.384, mjd: 54868.0, spectral_index: -1.124, epoch_date: '2009-Feb-06', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 1.907, error_jy: 0.196, frequency_ghz: 2.368, mjd: 54868.0, spectral_index: -1.124, epoch_date: '2009-Feb-06', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 3.521, error_jy: 0.01, frequency_ghz: 1.384, mjd: 54852.0, spectral_index: -1.085, epoch_date: '2009-Jan-21', source_id: @aNGC1068.id)
+@aNGC1068=Source.where(j2000_name: 'NGC1068').first_or_create
+@aNGC1068.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0240-002&detailed=true')
+AtcaResult.create(value_jy: 1.895, error_jy: 0.01, frequency_ghz: 2.368, mjd: 54852.0, spectral_index: -1.222, epoch_date: '2009-Jan-21', source_id: @aNGC1068.id)
 @a02383116=Source.where(j2000_name: '0238-3116').first_or_create
 @a02383116.update(atca_url: 'https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database_viewcal.html?source=0236-314&detailed=true')
 AtcaResult.create(value_jy: 0.029, error_jy: 0.011, frequency_ghz: 16.7, mjd: 59947.0, spectral_index: -0.657, epoch_date: '2023-Jan-03', source_id: @a02383116.id)
