@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "Updating Database"
-rails -e production db:seed
-rails -e production db:seed:seeds1510
-rails -e production db:seed:neutrino_seeds_amon
-rails -e production db:seed:neutrino_seeds_gcn
-rails -e production db:seed:atca_seeds
+RAILS_ENV=production rails db:seed
+RAILS_ENV=production rails db:seed:seeds1510
+RAILS_ENV=production rails db:seed:neutrino_seeds_amon
+RAILS_ENV=production rails db:seed:neutrino_seeds_gcn
+RAILS_ENV=production rails db:seed:atca_seeds
 
