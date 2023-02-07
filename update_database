@@ -5,3 +5,4 @@ rails db:seed:seeds1510
 rails db:seed:neutrino_seeds_amon
 rails db:seed:neutrino_seeds_gcn
 rails db:seed:atca_seeds
+
