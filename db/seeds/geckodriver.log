@@ -219,3 +219,15 @@ Read port: 34153
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile7X0LuL/search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:57025/devtools/browser/12bc659d-cbf2-488b-9ff9-50350df25b1b
+1675788902867	geckodriver	INFO	Listening on 127.0.0.1:39629
+1675788903383	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "32825" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileEilXh0"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1675788903627	Marionette	INFO	Marionette enabled
+1675788903630	Marionette	INFO	Listening on port 39077
+WebDriver BiDi listening on ws://127.0.0.1:32825
+Read port: 39077
+1675788903840	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEilXh0/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:32825/devtools/browser/1ebbe8a2-3e76-4759-992d-b6f723edb739
