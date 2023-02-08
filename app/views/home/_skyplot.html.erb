@@ -43,10 +43,10 @@ function updateSkyMap(date){
     <% end %>
 
     <% unless source.ra.nil? ||  @cat=="" %>
-      <% ra=source.ra.split(":",-1) %>
-      <% decl=source.decl.split(":",-1) %>
+      <% ra=source.ra.split(":",3) %>
+      <% decl=source.decl.split(":",3) %>
       <% ra_deg=ra[0].to_f/24*360+ra[1].to_f/24/60*360+ra[2].to_f/24/60/60*360%>
-      <% decl_deg=decl[0].to_f+decl[1].to_f/60*360+ra[2].to_f/60/60*360%>
+      <% decl_deg=decl[0].to_f+decl[1].to_f/60+ra[2].to_f/60/60%>
       altaz=AltAz(<%=ra_deg%>,<%=decl_deg%>,lat,lon,date);
       <%=@cat%>_az.push(altaz[1]);
       <%=@cat%>_alt.push(altaz[0]);
@@ -109,6 +109,8 @@ function updateSkyMap(date){
   Plotly.newPlot('skyplot', data, layout);
 
 }
+
+updateSkyMap(new Date());
 
 setInterval(function(){updateSkyMap(new Date())},10000);
 
