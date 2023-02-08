@@ -1,0 +1,110 @@
+<script>
+
+  //telescope coordinates
+  lat=50.521497914;
+  lon=6.876329828;
+
+  //define arrays to store plot data
+  tev_az=[];
+  tev_alt=[];
+  tev_name=[];
+  extra_az=[];
+  extra_alt=[];
+  extra_name=[];
+  follow_az=[];
+  follow_alt=[];
+  follow_name=[];
+  look_az=[];
+  look_alt=[];
+  look_name=[];
+  dropped_az=[];
+  dropped_alt=[];
+  dropped_name=[];
+  
+
+  //get source coordinates
+  <% Source.all.order("j2000_name").each do |source| %>
+    <% source.source_categories.each do |scat| %>
+      <% if ['Sample 1','Sample 2','Sample 3','Sample 4'].include? scat.name %>
+        <% @cat="tev" %>
+      <% elsif ['Neutrino Follow-Up'].include? scat.name %>
+        <% @cat="follow" %>        
+      <% elsif ['Neutrino Look-Up'].include? scat.name %>
+        <% @cat="look" %>
+      <% elsif ['Extra Neutrino-Source'].include? scat.name %>
+        <% @cat="extra" %>
+      <% end %>
+      <% if ['Dropped'].include? scat.name %>
+        <% @cat="dropped" %>
+      <% end %>
+    <% end %>
+
+    <% unless source.ra.nil? || source.decl.nil? %>
+      <% ra=source.ra.split(":",-1) %>
+      <% decl=source.decl.split(":",-1) %>
+      <% ra_deg=ra[0].to_f/24*360+ra[1].to_f/24/60*360+ra[2].to_f/24/60/60*360%>
+      <% decl_deg=decl[0].to_f+decl[1].to_f/60*360+ra[2].to_f/60/60*360%>
+      altaz=AltAz(<%=ra_deg%>,<%=decl_deg%>,lat,lon,new Date());
+      <%=@cat%>_az.push(altaz[0]);
+      <%=@cat%>_alt.push(altaz[1]);
+      <%=@cat%>_name.push('<%=source.j2000_name%>');
+    <% end %>
+  <% end %>
+
+
+
+  var trace1 = {
+    x: tev_az,
+    y: tev_alt,
+    mode: 'markers+text',
+    type: 'scatter',
+    name: 'TeV Sample',
+    text: tev_name,
+    textposition: 'top center',
+    textfont: {
+      family:  'Raleway, sans-serif'
+    },
+    marker: { size: 12 }
+  };
+
+  var trace2 = {
+    x: extra_az,
+    y: extra_alt,
+    mode: 'markers+text',
+    type: 'scatter',
+    name: 'Extra Neutrino Sources',
+    text: extra_name,
+    textfont : {
+      family:'Times New Roman'
+    },
+    textposition: 'bottom center',
+    marker: { size: 12 }
+  };
+
+  var data = [ trace1, trace2 ];
+
+  var layout = {
+    xaxis: {
+      range: [ 0, 360 ]
+    },
+    yaxis: {
+      range: [0, 90]
+    },
+    legend: {
+      y: 0.5,
+      yref: 'paper',
+      font: {
+        family: 'Arial, sans-serif',
+        size: 20,
+        color: 'grey',
+      }
+    },
+    title:'Effelsberg Skyplot'
+  };
+
+
+  Plotly.newPlot('skyplot', data, layout);
+
+  console.log(AltAz(23.45,16.6,1.4,34.1,new Date()));
+  console.log(new Date());
+</script>

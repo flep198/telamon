@@ -8,14 +8,18 @@
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "^6.0.0-rc.6",
     "babel": "^6.23.0",
-    "babel-core": "^6.26.3",
+    "babel-core": "^4.7.16",
     "bootstrap": "^4.6.0",
     "chart.js": "^3.3.2",
     "chartkick": "^4.0.4",
+    "core-js": "^3.27.2",
+    "gregorian-calendar": "^4.1.6",
     "jquery": "^3.6.0",
+    "local-sidereal-time": "^1.0.4",
     "popper.js": "^1.16.1",
+    "radectoaltaz": "^1.0.3",
     "rails-ujs": "^5.2.6",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^5.0.1",
     "turbolinks": "^5.2.0",
     "webpack": "^5.11.0",
     "webpack-cli": "^4.2.0"
@@ -36,10 +40,23 @@
   "browserslist": [
     "defaults"
   ],
-  "babel": {
-    "presets": ["./node_modules/@rails/webpacker/package/babel/preset.js"]
+  "description": "This is the website for the TELAMON - Database. TELAMON stands for Tev Effelsberg Long-term Agn MONitoring. The website is built with Ruby on Rails.",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   },
-  "browserslist": [
-    "defaults"
-  ]
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flep198/telamon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flep198/telamon/issues"
+  },
+  "homepage": "https://github.com/flep198/telamon#readme"
 }
