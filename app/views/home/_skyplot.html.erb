@@ -40,7 +40,7 @@
       <% end %>
     <% end %>
 
-    <% unless source.ra.nil? || source.decl.nil? || @cat=="" %>
+    <% unless source.ra.nil? ||  @cat=="" %>
       <% ra=source.ra.split(":",-1) %>
       <% decl=source.decl.split(":",-1) %>
       <% ra_deg=ra[0].to_f/24*360+ra[1].to_f/24/60*360+ra[2].to_f/24/60/60*360%>
@@ -49,6 +49,7 @@
       <%=@cat%>_az.push(altaz[0]);
       <%=@cat%>_alt.push(altaz[1]);
       <%=@cat%>_name.push('<%=source.j2000_name%>');
+      console.log("<%=source.j2000_name%>");
     <% end %>
   <% end %>
 
