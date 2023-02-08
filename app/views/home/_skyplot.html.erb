@@ -24,6 +24,7 @@
 
   //get source coordinates
   <% Source.all.order("j2000_name").each do |source| %>
+    <% @cat=""%>
     <% source.source_categories.each do |scat| %>
       <% if ['Sample 1','Sample 2','Sample 3','Sample 4'].include? scat.name %>
         <% @cat="tev" %>
@@ -39,7 +40,7 @@
       <% end %>
     <% end %>
 
-    <% unless source.ra.nil? || source.decl.nil? %>
+    <% unless source.ra.nil? || source.decl.nil? || @cat="" %>
       <% ra=source.ra.split(":",-1) %>
       <% decl=source.decl.split(":",-1) %>
       <% ra_deg=ra[0].to_f/24*360+ra[1].to_f/24/60*360+ra[2].to_f/24/60/60*360%>
