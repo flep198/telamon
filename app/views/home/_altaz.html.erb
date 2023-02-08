@@ -6,8 +6,6 @@
 
 //this long freaking thing returns altitude an elevation of a given RA/DEC standing at LAT/LON at Date
 function AltAz(ra,dec,lat,lng,date) {
-	let alt=0;
-	let az=0;
 
 	(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 	/*
@@ -1784,7 +1782,65 @@ function AltAz(ra,dec,lat,lng,date) {
 
 	},{"local-sidereal-time":5}]},{},[7]);
 
-	return [alt,az];
+
+
+
+	var julday = math.Floor((date.valueOf() / (1000 * 60 * 60 * 24)) - 0.5) + 2440588;
+
+
+		//All input and output angles are in radians, jd is Julian Date in UTC
+	function raDecToAltAz(ra,dec,lat,lon,jd_ut){
+	    //Meeus 13.5 and 13.6, modified so West longitudes are negative and 0 is North
+	    const gmst=greenwichMeanSiderealTime(jd_ut);
+	    let localSiderealTime=(gmst+lon)%(2*Math.PI);
+	    
+	        
+	    let H=(localSiderealTime - ra);
+	    if(H<0){H+=2*Math.PI;}
+	    if(H>Math.PI){H=H-2*Math.PI;}
+
+	    let az = (Math.atan2(Math.sin(H), Math.cos(H)*Math.sin(lat) - Math.tan(dec)*Math.cos(lat)));
+	    let a = (Math.asin(Math.sin(lat)*Math.sin(dec) + Math.cos(lat)*Math.cos(dec)*Math.cos(H)));
+	    az-=Math.PI;
+
+	    if(az<0){az+=2*Math.PI;}
+	    return [a,az];
+	}
+	    
+	function greenwichMeanSiderealTime(jd){
+	    //"Expressions for IAU 2000 precession quantities" N. Capitaine1,P.T.Wallace2, and J. Chapront
+	    const t = ((jd - 2451545.0)) / 36525.0;
+
+	    let gmst=this.earthRotationAngle(jd)+(0.014506 + 4612.156534*t + 1.3915817*t*t - 0.00000044 *t*t*t - 0.000029956*t*t*t*t - 0.0000000368*t*t*t*t*t)/60.0/60.0*Math.PI/180.0;  //eq 42
+	    gmst%=2*Math.PI;
+	    if(gmst<0) gmst+=2*Math.PI;
+
+	    return gmst;
+	}
+
+	function earthRotationAngle(jd){
+	    //IERS Technical Note No. 32
+
+	    const t = jd- 2451545.0;
+	    const f = jd%1.0;
+
+	    let theta = 2*Math.PI * (f + 0.7790572732640 + 0.00273781191135448 * t); //eq 14
+	    theta%=2*Math.PI;
+	    if(theta<0)theta+=2*Math.PI;
+
+	    return theta;
+
+	}
+
+
+	return raDecToAltAz(ra,dec,lat,lon,julday);
+
+
 
 }
+
+
+
+
+
 </script>
