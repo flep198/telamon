@@ -46,8 +46,8 @@
       <% ra_deg=ra[0].to_f/24*360+ra[1].to_f/24/60*360+ra[2].to_f/24/60/60*360%>
       <% decl_deg=decl[0].to_f+decl[1].to_f/60*360+ra[2].to_f/60/60*360%>
       altaz=AltAz(<%=ra_deg%>,<%=decl_deg%>,lat,lon,new Date());
-      <%=@cat%>_az.push(altaz[0]);
-      <%=@cat%>_alt.push(altaz[1]);
+      <%=@cat%>_az.push(altaz[1]);
+      <%=@cat%>_alt.push(altaz[0]);
       <%=@cat%>_name.push('<%=source.j2000_name%>');
       console.log("<%=source.j2000_name%>");
     <% end %>
