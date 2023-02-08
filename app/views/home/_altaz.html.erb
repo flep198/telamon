@@ -1767,7 +1767,7 @@ function AltAz(ra,dec,lat,lng,date) {
 
 	  getAz = () => {
 	    let toRad = Math.PI/180;
-	    let az = Math.acos((Math.sin(this.dec*toRad)-Math.sin(this.getAlt()*toRad)*Math.sin(this.lat*toRad))/(Math.cos(this.getAlt()*toRad)*Math.cos(this.lat*toRad)))/toRad;
+	    let az = Math.acos((Math.sin(this.dec*toRad)/(Math.cos(this.getAlt()*toRad)*Math.cos(this.lat*toRad))-Math.sin(this.getAlt()*toRad)*Math.sin(this.lat*toRad))/(Math.cos(this.getAlt()*toRad)*Math.cos(this.lat*toRad)))/toRad;
 	    if(Math.sin(this.ha()*toRad) > 0){az = 360 - az;}
 	    return az;
 	  }
