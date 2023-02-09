@@ -1,6 +1,6 @@
 <script>
 
-function updateSkyMap(date){
+function updateSkyMap(date,redraw){
 
   //telescope coordinates
   lat=50.521497914;
@@ -65,7 +65,7 @@ function updateSkyMap(date){
     text: tev_name,
     textposition: 'top center',
     textfont: {
-      family:  'Raleway, sans-serif'
+      family:  'Times New Roman'
     },
     marker: { size: 12 }
   };
@@ -147,13 +147,15 @@ function updateSkyMap(date){
     title:'Effelsberg Skyplot'
   };
 
-
+  <%if redraw%>
   Plotly.newPlot('skyplot', data, layout);
-
+  <%else%>
+  Plotly.redraw('skyplot');
+  <%end%>
 }
 
-updateSkyMap(new Date());
+updateSkyMap(new Date(),true);
 
-setInterval(function(){updateSkyMap(new Date())},10000);
+setInterval(function(){updateSkyMap(new Date(),false)},10000);
 
 </script>
