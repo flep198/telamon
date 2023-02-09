@@ -84,7 +84,49 @@ function updateSkyMap(date){
     marker: { size: 12 }
   };
 
-  var data = [ trace1, trace2 ];
+  var trace3 = {
+    x: follow_az,
+    y: follow_alt,
+    mode: 'markers+text',
+    type: 'scatter',
+    name: 'Neutrino Follow Up',
+    text: extra_name,
+    textfont : {
+      family:'Times New Roman'
+    },
+    textposition: 'bottom center',
+    marker: { size: 12 }
+  };
+
+  var trace4 = {
+    x: look_az,
+    y: look_alt,
+    mode: 'markers+text',
+    type: 'scatter',
+    name: 'Neutrino Look Up',
+    text: extra_name,
+    textfont : {
+      family:'Times New Roman'
+    },
+    textposition: 'bottom center',
+    marker: { size: 12 }
+  };
+
+    var trace5 = {
+    x: dropped_az,
+    y: dropped_alt,
+    mode: 'markers+text',
+    type: 'scatter',
+    name: 'Dropped',
+    text: extra_name,
+    textfont : {
+      family:'Times New Roman'
+    },
+    textposition: 'bottom center',
+    marker: { size: 12 }
+  };
+
+  var data = [ trace1, trace2 , trace3, trace4, trace5 ];
 
   var layout = {
     xaxis: {
