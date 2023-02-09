@@ -1,5 +1,26 @@
 <script>
 
+function refSort (targetData, refData) {
+  // Create an array of indices [0, 1, 2, ...N].
+  var indices = Object.keys(refData);
+
+  // Sort array of indices according to the reference data.
+  indices.sort(function(indexA, indexB) {
+    if (refData[indexA] < refData[indexB]) {
+      return -1;
+    } else if (refData[indexA] > refData[indexB]) {
+      return 1;
+    }
+    return 0;
+  });
+
+  // Map array of indices to corresponding values of the target array.
+  return indices.map(function(index) {
+    return targetData[index];
+  });
+}
+
+
 function updateSkyMap(date,redraw){
 
   //telescope coordinates
@@ -27,9 +48,9 @@ function updateSkyMap(date,redraw){
   
   //calculate limit for circumpolarity
   if (lat>=0){
-    declination_limit=90-Math.abs(lat);
+    declination_limit=90-Math.abs(lat)+10;
   } else {
-    declination_limit=-90+Math.abs(lat)
+    declination_limit=-90+Math.abs(lat)-10
   }
 
   for (i=0;i<=360;i++){
@@ -142,16 +163,52 @@ function updateSkyMap(date,redraw){
     marker: { size: 12 }
   };
 
+
   //trace for circum-polar limit
+  var list = [];
+  for (var j = 0; j < circ_lim_az.length; j++) 
+    list.push({'circ_lim_az': circ_lim_az[j], 'circ_lim_alt': circ_lim_alt[j]});
+
+  //2) sort:
+  list.sort(function(a, b) {
+    return ((a.circ_lim_az < b.circ_lim_az) ? -1 : ((a.circ_lim_az == b.circ_lim_az) ? 0 : 1));
+    //Sort could be modified to, for example, sort on the age 
+    // if the name is the same. See Bonus section below
+  });
+
+  //3) separate them back out:
+  for (var k = 0; k < list.length; k++) {
+      circ_lim_az[k] = list[k].circ_lim_az;
+      circ_lim_alt[k] = list[k].circ_lim_alt;
+  };
+
+
     var circ_lim = {
     x: circ_lim_az,
     y: circ_lim_alt,
     mode: 'lines',
     type: 'scatter',
+    line: {
+      dash: 'dot',
+      width: 2,
+    },
+    showlegend: false,
+    };
+
+    //trace for circum-polar limit
+    var horizon = {
+    x: [0,10,20,30,40,50,60,70,80,90,100,110,120,
+      130,140,150,160,170,180,190,200,210,220,230,240,
+      250,260,270,280,290,300,310,320,330,340,350,360],
+    y: [12.5,13,17,23.5,26,27.5,26,25.5,24.5,22,17,18,
+      17,17.5,16,13,7.5,5,7.5,8.5,13.5,14,14,12.5,
+      12.5,11,9,17,21.5,18,21.5,19,18,17.5,7,10,12.5],
+    mode: 'lines',
+    type: 'scatter',
     showlegend: false,
   };
 
-  var data = [ trace1, trace2 , trace3, trace4, trace5, circ_lim ];
+  var data = [ trace1, trace2 , trace3, trace4, trace5, circ_lim, horizon ];
 
   var layout = {
     width: $(window).width()*0.8,
