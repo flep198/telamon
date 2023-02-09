@@ -147,11 +147,11 @@ function updateSkyMap(date,redraw){
     title:'Effelsberg Skyplot'
   };
 
-  <%if redraw%>
+  if (redraw){
   Plotly.newPlot('skyplot', data, layout);
-  <%else%>
+  } else {
   Plotly.redraw('skyplot');
-  <%end%>
+  }
 }
 
 updateSkyMap(new Date(),true);
