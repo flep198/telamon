@@ -129,6 +129,8 @@ function updateSkyMap(date,redraw){
   var data = [ trace1, trace2 , trace3, trace4, trace5 ];
 
   var layout = {
+    width: $(window).width()*0.8,
+    height: $(window).height()*0.8,
     xaxis: {
       range: [ 0, 360 ]
     },
