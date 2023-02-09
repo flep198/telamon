@@ -22,7 +22,21 @@ function updateSkyMap(date,redraw){
   dropped_az=[];
   dropped_alt=[];
   dropped_name=[];
+  circ_lim_az=[];
+  circ_lim_alt=[];
   
+  //calculate limit for circumpolarity
+  if (lat>=0){
+    declination_limit=90-Math.abs(lat);
+  } else {
+    declination_limit=-90+Math.abs(lat)
+  }
+
+  for (i=0;i<=360;i++){
+    altaz=AltAz(i,declination_limit,lat,lon,date);
+    circ_lim_alt.push(altaz[0]);
+    circ_lim_az.push(altaz[1]);
+  }
 
   //get source coordinates
   <% Source.all.order("j2000_name").each do |source| %>
@@ -53,6 +67,8 @@ function updateSkyMap(date,redraw){
       <%=@cat%>_name.push('<%=source.j2000_name%>');
     <% end %>
   <% end %>
+
+
 
 
 
@@ -126,7 +142,16 @@ function updateSkyMap(date,redraw){
     marker: { size: 12 }
   };
 
-  var data = [ trace1, trace2 , trace3, trace4, trace5 ];
+  //trace for circum-polar limit
+    var circ_lim = {
+    x: circ_lim_az,
+    y: circ_lim_alt,
+    mode: 'lines',
+    type: 'scatter',
+    showlegend: false,
+  };
+
+  var data = [ trace1, trace2 , trace3, trace4, trace5, circ_lim ];
 
   var layout = {
     width: $(window).width()*0.8,
