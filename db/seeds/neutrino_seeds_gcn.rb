@@ -1,3 +1,7 @@
+@IC230220A=CircularNeutrino.where(name: 'IC230220A').first_or_create
+@IC230220A.update(date: '2023-02-20', time: '07:39:10.8', ra: '359.33', dec: '3.35', ra_err_plus: '0.51', ra_err_minus: '0.51', dec_err_plus: '0.51', dec_err_minus: '0.51', url: 'https://gcn.gsfc.nasa.gov/gcn3/33354.gcn3', num_rfc: 0, sources: Source.where(j2000_name: []), neutrino_alerts: NeutrinoAlert.where(name: 'IC230220A'))
+@IC230217A=CircularNeutrino.where(name: 'IC230217A').first_or_create
+@IC230217A.update(date: '2023-02-17', time: '20:49:43.4', ra: '124.54', dec: '20.74', ra_err_plus: '1.67', ra_err_minus: '-3.27', dec_err_plus: '2.14', dec_err_minus: '-2.46', url: 'https://gcn.gsfc.nasa.gov/gcn3/33337.gcn3', num_rfc: 10, sources: Source.where(j2000_name: ['0805+2106','0811+2141','0814+2059','0814+1959','0815+1905','0816+2051','0817+1958','0817+2237','0821+2216','0823+2223']), neutrino_alerts: NeutrinoAlert.where(name: 'IC230217A'))
 @IC230201A=CircularNeutrino.where(name: 'IC230201A').first_or_create
 @IC230201A.update(date: '2023-02-01', time: '06:20:54.42', ra: '345.41', dec: '12.1', ra_err_plus: '2.5', ra_err_minus: '-3.07', dec_err_plus: '1.62', dec_err_minus: '-1.53', url: 'https://gcn.gsfc.nasa.gov/gcn3/33244.gcn3', num_rfc: 15, sources: Source.where(j2000_name: ['2249+1331','2249+1105','2249+1136','2251+1143','2252+1245','2254+1136','2254+1341','2256+1305','2300+1037','2300+1235','2305+1336','2307+1237','2308+1111','2310+1114','2310+1055']), neutrino_alerts: NeutrinoAlert.where(name: 'IC230201A'))
 @IC230122A=CircularNeutrino.where(name: 'IC230122A').first_or_create
