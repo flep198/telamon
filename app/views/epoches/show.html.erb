@@ -57,7 +57,7 @@
           <table id='export_<%=@output_name%>' class="table table-hover">
             <thead class="table-dark">
               <tr>
-                <th>Epoch Date</th>
+                <th>Source</th>
                 <th>Frequency [GHz]</th>
                 <th>Flux Density [Jy]</th>
                 <th>Error [Jy]</th>
@@ -73,7 +73,7 @@
             <tbody>
               <% @epoch.results.order(:mjd).reverse_order.each do |result| %>
                 <tr>
-                  <td><%= Epoch.where(id: result.epoch_id).first.date %></td>
+                  <td><%= Source.where(id: result.source_id).first.j2000_name %></td>
                   <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>
                   <td><%= result.value_jy %></td>
                   <td><%= result.error_jy %></td>
@@ -107,7 +107,7 @@
           <table id='export_<%=@output_name%>_obslog' class="table table-hover">
             <thead class="table-dark">
               <tr>
-                <th>Epoch Date</th>
+                <th>Source</th>
                 <th>Frequency [GHz]</th>
                 <th>MJD</th>
                 <th>Scan Number</th>
@@ -120,7 +120,7 @@
             <tbody>
               <% @epoch.observations.order(:mjd).reverse_order.each do |obs| %>
                 <tr>
-                  <td><%= Epoch.where(id: obs.epoch_id).first.date %></td>
+                  <td><%= Source.where(id: obs.source_id).first.j2000_name %></td>
                   <td><%= Frequency.where(id: obs.frequency_id).first.freq_ghz %></td>
                   <td><%= obs.mjd %></td>
                   <td><%= obs.scan_nr %></td>
