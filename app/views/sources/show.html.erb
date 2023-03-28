@@ -254,6 +254,10 @@
                 <th>Flux Density [Jy]</th>
                 <th>Error [Jy]</th>
                 <th>MJD</th>
+                <th>Lin. Pol. [%]</th>
+                <th>Lin. Pol. Error [%] </th>
+                <th>EVPA [deg]</th>
+                <th>EVPA error [deg]</th>
                 <th>Scan Number</th>
                 <th>Elevation</th>
                 <% if user_signed_in? && current_user.admin? %>
@@ -271,6 +275,10 @@
                   <td><%= result.value_jy %></td>
                   <td><%= result.error_jy %></td>
                   <td><%= result.mjd %></td>
+                  <td><%= result.pol_frac %></td>
+                  <td><%= result.pol_frac_err %></td>
+                  <td><%= result.evpa %></td>
+                  <td><%= result.evpa_err %></td>
                   <td><%= result.scan_nr %></td>
                   <td><%= result.elevation %></td>
                   <% if user_signed_in? && current_user.admin? %>
