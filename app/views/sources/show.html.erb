@@ -66,7 +66,7 @@
                 
               <% end %>
               <% if !user_signed_in? %>
-              <p><a href="mailto:matthias.kadler@astro.uni-wuerzburg.de,%20florian.eppel@uni-wuerzburg.de?subject=TELAMON Data Access <%=@source.j2000_name%>&body=Dear TELAMON Team,%0AI would like to ask for access to the TELAMON data of <%=@source.j2000_name%>.%0AThanks,%0A" class="btn btn-outline-success btn-sm">Request Data Access</a></p>
+              <p><a href="mailto:matthias.kadler@astro.uni-wuerzburg.de,%20florian.eppel@uni-wuerzburg.de?subject=TELAMON Data Access <%=@source.j2000_name%>&body=Dear TELAMON Team,%0AI would like to ask for access to the TELAMON data of <%=@source.j2000_name%>.%0APlease provide some info on the intended use of the data here.%0AThanks,%0A" class="btn btn-outline-success btn-sm">Request Data Access</a></p>
 
               <% end %>
               <% if user_signed_in? && current_user.admin? %>

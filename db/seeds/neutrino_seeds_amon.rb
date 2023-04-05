@@ -1,3 +1,5 @@
+@IC230401A=NeutrinoAlert.where(name: 'IC230401A').first_or_create
+@IC230401A.update(date: '23/04/01', time: '16:14:18.90', ra: '8.1699', dec: '1.9399', radius90: 173.4, radius50: 98.39, energy: 110.79, signalness: 0.27409, noticetype: 'BRONZE', url: 'https://gcn.gsfc.nasa.gov/notices_amon_g_b/137794_38132005.amon', numrfc: 26, sources: Source.where(j2000_name: ['0020+0323','0022+0014','0022+0147','0023+0101','0023+0417','0024+0349','0027+0136','0029-0113','0029+0509','0029+0044','0030-0000','0030+0024','0032+0510','0033+0335','0034+0348','0034+0130','0034-0054','0035+0133','0035+0104','0037-0109','0038+0013','0039+0319','0040+0125','0040-0040','0043+0024','0044+0101']))
 @IC230306A=NeutrinoAlert.where(name: 'IC230306A').first_or_create
 @IC230306A.update(date: '23/03/06', time: '10:59:30.41', ra: '72.8599', dec: '34.2299', radius90: 52.19, radius50: 29.39, energy: 174.62, signalness: 0.56416, noticetype: 'GOLD', url: 'https://gcn.gsfc.nasa.gov/notices_amon_g_b/137711_79205800.amon', numrfc: 4, sources: Source.where(j2000_name: ['0447+3327','0447+3321','0451+3330','0452+3309']))
 @IC230220A=NeutrinoAlert.where(name: 'IC230220A').first_or_create
