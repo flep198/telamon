@@ -13,14 +13,19 @@ from astropy.time import Time
 from matplotlib import cm
 from matplotlib.colors import ListedColormap, LinearSegmentedColormap
 import sys
+from selenium import webdriver 
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from bs4 import BeautifulSoup
 
-url1 = 'https://gcn.gsfc.nasa.gov/gcn3_archive.html'
-url2 = 'https://gcn.gsfc.nasa.gov/gcn3_arch_old145.html'
-url3 = 'https://gcn.gsfc.nasa.gov/gcn3_arch_old144.html'
-url4 = 'https://gcn.gsfc.nasa.gov/gcn3_arch_old143.html'
-url5 = 'https://gcn.gsfc.nasa.gov/gcn3_arch_old142.html'
+#url1 = 'https://gcn.gsfc.nasa.gov/gcn3_archive.html'
+#url2 = 'https://gcn.gsfc.nasa.gov/gcn3_arch_old145.html'
+#url3 = 'https://gcn.gsfc.nasa.gov/gcn3_arch_old144.html'
+#url4 = 'https://gcn.gsfc.nasa.gov/gcn3_arch_old143.html'
+#url5 = 'https://gcn.gsfc.nasa.gov/gcn3_arch_old142.html'
 
-urls=[url1,url2,url3,url4,url5]
+url_new = 'https://gcn.nasa.gov/circulars'
+
+urls=[url_new]
 
 #returns nth number contained in a string (line)
 def extract_number(line,n):
@@ -55,23 +60,40 @@ def getNeutrinoInfo(urls):
     ic_inf=np.empty((1, 11), dtype=object)
     
     for url in urls:
-        html=requests.get(url,stream=True)       
+        #start selenium
+      
+        options=FirefoxOptions()
+        options.add_argument("--headless")
+        driver = webdriver.Firefox(options=options) 
 
-        for line in html.iter_lines():
-            str_line=line.decode('unicode_escape') #convert bytes object to string
+        try:
+            driver.get(url)
+            html=driver.page_source
+        except:
+            print("Error connecting to GCN database")
+        
+        soup=BeautifulSoup(html,"lxml")
+
+        for link in soup.find_all("a"):
+            str_line=link.text #get GCN title string
 
             #check if GCN is about IceCube Event
-            if "LI" in str_line and 'IceCube observation of a high-energy neutrino candidate' in str_line:
-                gcn_nr=int(str_line[17:22])
-                ic_name=str_line[46:53]
+            if 'IceCube observation of a high-energy neutrino candidate' in str_line:
+                ic_name=link.text[8:15]
 
                 #load information about IceCube Event
-                ic_html = requests.get("https://gcn.gsfc.nasa.gov/gcn3/"+str(gcn_nr)+".gcn3",stream=True)
-
-                #Extract Neutrino Data from GCN page
-                for ic_line in ic_html.iter_lines():
-                    ic_str_line=ic_line.decode('unicode_escape')
-
+                ic_html_link = link.get("href")
+                gcn_nr = ic_html_link.split("/")[-1]
+                try: 
+                    driver.get("https://gcn.nasa.gov"+ic_html_link)
+                    ic_html=driver.page_source
+                except:
+                    print("Connection error to GCN database for " + ic_html_link)
+                
+                #Extract Neutrino Data from GCN page -> need to change this to BeautifulSoup
+                
+                for ic_str_line in ic_html.splitlines():
+                                       
                     if ic_str_line.startswith("Date:"):
                         date=ic_str_line[6:].split()[0]
                     elif ic_str_line.startswith("Time:"):
@@ -92,7 +114,7 @@ def getNeutrinoInfo(urls):
                         else:
                             dec_err_plus=extract_number(ic_str_line,1)
                             dec_err_minus=extract_number(ic_str_line,2)
-                gcn_link='=HYPERLINK("https://gcn.gsfc.nasa.gov/gcn3/'+str(gcn_nr)+'.gcn3","GCN link")'
+                gcn_link='=HYPERLINK("https://gcn.nasa.gov/circulars/"+str(gcn_nr),"GCN link")'
                 ic=[[ic_name,int(gcn_nr), date,time,ra,ra_err_plus,ra_err_minus,dec,dec_err_plus,dec_err_minus,gcn_link]]            
                 ic_inf=np.append(ic_inf,ic,axis=0)
 

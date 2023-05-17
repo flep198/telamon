@@ -231,3 +231,214 @@ Read port: 39077
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEilXh0/search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:32825/devtools/browser/1ebbe8a2-3e76-4759-992d-b6f723edb739
+1684356590780	geckodriver	INFO	Listening on 127.0.0.1:35675
+1684356591299	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "51957" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileAsLFG6"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684356591545	Marionette	INFO	Marionette enabled
+1684356591548	Marionette	INFO	Listening on port 39361
+Read port: 39361
+WebDriver BiDi listening on ws://127.0.0.1:51957
+1684356591666	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:51957/devtools/browser/082a2d43-6d0b-447f-9bc1-d217a9024450
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1684356625648	geckodriver	INFO	Listening on 127.0.0.1:41233
+1684356625650	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "32917" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilexmCt9x"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684356625885	Marionette	INFO	Marionette enabled
+1684356625888	Marionette	INFO	Listening on port 36061
+WebDriver BiDi listening on ws://127.0.0.1:32917
+Read port: 36061
+1684356626039	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:32917/devtools/browser/7ad69afa-6df3-46b5-a428-b38442d191ff
+1684356654032	geckodriver	INFO	Listening on 127.0.0.1:55439
+1684356654035	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "43783" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilesjF6kX"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684356654292	Marionette	INFO	Marionette enabled
+1684356654295	Marionette	INFO	Listening on port 39023
+Read port: 39023
+WebDriver BiDi listening on ws://127.0.0.1:43783
+1684356654396	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:43783/devtools/browser/eb83f955-a43f-405f-9472-5256e54290ba
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1684356695826	geckodriver	INFO	Listening on 127.0.0.1:59285
+1684356695827	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "43329" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilewjfEQW"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684356696064	Marionette	INFO	Marionette enabled
+1684356696067	Marionette	INFO	Listening on port 42417
+Read port: 42417
+WebDriver BiDi listening on ws://127.0.0.1:43329
+1684356696192	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:43329/devtools/browser/9d193718-24c6-4ff3-8d74-9e73e247398a
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1684356732204	geckodriver	INFO	Listening on 127.0.0.1:56323
+1684356732207	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "47641" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileB4qKnf"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684356732453	Marionette	INFO	Marionette enabled
+1684356732456	Marionette	INFO	Listening on port 35545
+Read port: 35545
+WebDriver BiDi listening on ws://127.0.0.1:47641
+1684356732544	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:47641/devtools/browser/c894b852-53f6-4efc-b186-dc812aace42b
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1684357373914	geckodriver	INFO	Listening on 127.0.0.1:43025
+1684357373916	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "39971" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilecGZ1J8"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684357374152	Marionette	INFO	Marionette enabled
+1684357374154	Marionette	INFO	Listening on port 36181
+WebDriver BiDi listening on ws://127.0.0.1:39971
+Read port: 36181
+1684357374303	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:39971/devtools/browser/e65ead9b-e05d-41bc-864e-ac7579effd30
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1684357465789	geckodriver	INFO	Listening on 127.0.0.1:46799
+1684357465791	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "42171" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDyJNDL"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684357466027	Marionette	INFO	Marionette enabled
+1684357466030	Marionette	INFO	Listening on port 43103
+Read port: 43103
+WebDriver BiDi listening on ws://127.0.0.1:42171
+1684357466145	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:42171/devtools/browser/5ddfc1f8-14b4-4edb-bc92-d496a63c193d
+JavaScript error: https://gcn.nasa.gov/_static/_shared/chunk-7UWSLJ2Z.js, line 8: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1684357507165	geckodriver	INFO	Listening on 127.0.0.1:45301
+1684357507167	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "50415" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileIfGVLd"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684357507407	Marionette	INFO	Marionette enabled
+1684357507409	Marionette	INFO	Listening on port 42245
+WebDriver BiDi listening on ws://127.0.0.1:50415
+Read port: 42245
+1684357507557	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:50415/devtools/browser/3315f89b-69d4-40a5-a90b-98e5a2a81c8c
+1684357531546	geckodriver	INFO	Listening on 127.0.0.1:38531
+1684357531548	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "40655" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileNGkec7"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684357531809	Marionette	INFO	Marionette enabled
+1684357531812	Marionette	INFO	Listening on port 43921
+Read port: 43921
+WebDriver BiDi listening on ws://127.0.0.1:40655
+1684357531904	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:40655/devtools/browser/4fc22f4b-3364-4fc3-8e0b-cd426bbbc771
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1684357646205	geckodriver	INFO	Listening on 127.0.0.1:35799
+1684357646219	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "59653" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileHpyyQS"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684357646466	Marionette	INFO	Marionette enabled
+1684357646468	Marionette	INFO	Listening on port 41559
+Read port: 41559
+WebDriver BiDi listening on ws://127.0.0.1:59653
+1684357646555	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:59653/devtools/browser/7dc4a596-5e66-4d84-a305-a51b8b94e454
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1684357721783	geckodriver	INFO	Listening on 127.0.0.1:55483
+1684357721785	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "46265" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileOnF9ZE"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684357722026	Marionette	INFO	Marionette enabled
+1684357722028	Marionette	INFO	Listening on port 43447
+Read port: 43447
+WebDriver BiDi listening on ws://127.0.0.1:46265
+1684357722144	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:46265/devtools/browser/c09bf3cc-3d1b-4db8-b021-e9fa862ca31a
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1684357757452	geckodriver	INFO	Listening on 127.0.0.1:49909
+1684357757454	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "52105" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileenZVZe"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684357757693	Marionette	INFO	Marionette enabled
+1684357757696	Marionette	INFO	Listening on port 42273
+WebDriver BiDi listening on ws://127.0.0.1:52105
+Read port: 42273
+1684357757840	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:52105/devtools/browser/4f02acf9-7a43-481b-a936-5372feae2a8e
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1684357804598	geckodriver	INFO	Listening on 127.0.0.1:34241
+1684357804600	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "37099" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilejeplUs"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684357804843	Marionette	INFO	Marionette enabled
+1684357804846	Marionette	INFO	Listening on port 36457
+WebDriver BiDi listening on ws://127.0.0.1:37099
+Read port: 36457
+1684357804992	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:37099/devtools/browser/ef2ccedd-2559-4e65-a62d-0fafa0fc1d59
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1684357959470	geckodriver	INFO	Listening on 127.0.0.1:32987
+1684357959472	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "51441" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile2Y8t7V"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684357959712	Marionette	INFO	Marionette enabled
+1684357959715	Marionette	INFO	Listening on port 44679
+Read port: 44679
+WebDriver BiDi listening on ws://127.0.0.1:51441
+1684357959837	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:51441/devtools/browser/719500c4-2b76-4b4a-ba4c-540534124e43
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
