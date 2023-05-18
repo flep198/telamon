@@ -90,7 +90,7 @@ def getNeutrinoInfo(urls):
                 except:
                     print("Connection error to GCN database for " + ic_html_link)
                 
-                #Extract Neutrino Data from GCN page -> need to change this to BeautifulSoup
+                #Extract Neutrino Data from GCN page 
                 
                 for ic_str_line in ic_html.splitlines():
                                        
@@ -114,7 +114,7 @@ def getNeutrinoInfo(urls):
                         else:
                             dec_err_plus=extract_number(ic_str_line,1)
                             dec_err_minus=extract_number(ic_str_line,2)
-                gcn_link='=HYPERLINK("https://gcn.nasa.gov/circulars/"+str(gcn_nr),"GCN link")'
+                gcn_link='=HYPERLINK("https://gcn.nasa.gov/circulars/'+str(gcn_nr)+',"GCN link")'
                 ic=[[ic_name,int(gcn_nr), date,time,ra,ra_err_plus,ra_err_minus,dec,dec_err_plus,dec_err_minus,gcn_link]]            
                 ic_inf=np.append(ic_inf,ic,axis=0)
 
