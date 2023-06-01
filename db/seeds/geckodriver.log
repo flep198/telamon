@@ -599,3 +599,18 @@ Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
 Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1685578612217	geckodriver	INFO	Listening on 127.0.0.1:51579
+1685578612736	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "35611" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilen0s8nj"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1685578612993	Marionette	INFO	Marionette enabled
+1685578612996	Marionette	INFO	Listening on port 41133
+Read port: 41133
+WebDriver BiDi listening on ws://127.0.0.1:35611
+1685578613126	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:35611/devtools/browser/b36c797e-6db9-41d3-b587-5965b38f350d
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"

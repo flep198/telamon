@@ -18,6 +18,8 @@ get "/lightcurves" => "home#lightcurves", as: :lightcurves
 get "/schedule" => "home#schedule", as: :schedule
 get "/stats" => "home#stats", as: :stats
 get "/map" => "home#map", as: :map
+
+
 #get "/publications" => "home#publications", as: :publications
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
