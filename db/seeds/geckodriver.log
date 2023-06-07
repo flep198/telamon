@@ -614,3 +614,12 @@ console.error: ({})
 [ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
 DevTools listening on ws://127.0.0.1:35611/devtools/browser/b36c797e-6db9-41d3-b587-5965b38f350d
 console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+[Child 8850, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox-J2eTmk/firefox-113.0.2+build1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 8850, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox-J2eTmk/firefox-113.0.2+build1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 8850, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox-J2eTmk/firefox-113.0.2+build1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 8850, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox-J2eTmk/firefox-113.0.2+build1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 8850, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox-J2eTmk/firefox-113.0.2+build1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 8850, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox-J2eTmk/firefox-113.0.2+build1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 8850, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox-J2eTmk/firefox-113.0.2+build1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 8850, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox-J2eTmk/firefox-113.0.2+build1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+1685583620826	Marionette	INFO	Stopped listening on port 41133
