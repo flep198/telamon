@@ -637,3 +637,5 @@ Read port: 38603
 console.error: ({})
 DevTools listening on ws://127.0.0.1:45269/devtools/browser/b31307f5-ed3b-4366-841e-9835c1df8d0f
 console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1692602906640	Marionette	INFO	Stopped listening on port 38603
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
