@@ -25,9 +25,9 @@
           <div class="col"> 
               <p><strong>Name:</strong> <%= @source.j2000_name %> (<%=@source.alt_name%>)</p>    
               <p><strong>Class:</strong> <%= @source.source_class %></p>
-              <p><strong>Average 20mm:</strong> <%= @source.aver(14,17) %> mJy</p>
-              <p><strong>Average 14mm:</strong> <%= @source.aver(19,25) %> mJy</p>
-              <p><strong>Average 7mm:</strong> <%= @source.aver(36,44) %> mJy</p>
+              <p><strong>Average 20mm:</strong> <%= @source.average_fd20 %> mJy</p>
+              <p><strong>Average 14mm:</strong> <%= @source.average_fd14 %> mJy</p>
+              <p><strong>Average 7mm:</strong> <%= @source.average_fd7 %> mJy</p>
               <p><strong>Redshift:</strong> <%= @source.redshift %></p>
           </div>
           <div class="col">

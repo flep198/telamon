@@ -123,7 +123,7 @@ window.onload=function(){
     };
 
     //averaged lightcurves
-    <% lc7=getAverageLightCurve(source,36,44) %>
+    <% lc7=ReturnAverageLightCurve(source,"7mm") %>
     var aver_lc7<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%> = {
       x: <%= lc7[0] %>,
       y: <%= lc7[1] %>,
@@ -137,7 +137,7 @@ window.onload=function(){
     };
     aver_mode_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.push(aver_lc7<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>);
 
-    <% lc14=getAverageLightCurve(source,19,25) %>
+    <% lc14=ReturnAverageLightCurve(source,"14mm") %>
     var aver_lc14<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%> = {
       x: <%= lc14[0] %>,
       y: <%= lc14[1] %>,
@@ -151,7 +151,7 @@ window.onload=function(){
     };
     aver_mode_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.push(aver_lc14<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>);
 
-    <% lc20=getAverageLightCurve(source,14,17) %>
+    <% lc20=ReturnAverageLightCurve(source,"20mm") %>
     var aver_lc20<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%> = {
       x: <%= lc20[0] %>,
       y: <%= lc20[1] %>,

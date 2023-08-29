@@ -124,7 +124,7 @@ window.onload=function(){
   };
 
   //averaged lightcurves
-  <% lc7=getAverageLightCurve(@source,36,44) %>
+  <% lc7=ReturnAverageLightCurve(@source,"7mm") %>
   var aver_lc7 = {
     x: <%= lc7[0] %>,
     y: <%= lc7[1] %>,
@@ -143,7 +143,7 @@ window.onload=function(){
   aver_mode_array.push(aver_lc7);
   atca_aver_mode_array.push(aver_lc7);
 
-  <% lc14=getAverageLightCurve(@source,19,25) %>
+  <% lc14=ReturnAverageLightCurve(@source,"14mm") %>
   var aver_lc14 = {
     x: <%= lc14[0] %>,
     y: <%= lc14[1] %>,
@@ -162,7 +162,7 @@ window.onload=function(){
   aver_mode_array.push(aver_lc14);
   atca_aver_mode_array.push(aver_lc14);
 
-  <% lc20=getAverageLightCurve(@source,14,17) %>
+  <% lc20=ReturnAverageLightCurve(@source,"20mm") %>
   var aver_lc20 = {
     x: <%= lc20[0] %>,
     y: <%= lc20[1] %>,
@@ -180,7 +180,7 @@ window.onload=function(){
   aver_mode_array.push(aver_lc20);
   atca_aver_mode_array.push(aver_lc20);
 
-  <% lc45=getAverageLightCurve(@source,5,10) %>
+  <% lc45=ReturnAverageLightCurve(@source,"45mm") %>
   var aver_lc45 = {
     x: <%= lc45[0] %>,
     y: <%= lc45[1] %>,

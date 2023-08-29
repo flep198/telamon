@@ -1,5 +1,24 @@
 module SourcesHelper
 	
+    def ReturnAverageLightCurve source, band
+
+        mjd = Array.new
+        fluxes = Array.new
+        errors = Array.new
+
+        @aver_results=AverageResult.all.where(:band => band, :source => source)
+
+        @aver_results.order(:mjd).each do |result|
+            mjd.push(result.mjd)
+            fluxes.push(result.value_jy)
+            errors.push(result.error_jy)
+        end
+
+        return mjd, fluxes, errors
+    end
+
+
+
     def getPolFracData source
         mjd=Array.new
         pol_frac=Array.new
@@ -232,6 +251,7 @@ module SourcesHelper
     	mjds = Array.new
     	fluxes = Array.new
     	flux_errors = Array.new
+        epoch_ids = Array.new
 
     	freq_ids=Frequency.all.where(freq_ghz: low_freq..high_freq).ids
 
@@ -251,6 +271,7 @@ module SourcesHelper
 
   			if x.uniq.size>1
   				mjds.push(mjd_aver)
+                epoch_ids.push(@epoch_id)
 
   				#get fit parameters
   				#normal fit
@@ -281,6 +302,7 @@ module SourcesHelper
   			elsif x.size>0 #in this case only data for one frequency available
 
   				mjds.push(mjd_aver)
+                epoch_ids.push(@epoch_id)
   				flux=y.sum/y.size
   				fluxes.push(flux)
   				
@@ -317,7 +339,7 @@ module SourcesHelper
 
     	end
 
-    	return mjds, fluxes, flux_errors
+    	return mjds, fluxes, flux_errors, epoch_ids
     end 
 
     def getAverageATCALightCurve source, low_freq, high_freq

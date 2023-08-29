@@ -110,7 +110,7 @@ class Source < ApplicationRecord
   	freq_ids = Array.new
 
   	self.frequencies.distinct(:freq_ghz).each do |freq|
-  		if freq.freq_ghz>low_lim and freq.freq_ghz<up_lim
+  		if freq.freq_ghz>=low_lim and freq.freq_ghz<=up_lim
   			freq_ids.push(freq.id)
   		end
   	end
