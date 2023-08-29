@@ -1,6 +1,7 @@
 class Epoch < ApplicationRecord
 	has_many :results
 	has_many :observations
+	has_many :average_results
 
 	has_many :frequencies, :through => :results
 	has_many :sources, :through => :results

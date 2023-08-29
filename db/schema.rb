@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_02_01_170913) do
+ActiveRecord::Schema.define(version: 2023_08_29_125832) do
 
   create_table "atca_results", force: :cascade do |t|
     t.float "value_jy"
@@ -24,6 +24,19 @@ ActiveRecord::Schema.define(version: 2023_02_01_170913) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["source_id"], name: "index_atca_results_on_source_id"
+  end
+
+  create_table "average_results", force: :cascade do |t|
+    t.float "value_jy"
+    t.float "error_jy"
+    t.float "mjd"
+    t.string "band"
+    t.integer "source_id"
+    t.integer "epoch_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["epoch_id"], name: "index_average_results_on_epoch_id"
+    t.index ["source_id"], name: "index_average_results_on_source_id"
   end
 
   create_table "circular_neutrinos", force: :cascade do |t|
@@ -216,6 +229,10 @@ ActiveRecord::Schema.define(version: 2023_02_01_170913) do
     t.float "duration"
     t.string "tevcat_url", default: "http://tevcat2.uchicago.edu/"
     t.string "atca_url", default: "https://www.narrabri.atnf.csiro.au/calibrators/calibrator_database.html"
+    t.float "average_fd7"
+    t.float "average_fd14"
+    t.float "average_fd20"
+    t.float "average_fd45"
     t.index ["slug"], name: "index_sources_on_slug", unique: true
   end
 

@@ -283,10 +283,10 @@
               <% end %>
             </td>
             <%end%>
-            <td><%= source.aver(5,10) %></td>
-            <td><%= source.aver(14,17) %></td>
-            <td><%= source.aver(19,25) %></td>
-            <td><%= source.aver(36,44) %></td>
+            <td><%= if (source.average_fd45==0) then "-" else source.average_fd45 end %></td>
+            <td><%= if (source.average_fd20==0) then "-" else source.average_fd20 end %></td>
+            <td><%= if (source.average_fd14==0) then "-" else source.average_fd14 end %></td>
+            <td><%= if (source.average_fd7==0) then "-" else source.average_fd7 end %></td>
             <td><%= source.redshift %></td>
             <td><%= source.ra %></td>
             <td><%= source.decl %></td>
