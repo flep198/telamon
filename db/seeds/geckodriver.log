@@ -639,3 +639,143 @@ DevTools listening on ws://127.0.0.1:45269/devtools/browser/b31307f5-ed3b-4366-8
 console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
 1692602906640	Marionette	INFO	Stopped listening on port 38603
 Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1693309785291	geckodriver	INFO	Listening on 127.0.0.1:57919
+1693309785806	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "34257" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile1lE1ay"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693309786341	Marionette	INFO	Marionette enabled
+1693309786389	Marionette	INFO	Listening on port 42081
+WebDriver BiDi listening on ws://127.0.0.1:34257
+Read port: 42081
+1693309786522	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:34257/devtools/browser/43280377-702d-4c6d-acdf-1250e201e2a0
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1693309844232	geckodriver	INFO	Listening on 127.0.0.1:41507
+1693309844235	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46647" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileGOCxIa"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693309844767	Marionette	INFO	Marionette enabled
+1693309844812	Marionette	INFO	Listening on port 33033
+WebDriver BiDi listening on ws://127.0.0.1:46647
+Read port: 33033
+1693309844939	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:46647/devtools/browser/e989545b-38f5-4703-805b-03470c2066e8
+1693309848037	Marionette	INFO	Stopped listening on port 42081
+1693309868488	geckodriver	INFO	Listening on 127.0.0.1:52757
+1693309868490	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "36939" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile9nk9gK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693309868997	Marionette	INFO	Marionette enabled
+1693309869041	Marionette	INFO	Listening on port 43443
+WebDriver BiDi listening on ws://127.0.0.1:36939
+Read port: 43443
+1693309869171	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:36939/devtools/browser/96204335-540a-4cb0-9777-6f0c0ba0faef
+1693309871492	Marionette	INFO	Stopped listening on port 33033
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1693309980869	geckodriver	INFO	Listening on 127.0.0.1:59901
+1693309980872	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57187" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileha0QMb"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693309981388	Marionette	INFO	Marionette enabled
+1693309981433	Marionette	INFO	Listening on port 38157
+WebDriver BiDi listening on ws://127.0.0.1:57187
+Read port: 38157
+1693309981564	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:57187/devtools/browser/4f834ea6-4291-4e81-a220-00cad8cbea7a
+1693309983283	Marionette	INFO	Stopped listening on port 43443
+1693310008519	geckodriver	INFO	Listening on 127.0.0.1:54009
+1693310008521	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52437" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilehUp7Bi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693310009043	Marionette	INFO	Marionette enabled
+1693310009087	Marionette	INFO	Listening on port 40663
+WebDriver BiDi listening on ws://127.0.0.1:52437
+Read port: 40663
+1693310009217	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52437/devtools/browser/0fd8b8f5-e41d-435d-8ec0-50f4a94f2f77
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1693310026843	geckodriver	INFO	Listening on 127.0.0.1:33661
+1693310026846	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44435" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilei71wr8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693310027391	Marionette	INFO	Marionette enabled
+1693310027439	Marionette	INFO	Listening on port 45055
+WebDriver BiDi listening on ws://127.0.0.1:44435
+Read port: 45055
+1693310027541	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:44435/devtools/browser/4946df9e-8376-48cf-af4b-183f6f8efaec
+1693310029317	Marionette	INFO	Stopped listening on port 40663
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1693310030202	Marionette	INFO	Stopped listening on port 38157
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1693310089556	geckodriver	INFO	Listening on 127.0.0.1:50559
+1693310089559	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47173" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDk0c0l"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693310090077	Marionette	INFO	Marionette enabled
+1693310090121	Marionette	INFO	Listening on port 46607
+WebDriver BiDi listening on ws://127.0.0.1:47173
+Read port: 46607
+1693310090253	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:47173/devtools/browser/f9f1a068-69bc-4882-8f07-21786fd0ccad
+1693310092537	Marionette	INFO	Stopped listening on port 45055
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+JavaScript warning: https://www.nasa.gov/sites/all/themes/custom/nasatwo/js/vendor.js?, line 14256: unreachable code after return statement
+JavaScript warning: https://www.gstatic.com/_/mss/boq-search/_/js/k=boq-search.VisualFrontendUi.en_US.Et_pfxN76qY.es5.O/am=AAIAAgAAAAAAAEAAXwCY__8H-x8AexUABKC-5P___woBEgAAhAMAIPCgQQEEgLcAAGgAwMKBAAAEOBWPBxBMAIB0BxAAEQQBgEcNxaMrAAAEHHiUAAJgBsADAgAAAAAAIAACBvwDAgAAcAYCCAAAAAAoXPOAAQEAAAAAAAAAAABAIS-CIgYAAAAAAAAAAAAEgE0C/d=1/excm=_b,_r,_tp,searchview/ed=1/dg=0/wt=2/ujg=1/rs=AH7-fg6oHOdOyNNn0W05FsG5ti0WTDbKeA/m=_b,_tp,_r, line 435: Script terminated by timeout at:
+b@https://www.gstatic.com/_/mss/boq-search/_/js/k=boq-search.VisualFrontendUi.en_US.Et_pfxN76qY.es5.O/am=AAIAAgAAAAAAAEAAXwCY__8H-x8AexUABKC-5P___woBEgAAhAMAIPCgQQEEgLcAAGgAwMKBAAAEOBWPBxBMAIB0BxAAEQQBgEcNxaMrAAAEHHiUAAJgBsADAgAAAAAAIAACBvwDAgAAcAYCCAAAAAAoXPOAAQEAAAAAAAAAAABAIS-CIgYAAAAAAAAAAAAEgE0C/d=1/excm=_b,_r,_tp,searchview/ed=1/dg=0/wt=2/ujg=1/rs=AH7-fg6oHOdOyNNn0W05FsG5ti0WTDbKeA/m=_b,_tp,_r:435:40
+
+JavaScript error: https://fermi.gsfc.nasa.gov/ssc/data/access/lat/LightCurveRepository/about.html, line 239: TypeError: document.getElementById(...) is null
+JavaScript warning: https://fermi.gsfc.nasa.gov/ssc/data/access/lat/LightCurveRepository/js/d3.min.js, line 3: unreachable code after return statement
+1693312952236	geckodriver	INFO	Listening on 127.0.0.1:60463
+1693312952251	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "42201" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilesCC45c"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693312952516	Marionette	INFO	Marionette enabled
+1693312952555	Marionette	INFO	Listening on port 45281
+WebDriver BiDi listening on ws://127.0.0.1:42201
+Read port: 45281
+1693312952747	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:42201/devtools/browser/79abdc77-3388-4d6e-a0e1-6177c3f0c0a5
+JavaScript error: https://fermi.gsfc.nasa.gov/ssc/data/access/lat/LightCurveRepository/source.php?source_name=4FGL_J0112.1+2245, line 2078: TypeError: chart1 is undefined
+JavaScript error: https://fermi.gsfc.nasa.gov/ssc/data/access/lat/LightCurveRepository/source.php?source_name=4FGL_J0112.1+2245, line 2078: TypeError: chart1 is undefined
+[Parent 13781, Main Thread] WARNING: g_object_get: assertion 'G_IS_OBJECT (object)' failed: 'glib warning', file /build/firefox-WBqX60/firefox-116.0.3+build2/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox:13781): GLib-GObject-CRITICAL **: 14:42:36.868: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1693313039312	geckodriver	INFO	Listening on 127.0.0.1:57117
+1693313039315	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "57081" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileS8uNcw"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693313039552	Marionette	INFO	Marionette enabled
+1693313039591	Marionette	INFO	Listening on port 39917
+WebDriver BiDi listening on ws://127.0.0.1:57081
+Read port: 39917
+1693313039758	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:57081/devtools/browser/bd3c3402-459c-4221-a6ce-ea88675947b1
+JavaScript error: https://fermi.gsfc.nasa.gov/ssc/data/access/lat/LightCurveRepository/source.php?source_name=4FGL_J0112.1+2245, line 2078: TypeError: chart1 is undefined
+[Parent 14208, Main Thread] WARNING: g_object_get: assertion 'G_IS_OBJECT (object)' failed: 'glib warning', file /build/firefox-WBqX60/firefox-116.0.3+build2/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox:14208): GLib-GObject-CRITICAL **: 14:44:02.909: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+[Parent 14208, Main Thread] WARNING: g_object_get: assertion 'G_IS_OBJECT (object)' failed: 'glib warning', file /build/firefox-WBqX60/firefox-116.0.3+build2/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox:14208): GLib-GObject-CRITICAL **: 14:44:03.821: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+[Parent 14208, Main Thread] WARNING: g_object_get: assertion 'G_IS_OBJECT (object)' failed: 'glib warning', file /build/firefox-WBqX60/firefox-116.0.3+build2/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox:14208): GLib-GObject-CRITICAL **: 14:44:04.479: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
