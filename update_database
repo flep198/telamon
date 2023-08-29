@@ -2,7 +2,12 @@
 echo "Updating Database"
 RAILS_ENV=production rails db:seed
 RAILS_ENV=production rails db:seed:seeds1510
+echo "Loading Neutrino Information"
 RAILS_ENV=production rails db:seed:neutrino_seeds_amon
 RAILS_ENV=production rails db:seed:neutrino_seeds_gcn
+echo "Loading ATCA Information"
 RAILS_ENV=production rails db:seed:atca_seeds
-
+echo "Creating Averaged Lightcurves"
+RAILS_ENV=production rails db:seed:average_sources
+RAILS_ENV=production rails db:seed:average_lcs
+echo "Database successfully updated"
