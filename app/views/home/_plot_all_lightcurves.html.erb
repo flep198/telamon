@@ -85,18 +85,33 @@ window.onload=function(){
           visible: true
         },
         type: "scatter",
+        xaxis: 'x1',
+        legendgroup: '<%=@freq_id%><%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>',
         <% if !user_signed_in?%>
         hoverinfo: 'none',
         <%end%>
         name: "<%=Frequency.find(@freq_id).freq_ghz.to_s%> GHz"
       };
 
+      var lc_data<%=@freq_id%><%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX = {
+        x: <%= @data.map {|r| Date.jd(r[0]+2400000.5).year.to_f+Date.jd(r[0]+2400000.5).yday.to_f/365}%>,
+        y: lc_data<%=@freq_id%><%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.y,
+        type: lc_data<%=@freq_id%><%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
+        xaxis:'x2',
+        yaxis:'y',
+        hoverinfo: 'none',
+        legendgroup: '<%=@freq_id%><%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>',
+        opacity: 0.0,
+        showlegend: false
+      };
+
+
+      freq_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.push(lc_data<%=@freq_id%><%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX);
       freq_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.push(lc_data<%=@freq_id%><%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>);
 
     <% end %>
 
     var layoutLC<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%> = {
-      title: "<%=source.j2000_name%>",
 
       xaxis: {
         title: {
@@ -107,6 +122,20 @@ window.onload=function(){
             color: '#7f7f7f'
           }
         },
+      },
+
+      xaxis2: {
+        title: {
+          text: 'Decimal Year',
+          font: {
+            family: 'Courier New, monospace',
+            size: 18,
+            color: '#7f7f7f'
+          }
+        },
+        side: 'top',
+        overlaying: 'x1',
+        tickformat: ".1f"
       },
 
       yaxis: {
@@ -133,9 +162,26 @@ window.onload=function(){
           visible: true
         },
       type: "scatter",
+      xaxis: 'x1',
+      legendgroup: '7mm<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>',
       name: "Aver 7mm"
     };
+
+
+    var aver_lc7<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX = {
+      x: <%= lc7[0].map {|r| Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365}%>,
+      y: aver_lc7<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.y,
+      type: aver_lc7<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
+      xaxis:'x2',
+      yaxis:'y',
+      hoverinfo: 'none',
+      legendgroup: '7mm<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>',
+      opacity: 0.0,
+      showlegend: false
+    };
+
     aver_mode_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.push(aver_lc7<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>);
+    aver_mode_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.push(aver_lc7<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX);
 
     <% lc14=ReturnAverageLightCurve(source,"14mm") %>
     var aver_lc14<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%> = {
@@ -149,6 +195,20 @@ window.onload=function(){
       type: "scatter",
       name: "Aver 14mm"
     };
+
+    var aver_lc14<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX = {
+      x: <%= lc14[0].map {|r| Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365}%>,
+      y: aver_lc14<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.y,
+      type: aver_lc14<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
+      xaxis:'x2',
+      yaxis:'y',
+      hoverinfo: 'none',
+      legendgroup: '14mm<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>',
+      opacity: 0.0,
+      showlegend: false
+    };
+
+    aver_mode_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.push(aver_lc14<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX);
     aver_mode_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.push(aver_lc14<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>);
 
     <% lc20=ReturnAverageLightCurve(source,"20mm") %>
@@ -163,7 +223,49 @@ window.onload=function(){
       type: "scatter",
       name: "Aver 20mm"
     };
+
+    var aver_lc20<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX = {
+      x: <%= lc20[0].map {|r| Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365}%>,
+      y: aver_lc20<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.y,
+      type: aver_lc20<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
+      xaxis:'x2',
+      yaxis:'y',
+      hoverinfo: 'none',
+      legendgroup: '20mm<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>',
+      opacity: 0.0,
+      showlegend: false
+    };
+
+    aver_mode_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.push(aver_lc20<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX);
     aver_mode_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.push(aver_lc20<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>);
+
+    <% lc45=ReturnAverageLightCurve(source,"45mm") %>
+    var aver_lc45<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%> = {
+      x: <%= lc45[0] %>,
+      y: <%= lc45[1] %>,
+      error_y: {
+          type: "data",
+          array: <%= lc45[2] %>,
+          visible: true
+        },
+      type: "scatter",
+      name: "Aver 45mm"
+    };
+
+    var aver_lc45<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX = {
+      x: <%= lc45[0].map {|r| Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365}%>,
+      y: aver_lc45<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.y,
+      type: aver_lc45<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
+      xaxis:'x2',
+      yaxis:'y',
+      hoverinfo: 'none',
+      legendgroup: '45mm<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>',
+      opacity: 0.0,
+      showlegend: false
+    };
+
+    aver_mode_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.push(aver_lc45<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX);
+    aver_mode_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.push(aver_lc45<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>);
 
     Plotly.newPlot("lightcurve<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>",freq_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>,layoutLC<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>);
 
