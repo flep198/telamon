@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   	collection { post :import }
   end
 
+  resources :average_results do
+    collection { post :import }
+  end
+
 resources :epoches, :path => 'epochs', param: :slug
 resources :frequencies
 resources :sources, param: :slug

@@ -43,6 +43,16 @@ window.onload=function(){
         document.getElementById("export_button").addEventListener("click", function(){download_table_as_csv(table_name)});
   }
 
+  if(!!document.getElementById("export_button2")){
+        var table_name2 = document.getElementById("export_button2").dataset.table;
+        document.getElementById("export_button2").addEventListener("click", function(){download_table_as_csv(table_name2)});
+  }
+
+  if(!!document.getElementById("export_button3")){
+        var table_name3 = document.getElementById("export_button3").dataset.table;
+        document.getElementById("export_button3").addEventListener("click", function(){download_table_as_csv(table_name3)});
+  }
+
 
   //make tables sortable
     const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
