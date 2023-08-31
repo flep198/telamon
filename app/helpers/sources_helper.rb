@@ -1,4 +1,25 @@
 module SourcesHelper
+
+    def getDecimalYear date
+
+        decimal_year=date.year.to_f
+
+        if Date.leap?(date.year)
+            decimal_year=decimal_year+date.yday.to_f/366
+            decimal_year=decimal_year+date.strftime("%k").to_f/24/366
+            decimal_year=decimal_year+date.strftime("%M").to_f/60/24/366
+            decimal_year=decimal_year+date.strftime("%S").to_f/60/60/24/366
+        else
+            decimal_year=decimal_year+date.yday.to_f/365
+            decimal_year=decimal_year+date.strftime("%k").to_f/24/365
+            decimal_year=decimal_year+date.strftime("%M").to_f/60/24/365
+            decimal_year=decimal_year+date.strftime("%S").to_f/60/60/24/365
+        end
+
+
+
+        return decimal_year
+    end
 	
     def ReturnAverageLightCurve source, band
 

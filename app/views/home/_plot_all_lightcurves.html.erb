@@ -94,7 +94,7 @@ window.onload=function(){
       };
 
       var lc_data<%=@freq_id%><%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX = {
-        x: <%= @data.map {|r| Date.jd(r[0]+2400000.5).year.to_f+Date.jd(r[0]+2400000.5).yday.to_f/365}%>,
+        x: <%= @data.map {|r| getDecimalYear(Date.jd(r[0]+2400000.5))}%>,
         y: lc_data<%=@freq_id%><%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.y,
         type: lc_data<%=@freq_id%><%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
         xaxis:'x2',
@@ -104,6 +104,7 @@ window.onload=function(){
         opacity: 0.0,
         showlegend: false
       };
+
 
 
       freq_array<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.push(lc_data<%=@freq_id%><%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX);
@@ -169,7 +170,7 @@ window.onload=function(){
 
 
     var aver_lc7<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX = {
-      x: <%= lc7[0].map {|r| Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365}%>,
+      x: <%= lc7[0].map {|r| getDecimalYear(Date.jd(r+2400000.5))}%>,
       y: aver_lc7<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.y,
       type: aver_lc7<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
       xaxis:'x2',
@@ -197,7 +198,7 @@ window.onload=function(){
     };
 
     var aver_lc14<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX = {
-      x: <%= lc14[0].map {|r| Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365}%>,
+      x: <%= lc14[0].map {|r| getDecimalYear(Date.jd(r+2400000.5))}%>,
       y: aver_lc14<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.y,
       type: aver_lc14<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
       xaxis:'x2',
@@ -225,7 +226,7 @@ window.onload=function(){
     };
 
     var aver_lc20<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX = {
-      x: <%= lc20[0].map {|r| Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365}%>,
+      x: <%= lc20[0].map {|r| getDecimalYear(Date.jd(r+2400000.5))}%>,
       y: aver_lc20<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.y,
       type: aver_lc20<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
       xaxis:'x2',
@@ -253,7 +254,7 @@ window.onload=function(){
     };
 
     var aver_lc45<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>_secondX = {
-      x: <%= lc45[0].map {|r| Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365}%>,
+      x: <%= lc45[0].map {|r| getDecimalYear(Date.jd(r+2400000.5))}%>,
       y: aver_lc45<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.y,
       type: aver_lc45<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
       xaxis:'x2',

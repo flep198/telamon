@@ -94,7 +94,7 @@ window.onload=function(){
     };
 
     var lc_data<%=@freq_id%>_secondX = {
-      x: <%= @data.map {|r| (Date.jd(r[0]+2400000.5).year.to_f+Date.jd(r[0]+2400000.5).yday.to_f/365)}%>,
+      x: <%= @data.map {|r| getDecimalYear(Date.jd(r[0]+2400000.5))}%>,
       y: lc_data<%=@freq_id%>.y,
       type: lc_data<%=@freq_id%>.type,
       xaxis:'x2',
@@ -172,7 +172,7 @@ window.onload=function(){
   };
 
   var aver_lc7_secondX = {
-      x: <%= lc7[0].map {|r| Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365}%>,
+      x: <%= lc7[0].map {|r| getDecimalYear(Date.jd(r+2400000.5))}%>,
       y: aver_lc7.y,
       type: aver_lc7.type,
       xaxis:'x2',
@@ -208,7 +208,7 @@ window.onload=function(){
   };
 
   var aver_lc14_secondX = {
-      x: <%= lc14[0].map {|r| (Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365)} %>,
+      x: <%= lc14[0].map {|r| getDecimalYear(Date.jd(r+2400000.5))} %>,
       y: aver_lc14.y,
       type: aver_lc14.type,
       xaxis:'x2',
@@ -245,7 +245,7 @@ window.onload=function(){
 
 
   var aver_lc20_secondX = {
-      x: <%= lc20[0].map {|r| (Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365)} %>,
+      x: <%= lc20[0].map {|r| getDecimalYear(Date.jd(r+2400000.5))} %>,
       y: aver_lc20.y,
       type: aver_lc20.type,
       xaxis:'x2',
@@ -280,7 +280,7 @@ window.onload=function(){
   };
 
   var aver_lc45_secondX = {
-      x: <%= lc45[0].map {|r| (Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365)} %>,
+      x: <%= lc45[0].map {|r| getDecimalYear(Date.jd(r+2400000.5))} %>,
       y: aver_lc45.y,
       type: aver_lc45.type,
       xaxis:'x2',
@@ -323,7 +323,7 @@ window.onload=function(){
     };
 
     var lc_data_atca<%=freq_ghz.to_s.gsub(".","")%>_secondX = {
-      x: <%= @data.map {|r| (Date.jd(r[0]+2400000.5).year.to_f+Date.jd(r[0]+2400000.5).yday.to_f/365)}%>,
+      x: <%= @data.map {|r| getDecimalYear(Date.jd(r[0]+2400000.5))}%>,
       y: lc_data_atca<%=freq_ghz.to_s.gsub(".","")%>.y,
       type: lc_data_atca<%=freq_ghz.to_s.gsub(".","")%>.type,
       xaxis:'x2',
@@ -363,7 +363,7 @@ window.onload=function(){
   };
 
   var aver_lc3atca_secondX = {
-      x: <%= lc3atca[0].map {|r| (Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365)} %>,
+      x: <%= lc3atca[0].map {|r| getDecimalYear(Date.jd(r+2400000.5))} %>,
       y: aver_lc3atca.y,
       type: aver_lc3atca.type,
       xaxis:'x2',
@@ -398,7 +398,7 @@ window.onload=function(){
   };
 
   var aver_lc7atca_secondX = {
-      x: <%= lc7atca[0].map {|r| (Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365)} %>,
+      x: <%= lc7atca[0].map {|r| getDecimalYear(Date.jd(r+2400000.5))} %>,
       y: aver_lc7atca.y,
       type: aver_lc7atca.type,
       xaxis:'x2',
@@ -433,7 +433,7 @@ window.onload=function(){
   };
 
   var aver_lc15atca_secondX = {
-      x: <%= lc15atca[0].map {|r| (Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365)} %>,
+      x: <%= lc15atca[0].map {|r| getDecimalYear(Date.jd(r+2400000.5))} %>,
       y: aver_lc15atca.y,
       type: aver_lc15atca.type,
       xaxis:'x2',
@@ -467,7 +467,7 @@ window.onload=function(){
   };
 
   var aver_lc40atca_secondX = {
-      x: <%= lc40atca[0].map {|r| (Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365)} %>,
+      x: <%= lc40atca[0].map {|r| getDecimalYear(Date.jd(r+2400000.5))} %>,
       y: aver_lc40atca.y,
       type: aver_lc40atca.type,
       xaxis:'x2',
@@ -501,7 +501,7 @@ window.onload=function(){
   };
 
   var aver_lc160atca_secondX = {
-      x: <%= lc160atca[0].map {|r| (Date.jd(r+2400000.5).year.to_f+Date.jd(r+2400000.5).yday.to_f/365)} %>,
+      x: <%= lc160atca[0].map {|r| getDecimalYear(Date.jd(r+2400000.5))} %>,
       y: aver_lc160atca.y,
       type: aver_lc160atca.type,
       xaxis:'x2',
