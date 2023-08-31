@@ -99,6 +99,11 @@ window.onload=function(){
         type: lc_data<%=@freq_id%><%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
         xaxis:'x2',
         yaxis:'y',
+        error_y: {
+          type: "data",
+          array: <%= @data.map {|r| r[2]}%>,
+          visible: true
+        },
         hoverinfo: 'none',
         legendgroup: '<%=@freq_id%><%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>',
         opacity: 0.0,
@@ -175,6 +180,11 @@ window.onload=function(){
       type: aver_lc7<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
       xaxis:'x2',
       yaxis:'y',
+      error_y: {
+          type: "data",
+          array: <%= lc7[2] %>,
+          visible: true
+        },
       hoverinfo: 'none',
       legendgroup: '7mm<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>',
       opacity: 0.0,
@@ -203,6 +213,11 @@ window.onload=function(){
       type: aver_lc14<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
       xaxis:'x2',
       yaxis:'y',
+      error_y: {
+          type: "data",
+          array: <%= lc14[2] %>,
+          visible: true
+        },
       hoverinfo: 'none',
       legendgroup: '14mm<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>',
       opacity: 0.0,
@@ -231,6 +246,11 @@ window.onload=function(){
       type: aver_lc20<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
       xaxis:'x2',
       yaxis:'y',
+      error_y: {
+          type: "data",
+          array: <%= lc20[2] %>,
+          visible: true
+        },
       hoverinfo: 'none',
       legendgroup: '20mm<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>',
       opacity: 0.0,
@@ -259,6 +279,11 @@ window.onload=function(){
       type: aver_lc45<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>.type,
       xaxis:'x2',
       yaxis:'y',
+      error_y: {
+          type: "data",
+          array: <%= lc45[2] %>,
+          visible: true
+        },
       hoverinfo: 'none',
       legendgroup: '45mm<%=source.j2000_name.gsub("+","plus").gsub("-","minus")%>',
       opacity: 0.0,

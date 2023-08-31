@@ -99,6 +99,10 @@ window.onload=function(){
       type: lc_data<%=@freq_id%>.type,
       xaxis:'x2',
       yaxis:'y',
+      error_y: {
+        type: "data",
+        array: <%= @data.map {|r| r[2]}%>,
+      },
       legendgroup: 'lc_<%=@freq_id%>',
       hoverinfo: 'none',
       opacity: 0.0,
@@ -177,6 +181,11 @@ window.onload=function(){
       type: aver_lc7.type,
       xaxis:'x2',
       yaxis:'y',
+      error_y: {
+        type: "data",
+        array: <%= lc7[2] %>,
+        visible: true
+      },
       hoverinfo: 'none',
       legendgroup: 'lc7',
       opacity: 0.0,
@@ -211,6 +220,11 @@ window.onload=function(){
       x: <%= lc14[0].map {|r| getDecimalYear(Date.jd(r+2400000.5))} %>,
       y: aver_lc14.y,
       type: aver_lc14.type,
+      error_y: {
+        type: "data",
+        array: <%= lc14[2] %>,
+        visible: true
+      },
       xaxis:'x2',
       yaxis:'y',
       legendgroup: 'lc14',
@@ -250,6 +264,11 @@ window.onload=function(){
       type: aver_lc20.type,
       xaxis:'x2',
       yaxis:'y',
+      error_y: {
+        type: "data",
+        array: <%= lc20[2] %>,
+        visible: true
+      },
       legendgroup: 'lc20',
       hoverinfo: 'none',
       opacity: 0.0,
@@ -285,6 +304,11 @@ window.onload=function(){
       type: aver_lc45.type,
       xaxis:'x2',
       yaxis:'y',
+      error_y: {
+        type: "data",
+        array: <%= lc45[2] %>,
+        visible: true
+      },
       legendgroup: 'lc45',
       hoverinfo: 'none',
       opacity: 0.0,
@@ -328,6 +352,11 @@ window.onload=function(){
       type: lc_data_atca<%=freq_ghz.to_s.gsub(".","")%>.type,
       xaxis:'x2',
       yaxis:'y',
+      error_y: {
+        type: "data",
+        array: <%= @data.map {|r| r[2]}%>,
+        visible: true
+      },
       hoverinfo: 'none',
       legendgroup: 'lc_atca<%=freq_ghz.to_s.gsub(".","")%>',
       opacity: 0.0,
@@ -368,6 +397,11 @@ window.onload=function(){
       type: aver_lc3atca.type,
       xaxis:'x2',
       yaxis:'y',
+      error_y: {
+        type: "data",
+        array: <%= lc3atca[2] %>,
+        visible: true
+      },
       legendgroup: 'lc_atca_aver3',
       hoverinfo: 'none',
       opacity: 0.0,
@@ -403,6 +437,11 @@ window.onload=function(){
       type: aver_lc7atca.type,
       xaxis:'x2',
       yaxis:'y',
+      error_y: {
+        type: "data",
+        array: <%= lc7atca[2] %>,
+        visible: true
+      },
       legendgroup: 'lc_atca_aver7',
       hoverinfo: 'none',
       opacity: 0.0,
@@ -438,6 +477,11 @@ window.onload=function(){
       type: aver_lc15atca.type,
       xaxis:'x2',
       yaxis:'y',
+      error_y: {
+        type: "data",
+        array: <%= lc15atca[2] %>,
+        visible: true
+      },
       legendgroup: 'lc_atca_aver15',
       hoverinfo: 'none',
       opacity: 0.0,
@@ -472,6 +516,11 @@ window.onload=function(){
       type: aver_lc40atca.type,
       xaxis:'x2',
       yaxis:'y',
+      error_y: {
+        type: "data",
+        array: <%= lc40atca[2] %>,
+        visible: true
+      },
       hoverinfo: 'none',
       legendgroup: 'lc_atca_aver40',
       opacity: 0.0,
@@ -506,6 +555,11 @@ window.onload=function(){
       type: aver_lc160atca.type,
       xaxis:'x2',
       yaxis:'y',
+      error_y: {
+        type: "data",
+        array: <%= lc160atca[2] %>,
+        visible: true
+      },
       legendgroup: 'lc_atca_aver160',
       hoverinfo: 'none',
       opacity: 0.0,
