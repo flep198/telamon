@@ -133,7 +133,7 @@
       <div class="card-header container-fluid">
         <div class="row">
           <div class="col-md-8">
-          <%= link_to "Lightcurve", source_path(Source.where(j2000_name: source).first)%> 
+          <%= link_to "Lightcurve "+source, source_path(Source.where(j2000_name: source).first)%> 
           <% if amon_sources.include?(source) and gcn_sources.include?(source)%>
            (AMON+GCN)
           <% elsif gcn_sources.include?(source)%>
