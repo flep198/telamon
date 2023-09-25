@@ -23,6 +23,10 @@ get "/schedule" => "home#schedule", as: :schedule
 get "/stats" => "home#stats", as: :stats
 get "/map" => "home#map", as: :map
 
+devise_scope :user do
+  match '/sessions/user', to: 'devise/sessions#create', via: :post
+end
+
 
 #get "/publications" => "home#publications", as: :publications
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
