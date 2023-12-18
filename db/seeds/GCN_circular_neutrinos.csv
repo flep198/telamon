@@ -1,4 +1,5 @@
 IC Name,GCN_nr,Date,Time (UTC),RA,Ra_err_plus,Ra_err_minus,Dec,Dec_err_plus,Dec_err_minus,GCN_link
+231211A,35328,<!--,00:47:31.79,311.48,1.15,-2.33,10.28,0.67,-0.68,"=HYPERLINK(""https://gcn.nasa.gov/circulars/35328,""GCN link"")"
 231014A,34817,<!--,22:00:06.27,297.16,2.73,-4.32,1.34,1.24,-1.11,"=HYPERLINK(""https://gcn.nasa.gov/circulars/34817,""GCN link"")"
 231004A,34797,<!--,14:39:41.18,143.79,1.1,-1.01,-25.04,1.03,-1.21,"=HYPERLINK(""https://gcn.nasa.gov/circulars/34797,""GCN link"")"
 230914A,34693,2023-08-23,05:21:03.71,163.83,2.6,-2.02,31.83,1.79,-2.13,"=HYPERLINK(""https://gcn.nasa.gov/circulars/34693,""GCN link"")"

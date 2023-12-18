@@ -25,6 +25,7 @@
           <div class="col"> 
               <p><strong>Name:</strong> <%= @source.j2000_name %> (<%=@source.alt_name%>)</p>    
               <p><strong>Class:</strong> <%= @source.source_class %></p>
+              <p><strong>Average 45mm:</strong> <%= sprintf("%.2f",@source.average_fd45) %> mJy </p>
               <p><strong>Average 20mm:</strong> <%= sprintf("%.2f",@source.average_fd20) %> mJy</p>
               <p><strong>Average 14mm:</strong> <%= sprintf("%.2f",@source.average_fd14) %> mJy</p>
               <p><strong>Average 7mm:</strong> <%= sprintf("%.2f",@source.average_fd7) %> mJy</p>

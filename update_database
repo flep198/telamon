@@ -2,6 +2,7 @@
 echo "Updating Database"
 RAILS_ENV=production rails db:seed
 RAILS_ENV=production rails db:seed:seeds1510
+RAILS_ENV=production rails db:seed:seeds1430
 echo "Loading Neutrino Information"
 RAILS_ENV=production rails db:seed:neutrino_seeds_amon
 RAILS_ENV=production rails db:seed:neutrino_seeds_gcn
