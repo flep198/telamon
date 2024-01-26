@@ -978,3 +978,124 @@ console.error: "update.locale" " file doesn't exist in either the application or
 console.log: "RemoteSettingsWorker error: DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements."
 console.error: (new RemoteSettingsWorkerError("DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements.", "resource://services-settings/RemoteSettingsWorker.sys.mjs", 34))
 1704735452164	Marionette	INFO	Stopped listening on port 45665
+1706286173171	geckodriver	INFO	Listening on 127.0.0.1:34425
+1706286173690	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "58567" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileC5d7fO"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706286173941	Marionette	INFO	Marionette enabled
+1706286173983	Marionette	INFO	Listening on port 38335
+WebDriver BiDi listening on ws://127.0.0.1:58567
+Read port: 38335
+1706286174181	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58567/devtools/browser/74c23e1d-534f-4eb4-9e2e-8b910c7419cd
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1706286205585	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1706286263931	geckodriver	INFO	Listening on 127.0.0.1:45285
+1706286263933	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "33287" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileOgmDIg"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706286264179	Marionette	INFO	Marionette enabled
+1706286264218	Marionette	INFO	Listening on port 33663
+WebDriver BiDi listening on ws://127.0.0.1:33287
+Read port: 33663
+1706286264377	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:33287/devtools/browser/d422a874-425f-466a-92d4-89cda5d04ce6
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1706286294550	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1706286467521	geckodriver	INFO	Listening on 127.0.0.1:49787
+1706286467523	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "46765" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileYh0akv"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706286467794	Marionette	INFO	Marionette enabled
+1706286467833	Marionette	INFO	Listening on port 40941
+WebDriver BiDi listening on ws://127.0.0.1:46765
+Read port: 40941
+1706286468034	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:46765/devtools/browser/862eee4b-d58a-4257-a321-d2416ba2858c
+1706286490043	geckodriver	INFO	Listening on 127.0.0.1:47815
+1706286490045	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "53849" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilekkwMJz"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706286490291	Marionette	INFO	Marionette enabled
+1706286490330	Marionette	INFO	Listening on port 41643
+WebDriver BiDi listening on ws://127.0.0.1:53849
+Read port: 41643
+1706286490510	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:53849/devtools/browser/058e64ab-02dc-44d2-80b4-9ef8be30d23e
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1706286498348	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1706286516370	geckodriver	INFO	Listening on 127.0.0.1:46129
+1706286516372	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "39595" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileKt3KCf"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706286516619	Marionette	INFO	Marionette enabled
+1706286516658	Marionette	INFO	Listening on port 35507
+WebDriver BiDi listening on ws://127.0.0.1:39595
+Read port: 35507
+1706286516810	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:39595/devtools/browser/b34f4cda-3636-4228-8333-a57e1ed331e0
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1706286521922	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1706286560146	geckodriver	INFO	Listening on 127.0.0.1:32887
+1706286560148	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "47231" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilemI4Juo"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706286560397	Marionette	INFO	Marionette enabled
+1706286560435	Marionette	INFO	Listening on port 43773
+WebDriver BiDi listening on ws://127.0.0.1:47231
+Read port: 43773
+1706286560637	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:47231/devtools/browser/7de11f6a-2376-4a30-8da5-7a5f5948b510
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1706286592173	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1706286794746	geckodriver	INFO	Listening on 127.0.0.1:35873
+1706286794748	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "54807" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile4hEPsz"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706286794999	Marionette	INFO	Marionette enabled
+1706286795038	Marionette	INFO	Listening on port 41395
+WebDriver BiDi listening on ws://127.0.0.1:54807
+Read port: 41395
+1706286795188	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:54807/devtools/browser/671ea1b9-fa48-4a19-8d4d-01c492fccbda
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1706286825861	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1706286876364	geckodriver	INFO	Listening on 127.0.0.1:58377
+1706286876366	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "33039" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilePCgB8S"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706286876620	Marionette	INFO	Marionette enabled
+1706286876659	Marionette	INFO	Listening on port 38825
+WebDriver BiDi listening on ws://127.0.0.1:33039
+Read port: 38825
+1706286876806	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:33039/devtools/browser/9dc15c10-5cba-4c36-a296-e39a198424f7
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1706286907597	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.

@@ -76,11 +76,10 @@ def getNeutrinoInfo(urls):
 
         for link in soup.find_all("a"):
             str_line=link.text #get GCN title string
-
             #check if GCN is about IceCube Event
             if 'IceCube observation of a high-energy neutrino candidate' in str_line:
                 ic_name=link.text[8:15]
-
+                
                 #load information about IceCube Event
                 ic_html_link = link.get("href")
                 gcn_nr = ic_html_link.split("/")[-1]
@@ -116,6 +115,7 @@ def getNeutrinoInfo(urls):
                             dec_err_minus=extract_number(ic_str_line,2)
                 gcn_link='=HYPERLINK("https://gcn.nasa.gov/circulars/'+str(gcn_nr)+',"GCN link")'
                 ic=[[ic_name,int(gcn_nr), date,time,ra,ra_err_plus,ra_err_minus,dec,dec_err_plus,dec_err_minus,gcn_link]]            
+                print(ic)
                 ic_inf=np.append(ic_inf,ic,axis=0)
 
     return ic_inf[1:]
@@ -145,13 +145,14 @@ df=pd.DataFrame(data=pd.read_csv("GCN_circular_neutrinos.csv"))
 df=df.sort_values(by=['GCN_nr'],ascending=False)      
 df.to_csv("GCN_circular_neutrinos.csv",index=False)
 
-#CAREFUL, resets the whole progress of the file, only uncomment when sure about it!!
 """
+#CAREFUL, resets the whole progress of the file, only uncomment when sure about it!!
 df=pd.DataFrame(ic_inf,columns=["IC Name","GCN_nr","Date","Time (UTC)",
                     "RA","Ra_err_plus","Ra_err_minus",
                     "Dec","Dec_err_plus","Dec_err_minus","GCN_link"])
 df.to_csv("GCN_circular_neutrinos.csv",index=False)
 """
+
 #PART 2
 #import list with GCN Alerts and search VLBI Data to create seeds file
 df_neutrinos=pd.DataFrame(data=pd.read_csv("GCN_circular_neutrinos.csv"))
