@@ -1099,3 +1099,17 @@ console.error: ({})
 DevTools listening on ws://127.0.0.1:33039/devtools/browser/9dc15c10-5cba-4c36-a296-e39a198424f7
 console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
 1706286907597	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1706288032030	Marionette	INFO	Stopped listening on port 41395
+1706288032032	Marionette	INFO	Stopped listening on port 40941
+1706288032032	Marionette	INFO	Stopped listening on port 38825
+1706288032033	Marionette	INFO	Stopped listening on port 33663
+1706288032036	Marionette	INFO	Stopped listening on port 41643
+1706288032036	Marionette	INFO	Stopped listening on port 38335
+1706288032046	Marionette	INFO	Stopped listening on port 43773
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

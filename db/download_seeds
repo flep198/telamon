@@ -1,0 +1,1 @@
+scp -J feppel@portal feppel@data:/home/obs2/81-20/Analysis_Flo/post_interpolation/seeds.rb .
