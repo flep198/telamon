@@ -1113,3 +1113,33 @@ Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1712169940525	geckodriver	INFO	Listening on 127.0.0.1:56107
+1712169941038	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "59947" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileOs4Tp3"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1712169941285	Marionette	INFO	Marionette enabled
+1712169941326	Marionette	INFO	Listening on port 42435
+WebDriver BiDi listening on ws://127.0.0.1:59947
+Read port: 42435
+1712169941503	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:59947/devtools/browser/6ba69f35-a0f8-41cc-ae2c-0a41596fef68
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1712169971677	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1712170045356	geckodriver	INFO	Listening on 127.0.0.1:36181
+1712170045358	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "38297" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile7ArDga"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1712170045615	Marionette	INFO	Marionette enabled
+1712170045652	Marionette	INFO	Listening on port 41197
+WebDriver BiDi listening on ws://127.0.0.1:38297
+Read port: 41197
+1712170045826	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:38297/devtools/browser/77c17428-6f9f-4069-b40d-511c2da51889
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1712170075702	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
