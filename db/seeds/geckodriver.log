@@ -1143,3 +1143,5 @@ console.error: ({})
 DevTools listening on ws://127.0.0.1:38297/devtools/browser/77c17428-6f9f-4069-b40d-511c2da51889
 console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
 1712170075702	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1712175882786	Marionette	INFO	Stopped listening on port 42435
+1712175882789	Marionette	INFO	Stopped listening on port 41197
