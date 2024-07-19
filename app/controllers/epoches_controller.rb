@@ -71,6 +71,6 @@ class EpochesController < ApplicationController
     def epoch_params
       params.require(:epoch).permit(:date, :lst_to, :lst_from, :comment, 
         :showpol, :showpol_6_3ghz,:showpol_8_3ghz,:showpol_14_0ghz,
-        :showpol_17_0ghz,:showpol_19_0ghz,:showpol_21_4ghz,:showpol_36_0ghz,:showpol_39_0ghz)
+        :showpol_17_0ghz,:showpol_19_0ghz,:showpol_21_4ghz,:showpol_36_0ghz,:showpol_39_0ghz, :showpol_41_0ghz)
     end
 end

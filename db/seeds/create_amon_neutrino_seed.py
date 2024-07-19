@@ -32,7 +32,8 @@ for index, row in df.iterrows():
     run_num=row["RunNum_EventNum"]
     rev=int(row["Rev"])
     
-df.to_csv('AMON_Neutrino_Alerts.csv')
+df.to_csv('AMON_Neutrino_Alerts_rev0.csv')
+
 
 #import VLBI data and reformat RA/Dec
 df_VLBI = pd.DataFrame(data=pd.read_table('VLBI_RFC_2022a.txt', delim_whitespace=True,dtype = {'DecD': 'str'}))
