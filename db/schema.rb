@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_07_19_142153) do
+ActiveRecord::Schema.define(version: 2024_07_19_144324) do
 
   create_table "atca_results", force: :cascade do |t|
     t.float "value_jy"
@@ -91,6 +91,7 @@ ActiveRecord::Schema.define(version: 2024_07_19_142153) do
     t.boolean "showpol_36_0ghz", default: true
     t.boolean "showpol_39_0ghz", default: true
     t.boolean "showpol_41_0ghz", default: true
+    t.boolean "showpol_43_0ghz", default: true
     t.index ["slug"], name: "index_epoches_on_slug", unique: true
   end
 
