@@ -138,7 +138,7 @@ for ic_event in ic_inf:
                     "RA","Ra_err_plus","Ra_err_minus",
                     "Dec","Dec_err_plus","Dec_err_minus","GCN_link"]),ignore_index=True)
 
-df.to_csv("GCN_circular_neutrinos.csv",index=False)
+#df.to_csv("GCN_circular_neutrinos.csv",index=False)
 
 #reload and sort it
 df=pd.DataFrame(data=pd.read_csv("GCN_circular_neutrinos.csv"))
