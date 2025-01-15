@@ -1253,3 +1253,16 @@ Read port: 36249
 1732042032722	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.error: ({})
+1732046410928	Marionette	INFO	Stopped listening on port 36249
+1736945933179	geckodriver	INFO	Listening on 127.0.0.1:46947
+1736945933698	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "55573" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileCYYir5"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1736945933991	Marionette	INFO	Marionette enabled
+1736945934058	Marionette	INFO	Listening on port 40531
+WebDriver BiDi listening on ws://127.0.0.1:55573
+Read port: 40531
+1736945934187	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
