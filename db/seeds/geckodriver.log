@@ -1266,3 +1266,4 @@ Read port: 40531
 1736945934187	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.error: ({})
+1736946847230	Marionette	INFO	Stopped listening on port 40531
