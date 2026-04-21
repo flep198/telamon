@@ -244,7 +244,7 @@
       </h2>
       <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
         <div class="accordion-body">          
-          <% @output_name=@source.j2000_name.gsub('+','_').gsub('-','_')%>
+          <% @output_name=@source.j2000_name%>
           <button id="export_button3" class="btn btn-success" data-table='export_<%=@output_name%>_averaged'>Export to CSV File</button>
           <p></p>
           <table id='export_<%=@output_name%>_averaged' class="table table-hover">
@@ -290,7 +290,7 @@
       </h2>
       <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
         <div class="accordion-body">          
-          <% @output_name=@source.j2000_name.gsub('+','_').gsub('-','_')%>
+          <% @output_name=@source.j2000_name%>
           <button id="export_button" class="btn btn-success" data-table='export_<%=@output_name%>'>Export to CSV File</button>
           <p></p>
           <table id='export_<%=@output_name%>' class="table table-hover">
@@ -350,7 +350,7 @@
       </h2>
       <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
         <div class="accordion-body">
-          <% @output_name=@source.j2000_name.gsub('+','_').gsub('-','_')+"_obslog"%>
+          <% @output_name=@source.j2000_name+"_obslog"%>
           <button id="export_button2" class="btn btn-success" data-table='export_<%=@output_name%>'>Export to CSV File</button>
           <p></p>
           <table id='export_<%=@output_name%>' class="table table-hover">
