@@ -25,7 +25,9 @@ from bs4 import BeautifulSoup
 
 url_new = 'https://gcn.nasa.gov/circulars'
 
-urls=[url_new]
+urls=[]
+for i in range(1):
+    urls.append(f"https://gcn.nasa.gov/circulars?page={i}&limit=1000&view=index")
 
 #returns nth number contained in a string (line)
 def extract_number(line,n):
@@ -82,7 +84,7 @@ def getNeutrinoInfo(urls):
                 
                 #load information about IceCube Event
                 ic_html_link = link.get("href")
-                gcn_nr = ic_html_link.split("/")[-1]
+                gcn_nr = ic_html_link.split("?")[0].split("/")[-1]
                 try: 
                     driver.get("https://gcn.nasa.gov"+ic_html_link)
                     ic_html=driver.page_source
@@ -134,11 +136,11 @@ for ic_event in ic_inf:
     if int(gcn_nr) in gcn_list_in_db:
         pass
     else:
-        df=df.append(pd.DataFrame([ic_event],columns=["IC Name","GCN_nr","Date","Time (UTC)",
+        df= pd.concat([df,pd.DataFrame([ic_event],columns=["IC Name","GCN_nr","Date","Time (UTC)",
                     "RA","Ra_err_plus","Ra_err_minus",
-                    "Dec","Dec_err_plus","Dec_err_minus","GCN_link"]),ignore_index=True)
+                    "Dec","Dec_err_plus","Dec_err_minus","GCN_link"])],ignore_index=True)
 
-#df.to_csv("GCN_circular_neutrinos.csv",index=False)
+df.to_csv("GCN_circular_neutrinos.csv",index=False)
 
 #reload and sort it
 df=pd.DataFrame(data=pd.read_csv("GCN_circular_neutrinos.csv"))
@@ -160,7 +162,7 @@ print(len(df_neutrinos))
 
 
 #import VLBI data and reformat RA/Dec
-df_VLBI = pd.DataFrame(data=pd.read_table('VLBI_RFC_2022a.txt', delim_whitespace=True,dtype={'DecD':str}))
+df_VLBI = pd.DataFrame(data=pd.read_table('VLBI_RFC_2025a.txt', delim_whitespace=True,dtype={'DecD':str}))
 df_VLBI["ra"]=df_VLBI["RAh"].astype(str)+":"+df_VLBI["RAm"].astype(str)+":"+df_VLBI["RAs"].astype(str)
 df_VLBI["decl"]=df_VLBI["DecD"].astype(str)+":"+df_VLBI["Decm"].astype(str)+":"+df_VLBI["Decs"].astype(str)
 

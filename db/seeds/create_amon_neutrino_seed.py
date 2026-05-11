@@ -36,7 +36,7 @@ df.to_csv('AMON_Neutrino_Alerts_rev0.csv')
 
 
 #import VLBI data and reformat RA/Dec
-df_VLBI = pd.DataFrame(data=pd.read_table('VLBI_RFC_2022a.txt', delim_whitespace=True,dtype = {'DecD': 'str'}))
+df_VLBI = pd.DataFrame(data=pd.read_table('VLBI_RFC_2025a.txt', delim_whitespace=True,dtype = {'DecD': 'str'}))
 df_VLBI["ra"]=df_VLBI["RAh"].astype(str)+":"+df_VLBI["RAm"].astype(str)+":"+df_VLBI["RAs"].astype(str)
 df_VLBI["decl"]=df_VLBI["DecD"].astype(str)+":"+df_VLBI["Decm"].astype(str)+":"+df_VLBI["Decs"].astype(str)
 
@@ -46,7 +46,7 @@ obj_VLBI = SkyCoord(df_VLBI["ra"], df_VLBI["decl"], frame="icrs",unit=(u.hourang
 df_VLBI["ra"]=obj_VLBI.ra.deg
 df_VLBI["decl"]=obj_VLBI.dec.deg
 
-df_IC=pd.read_csv("AMON_Neutrino_Alerts.csv",header=0)
+df_IC=pd.read_csv("AMON_Neutrino_Alerts_rev0.csv",header=0)
 obj_IC = SkyCoord(df_IC["RA [deg]"], df_IC["Dec [deg]"], frame="icrs",unit=(u.deg, u.deg))
 
 
