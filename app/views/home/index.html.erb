@@ -7,10 +7,10 @@
     <div class="col-md-3">
     </div>
     <div class="col-md-6">
-      <%= image_tag("telamon_logo", class: "img-fluid", width: "50%") %>
+      <%= image_tag("telamon_logo", class: "img-fluid", width: "50%", loading: "lazy") %>
     </br>
     </br>
-      <%= image_tag("telescope", class: "img-fluid") %>      
+      <%= image_tag("telescope", class: "img-fluid", loading: "lazy") %>      
     </div>
     <div class="col-md-3">
     </div>
@@ -35,7 +35,7 @@
 
 
 
-<%if user_signed_in? %>
+<%if user_signed_in? && @latest_epoch %>
 <br/>
 <!-- Latest news section -->
 <div class="card">
@@ -43,32 +43,28 @@
     Latest news
   </div>
   <div class="card-body">
-    <h5 class="card-title">Last observation on <%= @epoches.order("date").reverse.first.date %>:</h5>
+    <h5 class="card-title">Last observation on <%= @latest_epoch.date %>:</h5>
 
     <!-- checking for surprising changes in most recent epoch -->
-    <% latest_epoch = @epoches.order("date").reverse.first %>
-    <% latest_epoch.sources.distinct.each do |source| %>
+    <% (@news_sources || []).each do |item| %>
+      <% source = item[:source] %>
+      <% epoch_before = item[:epoch_before] %>
 
-    	<% epoch_before = source.epoches.distinct.order("date").reverse.second %>
+      <% aver14=item[:aver14].to_f %>
+      <% aver14_before=item[:aver14_before].to_f %>
 
-    	<% if(epoch_before != nil) %>
+      <% aver7=item[:aver7].to_f %>
+      <% aver7_before=item[:aver7_before].to_f %>
 
-        <% aver14=source.aver(19,25,latest_epoch.date).to_f %>        
-        <% aver14_before=source.aver(19,25,epoch_before.date).to_f %>
+      <% if (aver7==0 or aver7_before==0) %>
+        <% aver7=1.0 %>
+        <% aver7_before=1.0 %>
+      <% end %>
 
-
-        <% aver7=source.aver(36,44,latest_epoch.date).to_f %>        
-        <% aver7_before=source.aver(36,44,epoch_before.date).to_f %>
-
-        <% if (aver7==0 or aver7_before==0) %>
-          <% aver7=1.0 %>
-          <% aver7_before=1.0 %>
-        <% end %>
-
-        <% if (aver14==0 or aver14_before==0) %>
-          <% aver14=1.0 %>
-          <% aver14_before=1.0 %>
-        <% end %>
+      <% if (aver14==0 or aver14_before==0) %>
+        <% aver14=1.0 %>
+        <% aver14_before=1.0 %>
+      <% end %>
 
         <% if aver14>1.1*aver14_before and aver7>1.1*aver7_before%>
           <%= image_tag("arrow_up", class: "img-fluid", width: "1.5%", style: "opacity:"+(((aver7+aver14) / (aver7_before+aver14_before) - 1)*2).to_s+";") %> <%= link_to source.j2000_name, source %> increased by <%= (((aver14+aver7) / (aver14_before+aver7_before) - 1)*100).round.to_s%>%  at 7mm and 14mm compared to last detection on <%= epoch_before.date %> <br/>
@@ -91,10 +87,8 @@
             <%= image_tag("arrow_down", class: "img-fluid", width: "1.5%", style: "opacity:"+((aver7_before / aver7 - 1)*2).to_s+";") %> <%= link_to source.j2000_name, source %> decreased by <%= ((aver7_before / aver7 - 1)*100).round.to_s%>% at 7mm compared to last detection on <%= epoch_before.date %> <br/>
           <% end %>
         <% end %>
-
-      <%end%>
-    <%end%>
+      <% end %>
+    </div>
   </div>
-</div>
 
 <%end%>

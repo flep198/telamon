@@ -261,7 +261,7 @@
               <%print_check=false%>
             <% end %>
           <%end%>
-          <% if source.results.all.length == 0 %>
+          <% if !@source_ids_with_data.include?(source.id) %>
             <%print_check=false%>
           <% end %>
         <% end %>

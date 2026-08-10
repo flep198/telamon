@@ -28,9 +28,9 @@
   <tbody>
     <% @results.order('mjd ASC').each do |result| %>
       <tr>
-        <td><%= Source.where(id: result.source_id).first.j2000_name %></td>
-        <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>
-        <td><%= Epoch.where(id: result.epoch_id).first.date %></td>
+        <td><%= result.source.j2000_name %></td>
+        <td><%= result.frequency.freq_ghz %></td>
+        <td><%= result.epoch.date %></td>
         <td><%= result.value_jy %></td>
         <td><%= result.error_jy %></td>
         <td><%= result.mjd %></td>

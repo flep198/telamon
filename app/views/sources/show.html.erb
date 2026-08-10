@@ -1,3 +1,6 @@
+<% content_for :head_scripts do %>
+  <script src="https://cdn.plot.ly/plotly-2.0.0.min.js"></script>
+<% end %>
 <!-- javascript needed for plots -->
 <%= render 'create_plots', source: @source %>
 <div class="row">
@@ -265,7 +268,7 @@
             <tbody>
               <% @source.average_results.order(:mjd).reverse_order.each do |result| %>
                 <tr>
-                  <td><%= Epoch.where(id: result.epoch_id).first.date %></td>
+                  <td><%= result.epoch.date %></td>
                   <td><%= result.band.gsub("mm","") %></td>
                   <td><%= sprintf("%.4f",result.value_jy) %></td>
                   <td><%= sprintf("%.4f",result.error_jy) %></td>
@@ -317,8 +320,8 @@
             <tbody>
               <% @source.results.order(:mjd).reverse_order.each do |result| %>
                 <tr>
-                  <td><%= Epoch.where(id: result.epoch_id).first.date %></td>
-                  <td><%= Frequency.where(id: result.frequency_id).first.freq_ghz %></td>
+                  <td><%= result.epoch.date %></td>
+                  <td><%= result.frequency.freq_ghz %></td>
                   <td><%= result.value_jy %></td>
                   <td><%= result.error_jy %></td>
                   <td><%= result.mjd %></td>
@@ -369,8 +372,8 @@
             <tbody>
               <% @source.observations.order(:mjd).reverse_order.each do |obs| %>
                 <tr>
-                  <td><%= Epoch.where(id: obs.epoch_id).first.date %></td>
-                  <td><%= Frequency.where(id: obs.frequency_id).first.freq_ghz %></td>
+                  <td><%= obs.epoch.date %></td>
+                  <td><%= obs.frequency.freq_ghz %></td>
                   <td><%= obs.mjd %></td>
                   <td><%= obs.scan_nr %></td>
                   <td><%= obs.n_scans %></td>

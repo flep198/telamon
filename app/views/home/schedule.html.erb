@@ -25,6 +25,44 @@ window.onload=function(){
 
 <h1>Observing Status</h1>
 
+<% sources = Source.all.includes(:source_categories).order("j2000_name") %>
+<% obs_by_source = Observation.where(source_id: sources.map(&:id)).includes(:epoch).group_by(&:source_id) %>
+<% @status_by_id = sources.each_with_object({}) do |source, status|
+  obs = obs_by_source[source.id] || []
+  dates = obs.map { |ob| ob.epoch.date }
+  mjds = obs.map(&:mjd)
+  num_obs = dates.uniq.length
+  first_mjd = mjds.min
+  last_mjd = mjds.max
+  last_obs = dates.max
+  days_since = last_mjd ? (Date.today.mjd - last_mjd) : nil
+  show_source = 0
+  overdue_factor = 0
+  if last_mjd
+    source.source_categories.each do |scat|
+      if ['Sample 1','Sample 2','Sample 3','Sample 4'].include? scat.name
+        show_source = 1
+        overdue_factor = days_since/21
+      elsif ['Neutrino Follow-Up'].include? scat.name
+        show_source = 2
+        overdue_factor = days_since/50
+      elsif ['Neutrino Look-Up'].include? scat.name
+        if num_obs<2 || (last_mjd-first_mjd)<180
+          show_source = 3
+          overdue_factor = days_since/180
+        end
+      elsif ['Extra Neutrino-Source'].include? scat.name
+        show_source = 4
+        overdue_factor = days_since/30
+      end
+      if ['Dropped'].include? scat.name
+        show_source = 0
+        overdue_factor = 0
+      end
+    end
+  end
+  status[source.id] = [num_obs, last_obs, days_since, show_source, overdue_factor]
+end %>
 
 <h2> Main TeV-Sample </h2>
 <p> (should be observed every 21 days) </p>
@@ -40,8 +78,8 @@ window.onload=function(){
     </tr>
   </thead>
   <tbody>
-<% Source.all.order("j2000_name").each do |source| %>
-      <% output = source.observing_status %>
+<% sources.each do |source| %>
+      <% output = @status_by_id[source.id] %>
       <% if output[3]==1 %>
       <tr>
         <td><%= link_to source.j2000_name , source%></td>
@@ -72,8 +110,8 @@ window.onload=function(){
   </thead>
   <tbody>
 
-  <% Source.all.order("j2000_name").each do |source| %>
-        <% output = source.observing_status %>
+  <% sources.each do |source| %>
+        <% output = @status_by_id[source.id] %>
         <% if output[3]==4 %>
         <tr>
           <td><%= link_to source.j2000_name , source%></td>
@@ -104,8 +142,8 @@ window.onload=function(){
   </thead>
   <tbody>
 
-  <% Source.all.order("j2000_name").each do |source| %>
-        <% output = source.observing_status %>
+  <% sources.each do |source| %>
+        <% output = @status_by_id[source.id] %>
         <% if output[3]==2 %>
         <tr>
           <td><%= link_to source.j2000_name , source%></td>
@@ -136,8 +174,8 @@ window.onload=function(){
   </thead>
   <tbody>
 
-  <% Source.all.order("j2000_name").each do |source| %>
-        <% output = source.observing_status %>
+  <% sources.each do |source| %>
+        <% output = @status_by_id[source.id] %>
         <% if output[3]==3 %>
         <tr>
           <td><%= link_to source.j2000_name , source%></td>

@@ -3,7 +3,8 @@ class SourcesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   # GET /sources or /sources.json
   def index
-    @sources = Source.all
+    @sources = Source.includes(:source_categories, :circular_neutrinos)
+    @source_ids_with_data = Result.distinct.pluck(:source_id)
   end
 
   # GET /sources/1 or /sources/1.json
@@ -75,7 +76,15 @@ class SourcesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_source
-      @source = Source.friendly.find_by_slug(params[:slug])
+      @source = Source.friendly.includes(
+        :source_categories,
+        :circular_neutrinos,
+        :neutrino_alerts,
+        :atca_results,
+        average_results: :epoch,
+        results: [:epoch, :frequency],
+        observations: [:epoch, :frequency]
+      ).find_by_slug(params[:slug])
     end
 
     # Only allow a list of trusted parameters through.

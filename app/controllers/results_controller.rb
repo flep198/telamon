@@ -4,7 +4,7 @@ class ResultsController < ApplicationController
 
   # GET /results or /results.json
   def index
-    @results = Result.all
+    @results = Result.includes(:source, :frequency, :epoch).order('mjd ASC')
   end
 
   # GET /results/1 or /results/1.json
@@ -66,6 +66,9 @@ class ResultsController < ApplicationController
     @frequency_id = params[:result][:frequency_id]
     @data_files = params[:data_files]
 
+    # lookup table of existing scan numbers for this epoch+frequency (to prevent double entries / overwrite)
+    @existing_entries = Result.where(:epoch_id => @epoch_id, :frequency_id => @frequency_id).pluck(:scan_nr, :id).to_h
+
     @data_files.each do |file|
 
       #find source id from filename
@@ -103,11 +106,11 @@ class ResultsController < ApplicationController
           @elevation = @data[7]   
 
           #creates new database entry only if the scan is not already in the database (to prevent double entries), otherwise old entry is overwritten
-          if not Result.exists?(:scan_nr => @scan_nr, :epoch_id => @epoch_id, :frequency_id => @frequency_id)
-            Result.create(:scan_nr => @scan_nr, :value_jy => @value_jy, :error_jy => @error_jy, :mjd => @mjd, :elevation => @elevation, :epoch_id => @epoch_id, :frequency_id => @frequency_id, :source_id => @source_id)
+          if @existing_entries[@scan_nr].nil?
+            new_result = Result.create(:scan_nr => @scan_nr, :value_jy => @value_jy, :error_jy => @error_jy, :mjd => @mjd, :elevation => @elevation, :epoch_id => @epoch_id, :frequency_id => @frequency_id, :source_id => @source_id)
+            @existing_entries[@scan_nr] = new_result.id
           else #overwrite entry
-            entry_id = Result.where(:scan_nr => @scan_nr, :epoch_id => @epoch_id, :frequency_id => @frequency_id).first.id
-            Result.update(entry_id,:value_jy => @value_jy, :error_jy => @error_jy, :mjd => @mjd, :elevation => @elevation)
+            Result.update(@existing_entries[@scan_nr],:value_jy => @value_jy, :error_jy => @error_jy, :mjd => @mjd, :elevation => @elevation)
           end
         end
       end

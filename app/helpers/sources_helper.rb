@@ -21,18 +21,25 @@ module SourcesHelper
         return decimal_year
     end
 	
-    def ReturnAverageLightCurve source, band
+    def ReturnAverageLightCurve source, band, rows_by_source: nil
 
         mjd = Array.new
         fluxes = Array.new
         errors = Array.new
 
-        @aver_results=AverageResult.all.where(:band => band, :source => source)
-
-        @aver_results.order(:mjd).each do |result|
-            mjd.push(result.mjd)
-            fluxes.push(result.value_jy)
-            errors.push(result.error_jy)
+        if rows_by_source
+            rows = (rows_by_source[source.id] || []).select { |r| r[1] == band }.sort_by { |r| r[2] }
+            rows.each do |r|
+                mjd.push(r[2])
+                fluxes.push(r[3])
+                errors.push(r[4])
+            end
+        else
+            source.average_results.where(:band => band).order(:mjd).each do |result|
+                mjd.push(result.mjd)
+                fluxes.push(result.value_jy)
+                errors.push(result.error_jy)
+            end
         end
 
         return mjd, fluxes, errors
@@ -74,17 +81,28 @@ module SourcesHelper
         return mjd,evpa,evpa_err
     end
 
-    def getSpectralIndices source
+    def getSpectralIndices source, results_by_epoch: nil, freq_by_id: nil, epoch_by_id: nil
 		slopes = Array.new
 		slope_errs = Array.new
 		mjds = Array.new
 
-		source.epoches.distinct.order(:date).each do |epoch|
+		freq_by_id ||= Frequency.all.index_by(&:id)
+
+		epoches = if results_by_epoch && epoch_by_id
+			results_by_epoch.keys.map { |id| epoch_by_id[id] }.compact.sort_by(&:date)
+		else
+			source.epoches.distinct.order(:date)
+		end
+
+		epoches.each do |epoch|
     		
     		#Import Data
     		@epoch_id=epoch.id
-    		@data = Result.where(:source_id => source.id, :epoch_id => @epoch_id).map { |r| [Frequency.find(r.frequency_id).freq_ghz,r.value_jy,r.error_jy,r.mjd]}
-    		@data = @data.sort_by(&:first)
+    		@data = if results_by_epoch
+    			(results_by_epoch[@epoch_id] || []).map { |r| [freq_by_id[r.frequency_id].freq_ghz,r.value_jy,r.error_jy,r.mjd] }.sort_by(&:first)
+    		else
+    			Result.where(:source_id => source.id, :epoch_id => @epoch_id).map { |r| [freq_by_id[r.frequency_id].freq_ghz,r.value_jy,r.error_jy,r.mjd] }.sort_by(&:first)
+    		end
 
     		x = @data.map{|r| Math.log(r[0])}
   			y = @data.map{|r| Math.log(r[1])}
@@ -363,17 +381,18 @@ module SourcesHelper
     	return mjds, fluxes, flux_errors, epoch_ids
     end 
 
-    def getAverageATCALightCurve source, low_freq, high_freq
+    def getAverageATCALightCurve source, low_freq, high_freq, atca_results: nil
         mjds = Array.new
         fluxes = Array.new
         flux_errors = Array.new
 
-        epoches=AtcaResult.where(:source_id => source.id).map {|r| r.epoch_date}
+        atca_results ||= source.atca_results
+        band_results = atca_results.select { |r| r.frequency_ghz && r.frequency_ghz >= low_freq && r.frequency_ghz <= high_freq }
 
-        epoches.uniq.each do |epoch|
+        band_results.group_by(&:epoch_date).each do |epoch, epoch_results|
 
             #find data to calculate average from
-            @data = AtcaResult.where(:source_id => source.id, :epoch_date => epoch, frequency_ghz: low_freq..high_freq).map {|r| [r.frequency_ghz,r.value_jy,r.error_jy,r.mjd]}
+            @data = epoch_results.map {|r| [r.frequency_ghz,r.value_jy,r.error_jy,r.mjd]}
 
             x = @data.map{|r| r[0]}
             y = @data.map{|r| r[1]}

@@ -1,3 +1,6 @@
+<% content_for :head_scripts do %>
+  <script src="https://cdn.plot.ly/plotly-2.0.0.min.js"></script>
+<% end %>
 <% if user_signed_in? %>
 
 <%= render 'plot_all_lightcurves', sources_to_plot: Source.all %>

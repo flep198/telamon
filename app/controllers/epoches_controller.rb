@@ -64,7 +64,10 @@ class EpochesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_epoch
-      @epoch = Epoch.friendly.find_by_slug(params[:slug])
+      @epoch = Epoch.friendly.includes(
+        results: [:source, :frequency],
+        observations: [:source, :frequency]
+      ).find_by_slug(params[:slug])
     end
 
     # Only allow a list of trusted parameters through.
