@@ -104,7 +104,7 @@
       <div class="card-body d-flex align-items-center justify-content-center">
         <!-- Aladin Lite View -->
         <div id="aladin-lite-div" style="width:300px;height:300px;"></div>
-        <script type="text/javascript" src="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="https://aladin.cds.unistra.fr/AladinLite/api/v3/latest/aladin.js" charset="utf-8"></script>
         <script type="text/javascript">
           <% if @neutrino_alert.ra != nil and @neutrino_alert.dec != nil %>
             var aladin = A.aladin('#aladin-lite-div', {survey: "P/DSS2/color", fov:1/30, target: "<%=@neutrino_alert.ra + " " + @neutrino_alert.dec%>"});
