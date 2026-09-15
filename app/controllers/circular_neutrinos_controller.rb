@@ -72,6 +72,6 @@ class CircularNeutrinosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def circular_neutrino_params
-      params.require(:circular_neutrino).permit(:name, :date,:time, :ra, :dec,:ra_err_plus,:ra_err_minus,:dec_err_plus,:dec_err_minus,:url, :source_ids,:numrfc, :neutrino_alert_ids)
+      params.require(:circular_neutrino).permit(:name, :date,:time, :ra, :dec,:ra_err_plus,:ra_err_minus,:dec_err_plus,:dec_err_minus,:url, :source_ids,:numrfc, :neutrino_alert_ids,:sky_plot)
     end
 end

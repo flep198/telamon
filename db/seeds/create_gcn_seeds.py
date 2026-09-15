@@ -16,6 +16,14 @@ import sys
 from selenium import webdriver 
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from bs4 import BeautifulSoup
+from pathlib import Path
+
+# local helpers for the TELAMON sky-region plots
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from neutrino_sky_plots import build_plot, load_rfc_catalog  # noqa: E402
+
+PLOT_DIR = Path(__file__).resolve().parents[2] / "public" / "neutrino_plots"
+_RFC_SOURCES, _RFC_VERSION = load_rfc_catalog("VLBI_RFC_2025a.txt")
 
 #url1 = 'https://gcn.gsfc.nasa.gov/gcn3_archive.html'
 #url2 = 'https://gcn.gsfc.nasa.gov/gcn3_arch_old145.html'
@@ -199,13 +207,24 @@ with open('neutrino_seeds_gcn.rb',"w") as f:
         for source in query_out:
             field_sources=field_sources+"'"+str(source).replace("J","")+"',"
         field_sources=field_sources[:-1]
-
-
         neutrino_name="IC"+str(df_neutrinos["IC Name"][i])
         date=str(df_neutrinos["Date"][i])
         time=str(df_neutrinos["Time (UTC)"][i])
         gcn_nr=str(df_neutrinos["GCN_nr"][i])
-        
+
+        # generate the sky-region plot (offline PNG); include the AMON alert
+        # when one already exists so the plot shows all three regions.
+        try:
+            _ev={"name":neutrino_name,"gcn":{"ra":ra,"dec":dec,
+                 "ra_err_plus":ra_err[0],"ra_err_minus":ra_err[1],
+                 "dec_err_plus":dec_err[0],"dec_err_minus":dec_err[1]}}
+            _out=PLOT_DIR/(neutrino_name+".png")
+            if not _out.exists():
+                build_plot(_ev,_out,rfc_sources=_RFC_SOURCES,rfc_version=_RFC_VERSION)
+            _sky=", sky_plot: '/neutrino_plots/"+neutrino_name+".png'"
+        except Exception as e:
+            print("# WARNING: plot generation failed for "+neutrino_name+": "+str(e),file=sys.stderr)
+            _sky=""
         print("@"+neutrino_name+"=CircularNeutrino.where(name: '"+neutrino_name+"').first_or_create")
         print("@"+neutrino_name+".update(date: '"+date+
               "', time: '"+time+
@@ -217,5 +236,5 @@ with open('neutrino_seeds_gcn.rb',"w") as f:
               "', dec_err_minus: '" + str(dec_err[1])+
               "', url: 'https://gcn.gsfc.nasa.gov/gcn3/" + gcn_nr + ".gcn3', num_rfc: "+
               str(int(np.count_nonzero(query_out)))+
-              ", sources: Source.where(j2000_name: ["+field_sources+"]), neutrino_alerts: NeutrinoAlert.where(name: '"+neutrino_name+"')"")")
+              ", sources: Source.where(j2000_name: ["+field_sources+"]), neutrino_alerts: NeutrinoAlert.where(name: '"+neutrino_name+"')"+_sky+")")
 sys.stdout=original_stdout

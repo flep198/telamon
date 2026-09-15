@@ -16,6 +16,14 @@ from joblib import Parallel, delayed
 from tqdm import tqdm
 import sys
 import requests
+from pathlib import Path
+
+# local helpers for the TELAMON sky-region plots
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from neutrino_sky_plots import build_plot, load_rfc_catalog  # noqa: E402
+
+PLOT_DIR = Path(__file__).resolve().parents[2] / "public" / "neutrino_plots"
+_RFC_SOURCES, _RFC_VERSION = load_rfc_catalog("VLBI_RFC_2025a.txt")
 
 #get neutrino alerts from AMON
 url = 'https://gcn.gsfc.nasa.gov/amon_icecube_gold_bronze_events.html'
@@ -98,6 +106,19 @@ with open('neutrino_seeds_amon.rb',"w") as f:
         for source in output_RFC[i][1]:
             field_sources=field_sources+"'"+str(source).replace("J","")+"',"
         field_sources=field_sources[:-1]
+
+        # generate the sky-region plot (offline PNG)
+        try:
+            _ev={"name":neutrino_name,"notice_type":neutrino["NoticeType"],
+                 "amon":{"ra":float(neutrino["RA [deg]"]),"dec":float(neutrino["Dec [deg]"]),
+                         "radius90":float(neutrino["Error90 [arcmin]"]),"radius50":float(neutrino["Error50 [arcmin]"])}}
+            _out=PLOT_DIR/(neutrino_name+".png")
+            if not _out.exists():
+                build_plot(_ev,_out,rfc_sources=_RFC_SOURCES,rfc_version=_RFC_VERSION)
+            _sky=", sky_plot: '/neutrino_plots/"+neutrino_name+".png'"
+        except Exception as e:
+            print("# WARNING: plot generation failed for "+neutrino_name+": "+str(e),file=sys.stderr)
+            _sky=""
         print("@"+neutrino_name+"=NeutrinoAlert.where(name: '"+neutrino_name+"').first_or_create")
         print("@"+neutrino_name+".update(date: '"+neutrino["Date"]+
               "', time: '"+ str(neutrino["Time UT"])+
@@ -110,6 +131,6 @@ with open('neutrino_seeds_amon.rb',"w") as f:
               ", noticetype: '"+ neutrino["NoticeType"]+
               "', url: 'https://gcn.gsfc.nasa.gov/notices_amon_g_b/" + neutrino["RunNum_EventNum"]+ ".amon', numrfc: "+
               str(int(np.count_nonzero(output_RFC[i][1])))+
-              ", sources: Source.where(j2000_name: ["+field_sources+"]))")
+              ", sources: Source.where(j2000_name: ["+field_sources+"])"+_sky+")")
 
 sys.stdout=original_stdout

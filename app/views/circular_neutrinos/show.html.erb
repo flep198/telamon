@@ -91,7 +91,6 @@
 <% content_for :head_scripts do %>
   <script src="https://cdn.plot.ly/plotly-2.0.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
-  <link rel="stylesheet" href="https://aladin.cds.unistra.fr/AladinLite/api/v2/latest/aladin.min.css" />
 <% end %>
 <% if user_signed_in? %>
                 <div class="form-check form-switch form-check-inline">
@@ -108,19 +107,14 @@
   <div class="col-md-4">
     <div class="card h-100">
       <div class="card-header">
-        Aladin Lite View
+        Sky Region
       </div>
       <div class="card-body d-flex align-items-center justify-content-center">
-        <!-- Aladin Lite View -->
-        <div id="aladin-lite-div" style="width:300px;height:300px;"></div>
-        <script type="text/javascript" src="https://aladin.cds.unistra.fr/AladinLite/api/v2/latest/aladin.min.js" charset="utf-8"></script>
-        <script type="text/javascript">
-          <% if @circular_neutrino.ra != nil and @circular_neutrino.dec != nil %>
-            var aladin = A.aladin('#aladin-lite-div', {survey: "P/DSS2/color", fov:1/30, target: "<%=@circular_neutrino.ra + " " + @circular_neutrino.dec%>"});
-          <% else %>
-            var aladin = A.aladin('#aladin-lite-div', {survey: "P/DSS2/color", fov:1/30, target: "<%=@circular_neutrino.name%>"});
-          <% end %>
-        </script>
+        <% if @circular_neutrino.sky_plot.present? %>
+          <%= link_to image_tag(@circular_neutrino.sky_plot, class: "img-fluid", alt: @circular_neutrino.name), @circular_neutrino.sky_plot, target: "_blank", rel: "noopener" %>
+        <% else %>
+          <p class="text-muted mb-0">No sky plot available for this circular.</p>
+        <% end %>
       </div>
     </div>
   </div>
