@@ -17,6 +17,12 @@ from tqdm import tqdm
 import sys
 import requests
 from pathlib import Path
+import argparse
+
+_ap = argparse.ArgumentParser(description="Regenerate the AMON neutrino seed file.")
+_ap.add_argument("--no-plots", action="store_true",
+                 help="skip sky-plot generation (seeds reference existing PNGs only)")
+_ARGS = _ap.parse_args()
 
 # local helpers for the TELAMON sky-region plots
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -71,7 +77,7 @@ def searchRegion(skycoord_of_points,names_of_points,radius_to_search,names_of_se
                 found_sources.append(names_of_search[j])
         return [name_of_point,np.array(found_sources)]
     
-    num_cores=multiprocessing.cpu_count()
+    num_cores=min(multiprocessing.cpu_count(),8)
     inputs=tqdm(range(len(skycoord_of_points)))
 
     if __name__ == "__main__":
@@ -86,11 +92,12 @@ output_RFC=searchRegion(obj_IC,df_IC.index,df_IC["Error90 [arcmin]"],df_VLBI["J2
 
 original_stdout=sys.stdout
 
+# progress goes to stderr so it stays visible even though the seed output is
+# written to the .rb file via the stdout redirect below.
 with open('neutrino_seeds_amon.rb',"w") as f:
     sys.stdout=f
-    
 
-    for i in range(len(output_RFC)):
+    for i in tqdm(range(len(output_RFC)), desc="plots/seeds", file=sys.stderr):
         neutrino=df_IC.iloc[output_RFC[i][0]]
 
         #find neutrino name
@@ -107,18 +114,20 @@ with open('neutrino_seeds_amon.rb',"w") as f:
             field_sources=field_sources+"'"+str(source).replace("J","")+"',"
         field_sources=field_sources[:-1]
 
-        # generate the sky-region plot (offline PNG)
-        try:
-            _ev={"name":neutrino_name,"notice_type":neutrino["NoticeType"],
-                 "amon":{"ra":float(neutrino["RA [deg]"]),"dec":float(neutrino["Dec [deg]"]),
-                         "radius90":float(neutrino["Error90 [arcmin]"]),"radius50":float(neutrino["Error50 [arcmin]"])}}
-            _out=PLOT_DIR/(neutrino_name+".png")
-            if not _out.exists():
-                build_plot(_ev,_out,rfc_sources=_RFC_SOURCES,rfc_version=_RFC_VERSION)
-            _sky=", sky_plot: '/neutrino_plots/"+neutrino_name+".png'"
-        except Exception as e:
-            print("# WARNING: plot generation failed for "+neutrino_name+": "+str(e),file=sys.stderr)
-            _sky=""
+        # generate the sky-region plot (offline PNG) unless --no-plots
+        _sky = ""
+        if not _ARGS.no_plots:
+            try:
+                _ev={"name":neutrino_name,"notice_type":neutrino["NoticeType"],
+                     "amon":{"ra":float(neutrino["RA [deg]"]),"dec":float(neutrino["Dec [deg]"]),
+                             "radius90":float(neutrino["Error90 [arcmin]"]),"radius50":float(neutrino["Error50 [arcmin]"])}}
+                _out=PLOT_DIR/(neutrino_name+".png")
+                if not _out.exists():
+                    build_plot(_ev,_out,rfc_sources=_RFC_SOURCES,rfc_version=_RFC_VERSION)
+                _sky=", sky_plot: '/neutrino_plots/"+neutrino_name+".png'"
+            except Exception as e:
+                print("# WARNING: plot generation failed for "+neutrino_name+": "+str(e),file=sys.stderr)
+                _sky=""
         print("@"+neutrino_name+"=NeutrinoAlert.where(name: '"+neutrino_name+"').first_or_create")
         print("@"+neutrino_name+".update(date: '"+neutrino["Date"]+
               "', time: '"+ str(neutrino["Time UT"])+

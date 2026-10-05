@@ -30,6 +30,7 @@ Usage:
         --gcn-dec-plus 0.46 --gcn-dec-minus -0.47
 """
 
+import math
 import os
 import re
 import sys
@@ -99,6 +100,10 @@ def catalog_version(path):
                     return m.group(1)
     except Exception:
         pass
+    # fall back to a release tag embedded in the file name, e.g. VLBI_RFC_2025a.txt
+    m = re.search(r"rfc_\d{4}[a-h]", str(path), re.IGNORECASE)
+    if m:
+        return m.group(0).lower()
     return None
 
 
@@ -168,6 +173,15 @@ CUTOUT_URLS = {
     "dr3":  "https://lofar-surveys.org/dr3-cutout.fits",
 }
 
+# The LoTSS cutout service rejects requests larger than 120 arcmin with an
+# HTML error page (verified empirically). Large fields are therefore tiled
+# into overlapping sub-cutouts that are then stitched into a single mosaic.
+MAX_CUTOUT_SIZE_ARCMIN = 120.0
+TILE_SIZE_ARCMIN = 120.0         # per-tile request size (== the service cap)
+TILE_OVERLAP_ARCMIN = 6.0        # tile-to-tile overlap so seams are covered
+MAX_MOSAIC_TILES = 64            # hard stop on the number of tiles (per-axis sqrt=8)
+MAX_MOSAIC_AXIS_PX = 9600        # downsample the mosaic above this axis length
+
 
 def _format_sexagesimal(degrees, out_unit):
     ang = Angle(degrees, unit=u.deg)
@@ -175,8 +189,13 @@ def _format_sexagesimal(degrees, out_unit):
 
 
 def fetch_cutout(ra_deg, dec_deg, fov_deg, output_path, dr="dr3",
-                 timeout=300, verbose=True):
-    """Download a cutout from the LoTSS cutout service (raises on failure)."""
+                 timeout=120, verbose=True):
+    """Download a cutout from the LoTSS cutout service (raises on failure).
+
+    timeout is a hard wall-clock budget for the whole download, so a stalled
+    server can never hang this script indefinitely. The cutout is streamed in
+    chunks and aborted (TimeoutError) once the deadline passes.
+    """
     ra_str = _format_sexagesimal(ra_deg, u.hourangle)
     dec_str = _format_sexagesimal(dec_deg, u.deg)
     pos = f"{ra_str} {dec_str}"
@@ -184,23 +203,162 @@ def fetch_cutout(ra_deg, dec_deg, fov_deg, output_path, dr="dr3",
     params = {"pos": pos, "size": f"{size_arcmin:.3f}"}
     if verbose:
         print(f"    LoTSS {dr} cutout: pos={pos} size={size_arcmin:.1f}'")
-    resp = requests.get(CUTOUT_URLS[dr], params=params, timeout=timeout)
+    # per-connect/read timeout is a fraction of the total; the deadline below
+    # catches servers that stall or trickle data indefinitely.
+    sock_timeout = max(10.0, timeout / 4.0)
+    deadline = time.monotonic() + timeout
+    resp = requests.get(CUTOUT_URLS[dr], params=params,
+                        timeout=sock_timeout, stream=True)
     resp.raise_for_status()
-    if ("image" in resp.headers.get("Content-Type", "")
-            or not resp.content.startswith(b"SIMPLE")):
+    if "image" in resp.headers.get("Content-Type", ""):
+        resp.close()
+        raise RuntimeError("Cutout service did not return a FITS file.")
+    chunks = []
+    size = 0
+    try:
+        for chunk in resp.iter_content(chunk_size=1 << 16):
+            if time.monotonic() > deadline:
+                raise TimeoutError(f"LoTSS {dr} cutout exceeded {timeout}s budget "
+                                   f"({size / 1e6:.1f} MB read)")
+            if chunk:
+                chunks.append(chunk)
+                size += len(chunk)
+    finally:
+        resp.close()
+    content = b"".join(chunks)
+    if not content.startswith(b"SIMPLE"):
         raise RuntimeError("Cutout service did not return a FITS file.")
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_bytes(resp.content)
+    output_path.write_bytes(content)
     return str(output_path)
 
 
-def fetch_loTSS_cutout(ra_deg, dec_deg, fov_deg, cache_dir=None, verbose=True):
-    """Best-effort LoTSS cutout with on-disk caching. Returns FITS path or None.
+def _pix_scale_from_header(header):
+    """Pixel scale (deg/px) read from a cutout FITS header."""
+    for k1, k2 in (("CDELT2", "CDELT1"), ("CD2_2", "CD1_1"), ("PC2_2", "PC1_1")):
+        v1 = header.get(k2)
+        v2 = header.get(k1)
+        if v1 is not None and v2 is not None:
+            s = max(abs(float(v2)), abs(float(v1)))
+            if s > 0:
+                return s
+    return None
 
-    Tries DR3 first, then DR2. Reuses a cached copy when available.
+
+def _tile_centers(center_ra, center_dec, fov_deg):
+    """Sky positions (RA/Dec deg) of the sub-cutout centres covering fov_deg.
+
+    Tile spacing keeps an overlap between neighbours so the stitched mosaic
+    has no seams. Returns None when the field would need too many tiles.
     """
+    tile_deg = TILE_SIZE_ARCMIN / 60.0
+    spacing_deg = (TILE_SIZE_ARCMIN - TILE_OVERLAP_ARCMIN) / 60.0
+    if fov_deg <= tile_deg:
+        return [(center_ra, center_dec)]
+    n_axis = int(math.ceil((fov_deg - tile_deg) / spacing_deg)) + 1
+    if n_axis * n_axis > MAX_MOSAIC_TILES:
+        return None
+    if n_axis == 1:
+        return [(center_ra, center_dec)]
+    step = (fov_deg - tile_deg) / (n_axis - 1)
+    offsets = [-0.5 * (fov_deg - tile_deg) + step * i for i in range(n_axis)]
+    return [(center_ra + d_ra, center_dec + d_dec)
+            for d_dec in offsets for d_ra in offsets]
+
+
+def _stitch_mosaic(tile_paths, center_ra, center_dec, fov_deg, cache_dir=None):
+    """Stitch overlapping LoTSS cutouts into a single FITS mosaic.
+
+    All tiles share the same north-up RA---SIN projection, so a common output
+    grid at the finest observed pixel scale is filled by nearest-neighbour
+    resampling. The result is cached under  mosaic_<ra>_<dec>_<fov>.fits.
+    """
+    from astropy.io import fits
+    from astropy.wcs import WCS
+
     cache_dir = Path(cache_dir or DEFAULT_CACHE_DIR)
+    out = cache_dir / f"mosaic_{center_ra:.4f}_{center_dec:.4f}_{fov_deg:.2f}.fits"
+    if out.exists():
+        return str(out)
+
+    scale = None
+    bunit = "Jy/beam"
+    for p in tile_paths:
+        with fits.open(p) as hdul:
+            hdr = hdul[0].header
+        s = _pix_scale_from_header(hdr)
+        if s is not None:
+            scale = min(scale, s) if scale else s
+        bunit = hdr.get("BUNIT", bunit) or bunit
+    if scale is None:
+        scale = 0.00041667  # default to the usual 1.5 arcsec/px LoTSS scale
+
+    tile_deg = TILE_SIZE_ARCMIN / 60.0
+    canvas_deg = fov_deg + tile_deg      # edge tiles extend half a tile beyond fov
+    if int(math.ceil(canvas_deg / scale)) > MAX_MOSAIC_AXIS_PX:
+        scale = canvas_deg / MAX_MOSAIC_AXIS_PX
+    n_axis = int(math.ceil(canvas_deg / scale))
+    crpix = (n_axis + 1) / 2.0
+
+    w = WCS(naxis=2)
+    w.wcs.crpix = [crpix, crpix]
+    w.wcs.cdelt = [-scale, scale]
+    w.wcs.crval = [float(center_ra), float(center_dec)]
+    w.wcs.ctype = ["RA---SIN", "DEC--SIN"]
+    hdr_out = w.to_header()
+
+    data_out = np.full((n_axis, n_axis), np.nan, dtype=np.float32)
+    for p in tile_paths:
+        with fits.open(p) as hdul:
+            arr = np.squeeze(np.asarray(hdul[0].data)).astype(np.float32)
+            hdr = hdul[0].header
+        if arr.ndim == 3:
+            arr = arr[0]
+        if arr.ndim != 2:
+            continue
+        w_t = WCS(hdr).celestial
+        ny_t, nx_t = arr.shape
+        for y0 in range(0, ny_t, 512):
+            y1 = min(ny_t, y0 + 512)
+            yv = np.arange(y0, y1, dtype=np.float64)
+            xv = np.arange(nx_t, dtype=np.float64)
+            yy, xx = np.meshgrid(yv, xv, indexing="ij")
+            ra, dec = w_t.all_pix2world(xx, yy, 0)
+            ox, oy = w.all_world2pix(ra, dec, 0)
+            ix = np.rint(ox).astype(np.int64)
+            iy = np.rint(oy).astype(np.int64)
+            chunk = arr[y0:y1]
+            sel = np.isfinite(chunk) & (ix >= 0) & (ix < n_axis) \
+                & (iy >= 0) & (iy < n_axis)
+            if not sel.any():
+                continue
+            dest = data_out[iy[sel], ix[sel]]
+            empty = np.isnan(dest)
+            data_out[iy[sel][empty], ix[sel][empty]] = chunk[sel][empty]
+
+    hdu = fits.PrimaryHDU(data_out)
+    hdr_out.pop("NAXIS", None)
+    hdr_out.pop("NAXIS1", None)
+    hdr_out.pop("NAXIS2", None)
+    hdu.header.update(hdr_out)
+    hdu.header["BUNIT"] = bunit
+    hdu.header.set("CUNIT1", "deg")
+    hdu.header.set("CUNIT2", "deg")
+    hdu.header.set("RADESYS", "ICRS")
+    hdu.header.set("EQUINOX", 2000.0)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    hdu.writeto(out, overwrite=True)
+    return str(out)
+
+
+def _fetch_single_cutout(ra_deg, dec_deg, fov_deg, cache_dir, verbose=True):
+    """Best-effort single LoTSS cutout (fov <= MAX_CUTOUT_SIZE_ARCMIN)."""
+    marker = cache_dir / f"nomap_{ra_deg:.4f}_{dec_deg:.4f}_{fov_deg:.2f}.fail"
+    if marker.exists():
+        if verbose:
+            print(f"    LoTSS cutout: previously failed, skipped ({marker.name})")
+        return None
     for dr in ("dr3", "dr2"):
         out = cache_dir / f"lotss_{dr}_{ra_deg:.4f}_{dec_deg:.4f}_{fov_deg:.2f}.fits"
         if out.exists():
@@ -212,7 +370,49 @@ def fetch_loTSS_cutout(ra_deg, dec_deg, fov_deg, cache_dir=None, verbose=True):
         except Exception as e:
             if verbose:
                 print(f"    LoTSS {dr} cutout failed: {e}")
+    try:
+        marker.parent.mkdir(parents=True, exist_ok=True)
+        marker.write_bytes(b"")
+    except Exception:
+        pass
     return None
+
+
+def fetch_loTSS_cutout(ra_deg, dec_deg, fov_deg, cache_dir=None, verbose=True):
+    """Best-effort LoTSS cutout with on-disk caching. Returns FITS path or None.
+
+    Tries DR3 first, then DR2, for single tiles up to ~2 deg. Larger fields are
+    tiled into overlapping sub-cutouts (each <= MAX_CUTOUT_SIZE_ARCMIN) which
+    are stitched into one mosaic. A sentinel is cached only for individual
+    tiles with no coverage, so transient service failures are never retried on
+    subsequent runs but a whole large field is always re-tiled cheaply.
+    """
+    cache_dir = Path(cache_dir or DEFAULT_CACHE_DIR)
+    tile_deg = TILE_SIZE_ARCMIN / 60.0
+    if fov_deg <= tile_deg:
+        return _fetch_single_cutout(ra_deg, dec_deg, fov_deg, cache_dir,
+                                    verbose=verbose)
+    centers = _tile_centers(ra_deg, dec_deg, fov_deg)
+    if centers is None:
+        if verbose:
+            print(f"    LoTSS cutout: field too large to tile "
+                  f"(fov={fov_deg:.1f} deg > {MAX_MOSAIC_TILES} tiles)")
+        return None
+    if len(centers) == 1:
+        return _fetch_single_cutout(ra_deg, dec_deg, fov_deg, cache_dir,
+                                    verbose=verbose)
+    tile_paths = []
+    for tile_ra, tile_dec in centers:
+        p = _fetch_single_cutout(tile_ra, tile_dec, tile_deg, cache_dir,
+                                 verbose=verbose)
+        if p:
+            tile_paths.append(p)
+    if not tile_paths:
+        return None
+    if len(tile_paths) == 1:
+        return tile_paths[0]
+    return _stitch_mosaic(tile_paths, ra_deg, dec_deg, fov_deg,
+                          cache_dir=cache_dir)
 
 
 def estimate_noise(data):
@@ -226,34 +426,6 @@ def estimate_noise(data):
     if clipped.size == 0:
         clipped = good
     return mad_std(clipped)
-
-
-def draw_beam(ax, wcs, header, margin_frac=0.05):
-    """Draw the synthesized beam (FWHM ellipse) in the bottom-left corner."""
-    from matplotlib.patches import PathPatch
-    from matplotlib.path import Path
-    bmaj = header.get("BMAJ", None)
-    bmin = header.get("BMIN", None)
-    bpa = header.get("BPA", 0.0)
-    if bmaj is None or bmin is None:
-        return
-    nx = header.get("NAXIS1", ax.get_xlim()[1])
-    ny = header.get("NAXIS2", ax.get_ylim()[1])
-    x0_pix, y0_pix = nx * margin_frac, ny * margin_frac
-    ra0, dec0 = wcs.all_pix2world(x0_pix, y0_pix, 0)
-    bpa_rad = np.deg2rad(bpa)
-    u_major = np.array([np.sin(bpa_rad), np.cos(bpa_rad)])
-    u_minor = np.array([-np.cos(bpa_rad), np.sin(bpa_rad)])
-    t = np.linspace(0, 2 * np.pi, 128)
-    d_ell = ((bmaj / 2) * np.cos(t)[:, None] * u_major
-             + (bmin / 2) * np.sin(t)[:, None] * u_minor)
-    d_ra, d_dec = d_ell[:, 0], d_ell[:, 1]
-    px, py = wcs.all_world2pix(ra0 + d_ra, dec0 + d_dec, 0)
-    verts = np.column_stack([px, py])
-    patch = PathPatch(Path(verts, closed=True),
-                      facecolor="white", edgecolor="black", lw=0.8,
-                      alpha=0.85, zorder=5)
-    ax.add_patch(patch)
 
 
 # =========================
@@ -342,24 +514,53 @@ def build_plot(event, out_png, rfc_sources=None, rfc_version=None,
     ref_ra = float(amon.get("ra") if amon.get("ra") is not None else gcn["ra"])
     ref_dec = float(amon.get("dec") if amon.get("dec") is not None else gcn["dec"])
 
-    # ---- region extents (sky degrees) --------------------------------------
+    # ---- region extents & field centre (RA-axis / Dec degrees) --------------
     err90_deg = float(amon["radius90"] / 60.0) if amon.get("radius90") else 0.0
     err50_deg = float(amon["radius50"] / 60.0) if amon.get("radius50") else 0.0
 
+    cost_abs = 1.0 / max(abs(np.cos(np.deg2rad(ref_dec))), 1e-4)
+
+    # bounding box (RA-axis degrees, Dec degrees) of every drawn region
+    ras, decs = [ref_ra], [ref_dec]
+    for r_deg in (err90_deg, err50_deg):
+        if r_deg > 0:
+            ras += [ref_ra - r_deg * cost_abs, ref_ra + r_deg * cost_abs]
+            decs += [ref_dec - r_deg, ref_dec + r_deg]
+
     gcn_extent = 0.0
     if gcn:
-        for k in ("ra_err_plus", "ra_err_minus", "dec_err_plus", "dec_err_minus"):
-            gcn_extent = max(gcn_extent, abs(float(gcn.get(k) or 0.0)))
+        gcn_ra = float(gcn["ra"])
+        gcn_dec = float(gcn["dec"])
+        ra_plus_sky = float(gcn["ra_err_plus"]) if gcn.get("ra_err_plus") is not None else 0.0
+        ra_minus_sky = float(gcn["ra_err_minus"]) if gcn.get("ra_err_minus") is not None else 0.0
+        dec_plus = float(gcn["dec_err_plus"]) if gcn.get("dec_err_plus") is not None else 0.0
+        dec_minus = float(gcn["dec_err_minus"]) if gcn.get("dec_err_minus") is not None else 0.0
+        gcn_extent = max(abs(ra_plus_sky), abs(ra_minus_sky),
+                         abs(dec_plus), abs(dec_minus))
+        ras += [gcn_ra + ra_minus_sky * cost_abs, gcn_ra + ra_plus_sky * cost_abs]
+        decs += [gcn_dec + dec_minus, gcn_dec + dec_plus]
 
     region_extent = max(err90_deg, gcn_extent)
+
+    ras = np.asarray([r % 360.0 for r in ras], dtype=float)
+    decs = np.asarray(decs, dtype=float)
+    if ras.max() - ras.min() > 180.0:           # wrap boxes crossing RA=0
+        ras = np.where(ras > 180.0, ras - 360.0, ras)
+    ra_lo, ra_hi = float(ras.min()), float(ras.max())
+    dec_lo, dec_hi = float(decs.min()), float(decs.max())
+    center_ra = (ra_lo + ra_hi) / 2.0
+    center_dec = (dec_lo + dec_hi) / 2.0
+    region_half = max(ra_hi - center_ra, center_ra - ra_lo,
+                      dec_hi - center_dec, center_dec - dec_lo)
     if fov_deg is None:
-        fov_deg = max(2.2 * region_extent, 0.5)
+        fov_deg = max(2.0 * region_half * 1.1, 0.5)
+    center_ra = center_ra % 360.0
 
     # ---- LoTSS background (best effort) ------------------------------------
     cutout_path = None
-    if region_extent > 0:
+    if region_extent > 0 and fov_deg <= 10.0:
         try:
-            cutout_path = fetch_loTSS_cutout(ref_ra, ref_dec, fov_deg,
+            cutout_path = fetch_loTSS_cutout(center_ra, center_dec, fov_deg,
                                              cache_dir=cache_dir,
                                              verbose=verbose)
         except Exception as e:
@@ -381,7 +582,7 @@ def build_plot(event, out_png, rfc_sources=None, rfc_version=None,
     # ---- RFC sources in FOV -------------------------------------------------
     if rfc_sources is None:
         rfc_sources, rfc_version = load_rfc_catalog(DEFAULT_RFC_PATH)
-    sel = select_sources_in_region(rfc_sources, ref_ra, ref_dec, fov_deg / 2.0)
+    sel = select_sources_in_region(rfc_sources, center_ra, center_dec, fov_deg / 2.0)
 
     # sources inside a 90% region (AMON circle or GCN ellipse)
     highlighted = []
@@ -427,17 +628,18 @@ def build_plot(event, out_png, rfc_sources=None, rfc_version=None,
             vmin, vmax = noise, max(noise * 2.0, vmax)
         im = ax.imshow(data, cmap="inferno", origin="lower",
                        norm=LogNorm(vmin=vmin, vmax=vmax))
-        draw_beam(ax, wcs, header)
         cb = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.03)
-        cb.set_label(f"Flux density ({unit})", fontsize=8, color="white")
-        cb.ax.tick_params(labelsize=7, colors="white")
+        cb_unit = "Jy/beam" if str(unit).strip() != "JY/BEAM" else "Jy/beam"
+        cb.set_label(f"Flux Density ({cb_unit})",
+                     fontsize=10, color="#111111", rotation=90, labelpad=10)
+        cb.ax.tick_params(labelsize=8, colors="#111111")
         cb.outline.set_edgecolor("gray")
         title += f"\nLoTSS 144 MHz (noise~{noise:.3g} {unit}, vmin={noise_sigma:.0f}$\\sigma$)"
     else:
         half_x = fov_deg / 2.0
-        ax.set_xlim(ref_ra - half_x, ref_ra + half_x)
-        ax.set_ylim(ref_dec - half_x, ref_dec + half_x)
-        ax.set_aspect(1.0 / max(np.cos(np.deg2rad(ref_dec)), 1e-4))
+        ax.set_xlim(center_ra - half_x, center_ra + half_x)
+        ax.set_ylim(center_dec - half_x, center_dec + half_x)
+        ax.set_aspect(1.0 / max(np.cos(np.deg2rad(center_dec)), 1e-4))
         ax.set_xlabel("RA (deg)")
         ax.set_ylabel("Dec (deg)")
         ax.text(0.5, 0.97,
@@ -521,17 +723,21 @@ def build_plot(event, out_png, rfc_sources=None, rfc_version=None,
     ax.grid(color="white", alpha=0.25, lw=0.5)
     ax.set_title(title, fontsize=10)
 
-    ax.text(0.01, 0.01,
+    ax.text(0.99, 0.012,
             f"RFC catalogue: {rfc_version or 'unknown'}"
             f"  ({len(rfc_sources):,} sources)",
             transform=ax.transAxes, color="white", fontsize=7.5,
-            ha="left", va="bottom", alpha=0.85, zorder=20,
+            ha="right", va="bottom", alpha=0.85, zorder=20,
             bbox=dict(boxstyle="round,pad=0.3", fc="black", ec="gray",
                       alpha=0.55))
 
     handles, labels = ax.get_legend_handles_labels()
-    ax.legend(handles, labels, loc="upper right", fontsize=8, framealpha=0.5,
-              facecolor="black", edgecolor="gray", labelcolor="white")
+    leg = ax.legend(handles, labels, loc="upper right", fontsize=8,
+                    framealpha=0.7, facecolor="black", edgecolor="gray",
+                    labelcolor="white")
+    leg.set_zorder(50)   # keep the legend on top of regions / RFC markers
+    for txt in leg.get_texts():
+        txt.set_alpha(1.0)
 
     fig.tight_layout()
     out_png = Path(out_png)

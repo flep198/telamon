@@ -145,6 +145,9 @@ def main():
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--force", action="store_true",
                    help="regenerate PNGs that already exist")
+    p.add_argument("--retry", action="store_true",
+                   help="forget cached 'no coverage' (.fail) markers and stale "
+                        "mosaics, then force-regenerate every plot")
     p.add_argument("--no-seeds", action="store_true",
                    help="only generate plots, do not touch seed files")
     p.add_argument("--workers", type=int, default=4,
@@ -157,6 +160,18 @@ def main():
     names = sorted(set(amon) | set(gcn))
     print(f"AMON events: {len(amon)}, GCN events: {len(gcn)}, "
           f"unique names: {len(names)}")
+
+    if args.retry:
+        from neutrino_sky_plots import DEFAULT_CACHE_DIR
+        purged = 0
+        for stale in Path(DEFAULT_CACHE_DIR).glob("*.fail"):
+            stale.unlink(missing_ok=True)
+            purged += 1
+        for stale in Path(DEFAULT_CACHE_DIR).glob("mosaic_*.fits"):
+            stale.unlink(missing_ok=True)
+            purged += 1
+        print(f"Purged {purged} stale cache markers/mosaics (--retry)")
+        args.force = True
 
     rfc_sources, rfc_version = load_rfc_catalog(args.rfc)
 
@@ -173,6 +188,8 @@ def main():
             ra = float(a["ra"] if a and a.get("ra") is not None else g["ra"])
             dec = float(a["dec"] if a and a.get("dec") is not None else g["dec"])
             fov = fov_from_event(a, g)
+            if fov > 6.6:
+                continue
             jobs[pool.submit(fetch_loTSS_cutout, ra, dec, fov)] = name
 
         done = 0
