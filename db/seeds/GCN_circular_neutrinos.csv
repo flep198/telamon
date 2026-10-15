@@ -1,4 +1,8 @@
 IC Name,GCN_nr,Date,Time (UTC),RA,Ra_err_plus,Ra_err_minus,Dec,Dec_err_plus,Dec_err_minus,GCN_link,Unnamed: 11
+261012A,45929,26-10-12,16:58:11.46,177.71,0.54,-0.53,8.95,0.33,-0.42,"=HYPERLINK(""https://gcn.nasa.gov/circulars/45929,""GCN link"")",
+260930A,45787,26-09-30,00:44:43.30,235.59,0.49,-0.5,0.97,0.56,-0.54,"=HYPERLINK(""https://gcn.nasa.gov/circulars/45787,""GCN link"")",
+260919A,45645,26-09-19,06:52:15.58,111.05,0.31,-0.23,6.43,0.27,-0.28,"=HYPERLINK(""https://gcn.nasa.gov/circulars/45645,""GCN link"")",
+260916A,45598,26-09-16,17:33:51.90,156.18,0.51,-0.44,4.22,0.49,-0.5,"=HYPERLINK(""https://gcn.nasa.gov/circulars/45598,""GCN link"")",
 260827A,45455,26-08-27,15:35:36.97,86.31,0.65,-0.47,8.12,0.42,-0.41,"=HYPERLINK(""https://gcn.nasa.gov/circulars/45455,""GCN link"")",
 260825A,45438,26-08-25,10:53:33.63,91.95,0.75,-0.74,45.73,0.52,-0.51,"=HYPERLINK(""https://gcn.nasa.gov/circulars/45438,""GCN link"")",
 260821A,45412,26-08-21,03:34:49.04,116.67,0.49,-0.48,10.05,0.44,-0.45,"=HYPERLINK(""https://gcn.nasa.gov/circulars/45412,""GCN link"")",

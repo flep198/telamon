@@ -1,3 +1,11 @@
+@IC261012A=CircularNeutrino.where(name: 'IC261012A').first_or_create
+@IC261012A.update(date: '26-10-12', time: '16:58:11.46', ra: '177.71', dec: '8.95', ra_err_plus: '0.54', ra_err_minus: '-0.53', dec_err_plus: '0.33', dec_err_minus: '-0.42', url: 'https://gcn.nasa.gov/circulars/45929', num_rfc: 0, sources: Source.where(j2000_name: []), neutrino_alerts: NeutrinoAlert.where(name: 'IC261012A'), sky_plot: '/neutrino_plots/IC261012A.png')
+@IC260930A=CircularNeutrino.where(name: 'IC260930A').first_or_create
+@IC260930A.update(date: '26-09-30', time: '00:44:43.30', ra: '235.59', dec: '0.97', ra_err_plus: '0.49', ra_err_minus: '-0.5', dec_err_plus: '0.56', dec_err_minus: '-0.54', url: 'https://gcn.nasa.gov/circulars/45787', num_rfc: 1, sources: Source.where(j2000_name: ['1540+0101']), neutrino_alerts: NeutrinoAlert.where(name: 'IC260930A'), sky_plot: '/neutrino_plots/IC260930A.png')
+@IC260919A=CircularNeutrino.where(name: 'IC260919A').first_or_create
+@IC260919A.update(date: '26-09-19', time: '06:52:15.58', ra: '111.05', dec: '6.43', ra_err_plus: '0.31', ra_err_minus: '-0.23', dec_err_plus: '0.27', dec_err_minus: '-0.28', url: 'https://gcn.nasa.gov/circulars/45645', num_rfc: 0, sources: Source.where(j2000_name: []), neutrino_alerts: NeutrinoAlert.where(name: 'IC260919A'), sky_plot: '/neutrino_plots/IC260919A.png')
+@IC260916A=CircularNeutrino.where(name: 'IC260916A').first_or_create
+@IC260916A.update(date: '26-09-16', time: '17:33:51.90', ra: '156.18', dec: '4.22', ra_err_plus: '0.51', ra_err_minus: '-0.44', dec_err_plus: '0.49', dec_err_minus: '-0.5', url: 'https://gcn.nasa.gov/circulars/45598', num_rfc: 1, sources: Source.where(j2000_name: ['1025+0402']), neutrino_alerts: NeutrinoAlert.where(name: 'IC260916A'), sky_plot: '/neutrino_plots/IC260916A.png')
 @IC260827A=CircularNeutrino.where(name: 'IC260827A').first_or_create
 @IC260827A.update(date: '26-08-27', time: '15:35:36.97', ra: '86.31', dec: '8.12', ra_err_plus: '0.65', ra_err_minus: '-0.47', dec_err_plus: '0.42', dec_err_minus: '-0.41', url: 'https://gcn.nasa.gov/circulars/45455', num_rfc: 0, sources: Source.where(j2000_name: []), neutrino_alerts: NeutrinoAlert.where(name: 'IC260827A'), sky_plot: '/neutrino_plots/IC260827A.png')
 @IC260825A=CircularNeutrino.where(name: 'IC260825A').first_or_create

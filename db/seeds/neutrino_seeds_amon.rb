@@ -1,3 +1,11 @@
+@IC261012A=NeutrinoAlert.where(name: 'IC261012A').first_or_create
+@IC261012A.update(date: '26/10/12', time: '16:58:11.46', ra: '177.71', dec: '8.9499', radius90: 26.71, radius50: 14.54, energy: 242.21, signalness: 0.60968, noticetype: 'GOLD', url: 'https://gcn.gsfc.nasa.gov/notices_amon_g_b/143283_53121260.amon', numrfc: 1, sources: Source.where(j2000_name: ['1153+0914']), sky_plot: '/neutrino_plots/IC261012A.png')
+@IC260930A=NeutrinoAlert.where(name: 'IC260930A').first_or_create
+@IC260930A.update(date: '26/09/30', time: '00:44:43.39', ra: '235.59', dec: '0.9699', radius90: 31.3, radius50: 17.21, energy: 111.63, signalness: 0.28464, noticetype: 'BRONZE', url: 'https://gcn.gsfc.nasa.gov/notices_amon_g_b/143213_36103697.amon', numrfc: 2, sources: Source.where(j2000_name: ['1540+0101','1545+0024']), sky_plot: '/neutrino_plots/IC260930A.png')
+@IC260919A=NeutrinoAlert.where(name: 'IC260919A').first_or_create
+@IC260919A.update(date: '26/09/19', time: '06:52:15.58', ra: '111.0499', dec: '6.4299', radius90: 16.3, radius50: 7.68, energy: 302.62, signalness: 0.67035, noticetype: 'GOLD', url: 'https://gcn.gsfc.nasa.gov/notices_amon_g_b/143143_38400235.amon', numrfc: 1, sources: Source.where(j2000_name: ['0726+0636']), sky_plot: '/neutrino_plots/IC260919A.png')
+@IC260916A=NeutrinoAlert.where(name: 'IC260916A').first_or_create
+@IC260916A.update(date: '26/09/16', time: '17:33:51.93', ra: '156.18', dec: '4.2199', radius90: 29.03, radius50: 15.72, energy: 114.97, signalness: 0.29013, noticetype: 'BRONZE', url: 'https://gcn.gsfc.nasa.gov/notices_amon_g_b/143132_29436198.amon', numrfc: 1, sources: Source.where(j2000_name: ['1025+0402']), sky_plot: '/neutrino_plots/IC260916A.png')
 @IC260827A=NeutrinoAlert.where(name: 'IC260827A').first_or_create
 @IC260827A.update(date: '26/08/27', time: '15:35:36.96', ra: '86.31', dec: '8.1199', radius90: 28.73, radius50: 14.81, energy: 191.91, signalness: 0.51535, noticetype: 'GOLD', url: 'https://gcn.gsfc.nasa.gov/notices_amon_g_b/143048_12474624.amon', numrfc: 1, sources: Source.where(j2000_name: ['0547+0849']), sky_plot: '/neutrino_plots/IC260827A.png')
 @IC260825A=NeutrinoAlert.where(name: 'IC260825A').first_or_create

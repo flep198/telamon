@@ -359,6 +359,9 @@
 @a11330040=Source.where(j2000_name: '1133+0040').first_or_create
 @a11330058=Source.where(j2000_name: '1133+0058').first_or_create
 @a20303700=Source.where(j2000_name: '2030+3700').first_or_create
+@a07451011=Source.where(j2000_name: '0745+1011').first_or_create
+@a07481020=Source.where(j2000_name: '0748+1020').first_or_create
+@a15400101=Source.where(j2000_name: '1540+0101').first_or_create
 
 @a38_75=Frequency.where(freq_ghz: '38.75').first_or_create
 @a41_25=Frequency.where(freq_ghz: '41.25').first_or_create
@@ -572,6 +575,7 @@
 @a2026_06_22=Epoch.where(date: '2026-06-22').first_or_create
 @a2026_07_31=Epoch.where(date: '2026-07-31').first_or_create
 @a2026_09_11=Epoch.where(date: '2026-09-11').first_or_create
+@a2026_10_11=Epoch.where(date: '2026-10-11').first_or_create
 
 Result.delete_all
 Observation.delete_all
@@ -279876,6 +279880,2427 @@ Observation.create(scan_nr: 6918, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61295.
 @a12242436=Source.where(j2000_name: '1224+2436').first_or_create
 @a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
 Observation.create(scan_nr: 6918, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61295.672, source_id: @a12242436.id, longitude: '12:24:24', latitude: '+24:36:23', frequency_id: @a14_0.id, cols: -24.9, nule: 1.4,zlin: 7.8, temp: 20.2, humidity: 50.0, pressure: 986.0, epoch_id: @a2026_09_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 9964, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.2798, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a8_05.id, cols: 8.7, nule: -6.1,zlin: -3.1, temp: 7.7, humidity: 93.8, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 9964, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.2798, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a6_55.id, cols: 8.7, nule: -6.1,zlin: -3.1, temp: 7.8, humidity: 93.6, pressure: 973.1, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 9964, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.2798, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a6_3.id, cols: 8.7, nule: -6.1,zlin: -3.1, temp: 7.8, humidity: 93.6, pressure: 973.1, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 9965, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.2819, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a8_05.id, cols: 8.7, nule: -6.1,zlin: -3.1, temp: 7.8, humidity: 93.2, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 9965, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.2819, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a6_55.id, cols: 8.7, nule: -6.1,zlin: -3.1, temp: 7.8, humidity: 93.4, pressure: 973.1, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 9965, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.2819, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a6_3.id, cols: 8.7, nule: -6.1,zlin: -3.1, temp: 7.8, humidity: 93.2, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 9967, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.2856, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a8_05.id, cols: 11.8, nule: -0.8,zlin: -3.1, temp: 8.0, humidity: 93.0, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 9967, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.2856, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a6_55.id, cols: 11.8, nule: -0.8,zlin: -3.1, temp: 8.0, humidity: 93.1, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 9967, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.2856, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a6_3.id, cols: 11.8, nule: -0.8,zlin: -3.1, temp: 8.0, humidity: 93.1, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 9968, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.2876, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a8_05.id, cols: 13.9, nule: 4.5,zlin: -3.1, temp: 8.0, humidity: 92.3, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 9968, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.2876, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a6_55.id, cols: 13.9, nule: 4.5,zlin: -3.1, temp: 8.0, humidity: 92.3, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 9968, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.2876, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a6_3.id, cols: 13.9, nule: 4.5,zlin: -3.1, temp: 8.0, humidity: 91.8, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 9969, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.2902, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a8_05.id, cols: 14.4, nule: 4.4,zlin: 0.4, temp: 8.0, humidity: 91.4, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 9969, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.2902, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a6_55.id, cols: 14.4, nule: 4.4,zlin: 0.4, temp: 8.0, humidity: 91.4, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 9969, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.2902, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a6_3.id, cols: 14.4, nule: 4.4,zlin: 0.4, temp: 8.0, humidity: 91.7, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 9970, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.2921, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a8_05.id, cols: 15.4, nule: 2.0,zlin: 0.4, temp: 8.0, humidity: 90.5, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 9970, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.2921, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a6_55.id, cols: 15.4, nule: 2.0,zlin: 0.4, temp: 8.2, humidity: 90.5, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 9970, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.2921, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a6_3.id, cols: 15.4, nule: 2.0,zlin: 0.4, temp: 8.1, humidity: 90.7, pressure: 973.1, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 9971, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.2952, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a16_75.id, cols: 14.7, nule: 6.6,zlin: 4.1, temp: 8.2, humidity: 89.9, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 9971, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.2952, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a14_25.id, cols: 14.7, nule: 6.6,zlin: 4.1, temp: 8.1, humidity: 90.0, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 9971, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.2952, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a14_0.id, cols: 14.7, nule: 6.6,zlin: 4.1, temp: 8.1, humidity: 90.0, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 9973, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.2991, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a16_75.id, cols: 4.9, nule: 10.9,zlin: 5.8, temp: 8.2, humidity: 89.9, pressure: 973.1, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 9973, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.2991, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a14_25.id, cols: 4.9, nule: 10.9,zlin: 5.8, temp: 8.2, humidity: 89.9, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 9973, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.2991, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a14_0.id, cols: 4.9, nule: 10.9,zlin: 5.8, temp: 8.2, humidity: 89.9, pressure: 973.1, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 9974, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.3011, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a16_75.id, cols: 4.0, nule: 5.4,zlin: 5.8, temp: 8.1, humidity: 89.2, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 9974, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.3011, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a14_25.id, cols: 4.0, nule: 5.4,zlin: 5.8, temp: 8.2, humidity: 89.6, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 9974, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.3011, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a14_0.id, cols: 4.0, nule: 5.4,zlin: 5.8, temp: 8.2, humidity: 89.6, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 9975, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3043, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a19_25.id, cols: 3.5, nule: 6.2,zlin: -3.2, temp: 8.2, humidity: 88.6, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 9975, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3043, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a21_15.id, cols: 3.5, nule: 6.2,zlin: -3.2, temp: 8.2, humidity: 87.8, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 9975, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3043, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a22_85.id, cols: 3.5, nule: 6.2,zlin: -3.2, temp: 8.2, humidity: 87.8, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 9975, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3043, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a24_75.id, cols: 3.5, nule: 6.2,zlin: -3.2, temp: 8.2, humidity: 88.0, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 9976, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3063, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a19_25.id, cols: 16.7, nule: 8.7,zlin: -3.2, temp: 8.3, humidity: 87.3, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 9976, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3063, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a21_15.id, cols: 16.7, nule: 8.7,zlin: -3.2, temp: 8.3, humidity: 87.3, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 9976, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3063, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a22_85.id, cols: 16.7, nule: 8.7,zlin: -3.2, temp: 8.3, humidity: 87.3, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 9976, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3063, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a24_75.id, cols: 16.7, nule: 8.7,zlin: -3.2, temp: 8.3, humidity: 87.6, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 9978, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3104, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a19_25.id, cols: 1.0, nule: 3.1,zlin: -1.0, temp: 8.4, humidity: 87.1, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 9978, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3104, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a21_15.id, cols: 1.0, nule: 3.1,zlin: -1.0, temp: 8.4, humidity: 87.1, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 9978, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3104, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a22_85.id, cols: 1.0, nule: 3.1,zlin: -1.0, temp: 8.4, humidity: 87.1, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 9978, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3104, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a24_75.id, cols: 1.0, nule: 3.1,zlin: -1.0, temp: 8.4, humidity: 87.4, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 9979, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3123, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a19_25.id, cols: 3.2, nule: -1.3,zlin: -1.0, temp: 8.4, humidity: 85.8, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 9979, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3123, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a21_15.id, cols: 3.2, nule: -1.3,zlin: -1.0, temp: 8.4, humidity: 86.1, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 9979, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3123, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a22_85.id, cols: 3.2, nule: -1.3,zlin: -1.0, temp: 8.4, humidity: 85.8, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 9979, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3123, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a24_75.id, cols: 3.2, nule: -1.3,zlin: -1.0, temp: 8.5, humidity: 85.5, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 9980, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.3171, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a38_75.id, cols: 1.6, nule: 1.9,zlin: -0.7, temp: 8.6, humidity: 84.7, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 9980, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.3171, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a36_25.id, cols: 1.6, nule: 1.9,zlin: -0.7, temp: 8.6, humidity: 84.6, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 9980, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.3171, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a36_0.id, cols: 1.6, nule: 1.9,zlin: -0.7, temp: 8.6, humidity: 84.5, pressure: 973.2, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 9982, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.3224, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a38_75.id, cols: 3.7, nule: -3.5,zlin: 0.9, temp: 8.6, humidity: 83.2, pressure: 973.7, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 9982, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.3224, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a36_25.id, cols: 3.7, nule: -3.5,zlin: 0.9, temp: 8.8, humidity: 82.9, pressure: 973.7, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 9982, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.3224, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a36_0.id, cols: 3.7, nule: -3.5,zlin: 0.9, temp: 8.7, humidity: 83.0, pressure: 973.7, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 9983, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.326, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a38_75.id, cols: 0.0, nule: 1.4,zlin: 0.9, temp: 8.7, humidity: 82.3, pressure: 973.7, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 9983, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.326, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a36_25.id, cols: 0.0, nule: 1.4,zlin: 0.9, temp: 8.8, humidity: 81.9, pressure: 973.7, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 9983, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.326, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a36_0.id, cols: 0.0, nule: 1.4,zlin: 0.9, temp: 8.8, humidity: 82.0, pressure: 973.7, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a43_75=Frequency.where(freq_ghz: 43.75).first_or_create
+Observation.create(scan_nr: 9984, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.3308, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a43_75.id, cols: -1.0, nule: -2.7,zlin: 0.9, temp: 8.9, humidity: 80.6, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a41_25=Frequency.where(freq_ghz: 41.25).first_or_create
+Observation.create(scan_nr: 9984, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.3308, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a41_25.id, cols: -1.0, nule: -2.7,zlin: 0.9, temp: 9.0, humidity: 79.8, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a41_0=Frequency.where(freq_ghz: 41.0).first_or_create
+Observation.create(scan_nr: 9984, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.3308, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a41_0.id, cols: -1.0, nule: -2.7,zlin: 0.9, temp: 9.0, humidity: 80.7, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a43_75=Frequency.where(freq_ghz: 43.75).first_or_create
+Observation.create(scan_nr: 9985, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.3344, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a43_75.id, cols: -2.0, nule: -2.0,zlin: 0.9, temp: 9.0, humidity: 79.7, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a41_25=Frequency.where(freq_ghz: 41.25).first_or_create
+Observation.create(scan_nr: 9985, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.3344, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a41_25.id, cols: -2.0, nule: -2.0,zlin: 0.9, temp: 9.1, humidity: 79.8, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a41_0=Frequency.where(freq_ghz: 41.0).first_or_create
+Observation.create(scan_nr: 9985, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.3344, source_id: @a3C286.id, longitude: '13:28:49', latitude: '+30:45:58', frequency_id: @a41_0.id, cols: -2.0, nule: -2.0,zlin: 0.9, temp: 9.1, humidity: 79.5, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 9986, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.3392, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a8_05.id, cols: 2.4, nule: -6.3,zlin: 0.4, temp: 9.1, humidity: 78.8, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 9986, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.3392, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a6_55.id, cols: 2.4, nule: -6.3,zlin: 0.4, temp: 9.1, humidity: 78.8, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 9986, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.3392, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a6_3.id, cols: 2.4, nule: -6.3,zlin: 0.4, temp: 9.1, humidity: 78.8, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 9987, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.3412, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a8_05.id, cols: 2.4, nule: -6.3,zlin: 0.4, temp: 9.1, humidity: 78.7, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 9987, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.3412, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a6_55.id, cols: 2.4, nule: -6.3,zlin: 0.4, temp: 9.1, humidity: 78.7, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 9987, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.3412, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a6_3.id, cols: 2.4, nule: -6.3,zlin: 0.4, temp: 9.1, humidity: 78.7, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 9988, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.3453, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a8_05.id, cols: 6.7, nule: 8.7,zlin: 0.4, temp: 9.1, humidity: 78.3, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 9988, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.3453, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a6_55.id, cols: 6.7, nule: 8.7,zlin: 0.4, temp: 9.2, humidity: 78.1, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 9988, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.3453, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a6_3.id, cols: 6.7, nule: 8.7,zlin: 0.4, temp: 9.1, humidity: 78.6, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 9989, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.3504, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a16_75.id, cols: 11.5, nule: 10.9,zlin: 5.8, temp: 9.4, humidity: 77.8, pressure: 973.7, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 9989, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.3504, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a14_25.id, cols: 11.5, nule: 10.9,zlin: 5.8, temp: 9.4, humidity: 78.0, pressure: 973.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 9989, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.3504, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a14_0.id, cols: 11.5, nule: 10.9,zlin: 5.8, temp: 9.4, humidity: 77.8, pressure: 973.7, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 9990, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.3523, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a16_75.id, cols: 11.5, nule: 10.9,zlin: 5.8, temp: 9.4, humidity: 78.1, pressure: 973.8, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 9990, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.3523, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a14_25.id, cols: 11.5, nule: 10.9,zlin: 5.8, temp: 9.4, humidity: 77.2, pressure: 973.9, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 9990, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.3523, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a14_0.id, cols: 11.5, nule: 10.9,zlin: 5.8, temp: 9.4, humidity: 77.5, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 9991, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.3563, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a16_75.id, cols: -2.6, nule: 7.7,zlin: 5.8, temp: 9.5, humidity: 77.2, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 9991, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.3563, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a14_25.id, cols: -2.6, nule: 7.7,zlin: 5.8, temp: 9.5, humidity: 77.2, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 9991, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.3563, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a14_0.id, cols: -2.6, nule: 7.7,zlin: 5.8, temp: 9.5, humidity: 78.2, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 9992, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3614, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a19_25.id, cols: 5.1, nule: 5.9,zlin: -1.0, temp: 9.3, humidity: 83.2, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 9992, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3614, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a21_15.id, cols: 5.1, nule: 5.9,zlin: -1.0, temp: 9.3, humidity: 83.2, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 9992, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3614, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a22_85.id, cols: 5.1, nule: 5.9,zlin: -1.0, temp: 9.3, humidity: 82.0, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 9992, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3614, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a24_75.id, cols: 5.1, nule: 5.9,zlin: -1.0, temp: 9.3, humidity: 82.0, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 9993, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3633, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a19_25.id, cols: 5.1, nule: 5.9,zlin: -1.0, temp: 9.1, humidity: 86.7, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 9993, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3633, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a21_15.id, cols: 5.1, nule: 5.9,zlin: -1.0, temp: 9.0, humidity: 89.2, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 9993, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3633, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a22_85.id, cols: 5.1, nule: 5.9,zlin: -1.0, temp: 9.1, humidity: 87.6, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 9993, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3633, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a24_75.id, cols: 5.1, nule: 5.9,zlin: -1.0, temp: 8.9, humidity: 91.3, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 9994, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3673, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a19_25.id, cols: 5.1, nule: 5.9,zlin: -1.0, temp: 8.6, humidity: 94.5, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 9994, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3673, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a21_15.id, cols: 5.1, nule: 5.9,zlin: -1.0, temp: 8.6, humidity: 94.1, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 9994, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3673, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a22_85.id, cols: 5.1, nule: 5.9,zlin: -1.0, temp: 8.7, humidity: 94.4, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 9994, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3673, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a24_75.id, cols: 5.1, nule: 5.9,zlin: -1.0, temp: 8.7, humidity: 93.8, pressure: 974.1, epoch_id: @a2026_10_11.id)
+@a13103220=Source.where(j2000_name: '1310+3220').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 9995, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.3726, source_id: @a13103220.id, longitude: '13:10:28', latitude: '+32:20:43', frequency_id: @a8_05.id, cols: 5.1, nule: 5.9,zlin: 0.4, temp: 8.5, humidity: 95.0, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a13103220=Source.where(j2000_name: '1310+3220').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 9995, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.3726, source_id: @a13103220.id, longitude: '13:10:28', latitude: '+32:20:43', frequency_id: @a6_55.id, cols: 5.1, nule: 5.9,zlin: 0.4, temp: 8.5, humidity: 95.0, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a13103220=Source.where(j2000_name: '1310+3220').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 9995, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.3726, source_id: @a13103220.id, longitude: '13:10:28', latitude: '+32:20:43', frequency_id: @a6_3.id, cols: 5.1, nule: 5.9,zlin: 0.4, temp: 8.4, humidity: 95.1, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a13103220=Source.where(j2000_name: '1310+3220').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 9996, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.3746, source_id: @a13103220.id, longitude: '13:10:28', latitude: '+32:20:43', frequency_id: @a8_05.id, cols: 5.1, nule: 5.9,zlin: 0.4, temp: 8.4, humidity: 95.2, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a13103220=Source.where(j2000_name: '1310+3220').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 9996, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.3746, source_id: @a13103220.id, longitude: '13:10:28', latitude: '+32:20:43', frequency_id: @a6_55.id, cols: 5.1, nule: 5.9,zlin: 0.4, temp: 8.4, humidity: 95.2, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a13103220=Source.where(j2000_name: '1310+3220').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 9996, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.3746, source_id: @a13103220.id, longitude: '13:10:28', latitude: '+32:20:43', frequency_id: @a6_3.id, cols: 5.1, nule: 5.9,zlin: 0.4, temp: 8.4, humidity: 95.4, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a13103220=Source.where(j2000_name: '1310+3220').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 9997, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.3786, source_id: @a13103220.id, longitude: '13:10:28', latitude: '+32:20:43', frequency_id: @a8_05.id, cols: 11.4, nule: -1.5,zlin: 0.4, temp: 8.3, humidity: 95.5, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a13103220=Source.where(j2000_name: '1310+3220').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 9997, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.3786, source_id: @a13103220.id, longitude: '13:10:28', latitude: '+32:20:43', frequency_id: @a6_55.id, cols: 11.4, nule: -1.5,zlin: 0.4, temp: 8.4, humidity: 95.6, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a13103220=Source.where(j2000_name: '1310+3220').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 9997, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.3786, source_id: @a13103220.id, longitude: '13:10:28', latitude: '+32:20:43', frequency_id: @a6_3.id, cols: 11.4, nule: -1.5,zlin: 0.4, temp: 8.3, humidity: 95.5, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14284240=Source.where(j2000_name: '1428+4240').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 9998, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.3836, source_id: @a14284240.id, longitude: '14:28:32', latitude: '+42:40:20', frequency_id: @a8_05.id, cols: 10.2, nule: 2.1,zlin: 0.4, temp: 8.4, humidity: 95.6, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14284240=Source.where(j2000_name: '1428+4240').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 9998, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.3836, source_id: @a14284240.id, longitude: '14:28:32', latitude: '+42:40:20', frequency_id: @a6_55.id, cols: 10.2, nule: 2.1,zlin: 0.4, temp: 8.4, humidity: 95.6, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14284240=Source.where(j2000_name: '1428+4240').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 9998, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.3836, source_id: @a14284240.id, longitude: '14:28:32', latitude: '+42:40:20', frequency_id: @a6_3.id, cols: 10.2, nule: 2.1,zlin: 0.4, temp: 8.5, humidity: 95.7, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14284240=Source.where(j2000_name: '1428+4240').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 9999, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.3856, source_id: @a14284240.id, longitude: '14:28:32', latitude: '+42:40:20', frequency_id: @a8_05.id, cols: 10.2, nule: 2.1,zlin: 0.4, temp: 8.5, humidity: 95.5, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14284240=Source.where(j2000_name: '1428+4240').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 9999, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.3856, source_id: @a14284240.id, longitude: '14:28:32', latitude: '+42:40:20', frequency_id: @a6_55.id, cols: 10.2, nule: 2.1,zlin: 0.4, temp: 8.7, humidity: 95.4, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14284240=Source.where(j2000_name: '1428+4240').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 9999, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.3856, source_id: @a14284240.id, longitude: '14:28:32', latitude: '+42:40:20', frequency_id: @a6_3.id, cols: 10.2, nule: 2.1,zlin: 0.4, temp: 8.5, humidity: 95.4, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14284240=Source.where(j2000_name: '1428+4240').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 0, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.3904, source_id: @a14284240.id, longitude: '14:28:32', latitude: '+42:40:20', frequency_id: @a8_05.id, cols: 10.2, nule: 2.1,zlin: 0.4, temp: 8.9, humidity: 95.4, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14284240=Source.where(j2000_name: '1428+4240').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 0, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.3904, source_id: @a14284240.id, longitude: '14:28:32', latitude: '+42:40:20', frequency_id: @a6_55.id, cols: 10.2, nule: 2.1,zlin: 0.4, temp: 9.0, humidity: 95.2, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14284240=Source.where(j2000_name: '1428+4240').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 0, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.3904, source_id: @a14284240.id, longitude: '14:28:32', latitude: '+42:40:20', frequency_id: @a6_3.id, cols: 10.2, nule: 2.1,zlin: 0.4, temp: 8.9, humidity: 95.4, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 1, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3964, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a19_25.id, cols: 10.2, nule: 2.1,zlin: -1.0, temp: 9.1, humidity: 94.5, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 1, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3964, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a21_15.id, cols: 10.2, nule: 2.1,zlin: -1.0, temp: 9.2, humidity: 94.5, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 1, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3964, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a22_85.id, cols: 10.2, nule: 2.1,zlin: -1.0, temp: 9.1, humidity: 94.1, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 1, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.3964, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a24_75.id, cols: 10.2, nule: 2.1,zlin: -1.0, temp: 9.1, humidity: 94.5, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 2, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3983, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a19_25.id, cols: 10.2, nule: 2.1,zlin: -1.0, temp: 9.3, humidity: 94.0, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 2, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3983, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a21_15.id, cols: 10.2, nule: 2.1,zlin: -1.0, temp: 9.2, humidity: 93.9, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 2, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3983, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a22_85.id, cols: 10.2, nule: 2.1,zlin: -1.0, temp: 9.2, humidity: 94.0, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 2, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.3983, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a24_75.id, cols: 10.2, nule: 2.1,zlin: -1.0, temp: 9.2, humidity: 93.9, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 3, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.4032, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a19_25.id, cols: -0.1, nule: -1.0,zlin: -1.0, temp: 9.3, humidity: 92.5, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 3, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.4032, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a21_15.id, cols: -0.1, nule: -1.0,zlin: -1.0, temp: 9.3, humidity: 93.1, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 3, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.4032, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a22_85.id, cols: -0.1, nule: -1.0,zlin: -1.0, temp: 9.3, humidity: 92.3, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 3, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.4032, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a24_75.id, cols: -0.1, nule: -1.0,zlin: -1.0, temp: 9.3, humidity: 92.3, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 4, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.4087, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a38_75.id, cols: 5.5, nule: -2.7,zlin: 0.9, temp: 9.4, humidity: 89.4, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 4, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.4087, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a36_25.id, cols: 5.5, nule: -2.7,zlin: 0.9, temp: 9.5, humidity: 90.7, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 4, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.4087, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a36_0.id, cols: 5.5, nule: -2.7,zlin: 0.9, temp: 9.4, humidity: 89.5, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 5, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.4127, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a38_75.id, cols: 4.5, nule: -7.2,zlin: 0.9, temp: 9.6, humidity: 88.0, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 5, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.4127, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a36_25.id, cols: 4.5, nule: -7.2,zlin: 0.9, temp: 9.6, humidity: 88.0, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 5, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.4127, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a36_0.id, cols: 4.5, nule: -7.2,zlin: 0.9, temp: 9.5, humidity: 87.6, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a43_75=Frequency.where(freq_ghz: 43.75).first_or_create
+Observation.create(scan_nr: 6, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.4188, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a43_75.id, cols: 5.1, nule: -8.8,zlin: 0.9, temp: 9.7, humidity: 82.5, pressure: 974.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a41_25=Frequency.where(freq_ghz: 41.25).first_or_create
+Observation.create(scan_nr: 6, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.4188, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a41_25.id, cols: 5.1, nule: -8.8,zlin: 0.9, temp: 9.8, humidity: 82.2, pressure: 974.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a41_0=Frequency.where(freq_ghz: 41.0).first_or_create
+Observation.create(scan_nr: 6, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.4188, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a41_0.id, cols: 5.1, nule: -8.8,zlin: 0.9, temp: 9.7, humidity: 82.5, pressure: 974.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a43_75=Frequency.where(freq_ghz: 43.75).first_or_create
+Observation.create(scan_nr: 7, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.4227, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a43_75.id, cols: -0.3, nule: -8.7,zlin: 0.9, temp: 10.0, humidity: 80.6, pressure: 974.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a41_25=Frequency.where(freq_ghz: 41.25).first_or_create
+Observation.create(scan_nr: 7, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.4227, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a41_25.id, cols: -0.3, nule: -8.7,zlin: 0.9, temp: 9.9, humidity: 79.9, pressure: 974.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a41_0=Frequency.where(freq_ghz: 41.0).first_or_create
+Observation.create(scan_nr: 7, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.4227, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a41_0.id, cols: -0.3, nule: -8.7,zlin: 0.9, temp: 10.0, humidity: 80.6, pressure: 974.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a43_75=Frequency.where(freq_ghz: 43.75).first_or_create
+Observation.create(scan_nr: 8, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.4264, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a43_75.id, cols: -0.3, nule: -8.7,zlin: 0.9, temp: 10.2, humidity: 75.4, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a41_25=Frequency.where(freq_ghz: 41.25).first_or_create
+Observation.create(scan_nr: 8, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.4264, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a41_25.id, cols: -0.3, nule: -8.7,zlin: 0.9, temp: 10.1, humidity: 76.9, pressure: 974.6, epoch_id: @a2026_10_11.id)
+@a14223223=Source.where(j2000_name: '1422+3223').first_or_create
+@a41_0=Frequency.where(freq_ghz: 41.0).first_or_create
+Observation.create(scan_nr: 8, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.4264, source_id: @a14223223.id, longitude: '14:22:30', latitude: '+32:23:10', frequency_id: @a41_0.id, cols: -0.3, nule: -8.7,zlin: 0.9, temp: 10.2, humidity: 74.4, pressure: 974.6, epoch_id: @a2026_10_11.id)
+@a14172543=Source.where(j2000_name: '1417+2543').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 9, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.4317, source_id: @a14172543.id, longitude: '14:17:56', latitude: '+25:43:25', frequency_id: @a16_75.id, cols: -0.3, nule: -8.7,zlin: 5.8, temp: 10.2, humidity: 75.0, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14172543=Source.where(j2000_name: '1417+2543').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 9, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.4317, source_id: @a14172543.id, longitude: '14:17:56', latitude: '+25:43:25', frequency_id: @a14_25.id, cols: -0.3, nule: -8.7,zlin: 5.8, temp: 10.2, humidity: 75.0, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14172543=Source.where(j2000_name: '1417+2543').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 9, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.4317, source_id: @a14172543.id, longitude: '14:17:56', latitude: '+25:43:25', frequency_id: @a14_0.id, cols: -0.3, nule: -8.7,zlin: 5.8, temp: 10.1, humidity: 75.2, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14172543=Source.where(j2000_name: '1417+2543').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 10, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.4337, source_id: @a14172543.id, longitude: '14:17:56', latitude: '+25:43:25', frequency_id: @a16_75.id, cols: -0.3, nule: -8.7,zlin: 5.8, temp: 10.4, humidity: 74.2, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14172543=Source.where(j2000_name: '1417+2543').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 10, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.4337, source_id: @a14172543.id, longitude: '14:17:56', latitude: '+25:43:25', frequency_id: @a14_25.id, cols: -0.3, nule: -8.7,zlin: 5.8, temp: 10.3, humidity: 75.6, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14172543=Source.where(j2000_name: '1417+2543').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 10, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.4337, source_id: @a14172543.id, longitude: '14:17:56', latitude: '+25:43:25', frequency_id: @a14_0.id, cols: -0.3, nule: -8.7,zlin: 5.8, temp: 10.6, humidity: 73.6, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14172543=Source.where(j2000_name: '1417+2543').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 11, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.4381, source_id: @a14172543.id, longitude: '14:17:56', latitude: '+25:43:25', frequency_id: @a16_75.id, cols: 7.7, nule: 3.9,zlin: 5.8, temp: 10.5, humidity: 71.8, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14172543=Source.where(j2000_name: '1417+2543').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 11, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.4381, source_id: @a14172543.id, longitude: '14:17:56', latitude: '+25:43:25', frequency_id: @a14_25.id, cols: 7.7, nule: 3.9,zlin: 5.8, temp: 10.5, humidity: 71.5, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14172543=Source.where(j2000_name: '1417+2543').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 11, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.4381, source_id: @a14172543.id, longitude: '14:17:56', latitude: '+25:43:25', frequency_id: @a14_0.id, cols: 7.7, nule: 3.9,zlin: 5.8, temp: 10.5, humidity: 71.5, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14172543=Source.where(j2000_name: '1417+2543').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 12, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.4421, source_id: @a14172543.id, longitude: '14:17:56', latitude: '+25:43:25', frequency_id: @a16_75.id, cols: 11.4, nule: 14.3,zlin: 5.8, temp: 10.5, humidity: 70.7, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14172543=Source.where(j2000_name: '1417+2543').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 12, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.4421, source_id: @a14172543.id, longitude: '14:17:56', latitude: '+25:43:25', frequency_id: @a14_25.id, cols: 11.4, nule: 14.3,zlin: 5.8, temp: 10.7, humidity: 71.6, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14172543=Source.where(j2000_name: '1417+2543').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 12, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.4421, source_id: @a14172543.id, longitude: '14:17:56', latitude: '+25:43:25', frequency_id: @a14_0.id, cols: 11.4, nule: 14.3,zlin: 5.8, temp: 10.6, humidity: 70.5, pressure: 974.5, epoch_id: @a2026_10_11.id)
+@a14431200=Source.where(j2000_name: '1443+1200').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 13, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.4492, source_id: @a14431200.id, longitude: '14:42:48', latitude: '+12:00:40', frequency_id: @a16_75.id, cols: 11.4, nule: 14.3,zlin: 5.8, temp: 10.5, humidity: 69.2, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14431200=Source.where(j2000_name: '1443+1200').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 13, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.4492, source_id: @a14431200.id, longitude: '14:42:48', latitude: '+12:00:40', frequency_id: @a14_25.id, cols: 11.4, nule: 14.3,zlin: 5.8, temp: 10.5, humidity: 69.2, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14431200=Source.where(j2000_name: '1443+1200').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 13, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.4492, source_id: @a14431200.id, longitude: '14:42:48', latitude: '+12:00:40', frequency_id: @a14_0.id, cols: 11.4, nule: 14.3,zlin: 5.8, temp: 10.5, humidity: 70.4, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14431200=Source.where(j2000_name: '1443+1200').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 14, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.4512, source_id: @a14431200.id, longitude: '14:42:48', latitude: '+12:00:40', frequency_id: @a16_75.id, cols: 11.4, nule: 14.3,zlin: 5.8, temp: 10.5, humidity: 71.0, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14431200=Source.where(j2000_name: '1443+1200').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 14, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.4512, source_id: @a14431200.id, longitude: '14:42:48', latitude: '+12:00:40', frequency_id: @a14_25.id, cols: 11.4, nule: 14.3,zlin: 5.8, temp: 10.5, humidity: 71.1, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14431200=Source.where(j2000_name: '1443+1200').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 14, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.4512, source_id: @a14431200.id, longitude: '14:42:48', latitude: '+12:00:40', frequency_id: @a14_0.id, cols: 11.4, nule: 14.3,zlin: 5.8, temp: 10.4, humidity: 71.2, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14431200=Source.where(j2000_name: '1443+1200').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 15, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.4551, source_id: @a14431200.id, longitude: '14:42:48', latitude: '+12:00:40', frequency_id: @a16_75.id, cols: 13.0, nule: 5.7,zlin: 5.8, temp: 10.4, humidity: 70.3, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14431200=Source.where(j2000_name: '1443+1200').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 15, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.4551, source_id: @a14431200.id, longitude: '14:42:48', latitude: '+12:00:40', frequency_id: @a14_25.id, cols: 13.0, nule: 5.7,zlin: 5.8, temp: 10.4, humidity: 70.3, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14431200=Source.where(j2000_name: '1443+1200').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 15, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.4551, source_id: @a14431200.id, longitude: '14:42:48', latitude: '+12:00:40', frequency_id: @a14_0.id, cols: 13.0, nule: 5.7,zlin: 5.8, temp: 10.4, humidity: 70.3, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 16, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.4607, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a16_75.id, cols: 13.0, nule: 5.7,zlin: 5.8, temp: 10.3, humidity: 68.9, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 16, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.4607, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a14_25.id, cols: 13.0, nule: 5.7,zlin: 5.8, temp: 10.1, humidity: 69.1, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 16, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.4607, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a14_0.id, cols: 13.0, nule: 5.7,zlin: 5.8, temp: 10.3, humidity: 69.3, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 17, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.4627, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a16_75.id, cols: 13.0, nule: 5.7,zlin: 5.8, temp: 10.0, humidity: 70.2, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 17, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.4627, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a14_25.id, cols: 13.0, nule: 5.7,zlin: 5.8, temp: 9.9, humidity: 71.1, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 17, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.4627, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a14_0.id, cols: 13.0, nule: 5.7,zlin: 5.8, temp: 10.0, humidity: 73.3, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 18, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.4674, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a16_75.id, cols: 7.3, nule: 8.8,zlin: 5.8, temp: 9.5, humidity: 76.6, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 18, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.4674, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a14_25.id, cols: 7.3, nule: 8.8,zlin: 5.8, temp: 9.3, humidity: 79.1, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 18, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.4674, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a14_0.id, cols: 7.3, nule: 8.8,zlin: 5.8, temp: 9.5, humidity: 77.6, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 19, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.4726, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a19_25.id, cols: 7.3, nule: 8.8,zlin: -1.0, temp: 9.2, humidity: 81.7, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 19, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.4726, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a21_15.id, cols: 7.3, nule: 8.8,zlin: -1.0, temp: 9.2, humidity: 81.1, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 19, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.4726, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a22_85.id, cols: 7.3, nule: 8.8,zlin: -1.0, temp: 9.2, humidity: 82.2, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 19, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.4726, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a24_75.id, cols: 7.3, nule: 8.8,zlin: -1.0, temp: 9.2, humidity: 81.1, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 20, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.4746, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a19_25.id, cols: 7.3, nule: 8.8,zlin: -1.0, temp: 9.2, humidity: 84.2, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 20, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.4746, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a21_15.id, cols: 7.3, nule: 8.8,zlin: -1.0, temp: 9.2, humidity: 83.7, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 20, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.4746, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a22_85.id, cols: 7.3, nule: 8.8,zlin: -1.0, temp: 9.3, humidity: 84.5, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 20, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.4746, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a24_75.id, cols: 7.3, nule: 8.8,zlin: -1.0, temp: 9.2, humidity: 84.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 21, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.4786, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a19_25.id, cols: 7.3, nule: 8.8,zlin: -1.0, temp: 9.4, humidity: 85.3, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 21, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.4786, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a21_15.id, cols: 7.3, nule: 8.8,zlin: -1.0, temp: 9.4, humidity: 85.0, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 21, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.4786, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a22_85.id, cols: 7.3, nule: 8.8,zlin: -1.0, temp: 9.2, humidity: 85.3, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a14432501=Source.where(j2000_name: '1443+2501').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 21, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.4786, source_id: @a14432501.id, longitude: '14:43:56', latitude: '+25:01:44', frequency_id: @a24_75.id, cols: 7.3, nule: 8.8,zlin: -1.0, temp: 9.4, humidity: 85.3, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a15400101=Source.where(j2000_name: '1540+0101').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 22, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.4841, source_id: @a15400101.id, longitude: '15:40:36', latitude: '+01:01:03', frequency_id: @a8_05.id, cols: 7.3, nule: 8.8,zlin: 0.4, temp: 9.8, humidity: 78.2, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a15400101=Source.where(j2000_name: '1540+0101').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 22, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.4841, source_id: @a15400101.id, longitude: '15:40:36', latitude: '+01:01:03', frequency_id: @a6_55.id, cols: 7.3, nule: 8.8,zlin: 0.4, temp: 9.8, humidity: 78.2, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a15400101=Source.where(j2000_name: '1540+0101').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 22, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.4841, source_id: @a15400101.id, longitude: '15:40:36', latitude: '+01:01:03', frequency_id: @a6_3.id, cols: 7.3, nule: 8.8,zlin: 0.4, temp: 9.7, humidity: 75.9, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a15400101=Source.where(j2000_name: '1540+0101').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 23, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.4861, source_id: @a15400101.id, longitude: '15:40:36', latitude: '+01:01:03', frequency_id: @a8_05.id, cols: 7.3, nule: 8.8,zlin: 0.4, temp: 9.9, humidity: 74.4, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a15400101=Source.where(j2000_name: '1540+0101').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 23, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.4861, source_id: @a15400101.id, longitude: '15:40:36', latitude: '+01:01:03', frequency_id: @a6_55.id, cols: 7.3, nule: 8.8,zlin: 0.4, temp: 10.0, humidity: 72.6, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a15400101=Source.where(j2000_name: '1540+0101').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 23, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.4861, source_id: @a15400101.id, longitude: '15:40:36', latitude: '+01:01:03', frequency_id: @a6_3.id, cols: 7.3, nule: 8.8,zlin: 0.4, temp: 10.0, humidity: 71.4, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a15400101=Source.where(j2000_name: '1540+0101').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 24, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.4902, source_id: @a15400101.id, longitude: '15:40:36', latitude: '+01:01:03', frequency_id: @a8_05.id, cols: 18.1, nule: -2.1,zlin: 0.4, temp: 10.2, humidity: 70.1, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a15400101=Source.where(j2000_name: '1540+0101').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 24, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.4902, source_id: @a15400101.id, longitude: '15:40:36', latitude: '+01:01:03', frequency_id: @a6_55.id, cols: 18.1, nule: -2.1,zlin: 0.4, temp: 10.2, humidity: 66.2, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a15400101=Source.where(j2000_name: '1540+0101').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 24, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.4902, source_id: @a15400101.id, longitude: '15:40:36', latitude: '+01:01:03', frequency_id: @a6_3.id, cols: 18.1, nule: -2.1,zlin: 0.4, temp: 10.3, humidity: 65.5, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a15400101=Source.where(j2000_name: '1540+0101').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 25, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.4944, source_id: @a15400101.id, longitude: '15:40:36', latitude: '+01:01:03', frequency_id: @a8_05.id, cols: 0.1, nule: -13.3,zlin: 0.4, temp: 10.5, humidity: 68.2, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a15400101=Source.where(j2000_name: '1540+0101').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 25, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.4944, source_id: @a15400101.id, longitude: '15:40:36', latitude: '+01:01:03', frequency_id: @a6_55.id, cols: 0.1, nule: -13.3,zlin: 0.4, temp: 10.5, humidity: 68.2, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a15400101=Source.where(j2000_name: '1540+0101').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 25, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.4944, source_id: @a15400101.id, longitude: '15:40:36', latitude: '+01:01:03', frequency_id: @a6_3.id, cols: 0.1, nule: -13.3,zlin: 0.4, temp: 10.4, humidity: 64.2, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 26, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.4995, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a16_75.id, cols: 0.1, nule: -13.3,zlin: 5.8, temp: 10.6, humidity: 64.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 26, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.4995, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a14_25.id, cols: 0.1, nule: -13.3,zlin: 5.8, temp: 10.6, humidity: 64.0, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 26, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.4995, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a14_0.id, cols: 0.1, nule: -13.3,zlin: 5.8, temp: 10.6, humidity: 64.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 27, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.5013, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a16_75.id, cols: 0.1, nule: -13.3,zlin: 5.8, temp: 10.7, humidity: 63.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 27, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.5013, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a14_25.id, cols: 0.1, nule: -13.3,zlin: 5.8, temp: 10.6, humidity: 64.2, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 27, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.5013, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a14_0.id, cols: 0.1, nule: -13.3,zlin: 5.8, temp: 10.7, humidity: 63.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 28, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.505, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a16_75.id, cols: -13.1, nule: 1.9,zlin: 5.8, temp: 10.8, humidity: 64.4, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 28, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.505, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a14_25.id, cols: -13.1, nule: 1.9,zlin: 5.8, temp: 10.8, humidity: 63.7, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 28, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.505, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a14_0.id, cols: -13.1, nule: 1.9,zlin: 5.8, temp: 10.8, humidity: 63.1, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 29, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.5089, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a16_75.id, cols: -25.0, nule: -2.5,zlin: 5.8, temp: 11.0, humidity: 64.7, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 29, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.5089, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a14_25.id, cols: -25.0, nule: -2.5,zlin: 5.8, temp: 11.1, humidity: 64.4, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 29, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.5089, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a14_0.id, cols: -25.0, nule: -2.5,zlin: 5.8, temp: 11.1, humidity: 64.5, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 31, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.5196, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a19_25.id, cols: -31.5, nule: -7.1,zlin: -1.0, temp: 11.3, humidity: 65.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 31, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.5196, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a21_15.id, cols: -31.5, nule: -7.1,zlin: -1.0, temp: 11.3, humidity: 65.2, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 31, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.5196, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a22_85.id, cols: -31.5, nule: -7.1,zlin: -1.0, temp: 11.3, humidity: 64.6, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 31, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.5196, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a24_75.id, cols: -31.5, nule: -7.1,zlin: -1.0, temp: 11.1, humidity: 65.7, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 32, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.5232, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a19_25.id, cols: -42.6, nule: -9.3,zlin: -1.0, temp: 11.3, humidity: 66.3, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 32, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.5232, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a21_15.id, cols: -42.6, nule: -9.3,zlin: -1.0, temp: 11.3, humidity: 66.4, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 32, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.5232, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a22_85.id, cols: -42.6, nule: -9.3,zlin: -1.0, temp: 11.4, humidity: 66.3, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a19596508=Source.where(j2000_name: '1959+6508').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 32, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.5232, source_id: @a19596508.id, longitude: '19:59:59', latitude: '+65:08:54', frequency_id: @a24_75.id, cols: -42.6, nule: -9.3,zlin: -1.0, temp: 11.3, humidity: 66.7, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 33, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.5309, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a8_05.id, cols: 0.1, nule: -13.3,zlin: 0.4, temp: 11.6, humidity: 65.5, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 33, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.5309, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a6_55.id, cols: 0.1, nule: -13.3,zlin: 0.4, temp: 11.7, humidity: 64.3, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 33, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.5309, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a6_3.id, cols: 0.1, nule: -13.3,zlin: 0.4, temp: 11.6, humidity: 65.5, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 34, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.5331, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a8_05.id, cols: 0.1, nule: -13.3,zlin: 0.4, temp: 11.8, humidity: 64.7, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 34, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.5331, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a6_55.id, cols: 0.1, nule: -13.3,zlin: 0.4, temp: 11.7, humidity: 60.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 34, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.5331, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a6_3.id, cols: 0.1, nule: -13.3,zlin: 0.4, temp: 11.8, humidity: 62.4, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 36, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.5376, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a8_05.id, cols: 9.3, nule: -2.4,zlin: 3.8, temp: 11.5, humidity: 58.6, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 36, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.5376, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a6_55.id, cols: 9.3, nule: -2.4,zlin: 3.8, temp: 11.5, humidity: 58.0, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 36, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.5376, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a6_3.id, cols: 9.3, nule: -2.4,zlin: 3.8, temp: 11.7, humidity: 57.6, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 37, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.5398, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a8_05.id, cols: 18.9, nule: 10.3,zlin: 3.8, temp: 11.5, humidity: 57.7, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 37, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.5398, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a6_55.id, cols: 18.9, nule: 10.3,zlin: 3.8, temp: 11.6, humidity: 57.3, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 37, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.5398, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a6_3.id, cols: 18.9, nule: 10.3,zlin: 3.8, temp: 11.6, humidity: 57.5, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 38, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.5431, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a16_75.id, cols: 11.8, nule: 9.8,zlin: 5.8, temp: 11.4, humidity: 57.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 38, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.5431, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a14_25.id, cols: 11.8, nule: 9.8,zlin: 5.8, temp: 11.6, humidity: 58.0, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 38, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.5431, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a14_0.id, cols: 11.8, nule: 9.8,zlin: 5.8, temp: 11.6, humidity: 58.0, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 40, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.5471, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a16_75.id, cols: 6.3, nule: 21.8,zlin: 6.6, temp: 11.6, humidity: 56.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 40, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.5471, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a14_25.id, cols: 6.3, nule: 21.8,zlin: 6.6, temp: 11.6, humidity: 56.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 40, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.5471, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a14_0.id, cols: 6.3, nule: 21.8,zlin: 6.6, temp: 11.5, humidity: 58.1, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 41, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.5492, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a16_75.id, cols: 5.6, nule: 25.4,zlin: 6.6, temp: 11.8, humidity: 56.5, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 41, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.5492, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a14_25.id, cols: 5.6, nule: 25.4,zlin: 6.6, temp: 11.8, humidity: 56.5, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 41, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.5492, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a14_0.id, cols: 5.6, nule: 25.4,zlin: 6.6, temp: 11.5, humidity: 57.5, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 42, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.5525, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a19_25.id, cols: 5.7, nule: 22.7,zlin: -1.0, temp: 12.0, humidity: 56.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 42, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.5525, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a21_15.id, cols: 5.7, nule: 22.7,zlin: -1.0, temp: 12.0, humidity: 56.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 42, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.5525, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a22_85.id, cols: 5.7, nule: 22.7,zlin: -1.0, temp: 12.0, humidity: 56.7, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 42, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.5525, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a24_75.id, cols: 5.7, nule: 22.7,zlin: -1.0, temp: 11.9, humidity: 55.9, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 43, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.5545, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a19_25.id, cols: 4.7, nule: 17.0,zlin: -1.0, temp: 12.1, humidity: 56.4, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 43, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.5545, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a21_15.id, cols: 4.7, nule: 17.0,zlin: -1.0, temp: 12.1, humidity: 55.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 43, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.5545, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a22_85.id, cols: 4.7, nule: 17.0,zlin: -1.0, temp: 11.8, humidity: 55.4, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 43, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.5545, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a24_75.id, cols: 4.7, nule: 17.0,zlin: -1.0, temp: 11.8, humidity: 55.4, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 45, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.5591, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a19_25.id, cols: 8.0, nule: 16.4,zlin: 0.2, temp: 12.2, humidity: 54.0, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 45, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.5591, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a21_15.id, cols: 8.0, nule: 16.4,zlin: 0.2, temp: 12.2, humidity: 54.0, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 45, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.5591, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a22_85.id, cols: 8.0, nule: 16.4,zlin: 0.2, temp: 12.1, humidity: 54.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 45, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.5591, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a24_75.id, cols: 8.0, nule: 16.4,zlin: 0.2, temp: 12.1, humidity: 54.8, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 46, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.5637, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a19_25.id, cols: 8.0, nule: 16.4,zlin: 0.2, temp: 12.2, humidity: 54.5, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 46, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.5637, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a21_15.id, cols: 8.0, nule: 16.4,zlin: 0.2, temp: 12.0, humidity: 54.7, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 46, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.5637, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a22_85.id, cols: 8.0, nule: 16.4,zlin: 0.2, temp: 12.0, humidity: 54.5, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 46, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.5637, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a24_75.id, cols: 8.0, nule: 16.4,zlin: 0.2, temp: 12.1, humidity: 55.0, pressure: 975.0, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 47, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.5687, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a38_75.id, cols: 5.0, nule: 16.2,zlin: 0.9, temp: 11.7, humidity: 56.9, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 47, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.5687, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a36_25.id, cols: 5.0, nule: 16.2,zlin: 0.9, temp: 11.6, humidity: 57.5, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 47, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.5687, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a36_0.id, cols: 5.0, nule: 16.2,zlin: 0.9, temp: 11.5, humidity: 56.9, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 49, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.5762, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a38_75.id, cols: 2.7, nule: 12.2,zlin: 1.6, temp: 11.5, humidity: 58.8, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 49, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.5762, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a36_25.id, cols: 2.7, nule: 12.2,zlin: 1.6, temp: 11.4, humidity: 61.3, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 49, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.5762, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a36_0.id, cols: 2.7, nule: 12.2,zlin: 1.6, temp: 11.3, humidity: 59.4, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 50, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.5801, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a38_75.id, cols: -0.8, nule: 6.8,zlin: 1.6, temp: 11.0, humidity: 64.3, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 50, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.5801, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a36_25.id, cols: -0.8, nule: 6.8,zlin: 1.6, temp: 11.2, humidity: 63.3, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 50, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.5801, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a36_0.id, cols: -0.8, nule: 6.8,zlin: 1.6, temp: 10.8, humidity: 64.0, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a43_75=Frequency.where(freq_ghz: 43.75).first_or_create
+Observation.create(scan_nr: 51, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.585, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a43_75.id, cols: 1.6, nule: 8.6,zlin: 1.6, temp: 10.8, humidity: 64.3, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a41_25=Frequency.where(freq_ghz: 41.25).first_or_create
+Observation.create(scan_nr: 51, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.585, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a41_25.id, cols: 1.6, nule: 8.6,zlin: 1.6, temp: 10.8, humidity: 64.4, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a41_0=Frequency.where(freq_ghz: 41.0).first_or_create
+Observation.create(scan_nr: 51, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.585, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a41_0.id, cols: 1.6, nule: 8.6,zlin: 1.6, temp: 10.8, humidity: 64.3, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a43_75=Frequency.where(freq_ghz: 43.75).first_or_create
+Observation.create(scan_nr: 52, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.5887, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a43_75.id, cols: -1.1, nule: 9.1,zlin: 1.6, temp: 10.7, humidity: 64.3, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a41_25=Frequency.where(freq_ghz: 41.25).first_or_create
+Observation.create(scan_nr: 52, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.5887, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a41_25.id, cols: -1.1, nule: 9.1,zlin: 1.6, temp: 10.8, humidity: 63.4, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a3C286=Source.where(j2000_name: '3C286').first_or_create
+@a41_0=Frequency.where(freq_ghz: 41.0).first_or_create
+Observation.create(scan_nr: 52, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.5887, source_id: @a3C286.id, longitude: '13:31:08', latitude: '+30:30:32', frequency_id: @a41_0.id, cols: -1.1, nule: 9.1,zlin: 1.6, temp: 10.7, humidity: 63.4, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 53, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.5937, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a8_05.id, cols: 3.0, nule: 9.6,zlin: 3.8, temp: 10.6, humidity: 61.7, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 53, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.5937, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a6_55.id, cols: 3.0, nule: 9.6,zlin: 3.8, temp: 10.6, humidity: 62.9, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 53, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.5937, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a6_3.id, cols: 3.0, nule: 9.6,zlin: 3.8, temp: 10.6, humidity: 62.9, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 54, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.5957, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a8_05.id, cols: 3.0, nule: 9.6,zlin: 3.8, temp: 10.6, humidity: 61.9, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 54, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.5957, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a6_55.id, cols: 3.0, nule: 9.6,zlin: 3.8, temp: 10.7, humidity: 62.0, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 54, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.5957, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a6_3.id, cols: 3.0, nule: 9.6,zlin: 3.8, temp: 10.7, humidity: 61.9, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 55, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.6014, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a8_05.id, cols: -2.0, nule: 1.6,zlin: 3.8, temp: 10.6, humidity: 63.0, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 55, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.6014, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a6_55.id, cols: -2.0, nule: 1.6,zlin: 3.8, temp: 10.6, humidity: 62.6, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 55, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.6014, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a6_3.id, cols: -2.0, nule: 1.6,zlin: 3.8, temp: 10.6, humidity: 63.0, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 56, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.6065, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a16_75.id, cols: 5.1, nule: 2.9,zlin: 6.6, temp: 10.7, humidity: 63.3, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 56, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.6065, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a14_25.id, cols: 5.1, nule: 2.9,zlin: 6.6, temp: 10.7, humidity: 63.3, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 56, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.6065, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a14_0.id, cols: 5.1, nule: 2.9,zlin: 6.6, temp: 10.7, humidity: 62.1, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 57, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.6085, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a16_75.id, cols: 5.1, nule: 2.9,zlin: 6.6, temp: 10.6, humidity: 62.3, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 57, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.6085, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a14_25.id, cols: 5.1, nule: 2.9,zlin: 6.6, temp: 10.8, humidity: 62.5, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 57, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.6085, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a14_0.id, cols: 5.1, nule: 2.9,zlin: 6.6, temp: 10.7, humidity: 62.3, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 58, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.6128, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a16_75.id, cols: 7.8, nule: 11.5,zlin: 6.6, temp: 10.9, humidity: 61.0, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 58, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.6128, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a14_25.id, cols: 7.8, nule: 11.5,zlin: 6.6, temp: 10.9, humidity: 61.7, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a13591436=Source.where(j2000_name: '1359+1436').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 58, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.6128, source_id: @a13591436.id, longitude: '13:59:59', latitude: '+14:36:33', frequency_id: @a14_0.id, cols: 7.8, nule: 11.5,zlin: 6.6, temp: 10.9, humidity: 61.3, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 59, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.6191, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a16_75.id, cols: 0.8, nule: 12.2,zlin: 6.6, temp: 11.0, humidity: 60.9, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 59, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.6191, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a14_25.id, cols: 0.8, nule: 12.2,zlin: 6.6, temp: 11.0, humidity: 61.0, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 59, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.6191, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a14_0.id, cols: 0.8, nule: 12.2,zlin: 6.6, temp: 11.0, humidity: 61.3, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 60, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.6211, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a16_75.id, cols: 0.8, nule: 12.2,zlin: 6.6, temp: 11.1, humidity: 61.1, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 60, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.6211, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a14_25.id, cols: 0.8, nule: 12.2,zlin: 6.6, temp: 11.0, humidity: 62.0, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 60, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.6211, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a14_0.id, cols: 0.8, nule: 12.2,zlin: 6.6, temp: 11.0, humidity: 61.5, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 61, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.6255, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a16_75.id, cols: -5.9, nule: 2.7,zlin: 6.6, temp: 11.0, humidity: 61.7, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 61, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.6255, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a14_25.id, cols: -5.9, nule: 2.7,zlin: 6.6, temp: 11.0, humidity: 60.8, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 61, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.6255, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a14_0.id, cols: -5.9, nule: 2.7,zlin: 6.6, temp: 11.0, humidity: 60.8, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 62, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.6312, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a19_25.id, cols: -4.3, nule: 8.4,zlin: 0.2, temp: 10.9, humidity: 63.1, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 62, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.6312, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a21_15.id, cols: -4.3, nule: 8.4,zlin: 0.2, temp: 11.0, humidity: 62.7, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 62, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.6312, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a22_85.id, cols: -4.3, nule: 8.4,zlin: 0.2, temp: 10.9, humidity: 63.1, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 62, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.6312, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a24_75.id, cols: -4.3, nule: 8.4,zlin: 0.2, temp: 11.0, humidity: 62.0, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 63, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.6333, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a19_25.id, cols: -4.3, nule: 8.4,zlin: 0.2, temp: 11.0, humidity: 61.6, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 63, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.6333, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a21_15.id, cols: -4.3, nule: 8.4,zlin: 0.2, temp: 11.0, humidity: 61.6, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 63, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.6333, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a22_85.id, cols: -4.3, nule: 8.4,zlin: 0.2, temp: 11.1, humidity: 61.8, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 63, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.6333, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a24_75.id, cols: -4.3, nule: 8.4,zlin: 0.2, temp: 11.0, humidity: 62.4, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 64, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.6387, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a19_25.id, cols: 0.6, nule: 9.8,zlin: 0.2, temp: 10.8, humidity: 61.9, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 64, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.6387, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a21_15.id, cols: 0.6, nule: 9.8,zlin: 0.2, temp: 10.8, humidity: 61.9, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 64, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.6387, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a22_85.id, cols: 0.6, nule: 9.8,zlin: 0.2, temp: 10.9, humidity: 61.6, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 64, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.6387, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a24_75.id, cols: 0.6, nule: 9.8,zlin: 0.2, temp: 10.9, humidity: 62.4, pressure: 975.4, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 65, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.6441, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a38_75.id, cols: 2.5, nule: 10.8,zlin: 1.6, temp: 10.8, humidity: 62.7, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 65, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.6441, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a36_25.id, cols: 2.5, nule: 10.8,zlin: 1.6, temp: 10.9, humidity: 62.7, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 65, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.6441, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a36_0.id, cols: 2.5, nule: 10.8,zlin: 1.6, temp: 10.7, humidity: 63.1, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 66, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.648, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a38_75.id, cols: -2.2, nule: 3.7,zlin: 1.6, temp: 10.9, humidity: 62.6, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 66, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.648, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a36_25.id, cols: -2.2, nule: 3.7,zlin: 1.6, temp: 10.8, humidity: 62.6, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a15551111=Source.where(j2000_name: '1555+1111').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 66, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.648, source_id: @a15551111.id, longitude: '15:55:43', latitude: '+11:11:24', frequency_id: @a36_0.id, cols: -2.2, nule: 3.7,zlin: 1.6, temp: 10.9, humidity: 62.6, pressure: 975.5, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 67, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.654, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a16_75.id, cols: -2.2, nule: 3.7,zlin: 6.6, temp: 10.7, humidity: 63.8, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 67, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.654, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a14_25.id, cols: -2.2, nule: 3.7,zlin: 6.6, temp: 10.9, humidity: 63.7, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 67, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.654, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a14_0.id, cols: -2.2, nule: 3.7,zlin: 6.6, temp: 10.8, humidity: 63.5, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 68, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.656, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a16_75.id, cols: -2.2, nule: 3.7,zlin: 6.6, temp: 10.8, humidity: 63.9, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 68, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.656, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a14_25.id, cols: -2.2, nule: 3.7,zlin: 6.6, temp: 10.8, humidity: 64.2, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 68, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.656, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a14_0.id, cols: -2.2, nule: 3.7,zlin: 6.6, temp: 10.8, humidity: 64.6, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 69, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.6599, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a16_75.id, cols: -13.9, nule: 4.7,zlin: 6.6, temp: 10.7, humidity: 65.0, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 69, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.6599, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a14_25.id, cols: -13.9, nule: 4.7,zlin: 6.6, temp: 10.6, humidity: 65.3, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 69, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.6599, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a14_0.id, cols: -13.9, nule: 4.7,zlin: 6.6, temp: 10.7, humidity: 65.0, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 71, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.6724, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a19_25.id, cols: -13.1, nule: 2.5,zlin: 0.2, temp: 10.7, humidity: 65.6, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 71, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.6724, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a21_15.id, cols: -13.1, nule: 2.5,zlin: 0.2, temp: 10.7, humidity: 66.2, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 71, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.6724, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a22_85.id, cols: -13.1, nule: 2.5,zlin: 0.2, temp: 10.7, humidity: 66.2, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 71, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.6724, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a24_75.id, cols: -13.1, nule: 2.5,zlin: 0.2, temp: 10.7, humidity: 66.1, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 72, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.677, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a19_25.id, cols: -11.3, nule: -6.3,zlin: 0.2, temp: 10.7, humidity: 66.7, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 72, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.677, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a21_15.id, cols: -11.3, nule: -6.3,zlin: 0.2, temp: 10.6, humidity: 67.0, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 72, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.677, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a22_85.id, cols: -11.3, nule: -6.3,zlin: 0.2, temp: 10.7, humidity: 66.8, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 72, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.677, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a24_75.id, cols: -11.3, nule: -6.3,zlin: 0.2, temp: 10.6, humidity: 67.0, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 73, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.6831, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a38_75.id, cols: -6.1, nule: -5.4,zlin: 1.6, temp: 10.6, humidity: 67.4, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 73, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.6831, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a36_25.id, cols: -6.1, nule: -5.4,zlin: 1.6, temp: 10.6, humidity: 67.0, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 73, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.6831, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a36_0.id, cols: -6.1, nule: -5.4,zlin: 1.6, temp: 10.6, humidity: 67.4, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 74, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.6878, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a38_75.id, cols: -7.9, nule: 3.7,zlin: 1.6, temp: 10.5, humidity: 67.1, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 74, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.6878, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a36_25.id, cols: -7.9, nule: 3.7,zlin: 1.6, temp: 10.5, humidity: 66.8, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a17430350=Source.where(j2000_name: '1743-0350').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 74, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.6878, source_id: @a17430350.id, longitude: '17:43:58', latitude: '-03:50:04', frequency_id: @a36_0.id, cols: -7.9, nule: 3.7,zlin: 1.6, temp: 10.5, humidity: 67.1, pressure: 975.9, epoch_id: @a2026_10_11.id)
+@a19432118=Source.where(j2000_name: '1943+2118').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 75, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.6975, source_id: @a19432118.id, longitude: '19:43:56', latitude: '+21:18:07', frequency_id: @a16_75.id, cols: -3.5, nule: 22.2,zlin: 6.6, temp: 10.3, humidity: 67.1, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432118=Source.where(j2000_name: '1943+2118').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 75, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.6975, source_id: @a19432118.id, longitude: '19:43:56', latitude: '+21:18:07', frequency_id: @a14_25.id, cols: -3.5, nule: 22.2,zlin: 6.6, temp: 10.3, humidity: 67.1, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432118=Source.where(j2000_name: '1943+2118').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 75, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.6975, source_id: @a19432118.id, longitude: '19:43:56', latitude: '+21:18:07', frequency_id: @a14_0.id, cols: -3.5, nule: 22.2,zlin: 6.6, temp: 10.3, humidity: 67.3, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432118=Source.where(j2000_name: '1943+2118').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 76, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.6997, source_id: @a19432118.id, longitude: '19:43:56', latitude: '+21:18:07', frequency_id: @a16_75.id, cols: -3.5, nule: 22.2,zlin: 6.6, temp: 10.4, humidity: 67.0, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432118=Source.where(j2000_name: '1943+2118').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 76, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.6997, source_id: @a19432118.id, longitude: '19:43:56', latitude: '+21:18:07', frequency_id: @a14_25.id, cols: -3.5, nule: 22.2,zlin: 6.6, temp: 10.3, humidity: 67.6, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432118=Source.where(j2000_name: '1943+2118').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 76, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.6997, source_id: @a19432118.id, longitude: '19:43:56', latitude: '+21:18:07', frequency_id: @a14_0.id, cols: -3.5, nule: 22.2,zlin: 6.6, temp: 10.4, humidity: 67.3, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432118=Source.where(j2000_name: '1943+2118').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 77, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.7043, source_id: @a19432118.id, longitude: '19:43:56', latitude: '+21:18:07', frequency_id: @a16_75.id, cols: -4.2, nule: 4.2,zlin: 6.6, temp: 10.3, humidity: 68.5, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432118=Source.where(j2000_name: '1943+2118').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 77, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.7043, source_id: @a19432118.id, longitude: '19:43:56', latitude: '+21:18:07', frequency_id: @a14_25.id, cols: -4.2, nule: 4.2,zlin: 6.6, temp: 10.1, humidity: 68.9, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432118=Source.where(j2000_name: '1943+2118').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 77, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.7043, source_id: @a19432118.id, longitude: '19:43:56', latitude: '+21:18:07', frequency_id: @a14_0.id, cols: -4.2, nule: 4.2,zlin: 6.6, temp: 10.1, humidity: 68.6, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432103=Source.where(j2000_name: '1943+2103').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 78, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.7099, source_id: @a19432103.id, longitude: '19:43:41', latitude: '+21:03:51', frequency_id: @a8_05.id, cols: 6.4, nule: -13.5,zlin: 3.8, temp: 9.8, humidity: 70.2, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432103=Source.where(j2000_name: '1943+2103').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 78, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.7099, source_id: @a19432103.id, longitude: '19:43:41', latitude: '+21:03:51', frequency_id: @a6_55.id, cols: 6.4, nule: -13.5,zlin: 3.8, temp: 9.9, humidity: 70.0, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432103=Source.where(j2000_name: '1943+2103').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 78, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.7099, source_id: @a19432103.id, longitude: '19:43:41', latitude: '+21:03:51', frequency_id: @a6_3.id, cols: 6.4, nule: -13.5,zlin: 3.8, temp: 10.0, humidity: 70.2, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432103=Source.where(j2000_name: '1943+2103').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 79, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.712, source_id: @a19432103.id, longitude: '19:43:41', latitude: '+21:03:51', frequency_id: @a8_05.id, cols: 6.4, nule: -13.5,zlin: 3.8, temp: 9.7, humidity: 70.1, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432103=Source.where(j2000_name: '1943+2103').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 79, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.712, source_id: @a19432103.id, longitude: '19:43:41', latitude: '+21:03:51', frequency_id: @a6_55.id, cols: 6.4, nule: -13.5,zlin: 3.8, temp: 9.8, humidity: 69.7, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432103=Source.where(j2000_name: '1943+2103').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 79, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.712, source_id: @a19432103.id, longitude: '19:43:41', latitude: '+21:03:51', frequency_id: @a6_3.id, cols: 6.4, nule: -13.5,zlin: 3.8, temp: 9.8, humidity: 69.7, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432103=Source.where(j2000_name: '1943+2103').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 80, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.7162, source_id: @a19432103.id, longitude: '19:43:41', latitude: '+21:03:51', frequency_id: @a8_05.id, cols: 13.5, nule: -21.2,zlin: 3.8, temp: 9.6, humidity: 70.2, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432103=Source.where(j2000_name: '1943+2103').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 80, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.7162, source_id: @a19432103.id, longitude: '19:43:41', latitude: '+21:03:51', frequency_id: @a6_55.id, cols: 13.5, nule: -21.2,zlin: 3.8, temp: 9.6, humidity: 71.0, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19432103=Source.where(j2000_name: '1943+2103').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 80, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.7162, source_id: @a19432103.id, longitude: '19:43:41', latitude: '+21:03:51', frequency_id: @a6_3.id, cols: 13.5, nule: -21.2,zlin: 3.8, temp: 9.5, humidity: 70.5, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19462029=Source.where(j2000_name: '1946+2029').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 81, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.7204, source_id: @a19462029.id, longitude: '19:46:45', latitude: '+20:29:25', frequency_id: @a8_05.id, cols: 3.6, nule: -26.0,zlin: 3.8, temp: 9.4, humidity: 71.4, pressure: 976.4, epoch_id: @a2026_10_11.id)
+@a19462029=Source.where(j2000_name: '1946+2029').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 81, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.7204, source_id: @a19462029.id, longitude: '19:46:45', latitude: '+20:29:25', frequency_id: @a6_55.id, cols: 3.6, nule: -26.0,zlin: 3.8, temp: 9.4, humidity: 71.9, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@a19462029=Source.where(j2000_name: '1946+2029').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 81, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.7204, source_id: @a19462029.id, longitude: '19:46:45', latitude: '+20:29:25', frequency_id: @a6_3.id, cols: 3.6, nule: -26.0,zlin: 3.8, temp: 9.4, humidity: 71.8, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@a19462029=Source.where(j2000_name: '1946+2029').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 82, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.7225, source_id: @a19462029.id, longitude: '19:46:45', latitude: '+20:29:25', frequency_id: @a8_05.id, cols: 3.6, nule: -26.0,zlin: 3.8, temp: 9.2, humidity: 72.3, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@a19462029=Source.where(j2000_name: '1946+2029').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 82, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.7225, source_id: @a19462029.id, longitude: '19:46:45', latitude: '+20:29:25', frequency_id: @a6_55.id, cols: 3.6, nule: -26.0,zlin: 3.8, temp: 9.3, humidity: 72.0, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@a19462029=Source.where(j2000_name: '1946+2029').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 82, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.7225, source_id: @a19462029.id, longitude: '19:46:45', latitude: '+20:29:25', frequency_id: @a6_3.id, cols: 3.6, nule: -26.0,zlin: 3.8, temp: 9.2, humidity: 72.1, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@a19462029=Source.where(j2000_name: '1946+2029').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 83, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.7267, source_id: @a19462029.id, longitude: '19:46:45', latitude: '+20:29:25', frequency_id: @a8_05.id, cols: 4.8, nule: -25.5,zlin: 3.8, temp: 9.0, humidity: 73.2, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@a19462029=Source.where(j2000_name: '1946+2029').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 83, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.7267, source_id: @a19462029.id, longitude: '19:46:45', latitude: '+20:29:25', frequency_id: @a6_55.id, cols: 4.8, nule: -25.5,zlin: 3.8, temp: 9.1, humidity: 72.7, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@a19462029=Source.where(j2000_name: '1946+2029').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 83, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.7267, source_id: @a19462029.id, longitude: '19:46:45', latitude: '+20:29:25', frequency_id: @a6_3.id, cols: 4.8, nule: -25.5,zlin: 3.8, temp: 9.0, humidity: 73.0, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 84, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.7324, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a8_05.id, cols: 11.9, nule: -20.2,zlin: 3.8, temp: 8.8, humidity: 73.7, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 84, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.7324, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a6_55.id, cols: 11.9, nule: -20.2,zlin: 3.8, temp: 8.9, humidity: 73.6, pressure: 976.9, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 84, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.7324, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a6_3.id, cols: 11.9, nule: -20.2,zlin: 3.8, temp: 8.9, humidity: 73.6, pressure: 976.9, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 85, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.7344, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a8_05.id, cols: 11.9, nule: -20.2,zlin: 3.8, temp: 8.9, humidity: 74.5, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 85, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.7344, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a6_55.id, cols: 11.9, nule: -20.2,zlin: 3.8, temp: 8.9, humidity: 74.0, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 85, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.7344, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a6_3.id, cols: 11.9, nule: -20.2,zlin: 3.8, temp: 8.9, humidity: 74.0, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 87, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.7386, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a8_05.id, cols: 0.1, nule: -7.0,zlin: -0.7, temp: 9.0, humidity: 75.5, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 87, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.7386, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a6_55.id, cols: 0.1, nule: -7.0,zlin: -0.7, temp: 9.2, humidity: 76.5, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 87, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.7386, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a6_3.id, cols: 0.1, nule: -7.0,zlin: -0.7, temp: 9.2, humidity: 76.2, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 88, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.7408, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a8_05.id, cols: 4.8, nule: -8.0,zlin: -0.7, temp: 9.2, humidity: 76.9, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 88, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.7408, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a6_55.id, cols: 4.8, nule: -8.0,zlin: -0.7, temp: 9.2, humidity: 77.3, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 88, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.7408, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a6_3.id, cols: 4.8, nule: -8.0,zlin: -0.7, temp: 9.2, humidity: 77.3, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 89, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.7441, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a16_75.id, cols: 4.6, nule: -7.0,zlin: 6.6, temp: 9.2, humidity: 78.0, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 89, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.7441, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_25.id, cols: 4.6, nule: -7.0,zlin: 6.6, temp: 9.0, humidity: 78.7, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 89, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.7441, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_0.id, cols: 4.6, nule: -7.0,zlin: 6.6, temp: 9.1, humidity: 78.5, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 91, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.748, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a16_75.id, cols: 2.8, nule: -1.7,zlin: 3.9, temp: 8.9, humidity: 79.1, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 91, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.748, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_25.id, cols: 2.8, nule: -1.7,zlin: 3.9, temp: 8.9, humidity: 79.1, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 91, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.748, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_0.id, cols: 2.8, nule: -1.7,zlin: 3.9, temp: 9.0, humidity: 79.2, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 92, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.7501, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a16_75.id, cols: 5.6, nule: 0.4,zlin: 3.9, temp: 9.0, humidity: 78.9, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 92, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.7501, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_25.id, cols: 5.6, nule: 0.4,zlin: 3.9, temp: 8.9, humidity: 78.8, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 92, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.7501, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_0.id, cols: 5.6, nule: 0.4,zlin: 3.9, temp: 9.0, humidity: 78.9, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 93, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.7534, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a19_25.id, cols: 5.7, nule: 0.8,zlin: 0.2, temp: 8.9, humidity: 79.1, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 93, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.7534, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a21_15.id, cols: 5.7, nule: 0.8,zlin: 0.2, temp: 8.9, humidity: 79.1, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 93, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.7534, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a22_85.id, cols: 5.7, nule: 0.8,zlin: 0.2, temp: 8.9, humidity: 78.9, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 93, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.7534, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a24_75.id, cols: 5.7, nule: 0.8,zlin: 0.2, temp: 8.9, humidity: 78.9, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 94, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.7555, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a19_25.id, cols: 7.3, nule: -5.3,zlin: 0.2, temp: 8.9, humidity: 79.1, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 94, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.7555, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a21_15.id, cols: 7.3, nule: -5.3,zlin: 0.2, temp: 8.9, humidity: 79.2, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 94, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.7555, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a22_85.id, cols: 7.3, nule: -5.3,zlin: 0.2, temp: 8.9, humidity: 79.0, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 94, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.7555, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a24_75.id, cols: 7.3, nule: -5.3,zlin: 0.2, temp: 8.9, humidity: 79.2, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 96, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.7597, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a19_25.id, cols: 7.3, nule: -3.7,zlin: -1.9, temp: 8.6, humidity: 79.3, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 96, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.7597, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a21_15.id, cols: 7.3, nule: -3.7,zlin: -1.9, temp: 8.6, humidity: 79.6, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 96, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.7597, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a22_85.id, cols: 7.3, nule: -3.7,zlin: -1.9, temp: 8.7, humidity: 79.6, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 96, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.7597, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a24_75.id, cols: 7.3, nule: -3.7,zlin: -1.9, temp: 8.7, humidity: 79.6, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 97, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.7619, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a19_25.id, cols: 9.3, nule: -3.3,zlin: -1.9, temp: 8.6, humidity: 79.9, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 97, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.7619, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a21_15.id, cols: 9.3, nule: -3.3,zlin: -1.9, temp: 8.6, humidity: 79.4, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 97, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.7619, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a22_85.id, cols: 9.3, nule: -3.3,zlin: -1.9, temp: 8.6, humidity: 79.4, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 97, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.7619, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a24_75.id, cols: 9.3, nule: -3.3,zlin: -1.9, temp: 8.6, humidity: 80.0, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 98, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.7672, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a38_75.id, cols: 10.3, nule: -2.1,zlin: 1.6, temp: 8.4, humidity: 80.9, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 98, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.7672, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a36_25.id, cols: 10.3, nule: -2.1,zlin: 1.6, temp: 8.4, humidity: 81.4, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 98, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.7672, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a36_0.id, cols: 10.3, nule: -2.1,zlin: 1.6, temp: 8.3, humidity: 81.1, pressure: 976.8, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 100, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.7732, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a38_75.id, cols: 9.3, nule: -3.3,zlin: 0.3, temp: 8.2, humidity: 81.4, pressure: 977.3, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 100, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.7732, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a36_25.id, cols: 9.3, nule: -3.3,zlin: 0.3, temp: 8.1, humidity: 81.3, pressure: 977.3, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 100, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.7732, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a36_0.id, cols: 9.3, nule: -3.3,zlin: 0.3, temp: 8.0, humidity: 81.0, pressure: 977.3, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 101, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.7776, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a38_75.id, cols: 10.5, nule: -4.9,zlin: 0.3, temp: 8.1, humidity: 81.1, pressure: 977.3, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 101, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.7776, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a36_25.id, cols: 10.5, nule: -4.9,zlin: 0.3, temp: 8.0, humidity: 81.2, pressure: 977.3, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 101, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.7776, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a36_0.id, cols: 10.5, nule: -4.9,zlin: 0.3, temp: 8.1, humidity: 80.9, pressure: 977.3, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a43_75=Frequency.where(freq_ghz: 43.75).first_or_create
+Observation.create(scan_nr: 102, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.7831, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a43_75.id, cols: 10.9, nule: -6.1,zlin: 0.3, temp: 7.9, humidity: 81.3, pressure: 977.4, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a41_25=Frequency.where(freq_ghz: 41.25).first_or_create
+Observation.create(scan_nr: 102, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.7831, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a41_25.id, cols: 10.9, nule: -6.1,zlin: 0.3, temp: 7.8, humidity: 81.5, pressure: 977.5, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a41_0=Frequency.where(freq_ghz: 41.0).first_or_create
+Observation.create(scan_nr: 102, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.7831, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a41_0.id, cols: 10.9, nule: -6.1,zlin: 0.3, temp: 7.8, humidity: 81.4, pressure: 977.4, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a43_75=Frequency.where(freq_ghz: 43.75).first_or_create
+Observation.create(scan_nr: 103, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.7877, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a43_75.id, cols: 10.9, nule: -8.7,zlin: 0.3, temp: 7.9, humidity: 81.7, pressure: 977.4, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a41_25=Frequency.where(freq_ghz: 41.25).first_or_create
+Observation.create(scan_nr: 103, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.7877, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a41_25.id, cols: 10.9, nule: -8.7,zlin: 0.3, temp: 7.9, humidity: 81.6, pressure: 977.4, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a41_0=Frequency.where(freq_ghz: 41.0).first_or_create
+Observation.create(scan_nr: 103, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.7877, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a41_0.id, cols: 10.9, nule: -8.7,zlin: 0.3, temp: 7.9, humidity: 82.1, pressure: 977.5, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 104, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.795, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a16_75.id, cols: 8.7, nule: -9.1,zlin: 3.9, temp: 7.6, humidity: 82.8, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 104, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.795, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a14_25.id, cols: 8.7, nule: -9.1,zlin: 3.9, temp: 7.5, humidity: 82.4, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 104, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.795, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a14_0.id, cols: 8.7, nule: -9.1,zlin: 3.9, temp: 7.6, humidity: 82.7, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 105, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.7969, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a16_75.id, cols: 8.7, nule: -9.1,zlin: 3.9, temp: 7.4, humidity: 82.5, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 105, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.7969, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a14_25.id, cols: 8.7, nule: -9.1,zlin: 3.9, temp: 7.4, humidity: 82.4, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 105, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.7969, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a14_0.id, cols: 8.7, nule: -9.1,zlin: 3.9, temp: 7.4, humidity: 82.7, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 106, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8007, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a16_75.id, cols: 4.3, nule: 7.4,zlin: 3.9, temp: 7.4, humidity: 82.4, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 106, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8007, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a14_25.id, cols: 4.3, nule: 7.4,zlin: 3.9, temp: 7.4, humidity: 82.5, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 106, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.8007, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a14_0.id, cols: 4.3, nule: 7.4,zlin: 3.9, temp: 7.3, humidity: 82.5, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 107, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.807, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a19_25.id, cols: 6.1, nule: 8.2,zlin: -1.9, temp: 7.2, humidity: 82.8, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 107, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.807, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a21_15.id, cols: 6.1, nule: 8.2,zlin: -1.9, temp: 7.2, humidity: 82.8, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 107, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.807, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a22_85.id, cols: 6.1, nule: 8.2,zlin: -1.9, temp: 7.2, humidity: 82.9, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 107, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.807, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a24_75.id, cols: 6.1, nule: 8.2,zlin: -1.9, temp: 7.2, humidity: 82.8, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 108, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8089, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a19_25.id, cols: 6.1, nule: 8.2,zlin: -1.9, temp: 7.1, humidity: 83.5, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 108, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8089, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a21_15.id, cols: 6.1, nule: 8.2,zlin: -1.9, temp: 7.0, humidity: 83.8, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 108, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8089, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a22_85.id, cols: 6.1, nule: 8.2,zlin: -1.9, temp: 7.1, humidity: 83.6, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 108, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8089, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a24_75.id, cols: 6.1, nule: 8.2,zlin: -1.9, temp: 7.0, humidity: 83.7, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 109, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8131, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a19_25.id, cols: 6.4, nule: 6.3,zlin: -1.9, temp: 7.0, humidity: 83.7, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 109, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8131, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a21_15.id, cols: 6.4, nule: 6.3,zlin: -1.9, temp: 6.8, humidity: 83.7, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 109, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8131, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a22_85.id, cols: 6.4, nule: 6.3,zlin: -1.9, temp: 7.0, humidity: 83.7, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 109, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8131, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a24_75.id, cols: 6.4, nule: 6.3,zlin: -1.9, temp: 6.9, humidity: 84.5, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 110, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.818, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a38_75.id, cols: 7.6, nule: 4.2,zlin: 0.3, temp: 6.8, humidity: 85.0, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 110, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.818, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a36_25.id, cols: 7.6, nule: 4.2,zlin: 0.3, temp: 6.8, humidity: 84.9, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 110, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.818, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a36_0.id, cols: 7.6, nule: 4.2,zlin: 0.3, temp: 6.8, humidity: 84.9, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 111, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.8219, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a38_75.id, cols: 3.9, nule: 2.2,zlin: 0.3, temp: 6.7, humidity: 85.1, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 111, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.8219, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a36_25.id, cols: 3.9, nule: 2.2,zlin: 0.3, temp: 6.8, humidity: 85.3, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 111, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.8219, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a36_0.id, cols: 3.9, nule: 2.2,zlin: 0.3, temp: 6.7, humidity: 85.1, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a43_75=Frequency.where(freq_ghz: 43.75).first_or_create
+Observation.create(scan_nr: 112, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.8268, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a43_75.id, cols: 5.1, nule: 2.0,zlin: 0.3, temp: 6.8, humidity: 86.1, pressure: 977.7, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a41_25=Frequency.where(freq_ghz: 41.25).first_or_create
+Observation.create(scan_nr: 112, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.8268, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a41_25.id, cols: 5.1, nule: 2.0,zlin: 0.3, temp: 6.7, humidity: 86.8, pressure: 977.8, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a41_0=Frequency.where(freq_ghz: 41.0).first_or_create
+Observation.create(scan_nr: 112, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.8268, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a41_0.id, cols: 5.1, nule: 2.0,zlin: 0.3, temp: 6.7, humidity: 87.7, pressure: 977.8, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a43_75=Frequency.where(freq_ghz: 43.75).first_or_create
+Observation.create(scan_nr: 113, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.8306, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a43_75.id, cols: 3.4, nule: -2.4,zlin: 0.3, temp: 6.0, humidity: 87.2, pressure: 977.8, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a41_25=Frequency.where(freq_ghz: 41.25).first_or_create
+Observation.create(scan_nr: 113, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.8306, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a41_25.id, cols: 3.4, nule: -2.4,zlin: 0.3, temp: 6.4, humidity: 87.0, pressure: 977.8, epoch_id: @a2026_10_11.id)
+@a17281215=Source.where(j2000_name: '1728+1215').first_or_create
+@a41_0=Frequency.where(freq_ghz: 41.0).first_or_create
+Observation.create(scan_nr: 113, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.8306, source_id: @a17281215.id, longitude: '17:28:07', latitude: '+12:15:39', frequency_id: @a41_0.id, cols: 3.4, nule: -2.4,zlin: 0.3, temp: 6.4, humidity: 87.0, pressure: 977.8, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 114, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.8358, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a16_75.id, cols: 3.4, nule: -2.4,zlin: 3.9, temp: 6.1, humidity: 89.4, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 114, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.8358, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a14_25.id, cols: 3.4, nule: -2.4,zlin: 3.9, temp: 6.0, humidity: 88.8, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 114, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.8358, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a14_0.id, cols: 3.4, nule: -2.4,zlin: 3.9, temp: 6.0, humidity: 88.8, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 115, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8378, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a16_75.id, cols: 3.4, nule: -2.4,zlin: 3.9, temp: 5.9, humidity: 91.9, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 115, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8378, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a14_25.id, cols: 3.4, nule: -2.4,zlin: 3.9, temp: 6.0, humidity: 90.3, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 115, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.8378, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a14_0.id, cols: 3.4, nule: -2.4,zlin: 3.9, temp: 5.8, humidity: 90.8, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 116, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8416, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a16_75.id, cols: -1.6, nule: 0.4,zlin: 3.9, temp: 5.9, humidity: 92.8, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 116, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8416, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a14_25.id, cols: -1.6, nule: 0.4,zlin: 3.9, temp: 5.9, humidity: 92.4, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 116, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.8416, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a14_0.id, cols: -1.6, nule: 0.4,zlin: 3.9, temp: 5.9, humidity: 92.8, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 117, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.8466, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a19_25.id, cols: -1.6, nule: -5.9,zlin: -1.9, temp: 6.1, humidity: 93.0, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 117, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.8466, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a21_15.id, cols: -1.6, nule: -5.9,zlin: -1.9, temp: 6.1, humidity: 93.0, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 117, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.8466, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a22_85.id, cols: -1.6, nule: -5.9,zlin: -1.9, temp: 6.0, humidity: 93.0, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 117, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.8466, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a24_75.id, cols: -1.6, nule: -5.9,zlin: -1.9, temp: 6.0, humidity: 93.1, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 118, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8485, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a19_25.id, cols: -1.6, nule: -5.9,zlin: -1.9, temp: 6.0, humidity: 93.4, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 118, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8485, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a21_15.id, cols: -1.6, nule: -5.9,zlin: -1.9, temp: 6.0, humidity: 93.3, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 118, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8485, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a22_85.id, cols: -1.6, nule: -5.9,zlin: -1.9, temp: 6.1, humidity: 93.2, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 118, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8485, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a24_75.id, cols: -1.6, nule: -5.9,zlin: -1.9, temp: 6.0, humidity: 93.5, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 119, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8523, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a19_25.id, cols: -0.8, nule: -10.9,zlin: -1.9, temp: 5.8, humidity: 93.4, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 119, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8523, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a21_15.id, cols: -0.8, nule: -10.9,zlin: -1.9, temp: 5.9, humidity: 93.4, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 119, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8523, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a22_85.id, cols: -0.8, nule: -10.9,zlin: -1.9, temp: 6.0, humidity: 93.5, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18032521=Source.where(j2000_name: '1803+2521').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 119, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8523, source_id: @a18032521.id, longitude: '18:03:12', latitude: '+25:21:18', frequency_id: @a24_75.id, cols: -0.8, nule: -10.9,zlin: -1.9, temp: 6.0, humidity: 93.5, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 120, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.8575, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a16_75.id, cols: -0.8, nule: -10.9,zlin: 3.9, temp: 5.5, humidity: 93.7, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 120, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.8575, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a14_25.id, cols: -0.8, nule: -10.9,zlin: 3.9, temp: 5.6, humidity: 93.6, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 120, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.8575, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a14_0.id, cols: -0.8, nule: -10.9,zlin: 3.9, temp: 5.6, humidity: 93.7, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 121, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8594, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a16_75.id, cols: -0.8, nule: -10.9,zlin: 3.9, temp: 5.6, humidity: 93.6, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 121, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8594, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a14_25.id, cols: -0.8, nule: -10.9,zlin: 3.9, temp: 5.6, humidity: 93.6, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 121, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.8594, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a14_0.id, cols: -0.8, nule: -10.9,zlin: 3.9, temp: 5.8, humidity: 93.5, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 122, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8644, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a16_75.id, cols: 4.7, nule: -7.6,zlin: 3.9, temp: 5.7, humidity: 93.5, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 122, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8644, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a14_25.id, cols: 4.7, nule: -7.6,zlin: 3.9, temp: 5.6, humidity: 93.2, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 122, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.8644, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a14_0.id, cols: 4.7, nule: -7.6,zlin: 3.9, temp: 5.8, humidity: 93.3, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 123, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.8698, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a19_25.id, cols: 0.4, nule: -2.9,zlin: -1.9, temp: 5.5, humidity: 93.3, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 123, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.8698, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a21_15.id, cols: 0.4, nule: -2.9,zlin: -1.9, temp: 5.5, humidity: 93.3, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 123, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.8698, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a22_85.id, cols: 0.4, nule: -2.9,zlin: -1.9, temp: 5.6, humidity: 93.4, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 123, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.8698, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a24_75.id, cols: 0.4, nule: -2.9,zlin: -1.9, temp: 5.6, humidity: 93.4, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 124, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8717, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a19_25.id, cols: 0.4, nule: -2.9,zlin: -1.9, temp: 5.5, humidity: 93.5, pressure: 978.1, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 124, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8717, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a21_15.id, cols: 0.4, nule: -2.9,zlin: -1.9, temp: 5.2, humidity: 93.7, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 124, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8717, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a22_85.id, cols: 0.4, nule: -2.9,zlin: -1.9, temp: 5.4, humidity: 93.6, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 124, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8717, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a24_75.id, cols: 0.4, nule: -2.9,zlin: -1.9, temp: 5.3, humidity: 93.7, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 125, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8772, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a19_25.id, cols: 4.4, nule: -5.9,zlin: -1.9, temp: 5.3, humidity: 93.9, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 125, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8772, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a21_15.id, cols: 4.4, nule: -5.9,zlin: -1.9, temp: 5.1, humidity: 93.9, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 125, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8772, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a22_85.id, cols: 4.4, nule: -5.9,zlin: -1.9, temp: 5.1, humidity: 94.0, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 125, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8772, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a24_75.id, cols: 4.4, nule: -5.9,zlin: -1.9, temp: 5.3, humidity: 93.9, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 126, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8813, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a19_25.id, cols: 7.2, nule: 1.1,zlin: -1.9, temp: 5.3, humidity: 93.9, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 126, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8813, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a21_15.id, cols: 7.2, nule: 1.1,zlin: -1.9, temp: 5.2, humidity: 94.1, pressure: 978.1, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 126, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8813, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a22_85.id, cols: 7.2, nule: 1.1,zlin: -1.9, temp: 5.2, humidity: 93.9, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a18133144=Source.where(j2000_name: '1813+3144').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 126, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.8813, source_id: @a18133144.id, longitude: '18:13:35', latitude: '+31:44:17', frequency_id: @a24_75.id, cols: 7.2, nule: 1.1,zlin: -1.9, temp: 5.2, humidity: 94.0, pressure: 978.2, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 127, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.8865, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a16_75.id, cols: 7.2, nule: 1.1,zlin: 3.9, temp: 5.4, humidity: 94.1, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 127, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.8865, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a14_25.id, cols: 7.2, nule: 1.1,zlin: 3.9, temp: 5.2, humidity: 94.2, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 127, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.8865, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a14_0.id, cols: 7.2, nule: 1.1,zlin: 3.9, temp: 5.3, humidity: 94.1, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 128, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8884, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a16_75.id, cols: 7.2, nule: 1.1,zlin: 3.9, temp: 5.2, humidity: 94.4, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 128, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8884, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a14_25.id, cols: 7.2, nule: 1.1,zlin: 3.9, temp: 5.3, humidity: 94.3, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 128, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.8884, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a14_0.id, cols: 7.2, nule: 1.1,zlin: 3.9, temp: 5.2, humidity: 94.4, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 129, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8926, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a16_75.id, cols: 11.4, nule: 8.6,zlin: 3.9, temp: 5.1, humidity: 94.6, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 129, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8926, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a14_25.id, cols: 11.4, nule: 8.6,zlin: 3.9, temp: 5.1, humidity: 94.6, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 129, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.8926, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a14_0.id, cols: 11.4, nule: 8.6,zlin: 3.9, temp: 5.0, humidity: 94.6, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 130, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8965, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a16_75.id, cols: 2.4, nule: 9.8,zlin: 3.9, temp: 5.1, humidity: 94.7, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 130, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.8965, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a14_25.id, cols: 2.4, nule: 9.8,zlin: 3.9, temp: 5.2, humidity: 94.7, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 130, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.8965, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a14_0.id, cols: 2.4, nule: 9.8,zlin: 3.9, temp: 5.1, humidity: 94.7, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 131, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9014, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a19_25.id, cols: -3.2, nule: 9.2,zlin: -1.9, temp: 5.3, humidity: 94.9, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 131, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9014, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a21_15.id, cols: -3.2, nule: 9.2,zlin: -1.9, temp: 5.2, humidity: 94.8, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 131, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9014, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a22_85.id, cols: -3.2, nule: 9.2,zlin: -1.9, temp: 5.3, humidity: 94.9, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 131, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9014, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a24_75.id, cols: -3.2, nule: 9.2,zlin: -1.9, temp: 5.2, humidity: 94.9, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 132, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9032, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a19_25.id, cols: -3.2, nule: 9.2,zlin: -1.9, temp: 5.2, humidity: 95.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 132, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9032, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a21_15.id, cols: -3.2, nule: 9.2,zlin: -1.9, temp: 5.3, humidity: 95.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 132, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9032, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a22_85.id, cols: -3.2, nule: 9.2,zlin: -1.9, temp: 5.2, humidity: 95.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 132, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9032, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a24_75.id, cols: -3.2, nule: 9.2,zlin: -1.9, temp: 5.4, humidity: 95.1, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 133, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9069, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a19_25.id, cols: -4.9, nule: 7.0,zlin: -1.9, temp: 5.5, humidity: 95.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 133, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9069, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a21_15.id, cols: -4.9, nule: 7.0,zlin: -1.9, temp: 5.5, humidity: 95.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 133, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9069, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a22_85.id, cols: -4.9, nule: 7.0,zlin: -1.9, temp: 5.5, humidity: 95.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a15426129=Source.where(j2000_name: '1542+6129').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 133, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9069, source_id: @a15426129.id, longitude: '15:42:56', latitude: '+61:29:55', frequency_id: @a24_75.id, cols: -4.9, nule: 7.0,zlin: -1.9, temp: 5.5, humidity: 95.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 134, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.9119, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a8_05.id, cols: -6.3, nule: 7.9,zlin: -0.7, temp: 5.6, humidity: 94.8, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 134, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61324.9119, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a6_55.id, cols: -6.3, nule: 7.9,zlin: -0.7, temp: 5.6, humidity: 94.8, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 134, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61324.9119, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a6_3.id, cols: -6.3, nule: 7.9,zlin: -0.7, temp: 5.6, humidity: 94.8, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 135, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.9138, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a8_05.id, cols: -6.3, nule: 7.9,zlin: -0.7, temp: 5.7, humidity: 94.8, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 135, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.9138, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a6_55.id, cols: -6.3, nule: 7.9,zlin: -0.7, temp: 5.7, humidity: 94.7, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 135, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.9138, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a6_3.id, cols: -6.3, nule: 7.9,zlin: -0.7, temp: 5.8, humidity: 94.7, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 136, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.9199, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a8_05.id, cols: 3.7, nule: 11.1,zlin: -0.7, temp: 6.0, humidity: 94.2, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 136, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61324.9199, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a6_55.id, cols: 3.7, nule: 11.1,zlin: -0.7, temp: 5.7, humidity: 94.5, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 136, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61324.9199, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a6_3.id, cols: 3.7, nule: 11.1,zlin: -0.7, temp: 5.7, humidity: 94.5, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 137, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.925, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a16_75.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 6.4, humidity: 94.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 137, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.925, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a14_25.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 6.3, humidity: 94.1, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 137, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.925, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a14_0.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 6.2, humidity: 94.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 138, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.9268, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a16_75.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 6.2, humidity: 94.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 138, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.9268, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a14_25.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 6.5, humidity: 93.7, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 138, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.9268, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a14_0.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 6.2, humidity: 94.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 139, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.9306, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a16_75.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 6.3, humidity: 93.7, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 139, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.9306, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a14_25.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 6.3, humidity: 93.6, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11366737=Source.where(j2000_name: '1136+6737').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 139, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.9306, source_id: @a11366737.id, longitude: '11:36:30', latitude: '+67:37:03', frequency_id: @a14_0.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 6.3, humidity: 93.7, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 140, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.9355, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a16_75.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 5.9, humidity: 94.3, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 140, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.9355, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a14_25.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 5.9, humidity: 94.3, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 140, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.9355, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a14_0.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 5.9, humidity: 94.4, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 141, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.9373, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a16_75.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 5.8, humidity: 94.4, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 141, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.9373, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a14_25.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 5.8, humidity: 94.4, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 141, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.9373, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a14_0.id, cols: 3.7, nule: 11.1,zlin: 3.9, temp: 5.8, humidity: 94.4, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 142, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.941, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a16_75.id, cols: -16.3, nule: 11.1,zlin: 3.9, temp: 5.9, humidity: 94.6, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 142, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.941, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a14_25.id, cols: -16.3, nule: 11.1,zlin: 3.9, temp: 5.9, humidity: 94.7, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 142, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.941, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a14_0.id, cols: -16.3, nule: 11.1,zlin: 3.9, temp: 5.9, humidity: 94.7, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 143, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.9446, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a16_75.id, cols: -22.3, nule: -3.2,zlin: 3.9, temp: 5.7, humidity: 94.7, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 143, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61324.9446, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a14_25.id, cols: -22.3, nule: -3.2,zlin: 3.9, temp: 5.6, humidity: 94.8, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 143, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61324.9446, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a14_0.id, cols: -22.3, nule: -3.2,zlin: 3.9, temp: 5.7, humidity: 94.8, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 144, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9497, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a19_25.id, cols: -20.4, nule: -6.5,zlin: -1.9, temp: 5.3, humidity: 95.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 144, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9497, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a21_15.id, cols: -20.4, nule: -6.5,zlin: -1.9, temp: 5.3, humidity: 94.9, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 144, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9497, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a22_85.id, cols: -20.4, nule: -6.5,zlin: -1.9, temp: 5.3, humidity: 95.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 144, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9497, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a24_75.id, cols: -20.4, nule: -6.5,zlin: -1.9, temp: 5.3, humidity: 94.9, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 145, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9514, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a19_25.id, cols: -20.4, nule: -6.5,zlin: -1.9, temp: 5.0, humidity: 95.1, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 145, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9514, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a21_15.id, cols: -20.4, nule: -6.5,zlin: -1.9, temp: 5.0, humidity: 95.1, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 145, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9514, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a22_85.id, cols: -20.4, nule: -6.5,zlin: -1.9, temp: 5.2, humidity: 95.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 145, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9514, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a24_75.id, cols: -20.4, nule: -6.5,zlin: -1.9, temp: 5.1, humidity: 95.0, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 146, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.955, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a19_25.id, cols: -19.9, nule: -12.2,zlin: -1.9, temp: 4.8, humidity: 95.2, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 146, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.955, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a21_15.id, cols: -19.9, nule: -12.2,zlin: -1.9, temp: 4.8, humidity: 95.2, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 146, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.955, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a22_85.id, cols: -19.9, nule: -12.2,zlin: -1.9, temp: 4.9, humidity: 95.2, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@a11367009=Source.where(j2000_name: '1136+7009').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 146, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.955, source_id: @a11367009.id, longitude: '11:36:26', latitude: '+70:09:27', frequency_id: @a24_75.id, cols: -19.9, nule: -12.2,zlin: -1.9, temp: 4.7, humidity: 95.2, pressure: 978.6, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 147, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.9609, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a16_75.id, cols: -19.9, nule: -12.2,zlin: 3.9, temp: 4.8, humidity: 95.4, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 147, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.9609, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_25.id, cols: -19.9, nule: -12.2,zlin: 3.9, temp: 4.8, humidity: 95.4, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 147, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.9609, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_0.id, cols: -19.9, nule: -12.2,zlin: 3.9, temp: 4.7, humidity: 95.4, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 148, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.9628, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a16_75.id, cols: 1.3, nule: -7.4,zlin: 3.9, temp: 4.7, humidity: 95.4, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 148, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.9628, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_25.id, cols: 1.3, nule: -7.4,zlin: 3.9, temp: 4.8, humidity: 95.5, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 148, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.9628, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_0.id, cols: 1.3, nule: -7.4,zlin: 3.9, temp: 4.7, humidity: 95.4, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 149, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.9648, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a16_75.id, cols: -11.3, nule: -1.1,zlin: 3.9, temp: 4.8, humidity: 95.5, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 149, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.9648, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_25.id, cols: -11.3, nule: -1.1,zlin: 3.9, temp: 4.8, humidity: 95.5, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 149, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.9648, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_0.id, cols: -11.3, nule: -1.1,zlin: 3.9, temp: 4.8, humidity: 95.5, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 151, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.9686, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a16_75.id, cols: -13.5, nule: -0.6,zlin: 4.5, temp: 4.8, humidity: 95.6, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 151, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.9686, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_25.id, cols: -13.5, nule: -0.6,zlin: 4.5, temp: 4.7, humidity: 95.6, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 151, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.9686, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_0.id, cols: -13.5, nule: -0.6,zlin: 4.5, temp: 4.8, humidity: 95.6, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 152, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.9705, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a16_75.id, cols: -14.7, nule: -0.8,zlin: 4.5, temp: 4.7, humidity: 95.6, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 152, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61324.9705, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_25.id, cols: -14.7, nule: -0.8,zlin: 4.5, temp: 4.7, humidity: 95.6, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 152, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61324.9705, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a14_0.id, cols: -14.7, nule: -0.8,zlin: 4.5, temp: 4.7, humidity: 95.6, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 153, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9736, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a19_25.id, cols: -11.2, nule: -1.6,zlin: -1.9, temp: 4.7, humidity: 95.7, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 153, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9736, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a21_15.id, cols: -11.2, nule: -1.6,zlin: -1.9, temp: 4.6, humidity: 95.7, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 153, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9736, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a22_85.id, cols: -11.2, nule: -1.6,zlin: -1.9, temp: 4.6, humidity: 95.7, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 153, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9736, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a24_75.id, cols: -11.2, nule: -1.6,zlin: -1.9, temp: 4.6, humidity: 95.7, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 154, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9755, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a19_25.id, cols: -3.5, nule: -8.8,zlin: -1.9, temp: 4.7, humidity: 95.7, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 154, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9755, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a21_15.id, cols: -3.5, nule: -8.8,zlin: -1.9, temp: 4.6, humidity: 95.7, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 154, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9755, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a22_85.id, cols: -3.5, nule: -8.8,zlin: -1.9, temp: 4.6, humidity: 95.7, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 154, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.9755, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a24_75.id, cols: -3.5, nule: -8.8,zlin: -1.9, temp: 4.6, humidity: 95.7, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 156, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.98, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a19_25.id, cols: -9.0, nule: -5.5,zlin: -2.6, temp: 4.9, humidity: 95.9, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 156, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.98, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a21_15.id, cols: -9.0, nule: -5.5,zlin: -2.6, temp: 4.9, humidity: 95.9, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 156, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.98, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a22_85.id, cols: -9.0, nule: -5.5,zlin: -2.6, temp: 4.9, humidity: 95.9, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 156, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61324.98, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a24_75.id, cols: -9.0, nule: -5.5,zlin: -2.6, temp: 4.9, humidity: 95.9, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 157, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9819, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a19_25.id, cols: -8.6, nule: -5.7,zlin: -2.6, temp: 4.9, humidity: 95.9, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 157, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9819, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a21_15.id, cols: -8.6, nule: -5.7,zlin: -2.6, temp: 4.9, humidity: 95.9, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 157, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9819, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a22_85.id, cols: -8.6, nule: -5.7,zlin: -2.6, temp: 4.9, humidity: 95.9, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 157, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61324.9819, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a24_75.id, cols: -8.6, nule: -5.7,zlin: -2.6, temp: 4.9, humidity: 95.9, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 158, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.9867, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a38_75.id, cols: -7.9, nule: -7.2,zlin: 0.3, temp: 4.9, humidity: 96.0, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 158, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.9867, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a36_25.id, cols: -7.9, nule: -7.2,zlin: 0.3, temp: 5.1, humidity: 96.0, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 158, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.9867, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a36_0.id, cols: -7.9, nule: -7.2,zlin: 0.3, temp: 5.0, humidity: 96.0, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 160, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.9919, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a38_75.id, cols: -8.0, nule: -8.4,zlin: -0.1, temp: 4.9, humidity: 96.1, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 160, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.9919, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a36_25.id, cols: -8.0, nule: -8.4,zlin: -0.1, temp: 4.9, humidity: 96.1, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 160, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.9919, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a36_0.id, cols: -8.0, nule: -8.4,zlin: -0.1, temp: 4.8, humidity: 96.1, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a38_75=Frequency.where(freq_ghz: 38.75).first_or_create
+Observation.create(scan_nr: 161, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.9954, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a38_75.id, cols: -10.3, nule: -8.5,zlin: -0.1, temp: 4.9, humidity: 96.1, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a36_25=Frequency.where(freq_ghz: 36.25).first_or_create
+Observation.create(scan_nr: 161, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61324.9954, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a36_25.id, cols: -10.3, nule: -8.5,zlin: -0.1, temp: 4.9, humidity: 96.1, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a36_0=Frequency.where(freq_ghz: 36.0).first_or_create
+Observation.create(scan_nr: 161, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61324.9954, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a36_0.id, cols: -10.3, nule: -8.5,zlin: -0.1, temp: 4.9, humidity: 96.1, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a43_75=Frequency.where(freq_ghz: 43.75).first_or_create
+Observation.create(scan_nr: 162, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61325.0002, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a43_75.id, cols: -11.1, nule: -7.9,zlin: -0.1, temp: 4.8, humidity: 96.2, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a41_25=Frequency.where(freq_ghz: 41.25).first_or_create
+Observation.create(scan_nr: 162, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61325.0002, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a41_25.id, cols: -11.1, nule: -7.9,zlin: -0.1, temp: 4.8, humidity: 96.2, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a41_0=Frequency.where(freq_ghz: 41.0).first_or_create
+Observation.create(scan_nr: 162, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61325.0002, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a41_0.id, cols: -11.1, nule: -7.9,zlin: -0.1, temp: 4.8, humidity: 96.2, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a43_75=Frequency.where(freq_ghz: 43.75).first_or_create
+Observation.create(scan_nr: 163, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61325.0037, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a43_75.id, cols: -11.8, nule: -7.4,zlin: -0.1, temp: 4.8, humidity: 96.3, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a41_25=Frequency.where(freq_ghz: 41.25).first_or_create
+Observation.create(scan_nr: 163, febe: 'S7mm-OPTOCBE', n_scans: 8, mjd: 61325.0037, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a41_25.id, cols: -11.8, nule: -7.4,zlin: -0.1, temp: 4.8, humidity: 96.3, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@aNGC7027=Source.where(j2000_name: 'NGC7027').first_or_create
+@a41_0=Frequency.where(freq_ghz: 41.0).first_or_create
+Observation.create(scan_nr: 163, febe: 'S7mm-EDDPOL', n_scans: 8, mjd: 61325.0037, source_id: @aNGC7027.id, longitude: '21:07:01', latitude: '+42:14:09', frequency_id: @a41_0.id, cols: -11.8, nule: -7.4,zlin: -0.1, temp: 4.8, humidity: 96.3, pressure: 979.1, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 164, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.0089, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a16_75.id, cols: -9.8, nule: -8.4,zlin: 4.5, temp: 4.5, humidity: 96.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 164, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.0089, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a14_25.id, cols: -9.8, nule: -8.4,zlin: 4.5, temp: 4.5, humidity: 96.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 164, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61325.0089, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a14_0.id, cols: -9.8, nule: -8.4,zlin: 4.5, temp: 4.5, humidity: 96.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 165, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.0108, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a16_75.id, cols: -9.8, nule: -8.4,zlin: 4.5, temp: 4.5, humidity: 96.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 165, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.0108, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a14_25.id, cols: -9.8, nule: -8.4,zlin: 4.5, temp: 4.4, humidity: 96.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 165, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.0108, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a14_0.id, cols: -9.8, nule: -8.4,zlin: 4.5, temp: 4.5, humidity: 96.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 166, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.015, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a16_75.id, cols: 12.2, nule: 0.0,zlin: 4.5, temp: 4.6, humidity: 96.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 166, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.015, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a14_25.id, cols: 12.2, nule: 0.0,zlin: 4.5, temp: 4.6, humidity: 96.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 166, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.015, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a14_0.id, cols: 12.2, nule: 0.0,zlin: 4.5, temp: 4.5, humidity: 96.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 167, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.0199, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a19_25.id, cols: 18.6, nule: -3.6,zlin: -2.6, temp: 4.6, humidity: 96.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 167, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.0199, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a21_15.id, cols: 18.6, nule: -3.6,zlin: -2.6, temp: 4.6, humidity: 96.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 167, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.0199, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a22_85.id, cols: 18.6, nule: -3.6,zlin: -2.6, temp: 4.6, humidity: 96.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 167, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.0199, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a24_75.id, cols: 18.6, nule: -3.6,zlin: -2.6, temp: 4.5, humidity: 96.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 168, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0218, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a19_25.id, cols: 18.6, nule: -3.6,zlin: -2.6, temp: 4.5, humidity: 96.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 168, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0218, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a21_15.id, cols: 18.6, nule: -3.6,zlin: -2.6, temp: 4.6, humidity: 96.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 168, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0218, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a22_85.id, cols: 18.6, nule: -3.6,zlin: -2.6, temp: 4.5, humidity: 96.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 168, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0218, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a24_75.id, cols: 18.6, nule: -3.6,zlin: -2.6, temp: 4.6, humidity: 96.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 169, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0254, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a19_25.id, cols: 14.6, nule: -8.4,zlin: -2.6, temp: 4.5, humidity: 96.5, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 169, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0254, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a21_15.id, cols: 14.6, nule: -8.4,zlin: -2.6, temp: 4.4, humidity: 96.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 169, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0254, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a22_85.id, cols: 14.6, nule: -8.4,zlin: -2.6, temp: 4.5, humidity: 96.5, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20014352=Source.where(j2000_name: '2001+4352').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 169, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0254, source_id: @a20014352.id, longitude: '20:01:12', latitude: '+43:52:52', frequency_id: @a24_75.id, cols: 14.6, nule: -8.4,zlin: -2.6, temp: 4.5, humidity: 96.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20303700=Source.where(j2000_name: '2030+3700').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 170, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.0301, source_id: @a20303700.id, longitude: '20:30:31', latitude: '+37:00:36', frequency_id: @a8_05.id, cols: 14.6, nule: -8.4,zlin: -0.7, temp: 4.6, humidity: 96.6, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20303700=Source.where(j2000_name: '2030+3700').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 170, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.0301, source_id: @a20303700.id, longitude: '20:30:31', latitude: '+37:00:36', frequency_id: @a6_55.id, cols: 14.6, nule: -8.4,zlin: -0.7, temp: 4.5, humidity: 96.6, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20303700=Source.where(j2000_name: '2030+3700').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 170, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61325.0301, source_id: @a20303700.id, longitude: '20:30:31', latitude: '+37:00:36', frequency_id: @a6_3.id, cols: 14.6, nule: -8.4,zlin: -0.7, temp: 4.4, humidity: 96.6, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20303700=Source.where(j2000_name: '2030+3700').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 171, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.032, source_id: @a20303700.id, longitude: '20:30:31', latitude: '+37:00:36', frequency_id: @a8_05.id, cols: 14.6, nule: -8.4,zlin: -0.7, temp: 4.4, humidity: 96.6, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20303700=Source.where(j2000_name: '2030+3700').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 171, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.032, source_id: @a20303700.id, longitude: '20:30:31', latitude: '+37:00:36', frequency_id: @a6_55.id, cols: 14.6, nule: -8.4,zlin: -0.7, temp: 4.6, humidity: 96.6, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20303700=Source.where(j2000_name: '2030+3700').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 171, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.032, source_id: @a20303700.id, longitude: '20:30:31', latitude: '+37:00:36', frequency_id: @a6_3.id, cols: 14.6, nule: -8.4,zlin: -0.7, temp: 4.5, humidity: 96.6, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20303700=Source.where(j2000_name: '2030+3700').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 172, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.0358, source_id: @a20303700.id, longitude: '20:30:31', latitude: '+37:00:36', frequency_id: @a8_05.id, cols: 27.8, nule: -23.4,zlin: -0.7, temp: 4.3, humidity: 96.6, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20303700=Source.where(j2000_name: '2030+3700').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 172, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.0358, source_id: @a20303700.id, longitude: '20:30:31', latitude: '+37:00:36', frequency_id: @a6_55.id, cols: 27.8, nule: -23.4,zlin: -0.7, temp: 4.3, humidity: 96.6, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20303700=Source.where(j2000_name: '2030+3700').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 172, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.0358, source_id: @a20303700.id, longitude: '20:30:31', latitude: '+37:00:36', frequency_id: @a6_3.id, cols: 27.8, nule: -23.4,zlin: -0.7, temp: 4.3, humidity: 96.6, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a21262904=Source.where(j2000_name: '2126+2904').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 173, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.0411, source_id: @a21262904.id, longitude: '21:26:24', latitude: '+29:04:02', frequency_id: @a16_75.id, cols: 32.8, nule: -19.3,zlin: 4.5, temp: 4.0, humidity: 96.7, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a21262904=Source.where(j2000_name: '2126+2904').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 173, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.0411, source_id: @a21262904.id, longitude: '21:26:24', latitude: '+29:04:02', frequency_id: @a14_25.id, cols: 32.8, nule: -19.3,zlin: 4.5, temp: 4.0, humidity: 96.7, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a21262904=Source.where(j2000_name: '2126+2904').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 173, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61325.0411, source_id: @a21262904.id, longitude: '21:26:24', latitude: '+29:04:02', frequency_id: @a14_0.id, cols: 32.8, nule: -19.3,zlin: 4.5, temp: 4.0, humidity: 96.7, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a21262904=Source.where(j2000_name: '2126+2904').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 174, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.043, source_id: @a21262904.id, longitude: '21:26:24', latitude: '+29:04:02', frequency_id: @a16_75.id, cols: 32.8, nule: -19.3,zlin: 4.5, temp: 3.9, humidity: 96.7, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a21262904=Source.where(j2000_name: '2126+2904').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 174, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.043, source_id: @a21262904.id, longitude: '21:26:24', latitude: '+29:04:02', frequency_id: @a14_25.id, cols: 32.8, nule: -19.3,zlin: 4.5, temp: 3.8, humidity: 96.7, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a21262904=Source.where(j2000_name: '2126+2904').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 174, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.043, source_id: @a21262904.id, longitude: '21:26:24', latitude: '+29:04:02', frequency_id: @a14_0.id, cols: 32.8, nule: -19.3,zlin: 4.5, temp: 4.0, humidity: 96.7, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a21262904=Source.where(j2000_name: '2126+2904').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 175, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.047, source_id: @a21262904.id, longitude: '21:26:24', latitude: '+29:04:02', frequency_id: @a16_75.id, cols: -0.2, nule: -4.3,zlin: 4.5, temp: 3.9, humidity: 96.6, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a21262904=Source.where(j2000_name: '2126+2904').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 175, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.047, source_id: @a21262904.id, longitude: '21:26:24', latitude: '+29:04:02', frequency_id: @a14_25.id, cols: -0.2, nule: -4.3,zlin: 4.5, temp: 3.9, humidity: 96.6, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a21262904=Source.where(j2000_name: '2126+2904').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 175, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.047, source_id: @a21262904.id, longitude: '21:26:24', latitude: '+29:04:02', frequency_id: @a14_0.id, cols: -0.2, nule: -4.3,zlin: 4.5, temp: 3.9, humidity: 96.6, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20395219=Source.where(j2000_name: '2039+5219').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 176, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.0522, source_id: @a20395219.id, longitude: '20:39:23', latitude: '+52:19:49', frequency_id: @a8_05.id, cols: 6.2, nule: 1.0,zlin: -0.7, temp: 4.4, humidity: 96.7, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20395219=Source.where(j2000_name: '2039+5219').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 176, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.0522, source_id: @a20395219.id, longitude: '20:39:23', latitude: '+52:19:49', frequency_id: @a6_55.id, cols: 6.2, nule: 1.0,zlin: -0.7, temp: 4.1, humidity: 96.7, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20395219=Source.where(j2000_name: '2039+5219').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 176, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61325.0522, source_id: @a20395219.id, longitude: '20:39:23', latitude: '+52:19:49', frequency_id: @a6_3.id, cols: 6.2, nule: 1.0,zlin: -0.7, temp: 4.1, humidity: 96.7, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20395219=Source.where(j2000_name: '2039+5219').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 177, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.0542, source_id: @a20395219.id, longitude: '20:39:23', latitude: '+52:19:49', frequency_id: @a8_05.id, cols: 6.2, nule: 1.0,zlin: -0.7, temp: 4.3, humidity: 96.7, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20395219=Source.where(j2000_name: '2039+5219').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 177, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.0542, source_id: @a20395219.id, longitude: '20:39:23', latitude: '+52:19:49', frequency_id: @a6_55.id, cols: 6.2, nule: 1.0,zlin: -0.7, temp: 4.3, humidity: 96.7, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20395219=Source.where(j2000_name: '2039+5219').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 177, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.0542, source_id: @a20395219.id, longitude: '20:39:23', latitude: '+52:19:49', frequency_id: @a6_3.id, cols: 6.2, nule: 1.0,zlin: -0.7, temp: 4.3, humidity: 96.7, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20395219=Source.where(j2000_name: '2039+5219').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 178, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.058, source_id: @a20395219.id, longitude: '20:39:23', latitude: '+52:19:49', frequency_id: @a8_05.id, cols: 26.2, nule: 1.0,zlin: -0.7, temp: 4.4, humidity: 96.8, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20395219=Source.where(j2000_name: '2039+5219').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 178, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.058, source_id: @a20395219.id, longitude: '20:39:23', latitude: '+52:19:49', frequency_id: @a6_55.id, cols: 26.2, nule: 1.0,zlin: -0.7, temp: 4.4, humidity: 96.8, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a20395219=Source.where(j2000_name: '2039+5219').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 178, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.058, source_id: @a20395219.id, longitude: '20:39:23', latitude: '+52:19:49', frequency_id: @a6_3.id, cols: 26.2, nule: 1.0,zlin: -0.7, temp: 4.4, humidity: 96.8, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a22503825=Source.where(j2000_name: '2250+3825').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 179, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.0625, source_id: @a22503825.id, longitude: '22:50:05', latitude: '+38:24:37', frequency_id: @a8_05.id, cols: 26.2, nule: 1.0,zlin: -0.7, temp: 4.5, humidity: 96.8, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a22503825=Source.where(j2000_name: '2250+3825').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 179, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.0625, source_id: @a22503825.id, longitude: '22:50:05', latitude: '+38:24:37', frequency_id: @a6_55.id, cols: 26.2, nule: 1.0,zlin: -0.7, temp: 4.5, humidity: 96.8, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a22503825=Source.where(j2000_name: '2250+3825').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 179, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61325.0625, source_id: @a22503825.id, longitude: '22:50:05', latitude: '+38:24:37', frequency_id: @a6_3.id, cols: 26.2, nule: 1.0,zlin: -0.7, temp: 4.5, humidity: 96.8, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a22503825=Source.where(j2000_name: '2250+3825').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 180, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.0644, source_id: @a22503825.id, longitude: '22:50:05', latitude: '+38:24:37', frequency_id: @a8_05.id, cols: 26.2, nule: 1.0,zlin: -0.7, temp: 4.5, humidity: 96.9, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a22503825=Source.where(j2000_name: '2250+3825').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 180, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.0644, source_id: @a22503825.id, longitude: '22:50:05', latitude: '+38:24:37', frequency_id: @a6_55.id, cols: 26.2, nule: 1.0,zlin: -0.7, temp: 4.4, humidity: 96.9, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a22503825=Source.where(j2000_name: '2250+3825').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 180, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.0644, source_id: @a22503825.id, longitude: '22:50:05', latitude: '+38:24:37', frequency_id: @a6_3.id, cols: 26.2, nule: 1.0,zlin: -0.7, temp: 4.4, humidity: 96.9, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a22503825=Source.where(j2000_name: '2250+3825').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 181, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.0684, source_id: @a22503825.id, longitude: '22:50:05', latitude: '+38:24:37', frequency_id: @a8_05.id, cols: 9.4, nule: -8.5,zlin: -0.7, temp: 4.5, humidity: 96.9, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a22503825=Source.where(j2000_name: '2250+3825').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 181, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.0684, source_id: @a22503825.id, longitude: '22:50:05', latitude: '+38:24:37', frequency_id: @a6_55.id, cols: 9.4, nule: -8.5,zlin: -0.7, temp: 4.4, humidity: 96.9, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a22503825=Source.where(j2000_name: '2250+3825').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 181, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.0684, source_id: @a22503825.id, longitude: '22:50:05', latitude: '+38:24:37', frequency_id: @a6_3.id, cols: 9.4, nule: -8.5,zlin: -0.7, temp: 4.4, humidity: 96.9, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a22503825=Source.where(j2000_name: '2250+3825').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 182, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.0724, source_id: @a22503825.id, longitude: '22:50:05', latitude: '+38:24:37', frequency_id: @a8_05.id, cols: -1.2, nule: -18.6,zlin: -0.7, temp: 4.6, humidity: 96.9, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a22503825=Source.where(j2000_name: '2250+3825').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 182, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.0724, source_id: @a22503825.id, longitude: '22:50:05', latitude: '+38:24:37', frequency_id: @a6_55.id, cols: -1.2, nule: -18.6,zlin: -0.7, temp: 4.6, humidity: 96.9, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a22503825=Source.where(j2000_name: '2250+3825').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 182, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.0724, source_id: @a22503825.id, longitude: '22:50:05', latitude: '+38:24:37', frequency_id: @a6_3.id, cols: -1.2, nule: -18.6,zlin: -0.7, temp: 4.6, humidity: 96.9, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 183, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.0781, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a16_75.id, cols: -1.2, nule: -18.6,zlin: 4.5, temp: 4.6, humidity: 96.9, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 183, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.0781, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a14_25.id, cols: -1.2, nule: -18.6,zlin: 4.5, temp: 4.8, humidity: 97.0, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 183, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61325.0781, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a14_0.id, cols: -1.2, nule: -18.6,zlin: 4.5, temp: 4.7, humidity: 96.9, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 184, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.08, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a16_75.id, cols: -1.2, nule: -18.6,zlin: 4.5, temp: 4.5, humidity: 97.0, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 184, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.08, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a14_25.id, cols: -1.2, nule: -18.6,zlin: 4.5, temp: 4.6, humidity: 97.0, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 184, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.08, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a14_0.id, cols: -1.2, nule: -18.6,zlin: 4.5, temp: 4.6, humidity: 97.0, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 185, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.084, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a16_75.id, cols: 11.5, nule: -2.3,zlin: 4.5, temp: 4.5, humidity: 97.0, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 185, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.084, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a14_25.id, cols: 11.5, nule: -2.3,zlin: 4.5, temp: 4.5, humidity: 97.0, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 185, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.084, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a14_0.id, cols: 11.5, nule: -2.3,zlin: 4.5, temp: 4.5, humidity: 97.0, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 186, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.0878, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a16_75.id, cols: 11.5, nule: -2.3,zlin: 4.5, temp: 4.5, humidity: 97.0, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 186, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.0878, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a14_25.id, cols: 11.5, nule: -2.3,zlin: 4.5, temp: 4.7, humidity: 97.0, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 186, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.0878, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a14_0.id, cols: 11.5, nule: -2.3,zlin: 4.5, temp: 4.5, humidity: 97.0, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 187, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.0929, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a19_25.id, cols: 9.3, nule: -0.4,zlin: -2.6, temp: 4.6, humidity: 97.0, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 187, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.0929, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a21_15.id, cols: 9.3, nule: -0.4,zlin: -2.6, temp: 4.5, humidity: 97.0, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 187, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.0929, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a22_85.id, cols: 9.3, nule: -0.4,zlin: -2.6, temp: 4.6, humidity: 97.0, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 187, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.0929, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a24_75.id, cols: 9.3, nule: -0.4,zlin: -2.6, temp: 4.6, humidity: 97.0, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 188, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0947, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a19_25.id, cols: 9.3, nule: -0.4,zlin: -2.6, temp: 4.6, humidity: 97.1, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 188, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0947, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a21_15.id, cols: 9.3, nule: -0.4,zlin: -2.6, temp: 4.7, humidity: 97.1, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 188, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0947, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a22_85.id, cols: 9.3, nule: -0.4,zlin: -2.6, temp: 4.6, humidity: 97.1, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 188, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0947, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a24_75.id, cols: 9.3, nule: -0.4,zlin: -2.6, temp: 4.7, humidity: 97.1, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 189, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0988, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a19_25.id, cols: 13.4, nule: -5.1,zlin: -2.6, temp: 4.7, humidity: 97.1, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 189, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0988, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a21_15.id, cols: 13.4, nule: -5.1,zlin: -2.6, temp: 4.7, humidity: 97.2, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 189, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0988, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a22_85.id, cols: 13.4, nule: -5.1,zlin: -2.6, temp: 4.8, humidity: 97.2, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 189, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.0988, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a24_75.id, cols: 13.4, nule: -5.1,zlin: -2.6, temp: 4.8, humidity: 97.2, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 190, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1026, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a19_25.id, cols: 13.4, nule: -5.1,zlin: -2.6, temp: 4.8, humidity: 97.2, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 190, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1026, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a21_15.id, cols: 13.4, nule: -5.1,zlin: -2.6, temp: 4.8, humidity: 97.2, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 190, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1026, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a22_85.id, cols: 13.4, nule: -5.1,zlin: -2.6, temp: 4.7, humidity: 97.2, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a23475142=Source.where(j2000_name: '2347+5142').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 190, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1026, source_id: @a23475142.id, longitude: '23:47:04', latitude: '+51:42:17', frequency_id: @a24_75.id, cols: 13.4, nule: -5.1,zlin: -2.6, temp: 4.8, humidity: 97.2, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a00355950=Source.where(j2000_name: '0035+5950').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 191, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.1078, source_id: @a00355950.id, longitude: '00:35:52', latitude: '+59:50:04', frequency_id: @a16_75.id, cols: 13.4, nule: -5.1,zlin: 4.5, temp: 4.7, humidity: 97.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a00355950=Source.where(j2000_name: '0035+5950').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 191, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.1078, source_id: @a00355950.id, longitude: '00:35:52', latitude: '+59:50:04', frequency_id: @a14_25.id, cols: 13.4, nule: -5.1,zlin: 4.5, temp: 4.7, humidity: 97.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a00355950=Source.where(j2000_name: '0035+5950').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 191, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61325.1078, source_id: @a00355950.id, longitude: '00:35:52', latitude: '+59:50:04', frequency_id: @a14_0.id, cols: 13.4, nule: -5.1,zlin: 4.5, temp: 4.7, humidity: 97.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a00355950=Source.where(j2000_name: '0035+5950').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 192, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.1097, source_id: @a00355950.id, longitude: '00:35:52', latitude: '+59:50:04', frequency_id: @a16_75.id, cols: 13.4, nule: -5.1,zlin: 4.5, temp: 4.8, humidity: 97.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a00355950=Source.where(j2000_name: '0035+5950').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 192, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.1097, source_id: @a00355950.id, longitude: '00:35:52', latitude: '+59:50:04', frequency_id: @a14_25.id, cols: 13.4, nule: -5.1,zlin: 4.5, temp: 4.8, humidity: 97.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a00355950=Source.where(j2000_name: '0035+5950').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 192, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.1097, source_id: @a00355950.id, longitude: '00:35:52', latitude: '+59:50:04', frequency_id: @a14_0.id, cols: 13.4, nule: -5.1,zlin: 4.5, temp: 4.8, humidity: 97.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a00355950=Source.where(j2000_name: '0035+5950').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 193, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.1135, source_id: @a00355950.id, longitude: '00:35:52', latitude: '+59:50:04', frequency_id: @a16_75.id, cols: 14.0, nule: 1.0,zlin: 4.5, temp: 4.9, humidity: 97.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a00355950=Source.where(j2000_name: '0035+5950').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 193, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.1135, source_id: @a00355950.id, longitude: '00:35:52', latitude: '+59:50:04', frequency_id: @a14_25.id, cols: 14.0, nule: 1.0,zlin: 4.5, temp: 4.9, humidity: 97.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a00355950=Source.where(j2000_name: '0035+5950').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 193, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.1135, source_id: @a00355950.id, longitude: '00:35:52', latitude: '+59:50:04', frequency_id: @a14_0.id, cols: 14.0, nule: 1.0,zlin: 4.5, temp: 4.9, humidity: 97.3, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a01363906=Source.where(j2000_name: '0136+3906').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 194, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.1186, source_id: @a01363906.id, longitude: '01:36:32', latitude: '+39:05:59', frequency_id: @a16_75.id, cols: 13.1, nule: -0.3,zlin: 4.5, temp: 4.9, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a01363906=Source.where(j2000_name: '0136+3906').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 194, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.1186, source_id: @a01363906.id, longitude: '01:36:32', latitude: '+39:05:59', frequency_id: @a14_25.id, cols: 13.1, nule: -0.3,zlin: 4.5, temp: 4.9, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a01363906=Source.where(j2000_name: '0136+3906').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 194, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61325.1186, source_id: @a01363906.id, longitude: '01:36:32', latitude: '+39:05:59', frequency_id: @a14_0.id, cols: 13.1, nule: -0.3,zlin: 4.5, temp: 5.0, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a01363906=Source.where(j2000_name: '0136+3906').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 195, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.1206, source_id: @a01363906.id, longitude: '01:36:32', latitude: '+39:05:59', frequency_id: @a16_75.id, cols: 13.1, nule: -0.3,zlin: 4.5, temp: 4.9, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a01363906=Source.where(j2000_name: '0136+3906').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 195, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.1206, source_id: @a01363906.id, longitude: '01:36:32', latitude: '+39:05:59', frequency_id: @a14_25.id, cols: 13.1, nule: -0.3,zlin: 4.5, temp: 5.0, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a01363906=Source.where(j2000_name: '0136+3906').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 195, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.1206, source_id: @a01363906.id, longitude: '01:36:32', latitude: '+39:05:59', frequency_id: @a14_0.id, cols: 13.1, nule: -0.3,zlin: 4.5, temp: 5.0, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a01363906=Source.where(j2000_name: '0136+3906').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 196, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.1245, source_id: @a01363906.id, longitude: '01:36:32', latitude: '+39:05:59', frequency_id: @a16_75.id, cols: 2.7, nule: 0.3,zlin: 4.5, temp: 4.9, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a01363906=Source.where(j2000_name: '0136+3906').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 196, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.1245, source_id: @a01363906.id, longitude: '01:36:32', latitude: '+39:05:59', frequency_id: @a14_25.id, cols: 2.7, nule: 0.3,zlin: 4.5, temp: 5.1, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a01363906=Source.where(j2000_name: '0136+3906').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 196, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.1245, source_id: @a01363906.id, longitude: '01:36:32', latitude: '+39:05:59', frequency_id: @a14_0.id, cols: 2.7, nule: 0.3,zlin: 4.5, temp: 5.1, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a02322017=Source.where(j2000_name: '0232+2017').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 197, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.1297, source_id: @a02322017.id, longitude: '02:32:48', latitude: '+20:17:17', frequency_id: @a16_75.id, cols: -2.3, nule: 3.1,zlin: 4.5, temp: 5.2, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a02322017=Source.where(j2000_name: '0232+2017').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 197, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.1297, source_id: @a02322017.id, longitude: '02:32:48', latitude: '+20:17:17', frequency_id: @a14_25.id, cols: -2.3, nule: 3.1,zlin: 4.5, temp: 5.1, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a02322017=Source.where(j2000_name: '0232+2017').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 197, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61325.1297, source_id: @a02322017.id, longitude: '02:32:48', latitude: '+20:17:17', frequency_id: @a14_0.id, cols: -2.3, nule: 3.1,zlin: 4.5, temp: 5.1, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a02322017=Source.where(j2000_name: '0232+2017').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 198, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.1317, source_id: @a02322017.id, longitude: '02:32:48', latitude: '+20:17:17', frequency_id: @a16_75.id, cols: -2.3, nule: 3.1,zlin: 4.5, temp: 5.2, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a02322017=Source.where(j2000_name: '0232+2017').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 198, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.1317, source_id: @a02322017.id, longitude: '02:32:48', latitude: '+20:17:17', frequency_id: @a14_25.id, cols: -2.3, nule: 3.1,zlin: 4.5, temp: 5.1, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a02322017=Source.where(j2000_name: '0232+2017').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 198, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.1317, source_id: @a02322017.id, longitude: '02:32:48', latitude: '+20:17:17', frequency_id: @a14_0.id, cols: -2.3, nule: 3.1,zlin: 4.5, temp: 5.1, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a02322017=Source.where(j2000_name: '0232+2017').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 199, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.1356, source_id: @a02322017.id, longitude: '02:32:48', latitude: '+20:17:17', frequency_id: @a16_75.id, cols: -3.7, nule: 7.9,zlin: 4.5, temp: 5.2, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a02322017=Source.where(j2000_name: '0232+2017').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 199, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.1356, source_id: @a02322017.id, longitude: '02:32:48', latitude: '+20:17:17', frequency_id: @a14_25.id, cols: -3.7, nule: 7.9,zlin: 4.5, temp: 5.2, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a02322017=Source.where(j2000_name: '0232+2017').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 199, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.1356, source_id: @a02322017.id, longitude: '02:32:48', latitude: '+20:17:17', frequency_id: @a14_0.id, cols: -3.7, nule: 7.9,zlin: 4.5, temp: 5.2, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a02322017=Source.where(j2000_name: '0232+2017').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 200, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.1396, source_id: @a02322017.id, longitude: '02:32:48', latitude: '+20:17:17', frequency_id: @a16_75.id, cols: -3.7, nule: 7.9,zlin: 4.5, temp: 5.1, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a02322017=Source.where(j2000_name: '0232+2017').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 200, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.1396, source_id: @a02322017.id, longitude: '02:32:48', latitude: '+20:17:17', frequency_id: @a14_25.id, cols: -3.7, nule: 7.9,zlin: 4.5, temp: 5.1, humidity: 97.4, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a02322017=Source.where(j2000_name: '0232+2017').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 200, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.1396, source_id: @a02322017.id, longitude: '02:32:48', latitude: '+20:17:17', frequency_id: @a14_0.id, cols: -3.7, nule: 7.9,zlin: 4.5, temp: 5.1, humidity: 97.5, pressure: 979.5, epoch_id: @a2026_10_11.id)
+@a04160105=Source.where(j2000_name: '0416+0105').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 201, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.145, source_id: @a04160105.id, longitude: '04:16:52', latitude: '+01:05:23', frequency_id: @a16_75.id, cols: -3.7, nule: 7.9,zlin: 4.5, temp: 5.0, humidity: 97.4, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a04160105=Source.where(j2000_name: '0416+0105').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 201, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.145, source_id: @a04160105.id, longitude: '04:16:52', latitude: '+01:05:23', frequency_id: @a14_25.id, cols: -3.7, nule: 7.9,zlin: 4.5, temp: 5.1, humidity: 97.4, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a04160105=Source.where(j2000_name: '0416+0105').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 201, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61325.145, source_id: @a04160105.id, longitude: '04:16:52', latitude: '+01:05:23', frequency_id: @a14_0.id, cols: -3.7, nule: 7.9,zlin: 4.5, temp: 5.0, humidity: 97.4, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a04160105=Source.where(j2000_name: '0416+0105').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 202, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.147, source_id: @a04160105.id, longitude: '04:16:52', latitude: '+01:05:23', frequency_id: @a16_75.id, cols: -3.7, nule: 7.9,zlin: 4.5, temp: 5.2, humidity: 97.4, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a04160105=Source.where(j2000_name: '0416+0105').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 202, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.147, source_id: @a04160105.id, longitude: '04:16:52', latitude: '+01:05:23', frequency_id: @a14_25.id, cols: -3.7, nule: 7.9,zlin: 4.5, temp: 5.0, humidity: 97.4, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a04160105=Source.where(j2000_name: '0416+0105').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 202, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.147, source_id: @a04160105.id, longitude: '04:16:52', latitude: '+01:05:23', frequency_id: @a14_0.id, cols: -3.7, nule: 7.9,zlin: 4.5, temp: 5.1, humidity: 97.4, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a04160105=Source.where(j2000_name: '0416+0105').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 203, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.151, source_id: @a04160105.id, longitude: '04:16:52', latitude: '+01:05:23', frequency_id: @a16_75.id, cols: 0.8, nule: 10.9,zlin: 4.5, temp: 5.2, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a04160105=Source.where(j2000_name: '0416+0105').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 203, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.151, source_id: @a04160105.id, longitude: '04:16:52', latitude: '+01:05:23', frequency_id: @a14_25.id, cols: 0.8, nule: 10.9,zlin: 4.5, temp: 5.2, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a04160105=Source.where(j2000_name: '0416+0105').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 203, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.151, source_id: @a04160105.id, longitude: '04:16:52', latitude: '+01:05:23', frequency_id: @a14_0.id, cols: 0.8, nule: 10.9,zlin: 4.5, temp: 5.2, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 204, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.1566, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a8_05.id, cols: 0.8, nule: 10.9,zlin: -0.7, temp: 5.2, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 204, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.1566, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a6_55.id, cols: 0.8, nule: 10.9,zlin: -0.7, temp: 5.3, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 204, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61325.1566, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a6_3.id, cols: 0.8, nule: 10.9,zlin: -0.7, temp: 5.3, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 205, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.1587, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a8_05.id, cols: 0.8, nule: 10.9,zlin: -0.7, temp: 5.4, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 205, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.1587, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a6_55.id, cols: 0.8, nule: 10.9,zlin: -0.7, temp: 5.2, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 205, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.1587, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a6_3.id, cols: 0.8, nule: 10.9,zlin: -0.7, temp: 5.3, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 206, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.163, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a8_05.id, cols: 5.2, nule: -7.9,zlin: -0.7, temp: 5.4, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 206, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.163, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a6_55.id, cols: 5.2, nule: -7.9,zlin: -0.7, temp: 5.3, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 206, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.163, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a6_3.id, cols: 5.2, nule: -7.9,zlin: -0.7, temp: 5.3, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 207, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.1684, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a19_25.id, cols: 6.5, nule: -5.9,zlin: -2.6, temp: 5.4, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 207, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.1684, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a21_15.id, cols: 6.5, nule: -5.9,zlin: -2.6, temp: 5.4, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 207, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.1684, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a22_85.id, cols: 6.5, nule: -5.9,zlin: -2.6, temp: 5.4, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 207, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.1684, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a24_75.id, cols: 6.5, nule: -5.9,zlin: -2.6, temp: 5.4, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 208, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1704, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a19_25.id, cols: 6.5, nule: -5.9,zlin: -2.6, temp: 5.5, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 208, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1704, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a21_15.id, cols: 6.5, nule: -5.9,zlin: -2.6, temp: 5.5, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 208, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1704, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a22_85.id, cols: 6.5, nule: -5.9,zlin: -2.6, temp: 5.4, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 208, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1704, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a24_75.id, cols: 6.5, nule: -5.9,zlin: -2.6, temp: 5.5, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 209, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1746, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a19_25.id, cols: 8.1, nule: -2.9,zlin: -2.6, temp: 5.5, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 209, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1746, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a21_15.id, cols: 8.1, nule: -2.9,zlin: -2.6, temp: 5.6, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 209, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1746, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a22_85.id, cols: 8.1, nule: -2.9,zlin: -2.6, temp: 5.5, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 209, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1746, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a24_75.id, cols: 8.1, nule: -2.9,zlin: -2.6, temp: 5.5, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 210, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1791, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a19_25.id, cols: 8.0, nule: 2.5,zlin: -2.6, temp: 5.7, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 210, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1791, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a21_15.id, cols: 8.0, nule: 2.5,zlin: -2.6, temp: 5.7, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 210, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1791, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a22_85.id, cols: 8.0, nule: 2.5,zlin: -2.6, temp: 5.6, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 210, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1791, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a24_75.id, cols: 8.0, nule: 2.5,zlin: -2.6, temp: 5.7, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 211, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1831, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a19_25.id, cols: 10.1, nule: 7.8,zlin: -2.6, temp: 5.8, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 211, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1831, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a21_15.id, cols: 10.1, nule: 7.8,zlin: -2.6, temp: 5.9, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 211, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1831, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a22_85.id, cols: 10.1, nule: 7.8,zlin: -2.6, temp: 5.8, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a3C138=Source.where(j2000_name: '3C138').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 211, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.1831, source_id: @a3C138.id, longitude: '05:21:09', latitude: '+16:38:22', frequency_id: @a24_75.id, cols: 10.1, nule: 7.8,zlin: -2.6, temp: 5.7, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 212, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.1891, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a8_05.id, cols: 10.6, nule: 3.7,zlin: -0.7, temp: 5.7, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 212, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.1891, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a6_55.id, cols: 10.6, nule: 3.7,zlin: -0.7, temp: 5.7, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 212, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61325.1891, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a6_3.id, cols: 10.6, nule: 3.7,zlin: -0.7, temp: 5.7, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 213, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.1911, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a8_05.id, cols: 10.6, nule: 3.7,zlin: -0.7, temp: 5.6, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 213, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.1911, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a6_55.id, cols: 10.6, nule: 3.7,zlin: -0.7, temp: 5.6, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 213, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.1911, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a6_3.id, cols: 10.6, nule: 3.7,zlin: -0.7, temp: 5.7, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 214, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.1951, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a8_05.id, cols: 10.9, nule: -7.1,zlin: -0.7, temp: 5.6, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 214, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.1951, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a6_55.id, cols: 10.9, nule: -7.1,zlin: -0.7, temp: 5.6, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 214, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.1951, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a6_3.id, cols: 10.9, nule: -7.1,zlin: -0.7, temp: 5.7, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 215, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.2003, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a19_25.id, cols: 16.2, nule: -7.7,zlin: -2.6, temp: 5.5, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 215, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.2003, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a21_15.id, cols: 16.2, nule: -7.7,zlin: -2.6, temp: 5.5, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 215, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.2003, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a22_85.id, cols: 16.2, nule: -7.7,zlin: -2.6, temp: 5.5, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 215, febe: 'S14mm-OPTOCBE', n_scans: 4, mjd: 61325.2003, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a24_75.id, cols: 16.2, nule: -7.7,zlin: -2.6, temp: 5.5, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 216, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.2022, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a19_25.id, cols: 16.2, nule: -7.7,zlin: -2.6, temp: 5.8, humidity: 97.5, pressure: 980.1, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 216, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.2022, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a21_15.id, cols: 16.2, nule: -7.7,zlin: -2.6, temp: 5.7, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 216, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.2022, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a22_85.id, cols: 16.2, nule: -7.7,zlin: -2.6, temp: 5.7, humidity: 97.5, pressure: 980.0, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 216, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.2022, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a24_75.id, cols: 16.2, nule: -7.7,zlin: -2.6, temp: 5.6, humidity: 97.5, pressure: 980.1, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a19_25=Frequency.where(freq_ghz: 19.25).first_or_create
+Observation.create(scan_nr: 217, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.2062, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a19_25.id, cols: 11.3, nule: -13.4,zlin: -2.6, temp: 5.8, humidity: 97.5, pressure: 980.1, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a21_15=Frequency.where(freq_ghz: 21.15).first_or_create
+Observation.create(scan_nr: 217, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.2062, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a21_15.id, cols: 11.3, nule: -13.4,zlin: -2.6, temp: 5.8, humidity: 97.5, pressure: 980.1, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a22_85=Frequency.where(freq_ghz: 22.85).first_or_create
+Observation.create(scan_nr: 217, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.2062, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a22_85.id, cols: 11.3, nule: -13.4,zlin: -2.6, temp: 5.7, humidity: 97.5, pressure: 980.1, epoch_id: @a2026_10_11.id)
+@a08542006=Source.where(j2000_name: '0854+2006').first_or_create
+@a24_75=Frequency.where(freq_ghz: 24.75).first_or_create
+Observation.create(scan_nr: 217, febe: 'S14mm-OPTOCBE', n_scans: 8, mjd: 61325.2062, source_id: @a08542006.id, longitude: '08:54:48', latitude: '+20:06:30', frequency_id: @a24_75.id, cols: 11.3, nule: -13.4,zlin: -2.6, temp: 5.7, humidity: 97.5, pressure: 980.1, epoch_id: @a2026_10_11.id)
+@a07451011=Source.where(j2000_name: '0745+1011').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 218, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.2112, source_id: @a07451011.id, longitude: '07:45:33', latitude: '+10:11:12', frequency_id: @a8_05.id, cols: 13.4, nule: -14.7,zlin: -0.7, temp: 5.8, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07451011=Source.where(j2000_name: '0745+1011').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 218, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.2112, source_id: @a07451011.id, longitude: '07:45:33', latitude: '+10:11:12', frequency_id: @a6_55.id, cols: 13.4, nule: -14.7,zlin: -0.7, temp: 5.8, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07451011=Source.where(j2000_name: '0745+1011').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 218, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61325.2112, source_id: @a07451011.id, longitude: '07:45:33', latitude: '+10:11:12', frequency_id: @a6_3.id, cols: 13.4, nule: -14.7,zlin: -0.7, temp: 5.8, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07451011=Source.where(j2000_name: '0745+1011').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 219, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.2133, source_id: @a07451011.id, longitude: '07:45:33', latitude: '+10:11:12', frequency_id: @a8_05.id, cols: 13.4, nule: -14.7,zlin: -0.7, temp: 6.0, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07451011=Source.where(j2000_name: '0745+1011').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 219, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.2133, source_id: @a07451011.id, longitude: '07:45:33', latitude: '+10:11:12', frequency_id: @a6_55.id, cols: 13.4, nule: -14.7,zlin: -0.7, temp: 6.0, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07451011=Source.where(j2000_name: '0745+1011').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 219, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.2133, source_id: @a07451011.id, longitude: '07:45:33', latitude: '+10:11:12', frequency_id: @a6_3.id, cols: 13.4, nule: -14.7,zlin: -0.7, temp: 5.9, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07451011=Source.where(j2000_name: '0745+1011').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 220, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.2174, source_id: @a07451011.id, longitude: '07:45:33', latitude: '+10:11:12', frequency_id: @a8_05.id, cols: 9.3, nule: -10.5,zlin: -0.7, temp: 6.0, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07451011=Source.where(j2000_name: '0745+1011').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 220, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.2174, source_id: @a07451011.id, longitude: '07:45:33', latitude: '+10:11:12', frequency_id: @a6_55.id, cols: 9.3, nule: -10.5,zlin: -0.7, temp: 6.0, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07451011=Source.where(j2000_name: '0745+1011').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 220, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.2174, source_id: @a07451011.id, longitude: '07:45:33', latitude: '+10:11:12', frequency_id: @a6_3.id, cols: 9.3, nule: -10.5,zlin: -0.7, temp: 6.0, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07481020=Source.where(j2000_name: '0748+1020').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 221, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.2224, source_id: @a07481020.id, longitude: '07:48:11', latitude: '+10:20:49', frequency_id: @a8_05.id, cols: 9.3, nule: -10.5,zlin: -0.7, temp: 6.0, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07481020=Source.where(j2000_name: '0748+1020').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 221, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.2224, source_id: @a07481020.id, longitude: '07:48:11', latitude: '+10:20:49', frequency_id: @a6_55.id, cols: 9.3, nule: -10.5,zlin: -0.7, temp: 6.0, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07481020=Source.where(j2000_name: '0748+1020').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 221, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61325.2224, source_id: @a07481020.id, longitude: '07:48:11', latitude: '+10:20:49', frequency_id: @a6_3.id, cols: 9.3, nule: -10.5,zlin: -0.7, temp: 6.1, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07481020=Source.where(j2000_name: '0748+1020').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 222, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.2244, source_id: @a07481020.id, longitude: '07:48:11', latitude: '+10:20:49', frequency_id: @a8_05.id, cols: 9.3, nule: -10.5,zlin: -0.7, temp: 5.9, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07481020=Source.where(j2000_name: '0748+1020').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 222, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.2244, source_id: @a07481020.id, longitude: '07:48:11', latitude: '+10:20:49', frequency_id: @a6_55.id, cols: 9.3, nule: -10.5,zlin: -0.7, temp: 6.1, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07481020=Source.where(j2000_name: '0748+1020').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 222, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.2244, source_id: @a07481020.id, longitude: '07:48:11', latitude: '+10:20:49', frequency_id: @a6_3.id, cols: 9.3, nule: -10.5,zlin: -0.7, temp: 6.0, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07481020=Source.where(j2000_name: '0748+1020').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 223, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.2286, source_id: @a07481020.id, longitude: '07:48:11', latitude: '+10:20:49', frequency_id: @a8_05.id, cols: 14.2, nule: -14.7,zlin: -0.7, temp: 6.1, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07481020=Source.where(j2000_name: '0748+1020').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 223, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.2286, source_id: @a07481020.id, longitude: '07:48:11', latitude: '+10:20:49', frequency_id: @a6_55.id, cols: 14.2, nule: -14.7,zlin: -0.7, temp: 6.0, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a07481020=Source.where(j2000_name: '0748+1020').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 223, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.2286, source_id: @a07481020.id, longitude: '07:48:11', latitude: '+10:20:49', frequency_id: @a6_3.id, cols: 14.2, nule: -14.7,zlin: -0.7, temp: 6.1, humidity: 97.5, pressure: 980.4, epoch_id: @a2026_10_11.id)
+@a06481516=Source.where(j2000_name: '0648+1516').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 224, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.2333, source_id: @a06481516.id, longitude: '06:48:45', latitude: '+15:16:12', frequency_id: @a8_05.id, cols: 17.7, nule: -20.6,zlin: -0.7, temp: 6.1, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
+@a06481516=Source.where(j2000_name: '0648+1516').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 224, febe: 'S45mm-OPTOCBE', n_scans: 4, mjd: 61325.2333, source_id: @a06481516.id, longitude: '06:48:45', latitude: '+15:16:12', frequency_id: @a6_55.id, cols: 17.7, nule: -20.6,zlin: -0.7, temp: 6.1, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
+@a06481516=Source.where(j2000_name: '0648+1516').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 224, febe: 'S45mm-EDDPOL', n_scans: 4, mjd: 61325.2333, source_id: @a06481516.id, longitude: '06:48:45', latitude: '+15:16:12', frequency_id: @a6_3.id, cols: 17.7, nule: -20.6,zlin: -0.7, temp: 6.0, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
+@a06481516=Source.where(j2000_name: '0648+1516').first_or_create
+@a8_05=Frequency.where(freq_ghz: 8.05).first_or_create
+Observation.create(scan_nr: 225, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.2354, source_id: @a06481516.id, longitude: '06:48:45', latitude: '+15:16:12', frequency_id: @a8_05.id, cols: 17.7, nule: -20.6,zlin: -0.7, temp: 6.1, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
+@a06481516=Source.where(j2000_name: '0648+1516').first_or_create
+@a6_55=Frequency.where(freq_ghz: 6.55).first_or_create
+Observation.create(scan_nr: 225, febe: 'S45mm-OPTOCBE', n_scans: 8, mjd: 61325.2354, source_id: @a06481516.id, longitude: '06:48:45', latitude: '+15:16:12', frequency_id: @a6_55.id, cols: 17.7, nule: -20.6,zlin: -0.7, temp: 6.2, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
+@a06481516=Source.where(j2000_name: '0648+1516').first_or_create
+@a6_3=Frequency.where(freq_ghz: 6.3).first_or_create
+Observation.create(scan_nr: 225, febe: 'S45mm-EDDPOL', n_scans: 8, mjd: 61325.2354, source_id: @a06481516.id, longitude: '06:48:45', latitude: '+15:16:12', frequency_id: @a6_3.id, cols: 17.7, nule: -20.6,zlin: -0.7, temp: 6.1, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
+@a08120237=Source.where(j2000_name: '0812+0237').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 226, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.2411, source_id: @a08120237.id, longitude: '08:12:01', latitude: '+02:37:33', frequency_id: @a16_75.id, cols: 17.7, nule: -20.6,zlin: 4.5, temp: 6.2, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
+@a08120237=Source.where(j2000_name: '0812+0237').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 226, febe: 'S20mm-OPTOCBE', n_scans: 4, mjd: 61325.2411, source_id: @a08120237.id, longitude: '08:12:01', latitude: '+02:37:33', frequency_id: @a14_25.id, cols: 17.7, nule: -20.6,zlin: 4.5, temp: 6.2, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
+@a08120237=Source.where(j2000_name: '0812+0237').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 226, febe: 'S20mm-EDDPOL', n_scans: 4, mjd: 61325.2411, source_id: @a08120237.id, longitude: '08:12:01', latitude: '+02:37:33', frequency_id: @a14_0.id, cols: 17.7, nule: -20.6,zlin: 4.5, temp: 6.2, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
+@a08120237=Source.where(j2000_name: '0812+0237').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 227, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.2431, source_id: @a08120237.id, longitude: '08:12:01', latitude: '+02:37:33', frequency_id: @a16_75.id, cols: 17.7, nule: -20.6,zlin: 4.5, temp: 6.1, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
+@a08120237=Source.where(j2000_name: '0812+0237').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 227, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.2431, source_id: @a08120237.id, longitude: '08:12:01', latitude: '+02:37:33', frequency_id: @a14_25.id, cols: 17.7, nule: -20.6,zlin: 4.5, temp: 6.2, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
+@a08120237=Source.where(j2000_name: '0812+0237').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 227, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.2431, source_id: @a08120237.id, longitude: '08:12:01', latitude: '+02:37:33', frequency_id: @a14_0.id, cols: 17.7, nule: -20.6,zlin: 4.5, temp: 6.1, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
+@a08120237=Source.where(j2000_name: '0812+0237').first_or_create
+@a16_75=Frequency.where(freq_ghz: 16.75).first_or_create
+Observation.create(scan_nr: 228, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.2472, source_id: @a08120237.id, longitude: '08:12:01', latitude: '+02:37:33', frequency_id: @a16_75.id, cols: 17.7, nule: -20.6,zlin: 4.5, temp: 6.2, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
+@a08120237=Source.where(j2000_name: '0812+0237').first_or_create
+@a14_25=Frequency.where(freq_ghz: 14.25).first_or_create
+Observation.create(scan_nr: 228, febe: 'S20mm-OPTOCBE', n_scans: 8, mjd: 61325.2472, source_id: @a08120237.id, longitude: '08:12:01', latitude: '+02:37:33', frequency_id: @a14_25.id, cols: 17.7, nule: -20.6,zlin: 4.5, temp: 6.3, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
+@a08120237=Source.where(j2000_name: '0812+0237').first_or_create
+@a14_0=Frequency.where(freq_ghz: 14.0).first_or_create
+Observation.create(scan_nr: 228, febe: 'S20mm-EDDPOL', n_scans: 8, mjd: 61325.2472, source_id: @a08120237.id, longitude: '08:12:01', latitude: '+02:37:33', frequency_id: @a14_0.id, cols: 17.7, nule: -20.6,zlin: 4.5, temp: 6.1, humidity: 97.5, pressure: 980.9, epoch_id: @a2026_10_11.id)
 @obs=Observation.where(epoch_id: @a2021_10_07.id, frequency_id: @a38_75.id, scan_nr: 2489).first
 Result.create(observation_id: @obs.id, epoch_id: @a2021_10_07.id, frequency_id: @a38_75.id, source_id: @a01122244.id, scan_nr: 2489, value_jy: 1.2999, error_jy: 0.0489, elevation: 62.1, mjd: 59494.9735)
 @obs=Observation.where(epoch_id: @a2021_10_07.id, frequency_id: @a38_75.id, scan_nr: 2490).first
@@ -368434,8 +370859,10 @@ Result.create(observation_id: @obs.id, epoch_id: @a2026_09_29.id, frequency_id: 
 Result.create(observation_id: @obs.id, epoch_id: @a2026_09_29.id, frequency_id: @a41_25.id, source_id: @a05090541.id, scan_nr: 9241, value_jy: 1.0553, error_jy: 0.0431, elevation: 42.2, mjd: 61313.1165)
 @obs=Observation.where(epoch_id: @a2026_09_29.id, frequency_id: @a41_25.id, scan_nr: 9251).first
 Result.create(observation_id: @obs.id, epoch_id: @a2026_09_29.id, frequency_id: @a41_25.id, source_id: @a07217120.id, scan_nr: 9251, value_jy: 1.3094, error_jy: 0.0527, elevation: 63.6, mjd: 61313.1644)
-@obs=Observation.where(epoch_id: @a2026_09_29.id, frequency_id: @a41_25.id, scan_nr: 9143).first
-Result.create(observation_id: @obs.id, epoch_id: @a2026_09_29.id, frequency_id: @a41_25.id, source_id: @a13103220.id, scan_nr: 9143, value_jy: 1.8485, error_jy: 0.0758, elevation: 24.8, mjd: 61312.7547)
+@obs=Observation.where(epoch_id: @a2026_09_29.id, frequency_id: @a41_25.id, scan_nr: 9141).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_09_29.id, frequency_id: @a41_25.id, source_id: @a13103220.id, scan_nr: 9141, value_jy: 2.6872, error_jy: 0.1069, elevation: 25.7, mjd: 61312.7506)
+@obs=Observation.where(epoch_id: @a2026_09_29.id, frequency_id: @a41_25.id, scan_nr: 9142).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_09_29.id, frequency_id: @a41_25.id, source_id: @a13103220.id, scan_nr: 9142, value_jy: 2.6761, error_jy: 0.1067, elevation: 25.3, mjd: 61312.7527)
 @obs=Observation.where(epoch_id: @a2026_09_29.id, frequency_id: @a41_25.id, scan_nr: 9167).first
 Result.create(observation_id: @obs.id, epoch_id: @a2026_09_29.id, frequency_id: @a41_25.id, source_id: @a14223223.id, scan_nr: 9167, value_jy: 1.1987, error_jy: 0.0489, elevation: 23.2, mjd: 61312.8127)
 @obs=Observation.where(epoch_id: @a2026_09_29.id, frequency_id: @a41_25.id, scan_nr: 9168).first
@@ -368470,6 +370897,10 @@ Result.create(observation_id: @obs.id, epoch_id: @a2026_09_29.id, frequency_id: 
 Result.create(observation_id: @obs.id, epoch_id: @a2026_09_29.id, frequency_id: @a43_75.id, source_id: @a05090541.id, scan_nr: 9241, value_jy: 1.1025, error_jy: 0.0521, elevation: 42.2, mjd: 61313.1165)
 @obs=Observation.where(epoch_id: @a2026_09_29.id, frequency_id: @a43_75.id, scan_nr: 9251).first
 Result.create(observation_id: @obs.id, epoch_id: @a2026_09_29.id, frequency_id: @a43_75.id, source_id: @a07217120.id, scan_nr: 9251, value_jy: 1.1040, error_jy: 0.0533, elevation: 63.5, mjd: 61313.1639)
+@obs=Observation.where(epoch_id: @a2026_09_29.id, frequency_id: @a43_75.id, scan_nr: 9141).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_09_29.id, frequency_id: @a43_75.id, source_id: @a13103220.id, scan_nr: 9141, value_jy: 2.6394, error_jy: 0.1197, elevation: 25.7, mjd: 61312.7506)
+@obs=Observation.where(epoch_id: @a2026_09_29.id, frequency_id: @a43_75.id, scan_nr: 9142).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_09_29.id, frequency_id: @a43_75.id, source_id: @a13103220.id, scan_nr: 9142, value_jy: 2.5647, error_jy: 0.1167, elevation: 25.3, mjd: 61312.7527)
 @obs=Observation.where(epoch_id: @a2026_09_29.id, frequency_id: @a43_75.id, scan_nr: 9167).first
 Result.create(observation_id: @obs.id, epoch_id: @a2026_09_29.id, frequency_id: @a43_75.id, source_id: @a14223223.id, scan_nr: 9167, value_jy: 1.1083, error_jy: 0.0521, elevation: 23.2, mjd: 61312.8129)
 @obs=Observation.where(epoch_id: @a2026_09_29.id, frequency_id: @a43_75.id, scan_nr: 9168).first
@@ -398296,3 +400727,891 @@ Result.create(observation_id: @obs.id, elevation: 54.3,source_id: @aNGC7027.id ,
 Result.create(observation_id: @obs.id, elevation: 56.3,source_id: @aW3OH.id ,scan_nr: 6807, epoch_id: @a2026_09_11.id ,frequency_id: @a41_0.id,value_jy: 3.3848,error_jy: 0.1325,mjd: 61295.2756,pol_flux: 0.0689,pol_flux_err: 0.0201, pol_frac: 2.034, pol_frac_err: 0.600,evpa: 63.71, evpa_err: 9.09)
 @obs=Observation.where(epoch_id: @a2026_09_11.id, frequency_id: @a41_0.id, scan_nr: 6808).first_or_create
 Result.create(observation_id: @obs.id, elevation: 55.7,source_id: @aW3OH.id ,scan_nr: 6808, epoch_id: @a2026_09_11.id ,frequency_id: @a41_0.id,value_jy: 3.1895,error_jy: 0.1249,mjd: 61295.2791,pol_flux: 0.0760,pol_flux_err: 0.0177, pol_frac: 2.383, pol_frac_err: 0.564,evpa: 62.60, evpa_err: 7.45)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 218).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a07451011.id, scan_nr: 218, value_jy: 2.6529, error_jy: 0.0821, elevation: 48.2, mjd: 61325.2119)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 219).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a07451011.id, scan_nr: 219, value_jy: 2.6329, error_jy: 0.0814, elevation: 48.4, mjd: 61325.2144)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 220).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a07451011.id, scan_nr: 220, value_jy: 2.6571, error_jy: 0.0831, elevation: 48.7, mjd: 61325.2185)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 221).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a07481020.id, scan_nr: 221, value_jy: 0.1295, error_jy: 0.0043, elevation: 49.0, mjd: 61325.223)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 222).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a07481020.id, scan_nr: 222, value_jy: 0.1336, error_jy: 0.0042, elevation: 49.2, mjd: 61325.2256)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 223).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a07481020.id, scan_nr: 223, value_jy: 0.1336, error_jy: 0.0044, elevation: 49.3, mjd: 61325.2298)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 212).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a08542006.id, scan_nr: 212, value_jy: 3.0725, error_jy: 0.0950, elevation: 47.2, mjd: 61325.1897)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 213).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a08542006.id, scan_nr: 213, value_jy: 3.1310, error_jy: 0.0968, elevation: 47.7, mjd: 61325.1922)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 214).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a08542006.id, scan_nr: 214, value_jy: 3.1020, error_jy: 0.0960, elevation: 48.5, mjd: 61325.1962)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 135).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a11366737.id, scan_nr: 135, value_jy: 0.0334, error_jy: 0.0015, elevation: 28.0, mjd: 61324.9147)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 9995).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a13103220.id, scan_nr: 9995, value_jy: 2.9644, error_jy: 0.0955, elevation: 57.4, mjd: 61324.3732)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 9996).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a13103220.id, scan_nr: 9996, value_jy: 2.8986, error_jy: 0.0932, elevation: 57.9, mjd: 61324.3757)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 9997).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a13103220.id, scan_nr: 9997, value_jy: 2.9596, error_jy: 0.0952, elevation: 58.8, mjd: 61324.3797)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 9986).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a14223223.id, scan_nr: 9986, value_jy: 0.7876, error_jy: 0.0254, elevation: 38.6, mjd: 61324.3398)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 9987).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a14223223.id, scan_nr: 9987, value_jy: 0.8117, error_jy: 0.0261, elevation: 39.2, mjd: 61324.3422)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 9988).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a14223223.id, scan_nr: 9988, value_jy: 0.7789, error_jy: 0.0251, elevation: 40.1, mjd: 61324.3463)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 0).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a14284240.id, scan_nr: 0, value_jy: 0.0274, error_jy: 0.0018, elevation: 55.6, mjd: 61324.3912)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 9999).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a14284240.id, scan_nr: 9999, value_jy: 0.0333, error_jy: 0.0018, elevation: 54.5, mjd: 61324.3862)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 24).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a15400101.id, scan_nr: 24, value_jy: 0.0438, error_jy: 0.0027, elevation: 33.6, mjd: 61324.4913)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 78).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a19432103.id, scan_nr: 78, value_jy: 0.0914, error_jy: 0.0033, elevation: 58.8, mjd: 61324.7105)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 79).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a19432103.id, scan_nr: 79, value_jy: 0.0902, error_jy: 0.0033, elevation: 59.0, mjd: 61324.7129)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 80).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a19432103.id, scan_nr: 80, value_jy: 0.0800, error_jy: 0.0027, elevation: 59.4, mjd: 61324.7173)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 82).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a19462029.id, scan_nr: 82, value_jy: 0.0902, error_jy: 0.0033, elevation: 59.2, mjd: 61324.7237)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 83).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a19462029.id, scan_nr: 83, value_jy: 0.0812, error_jy: 0.0034, elevation: 59.4, mjd: 61324.7278)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 170).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a20303700.id, scan_nr: 170, value_jy: 0.2342, error_jy: 0.0076, elevation: 27.5, mjd: 61325.0307)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 171).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a20303700.id, scan_nr: 171, value_jy: 0.2278, error_jy: 0.0071, elevation: 27.1, mjd: 61325.0331)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 172).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a20303700.id, scan_nr: 172, value_jy: 0.2196, error_jy: 0.0069, elevation: 26.3, mjd: 61325.0369)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 176).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a20395219.id, scan_nr: 176, value_jy: 0.0397, error_jy: 0.0030, elevation: 34.7, mjd: 61325.0529)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 179).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a22503825.id, scan_nr: 179, value_jy: 0.0557, error_jy: 0.0029, elevation: 42.3, mjd: 61325.0631)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 180).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a22503825.id, scan_nr: 180, value_jy: 0.0650, error_jy: 0.0027, elevation: 41.9, mjd: 61325.065)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 181).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a22503825.id, scan_nr: 181, value_jy: 0.0704, error_jy: 0.0028, elevation: 41.0, mjd: 61325.0694)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 182).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a22503825.id, scan_nr: 182, value_jy: 0.0696, error_jy: 0.0025, elevation: 40.1, mjd: 61325.0735)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 205).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a3C138.id, scan_nr: 205, value_jy: 4.1570, error_jy: 0.1286, elevation: 56.0, mjd: 61325.1598)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 206).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a3C138.id, scan_nr: 206, value_jy: 4.3181, error_jy: 0.1336, elevation: 55.8, mjd: 61325.1641)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 33).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a3C286.id, scan_nr: 33, value_jy: 6.2728, error_jy: 0.2022, elevation: 66.9, mjd: 61324.5316)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 34).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a3C286.id, scan_nr: 34, value_jy: 6.0332, error_jy: 0.1943, elevation: 66.6, mjd: 61324.5338)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 36).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a3C286.id, scan_nr: 36, value_jy: 6.0843, error_jy: 0.1960, elevation: 66.0, mjd: 61324.5383)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 37).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a3C286.id, scan_nr: 37, value_jy: 6.1131, error_jy: 0.1968, elevation: 65.6, mjd: 61324.5405)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 9964).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a3C286.id, scan_nr: 9964, value_jy: 5.5500, error_jy: 0.1785, elevation: 31.9, mjd: 61324.2805)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 9965).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a3C286.id, scan_nr: 9965, value_jy: 6.0386, error_jy: 0.1946, elevation: 32.4, mjd: 61324.2826)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 9967).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a3C286.id, scan_nr: 9967, value_jy: 5.5616, error_jy: 0.1788, elevation: 33.2, mjd: 61324.2862)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 9968).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a3C286.id, scan_nr: 9968, value_jy: 5.5685, error_jy: 0.1790, elevation: 33.7, mjd: 61324.2882)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 9969).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a3C286.id, scan_nr: 9969, value_jy: 5.6631, error_jy: 0.1820, elevation: 34.3, mjd: 61324.2908)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 9970).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @a3C286.id, scan_nr: 9970, value_jy: 5.6814, error_jy: 0.1826, elevation: 34.7, mjd: 61324.2927)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 84).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @aNGC7027.id, scan_nr: 84, value_jy: 5.3676, error_jy: 0.1661, elevation: 70.5, mjd: 61324.733)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 85).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @aNGC7027.id, scan_nr: 85, value_jy: 5.8935, error_jy: 0.1823, elevation: 71.0, mjd: 61324.7351)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 87).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @aNGC7027.id, scan_nr: 87, value_jy: 5.9266, error_jy: 0.1833, elevation: 71.9, mjd: 61324.7393)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, scan_nr: 88).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a6_55.id, source_id: @aNGC7027.id, scan_nr: 88, value_jy: 5.8733, error_jy: 0.1817, elevation: 72.3, mjd: 61324.7414)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 220).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a07451011.id, scan_nr: 220, value_jy: 2.3561, error_jy: 0.0682, elevation: 48.7, mjd: 61325.2185)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 212).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a08542006.id, scan_nr: 212, value_jy: 3.5936, error_jy: 0.0937, elevation: 47.2, mjd: 61325.1897)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 213).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a08542006.id, scan_nr: 213, value_jy: 3.7143, error_jy: 0.1131, elevation: 47.7, mjd: 61325.1922)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 214).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a08542006.id, scan_nr: 214, value_jy: 3.7004, error_jy: 0.1011, elevation: 48.5, mjd: 61325.1962)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 9995).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a13103220.id, scan_nr: 9995, value_jy: 3.2587, error_jy: 0.0932, elevation: 57.4, mjd: 61324.3732)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 9996).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a13103220.id, scan_nr: 9996, value_jy: 3.3121, error_jy: 0.0915, elevation: 57.9, mjd: 61324.3757)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 9987).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a14223223.id, scan_nr: 9987, value_jy: 0.9224, error_jy: 0.0363, elevation: 39.2, mjd: 61324.3422)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 9988).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a14223223.id, scan_nr: 9988, value_jy: 0.8350, error_jy: 0.0534, elevation: 40.1, mjd: 61324.3463)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 170).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a20303700.id, scan_nr: 170, value_jy: 0.2578, error_jy: 0.0088, elevation: 27.5, mjd: 61325.0307)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 171).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a20303700.id, scan_nr: 171, value_jy: 0.2574, error_jy: 0.0103, elevation: 27.1, mjd: 61325.0331)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 206).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a3C138.id, scan_nr: 206, value_jy: 4.2209, error_jy: 0.1043, elevation: 55.8, mjd: 61325.1641)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 33).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a3C286.id, scan_nr: 33, value_jy: 5.6298, error_jy: 0.1493, elevation: 66.9, mjd: 61324.5316)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 34).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a3C286.id, scan_nr: 34, value_jy: 5.0123, error_jy: 0.1478, elevation: 66.6, mjd: 61324.5338)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 9964).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a3C286.id, scan_nr: 9964, value_jy: 4.8994, error_jy: 0.1273, elevation: 31.9, mjd: 61324.2805)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 9965).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a3C286.id, scan_nr: 9965, value_jy: 5.1037, error_jy: 0.1375, elevation: 32.4, mjd: 61324.2826)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 9967).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a3C286.id, scan_nr: 9967, value_jy: 5.0240, error_jy: 0.1275, elevation: 33.2, mjd: 61324.2862)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 9968).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a3C286.id, scan_nr: 9968, value_jy: 4.9848, error_jy: 0.1276, elevation: 33.7, mjd: 61324.2882)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 9969).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a3C286.id, scan_nr: 9969, value_jy: 5.0258, error_jy: 0.1399, elevation: 34.3, mjd: 61324.2908)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 9970).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @a3C286.id, scan_nr: 9970, value_jy: 4.9126, error_jy: 0.1360, elevation: 34.7, mjd: 61324.2927)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 84).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @aNGC7027.id, scan_nr: 84, value_jy: 5.3108, error_jy: 0.1332, elevation: 70.5, mjd: 61324.733)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 85).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @aNGC7027.id, scan_nr: 85, value_jy: 6.0764, error_jy: 0.2643, elevation: 71.0, mjd: 61324.7351)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 87).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @aNGC7027.id, scan_nr: 87, value_jy: 5.7755, error_jy: 0.1951, elevation: 71.9, mjd: 61324.7393)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, scan_nr: 88).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a8_05.id, source_id: @aNGC7027.id, scan_nr: 88, value_jy: 6.0256, error_jy: 0.1675, elevation: 72.3, mjd: 61324.7414)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 192).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a00355950.id, scan_nr: 192, value_jy: 0.0646, error_jy: 0.0013, elevation: 56.9, mjd: 61325.1107)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 193).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a00355950.id, scan_nr: 193, value_jy: 0.0689, error_jy: 0.0013, elevation: 56.3, mjd: 61325.1143)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 196).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a01363906.id, scan_nr: 196, value_jy: 0.0515, error_jy: 0.0012, elevation: 54.9, mjd: 61325.1256)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 197).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a02322017.id, scan_nr: 197, value_jy: 0.0426, error_jy: 0.0011, elevation: 48.8, mjd: 61325.1303)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 200).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a02322017.id, scan_nr: 200, value_jy: 0.0408, error_jy: 0.0009, elevation: 46.9, mjd: 61325.1407)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 202).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a04160105.id, scan_nr: 202, value_jy: 0.0427, error_jy: 0.0009, elevation: 38.8, mjd: 61325.1478)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 143).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a11367009.id, scan_nr: 143, value_jy: 0.1452, error_jy: 0.0026, elevation: 30.9, mjd: 61324.9456)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 56).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a13591436.id, scan_nr: 56, value_jy: 0.2456, error_jy: 0.0045, elevation: 44.1, mjd: 61324.6071)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 57).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a13591436.id, scan_nr: 57, value_jy: 0.2587, error_jy: 0.0046, elevation: 43.8, mjd: 61324.6093)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 58).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a13591436.id, scan_nr: 58, value_jy: 0.2514, error_jy: 0.0045, elevation: 43.0, mjd: 61324.6139)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 10).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a14172543.id, scan_nr: 10, value_jy: 0.0276, error_jy: 0.0010, elevation: 55.3, mjd: 61324.4343)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 11).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a14172543.id, scan_nr: 11, value_jy: 0.0343, error_jy: 0.0010, elevation: 56.1, mjd: 61324.4387)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 9989).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a14223223.id, scan_nr: 9989, value_jy: 0.9488, error_jy: 0.0169, elevation: 41.2, mjd: 61324.351)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 9991).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a14223223.id, scan_nr: 9991, value_jy: 0.9785, error_jy: 0.0179, elevation: 42.6, mjd: 61324.3573)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 14).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a14431200.id, scan_nr: 14, value_jy: 0.0368, error_jy: 0.0009, elevation: 43.7, mjd: 61324.4522)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 16).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a14432501.id, scan_nr: 16, value_jy: 0.1249, error_jy: 0.0024, elevation: 56.4, mjd: 61324.4613)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 17).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a14432501.id, scan_nr: 17, value_jy: 0.1601, error_jy: 0.0029, elevation: 56.8, mjd: 61324.4638)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 127).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a15426129.id, scan_nr: 127, value_jy: 0.1453, error_jy: 0.0027, elevation: 34.8, mjd: 61324.8871)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 128).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a15426129.id, scan_nr: 128, value_jy: 0.1491, error_jy: 0.0027, elevation: 34.5, mjd: 61324.8891)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 129).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a15426129.id, scan_nr: 129, value_jy: 0.1432, error_jy: 0.0026, elevation: 34.0, mjd: 61324.8934)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 130).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a15426129.id, scan_nr: 130, value_jy: 0.1470, error_jy: 0.0028, elevation: 33.5, mjd: 61324.8975)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 60).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a15551111.id, scan_nr: 60, value_jy: 0.2865, error_jy: 0.0051, elevation: 49.5, mjd: 61324.6222)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 61).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a15551111.id, scan_nr: 61, value_jy: 0.2838, error_jy: 0.0051, elevation: 49.2, mjd: 61324.6266)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 106).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a17281215.id, scan_nr: 106, value_jy: 0.8342, error_jy: 0.0148, elevation: 32.4, mjd: 61324.8018)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 68).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a17430350.id, scan_nr: 68, value_jy: 4.2374, error_jy: 0.0754, elevation: 35.6, mjd: 61324.6568)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 69).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a17430350.id, scan_nr: 69, value_jy: 4.2752, error_jy: 0.0761, elevation: 35.6, mjd: 61324.661)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 114).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a18032521.id, scan_nr: 114, value_jy: 0.0867, error_jy: 0.0016, elevation: 39.9, mjd: 61324.8364)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 116).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a18032521.id, scan_nr: 116, value_jy: 0.0888, error_jy: 0.0016, elevation: 38.6, mjd: 61324.8427)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 120).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a18133144.id, scan_nr: 120, value_jy: 0.0886, error_jy: 0.0017, elevation: 41.0, mjd: 61324.8581)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 121).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a18133144.id, scan_nr: 121, value_jy: 0.0888, error_jy: 0.0020, elevation: 40.6, mjd: 61324.8605)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 122).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a18133144.id, scan_nr: 122, value_jy: 0.0877, error_jy: 0.0016, elevation: 39.4, mjd: 61324.8655)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 28).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a19596508.id, scan_nr: 28, value_jy: 0.1940, error_jy: 0.0037, elevation: 44.1, mjd: 61324.5058)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 29).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a19596508.id, scan_nr: 29, value_jy: 0.2309, error_jy: 0.0134, elevation: 44.7, mjd: 61324.5097)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 166).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a20014352.id, scan_nr: 166, value_jy: 0.1208, error_jy: 0.0023, elevation: 31.1, mjd: 61325.016)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 175).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a21262904.id, scan_nr: 175, value_jy: 0.1041, error_jy: 0.0019, elevation: 26.6, mjd: 61325.0481)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 185).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a23475142.id, scan_nr: 185, value_jy: 0.2313, error_jy: 0.0712, elevation: 53.0, mjd: 61325.0848)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 186).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a23475142.id, scan_nr: 186, value_jy: 0.2052, error_jy: 0.0040, elevation: 52.3, mjd: 61325.0888)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 38).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 38, value_jy: 3.5508, error_jy: 0.0632, elevation: 65.1, mjd: 61324.5437)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 40).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 40, value_jy: 3.5278, error_jy: 0.0628, elevation: 64.5, mjd: 61324.5477)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 41).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 41, value_jy: 3.6073, error_jy: 0.0642, elevation: 64.2, mjd: 61324.5498)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 9973).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 9973, value_jy: 3.3463, error_jy: 0.0596, elevation: 36.3, mjd: 61324.2997)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 9974).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @a3C286.id, scan_nr: 9974, value_jy: 3.4633, error_jy: 0.0617, elevation: 36.8, mjd: 61324.3017)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 89).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @aNGC7027.id, scan_nr: 89, value_jy: 5.2554, error_jy: 0.0932, elevation: 73.1, mjd: 61324.7447)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 91).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @aNGC7027.id, scan_nr: 91, value_jy: 5.6420, error_jy: 0.1000, elevation: 73.9, mjd: 61324.7486)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 92).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @aNGC7027.id, scan_nr: 92, value_jy: 5.6201, error_jy: 0.0997, elevation: 74.3, mjd: 61324.7508)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 149).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @aNGC7027.id, scan_nr: 149, value_jy: 5.7041, error_jy: 0.1003, elevation: 50.4, mjd: 61324.9654)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 151).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @aNGC7027.id, scan_nr: 151, value_jy: 5.6242, error_jy: 0.0989, elevation: 49.5, mjd: 61324.9692)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, scan_nr: 152).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a14_25.id, source_id: @aNGC7027.id, scan_nr: 152, value_jy: 5.6577, error_jy: 0.0994, elevation: 49.1, mjd: 61324.9711)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 191).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a00355950.id, scan_nr: 191, value_jy: 0.0800, error_jy: 0.0048, elevation: 57.3, mjd: 61325.1082)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 192).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a00355950.id, scan_nr: 192, value_jy: 0.0665, error_jy: 0.0028, elevation: 56.9, mjd: 61325.1105)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 193).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a00355950.id, scan_nr: 193, value_jy: 0.0656, error_jy: 0.0026, elevation: 56.3, mjd: 61325.1143)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 196).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a01363906.id, scan_nr: 196, value_jy: 0.0473, error_jy: 0.0022, elevation: 54.9, mjd: 61325.1254)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 200).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a02322017.id, scan_nr: 200, value_jy: 0.0409, error_jy: 0.0037, elevation: 46.9, mjd: 61325.1407)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 203).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a04160105.id, scan_nr: 203, value_jy: 0.0522, error_jy: 0.0029, elevation: 38.5, mjd: 61325.1519)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 143).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a11367009.id, scan_nr: 143, value_jy: 0.1317, error_jy: 0.0049, elevation: 30.9, mjd: 61324.9456)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 56).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a13591436.id, scan_nr: 56, value_jy: 0.2360, error_jy: 0.0089, elevation: 44.1, mjd: 61324.6071)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 57).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a13591436.id, scan_nr: 57, value_jy: 0.2590, error_jy: 0.0097, elevation: 43.8, mjd: 61324.6093)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 58).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a13591436.id, scan_nr: 58, value_jy: 0.2661, error_jy: 0.0099, elevation: 43.0, mjd: 61324.6139)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 9991).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a14223223.id, scan_nr: 9991, value_jy: 1.1014, error_jy: 0.0415, elevation: 42.6, mjd: 61324.3573)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 127).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a15426129.id, scan_nr: 127, value_jy: 0.1575, error_jy: 0.0062, elevation: 34.8, mjd: 61324.8871)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 128).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a15426129.id, scan_nr: 128, value_jy: 0.1502, error_jy: 0.0056, elevation: 34.5, mjd: 61324.8893)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 129).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a15426129.id, scan_nr: 129, value_jy: 0.1554, error_jy: 0.0059, elevation: 34.0, mjd: 61324.8934)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 60).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a15551111.id, scan_nr: 60, value_jy: 0.2935, error_jy: 0.0109, elevation: 49.5, mjd: 61324.6222)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 61).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a15551111.id, scan_nr: 61, value_jy: 0.2893, error_jy: 0.0107, elevation: 49.2, mjd: 61324.6266)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 106).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a17281215.id, scan_nr: 106, value_jy: 0.9313, error_jy: 0.0344, elevation: 32.4, mjd: 61324.8018)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 69).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a17430350.id, scan_nr: 69, value_jy: 4.3464, error_jy: 0.1601, elevation: 35.6, mjd: 61324.661)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 114).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a18032521.id, scan_nr: 114, value_jy: 0.0901, error_jy: 0.0044, elevation: 39.9, mjd: 61324.8362)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 115).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a18032521.id, scan_nr: 115, value_jy: 0.0725, error_jy: 0.0030, elevation: 39.5, mjd: 61324.8388)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 116).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a18032521.id, scan_nr: 116, value_jy: 0.0933, error_jy: 0.0038, elevation: 38.6, mjd: 61324.8427)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 120).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a18133144.id, scan_nr: 120, value_jy: 0.0847, error_jy: 0.0035, elevation: 41.0, mjd: 61324.8581)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 121).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a18133144.id, scan_nr: 121, value_jy: 0.0860, error_jy: 0.0036, elevation: 40.6, mjd: 61324.8605)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 122).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a18133144.id, scan_nr: 122, value_jy: 0.0901, error_jy: 0.0035, elevation: 39.4, mjd: 61324.8655)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 29).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a19596508.id, scan_nr: 29, value_jy: 0.2030, error_jy: 0.0076, elevation: 44.7, mjd: 61324.5099)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 166).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a20014352.id, scan_nr: 166, value_jy: 0.1327, error_jy: 0.0051, elevation: 31.1, mjd: 61325.016)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 175).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a21262904.id, scan_nr: 175, value_jy: 0.1059, error_jy: 0.0042, elevation: 26.6, mjd: 61325.0481)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 185).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a23475142.id, scan_nr: 185, value_jy: 0.2274, error_jy: 0.0083, elevation: 53.0, mjd: 61325.085)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 186).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a23475142.id, scan_nr: 186, value_jy: 0.2203, error_jy: 0.0081, elevation: 52.3, mjd: 61325.0888)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 40).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a3C286.id, scan_nr: 40, value_jy: 3.1230, error_jy: 0.1150, elevation: 64.5, mjd: 61324.5477)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 41).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a3C286.id, scan_nr: 41, value_jy: 3.2450, error_jy: 0.1199, elevation: 64.2, mjd: 61324.5498)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 9973).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a3C286.id, scan_nr: 9973, value_jy: 2.8482, error_jy: 0.1049, elevation: 36.3, mjd: 61324.2997)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 9974).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @a3C286.id, scan_nr: 9974, value_jy: 3.0186, error_jy: 0.1112, elevation: 36.8, mjd: 61324.3017)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 89).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @aNGC7027.id, scan_nr: 89, value_jy: 4.8652, error_jy: 0.1795, elevation: 73.1, mjd: 61324.7447)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 91).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @aNGC7027.id, scan_nr: 91, value_jy: 5.7516, error_jy: 0.2122, elevation: 73.9, mjd: 61324.7486)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 92).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @aNGC7027.id, scan_nr: 92, value_jy: 5.6288, error_jy: 0.2077, elevation: 74.3, mjd: 61324.7508)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 149).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @aNGC7027.id, scan_nr: 149, value_jy: 5.9202, error_jy: 0.2147, elevation: 50.4, mjd: 61324.9654)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 151).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @aNGC7027.id, scan_nr: 151, value_jy: 5.6833, error_jy: 0.2061, elevation: 49.5, mjd: 61324.9692)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, scan_nr: 152).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a16_75.id, source_id: @aNGC7027.id, scan_nr: 152, value_jy: 5.7341, error_jy: 0.2080, elevation: 49.1, mjd: 61324.9711)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 215).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a08542006.id, scan_nr: 215, value_jy: 3.7377, error_jy: 0.2244, elevation: 49.4, mjd: 61325.2009)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 216).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a08542006.id, scan_nr: 216, value_jy: 3.8453, error_jy: 0.2307, elevation: 49.8, mjd: 61325.2033)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 217).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a08542006.id, scan_nr: 217, value_jy: 3.8583, error_jy: 0.2315, elevation: 50.5, mjd: 61325.2073)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 145).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a11367009.id, scan_nr: 145, value_jy: 0.1331, error_jy: 0.0082, elevation: 31.1, mjd: 61324.9524)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 146).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a11367009.id, scan_nr: 146, value_jy: 0.1381, error_jy: 0.0095, elevation: 31.2, mjd: 61324.956)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 1).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a14223223.id, scan_nr: 1, value_jy: 0.8857, error_jy: 0.0559, elevation: 51.7, mjd: 61324.3971)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 2).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a14223223.id, scan_nr: 2, value_jy: 0.9290, error_jy: 0.0586, elevation: 52.1, mjd: 61324.3989)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 3).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a14223223.id, scan_nr: 3, value_jy: 0.9599, error_jy: 0.0606, elevation: 53.3, mjd: 61324.4043)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 132).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a15426129.id, scan_nr: 132, value_jy: 0.1428, error_jy: 0.0099, elevation: 32.8, mjd: 61324.904)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 62).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a15551111.id, scan_nr: 62, value_jy: 0.2808, error_jy: 0.0181, elevation: 48.7, mjd: 61324.6319)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 63).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a15551111.id, scan_nr: 63, value_jy: 0.2794, error_jy: 0.0177, elevation: 48.5, mjd: 61324.6343)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 64).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a15551111.id, scan_nr: 64, value_jy: 0.2834, error_jy: 0.0180, elevation: 48.0, mjd: 61324.6398)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 108).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a17281215.id, scan_nr: 108, value_jy: 1.0032, error_jy: 0.0640, elevation: 30.6, mjd: 61324.8097)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 109).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a17281215.id, scan_nr: 109, value_jy: 0.9894, error_jy: 0.0633, elevation: 29.7, mjd: 61324.8141)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 72).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a17430350.id, scan_nr: 72, value_jy: 4.6108, error_jy: 0.2912, elevation: 35.5, mjd: 61324.678)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 117).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a18032521.id, scan_nr: 117, value_jy: 0.1156, error_jy: 0.0103, elevation: 37.5, mjd: 61324.8472)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 167).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a20014352.id, scan_nr: 167, value_jy: 0.1877, error_jy: 0.0120, elevation: 30.2, mjd: 61325.0205)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 189).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a23475142.id, scan_nr: 189, value_jy: 0.2176, error_jy: 0.0133, elevation: 50.0, mjd: 61325.0996)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 207).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a3C138.id, scan_nr: 207, value_jy: 4.4370, error_jy: 0.2662, elevation: 55.6, mjd: 61325.169)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 208).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a3C138.id, scan_nr: 208, value_jy: 4.6577, error_jy: 0.2794, elevation: 55.5, mjd: 61325.1715)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 211).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a3C138.id, scan_nr: 211, value_jy: 4.7429, error_jy: 0.2848, elevation: 54.6, mjd: 61325.1842)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 43).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a3C286.id, scan_nr: 43, value_jy: 2.8256, error_jy: 0.1783, elevation: 63.2, mjd: 61324.5551)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 46).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a3C286.id, scan_nr: 46, value_jy: 2.7851, error_jy: 0.1756, elevation: 61.6, mjd: 61324.5648)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 9978).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a3C286.id, scan_nr: 9978, value_jy: 2.3891, error_jy: 0.1507, elevation: 38.9, mjd: 61324.311)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 9979).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @a3C286.id, scan_nr: 9979, value_jy: 2.5736, error_jy: 0.1624, elevation: 39.4, mjd: 61324.3134)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 93).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @aNGC7027.id, scan_nr: 93, value_jy: 5.5220, error_jy: 0.3509, elevation: 75.0, mjd: 61324.7541)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 94).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @aNGC7027.id, scan_nr: 94, value_jy: 5.3348, error_jy: 0.3389, elevation: 75.5, mjd: 61324.7562)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 96).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @aNGC7027.id, scan_nr: 96, value_jy: 5.4458, error_jy: 0.3461, elevation: 76.3, mjd: 61324.7604)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 97).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @aNGC7027.id, scan_nr: 97, value_jy: 5.3949, error_jy: 0.3428, elevation: 76.8, mjd: 61324.763)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 153).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @aNGC7027.id, scan_nr: 153, value_jy: 5.9851, error_jy: 0.3590, elevation: 48.4, mjd: 61324.974)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 154).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @aNGC7027.id, scan_nr: 154, value_jy: 5.9805, error_jy: 0.3587, elevation: 48.0, mjd: 61324.9761)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 156).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @aNGC7027.id, scan_nr: 156, value_jy: 5.8389, error_jy: 0.3503, elevation: 47.0, mjd: 61324.9806)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, scan_nr: 157).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a19_25.id, source_id: @aNGC7027.id, scan_nr: 157, value_jy: 5.8724, error_jy: 0.3523, elevation: 46.6, mjd: 61324.9829)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 215).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a08542006.id, scan_nr: 215, value_jy: 3.8050, error_jy: 0.2845, elevation: 49.4, mjd: 61325.2009)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 216).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a08542006.id, scan_nr: 216, value_jy: 3.8945, error_jy: 0.2911, elevation: 49.8, mjd: 61325.2033)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 217).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a08542006.id, scan_nr: 217, value_jy: 3.9520, error_jy: 0.2954, elevation: 50.5, mjd: 61325.2073)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 145).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a11367009.id, scan_nr: 145, value_jy: 0.1392, error_jy: 0.0111, elevation: 31.1, mjd: 61324.9522)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 146).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a11367009.id, scan_nr: 146, value_jy: 0.1523, error_jy: 0.0118, elevation: 31.2, mjd: 61324.956)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 1).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a14223223.id, scan_nr: 1, value_jy: 0.8791, error_jy: 0.0708, elevation: 51.7, mjd: 61324.3971)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 2).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a14223223.id, scan_nr: 2, value_jy: 0.9220, error_jy: 0.0743, elevation: 52.1, mjd: 61324.3989)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 3).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a14223223.id, scan_nr: 3, value_jy: 0.9310, error_jy: 0.0749, elevation: 53.3, mjd: 61324.4043)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 132).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a15426129.id, scan_nr: 132, value_jy: 0.1758, error_jy: 0.0135, elevation: 32.8, mjd: 61324.904)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 133).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a15426129.id, scan_nr: 133, value_jy: 0.1680, error_jy: 0.0128, elevation: 32.3, mjd: 61324.9079)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 63).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a15551111.id, scan_nr: 63, value_jy: 0.2692, error_jy: 0.0218, elevation: 48.5, mjd: 61324.6343)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 64).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a15551111.id, scan_nr: 64, value_jy: 0.3043, error_jy: 0.0246, elevation: 48.0, mjd: 61324.6398)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 108).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a17281215.id, scan_nr: 108, value_jy: 1.0140, error_jy: 0.0825, elevation: 30.6, mjd: 61324.8099)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 109).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a17281215.id, scan_nr: 109, value_jy: 0.9830, error_jy: 0.0797, elevation: 29.7, mjd: 61324.8141)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 72).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a17430350.id, scan_nr: 72, value_jy: 4.4005, error_jy: 0.3544, elevation: 35.5, mjd: 61324.678)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 117).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a18032521.id, scan_nr: 117, value_jy: 0.1023, error_jy: 0.0100, elevation: 37.5, mjd: 61324.847)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 31).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a19596508.id, scan_nr: 31, value_jy: 0.1979, error_jy: 0.0161, elevation: 46.1, mjd: 61324.5203)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 32).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a19596508.id, scan_nr: 32, value_jy: 0.2022, error_jy: 0.0165, elevation: 46.6, mjd: 61324.5242)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 168).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a20014352.id, scan_nr: 168, value_jy: 0.1402, error_jy: 0.0112, elevation: 29.8, mjd: 61325.0225)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 169).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a20014352.id, scan_nr: 169, value_jy: 0.1431, error_jy: 0.0111, elevation: 29.1, mjd: 61325.0264)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 188).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a23475142.id, scan_nr: 188, value_jy: 0.2254, error_jy: 0.0170, elevation: 50.9, mjd: 61325.0958)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 207).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a3C138.id, scan_nr: 207, value_jy: 4.6888, error_jy: 0.3506, elevation: 55.6, mjd: 61325.169)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 208).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a3C138.id, scan_nr: 208, value_jy: 4.9469, error_jy: 0.3698, elevation: 55.5, mjd: 61325.1715)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 210).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a3C138.id, scan_nr: 210, value_jy: 4.8243, error_jy: 0.3616, elevation: 54.9, mjd: 61325.1802)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 211).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a3C138.id, scan_nr: 211, value_jy: 4.9804, error_jy: 0.3723, elevation: 54.6, mjd: 61325.1842)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 43).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a3C286.id, scan_nr: 43, value_jy: 2.6662, error_jy: 0.2146, elevation: 63.2, mjd: 61324.5551)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 46).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a3C286.id, scan_nr: 46, value_jy: 2.5954, error_jy: 0.2088, elevation: 61.6, mjd: 61324.5648)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 9978).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a3C286.id, scan_nr: 9978, value_jy: 2.1532, error_jy: 0.1733, elevation: 38.9, mjd: 61324.311)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 9979).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @a3C286.id, scan_nr: 9979, value_jy: 2.3040, error_jy: 0.1854, elevation: 39.4, mjd: 61324.3134)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 93).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @aNGC7027.id, scan_nr: 93, value_jy: 5.4287, error_jy: 0.4388, elevation: 75.0, mjd: 61324.7541)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 94).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @aNGC7027.id, scan_nr: 94, value_jy: 5.2781, error_jy: 0.4266, elevation: 75.5, mjd: 61324.7562)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 96).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @aNGC7027.id, scan_nr: 96, value_jy: 5.4154, error_jy: 0.4378, elevation: 76.3, mjd: 61324.7604)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 97).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @aNGC7027.id, scan_nr: 97, value_jy: 5.3657, error_jy: 0.4338, elevation: 76.8, mjd: 61324.763)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 153).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @aNGC7027.id, scan_nr: 153, value_jy: 5.9810, error_jy: 0.4471, elevation: 48.4, mjd: 61324.974)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 154).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @aNGC7027.id, scan_nr: 154, value_jy: 6.0405, error_jy: 0.4515, elevation: 48.0, mjd: 61324.9761)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 156).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @aNGC7027.id, scan_nr: 156, value_jy: 5.9382, error_jy: 0.4439, elevation: 47.0, mjd: 61324.9806)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, scan_nr: 157).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a21_15.id, source_id: @aNGC7027.id, scan_nr: 157, value_jy: 5.9433, error_jy: 0.4443, elevation: 46.6, mjd: 61324.9829)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 215).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a08542006.id, scan_nr: 215, value_jy: 3.4704, error_jy: 0.2606, elevation: 49.4, mjd: 61325.2009)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 216).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a08542006.id, scan_nr: 216, value_jy: 3.7682, error_jy: 0.2693, elevation: 49.8, mjd: 61325.2033)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 217).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a08542006.id, scan_nr: 217, value_jy: 3.7108, error_jy: 0.2657, elevation: 50.5, mjd: 61325.2073)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 1).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a14223223.id, scan_nr: 1, value_jy: 1.1336, error_jy: 0.2985, elevation: 51.7, mjd: 61324.3968)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 132).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a15426129.id, scan_nr: 132, value_jy: 0.4779, error_jy: 0.0967, elevation: 32.8, mjd: 61324.9038)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 108).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a17281215.id, scan_nr: 108, value_jy: 1.1178, error_jy: 0.1342, elevation: 30.6, mjd: 61324.8097)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 109).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a17281215.id, scan_nr: 109, value_jy: 0.9645, error_jy: 0.1041, elevation: 29.7, mjd: 61324.8137)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 72).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a17430350.id, scan_nr: 72, value_jy: 4.4091, error_jy: 0.3298, elevation: 35.5, mjd: 61324.678)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 207).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a3C138.id, scan_nr: 207, value_jy: 3.8959, error_jy: 0.2844, elevation: 55.6, mjd: 61325.169)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 208).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a3C138.id, scan_nr: 208, value_jy: 4.8987, error_jy: 0.3469, elevation: 55.5, mjd: 61325.1715)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 211).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a3C138.id, scan_nr: 211, value_jy: 4.7130, error_jy: 0.3336, elevation: 54.6, mjd: 61325.1842)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 43).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a3C286.id, scan_nr: 43, value_jy: 2.4564, error_jy: 0.1952, elevation: 63.2, mjd: 61324.5551)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 46).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a3C286.id, scan_nr: 46, value_jy: 2.4943, error_jy: 0.1900, elevation: 61.6, mjd: 61324.5648)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 9978).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a3C286.id, scan_nr: 9978, value_jy: 1.9857, error_jy: 0.1672, elevation: 38.9, mjd: 61324.311)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 9979).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @a3C286.id, scan_nr: 9979, value_jy: 2.3560, error_jy: 0.1852, elevation: 39.4, mjd: 61324.3131)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 93).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @aNGC7027.id, scan_nr: 93, value_jy: 5.5241, error_jy: 0.4183, elevation: 75.0, mjd: 61324.7541)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 94).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @aNGC7027.id, scan_nr: 94, value_jy: 5.2028, error_jy: 0.3934, elevation: 75.5, mjd: 61324.7562)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 96).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @aNGC7027.id, scan_nr: 96, value_jy: 5.1476, error_jy: 0.3915, elevation: 76.3, mjd: 61324.7604)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 97).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @aNGC7027.id, scan_nr: 97, value_jy: 5.4061, error_jy: 0.4055, elevation: 76.8, mjd: 61324.763)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 153).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @aNGC7027.id, scan_nr: 153, value_jy: 6.0833, error_jy: 0.4419, elevation: 48.4, mjd: 61324.974)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 154).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @aNGC7027.id, scan_nr: 154, value_jy: 5.7132, error_jy: 0.4103, elevation: 48.0, mjd: 61324.9761)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 156).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @aNGC7027.id, scan_nr: 156, value_jy: 5.9391, error_jy: 0.4219, elevation: 47.0, mjd: 61324.9806)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, scan_nr: 157).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a22_85.id, source_id: @aNGC7027.id, scan_nr: 157, value_jy: 5.9987, error_jy: 0.4231, elevation: 46.6, mjd: 61324.9829)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 215).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a08542006.id, scan_nr: 215, value_jy: 3.8205, error_jy: 0.2807, elevation: 49.4, mjd: 61325.2009)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 216).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a08542006.id, scan_nr: 216, value_jy: 3.9978, error_jy: 0.2936, elevation: 49.8, mjd: 61325.2033)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 217).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a08542006.id, scan_nr: 217, value_jy: 4.0483, error_jy: 0.2974, elevation: 50.5, mjd: 61325.2073)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 145).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a11367009.id, scan_nr: 145, value_jy: 0.1555, error_jy: 0.0121, elevation: 31.1, mjd: 61324.9524)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 146).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a11367009.id, scan_nr: 146, value_jy: 0.1402, error_jy: 0.0108, elevation: 31.2, mjd: 61324.956)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 1).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a14223223.id, scan_nr: 1, value_jy: 0.8945, error_jy: 0.0691, elevation: 51.7, mjd: 61324.3971)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 3).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a14223223.id, scan_nr: 3, value_jy: 0.9499, error_jy: 0.0733, elevation: 53.3, mjd: 61324.4043)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 132).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a15426129.id, scan_nr: 132, value_jy: 0.1505, error_jy: 0.0115, elevation: 32.8, mjd: 61324.9042)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 133).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a15426129.id, scan_nr: 133, value_jy: 0.1794, error_jy: 0.0135, elevation: 32.3, mjd: 61324.9079)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 63).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a15551111.id, scan_nr: 63, value_jy: 0.2576, error_jy: 0.0201, elevation: 48.5, mjd: 61324.6343)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 64).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a15551111.id, scan_nr: 64, value_jy: 0.3086, error_jy: 0.0239, elevation: 48.0, mjd: 61324.6398)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 108).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a17281215.id, scan_nr: 108, value_jy: 1.0425, error_jy: 0.0807, elevation: 30.6, mjd: 61324.8099)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 109).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a17281215.id, scan_nr: 109, value_jy: 1.0279, error_jy: 0.0796, elevation: 29.7, mjd: 61324.8141)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 72).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a17430350.id, scan_nr: 72, value_jy: 4.2370, error_jy: 0.3267, elevation: 35.5, mjd: 61324.678)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 118).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a18032521.id, scan_nr: 118, value_jy: 0.0848, error_jy: 0.0081, elevation: 37.1, mjd: 61324.8495)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 125).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a18133144.id, scan_nr: 125, value_jy: 0.1102, error_jy: 0.0087, elevation: 36.5, mjd: 61324.8782)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 126).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a18133144.id, scan_nr: 126, value_jy: 0.0809, error_jy: 0.0081, elevation: 35.6, mjd: 61324.8823)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 32).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a19596508.id, scan_nr: 32, value_jy: 0.2050, error_jy: 0.0161, elevation: 46.6, mjd: 61324.5242)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 168).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a20014352.id, scan_nr: 168, value_jy: 0.1346, error_jy: 0.0106, elevation: 29.8, mjd: 61325.0228)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 169).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a20014352.id, scan_nr: 169, value_jy: 0.1379, error_jy: 0.0107, elevation: 29.1, mjd: 61325.0264)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 188).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a23475142.id, scan_nr: 188, value_jy: 0.2555, error_jy: 0.0190, elevation: 50.9, mjd: 61325.0958)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 207).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a3C138.id, scan_nr: 207, value_jy: 5.0408, error_jy: 0.3703, elevation: 55.6, mjd: 61325.1688)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 208).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a3C138.id, scan_nr: 208, value_jy: 5.3174, error_jy: 0.3906, elevation: 55.5, mjd: 61325.1715)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 210).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a3C138.id, scan_nr: 210, value_jy: 5.1907, error_jy: 0.3814, elevation: 54.9, mjd: 61325.1799)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 211).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a3C138.id, scan_nr: 211, value_jy: 5.3536, error_jy: 0.3932, elevation: 54.6, mjd: 61325.1842)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 43).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a3C286.id, scan_nr: 43, value_jy: 2.4833, error_jy: 0.1915, elevation: 63.2, mjd: 61324.5551)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 46).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a3C286.id, scan_nr: 46, value_jy: 2.3592, error_jy: 0.1818, elevation: 61.6, mjd: 61324.5648)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 9978).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a3C286.id, scan_nr: 9978, value_jy: 1.9575, error_jy: 0.1509, elevation: 38.9, mjd: 61324.311)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 9979).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @a3C286.id, scan_nr: 9979, value_jy: 2.1167, error_jy: 0.1631, elevation: 39.4, mjd: 61324.3134)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 93).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @aNGC7027.id, scan_nr: 93, value_jy: 5.1184, error_jy: 0.3955, elevation: 75.0, mjd: 61324.7541)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 94).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @aNGC7027.id, scan_nr: 94, value_jy: 4.9903, error_jy: 0.3855, elevation: 75.5, mjd: 61324.7562)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 96).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @aNGC7027.id, scan_nr: 96, value_jy: 5.2473, error_jy: 0.4055, elevation: 76.3, mjd: 61324.7604)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 97).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @aNGC7027.id, scan_nr: 97, value_jy: 5.2027, error_jy: 0.4020, elevation: 76.8, mjd: 61324.763)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 154).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @aNGC7027.id, scan_nr: 154, value_jy: 5.9019, error_jy: 0.4335, elevation: 48.0, mjd: 61324.9761)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 156).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @aNGC7027.id, scan_nr: 156, value_jy: 5.8654, error_jy: 0.4308, elevation: 47.0, mjd: 61324.9806)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, scan_nr: 157).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a24_75.id, source_id: @aNGC7027.id, scan_nr: 157, value_jy: 5.8741, error_jy: 0.4314, elevation: 46.6, mjd: 61324.9829)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 4).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @a14223223.id, scan_nr: 4, value_jy: 0.7985, error_jy: 0.0433, elevation: 54.5, mjd: 61324.4097)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 5).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @a14223223.id, scan_nr: 5, value_jy: 0.8063, error_jy: 0.0434, elevation: 55.4, mjd: 61324.4135)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 110).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @a17281215.id, scan_nr: 110, value_jy: 0.9263, error_jy: 0.0525, elevation: 28.6, mjd: 61324.8191)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 111).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @a17281215.id, scan_nr: 111, value_jy: 1.2031, error_jy: 0.0673, elevation: 27.8, mjd: 61324.8229)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 47).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @a3C286.id, scan_nr: 47, value_jy: 1.8738, error_jy: 0.0986, elevation: 60.6, mjd: 61324.5693)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 49).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @a3C286.id, scan_nr: 49, value_jy: 1.4230, error_jy: 0.0756, elevation: 59.1, mjd: 61324.5773)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 50).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @a3C286.id, scan_nr: 50, value_jy: 1.8521, error_jy: 0.0971, elevation: 58.3, mjd: 61324.5811)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 9982).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @a3C286.id, scan_nr: 9982, value_jy: 1.6380, error_jy: 0.0868, elevation: 41.7, mjd: 61324.3232)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 9983).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @a3C286.id, scan_nr: 9983, value_jy: 1.8683, error_jy: 0.0977, elevation: 42.6, mjd: 61324.327)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 98).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @aNGC7027.id, scan_nr: 98, value_jy: 5.1200, error_jy: 0.2746, elevation: 77.8, mjd: 61324.7684)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 100).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @aNGC7027.id, scan_nr: 100, value_jy: 5.2842, error_jy: 0.2841, elevation: 78.9, mjd: 61324.7745)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 101).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @aNGC7027.id, scan_nr: 101, value_jy: 5.1465, error_jy: 0.2769, elevation: 79.6, mjd: 61324.7788)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 158).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @aNGC7027.id, scan_nr: 158, value_jy: 5.4468, error_jy: 0.2973, elevation: 45.5, mjd: 61324.9877)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 160).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @aNGC7027.id, scan_nr: 160, value_jy: 5.3645, error_jy: 0.2928, elevation: 44.4, mjd: 61324.9929)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, scan_nr: 161).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a36_25.id, source_id: @aNGC7027.id, scan_nr: 161, value_jy: 5.5818, error_jy: 0.3047, elevation: 43.6, mjd: 61324.9962)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, scan_nr: 5).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, source_id: @a14223223.id, scan_nr: 5, value_jy: 0.7662, error_jy: 0.0427, elevation: 55.4, mjd: 61324.4137)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, scan_nr: 110).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, source_id: @a17281215.id, scan_nr: 110, value_jy: 0.9005, error_jy: 0.0528, elevation: 28.6, mjd: 61324.8191)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, scan_nr: 111).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, source_id: @a17281215.id, scan_nr: 111, value_jy: 1.1488, error_jy: 0.0658, elevation: 27.8, mjd: 61324.8229)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, scan_nr: 49).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, source_id: @a3C286.id, scan_nr: 49, value_jy: 1.5282, error_jy: 0.0812, elevation: 59.1, mjd: 61324.5773)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, scan_nr: 50).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, source_id: @a3C286.id, scan_nr: 50, value_jy: 1.6878, error_jy: 0.0891, elevation: 58.3, mjd: 61324.5811)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, scan_nr: 9980).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, source_id: @a3C286.id, scan_nr: 9980, value_jy: 1.6503, error_jy: 0.0879, elevation: 40.5, mjd: 61324.3181)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, scan_nr: 9983).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, source_id: @a3C286.id, scan_nr: 9983, value_jy: 1.7792, error_jy: 0.0938, elevation: 42.5, mjd: 61324.3268)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, scan_nr: 98).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, source_id: @aNGC7027.id, scan_nr: 98, value_jy: 5.0586, error_jy: 0.2720, elevation: 77.8, mjd: 61324.7684)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, scan_nr: 100).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, source_id: @aNGC7027.id, scan_nr: 100, value_jy: 5.2185, error_jy: 0.2813, elevation: 78.9, mjd: 61324.7745)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, scan_nr: 101).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, source_id: @aNGC7027.id, scan_nr: 101, value_jy: 5.1852, error_jy: 0.2797, elevation: 79.6, mjd: 61324.7788)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, scan_nr: 158).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, source_id: @aNGC7027.id, scan_nr: 158, value_jy: 5.3039, error_jy: 0.2953, elevation: 45.5, mjd: 61324.9877)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, scan_nr: 160).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, source_id: @aNGC7027.id, scan_nr: 160, value_jy: 5.3701, error_jy: 0.2990, elevation: 44.4, mjd: 61324.9929)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, scan_nr: 161).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a38_75.id, source_id: @aNGC7027.id, scan_nr: 161, value_jy: 5.4111, error_jy: 0.3012, elevation: 43.6, mjd: 61324.9965)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, scan_nr: 6).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, source_id: @a14223223.id, scan_nr: 6, value_jy: 0.6760, error_jy: 0.0158, elevation: 56.8, mjd: 61324.4198)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, scan_nr: 7).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, source_id: @a14223223.id, scan_nr: 7, value_jy: 0.8482, error_jy: 0.0213, elevation: 57.6, mjd: 61324.4238)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, scan_nr: 113).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, source_id: @a17281215.id, scan_nr: 113, value_jy: 0.9415, error_jy: 0.0231, elevation: 25.8, mjd: 61324.8316)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, scan_nr: 51).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, source_id: @a3C286.id, scan_nr: 51, value_jy: 1.6539, error_jy: 0.0333, elevation: 57.3, mjd: 61324.586)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, scan_nr: 52).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, source_id: @a3C286.id, scan_nr: 52, value_jy: 1.4640, error_jy: 0.0304, elevation: 56.5, mjd: 61324.5896)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, scan_nr: 102).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, source_id: @aNGC7027.id, scan_nr: 102, value_jy: 5.2225, error_jy: 0.1034, elevation: 80.4, mjd: 61324.7844)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, scan_nr: 103).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, source_id: @aNGC7027.id, scan_nr: 103, value_jy: 5.1484, error_jy: 0.1020, elevation: 80.9, mjd: 61324.789)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, scan_nr: 162).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, source_id: @aNGC7027.id, scan_nr: 162, value_jy: 4.9985, error_jy: 0.0993, elevation: 42.6, mjd: 61325.0012)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, scan_nr: 163).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a41_25.id, source_id: @aNGC7027.id, scan_nr: 163, value_jy: 5.1159, error_jy: 0.1016, elevation: 41.8, mjd: 61325.0048)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a43_75.id, scan_nr: 6).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a43_75.id, source_id: @a14223223.id, scan_nr: 6, value_jy: 0.7185, error_jy: 0.0133, elevation: 56.8, mjd: 61324.4198)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a43_75.id, scan_nr: 51).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a43_75.id, source_id: @a3C286.id, scan_nr: 51, value_jy: 1.6526, error_jy: 0.0202, elevation: 57.3, mjd: 61324.586)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a43_75.id, scan_nr: 52).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a43_75.id, source_id: @a3C286.id, scan_nr: 52, value_jy: 1.3827, error_jy: 0.0198, elevation: 56.5, mjd: 61324.5896)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a43_75.id, scan_nr: 102).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a43_75.id, source_id: @aNGC7027.id, scan_nr: 102, value_jy: 5.1173, error_jy: 0.0547, elevation: 80.4, mjd: 61324.7844)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a43_75.id, scan_nr: 103).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a43_75.id, source_id: @aNGC7027.id, scan_nr: 103, value_jy: 5.1317, error_jy: 0.0545, elevation: 80.9, mjd: 61324.789)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a43_75.id, scan_nr: 162).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a43_75.id, source_id: @aNGC7027.id, scan_nr: 162, value_jy: 4.9718, error_jy: 0.0517, elevation: 42.6, mjd: 61325.0012)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a43_75.id, scan_nr: 163).first
+Result.create(observation_id: @obs.id, epoch_id: @a2026_10_11.id, frequency_id: @a43_75.id, source_id: @aNGC7027.id, scan_nr: 163, value_jy: 5.0564, error_jy: 0.0526, elevation: 41.8, mjd: 61325.0048)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 218).first_or_create
+Result.create(observation_id: @obs.id, elevation: 48.2,source_id: @a07451011.id ,scan_nr: 218, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 2.7141,error_jy: 0.0182,mjd: 61325.2119,pol_flux: 0.0164,pol_flux_err: 0.0097, pol_frac: 0.604, pol_frac_err: 0.358,evpa: 24.63, evpa_err: 15.50)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 219).first_or_create
+Result.create(observation_id: @obs.id, elevation: 48.4,source_id: @a07451011.id ,scan_nr: 219, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 2.7111,error_jy: 0.0182,mjd: 61325.2144,pol_flux: 0.0173,pol_flux_err: 0.0057, pol_frac: 0.638, pol_frac_err: 0.210,evpa: 17.16, evpa_err: 11.82)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 220).first_or_create
+Result.create(observation_id: @obs.id, elevation: 48.7,source_id: @a07451011.id ,scan_nr: 220, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 2.7283,error_jy: 0.0183,mjd: 61325.2185,pol_flux: 0.0292,pol_flux_err: 0.0057, pol_frac: 1.071, pol_frac_err: 0.208,evpa: 13.66, evpa_err: 8.24)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 221).first_or_create
+Result.create(observation_id: @obs.id, elevation: 49.0,source_id: @a07481020.id ,scan_nr: 221, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.1469,error_jy: 0.0010,mjd: 61325.223,pol_flux: 0.0170,pol_flux_err: 0.0109, pol_frac: 11.553, pol_frac_err: 7.407,evpa: -39.97, evpa_err: 9.81)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 222).first_or_create
+Result.create(observation_id: @obs.id, elevation: 49.2,source_id: @a07481020.id ,scan_nr: 222, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.1212,error_jy: 0.0008,mjd: 61325.2256,pol_flux: 0.0199,pol_flux_err: 0.0080, pol_frac: 16.457, pol_frac_err: 6.578,evpa: -42.24, evpa_err: 5.57)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 223).first_or_create
+Result.create(observation_id: @obs.id, elevation: 49.3,source_id: @a07481020.id ,scan_nr: 223, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.1320,error_jy: 0.0009,mjd: 61325.2298,pol_flux: 0.0205,pol_flux_err: 0.0079, pol_frac: 15.521, pol_frac_err: 5.953,evpa: -48.70, evpa_err: 5.47)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 212).first_or_create
+Result.create(observation_id: @obs.id, elevation: 47.2,source_id: @a08542006.id ,scan_nr: 212, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 3.2928,error_jy: 0.0220,mjd: 61325.1897,pol_flux: 0.0907,pol_flux_err: 0.0066, pol_frac: 2.756, pol_frac_err: 0.202,evpa: -8.37, evpa_err: 3.88)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 213).first_or_create
+Result.create(observation_id: @obs.id, elevation: 47.7,source_id: @a08542006.id ,scan_nr: 213, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 3.2330,error_jy: 0.0216,mjd: 61325.1922,pol_flux: 0.0892,pol_flux_err: 0.0050, pol_frac: 2.760, pol_frac_err: 0.154,evpa: -8.84, evpa_err: 2.96)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 214).first_or_create
+Result.create(observation_id: @obs.id, elevation: 48.5,source_id: @a08542006.id ,scan_nr: 214, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 3.2055,error_jy: 0.0215,mjd: 61325.1962,pol_flux: 0.0938,pol_flux_err: 0.0044, pol_frac: 2.925, pol_frac_err: 0.139,evpa: -6.34, evpa_err: 2.56)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 134).first_or_create
+Result.create(observation_id: @obs.id, elevation: 28.0,source_id: @a11366737.id ,scan_nr: 134, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.0517,error_jy: 0.0010,mjd: 61324.9125,pol_flux: 0.0114,pol_flux_err: 0.0127, pol_frac: 22.137, pol_frac_err: 24.487,evpa: -36.17, evpa_err: 17.90)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 136).first_or_create
+Result.create(observation_id: @obs.id, elevation: 28.0,source_id: @a11366737.id ,scan_nr: 136, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.0331,error_jy: 0.0004,mjd: 61324.9209,pol_flux: 0.0099,pol_flux_err: 0.0086, pol_frac: 29.867, pol_frac_err: 26.036,evpa: 39.39, evpa_err: 13.57)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 9995).first_or_create
+Result.create(observation_id: @obs.id, elevation: 57.4,source_id: @a13103220.id ,scan_nr: 9995, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 3.0444,error_jy: 0.0206,mjd: 61324.3732,pol_flux: 0.0464,pol_flux_err: 0.0111, pol_frac: 1.525, pol_frac_err: 0.366,evpa: 119.87, evpa_err: 4.87)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 9996).first_or_create
+Result.create(observation_id: @obs.id, elevation: 57.9,source_id: @a13103220.id ,scan_nr: 9996, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 3.0275,error_jy: 0.0204,mjd: 61324.3757,pol_flux: 0.0559,pol_flux_err: 0.0085, pol_frac: 1.845, pol_frac_err: 0.281,evpa: 140.85, evpa_err: 2.05)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 9997).first_or_create
+Result.create(observation_id: @obs.id, elevation: 58.8,source_id: @a13103220.id ,scan_nr: 9997, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 3.0344,error_jy: 0.0205,mjd: 61324.3798,pol_flux: 0.0439,pol_flux_err: 0.0088, pol_frac: 1.445, pol_frac_err: 0.291,evpa: 143.29, evpa_err: 2.84)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 54).first_or_create
+Result.create(observation_id: @obs.id, elevation: 46.0,source_id: @a13591436.id ,scan_nr: 54, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.2559,error_jy: 0.0017,mjd: 61324.5968,pol_flux: 0.0146,pol_flux_err: 0.0045, pol_frac: 5.695, pol_frac_err: 1.741,evpa: -8.85, evpa_err: 14.40)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 55).first_or_create
+Result.create(observation_id: @obs.id, elevation: 45.0,source_id: @a13591436.id ,scan_nr: 55, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.2338,error_jy: 0.0016,mjd: 61324.6025,pol_flux: 0.0040,pol_flux_err: 0.0065, pol_frac: 1.723, pol_frac_err: 2.796,evpa: -24.02, evpa_err: 43.54)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 9986).first_or_create
+Result.create(observation_id: @obs.id, elevation: 38.6,source_id: @a14223223.id ,scan_nr: 9986, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.8259,error_jy: 0.0056,mjd: 61324.3399,pol_flux: 0.0363,pol_flux_err: 0.0078, pol_frac: 4.394, pol_frac_err: 0.943,evpa: 103.69, evpa_err: 9.19)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 9987).first_or_create
+Result.create(observation_id: @obs.id, elevation: 39.2,source_id: @a14223223.id ,scan_nr: 9987, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.8418,error_jy: 0.0057,mjd: 61324.3423,pol_flux: 0.0298,pol_flux_err: 0.0064, pol_frac: 3.541, pol_frac_err: 0.760,evpa: 111.04, evpa_err: 6.56)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 9988).first_or_create
+Result.create(observation_id: @obs.id, elevation: 40.1,source_id: @a14223223.id ,scan_nr: 9988, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.8474,error_jy: 0.0057,mjd: 61324.3464,pol_flux: 0.0472,pol_flux_err: 0.0055, pol_frac: 5.567, pol_frac_err: 0.645,evpa: 105.31, evpa_err: 4.64)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 22).first_or_create
+Result.create(observation_id: @obs.id, elevation: 32.6,source_id: @a15400101.id ,scan_nr: 22, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.0872,error_jy: 0.0009,mjd: 61324.4845,pol_flux: 0.0400,pol_flux_err: 0.0161, pol_frac: 45.906, pol_frac_err: 18.420,evpa: 24.79, evpa_err: 10.32)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 24).first_or_create
+Result.create(observation_id: @obs.id, elevation: 33.6,source_id: @a15400101.id ,scan_nr: 24, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.0589,error_jy: 0.0006,mjd: 61324.4913,pol_flux: 0.0119,pol_flux_err: 0.0098, pol_frac: 20.171, pol_frac_err: 16.720,evpa: 118.59, evpa_err: 18.02)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 78).first_or_create
+Result.create(observation_id: @obs.id, elevation: 58.8,source_id: @a19432103.id ,scan_nr: 78, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.1195,error_jy: 0.0009,mjd: 61324.7103,pol_flux: 0.0059,pol_flux_err: 0.0119, pol_frac: 4.955, pol_frac_err: 9.964,evpa: 24.62, evpa_err: 52.84)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 79).first_or_create
+Result.create(observation_id: @obs.id, elevation: 59.1,source_id: @a19432103.id ,scan_nr: 79, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.0881,error_jy: 0.0006,mjd: 61324.7131,pol_flux: 0.0017,pol_flux_err: 0.0039, pol_frac: 1.954, pol_frac_err: 4.479,evpa: 86.14, evpa_err: 99.99)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 80).first_or_create
+Result.create(observation_id: @obs.id, elevation: 59.4,source_id: @a19432103.id ,scan_nr: 80, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.0908,error_jy: 0.0006,mjd: 61324.7173,pol_flux: 0.0085,pol_flux_err: 0.0067, pol_frac: 9.306, pol_frac_err: 7.328,evpa: 58.00, evpa_err: 14.92)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 81).first_or_create
+Result.create(observation_id: @obs.id, elevation: 59.0,source_id: @a19462029.id ,scan_nr: 81, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.0972,error_jy: 0.0007,mjd: 61324.7211,pol_flux: 0.0046,pol_flux_err: 0.0055, pol_frac: 4.741, pol_frac_err: 5.707,evpa: -8.39, evpa_err: 63.09)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 82).first_or_create
+Result.create(observation_id: @obs.id, elevation: 59.2,source_id: @a19462029.id ,scan_nr: 82, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.0858,error_jy: 0.0006,mjd: 61324.7237,pol_flux: 0.0038,pol_flux_err: 0.0058, pol_frac: 4.474, pol_frac_err: 6.798,evpa: -25.03, evpa_err: 39.31)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 83).first_or_create
+Result.create(observation_id: @obs.id, elevation: 59.4,source_id: @a19462029.id ,scan_nr: 83, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.0779,error_jy: 0.0006,mjd: 61324.7278,pol_flux: 0.0086,pol_flux_err: 0.0070, pol_frac: 11.094, pol_frac_err: 8.988,evpa: 132.05, evpa_err: 11.78)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 170).first_or_create
+Result.create(observation_id: @obs.id, elevation: 27.5,source_id: @a20303700.id ,scan_nr: 170, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.2430,error_jy: 0.0017,mjd: 61325.0307,pol_flux: 0.0028,pol_flux_err: 0.0106, pol_frac: 1.147, pol_frac_err: 4.383,evpa: 65.04, evpa_err: 98.33)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 171).first_or_create
+Result.create(observation_id: @obs.id, elevation: 27.1,source_id: @a20303700.id ,scan_nr: 171, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.2396,error_jy: 0.0016,mjd: 61325.0331,pol_flux: 0.0034,pol_flux_err: 0.0047, pol_frac: 1.410, pol_frac_err: 1.952,evpa: 85.03, evpa_err: 80.97)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 172).first_or_create
+Result.create(observation_id: @obs.id, elevation: 26.3,source_id: @a20303700.id ,scan_nr: 172, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.2355,error_jy: 0.0016,mjd: 61325.0369,pol_flux: 0.0040,pol_flux_err: 0.0091, pol_frac: 1.720, pol_frac_err: 3.884,evpa: 62.39, evpa_err: 51.06)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 177).first_or_create
+Result.create(observation_id: @obs.id, elevation: 34.3,source_id: @a20395219.id ,scan_nr: 177, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.0265,error_jy: 0.0005,mjd: 61325.0553,pol_flux: 0.0203,pol_flux_err: 0.0042, pol_frac: 76.641, pol_frac_err: 15.868,evpa: 2.85, evpa_err: 12.28)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 180).first_or_create
+Result.create(observation_id: @obs.id, elevation: 41.9,source_id: @a22503825.id ,scan_nr: 180, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.0770,error_jy: 0.0006,mjd: 61325.0655,pol_flux: 0.0033,pol_flux_err: 0.0075, pol_frac: 4.273, pol_frac_err: 9.732,evpa: 33.36, evpa_err: 40.47)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 181).first_or_create
+Result.create(observation_id: @obs.id, elevation: 41.0,source_id: @a22503825.id ,scan_nr: 181, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.0705,error_jy: 0.0005,mjd: 61325.0695,pol_flux: 0.0149,pol_flux_err: 0.0049, pol_frac: 21.202, pol_frac_err: 6.967,evpa: 102.42, evpa_err: 14.65)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 182).first_or_create
+Result.create(observation_id: @obs.id, elevation: 40.1,source_id: @a22503825.id ,scan_nr: 182, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 0.0680,error_jy: 0.0005,mjd: 61325.0733,pol_flux: 0.0044,pol_flux_err: 0.0053, pol_frac: 6.490, pol_frac_err: 7.759,evpa: 10.67, evpa_err: 57.93)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 205).first_or_create
+Result.create(observation_id: @obs.id, elevation: 56.0,source_id: @a3C138.id ,scan_nr: 205, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 4.2459,error_jy: 0.0284,mjd: 61325.1598,pol_flux: 0.3763,pol_flux_err: 0.0046, pol_frac: 8.861, pol_frac_err: 0.124,evpa: -7.66, evpa_err: 0.68)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 206).first_or_create
+Result.create(observation_id: @obs.id, elevation: 55.8,source_id: @a3C138.id ,scan_nr: 206, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 4.2590,error_jy: 0.0285,mjd: 61325.1641,pol_flux: 0.3521,pol_flux_err: 0.0045, pol_frac: 8.267, pol_frac_err: 0.119,evpa: -6.06, evpa_err: 0.74)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 33).first_or_create
+Result.create(observation_id: @obs.id, elevation: 66.9,source_id: @a3C286.id ,scan_nr: 33, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 6.2911,error_jy: 0.0425,mjd: 61324.5316,pol_flux: 0.7199,pol_flux_err: 0.0127, pol_frac: 11.443, pol_frac_err: 0.216,evpa: 34.04, evpa_err: 0.32)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 34).first_or_create
+Result.create(observation_id: @obs.id, elevation: 66.6,source_id: @a3C286.id ,scan_nr: 34, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 6.2024,error_jy: 0.0419,mjd: 61324.5338,pol_flux: 0.7322,pol_flux_err: 0.0130, pol_frac: 11.806, pol_frac_err: 0.225,evpa: 34.65, evpa_err: 0.32)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 36).first_or_create
+Result.create(observation_id: @obs.id, elevation: 66.0,source_id: @a3C286.id ,scan_nr: 36, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 6.2040,error_jy: 0.0419,mjd: 61324.5383,pol_flux: 0.7087,pol_flux_err: 0.0120, pol_frac: 11.424, pol_frac_err: 0.209,evpa: 30.69, evpa_err: 0.35)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 37).first_or_create
+Result.create(observation_id: @obs.id, elevation: 65.6,source_id: @a3C286.id ,scan_nr: 37, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 6.1606,error_jy: 0.0416,mjd: 61324.5405,pol_flux: 0.7100,pol_flux_err: 0.0122, pol_frac: 11.525, pol_frac_err: 0.212,evpa: 32.18, evpa_err: 0.34)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 9964).first_or_create
+Result.create(observation_id: @obs.id, elevation: 31.9,source_id: @a3C286.id ,scan_nr: 9964, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 6.0841,error_jy: 0.0411,mjd: 61324.2805,pol_flux: 0.6944,pol_flux_err: 0.0151, pol_frac: 11.414, pol_frac_err: 0.260,evpa: 34.20, evpa_err: 0.38)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 9965).first_or_create
+Result.create(observation_id: @obs.id, elevation: 32.4,source_id: @a3C286.id ,scan_nr: 9965, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 6.1100,error_jy: 0.0412,mjd: 61324.2826,pol_flux: 0.7232,pol_flux_err: 0.0153, pol_frac: 11.836, pol_frac_err: 0.262,evpa: 33.45, evpa_err: 0.39)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 9967).first_or_create
+Result.create(observation_id: @obs.id, elevation: 33.2,source_id: @a3C286.id ,scan_nr: 9967, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 6.0626,error_jy: 0.0409,mjd: 61324.2862,pol_flux: 0.7128,pol_flux_err: 0.0147, pol_frac: 11.757, pol_frac_err: 0.255,evpa: 32.61, evpa_err: 0.39)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 9968).first_or_create
+Result.create(observation_id: @obs.id, elevation: 33.7,source_id: @a3C286.id ,scan_nr: 9968, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 6.0966,error_jy: 0.0412,mjd: 61324.2882,pol_flux: 0.6972,pol_flux_err: 0.0157, pol_frac: 11.436, pol_frac_err: 0.269,evpa: 33.37, evpa_err: 0.41)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 9969).first_or_create
+Result.create(observation_id: @obs.id, elevation: 34.3,source_id: @a3C286.id ,scan_nr: 9969, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 6.1497,error_jy: 0.0415,mjd: 61324.2908,pol_flux: 0.7233,pol_flux_err: 0.0162, pol_frac: 11.761, pol_frac_err: 0.276,evpa: 31.78, evpa_err: 0.42)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 9970).first_or_create
+Result.create(observation_id: @obs.id, elevation: 34.7,source_id: @a3C286.id ,scan_nr: 9970, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 6.1799,error_jy: 0.0417,mjd: 61324.2928,pol_flux: 0.7443,pol_flux_err: 0.0152, pol_frac: 12.045, pol_frac_err: 0.260,evpa: 33.06, evpa_err: 0.38)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 84).first_or_create
+Result.create(observation_id: @obs.id, elevation: 70.5,source_id: @aNGC7027.id ,scan_nr: 84, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 5.5265,error_jy: 0.0370,mjd: 61324.733,pol_flux: 0.0292,pol_flux_err: 0.0110, pol_frac: 0.527, pol_frac_err: 0.198,evpa: 29.56, evpa_err: 7.63)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 85).first_or_create
+Result.create(observation_id: @obs.id, elevation: 71.0,source_id: @aNGC7027.id ,scan_nr: 85, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 5.6364,error_jy: 0.0377,mjd: 61324.7351,pol_flux: 0.0302,pol_flux_err: 0.0094, pol_frac: 0.536, pol_frac_err: 0.168,evpa: 22.29, evpa_err: 9.05)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 87).first_or_create
+Result.create(observation_id: @obs.id, elevation: 71.9,source_id: @aNGC7027.id ,scan_nr: 87, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 5.6747,error_jy: 0.0380,mjd: 61324.7393,pol_flux: 0.0392,pol_flux_err: 0.0113, pol_frac: 0.691, pol_frac_err: 0.200,evpa: 127.36, evpa_err: 4.43)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a6_3.id, scan_nr: 88).first_or_create
+Result.create(observation_id: @obs.id, elevation: 72.3,source_id: @aNGC7027.id ,scan_nr: 88, epoch_id: @a2026_10_11.id ,frequency_id: @a6_3.id,value_jy: 5.6752,error_jy: 0.0380,mjd: 61324.7414,pol_flux: 0.0235,pol_flux_err: 0.0126, pol_frac: 0.413, pol_frac_err: 0.221,evpa: 133.01, evpa_err: 6.81)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 192).first_or_create
+Result.create(observation_id: @obs.id, elevation: 56.9,source_id: @a00355950.id ,scan_nr: 192, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.0554,error_jy: 0.0016,mjd: 61325.1107,pol_flux: 0.0005,pol_flux_err: 0.0012, pol_frac: 0.838, pol_frac_err: 2.244,evpa: 100.78, evpa_err: 75.96)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 193).first_or_create
+Result.create(observation_id: @obs.id, elevation: 56.3,source_id: @a00355950.id ,scan_nr: 193, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.0757,error_jy: 0.0022,mjd: 61325.1143,pol_flux: 0.0005,pol_flux_err: 0.0011, pol_frac: 0.636, pol_frac_err: 1.421,evpa: 127.57, evpa_err: 63.40)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 196).first_or_create
+Result.create(observation_id: @obs.id, elevation: 54.9,source_id: @a01363906.id ,scan_nr: 196, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.0455,error_jy: 0.0014,mjd: 61325.1254,pol_flux: 0.0010,pol_flux_err: 0.0012, pol_frac: 2.121, pol_frac_err: 2.629,evpa: 81.72, evpa_err: 35.80)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 202).first_or_create
+Result.create(observation_id: @obs.id, elevation: 38.8,source_id: @a04160105.id ,scan_nr: 202, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.0699,error_jy: 0.0020,mjd: 61325.148,pol_flux: 0.0005,pol_flux_err: 0.0014, pol_frac: 0.748, pol_frac_err: 1.966,evpa: 80.05, evpa_err: 74.58)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 143).first_or_create
+Result.create(observation_id: @obs.id, elevation: 30.9,source_id: @a11367009.id ,scan_nr: 143, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.1639,error_jy: 0.0047,mjd: 61324.9456,pol_flux: 0.0080,pol_flux_err: 0.0013, pol_frac: 4.866, pol_frac_err: 0.789,evpa: -25.16, evpa_err: 4.56)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 56).first_or_create
+Result.create(observation_id: @obs.id, elevation: 44.1,source_id: @a13591436.id ,scan_nr: 56, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.2511,error_jy: 0.0073,mjd: 61324.6071,pol_flux: 0.0083,pol_flux_err: 0.0015, pol_frac: 3.301, pol_frac_err: 0.600,evpa: -21.62, evpa_err: 5.15)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 57).first_or_create
+Result.create(observation_id: @obs.id, elevation: 43.8,source_id: @a13591436.id ,scan_nr: 57, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.2651,error_jy: 0.0078,mjd: 61324.6093,pol_flux: 0.0089,pol_flux_err: 0.0011, pol_frac: 3.348, pol_frac_err: 0.432,evpa: -26.50, evpa_err: 3.59)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 58).first_or_create
+Result.create(observation_id: @obs.id, elevation: 43.0,source_id: @a13591436.id ,scan_nr: 58, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.2519,error_jy: 0.0074,mjd: 61324.6139,pol_flux: 0.0090,pol_flux_err: 0.0011, pol_frac: 3.563, pol_frac_err: 0.434,evpa: -25.52, evpa_err: 3.40)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 9989).first_or_create
+Result.create(observation_id: @obs.id, elevation: 41.2,source_id: @a14223223.id ,scan_nr: 9989, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.9751,error_jy: 0.0285,mjd: 61324.351,pol_flux: 0.0188,pol_flux_err: 0.0020, pol_frac: 1.925, pol_frac_err: 0.209,evpa: 64.58, evpa_err: 2.99)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 9991).first_or_create
+Result.create(observation_id: @obs.id, elevation: 42.6,source_id: @a14223223.id ,scan_nr: 9991, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 1.0092,error_jy: 0.0296,mjd: 61324.3573,pol_flux: 0.0172,pol_flux_err: 0.0049, pol_frac: 1.709, pol_frac_err: 0.485,evpa: 91.81, evpa_err: 7.85)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 127).first_or_create
+Result.create(observation_id: @obs.id, elevation: 34.8,source_id: @a15426129.id ,scan_nr: 127, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.1536,error_jy: 0.0044,mjd: 61324.8871,pol_flux: 0.0024,pol_flux_err: 0.0015, pol_frac: 1.592, pol_frac_err: 0.992,evpa: 40.01, evpa_err: 17.87)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 128).first_or_create
+Result.create(observation_id: @obs.id, elevation: 34.5,source_id: @a15426129.id ,scan_nr: 128, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.1618,error_jy: 0.0047,mjd: 61324.8889,pol_flux: 0.0018,pol_flux_err: 0.0014, pol_frac: 1.108, pol_frac_err: 0.845,evpa: 55.65, evpa_err: 21.53)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 129).first_or_create
+Result.create(observation_id: @obs.id, elevation: 34.0,source_id: @a15426129.id ,scan_nr: 129, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.1518,error_jy: 0.0044,mjd: 61324.8936,pol_flux: 0.0019,pol_flux_err: 0.0011, pol_frac: 1.233, pol_frac_err: 0.753,evpa: 48.48, evpa_err: 17.73)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 130).first_or_create
+Result.create(observation_id: @obs.id, elevation: 33.5,source_id: @a15426129.id ,scan_nr: 130, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.1971,error_jy: 0.0059,mjd: 61324.8975,pol_flux: 0.0014,pol_flux_err: 0.0038, pol_frac: 0.697, pol_frac_err: 1.944,evpa: 81.40, evpa_err: 93.53)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 60).first_or_create
+Result.create(observation_id: @obs.id, elevation: 49.5,source_id: @a15551111.id ,scan_nr: 60, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.2964,error_jy: 0.0087,mjd: 61324.6223,pol_flux: 0.0047,pol_flux_err: 0.0010, pol_frac: 1.595, pol_frac_err: 0.348,evpa: 95.60, evpa_err: 6.26)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 61).first_or_create
+Result.create(observation_id: @obs.id, elevation: 49.1,source_id: @a15551111.id ,scan_nr: 61, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.2863,error_jy: 0.0084,mjd: 61324.6266,pol_flux: 0.0048,pol_flux_err: 0.0011, pol_frac: 1.669, pol_frac_err: 0.386,evpa: 94.11, evpa_err: 6.40)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 106).first_or_create
+Result.create(observation_id: @obs.id, elevation: 32.4,source_id: @a17281215.id ,scan_nr: 106, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.8421,error_jy: 0.0247,mjd: 61324.8018,pol_flux: 0.0173,pol_flux_err: 0.0853, pol_frac: 2.055, pol_frac_err: 10.130,evpa: 129.87, evpa_err: 99.99)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 68).first_or_create
+Result.create(observation_id: @obs.id, elevation: 35.6,source_id: @a17430350.id ,scan_nr: 68, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 4.3003,error_jy: 0.1258,mjd: 61324.6568,pol_flux: 0.0229,pol_flux_err: 0.0018, pol_frac: 0.534, pol_frac_err: 0.045,evpa: 31.92, evpa_err: 2.32)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 69).first_or_create
+Result.create(observation_id: @obs.id, elevation: 35.6,source_id: @a17430350.id ,scan_nr: 69, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 4.3246,error_jy: 0.1265,mjd: 61324.661,pol_flux: 0.0235,pol_flux_err: 0.0016, pol_frac: 0.543, pol_frac_err: 0.040,evpa: 33.83, evpa_err: 1.97)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 114).first_or_create
+Result.create(observation_id: @obs.id, elevation: 39.9,source_id: @a18032521.id ,scan_nr: 114, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.0800,error_jy: 0.0024,mjd: 61324.8365,pol_flux: 0.0022,pol_flux_err: 0.0015, pol_frac: 2.736, pol_frac_err: 1.865,evpa: 129.66, evpa_err: 19.71)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 115).first_or_create
+Result.create(observation_id: @obs.id, elevation: 39.5,source_id: @a18032521.id ,scan_nr: 115, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.0859,error_jy: 0.0025,mjd: 61324.8388,pol_flux: 0.0019,pol_flux_err: 0.0012, pol_frac: 2.167, pol_frac_err: 1.369,evpa: 131.71, evpa_err: 18.11)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 120).first_or_create
+Result.create(observation_id: @obs.id, elevation: 41.0,source_id: @a18133144.id ,scan_nr: 120, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.0841,error_jy: 0.0025,mjd: 61324.8579,pol_flux: 0.0033,pol_flux_err: 0.0018, pol_frac: 3.956, pol_frac_err: 2.099,evpa: 80.13, evpa_err: 15.25)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 121).first_or_create
+Result.create(observation_id: @obs.id, elevation: 40.6,source_id: @a18133144.id ,scan_nr: 121, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.0857,error_jy: 0.0025,mjd: 61324.8605,pol_flux: 0.0027,pol_flux_err: 0.0011, pol_frac: 3.150, pol_frac_err: 1.246,evpa: 81.72, evpa_err: 11.41)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 122).first_or_create
+Result.create(observation_id: @obs.id, elevation: 39.4,source_id: @a18133144.id ,scan_nr: 122, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.0876,error_jy: 0.0025,mjd: 61324.8655,pol_flux: 0.0028,pol_flux_err: 0.0010, pol_frac: 3.185, pol_frac_err: 1.169,evpa: 84.02, evpa_err: 10.60)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 28).first_or_create
+Result.create(observation_id: @obs.id, elevation: 44.1,source_id: @a19596508.id ,scan_nr: 28, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.1923,error_jy: 0.0056,mjd: 61324.5058,pol_flux: 0.0042,pol_flux_err: 0.0015, pol_frac: 2.171, pol_frac_err: 0.766,evpa: -28.17, evpa_err: 10.15)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 29).first_or_create
+Result.create(observation_id: @obs.id, elevation: 44.7,source_id: @a19596508.id ,scan_nr: 29, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.1844,error_jy: 0.0055,mjd: 61324.5097,pol_flux: 0.0039,pol_flux_err: 0.0146, pol_frac: 2.090, pol_frac_err: 7.926,evpa: 133.46, evpa_err: 98.00)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 175).first_or_create
+Result.create(observation_id: @obs.id, elevation: 26.6,source_id: @a21262904.id ,scan_nr: 175, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.1103,error_jy: 0.0032,mjd: 61325.0481,pol_flux: 0.0049,pol_flux_err: 0.0012, pol_frac: 4.482, pol_frac_err: 1.060,evpa: 28.94, evpa_err: 6.69)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 185).first_or_create
+Result.create(observation_id: @obs.id, elevation: 53.0,source_id: @a23475142.id ,scan_nr: 185, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.2380,error_jy: 0.0076,mjd: 61325.0848,pol_flux: 0.0024,pol_flux_err: 0.0479, pol_frac: 0.990, pol_frac_err: 20.143,evpa: 39.14, evpa_err: 99.99)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 186).first_or_create
+Result.create(observation_id: @obs.id, elevation: 52.3,source_id: @a23475142.id ,scan_nr: 186, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 0.2009,error_jy: 0.0058,mjd: 61325.0888,pol_flux: 0.0041,pol_flux_err: 0.0046, pol_frac: 2.037, pol_frac_err: 2.287,evpa: 83.43, evpa_err: 32.19)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 38).first_or_create
+Result.create(observation_id: @obs.id, elevation: 65.1,source_id: @a3C286.id ,scan_nr: 38, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 3.5982,error_jy: 0.1052,mjd: 61324.5437,pol_flux: 0.4158,pol_flux_err: 0.0032, pol_frac: 11.556, pol_frac_err: 0.350,evpa: 34.30, evpa_err: 0.25)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 40).first_or_create
+Result.create(observation_id: @obs.id, elevation: 64.5,source_id: @a3C286.id ,scan_nr: 40, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 3.5345,error_jy: 0.1034,mjd: 61324.5477,pol_flux: 0.4243,pol_flux_err: 0.0024, pol_frac: 12.005, pol_frac_err: 0.357,evpa: 33.88, evpa_err: 0.18)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 41).first_or_create
+Result.create(observation_id: @obs.id, elevation: 64.2,source_id: @a3C286.id ,scan_nr: 41, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 3.6223,error_jy: 0.1059,mjd: 61324.5498,pol_flux: 0.4309,pol_flux_err: 0.0030, pol_frac: 11.896, pol_frac_err: 0.358,evpa: 33.87, evpa_err: 0.21)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 9971).first_or_create
+Result.create(observation_id: @obs.id, elevation: 35.4,source_id: @a3C286.id ,scan_nr: 9971, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 3.2434,error_jy: 0.0948,mjd: 61324.2959,pol_flux: 0.4082,pol_flux_err: 0.0040, pol_frac: 12.587, pol_frac_err: 0.388,evpa: 33.64, evpa_err: 0.29)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 9973).first_or_create
+Result.create(observation_id: @obs.id, elevation: 36.3,source_id: @a3C286.id ,scan_nr: 9973, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 3.3789,error_jy: 0.0988,mjd: 61324.2997,pol_flux: 0.4204,pol_flux_err: 0.0028, pol_frac: 12.441, pol_frac_err: 0.373,evpa: 33.96, evpa_err: 0.19)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 9974).first_or_create
+Result.create(observation_id: @obs.id, elevation: 36.8,source_id: @a3C286.id ,scan_nr: 9974, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 3.4724,error_jy: 0.1015,mjd: 61324.3018,pol_flux: 0.4340,pol_flux_err: 0.0030, pol_frac: 12.499, pol_frac_err: 0.375,evpa: 34.17, evpa_err: 0.20)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 89).first_or_create
+Result.create(observation_id: @obs.id, elevation: 73.1,source_id: @aNGC7027.id ,scan_nr: 89, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 5.2478,error_jy: 0.1538,mjd: 61324.7447,pol_flux: 0.0035,pol_flux_err: 0.0015, pol_frac: 0.066, pol_frac_err: 0.029,evpa: -18.91, evpa_err: 12.67)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 91).first_or_create
+Result.create(observation_id: @obs.id, elevation: 73.9,source_id: @aNGC7027.id ,scan_nr: 91, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 5.6561,error_jy: 0.1658,mjd: 61324.7486,pol_flux: 0.0135,pol_flux_err: 0.0017, pol_frac: 0.238, pol_frac_err: 0.030,evpa: 111.35, evpa_err: 3.52)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 92).first_or_create
+Result.create(observation_id: @obs.id, elevation: 74.3,source_id: @aNGC7027.id ,scan_nr: 92, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 5.6412,error_jy: 0.1654,mjd: 61324.7508,pol_flux: 0.0107,pol_flux_err: 0.0015, pol_frac: 0.190, pol_frac_err: 0.028,evpa: 102.45, evpa_err: 4.11)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 149).first_or_create
+Result.create(observation_id: @obs.id, elevation: 50.4,source_id: @aNGC7027.id ,scan_nr: 149, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 5.7969,error_jy: 0.1670,mjd: 61324.9654,pol_flux: 0.0114,pol_flux_err: 0.0016, pol_frac: 0.197, pol_frac_err: 0.027,evpa: 134.34, evpa_err: 3.87)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 151).first_or_create
+Result.create(observation_id: @obs.id, elevation: 49.5,source_id: @aNGC7027.id ,scan_nr: 151, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 5.8214,error_jy: 0.1677,mjd: 61324.9692,pol_flux: 0.0069,pol_flux_err: 0.0016, pol_frac: 0.119, pol_frac_err: 0.027,evpa: 127.41, evpa_err: 6.46)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a14_0.id, scan_nr: 152).first_or_create
+Result.create(observation_id: @obs.id, elevation: 49.1,source_id: @aNGC7027.id ,scan_nr: 152, epoch_id: @a2026_10_11.id ,frequency_id: @a14_0.id,value_jy: 5.8047,error_jy: 0.1672,mjd: 61324.9712,pol_flux: 0.0044,pol_flux_err: 0.0015, pol_frac: 0.075, pol_frac_err: 0.026,evpa: 118.00, evpa_err: 10.01)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_0.id, scan_nr: 4).first_or_create
+Result.create(observation_id: @obs.id, elevation: 54.5,source_id: @a14223223.id ,scan_nr: 4, epoch_id: @a2026_10_11.id ,frequency_id: @a36_0.id,value_jy: 0.8382,error_jy: 0.0477,mjd: 61324.4095,pol_flux: 0.0325,pol_flux_err: 0.0117, pol_frac: 3.875, pol_frac_err: 1.410,evpa: 60.66, evpa_err: 12.71)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_0.id, scan_nr: 5).first_or_create
+Result.create(observation_id: @obs.id, elevation: 55.4,source_id: @a14223223.id ,scan_nr: 5, epoch_id: @a2026_10_11.id ,frequency_id: @a36_0.id,value_jy: 0.8010,error_jy: 0.0456,mjd: 61324.4137,pol_flux: 0.0377,pol_flux_err: 0.0099, pol_frac: 4.707, pol_frac_err: 1.265,evpa: 56.29, evpa_err: 10.19)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_0.id, scan_nr: 110).first_or_create
+Result.create(observation_id: @obs.id, elevation: 28.6,source_id: @a17281215.id ,scan_nr: 110, epoch_id: @a2026_10_11.id ,frequency_id: @a36_0.id,value_jy: 0.9045,error_jy: 0.0527,mjd: 61324.8191,pol_flux: 0.0521,pol_flux_err: 0.0096, pol_frac: 5.759, pol_frac_err: 1.114,evpa: -39.99, evpa_err: 8.39)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_0.id, scan_nr: 111).first_or_create
+Result.create(observation_id: @obs.id, elevation: 27.8,source_id: @a17281215.id ,scan_nr: 111, epoch_id: @a2026_10_11.id ,frequency_id: @a36_0.id,value_jy: 1.1147,error_jy: 0.0650,mjd: 61324.823,pol_flux: 0.0569,pol_flux_err: 0.0103, pol_frac: 5.107, pol_frac_err: 0.967,evpa: -39.82, evpa_err: 7.78)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_0.id, scan_nr: 47).first_or_create
+Result.create(observation_id: @obs.id, elevation: 60.6,source_id: @a3C286.id ,scan_nr: 47, epoch_id: @a2026_10_11.id ,frequency_id: @a36_0.id,value_jy: 1.6665,error_jy: 0.0949,mjd: 61324.5696,pol_flux: 0.2367,pol_flux_err: 0.0108, pol_frac: 14.206, pol_frac_err: 1.036,evpa: 35.84, evpa_err: 1.88)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_0.id, scan_nr: 50).first_or_create
+Result.create(observation_id: @obs.id, elevation: 58.3,source_id: @a3C286.id ,scan_nr: 50, epoch_id: @a2026_10_11.id ,frequency_id: @a36_0.id,value_jy: 1.7609,error_jy: 0.1002,mjd: 61324.5811,pol_flux: 0.2160,pol_flux_err: 0.0096, pol_frac: 12.265, pol_frac_err: 0.887,evpa: 36.23, evpa_err: 1.86)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_0.id, scan_nr: 9983).first_or_create
+Result.create(observation_id: @obs.id, elevation: 42.6,source_id: @a3C286.id ,scan_nr: 9983, epoch_id: @a2026_10_11.id ,frequency_id: @a36_0.id,value_jy: 2.0247,error_jy: 0.1152,mjd: 61324.327,pol_flux: 0.2389,pol_flux_err: 0.0096, pol_frac: 11.797, pol_frac_err: 0.822,evpa: 35.91, evpa_err: 1.64)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_0.id, scan_nr: 98).first_or_create
+Result.create(observation_id: @obs.id, elevation: 77.8,source_id: @aNGC7027.id ,scan_nr: 98, epoch_id: @a2026_10_11.id ,frequency_id: @a36_0.id,value_jy: 5.1094,error_jy: 0.2951,mjd: 61324.7684,pol_flux: 0.0100,pol_flux_err: 0.0120, pol_frac: 0.196, pol_frac_err: 0.236,evpa: 71.13, evpa_err: 30.84)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_0.id, scan_nr: 100).first_or_create
+Result.create(observation_id: @obs.id, elevation: 78.9,source_id: @aNGC7027.id ,scan_nr: 100, epoch_id: @a2026_10_11.id ,frequency_id: @a36_0.id,value_jy: 5.3348,error_jy: 0.3084,mjd: 61324.7745,pol_flux: 0.0192,pol_flux_err: 0.0128, pol_frac: 0.360, pol_frac_err: 0.240,evpa: 75.54, evpa_err: 14.79)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_0.id, scan_nr: 101).first_or_create
+Result.create(observation_id: @obs.id, elevation: 79.6,source_id: @aNGC7027.id ,scan_nr: 101, epoch_id: @a2026_10_11.id ,frequency_id: @a36_0.id,value_jy: 5.2745,error_jy: 0.3051,mjd: 61324.7788,pol_flux: 0.0144,pol_flux_err: 0.0136, pol_frac: 0.273, pol_frac_err: 0.259,evpa: 89.17, evpa_err: 17.22)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_0.id, scan_nr: 158).first_or_create
+Result.create(observation_id: @obs.id, elevation: 45.5,source_id: @aNGC7027.id ,scan_nr: 158, epoch_id: @a2026_10_11.id ,frequency_id: @a36_0.id,value_jy: 4.8346,error_jy: 0.3002,mjd: 61324.9877,pol_flux: 0.0184,pol_flux_err: 0.0148, pol_frac: 0.381, pol_frac_err: 0.307,evpa: 85.85, evpa_err: 14.55)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_0.id, scan_nr: 160).first_or_create
+Result.create(observation_id: @obs.id, elevation: 44.4,source_id: @aNGC7027.id ,scan_nr: 160, epoch_id: @a2026_10_11.id ,frequency_id: @a36_0.id,value_jy: 4.9711,error_jy: 0.3087,mjd: 61324.9929,pol_flux: 0.0181,pol_flux_err: 0.0145, pol_frac: 0.363, pol_frac_err: 0.292,evpa: 92.59, evpa_err: 14.13)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a36_0.id, scan_nr: 161).first_or_create
+Result.create(observation_id: @obs.id, elevation: 43.6,source_id: @aNGC7027.id ,scan_nr: 161, epoch_id: @a2026_10_11.id ,frequency_id: @a36_0.id,value_jy: 4.9577,error_jy: 0.3079,mjd: 61324.9965,pol_flux: 0.0205,pol_flux_err: 0.0113, pol_frac: 0.414, pol_frac_err: 0.229,evpa: 61.64, evpa_err: 18.70)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_0.id, scan_nr: 6).first_or_create
+Result.create(observation_id: @obs.id, elevation: 56.7,source_id: @a14223223.id ,scan_nr: 6, epoch_id: @a2026_10_11.id ,frequency_id: @a41_0.id,value_jy: 0.8850,error_jy: 0.1097,mjd: 61324.4194,pol_flux: 0.0124,pol_flux_err: 0.0160, pol_frac: 1.400, pol_frac_err: 1.821,evpa: 63.99, evpa_err: 43.87)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_0.id, scan_nr: 7).first_or_create
+Result.create(observation_id: @obs.id, elevation: 57.6,source_id: @a14223223.id ,scan_nr: 7, epoch_id: @a2026_10_11.id ,frequency_id: @a41_0.id,value_jy: 1.0348,error_jy: 0.1283,mjd: 61324.4238,pol_flux: 0.0409,pol_flux_err: 0.0119, pol_frac: 3.954, pol_frac_err: 1.249,evpa: 58.13, evpa_err: 12.77)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_0.id, scan_nr: 112).first_or_create
+Result.create(observation_id: @obs.id, elevation: 26.7,source_id: @a17281215.id ,scan_nr: 112, epoch_id: @a2026_10_11.id ,frequency_id: @a41_0.id,value_jy: 0.8978,error_jy: 0.1123,mjd: 61324.8279,pol_flux: 0.0535,pol_flux_err: 0.0121, pol_frac: 5.965, pol_frac_err: 1.542,evpa: -38.94, evpa_err: 12.52)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_0.id, scan_nr: 51).first_or_create
+Result.create(observation_id: @obs.id, elevation: 57.3,source_id: @a3C286.id ,scan_nr: 51, epoch_id: @a2026_10_11.id ,frequency_id: @a41_0.id,value_jy: 1.9974,error_jy: 0.2474,mjd: 61324.586,pol_flux: 0.2102,pol_flux_err: 0.0096, pol_frac: 10.525, pol_frac_err: 1.390,evpa: 36.00, evpa_err: 2.38)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_0.id, scan_nr: 52).first_or_create
+Result.create(observation_id: @obs.id, elevation: 56.5,source_id: @a3C286.id ,scan_nr: 52, epoch_id: @a2026_10_11.id ,frequency_id: @a41_0.id,value_jy: 1.6764,error_jy: 0.2077,mjd: 61324.5894,pol_flux: 0.2102,pol_flux_err: 0.0119, pol_frac: 12.541, pol_frac_err: 1.707,evpa: 36.00, evpa_err: 2.99)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_0.id, scan_nr: 102).first_or_create
+Result.create(observation_id: @obs.id, elevation: 80.4,source_id: @aNGC7027.id ,scan_nr: 102, epoch_id: @a2026_10_11.id ,frequency_id: @a41_0.id,value_jy: 4.5537,error_jy: 0.5678,mjd: 61324.7844,pol_flux: 0.0287,pol_flux_err: 0.0191, pol_frac: 0.630, pol_frac_err: 0.426,evpa: 85.64, evpa_err: 8.27)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_0.id, scan_nr: 103).first_or_create
+Result.create(observation_id: @obs.id, elevation: 80.9,source_id: @aNGC7027.id ,scan_nr: 103, epoch_id: @a2026_10_11.id ,frequency_id: @a41_0.id,value_jy: 4.4624,error_jy: 0.5565,mjd: 61324.789,pol_flux: 0.0358,pol_flux_err: 0.0167, pol_frac: 0.801, pol_frac_err: 0.387,evpa: 94.64, evpa_err: 6.57)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_0.id, scan_nr: 162).first_or_create
+Result.create(observation_id: @obs.id, elevation: 42.6,source_id: @aNGC7027.id ,scan_nr: 162, epoch_id: @a2026_10_11.id ,frequency_id: @a41_0.id,value_jy: 5.8717,error_jy: 0.7375,mjd: 61325.0012,pol_flux: 0.0251,pol_flux_err: 0.0176, pol_frac: 0.428, pol_frac_err: 0.304,evpa: 81.19, evpa_err: 11.07)
+@obs=Observation.where(epoch_id: @a2026_10_11.id, frequency_id: @a41_0.id, scan_nr: 163).first_or_create
+Result.create(observation_id: @obs.id, elevation: 41.8,source_id: @aNGC7027.id ,scan_nr: 163, epoch_id: @a2026_10_11.id ,frequency_id: @a41_0.id,value_jy: 5.9853,error_jy: 0.7518,mjd: 61325.0048,pol_flux: 0.0488,pol_flux_err: 0.0171, pol_frac: 0.815, pol_frac_err: 0.303,evpa: 77.62, evpa_err: 6.30)
